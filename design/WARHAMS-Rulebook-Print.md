@@ -1,0 +1,924 @@
+---
+pdf_options:
+  format: A4
+  margin: 20mm
+  printBackground: true
+  displayHeaderFooter: true
+  headerTemplate: '<div style="font-size:8px;color:#888;width:100%;text-align:center;font-family:sans-serif;">W.A.R H.A.M.S — The Battle for Planet X</div>'
+  footerTemplate: '<div style="font-size:8px;color:#888;width:100%;text-align:center;font-family:sans-serif;">Page <span class="pageNumber"></span> of <span class="totalPages"></span></div>'
+stylesheet: WARHAMS-print-styles.css
+---
+
+<!-- This file wraps the rulebook with PDF print styling. -->
+<!-- It imports the full rulebook content below. -->
+
+# ⚔️ W.A.R H.A.M.S — The Battle for Planet X
+
+### *Official Rulebook*
+
+---
+
+> *The corporations have spoken. The planet is rich. The orders are clear.
+> Deploy your H.A.M.S, seize every resource, and crush anyone who stands in your way.
+> There is no diplomacy — only Dominance.*
+
+---
+
+## 📖 Section 1 — Introduction
+
+**W.A.R H.A.M.S — The Battle for Planet X** is a sci-fi board game of corporate warfare, territorial control, and tactical betrayal for **2–4 players**, ages **14+**.
+
+Each player commands a private military force — squads of heavily armed soldiers known as **H.A.M.S** — deployed by a rival megacorporation to conquer a distant, resource-rich alien world. Victory belongs to the corporation that accumulates the most **Dominance Points (DP)** by seizing territory, harvesting resources, arming their squads with powerful **Basic Armament Cards (BACs)**, and manipulating the battlefield through cunning **Conspire Cards**.
+
+The planet has no name — not yet. **At the start of each game, players collectively choose a name for their battleground.** Use the following naming convention to generate an alien-sounding designation:
+
+> **Suggested Planet Name Format:** 2 consonants + vowel + 2 consonants + vowel, optionally followed by Roman numerals.
+>
+> *Examples: Nlendagru IV · Criftonba · Throskane II · Blentova IX*
+>
+> This is just a suggestion — feel free to name your planet whatever you like!
+
+Fight for resources. Fight for loyalty. Fight for the planet.
+
+| Detail         | Value              |
+| -------------- | ------------------ |
+| **Players**    | 2–4                |
+| **Ages**       | 14+                |
+| **Play Time**  | 90–150 minutes     |
+
+---
+
+<div class="page-break"></div>
+
+## 📦 Section 2 — Components
+
+### 🗺️ Hex Tiles (61 total)
+
+The planet surface is built from randomized hexagonal tiles. Each tile represents a region of terrain or a key strategic installation.
+
+| Hex Type             | Border Color | Count | Description                          |
+| -------------------- | :----------: | :---: | ------------------------------------ |
+| 🛢️ Oil Rig           | ⬛ Black     | 3     | Produces Oil Drum resources          |
+| ⚡ Power Plant        | 🟨 Yellow    | 3     | Produces Lightning Bolt resources    |
+| 🏭 Factory           | 🟥 Red       | 3     | Produces Hammer resources            |
+| 📡 Radar Dish        | 🟦 Blue      | 3     | Produces Transmitting Wave resources |
+| 🏘️ City / Village    | 🟩 Green     | 3     | Produces Recruit resources           |
+| 🏴 Separatist Base   | ⬜ Grey      | 3     | Hostile NPC stronghold               |
+| 🚀 Spaceport Drop Zone | 🟪 Purple  | 6     | Reinforcement landing sites          |
+| 🌍 Terrain Hex       | —            | 37    | Open ground, forests, craters, etc.  |
+| | | **61** | |
+
+### 🔢 Number Tokens (16 total)
+
+Number Tokens are placed on resource-producing Hexes during setup to determine which Hexes produce resources on a given dice roll.
+
+| Number | Token Count |
+| :----: | :---------: |
+| 1      | 2           |
+| 2      | 2           |
+| 3      | 3           |
+| 4      | 3           |
+| 5      | 3           |
+| 6      | 3           |
+| **Total** | **16**   |
+
+### 🃏 Cards
+
+| Card Type                     | Total | Breakdown           |
+| ----------------------------- | :---: | ------------------- |
+| 🔫 **BAC** (Basic Armament Cards) | 100 | 20 types × 5 copies |
+| 🕵️ **Conspire Cards**          | 72  | 24 types × 3 copies |
+
+- **BACs** represent weapons, armor, gadgets, and upgrades equipped to your H.A.M.S.
+- **Conspire Cards** represent political maneuvers, sabotage, intelligence operations, and tactical gambits.
+
+### 🪙 Resource Tokens (5 types)
+
+Resources are the lifeblood of your campaign. Each type is produced by its corresponding Hex.
+
+| Resource | Card Color | Card Depiction | Token | Token Colors |
+| --- | :---: | --- | --- | --- |
+| Oil | ⬛ Black | Fuel | Oil Drum | Black on white, black border |
+| Electricity | 🟡 Yellow | Electricity Bolt | Lightning Bolt | Yellow on white, yellow border |
+| Intelligence | 🔵 Blue | Intel Operator Room | Transmitting Wave | Blue on white, blue border |
+| Industry | 🔴 Red | Industry Factory | Hammer | Red on white, red border |
+| Local Favor | 🟢 Green | Militia Base | Recruit | Green on white, green border |
+
+### 🎲 Dice
+
+- **14 six-sided dice (d6)** — used for combat, resource production, and event resolution.
+
+### 🧍 Miniatures & Boards
+
+| Component                | Details                                                              |
+| ------------------------ | -------------------------------------------------------------------- |
+| **H.A.M.S Miniatures**  | Soldier miniatures in 4 player colors — **28 per player** (enough for 4 Squads of 7 H.A.M.S each) |
+| **Separatist Miniatures** | Grey NPC soldiers occupying Separatist Bases                        |
+| **Squad Boards**         | Up to 4 per player; each board holds exactly **7 H.A.M.S** slots    |
+
+### 🛡️ Tokens & Accessories
+
+| Component              | Description                                                                          |
+| ---------------------- | ------------------------------------------------------------------------------------ |
+| **Control Hex Frames** | Thin colored frames (one set per player color) that snap into Hex grooves to mark territorial control |
+| **Cargo Containers**   | 12 numbered plastic containers 2×(1–6) placed on spaceport hexes when BACs arrive. Matching containers near the board form the **Unloading Zone** where BAC cards that landed on a specific space port are stored |
+| **Damage Tokens**      | Track wounds on individual H.A.M.S                                                  |
+| **Bunker Tokens**      | Placed on Hexes to represent fortified defensive positions                           |
+| **Planet Frame**       | Circular board edge made of **5 interlocking cardboard puzzle pieces** that snap together to form the planet boundary. All 61 Hex tiles fill the entire interior. |
+
+---
+
+<div class="page-break"></div>
+
+## 🛠️ Section 3 — Game Setup
+
+Follow these steps in order to prepare the battlefield.
+
+---
+
+**Step 1 — Assemble the Planet Frame**
+Snap the **5 interlocking cardboard puzzle pieces** together to form the circular Planet Frame. Place it on the table — this defines the boundary of the playable surface. Note the **connection points** labeled along the edges (a, b, c, etc.) — hexes at opposite edges sharing the same letter are adjacent for movement and range (the planet wraps around).
+
+**Step 2 — Build the Planet**
+Shuffle all **61 Hex Tiles** face-down. Place them randomly within the Planet Frame — tiles fill the **entire interior** of the circular board with no gaps. No peeking — the planet's geography is unknown until your forces make landfall.
+
+**Step 3 — Reveal the Surface**
+Flip all Hex Tiles face-up. The planet is revealed. Take a moment to survey the terrain — note where the resources, Spaceport Drop Zones, and Separatist Bases have appeared.
+
+**Step 4 — Place Number Tokens**
+Distribute the **16 Number Tokens** across the **15 resource-producing Hexes** (Oil Rigs, Power Plants, Factories, Radar Dishes, and Cities/Villages):
+
+| Number | Tokens Available | Placement                       |
+| :----: | :--------------: | ------------------------------- |
+| 1      | 2                | Place on 2 resource Hexes       |
+| 2      | 2                | Place on 2 resource Hexes       |
+| 3      | 3                | Place on 3 resource Hexes       |
+| 4      | 3                | Place on 3 resource Hexes       |
+| 5      | 3                | Place on 3 resource Hexes       |
+| 6      | 3                | Place on 3 resource Hexes       |
+
+Place them randomly, or follow a chosen scenario card. One Hex will receive **two** Number Tokens (since there are 16 tokens for 15 Hexes) — that Hex produces double when either number is rolled.
+
+**Step 5 — Prepare the BAC Cards**
+Shuffle all **100 BAC Cards** into a single face-down pile. Then:
+
+1. Deal **3 BAC Cards** face-down to each player. This is their **starting hand**.
+2. Place the remaining deck near the board — this is the **Spaceport Deck**.
+3. Turn **6 cards** face-up in a row beside the Spaceport Deck — this is the **Planet Bound Area**.
+
+> ⚙️ *Always maintain 6 face-up cards in the Planet Bound Area. Whenever a card is taken from it, immediately replace it from the Spaceport Deck.*
+
+**Step 6 — Prepare the Conspire Deck**
+Shuffle all **72 Conspire Cards** and place them face-down near the board as the **Conspire Deck**. Do not deal any Conspire Cards during setup — they are only acquired during play.
+
+**Step 7 — Muster Your Forces**
+Each player takes the following in their chosen color:
+
+- **2 Squad Boards**
+- **10 H.A.M.S Miniatures** (place **5 H.A.M.S** on each Squad Board)
+
+> 🧩 *Additional Squad Boards and H.A.M.S are earned during the game. You may eventually command up to 4 Squads of 7 H.A.M.S each.*
+
+**Step 8 — Determine First Player**
+The **oldest player** takes the first turn. Play order proceeds **clockwise** from the first player.
+
+**Step 9 — Squad Placement (Snake Draft)**
+Players deploy their starting Squads to the planet surface using a snake draft:
+
+| Order       | Action                                                   |
+| ----------- | -------------------------------------------------------- |
+| **Round 1** | Starting with the first player and proceeding clockwise, each player places their **1st Squad** on any unoccupied Hex. |
+| **Round 2** | The **last player** in Round 1 immediately places their **2nd Squad**. Then placement continues **counter-clockwise**, ending with the first player placing their 2nd Squad last. |
+
+**Step 10 — Set Up the Unloading Zone**
+Place one set of 6 numbered **Cargo Containers** (1–6) in a row near the board — this is the **Unloading Zone**. Keep the second matching set of containers nearby. When BAC cards arrive at spaceports during the game (via doubles/triples), the BAC card is placed face-up in the Unloading Zone with a container on top, and the matching container from the second set is placed on the corresponding spaceport hex on the board to mark the delivery.
+
+**Step 11 — Stock the Supply**
+Set up a **resource supply area** beside the board. Sort all Resource Tokens by type into clearly separated piles so any player can easily access them.
+
+---
+
+> 🌎 **Note — Every Planet Is Different!**
+> The random Hex placement during setup ensures that no two games of W.A.R H.A.M.S are alike. The geography of your planet, the location of critical resources, and the proximity of Separatist threats will change every session. Adapt your strategy — or be crushed.
+
+---
+
+<div class="page-break"></div>
+
+## 🔄 TURN STRUCTURE
+
+Starting from the first player and proceeding clockwise, each player completes **all seven phases** of their turn before play passes to the next player. No other player may act during your turn unless a Conspire Card or combat specifically requires it.
+
+---
+
+### Phase 1: Resource Production
+
+The active player rolls **3d6**. For each number rolled, place 1 corresponding resource token on **every** hex tile bearing that number token. This includes hexes currently occupied by Separatist forces.
+
+> **Example:** You roll 2, 4, 6. Every hex with a "2" number token receives 1 resource token of its type, then every hex with a "4" token, then every hex with a "6" token.
+
+**Doubles** — If two of the three dice show the same number (e.g., 3, 3, 5):
+
+- Place 1 BAC card face-up from the Spaceport Planet Bound Area onto the **spaceport drop zone** bearing the matching number(in this example the 3rd card in the spaceport row due to the double 3s), then add one of the containers using this number on top of this card and another on the spaceport hex. Multiple BAC cards may accumulate at a single spaceport drop zone over successive turns.
+- The third, non-matching die still produces resources normally.
+
+**Triples** — If all three dice show the same number (e.g., 4, 4, 4):
+
+- The active player **chooses** which spaceport drop zone on the board receives a BAC card. Place the BAC card from the Planet Bound Area (in this example the 4th) face-up in the Unloading Zone with the matching container on top, and place the second matching container on the chosen spaceport hex.
+- Additionally, the active player may move any single open (face-up) BAC from the Planet Bound Area to any Unloading Zone container slot of their choice.
+
+> **Tip:** Triples are rare but powerful — choosing which spaceport receives a BAC card lets you funnel valuable equipment toward your controlled zones or deny it to opponents.
+
+---
+
+### Phase 2: Movement
+
+The active player may move each of their Squads. Each individual H.A.M.S in a Squad may move up to **1 hex** in any direction. A soldier equipped with **Jump Jets (J.J)** may move up to **2 hexes** instead.
+
+Soldiers within a Squad move **independently** — they are not required to stay grouped. Spreading out allows a Squad to cover more hexes for resource gathering, but isolated soldiers are vulnerable to attack. However, every soldier must remain **within 2 hexes of at least one other squadmate** at all times (squad coherency).
+
+> **Example:** A 5-soldier Squad on hex A could split: 2 soldiers stay on hex A, 1 moves to hex B, and 2 move to hex C. All five remain part of the same Squad — A is 2 hexes away from C, maintaining coherency.
+
+**Moving Through Separatists** — A soldier may not move through a hex occupied by Separatist forces without engaging them in combat first (see Phase 3).
+
+**Board Wrapping** — The planet is round. Hexes at the edges of the board connect to corresponding hexes on the opposite edge via marked connection points (labeled a, b, c, etc.). Movement and range calculations wrap accordingly.
+
+#### Alternative: Conspire
+
+Instead of moving a Squad, the active player may forfeit that Squad's movement to **Conspire**:
+
+1. Draw **3 cards** from the Conspire Deck.
+2. Keep **1** card and discard the other 2 face-down to the Conspire discard pile.
+3. If a drawn card states otherwise (e.g., "keep 2"), follow that card's instructions instead.
+
+A player may choose to move some Squads and Conspire with others — the choice is made **per Squad**.
+
+> **Tip:** Conspiring is your primary path to powerful one-time effects, resource conversion, and combat tricks. Don't neglect it — a well-timed Conspire Card can turn the tide of battle.
+
+---
+
+### Phase 3: Combat
+
+If any enemy units — whether belonging to other players or Separatist forces — are within **1–2 hexes** of the active player's soldiers, the active player **may** declare combat. Combat is never mandatory.
+
+To declare combat:
+
+1. The active player states **which of their Squads** is attacking.
+2. The active player designates **which enemy Squad** (or Separatist group) is the target.
+3. Resolve combat according to the full **Combat** section below.
+
+**Multiple Combats** — If the active player has multiple Squads engaged with different enemy forces, each may declare a separate combat. Resolve combats one at a time, in the order chosen by the active player.
+
+> **Note:** Only the active player may initiate combat during this phase. Defending players respond as part of combat resolution but do not initiate attacks of their own.
+
+---
+
+### Phase 4: Resource Gathering
+
+After all combats are resolved, players collect resources from the board.
+
+**Priority Order:**
+
+- The combat winner (or the least-damaged side, if no clear winner) picks first.
+- Ties are broken by turn order, starting from the active player and proceeding clockwise.
+
+**Collection Rules:**
+
+- Each soldier may pick up **1 resource token** from the hex they currently occupy **or** from any single adjacent hex.
+- A soldier equipped with **B.E.A.R** (Battlefield Extraction Airlift Rover) may pick up **1 additional** resource token of any type from the same or adjacent hex.
+- Continue in priority order until all accessible resources have been claimed or no player wishes to collect further.
+
+> **Important:** Resources **cannot** be collected from a hex if Separatist units are present on that hex or on any hex adjacent to it. Secure the area first.
+
+**Converting Tokens to Cards:**
+
+Resource tokens collected from the board are immediately exchanged for the corresponding resource card from the supply. Return the token to the general supply.
+
+---
+
+### Phase 5: Purchase & Equip
+
+The active player may spend resource cards to purchase BAC cards from their hand and equip them to their Squads.
+
+**Equipping a BAC:**
+
+1. Pay the card's resource cost **per soldier** receiving the equipment.
+2. Place the BAC on the Squad Board and give matching equipment tokens to each equipped soldier.
+3. A BAC is purchased for **one Squad only**. Each Squad can hold up to **X** different armaments, where **X = the number of H.A.M.S in that Squad**.
+
+> **Example:** A Squad of 5 soldiers can have up to 5 different BAC types equipped. A Squad of 7 soldiers can have up to 7 different BACs.
+
+**Acquiring New BACs:**
+
+- **Spaceport Deck Purchase:** Spend **3 resource cards of any single color** while your Squad is at or adjacent to a **Spaceport** or **City** → draw 1 face-down card from the Spaceport Deck into your hand.
+- **Spaceport Drop Zone Collection:** BAC cards that have accumulated at a spaceport drop zone may be collected by any Squad occupying that spaceport.
+
+**Recruiting New Soldiers:**
+
+Pay **1 Local Favor + 1 Oil + 1 Industry + 1 Electricity** while your Squad is in or adjacent to a **City** → add **1 H.A.M.S** to that Squad.
+
+- Maximum **7 soldiers** per Squad.
+
+**Creating New Squads:**
+
+Pay the soldier recruitment cost **× the number of soldiers** in the new Squad (minimum **5 soldiers** to form a Squad).
+
+- Maximum **4 Squads** per player.
+- The new Squad is placed at the City where it was recruited.
+
+> **Example:** Creating a new 5-soldier Squad costs 5 × (1 Local Favor + 1 Oil + 1 Industry + 1 Electricity) = 5 Local Favor + 5 Oil + 5 Industry + 5 Electricity.
+
+---
+
+### Phase 6: Trade
+
+The active player may trade resource cards freely with any other player. Both parties must agree to the terms of the trade. There is no limit to the number of trades per turn.
+
+- Only **resource cards** may be traded. BAC cards, Conspire Cards, and equipment cannot be traded.
+- Trades must be executed immediately — no promises of future payment or deferred trades are enforceable.
+
+---
+
+### Phase 7: Move Separatists
+
+The active player moves **all** Separatist units on the board, following this sequence:
+
+**Step 1 — Consume Resources**
+If a Separatist is on a hex with produced resource tokens, remove **1 resource token** from that hex (the Separatist consumes it). Return the token to the supply.
+
+**Step 2 — Seek Resources**
+If there is a resource-producing hex with available resource tokens within **3 hexes**, move the Separatist toward it (up to 3 hexes of movement).
+
+- If multiple valid target hexes exist, **roll to determine** which one the Separatist moves toward.
+- If multiple Separatists are eligible to move, divide them among available resource targets as evenly as possible.
+
+**Step 3 — Wander**
+For any Separatist not on a resource hex (or on one with no remaining resources), roll **1d6** to determine its direction of movement:
+
+| Roll | Direction |
+|------|-----------|
+| 1    | North     |
+| 2    | Northeast |
+| 3    | Southeast |
+| 4    | South     |
+| 5    | Southwest |
+| 6    | Northwest |
+
+Move the Separatist **up to 3 hexes** in the rolled direction.
+
+> **Tip:** Clever players can manipulate Separatist movement by leaving resources on strategic hexes to lure them toward opponents, or by clearing resources to force random wandering away from your territory.
+
+---
+
+### End of Turn
+
+Once all seven phases are complete, play passes **clockwise** to the next player, who begins their turn at Phase 1.
+
+---
+
+### Turn Summary — Quick Reference
+
+| Phase | Name                  | Summary                                                              |
+|-------|-----------------------|----------------------------------------------------------------------|
+| 1     | Resource Production   | Roll 3d6, spawn resources on matching hexes. Doubles/triples = BAC drops at spaceports |
+| 2     | Movement              | Move each soldier up to 1 hex (2 with J.J). Alternatively, Conspire instead of moving a Squad |
+| 3     | Combat                | Declare attacks against enemies within 1–2 hexes                     |
+| 4     | Resource Gathering    | Collect resource tokens from occupied or adjacent hexes. Winner picks first |
+| 5     | Purchase & Equip      | Spend resource cards to buy and equip BACs, recruit soldiers, or create new Squads |
+| 6     | Trade                 | Trade resource cards freely with other players by mutual agreement   |
+| 7     | Move Separatists      | Move all NPC Separatist forces: consume → seek resources → wander randomly |
+
+---
+
+<div class="page-break"></div>
+
+## ⚔️ COMBAT SYSTEM
+
+> *Steel meets steel. Dice hit the table. Only one side walks away whole.*
+
+Combat is the heart of W.A.R H.A.M.S. When corporations clash over hexes, resources, and dominance, the battlefield is decided through a structured sequence of dice rolls, tactical assignments, equipment bonuses, and card play.
+
+---
+
+### Initiating Combat
+
+During **Phase 3** of the active player's turn, they may declare an attack with any of their Squads against an enemy Squad (or Separatist group) within **1–2 hexes**. Combat is never mandatory.
+
+- Each Squad may declare **one attack** per turn.
+- Ranged weapons with extended range — such as **B.A.S.R** (sniper) and **S.L.I.M.E** (mortar) — may target enemies beyond 2 hexes. Refer to the weapon's card text and the **Special Weapon Rules** section below.
+- Only the **active player** may initiate combat. Defenders respond during combat resolution but do not choose to attack on another player's turn.
+
+---
+
+### Combat Resolution — Step by Step
+
+Once combat is declared, resolve it by following Steps 1 through 6 in order.
+
+---
+
+#### Step 1: Roll Attack & Defense Dice
+
+Both players roll simultaneously.
+
+- **Attacker** rolls **1d6 for each H.A.M.S** in the attacking Squad.
+- **Defender** rolls **1d6 for each H.A.M.S** in the defending Squad.
+
+**Dice Advantage Rule**
+
+When one side has **more soldiers** than the other, the side with more soldiers still rolls dice equal to their full soldier count. However, only a number of dice equal to the **smaller** Squad's size are used in matchups. The player with more dice selects their **best** dice (highest values) to assign.
+
+The extra dice provide **more options** — not more attacks or defenses. The number of matchups is always equal to the smaller Squad's soldier count.
+
+> **Worked Example — Attacker Outnumbers Defender:**
+>
+> A 5-soldier Squad attacks a 3-soldier Squad.
+>
+> - Attacker rolls 5 dice: **1, 1, 5, 5, 6**
+> - Defender rolls 3 dice: **4, 4, 2**
+> - The smaller Squad has 3 soldiers, so there are **3 matchups**.
+> - Attacker picks their best 3 dice: **5, 5, 6**
+> - Defender must use all 3 of their dice: **4, 4, 2**
+> - Attacker assigns matchups: 6→4, 5→4, 5→2 — all three defenders are hit!
+
+> **Worked Example — Defender Outnumbers Attacker:**
+>
+> A 3-soldier Squad attacks a 5-soldier Squad.
+>
+> - Attacker rolls 3 dice: **5, 5, 6**
+> - Defender rolls 5 dice: **1, 1, 4, 4, 2**
+> - There are **3 matchups** (equal to the smaller Squad).
+> - Attacker must use all 3 of their dice: **5, 5, 6**
+> - Defender picks their best 3 from 5 dice: **4, 4, 2**
+> - Matchups: 6→4, 5→4, 5→2 — still hits, but the defender had more choices to select their strongest defense dice.
+
+---
+
+#### Step 2: Assign Dice (Attacker Chooses Matchups)
+
+After both sides have selected their dice, the **Attacker** assigns matchups. This is one of the most tactically important moments in combat.
+
+1. The **Attacker** places each of their selected attack dice in front of a specific defending H.A.M.S on the defender's Squad Board. Each defending soldier receives exactly **one** attack die.
+2. The **Defender** then assigns their defense dice, placing one defense die next to each attack die.
+
+Each matchup is now a one-on-one comparison:
+
+| Comparison | Result |
+|---|---|
+| Attack die **>** Defense die | **HIT** — the difference equals damage dealt |
+| Attack die **≤** Defense die | **BLOCKED** — no damage is dealt |
+
+> **Worked Example — Dice Assignment:**
+>
+> Attacker rolls: **6, 4, 1** — Defender rolls: **5, 4, 2**
+>
+> The Attacker assigns:
+>
+> | Target | Attack Die | Defense Die | Result |
+> |---|:---:|:---:|---|
+> | Soldier A | 6 | 5 | **HIT** (6 − 5 = 1 damage) |
+> | Soldier B | 4 | 4 | **BLOCKED** (tie goes to defender) |
+> | Soldier C | 1 | 2 | **BLOCKED** (defense wins) |
+>
+> **Total:** 1 hit dealing 1 damage token to Soldier A.
+>
+> *Note: The Attacker chose to throw their 6 at Soldier A. A different assignment would have changed the outcome entirely. Choose your matchups wisely.*
+
+---
+
+#### Step 3: Apply Equipment Bonuses
+
+After initial dice placement, both sides apply bonuses from equipped BAC cards. Bonuses modify the face value of dice already placed — they do **not** add additional dice.
+
+1. **Attacker** applies attack bonuses first (e.g., **H.C.A.R** grants **+1 attack** to the equipped soldier's die).
+2. **Defender** applies defense bonuses second (e.g., **S.A.P** armor grants **+1 defense** to the equipped soldier's die).
+
+Equipment bonuses can **change the outcome** of matchups that were previously hits or blocks.
+
+> **Worked Example — Equipment Bonuses:**
+>
+> From the previous example, Soldier A was hit: Attack 6 vs Defense 5 = 1 damage.
+>
+> But Soldier A is equipped with **S.A.P** armor (+1 defense). The defense die increases from 5 to **6**.
+>
+> | Target | Attack Die | Defense Die (after bonus) | Result |
+> |---|:---:|:---:|---|
+> | Soldier A | 6 | 5 + 1 = **6** | **BLOCKED!** S.A.P armor saves Soldier A. |
+>
+> *Conversely: if the Attacker had a H.C.A.R-equipped soldier (+1 attack), the attack die would have been 7 vs 6 — a hit for 1 damage, punching through the armor.*
+
+---
+
+#### Step 4: Play Conspire Cards
+
+After equipment bonuses are applied, both players have one final opportunity to alter the combat outcome through **Conspire Cards**.
+
+**Order of play:**
+
+1. **Defender** plays combat-relevant Conspire Cards first.
+2. **Attacker** responds with their own Conspire Cards second.
+
+Each player may play **any number** of eligible Conspire Cards.
+
+| Example Conspire Card | Effect |
+|---|---|
+| Guerrilla Warfare | Add **1d6** to your attack total |
+| Defender Instant Shield | Add **1d6** to your defense total |
+| Old School RPG | Grant **+1 attack** to one soldier's die |
+| One Pulse Barrier | Grant **+1 defense** to one soldier's die |
+
+> **Tip:** The Defender plays first — the Attacker always gets the last word. A shrewd Attacker can wait to see the Defender's cards before deciding whether to spend their own.
+
+---
+
+#### Step 5: Resolve Damage
+
+After all dice modifications and card effects are applied, calculate final damage for every matchup.
+
+For each **HIT** (attack die > defense die):
+
+- The **difference** between the final attack value and the final defense value equals the number of **damage tokens** placed on that defending H.A.M.S.
+- Damage tokens are placed directly on the soldier's slot on the Squad Board.
+- **Damage persists between turns.** A wounded H.A.M.S remains wounded until healed by a card effect or ability.
+
+**Death Threshold**
+
+A H.A.M.S can sustain a maximum of **3 damage tokens**. When a soldier would receive a **4th damage token**, that soldier **dies**.
+
+> **Worked Example:**
+>
+> Soldier A already carries 2 damage tokens from a previous turn. In this combat, Soldier A's matchup results in a HIT dealing 2 damage.
+>
+> Soldier A now has 2 + 2 = **4 damage tokens** → Soldier A is **killed**.
+
+---
+
+#### Step 6: Counterattack
+
+After all damage is resolved, check **every** defender's matchup for a potential Counterattack.
+
+**Counterattack Trigger:** Any defending soldier whose defense die beat the attack die by **3 or more** earns a **Counterattack**.
+
+| Attack Die | Defense Die | Difference | Result |
+|:---:|:---:|:---:|---|
+| 2 | 6 | +4 for defender | ✅ **COUNTERATTACK** triggered |
+| 3 | 6 | +3 for defender | ✅ **COUNTERATTACK** triggered |
+| 4 | 6 | +2 for defender | ❌ No counterattack (difference < 3) |
+
+When a Counterattack is triggered:
+
+1. The counterattacking defender becomes the **Attacker** in a new **mini-combat round**.
+2. All normal combat rules apply (Steps 1–6), using only the counterattacking soldier(s) and the original attacker's soldiers they were matched against.
+3. **Counterattacks can chain.** If the original attacker's defense die beats the counterattack die by 3 or more, they earn a counterattack of their own.
+
+> **Worked Example:**
+>
+> Soldier X (defender) was matched: Attack 2 vs Defense 6.
+> The defense die exceeds the attack die by **4** (6 − 2 = 4). This triggers a **Counterattack**.
+> Soldier X now becomes the attacker in a mini-combat round. Both sides roll 1d6, assign dice, apply bonuses, play cards, and resolve damage as normal.
+
+---
+
+<div class="page-break"></div>
+
+### ☠️ Death in W.A.R H.A.M.S
+
+When a H.A.M.S accumulates 4 or more damage tokens, the soldier is killed. Resolve immediately:
+
+#### 1. Lethal Hit Roll
+
+The **owning player** rolls 1d6 to determine where the killing blow struck:
+
+| Roll | Slot Hit |
+|:---:|---|
+| 1 | 🪖 Head |
+| 2 | 🎒 Backpack |
+| 3 | 🦿 Legs |
+| 4–5 | 🛡️ Chest |
+| 6 | 🖐️ Hands (weapon) |
+
+#### 2. Module Destroyed
+
+The equipment in the struck slot is **permanently destroyed** — remove it from the game entirely and return it to the box.
+
+#### 3. Loot Distribution
+
+| Pick Order | Player | Action |
+|:---:|---|---|
+| 1st | **Owner** (dead soldier's player) | Choose **1** remaining equipped module to keep |
+| 2nd | **Attacker** (killing player) | Choose **1** remaining equipped module to take |
+| 3rd | — | All remaining modules are **dropped on the hex** as loot tokens |
+
+#### 4. Dropped Loot
+
+Loot tokens left on the hex may be picked up by **any** unit occupying that hex or an adjacent hex during the next **Phase 4: Resource Gathering**.
+
+---
+
+### 💥 Civilian Damage Rule
+
+When using area-of-effect weaponry — specifically **S.L.I.M.E** (mortar) or other artillery — on a hex that produces **Local Favor** (City or Village):
+
+- **All opposing players** each gain **2 Local Favor** resource tokens immediately.
+- The **attacking player** loses **ALL** of their current Local Favor tokens.
+
+> ⚠️ *Think twice before bombarding cities. The local population will turn against you — and rally behind your enemies.*
+
+---
+
+### 🔫 Special Weapon Rules
+
+#### B.A.S.R — Bolt Action Sniper Rifle
+
+| Rule | Detail |
+|---|---|
+| **Timing** | Before normal combat (pre-combat phase) |
+| **Range** | Up to **2 hexes** (can be extended by L.P.M) |
+| **Attack** | Roll **2d6**, choose the better die. Target **1** specific enemy soldier. |
+| **Target Defense** | Target rolls normally and applies equipment bonuses. |
+| **After Sniping** | The sniping soldier **skips normal combat** for this turn. |
+| **Defensive Penalty** | While defending, the B.A.S.R soldier suffers **−1** to their defense die. |
+
+#### S.L.I.M.E — Squad Light Interoperable Mortar Encampment
+
+| Rule | Detail |
+|---|---|
+| **Timing** | Before normal combat (pre-combat phase) |
+| **Crew** | Requires **2 soldiers** carrying S.L.I.M.E (same Squad) |
+| **Range** | Up to **3 hexes** (can be extended by L.P.M) |
+| **Attack** | Roll **4d6**. Target an entire enemy **Squad**. |
+| **Target Defense** | All defenders in the target Squad suffer **−1 to all defense dice**. |
+| **After Mortaring** | Both crew soldiers **skip normal combat** for this turn. |
+| **Civilian Penalty** | If target hex produces Local Favor, the **Civilian Damage Rule** applies. |
+
+#### L.P.M — Laser Pointer Marker
+
+| Rule | Detail |
+|---|---|
+| **Passive** | The L.P.M carrier does not attack. Instead, they designate targets for long-range weapons. |
+| **Effect** | B.A.S.R and S.L.I.M.E soldiers may target enemies that are adjacent to (within 1 hex of) the L.P.M carrier. |
+| **Max Range** | The combined range (weapon carrier → L.P.M carrier → target) may not exceed **4 hexes**. |
+
+---
+
+<div class="page-break"></div>
+
+## 🔫 BASIC ARMAMENT CARDS (BACs)
+
+### BAC Quick Reference Table
+
+| Abbrev | Full Name | Slot | Cost | DP | Effect Summary |
+|------|-----------|------|------|----|--------|
+| S.A.P Chest | Standard Armor Plating Chest Piece | Chest | 1 Oil, 1 Industry | 1 | +1 defense die. Full S.A.P set: +1 more |
+| S.A.P Helmet | Standard Armor Plating Helmet | Head | 1 Oil, 1 Industry | 1 | +1 defense die. Full S.A.P set: +1 more |
+| S.A.P Legs | Standard Armor Plating Legs | Legs | 1 Oil, 1 Industry | 1 | +1 defense die. Full S.A.P set: +1 more |
+| C.A.P Chest | Custom Armor Plating Chest | Chest | 1 S.A.P Chest + 1 Local Favor, 1 Industry, 1 Oil | 4 | +2 defense die. Full C.A.P set: +1 more (3 total) |
+| C.A.P Head | Custom Armor Plating Helmet | Head | 1 S.A.P Head + 1 Local Favor, 1 Intelligence, 1 Oil | 4 | +2 defense die. Full C.A.P set: +1 more (3 total) |
+| C.A.P Legs | Custom Armor Plating Legs | Legs | 1 S.A.P Legs + 1 Local Favor, 1 Electricity, 1 Oil | 4 | +2 defense die. Full C.A.P set: +1 more (3 total) |
+| J.J | Jump Jets | Legs | 1 Industry, 1 Intelligence | 2 | Move 2 hexes instead of 1. May disconnect from Squad |
+| S.H.A.D | Sensory Helmet, Advisory Drone | Head | 2 Intelligence, 1 Electricity | 4 | Attacker must reveal Conspire cards before combat |
+| H.C.A.R | Heavy Caliber Assault Rifle | Hands | 1 Industry, 1 Electricity | 2 | +1 attack die |
+| P.A.E.H | Personal Accuracy Enhancement Helmet | Head | 1 Local Favor, 1 Electricity, 1 Intelligence | 4 | +1 attack die if soldier also carries H.C.A.R |
+| B.A.S.R | Bolt Action Sniper Rifle | Hands | 1 Electricity, 1 Intelligence, 1 Industry | 4 | Pre-combat: roll 2 dice, target 1 soldier up to 2 hexes. Sniper skips normal combat. −1 defense |
+| S.L.I.M.E | Squad Light Interoperable Mortar Encampment | Backpack | 1 Industry, 2 Oil, 2 Local Favor | 5 | Requires 2 soldiers. Roll 4 dice, target squad up to 3 hexes. Crew skips combat. Defenders −1 defense |
+| B.E.A.R | Battlefield Extraction Airlift Rover | Chest | 1 each of all 5 resources | 1 | Pick 1 extra resource during Phase 4 |
+| P.L.A.S.T.E.R | Personal Lasting Aid Surgical Treatment Enhancement Robot | Chest | 1 Electricity, 1 Local Favor | 2 | Remove up to 2 damage tokens. **Tap**. Recharge at City/Spaceport for 1 Electricity |
+| N.I.N.J.A | Nir Ion Nullifier Jammer Aid | Legs | 1 Intelligence, 1 Electricity | 2 | +3 to one defense die. **Tap**. Recharge for 2 Electricity |
+| D.U.D.S | Deployable Unital Defense System | Backpack | 1 Local Favor, 1 Oil, 1 Electricity | 4 | Place bunker token: +1 all defense dice on this hex. **Flip** (one-use) |
+| L.P.M | Laser Pointer Marker | Backpack | 1 Electricity, 1 Local Favor | 3 | B.A.S.R/S.L.I.M.E can target enemies adjacent to L.P.M carrier. Max 4 hex range |
+| R.S.G | Repeating Shotgun | Hands | 1 Electricity, 1 Local Favor | 2 | Within 1 hex: +2 attack. Beyond 1 hex: −1 attack |
+| P.C.S.M.G | Projectile Correcting Sub Machine Gun | Hands | 1 Electricity, 1 Industry, 1 Intelligence | 2 | Within 1 hex: choose target, roll 2d6, pick best |
+| T.I.L.T.S | Tactical Ion Team Link Shield | Backpack | 1 Electricity, 1 Industry, 2 Intelligence | 5 | Pay once for X soldiers. Swap attacker's dice between T.I.L.T.S soldiers. No other backpack allowed |
+
+---
+
+<div class="page-break"></div>
+
+## 🕵️ CONSPIRING
+
+A player may forfeit a Squad's **Movement** OR **Attack** phase to **Conspire**. The choice is made per Squad.
+
+### Drawing Conspire Cards
+
+1. Draw **3 cards** from the Conspire Deck.
+2. Keep **1** card, discard the other 2 face-down.
+3. If a drawn card states otherwise (e.g., "keep 2"), follow that card's instructions.
+
+### Playing Conspire Cards
+
+- May be played at **any time** — during your turn, another player's turn, or mid-combat.
+- Effects resolve **instantly**.
+- Pay any listed cost when you play the card.
+
+### Deck Exhaustion
+
+When the Conspire Deck is empty, shuffle the discard pile to form a new deck.
+
+---
+
+### 📋 Full Conspire Card List (24 Types × 3 Copies = 72 Cards)
+
+#### 💰 Resource Exchange (1 Cost → 3 Gain)
+
+| Name | Cost | Effect | Copies |
+|------|------|--------|:------:|
+| Abandoned Satellite Control Station | 1 Electricity | Exchange for 3 Intelligence | 3 |
+| Build a Wind Farm | 1 Industry | Exchange for 3 Electricity | 3 |
+| Raid an Oil Cache | 1 Intelligence | Exchange for 3 Oil | 3 |
+| Factory Takeover | 1 Local Favor | Exchange for 3 Industry | 3 |
+| Build a Follower Camp | 1 Industry | Exchange for 3 Local Favor | 3 |
+
+#### 🎁 Free Resource (Gain 1, Chance for Bonus)
+
+| Name | Cost | Effect | Copies |
+|------|------|--------|:------:|
+| Recruit Eager Volunteers | Free | Gain 1 Local Favor. Roll d6: on 5–6, gain 1 more for any 1 resource | 3 |
+| Scout Ahead | Free | Gain 1 Intelligence. Roll d6: on 5–6, gain 1 more for any 1 resource | 3 |
+| Tap into Oil Reserves | Free | Gain 1 Oil. Roll d6: on 5–6, gain 1 more for any 1 resource | 3 |
+| Proper Planning | Free | Gain 1 Industry. Roll d6: on 5–6, gain 1 more for any 1 resource | 3 |
+| Tap into the Local Power Grid | Free | Gain 1 Electricity. Roll d6: on 5–6, gain 1 more for any 1 resource | 3 |
+
+#### ⚔️ Combat
+
+| Name | Cost | Effect | Copies |
+|------|------|--------|:------:|
+| Guerrilla Warfare | 1 Local Favor | Add 1d6 to an attack combat roll | 3 |
+| Defender Instant Shield | 1 Oil | Add 1d6 to a defense combat roll | 3 |
+| Old School RPG | Free | +1 to an attack combat roll | 3 |
+| One Pulse Barrier | Free | +1 to a defense combat roll | 3 |
+
+#### 🎯 Tactical
+
+| Name | Cost | Effect | Copies |
+|------|------|--------|:------:|
+| Deal with Local Militia | 3 Local Favor | Spawn 3 militia within 2 hexes to attack an enemy. Militia roll with −1, disperse after | 3 |
+| A Rough Night | 1 Local Favor, 2 Intelligence | Target any Squad: immobilized for 1 turn OR −1 combat rolls next turn | 3 |
+| Traveling Med Bay | X resources (X ≤ 3) | Exchange any 1 resource to heal 1 damage token. Repeat up to 3× | 3 |
+| Deal with a Local Representative | 1 any resource | Conspire again, keep **2** cards instead of 1 | 3 |
+| Hack a PortNet Relay | 1 Intelligence | Take 1 face-up card from Planet Bound Area, replace with another | 3 |
+
+#### 🏰 Territory Control (Require Controlling 2+ of a Resource Type)
+
+| Name | Condition | Effect | Copies |
+|------|-----------|--------|:------:|
+| Knowledge is Power | Control 2+ Intelligence tiles | Gain 2 BACs from Spaceport Deck | 3 |
+| Civilian Goods Transport | Control 2+ Local Favor tiles | Gain any 4 resource cards | 3 |
+| Black Gold Syndicate | Control 2+ Oil tiles | Draw 2 Conspire cards (keep both) | 3 |
+| At the Cover of Darkness | Control 2+ Electricity tiles | Steal from opponent: 2 resources, OR 1 Conspire, OR 1 BAC | 3 |
+| Factory Cost Savings | Control 2+ Industry tiles | Equip a BAC free for 2 soldiers. Pay normal cost for rest | 3 |
+
+---
+
+<div class="page-break"></div>
+
+## 🏴 SEPARATISTS
+
+Separatists are rogue fighting forces loyal to no corporation — remnants of failed colonial garrisons, opportunistic raiders, and alien sympathizers who resist all outside control.
+
+### Spawning
+
+When a number matching a **Separatist Base's** number token is rolled during Phase 1, spawn **3 grey Separatist miniatures** on that base. Immediately move each to a **different nearest resource-producing hex** with available resources.
+
+### Behavior (Phase 7)
+
+1. **Consume** — If on a hex with resource tokens, remove 1 token.
+2. **Seek** — Move toward nearest resource hex with tokens within 3 hexes.
+3. **Wander** — Roll 1d6 for direction, move up to 3 hexes.
+
+### Fighting Separatists
+
+| Rule | Detail |
+|------|--------|
+| **Dice Penalty** | −1 to all dice |
+| **Hit Points** | 1 life — any hit kills instantly |
+| **Mandatory** | Must fight before collecting resources or moving through |
+
+### Conquering Bases
+
+- Attack triggers 7 defenders at the base.
+- Once all 7 are defeated, place your Control Hex Frame.
+- Conquered bases stop spawning. Controller can spawn Separatists at OTHER unoccupied bases.
+- Once ALL 3 bases are captured: bases produce 1 Local Favor when number is rolled.
+
+> ⚠️ **Warning:** Don't attack a base unless you can handle all 7 defenders! Survivors scatter toward resource hexes.
+
+---
+
+## 🏳️ CONTROLLING TERRITORY
+
+### Claiming a Hex
+
+Move a Squad to any **resource-producing hex** → place your colored **Control Hex Frame** on it. The hex remains under your control until an opponent moves a Squad onto it and claims it.
+
+### End-of-Round Bonus
+
+At the end of all players' turns for the round, any **uncollected resource tokens** and **BAC cards** remaining on controlled hexes are awarded to the controlling player.
+
+---
+
+<div class="page-break"></div>
+
+## 🏆 HOW TO WIN
+
+Three paths lead to victory. The first player to achieve **any** condition wins immediately — even during another player's turn.
+
+---
+
+### 🚀 Victory 1: Spaceport Domination
+
+**Control all 6 Spaceport Landing Zones.**
+
+Your corporate HQ dispatches a full battalion. Rival corporations flee off-world in panic. You win command of the planet.
+
+---
+
+### 💪 Victory 2: Military Supremacy
+
+**Field 4 full Squads of 7 H.A.M.S each (28 soldiers total).**
+
+Your overwhelming military presence renders further conflict pointless. Rival HQs withdraw. You are promoted to conquer bigger, richer planets.
+
+---
+
+### 👑 Victory 3: Dominance
+
+**Accumulate 50 Dominance Points (DP).**
+
+DP come from **equipped BAC cards** — each BAC's DP value counts toward your total as long as the card remains equipped and the soldier carrying it is alive. The local population rallies behind your banner and crowns you their sovereign.
+
+> **Tracking DP:** Count the DP values of all BACs currently equipped across all your Squads. If a soldier dies, their BAC DP is lost.
+
+---
+
+## 📑 QUICK REFERENCE CARD
+
+### Soldier Equipment Slots
+
+| Die Roll | Slot |
+|:--------:|------|
+| 1 | Head |
+| 2 | Backpack |
+| 3 | Legs |
+| 4–5 | Chest |
+| 6 | Hands |
+
+### Resource Colors
+
+| Resource | Card Color | Card Depiction | Hex Tile | Token |
+|----------|:-----:|----------|----------|:----------:|
+| Oil | ⬛ Black | Fuel | Oil Rig | Oil Drum |
+| Electricity | 🟡 Yellow | Electricity Bolt | Power Plant | Lightning Bolt |
+| Intelligence | 🔵 Blue | Intel Operator Room | Radar Dish | Transmitting Wave |
+| Industry | 🔴 Red | Industry Factory | Factory | Hammer |
+| Local Favor | 🟢 Green | Militia Base | City / Village | Recruit |
+
+### Turn Phase Summary
+
+| # | Phase | Key Action |
+|:-:|-------|------------|
+| 1 | Resource Production | Roll 3d6, place resource tokens on matching hexes |
+| 2 | Movement | Move each soldier up to 1 hex (or Conspire instead). Squad coherency: stay within 2 hexes of a squadmate |
+| 3 | Combat | Declare attacks against enemies within 1–2 hexes |
+| 4 | Resource Gathering | Collect tokens from occupied or adjacent hexes |
+| 5 | Purchase & Equip | Buy and equip BACs, recruit soldiers, create Squads |
+| 6 | Trade | Trade resource cards freely with other players |
+| 7 | Move Separatists | Move all NPC Separatist forces |
+
+### Key Costs
+
+| Action | Cost | Location |
+|--------|------|----------|
+| Recruit 1 Soldier | 1 Local Favor + 1 Oil + 1 Industry + 1 Electricity | City |
+| Create New Squad (min 5) | 5× soldier cost | City |
+| Draw from Spaceport Deck | 3 same-color resource cards | Spaceport or City |
+| Conspire | Forfeit 1 Squad's Movement or Attack | Anywhere |
+| Untap P.L.A.S.T.E.R | 1 Electricity | City or Spaceport |
+| Untap N.I.N.J.A | 2 Electricity | City or Spaceport |
+
+### Combat Quick Reference
+
+| Step | Action |
+|:----:|--------|
+| Pre | Resolve B.A.S.R (sniper) and S.L.I.M.E (mortar) |
+| 1 | Both sides roll **1d6 per soldier** |
+| 2 | Larger side picks **best dice** |
+| 3 | **Attacker** assigns dice to individual defenders |
+| 4 | **Defender** aligns defense dice |
+| 5 | Add equipment bonuses |
+| 6 | Play Conspire Cards (**defender first**) |
+| 7 | Attack > Defense = **HIT** (difference = damage) |
+| 8 | **4 damage** = death → roll d6 for destroyed slot → loot |
+| 9 | Defense beats attack by **3+** = **Counterattack** |
+
+### Victory Conditions
+
+| Path | Condition |
+|------|-----------|
+| 🚀 Spaceport Domination | Control all 6 Spaceport Landing Zones |
+| 💪 Military Supremacy | Field 4 full Squads of 7 H.A.M.S (28 soldiers) |
+| 👑 Dominance | Accumulate 50 Dominance Points from equipped BACs |
+
+---
+
+*Name your world. Deploy your H.A.M.S. Fight for Dominance.*
+
+*© W.A.R H.A.M.S — The Battle for Planet X*

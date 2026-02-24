@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="47" fill="white" stroke="#22aa44" stroke-width="4"/>
+  <!-- Person head -->
+  <circle cx="50" cy="28" r="10" fill="#22aa44"/>
+  <!-- Person body/torso -->
+  <path d="M30 68 Q30 44 50 44 Q70 44 70 68Z" fill="#22aa44"/>
+  <text x="50" y="82" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="7" font-weight="bold" fill="#22aa44">LOCAL FAVOR</text>
+</svg>

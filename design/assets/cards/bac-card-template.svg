@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 352" width="252" height="352">
+  <defs>
+    <!-- Tech grid pattern -->
+    <pattern id="techGrid" x="0" y="0" width="18" height="18" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="18" y2="0" stroke="#222244" stroke-width="0.5"/>
+      <line x1="0" y1="0" x2="0" y2="18" stroke="#222244" stroke-width="0.5"/>
+    </pattern>
+    <!-- Hexagon badge for DP -->
+    <polygon id="hexBadge" points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="#2a2a4e" stroke="#8899aa" stroke-width="1.5"/>
+  </defs>
+
+  <!-- Card background -->
+  <rect x="2" y="2" width="248" height="348" rx="8" ry="8" fill="#1a1a2e"/>
+  <!-- Tech grid overlay -->
+  <rect x="2" y="2" width="248" height="348" rx="8" ry="8" fill="url(#techGrid)"/>
+  <!-- Border -->
+  <rect x="2" y="2" width="248" height="348" rx="8" ry="8" fill="none" stroke="#8899aa" stroke-width="2"/>
+
+  <!-- Color accent strip at top -->
+  <rect x="10" y="4" width="232" height="3" rx="1" fill="#556677"/>
+
+  <!-- === TOP AREA === -->
+
+  <!-- Abbreviation -->
+  <text x="126" y="24" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#8899aa" letter-spacing="1.5">[ABBREV]</text>
+
+  <!-- Card name -->
+  <text x="126" y="40" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="13" fill="#ffffff">[CARD NAME]</text>
+
+  <!-- Cost indicator circles (top-right) -->
+  <g transform="translate(210, 22)">
+    <circle cx="0" cy="0" r="5" fill="#111111" stroke="#555" stroke-width="0.5"/>
+    <circle cx="0" cy="13" r="5" fill="#ccaa00" stroke="#555" stroke-width="0.5"/>
+    <circle cx="0" cy="26" r="5" fill="#3366cc" stroke="#555" stroke-width="0.5"/>
+    <circle cx="0" cy="39" r="5" fill="#cc3333" stroke="#555" stroke-width="0.5"/>
+    <circle cx="0" cy="52" r="5" fill="#339933" stroke="#555" stroke-width="0.5"/>
+    <text x="-10" y="3" text-anchor="end" font-family="sans-serif" font-size="7" fill="#888">×0</text>
+    <text x="-10" y="16" text-anchor="end" font-family="sans-serif" font-size="7" fill="#888">×0</text>
+    <text x="-10" y="29" text-anchor="end" font-family="sans-serif" font-size="7" fill="#888">×0</text>
+    <text x="-10" y="42" text-anchor="end" font-family="sans-serif" font-size="7" fill="#888">×0</text>
+    <text x="-10" y="55" text-anchor="end" font-family="sans-serif" font-size="7" fill="#888">×0</text>
+  </g>
+
+  <!-- === CENTER AREA === -->
+
+  <!-- Art placeholder -->
+  <rect x="36" y="60" width="151" height="105" rx="4" fill="none" stroke="#556677" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="111" y="116" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#556677">[ARTWORK]</text>
+
+  <!-- Card text area -->
+  <rect x="20" y="176" width="212" height="110" rx="4" fill="#12122a" stroke="#2a2a4e" stroke-width="1"/>
+  <text x="126" y="200" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#cccccc">[CARD TEXT]</text>
+  <text x="126" y="216" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#cccccc">[Line 2]</text>
+  <text x="126" y="232" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#cccccc">[Line 3]</text>
+
+  <!-- === BOTTOM AREA === -->
+
+  <!-- Slot indicator (bottom-left) -->
+  <g transform="translate(18, 310)">
+    <text x="0" y="0" font-family="sans-serif" font-size="10" fill="#cccccc">⚔</text>
+    <text x="14" y="0" font-family="sans-serif" font-size="9" fill="#8899aa" font-weight="bold">[SLOT]</text>
+    <!-- Die icon -->
+    <rect x="52" y="-11" width="14" height="14" rx="2" fill="#2a2a4e" stroke="#8899aa" stroke-width="1"/>
+    <text x="59" y="0" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="8" fill="#ffffff">?</text>
+  </g>
+
+  <!-- Set indicator (bottom-center) -->
+  <text x="126" y="336" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#556677">[SET]</text>
+
+  <!-- DP value in hexagonal badge (bottom-right) -->
+  <g transform="translate(218, 308)">
+    <use href="#hexBadge"/>
+    <text x="0" y="1" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="8" fill="#ffffff">? DP</text>
+  </g>
+
+  <!-- Card type label -->
+  <text x="126" y="348" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#445566">B.A.C — BASIC ARMAMENT CARD</text>
+</svg>

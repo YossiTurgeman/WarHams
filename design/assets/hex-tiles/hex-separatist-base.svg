@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 230">
+  <defs>
+    <clipPath id="hex-clip">
+      <polygon points="100,8 186,54 186,146 100,192 14,146 14,54"/>
+    </clipPath>
+  </defs>
+  <!-- Hex background -->
+  <polygon points="100,8 186,54 186,146 100,192 14,146 14,54" fill="#1a1a1a"/>
+  <!-- Hex border -->
+  <polygon points="100,8 186,54 186,146 100,192 14,146 14,54" fill="none" stroke="#888888" stroke-width="6"/>
+  <!-- Title -->
+  <text x="100" y="36" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#aaaaaa" letter-spacing="1">SEPARATIST BASE</text>
+  <!-- Fortified bunker -->
+  <g fill="#3a3a3a" stroke="#555555" stroke-width="0.5">
+    <!-- Main bunker body (low, wide, angular) -->
+    <polygon points="50,125 55,90 145,90 150,125" fill="#2a2a2a"/>
+    <!-- Bunker roof slab -->
+    <rect x="52" y="87" width="96" height="6" rx="1" fill="#383838"/>
+    <!-- Bunker entrance -->
+    <rect x="85" y="100" width="30" height="25" rx="1" fill="#1a1a1a"/>
+    <!-- Entrance inner shadow -->
+    <rect x="89" y="104" width="22" height="21" rx="1" fill="#111111"/>
+    <!-- Gun slit left -->
+    <rect x="60" y="100" width="12" height="4" rx="1" fill="#111111"/>
+    <!-- Gun slit right -->
+    <rect x="128" y="100" width="12" height="4" rx="1" fill="#111111"/>
+    <!-- Reinforcement lines -->
+    <line x1="55" y1="110" x2="82" y2="110" stroke="#444444" stroke-width="1"/>
+    <line x1="118" y1="110" x2="148" y2="110" stroke="#444444" stroke-width="1"/>
+    <!-- Sandbag wall left -->
+    <ellipse cx="45" cy="128" rx="8" ry="4" fill="#3a3520"/>
+    <ellipse cx="45" cy="122" rx="7" ry="4" fill="#3a3520"/>
+    <!-- Sandbag wall right -->
+    <ellipse cx="155" cy="128" rx="8" ry="4" fill="#3a3520"/>
+    <ellipse cx="155" cy="122" rx="7" ry="4" fill="#3a3520"/>
+    <!-- Flag pole -->
+    <rect x="133" y="50" width="2" height="40" fill="#666666"/>
+    <!-- Flag -->
+    <polygon points="135,52 155,58 135,65" fill="#cc3333" opacity="0.7"/>
+    <!-- Flag symbol (star) -->
+    <polygon points="145,58 143,56 140,56 142,58 141,61 145,59 149,61 148,58 150,56 147,56" fill="#1a1a1a" opacity="0.5"/>
+    <!-- Barbed wire -->
+    <line x1="30" y1="132" x2="170" y2="132" stroke="#555555" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Wire barbs -->
+    <g stroke="#666666" stroke-width="0.8">
+      <line x1="40" y1="130" x2="43" y2="134"/>
+      <line x1="60" y1="130" x2="63" y2="134"/>
+      <line x1="80" y1="130" x2="83" y2="134"/>
+      <line x1="120" y1="130" x2="123" y2="134"/>
+      <line x1="140" y1="130" x2="143" y2="134"/>
+      <line x1="160" y1="130" x2="163" y2="134"/>
+    </g>
+    <!-- Ground -->
+    <rect x="25" y="135" width="150" height="5" rx="1" fill="#222222"/>
+  </g>
+  <!-- Number token circle -->
+  <circle cx="100" cy="170" r="14" fill="#1a1a1a" stroke="#aaaaaa" stroke-width="1.5"/>
+</svg>

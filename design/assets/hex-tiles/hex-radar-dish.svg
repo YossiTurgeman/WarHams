@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 230">
+  <defs>
+    <clipPath id="hex-clip">
+      <polygon points="100,8 186,54 186,146 100,192 14,146 14,54"/>
+    </clipPath>
+  </defs>
+  <!-- Hex background -->
+  <polygon points="100,8 186,54 186,146 100,192 14,146 14,54" fill="#0a1428"/>
+  <!-- Hex border -->
+  <polygon points="100,8 186,54 186,146 100,192 14,146 14,54" fill="none" stroke="#2266cc" stroke-width="6"/>
+  <!-- Title -->
+  <text x="100" y="38" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#4488dd" letter-spacing="1">RADAR DISH</text>
+  <!-- Satellite dish -->
+  <g fill="#1a3a6a" stroke="#2255aa" stroke-width="0.5">
+    <!-- Dish (parabolic shape) -->
+    <path d="M55,85 Q100,45 145,85 Q130,95 100,98 Q70,95 55,85 Z" fill="#1a3a6a" stroke="#3377cc" stroke-width="1.5"/>
+    <!-- Dish inner rings -->
+    <path d="M70,83 Q100,60 130,83" fill="none" stroke="#2255aa" stroke-width="1" opacity="0.5"/>
+    <path d="M82,82 Q100,68 118,82" fill="none" stroke="#2255aa" stroke-width="1" opacity="0.4"/>
+    <!-- Feed horn / receiver at focal point -->
+    <line x1="100" y1="90" x2="100" y2="70" stroke="#4488dd" stroke-width="2"/>
+    <circle cx="100" cy="67" r="3" fill="#4488dd"/>
+    <!-- Support struts to receiver -->
+    <line x1="72" y1="85" x2="100" y2="70" stroke="#2255aa" stroke-width="1" opacity="0.6"/>
+    <line x1="128" y1="85" x2="100" y2="70" stroke="#2255aa" stroke-width="1" opacity="0.6"/>
+    <!-- Support mast -->
+    <rect x="96" y="95" width="8" height="35" rx="1" fill="#152a50"/>
+    <!-- Mast base / pedestal -->
+    <rect x="85" y="128" width="30" height="6" rx="2" fill="#1a3060"/>
+    <!-- Base platform -->
+    <rect x="75" y="132" width="50" height="8" rx="2" fill="#122040"/>
+    <!-- Signal waves -->
+    <path d="M60,60 Q50,50 55,38" fill="none" stroke="#4488dd" stroke-width="1" opacity="0.3"/>
+    <path d="M55,65 Q42,52 48,35" fill="none" stroke="#4488dd" stroke-width="1" opacity="0.2"/>
+    <path d="M50,68 Q35,55 42,33" fill="none" stroke="#4488dd" stroke-width="1" opacity="0.15"/>
+  </g>
+  <!-- Number token circle -->
+  <circle cx="100" cy="170" r="14" fill="#0a1428" stroke="#4488dd" stroke-width="1.5"/>
+</svg>

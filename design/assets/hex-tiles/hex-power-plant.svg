@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 230">
+  <defs>
+    <clipPath id="hex-clip">
+      <polygon points="100,8 186,54 186,146 100,192 14,146 14,54"/>
+    </clipPath>
+  </defs>
+  <!-- Hex background -->
+  <polygon points="100,8 186,54 186,146 100,192 14,146 14,54" fill="#2a2008"/>
+  <!-- Hex border -->
+  <polygon points="100,8 186,54 186,146 100,192 14,146 14,54" fill="none" stroke="#f5c518" stroke-width="6"/>
+  <!-- Title -->
+  <text x="100" y="38" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#f5c518" letter-spacing="1">POWER PLANT</text>
+  <!-- Power station building -->
+  <g fill="#8a7020" stroke="#a08828" stroke-width="0.5">
+    <!-- Main building -->
+    <rect x="55" y="95" width="50" height="45" rx="2" fill="#5a4a10"/>
+    <!-- Roof -->
+    <polygon points="50,95 80,65 110,95" fill="#6a5a18"/>
+    <!-- Cooling tower 1 -->
+    <path d="M120,140 L118,100 Q130,90 142,100 L140,140 Z" fill="#5a4a10"/>
+    <!-- Cooling tower top vapor -->
+    <ellipse cx="130" cy="92" rx="6" ry="3" fill="#7a6a20" opacity="0.5"/>
+    <!-- Windows on building -->
+    <rect x="63" y="105" width="8" height="8" rx="1" fill="#f5c518" opacity="0.4"/>
+    <rect x="77" y="105" width="8" height="8" rx="1" fill="#f5c518" opacity="0.4"/>
+    <rect x="63" y="120" width="8" height="8" rx="1" fill="#f5c518" opacity="0.3"/>
+    <rect x="77" y="120" width="8" height="8" rx="1" fill="#f5c518" opacity="0.3"/>
+    <!-- Ground line -->
+    <rect x="40" y="138" width="120" height="4" rx="1" fill="#3a3008"/>
+  </g>
+  <!-- Lightning bolt -->
+  <polygon points="95,48 88,78 97,75 90,98 105,68 96,71" fill="#f5c518" opacity="0.9"/>
+  <!-- Number token circle -->
+  <circle cx="100" cy="170" r="14" fill="#2a2008" stroke="#f5c518" stroke-width="1.5"/>
+</svg>

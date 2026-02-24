@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1400">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto" fill="#888">
+      <polygon points="0 0, 10 3.5, 0 7"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto" fill="#22aa44">
+      <polygon points="0 0, 10 3.5, 0 7"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto" fill="#cc3333">
+      <polygon points="0 0, 10 3.5, 0 7"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto" fill="#cc7722">
+      <polygon points="0 0, 10 3.5, 0 7"/>
+    </marker>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#141520"/>
+      <stop offset="100%" stop-color="#0a0b10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="1400" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="500" y="48" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="30" font-weight="bold" fill="#ffffff" letter-spacing="4" filter="url(#glow)">COMBAT RESOLUTION FLOW</text>
+  <line x1="200" y1="60" x2="800" y2="60" stroke="#444" stroke-width="1"/>
+  <text x="500" y="78" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#888" letter-spacing="2">W.A.R H.A.M.S. — COMPLETE PROCESS</text>
+
+  <!-- ==================== PRE-COMBAT ==================== -->
+  <!-- Declare Combat box -->
+  <rect x="300" y="95" width="400" height="55" rx="8" fill="#cc7722" fill-opacity="0.15" stroke="#cc7722" stroke-width="2"/>
+  <text x="500" y="116" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="15" font-weight="bold" fill="#cc7722">DECLARE COMBAT</text>
+  <text x="500" y="138" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#ddd">Active player chooses attacking squad &amp; target (within 1–2 hexes)</text>
+  <text x="298" y="108" text-anchor="end" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#cc7722" font-weight="bold">PRE-COMBAT</text>
+
+  <!-- Arrow down -->
+  <line x1="500" y1="150" x2="500" y2="170" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Decision: B.A.S.R / S.L.I.M.E? -->
+  <polygon points="500,175 620,210 500,245 380,210" fill="#1a1a2a" stroke="#cc7722" stroke-width="2"/>
+  <text x="500" y="207" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="bold" fill="#ffcc66">Any B.A.S.R or</text>
+  <text x="500" y="221" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="bold" fill="#ffcc66">S.L.I.M.E?</text>
+
+  <!-- Yes branch (right) -->
+  <line x1="620" y1="210" x2="710" y2="210" stroke="#cc7722" stroke-width="1.5" marker-end="url(#arrow-orange)"/>
+  <text x="660" y="203" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#22aa44" font-weight="bold">YES</text>
+  <rect x="722" y="192" width="230" height="36" rx="6" fill="#cc7722" fill-opacity="0.12" stroke="#cc7722" stroke-width="1.5"/>
+  <text x="837" y="207" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#ffcc66">Resolve sniper/mortar FIRST</text>
+  <text x="837" y="221" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#999">(separate rolls)</text>
+  <!-- Curve back down -->
+  <path d="M837,228 L837,252 Q837,262 827,262 L510,262" fill="none" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- No branch (down) -->
+  <line x1="500" y1="245" x2="500" y2="275" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="490" y="260" text-anchor="end" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#cc3333" font-weight="bold">NO</text>
+
+  <!-- ==================== STEP 1 ==================== -->
+  <rect x="300" y="280" width="400" height="68" rx="8" fill="#2266cc" fill-opacity="0.15" stroke="#2266cc" stroke-width="2"/>
+  <text x="500" y="300" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="bold" fill="#4499ff">STEP 1: ROLL DICE</text>
+  <text x="500" y="318" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#ddd">Both sides roll 1d6 per soldier simultaneously</text>
+  <text x="400" y="338" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">Attacker: 1d6 × soldiers</text>
+  <text x="600" y="338" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">Defender: 1d6 × soldiers</text>
+
+  <!-- Arrow -->
+  <line x1="500" y1="348" x2="500" y2="370" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STEP 2 ==================== -->
+  <rect x="300" y="375" width="400" height="65" rx="8" fill="#2266cc" fill-opacity="0.15" stroke="#2266cc" stroke-width="2"/>
+  <text x="500" y="395" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="bold" fill="#4499ff">STEP 2: SELECT BEST DICE</text>
+  <text x="500" y="413" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#ddd">Side with MORE soldiers picks their best dice</text>
+  <text x="500" y="430" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">(count = smaller squad size) — Extra dice = more options, NOT more attacks</text>
+
+  <!-- Arrow -->
+  <line x1="500" y1="440" x2="500" y2="462" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STEP 3 ==================== -->
+  <rect x="300" y="467" width="400" height="60" rx="8" fill="#cc3333" fill-opacity="0.15" stroke="#cc3333" stroke-width="2"/>
+  <text x="500" y="488" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="bold" fill="#ff5555">STEP 3: ATTACKER ASSIGNS MATCHUPS</text>
+  <text x="500" y="506" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#ddd">Attacker places each attack die against a specific defender</text>
+  <text x="500" y="520" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">Each defender gets exactly 1 attack die</text>
+
+  <!-- Arrow -->
+  <line x1="500" y1="527" x2="500" y2="547" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STEP 4 ==================== -->
+  <rect x="300" y="552" width="400" height="55" rx="8" fill="#22aa44" fill-opacity="0.15" stroke="#22aa44" stroke-width="2"/>
+  <text x="500" y="573" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="bold" fill="#33dd66">STEP 4: DEFENDER ALIGNS DEFENSE</text>
+  <text x="500" y="596" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#ddd">Defender places defense dice against assigned attacks</text>
+
+  <!-- Arrow -->
+  <line x1="500" y1="607" x2="500" y2="627" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STEP 5 ==================== -->
+  <rect x="300" y="632" width="400" height="60" rx="8" fill="#ccaa22" fill-opacity="0.15" stroke="#ccaa22" stroke-width="2"/>
+  <text x="500" y="653" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="bold" fill="#eedd44">STEP 5: APPLY EQUIPMENT BONUSES</text>
+  <text x="500" y="671" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#ddd">Attacker bonuses first, then defender</text>
+  <text x="400" y="685" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">+1 attack (H.C.A.R)</text>
+  <text x="600" y="685" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">+1 defense (S.A.P)</text>
+
+  <!-- Arrow -->
+  <line x1="500" y1="692" x2="500" y2="712" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STEP 6 ==================== -->
+  <rect x="300" y="717" width="400" height="55" rx="8" fill="#8833cc" fill-opacity="0.15" stroke="#8833cc" stroke-width="2"/>
+  <text x="500" y="738" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="bold" fill="#bb66ff">STEP 6: PLAY CONSPIRE CARDS</text>
+  <text x="500" y="756" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#ddd">Defender plays first, then Attacker responds</text>
+  <text x="500" y="768" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#ffcc66" font-style="italic">Attacker gets the last word!</text>
+
+  <!-- Arrow -->
+  <line x1="500" y1="772" x2="500" y2="795" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ==================== RESOLUTION ==================== -->
+  <!-- Decision: Attack > Defense? -->
+  <polygon points="500,800 630,840 500,880 370,840" fill="#1a1a2a" stroke="#cc2222" stroke-width="2"/>
+  <text x="500" y="837" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="bold" fill="#ff4444">Attack &gt; Defense?</text>
+  <text x="500" y="852" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#cc2222">RESOLUTION</text>
+
+  <!-- No branch (left) — BLOCKED -->
+  <line x1="370" y1="840" x2="250" y2="840" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="320" y="833" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#cc3333" font-weight="bold">NO</text>
+  <rect x="140" y="823" width="108" height="34" rx="6" fill="#333" stroke="#888" stroke-width="1.5"/>
+  <text x="194" y="844" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="bold" fill="#aaa">BLOCKED</text>
+  <!-- Arrow from BLOCKED down to counterattack diamond -->
+  <path d="M194,857 L194,1140 Q194,1150 204,1150 L370,1150" fill="none" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Yes branch (down) — HIT -->
+  <line x1="500" y1="880" x2="500" y2="900" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="510" y="893" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#22aa44" font-weight="bold">YES</text>
+
+  <!-- HIT box -->
+  <rect x="380" y="905" width="240" height="35" rx="6" fill="#cc2222" fill-opacity="0.2" stroke="#cc2222" stroke-width="2"/>
+  <text x="500" y="920" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="bold" fill="#ff4444">HIT!</text>
+  <text x="500" y="934" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#ddd">Difference = damage tokens</text>
+
+  <!-- Arrow -->
+  <line x1="500" y1="940" x2="500" y2="958" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ==================== DAMAGE ==================== -->
+  <rect x="310" y="963" width="380" height="35" rx="8" fill="#881111" fill-opacity="0.2" stroke="#881111" stroke-width="2"/>
+  <text x="500" y="985" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="bold" fill="#cc4444">Apply damage tokens to hit soldiers</text>
+  <text x="308" y="978" text-anchor="end" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#881111" font-weight="bold">DAMAGE</text>
+
+  <!-- Arrow -->
+  <line x1="500" y1="998" x2="500" y2="1015" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Decision: 4+ damage? -->
+  <polygon points="500,1020 615,1050 500,1080 385,1050" fill="#1a1a2a" stroke="#881111" stroke-width="2"/>
+  <text x="500" y="1048" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="bold" fill="#ff6666">4+ damage on</text>
+  <text x="500" y="1062" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="bold" fill="#ff6666">any soldier?</text>
+
+  <!-- No branch (left) — Damage persists -->
+  <line x1="385" y1="1050" x2="280" y2="1050" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="340" y="1043" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#cc3333" font-weight="bold">NO</text>
+  <rect x="172" y="1035" width="106" height="30" rx="6" fill="#333" stroke="#888" stroke-width="1.5"/>
+  <text x="225" y="1055" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#aaa">Damage persists</text>
+  <!-- Arrow from Damage persists down to counterattack -->
+  <path d="M225,1065 L225,1140 Q225,1150 235,1150 L370,1150" fill="none" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Yes branch (right) — DEATH -->
+  <line x1="615" y1="1050" x2="690" y2="1050" stroke="#cc3333" stroke-width="1.5" marker-end="url(#arrow-red)"/>
+  <text x="645" y="1043" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#22aa44" font-weight="bold">YES</text>
+
+  <!-- DEATH sub-flow -->
+  <rect x="692" y="1000" width="270" height="130" rx="8" fill="#440000" fill-opacity="0.4" stroke="#cc3333" stroke-width="2"/>
+  <text x="827" y="1020" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="bold" fill="#ff3333">☠ DEATH</text>
+  <text x="827" y="1042" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#ddd">Roll d6 for hit slot:</text>
+  <text x="827" y="1057" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#aaa">1=Head  2=Back  3=Legs</text>
+  <text x="827" y="1070" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#aaa">4–5=Chest  6=Hands</text>
+  <line x1="712" y1="1080" x2="942" y2="1080" stroke="#661111" stroke-width="1"/>
+  <text x="827" y="1095" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#ffaa66">Destroy module in hit slot</text>
+  <text x="827" y="1110" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#ccc">Owner picks 1 module → Attacker picks 1</text>
+  <text x="827" y="1123" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#ccc">→ Rest dropped as loot</text>
+
+  <!-- Arrow from DEATH down to counterattack area -->
+  <path d="M827,1130 L827,1150 Q827,1160 817,1160 L640,1160" fill="none" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== COUNTERATTACK ==================== -->
+  <!-- Decision diamond -->
+  <polygon points="500,1140 630,1175 500,1210 370,1175" fill="#1a1a2a" stroke="#cc7722" stroke-width="2"/>
+  <text x="500" y="1170" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="bold" fill="#ffcc66">Defense beat</text>
+  <text x="500" y="1184" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="bold" fill="#ffcc66">Attack by 3+?</text>
+  <text x="368" y="1168" text-anchor="end" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#cc7722" font-weight="bold">COUNTER</text>
+
+  <!-- Yes branch (right) — Loop back -->
+  <line x1="630" y1="1175" x2="720" y2="1175" stroke="#cc7722" stroke-width="1.5"/>
+  <text x="665" y="1168" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#22aa44" font-weight="bold">YES</text>
+  <rect x="722" y="1158" width="220" height="34" rx="6" fill="#cc7722" fill-opacity="0.15" stroke="#cc7722" stroke-width="1.5"/>
+  <text x="832" y="1173" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="bold" fill="#ffcc66">COUNTERATTACK!</text>
+  <text x="832" y="1186" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#aaa">Defender becomes Attacker</text>
+  <!-- Loop-back arrow going up along right edge to Step 1 -->
+  <path d="M942,1175 L970,1175 L970,314 L710,314" fill="none" stroke="#cc7722" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrow-orange)"/>
+  <text x="975" y="740" text-anchor="start" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#cc7722" transform="rotate(-90,975,740)">LOOP BACK TO STEP 1</text>
+
+  <!-- No branch (down) — Combat ends -->
+  <line x1="500" y1="1210" x2="500" y2="1240" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="490" y="1228" text-anchor="end" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#cc3333" font-weight="bold">NO</text>
+
+  <text x="500" y="1260" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#888">Combat ends</text>
+
+  <!-- ==================== END ==================== -->
+  <rect x="440" y="1270" width="120" height="36" rx="18" fill="#222" stroke="#666" stroke-width="2"/>
+  <text x="500" y="1293" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="15" font-weight="bold" fill="#ffffff">END</text>
+
+  <!-- ==================== LEGEND ==================== -->
+  <rect x="30" y="95" width="210" height="210" rx="8" fill="#111119" stroke="#333" stroke-width="1"/>
+  <text x="135" y="115" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="bold" fill="#888" letter-spacing="2">LEGEND</text>
+  <line x1="50" y1="122" x2="220" y2="122" stroke="#333" stroke-width="1"/>
+
+  <rect x="50" y="132" width="14" height="14" rx="3" fill="#cc7722" fill-opacity="0.3" stroke="#cc7722" stroke-width="1.5"/>
+  <text x="72" y="144" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#cc7722">Pre-Combat / Counter</text>
+
+  <rect x="50" y="155" width="14" height="14" rx="3" fill="#2266cc" fill-opacity="0.3" stroke="#2266cc" stroke-width="1.5"/>
+  <text x="72" y="167" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4499ff">Dice &amp; Selection</text>
+
+  <rect x="50" y="178" width="14" height="14" rx="3" fill="#cc3333" fill-opacity="0.3" stroke="#cc3333" stroke-width="1.5"/>
+  <text x="72" y="190" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#ff5555">Attacker Assigns</text>
+
+  <rect x="50" y="201" width="14" height="14" rx="3" fill="#22aa44" fill-opacity="0.3" stroke="#22aa44" stroke-width="1.5"/>
+  <text x="72" y="213" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#33dd66">Defender Aligns</text>
+
+  <rect x="50" y="224" width="14" height="14" rx="3" fill="#ccaa22" fill-opacity="0.3" stroke="#ccaa22" stroke-width="1.5"/>
+  <text x="72" y="236" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#eedd44">Equipment Bonuses</text>
+
+  <rect x="50" y="247" width="14" height="14" rx="3" fill="#8833cc" fill-opacity="0.3" stroke="#8833cc" stroke-width="1.5"/>
+  <text x="72" y="259" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#bb66ff">Conspire Cards</text>
+
+  <rect x="50" y="270" width="14" height="14" rx="3" fill="#881111" fill-opacity="0.3" stroke="#881111" stroke-width="1.5"/>
+  <text x="72" y="282" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#cc4444">Damage / Death</text>
+
+  <!-- Diamond legend entry -->
+  <polygon points="57,297 64,293 71,297 64,301" fill="#1a1a2a" stroke="#888" stroke-width="1"/>
+  <text x="78" y="301" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#aaa">Decision</text>
+</svg>

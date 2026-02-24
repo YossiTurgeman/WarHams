@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <!-- Metallic gradient for main text -->
+    <linearGradient id="metalGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8e8e8"/>
+      <stop offset="35%" stop-color="#d0d0d0"/>
+      <stop offset="50%" stop-color="#b8b8b8"/>
+      <stop offset="65%" stop-color="#c8c8c8"/>
+      <stop offset="100%" stop-color="#e0e0e0"/>
+    </linearGradient>
+
+    <!-- Subtle inner metallic shine -->
+    <linearGradient id="metalShine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a0a0a0"/>
+      <stop offset="20%" stop-color="#e8e8e8"/>
+      <stop offset="50%" stop-color="#c0c0c0"/>
+      <stop offset="80%" stop-color="#e8e8e8"/>
+      <stop offset="100%" stop-color="#a0a0a0"/>
+    </linearGradient>
+
+    <!-- Orange-red glow for accent dots -->
+    <filter id="dotGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Text shadow/glow effect -->
+    <filter id="textGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur1"/>
+      <feFlood flood-color="#ff4500" flood-opacity="0.15" result="color1"/>
+      <feComposite in="color1" in2="blur1" operator="in" result="shadow1"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur2"/>
+      <feFlood flood-color="#ffffff" flood-opacity="0.08" result="color2"/>
+      <feComposite in="color2" in2="blur2" operator="in" result="shadow2"/>
+      <feMerge>
+        <feMergeNode in="shadow1"/>
+        <feMergeNode in="shadow2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Scan line pattern -->
+    <pattern id="scanlines" patternUnits="userSpaceOnUse" width="800" height="4">
+      <rect width="800" height="2" fill="transparent"/>
+      <rect y="2" width="800" height="2" fill="rgba(255,255,255,0.02)"/>
+    </pattern>
+
+    <!-- Hex border glow -->
+    <filter id="hexGlow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Stencil cut effect via clip path -->
+    <clipPath id="stencilCuts">
+      <rect x="0" y="0" width="800" height="400"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0a0a0f"/>
+
+  <!-- Subtle radial vignette -->
+  <radialGradient id="vignette" cx="50%" cy="45%" r="60%">
+    <stop offset="0%" stop-color="#14141f" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#0a0a0f" stop-opacity="1"/>
+  </radialGradient>
+  <rect width="800" height="400" fill="url(#vignette)"/>
+
+  <!-- Scan lines overlay -->
+  <rect width="800" height="400" fill="url(#scanlines)"/>
+
+  <!-- Hexagonal frame (outer) -->
+  <polygon
+    points="80,10 720,10 780,60 780,340 720,390 80,390 20,340 20,60"
+    fill="none"
+    stroke="#ff4500"
+    stroke-width="1.5"
+    stroke-opacity="0.35"
+    filter="url(#hexGlow)"
+  />
+
+  <!-- Hexagonal frame (inner) -->
+  <polygon
+    points="86,16 714,16 772,64 772,336 714,384 86,384 28,336 28,64"
+    fill="none"
+    stroke="#c0c0c0"
+    stroke-width="0.5"
+    stroke-opacity="0.15"
+  />
+
+  <!-- Corner accent marks - top left -->
+  <line x1="80" y1="10" x2="120" y2="10" stroke="#ff4500" stroke-width="2.5" stroke-opacity="0.7"/>
+  <line x1="20" y1="60" x2="20" y2="95" stroke="#ff4500" stroke-width="2.5" stroke-opacity="0.7"/>
+  <!-- Corner accent marks - top right -->
+  <line x1="680" y1="10" x2="720" y2="10" stroke="#ff4500" stroke-width="2.5" stroke-opacity="0.7"/>
+  <line x1="780" y1="60" x2="780" y2="95" stroke="#ff4500" stroke-width="2.5" stroke-opacity="0.7"/>
+  <!-- Corner accent marks - bottom left -->
+  <line x1="80" y1="390" x2="120" y2="390" stroke="#ff4500" stroke-width="2.5" stroke-opacity="0.7"/>
+  <line x1="20" y1="305" x2="20" y2="340" stroke="#ff4500" stroke-width="2.5" stroke-opacity="0.7"/>
+  <!-- Corner accent marks - bottom right -->
+  <line x1="680" y1="390" x2="720" y2="390" stroke="#ff4500" stroke-width="2.5" stroke-opacity="0.7"/>
+  <line x1="780" y1="305" x2="780" y2="340" stroke="#ff4500" stroke-width="2.5" stroke-opacity="0.7"/>
+
+  <!-- Small decorative hexagons in corners -->
+  <polygon points="60,50 70,45 80,50 80,60 70,65 60,60" fill="none" stroke="#ff4500" stroke-width="0.8" stroke-opacity="0.3"/>
+  <polygon points="720,50 730,45 740,50 740,60 730,65 720,60" fill="none" stroke="#ff4500" stroke-width="0.8" stroke-opacity="0.3"/>
+  <polygon points="60,340 70,335 80,340 80,350 70,355 60,350" fill="none" stroke="#ff4500" stroke-width="0.8" stroke-opacity="0.3"/>
+  <polygon points="720,340 730,335 740,340 740,350 730,355 720,350" fill="none" stroke="#ff4500" stroke-width="0.8" stroke-opacity="0.3"/>
+
+  <!-- Horizontal decorative lines flanking title area -->
+  <line x1="60" y1="120" x2="200" y2="120" stroke="#c0c0c0" stroke-width="0.5" stroke-opacity="0.2"/>
+  <line x1="600" y1="120" x2="740" y2="120" stroke="#c0c0c0" stroke-width="0.5" stroke-opacity="0.2"/>
+  <line x1="60" y1="260" x2="200" y2="260" stroke="#c0c0c0" stroke-width="0.5" stroke-opacity="0.2"/>
+  <line x1="600" y1="260" x2="740" y2="260" stroke="#c0c0c0" stroke-width="0.5" stroke-opacity="0.2"/>
+
+  <!-- Small angular tick marks -->
+  <polyline points="195,115 200,120 195,125" fill="none" stroke="#c0c0c0" stroke-width="0.5" stroke-opacity="0.25"/>
+  <polyline points="605,115 600,120 605,125" fill="none" stroke="#c0c0c0" stroke-width="0.5" stroke-opacity="0.25"/>
+  <polyline points="195,255 200,260 195,265" fill="none" stroke="#c0c0c0" stroke-width="0.5" stroke-opacity="0.25"/>
+  <polyline points="605,255 600,260 605,265" fill="none" stroke="#c0c0c0" stroke-width="0.5" stroke-opacity="0.25"/>
+
+  <!-- ==================== MAIN TITLE ==================== -->
+  <!-- "W" -->
+  <text x="128" y="210" font-family="'Impact','Arial Black','Helvetica Neue',sans-serif" font-size="96" font-weight="900"
+        fill="url(#metalGrad)" filter="url(#textGlow)" letter-spacing="2" text-anchor="middle"
+        style="text-transform:uppercase">W</text>
+
+  <!-- dot after W -->
+  <circle cx="170" cy="200" r="6" fill="#ff4500" filter="url(#dotGlow)"/>
+
+  <!-- "A" -->
+  <text x="212" y="210" font-family="'Impact','Arial Black','Helvetica Neue',sans-serif" font-size="96" font-weight="900"
+        fill="url(#metalGrad)" filter="url(#textGlow)" letter-spacing="2" text-anchor="middle">A</text>
+
+  <!-- dot after A -->
+  <circle cx="254" cy="200" r="6" fill="#ff4500" filter="url(#dotGlow)"/>
+
+  <!-- "R" -->
+  <text x="296" y="210" font-family="'Impact','Arial Black','Helvetica Neue',sans-serif" font-size="96" font-weight="900"
+        fill="url(#metalGrad)" filter="url(#textGlow)" letter-spacing="2" text-anchor="middle">R</text>
+
+  <!-- Space between WAR and HAMS -->
+
+  <!-- "H" -->
+  <text x="400" y="210" font-family="'Impact','Arial Black','Helvetica Neue',sans-serif" font-size="96" font-weight="900"
+        fill="url(#metalGrad)" filter="url(#textGlow)" letter-spacing="2" text-anchor="middle">H</text>
+
+  <!-- dot after H -->
+  <circle cx="442" cy="200" r="6" fill="#ff4500" filter="url(#dotGlow)"/>
+
+  <!-- "A" -->
+  <text x="484" y="210" font-family="'Impact','Arial Black','Helvetica Neue',sans-serif" font-size="96" font-weight="900"
+        fill="url(#metalGrad)" filter="url(#textGlow)" letter-spacing="2" text-anchor="middle">A</text>
+
+  <!-- dot after A -->
+  <circle cx="526" cy="200" r="6" fill="#ff4500" filter="url(#dotGlow)"/>
+
+  <!-- "M" -->
+  <text x="576" y="210" font-family="'Impact','Arial Black','Helvetica Neue',sans-serif" font-size="96" font-weight="900"
+        fill="url(#metalGrad)" filter="url(#textGlow)" letter-spacing="2" text-anchor="middle">M</text>
+
+  <!-- dot after M -->
+  <circle cx="622" cy="200" r="6" fill="#ff4500" filter="url(#dotGlow)"/>
+
+  <!-- "S" -->
+  <text x="664" y="210" font-family="'Impact','Arial Black','Helvetica Neue',sans-serif" font-size="96" font-weight="900"
+        fill="url(#metalGrad)" filter="url(#textGlow)" letter-spacing="2" text-anchor="middle">S</text>
+
+  <!-- Stencil cut lines through letters (military stencil effect) -->
+  <g stroke="#0a0a0f" stroke-width="2.5" stroke-opacity="0.6">
+    <!-- Horizontal cuts through each letter at midpoint -->
+    <line x1="97" y1="185" x2="158" y2="185"/>
+    <line x1="182" y1="185" x2="242" y2="185"/>
+    <line x1="266" y1="185" x2="326" y2="185"/>
+    <line x1="370" y1="185" x2="430" y2="185"/>
+    <line x1="454" y1="185" x2="514" y2="185"/>
+    <line x1="541" y1="185" x2="611" y2="185"/>
+    <line x1="634" y1="185" x2="694" y2="185"/>
+  </g>
+
+  <!-- ==================== SUBTITLE ==================== -->
+  <!-- Thin rule line above subtitle -->
+  <line x1="250" y1="240" x2="550" y2="240" stroke="#c0c0c0" stroke-width="0.8" stroke-opacity="0.4"/>
+  <!-- Small diamond accent in center of upper rule -->
+  <polygon points="400,236 404,240 400,244 396,240" fill="#ff4500" fill-opacity="0.6"/>
+
+  <text x="400" y="275" font-family="'Arial','Helvetica Neue',sans-serif" font-size="22" font-weight="400"
+        fill="#c0c0c0" text-anchor="middle" letter-spacing="8" fill-opacity="0.85"
+        style="text-transform:uppercase">THE BATTLE FOR PLANET X</text>
+
+  <!-- Thin rule line below subtitle -->
+  <line x1="250" y1="290" x2="550" y2="290" stroke="#c0c0c0" stroke-width="0.8" stroke-opacity="0.4"/>
+  <!-- Small diamond accent in center of lower rule -->
+  <polygon points="400,286 404,290 400,294 396,290" fill="#ff4500" fill-opacity="0.6"/>
+
+  <!-- ==================== ADDITIONAL DETAILS ==================== -->
+
+  <!-- Small top text / classification marking -->
+  <text x="400" y="80" font-family="'Courier New',monospace" font-size="10" fill="#ff4500" fill-opacity="0.4"
+        text-anchor="middle" letter-spacing="6">CLASSIFIED // SECTOR 7-GAMMA</text>
+
+  <!-- Bottom designation -->
+  <text x="400" y="345" font-family="'Courier New',monospace" font-size="9" fill="#c0c0c0" fill-opacity="0.25"
+        text-anchor="middle" letter-spacing="4">STRATEGIC TABLETOP OPERATIONS</text>
+
+  <!-- Tiny hex grid pattern in background (subtle texture) -->
+  <g stroke="#ffffff" stroke-width="0.3" stroke-opacity="0.03" fill="none">
+    <polygon points="385,90 395,85 405,90 405,100 395,105 385,100"/>
+    <polygon points="405,90 415,85 425,90 425,100 415,105 405,100"/>
+    <polygon points="365,90 375,85 385,90 385,100 375,105 365,100"/>
+    <polygon points="375,100 385,95 395,100 395,110 385,115 375,110"/>
+    <polygon points="395,100 405,95 415,100 415,110 405,115 395,110"/>
+    <polygon points="415,100 425,95 435,100 435,110 425,115 415,110"/>
+    <polygon points="365,100 375,95 385,100 385,110 375,115 365,110"/>
+
+    <polygon points="385,300 395,295 405,300 405,310 395,315 385,310"/>
+    <polygon points="405,300 415,295 425,300 425,310 415,315 405,310"/>
+    <polygon points="365,300 375,295 385,300 385,310 375,315 365,310"/>
+    <polygon points="375,310 385,305 395,310 395,320 385,325 375,320"/>
+    <polygon points="395,310 405,305 415,310 415,320 405,325 395,320"/>
+    <polygon points="415,310 425,305 435,310 435,320 425,325 415,320"/>
+    <polygon points="365,310 375,305 385,310 385,320 375,325 365,320"/>
+  </g>
+
+  <!-- Final scan-line overlay on top of everything for cohesion -->
+  <rect width="800" height="400" fill="url(#scanlines)" opacity="0.5"/>
+</svg>

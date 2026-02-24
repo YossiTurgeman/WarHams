@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 352" width="252" height="352">
+  <defs>
+    <!-- Shadow/intrigue pattern -->
+    <pattern id="intriguePattern" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="24" x2="24" y2="0" stroke="#1a1030" stroke-width="0.5"/>
+      <line x1="0" y1="12" x2="12" y2="0" stroke="#1a1030" stroke-width="0.3"/>
+      <line x1="12" y1="24" x2="24" y2="12" stroke="#1a1030" stroke-width="0.3"/>
+    </pattern>
+    <!-- Category pill badge -->
+    <rect id="categoryPill" x="-40" y="-9" width="80" height="18" rx="9" fill="#1a1030" stroke="#6633aa" stroke-width="1"/>
+  </defs>
+
+  <!-- Card background -->
+  <rect x="2" y="2" width="248" height="348" rx="8" ry="8" fill="#12091f"/>
+  <!-- Intrigue pattern overlay -->
+  <rect x="2" y="2" width="248" height="348" rx="8" ry="8" fill="url(#intriguePattern)"/>
+  <!-- Border -->
+  <rect x="2" y="2" width="248" height="348" rx="8" ry="8" fill="none" stroke="#6633aa" stroke-width="2"/>
+
+  <!-- Color accent strip at top -->
+  <rect x="10" y="4" width="232" height="3" rx="1" fill="#6633aa"/>
+
+  <!-- "CLASSIFIED" watermark diagonal -->
+  <text x="126" y="200" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="32" fill="#1a1030" letter-spacing="4" transform="rotate(-30, 126, 200)" opacity="0.6">CLASSIFIED</text>
+
+  <!-- === TOP AREA === -->
+
+  <!-- Card name -->
+  <text x="126" y="28" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="13" fill="#ffffff">[CARD NAME]</text>
+
+  <!-- Cost area (top-right) -->
+  <g transform="translate(224, 20)">
+    <!-- Cost circle placeholder -->
+    <circle cx="0" cy="0" r="12" fill="#1a1030" stroke="#6633aa" stroke-width="1"/>
+    <text x="0" y="4" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="9" fill="#cccccc">?</text>
+  </g>
+  <!-- "FREE" badge alternative (hidden by default, show instead of cost circle) -->
+  <!--
+  <g transform="translate(214, 20)">
+    <rect x="-16" y="-9" width="32" height="18" rx="4" fill="#339933" stroke="#44bb44" stroke-width="0.8"/>
+    <text x="0" y="4" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="8" fill="#ffffff">FREE</text>
+  </g>
+  -->
+
+  <!-- === CENTER AREA === -->
+
+  <!-- Art placeholder -->
+  <rect x="30" y="46" width="160" height="110" rx="4" fill="none" stroke="#6633aa" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="110" y="105" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6633aa">[ARTWORK]</text>
+
+  <!-- Effect text area (larger than BAC) -->
+  <rect x="16" y="168" width="220" height="130" rx="4" fill="#0e0718" stroke="#2a1848" stroke-width="1"/>
+  <text x="126" y="196" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#cccccc">[EFFECT TEXT]</text>
+  <text x="126" y="212" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#cccccc">[Line 2]</text>
+  <text x="126" y="228" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#cccccc">[Line 3]</text>
+  <text x="126" y="244" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#cccccc">[Line 4]</text>
+  <text x="126" y="260" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#cccccc">[Line 5]</text>
+
+  <!-- === BOTTOM AREA === -->
+
+  <!-- Conspire eye icon (bottom-left) -->
+  <g transform="translate(30, 320)">
+    <!-- Eye shape -->
+    <ellipse cx="0" cy="0" rx="10" ry="6" fill="none" stroke="#6633aa" stroke-width="1.2"/>
+    <circle cx="0" cy="0" r="3" fill="#6633aa"/>
+    <circle cx="0" cy="0" r="1.2" fill="#ffffff"/>
+  </g>
+
+  <!-- Category indicator (bottom-center) -->
+  <g transform="translate(126, 320)">
+    <use href="#categoryPill"/>
+    <text x="0" y="4" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="7" fill="#bb88ee" letter-spacing="1">[CATEGORY]</text>
+  </g>
+
+  <!-- Card type label -->
+  <text x="126" y="348" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#4a2a6e">CONSPIRE — POLITICAL MANEUVER CARD</text>
+</svg>

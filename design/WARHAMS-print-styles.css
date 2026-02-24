@@ -1,0 +1,165 @@
+/* W.A.R H.A.M.S Rulebook - Print PDF Stylesheet */
+
+@page {
+  size: A4;
+  margin: 20mm;
+}
+
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 1.5;
+  color: #1a1a2e;
+  max-width: 100%;
+}
+
+/* Page breaks */
+.page-break {
+  page-break-after: always;
+  break-after: page;
+}
+
+/* Headings */
+h1 {
+  font-size: 24pt;
+  color: #0a0a0f;
+  border-bottom: 3px solid #cc4444;
+  padding-bottom: 8px;
+  margin-top: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 16pt;
+  color: #1a1a2e;
+  border-bottom: 2px solid #334455;
+  padding-bottom: 5px;
+  margin-top: 24px;
+  page-break-after: avoid;
+}
+
+h3 {
+  font-size: 13pt;
+  color: #223344;
+  margin-top: 18px;
+  page-break-after: avoid;
+}
+
+h4 {
+  font-size: 11pt;
+  color: #334455;
+  margin-top: 14px;
+  page-break-after: avoid;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 9pt;
+  page-break-inside: avoid;
+}
+
+th {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  padding: 6px 8px;
+  text-align: left;
+  font-weight: bold;
+  border: 1px solid #334455;
+}
+
+td {
+  padding: 5px 8px;
+  border: 1px solid #cccccc;
+  vertical-align: top;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f6f8;
+}
+
+/* Blockquotes (tips, examples, warnings) */
+blockquote {
+  background-color: #f0f3f7;
+  border-left: 4px solid #4488cc;
+  padding: 8px 14px;
+  margin: 10px 0;
+  font-size: 9pt;
+  color: #334455;
+  page-break-inside: avoid;
+}
+
+blockquote blockquote {
+  border-left-color: #cc7722;
+}
+
+/* Bold emphasis */
+strong {
+  color: #0a0a2e;
+}
+
+/* Code/abbreviations */
+code {
+  background-color: #eef0f4;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 9pt;
+  color: #cc3333;
+}
+
+/* Lists */
+ul, ol {
+  margin: 6px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+/* Horizontal rules */
+hr {
+  border: none;
+  border-top: 1px solid #cccccc;
+  margin: 16px 0;
+}
+
+/* Links (for PDF, just show as text) */
+a {
+  color: #2266cc;
+  text-decoration: none;
+}
+
+/* Special emphasis for game terms */
+em {
+  font-style: italic;
+  color: #445566;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Paragraphs */
+p {
+  margin: 6px 0;
+  orphans: 3;
+  widows: 3;
+}
+
+/* Prevent page breaks inside key elements */
+blockquote, table, h2, h3, h4 {
+  page-break-inside: avoid;
+}
+
+/* First page styling */
+h1:first-of-type {
+  margin-top: 40px;
+  font-size: 28pt;
+}

@@ -1,0 +1,409 @@
+{
+  "game": {
+    "name": "W.A.R H.A.M.S",
+    "fullName": "The Battle for Planet X",
+    "players": "2-4",
+    "theme": "Sci-fi corporate military conquest on alien planets",
+    "tagline": "Competing corporate armies fight for planetary dominance through resource control, tactical combat, and political conspiring"
+  },
+  "victory_conditions": [
+    {
+      "id": "spaceports",
+      "name": "Spaceport Domination",
+      "description": "Control 4 of 6 space ports — HQ sends a full battalion, rivals can't resupply and flee off-world",
+      "requirement": "Control 4 of the 6 spaceport landing zones"
+    },
+    {
+      "id": "military",
+      "name": "Military Supremacy",
+      "description": "Have 4 full squads of 7 soldiers — competition's HQs pull them back",
+      "requirement": "4 squads with 7 soldiers each (28 total soldiers)"
+    },
+    {
+      "id": "dominance",
+      "name": "Dominance Victory",
+      "description": "Local population sides with you — you become sovereign",
+      "requirement": "Accumulate 50 Dominance Points from equipped BACs"
+    }
+  ],
+  "board": {
+    "total_hexes": 61,
+    "hex_breakdown": {
+      "resource_tiles": 15,
+      "separatist_bases": 3,
+      "spaceport_drop_zones": 6,
+      "terrain_tiles": 37
+    },
+    "resource_tiles_detail": {
+      "oil_rigs": 3,
+      "power_plants": 3,
+      "factories": 3,
+      "radar_dishes": 3,
+      "cities_villages": 3
+    },
+    "number_tokens": {
+      "1": 2, "2": 2, "3": 3, "4": 3, "5": 3, "6": 3,
+      "total": 16,
+      "note": "Numbers 1 & 2 are scarcer (2 tokens each), 3-6 have 3 tokens each. Placed on 15 resource-producing hexes only (one hex gets 2 tokens). Separatist Bases and Spaceports have printed numbers on the tile."
+    },
+    "shape": "Circular planet frame (5 interlocking cardboard puzzle pieces), 61 hexes fill the entire interior. Edge connection points (a, b, c, etc.) enable board wrapping — opposite edges are adjacent."
+  },
+  "resources": [
+    {
+      "name": "Oil",
+      "color": "Black",
+      "tile": "Oil Rig",
+      "token": "Oil Drum (black on white, black border)",
+      "card_depiction": "Fuel"
+    },
+    {
+      "name": "Electricity",
+      "color": "Yellow",
+      "tile": "Power Plant",
+      "token": "Lightning Bolt (yellow on white, yellow border)",
+      "card_depiction": "Electricity Bolt"
+    },
+    {
+      "name": "Intelligence",
+      "color": "Blue",
+      "tile": "Radar Dish",
+      "token": "Transmitting Wave (blue on white, blue border)",
+      "card_depiction": "Intel Operator Room"
+    },
+    {
+      "name": "Industry",
+      "color": "Red",
+      "tile": "Factory",
+      "token": "Hammer (red on white, red border)",
+      "card_depiction": "Industry Factory"
+    },
+    {
+      "name": "Local Favor",
+      "color": "Green",
+      "tile": "City/Village",
+      "token": "Recruit (green on white, green border)",
+      "card_depiction": "Militia Base"
+    }
+  ],
+  "special_tiles": [
+    {
+      "name": "Separatist Base",
+      "color": "Grey",
+      "count": 3,
+      "printed_numbers": [2, 4, 6],
+      "mechanics": "Each base has a printed number (2, 4, or 6). Spawns 3 separatists when that number is rolled (if insufficient minis remain, spawn as many as possible — excess lost). Once captured, stops natural spawning. Conquering requires defeating 7 separatists. Controller may Instigate Uprising (Phase 7): pay 3 Local Favor to spawn 3 Separatists at any unconquered base (once per round per conquered base). All 3 bases captured: produce 1 Local Favor when number rolled."
+    },
+    {
+      "name": "Spaceport Drop Zone",
+      "color": "Purple",
+      "count": 6,
+      "printed_numbers": [1, 2, 3, 4, 5, 6],
+      "mechanics": "Each spaceport has a printed number (1–6). BACs land here on doubles matching the printed number. Can be captured for passive BAC collection."
+    }
+  ],
+  "turn_phases": [
+    { "phase": 1, "name": "Resource Production", "description": "Roll 3d6, add resource tokens to corresponding hex numbers. Doubles = BAC from Planet Bound Area to matching spaceport. Triples = active player chooses spaceport placement + may move 1 Planet Bound BAC." },
+    { "phase": 2, "name": "Movement", "description": "Move squads 1 hex (2 with Jump Jets). Each soldier moves independently but must stay within 2 hexes of at least one squadmate (squad coherency). Skip movement to Conspire instead." },
+    { "phase": 3, "name": "Combat", "description": "Initiate combat with enemies within 1-2 hexes. See combat system." },
+    { "phase": 4, "name": "Resource Gathering", "description": "Pick up resources from same/adjacent hex. Winner picks first. BEAR card allows +1 pickup." },
+    { "phase": 5, "name": "Purchase & Equip", "description": "Buy upgrades with resources. Each squad can hold X armaments where X = number of soldiers." },
+    { "phase": 6, "name": "Trade", "description": "Trade resources with other players." },
+    { "phase": 7, "name": "Move Separatists", "description": "Instigate Uprising first (conquered base owners may pay 3 Local Favor to spawn 3 Separatists at an unconquered base, once per base per round). Then separatists: consume resources, move toward produced resources, or roll for random direction." }
+  ],
+  "combat_system": {
+    "attack_defense_rolls": "Each player rolls 1d6 per engaged soldier (within 2 hexes of enemy). Soldiers outside range sit out. Attacker assigns dice to defender's soldiers. Defender aligns defense dice.",
+    "more_soldiers_advantage": "Extra dice are rolled but only best are chosen, giving advantage",
+    "engagement_range": "Only soldiers within 2 hexes of at least one enemy soldier in the target squad participate. Extended-range weapons (B.A.S.R, S.L.I.M.E) count as engaged from their weapon range.",
+    "bonuses": "Add equipment bonuses after initial roll",
+    "card_play": "Defender plays combat cards first, then attacker",
+    "damage_resolution": "Difference in dice = damage tokens. Soldier takes 3 damage max, 4th = death.",
+    "counterattack": "Defending blocks with +3 or more difference trigger counterattack (defender becomes attacker)",
+    "module_activation": {
+      "combat_modules": "Activate during combat resolution at Step 3 (equipment bonuses). E.g., N.I.N.J.A.",
+      "field_modules": "Activate during Phase 5 (Purchase & Equip). E.g., P.L.A.S.T.E.R, D.U.D.S.",
+      "untapping": "Phase 5, at required location (City/Spaceport), pay recharge cost.",
+      "passive": "Always active, no activation needed (H.C.A.R, S.A.P, etc.)"
+    },
+    "death": {
+      "lethal_hit_roll": "d6 determines which slot was hit (1=head, 2=backpack, 3=legs, 4-5=chest, 6=hands)",
+      "destroyed_module": "Module in hit slot is destroyed (removed from game)",
+      "salvage": "Owner picks 1 remaining module, attacker picks 1, rest left on hex as salvage (picked up for free by any soldier)"
+    }
+  },
+  "soldier_slots": {
+    "1": "Head",
+    "2": "Backpack",
+    "3": "Legs",
+    "4-5": "Chest",
+    "6": "Hands"
+  },
+  "squad_details": {
+    "starting_squads": 2,
+    "starting_soldiers_per_squad": 5,
+    "max_soldiers_per_squad": 7,
+    "max_squads": 4,
+    "damage_capacity": 3,
+    "new_soldier_cost": "1 Local Favor + 1 Oil + 1 Industry + 1 Electricity (must be in/near city)",
+    "new_squad_cost": "5x soldier cost (minimum 5 soldiers)"
+  },
+  "squad_coherency": {
+    "max_spread": 2,
+    "rule": "Every soldier must remain within 2 hexes of at least one other squadmate at all times",
+    "exception": "J.J (Jump Jets) may override coherency. Disconnected soldiers fight alone (own dice only) and cannot benefit from Squad-level BAC effects. May rejoin by moving back within 2 hexes."
+  },
+  "basic_armament_cards": [
+    {
+      "abbr": "S.A.P Chest", "name": "Standard Armor Plating Chest Piece", "slot": "Chest",
+      "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 5,
+      "text": "Gain +1 for one defense die."
+    },
+    {
+      "abbr": "S.A.P Helmet", "name": "Standard Armor Plating Helmet", "slot": "Head",
+      "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 5,
+      "text": "Gain +1 for one defense die."
+    },
+    {
+      "abbr": "S.A.P Legs", "name": "Standard Armor Plating Legs", "slot": "Legs",
+      "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 5,
+      "text": "Gain +1 for one defense die."
+    },
+    {
+      "abbr": "J.J", "name": "Jump Jets", "slot": "Legs",
+      "cost": { "Industry": 1, "Intelligence": 1 }, "dp": 2, "copies": 5,
+      "text": "This soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate."
+    },
+    {
+      "abbr": "S.H.A.D", "name": "Sensory Helmet, Advisory Drone", "slot": "Head",
+      "cost": { "Intelligence": 2, "Electricity": 1 }, "dp": 4, "copies": 5,
+      "text": "If attacked, before combat starts, attacking player must reveal his conspire cards to you."
+    },
+    {
+      "abbr": "H.C.A.R", "name": "Heavy Caliber Assault Rifle", "slot": "Hands",
+      "cost": { "Industry": 1, "Electricity": 1 }, "dp": 2, "copies": 5,
+      "text": "Add +1 to this soldier's attack die."
+    },
+    {
+      "abbr": "P.A.E.H", "name": "Personal Accuracy Enhancement Helmet", "slot": "Head",
+      "cost": { "Local Favor": 1, "Electricity": 1, "Intelligence": 1 }, "dp": 4, "copies": 5,
+      "text": "Gain +1 to your attack die if you also carry an HCAR."
+    },
+    {
+      "abbr": "B.A.S.R", "name": "Bolt Action Sniper Rifle", "slot": "Hands",
+      "cost": { "Electricity": 1, "Intelligence": 1, "Industry": 1 }, "dp": 4, "copies": 5,
+      "text": "On your turn, before combat, throw 2 dice and choose a target soldier up to 2 hexes away. Target defends normally. Attacking soldier skips normal combat. While defending: -1 to defense die."
+    },
+    {
+      "abbr": "S.L.I.M.E", "name": "Squad Light Interoperable Mortar Encampment", "slot": "Backpack",
+      "cost": { "Industry": 1, "Oil": 2, "Local Favor": 2 }, "dp": 5, "copies": 5,
+      "text": "Choose 2 soldiers to carry SLIME. Throw 4 dice, target squad up to 3 hexes away. Target defends normally. Attacking soldiers skip normal combat. Defenders get -1 to all defense dice.",
+      "special": "Requires 2 soldiers. Civilian damage penalty on Local Favor hexes."
+    },
+    {
+      "abbr": "B.E.A.R", "name": "Battlefield Extraction Airlift Rover", "slot": "Chest",
+      "cost": { "Industry": 1, "Oil": 1, "Local Favor": 1, "Intelligence": 1, "Electricity": 1 }, "dp": 3, "copies": 5,
+      "text": "During resource gathering, after picking your resource, choose 1 more resource token of any kind."
+    },
+    {
+      "abbr": "P.L.A.S.T.E.R", "name": "Personal Lasting Aid Surgical Treatment Enhancement Robot", "slot": "Chest",
+      "cost": { "Electricity": 1, "Local Favor": 1 }, "dp": 2, "copies": 5,
+      "text": "Remove up to 2 damage tokens. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap."
+    },
+    {
+      "abbr": "N.I.N.J.A", "name": "Nir Ion Nullifier Jammer Aid", "slot": "Legs",
+      "cost": { "Intelligence": 1, "Electricity": 1 }, "dp": 2, "copies": 5,
+      "text": "Add +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap."
+    },
+    {
+      "abbr": "D.U.D.S", "name": "Deployable Unital Defense System", "slot": "Backpack",
+      "cost": { "Local Favor": 1, "Oil": 1, "Electricity": 1 }, "dp": 4, "copies": 5,
+      "text": "Place a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. Flip this card (one-use)."
+    },
+    {
+      "abbr": "L.P.M", "name": "Laser Pointer Marker", "slot": "Backpack",
+      "cost": { "Electricity": 1, "Local Favor": 1, "Intelligence": 1 }, "dp": 3, "copies": 5,
+      "text": "Other soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes."
+    },
+    {
+      "abbr": "R.S.G", "name": "Repeating Shotgun", "slot": "Hands",
+      "cost": { "Electricity": 1, "Local Favor": 1 }, "dp": 2, "copies": 5,
+      "text": "If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1."
+    },
+    {
+      "abbr": "P.C.S.M.G", "name": "Projectile Correcting Sub Machine Gun", "slot": "Hands",
+      "cost": { "Electricity": 1, "Industry": 1, "Intelligence": 1 }, "dp": 3, "copies": 5,
+      "text": "If target squad is up to 1 hex away, when combat starts, choose a target, roll 2d6, choose the best for this combat."
+    },
+    {
+      "abbr": "C.A.P Chest", "name": "Custom Armor Plating Chest", "slot": "Chest",
+      "cost": { "SAP_Chest": 1, "Local Favor": 1, "Industry": 1, "Oil": 1 }, "dp": 4, "copies": 5,
+      "text": "Gain +2 for one defense die.",
+      "upgrade_from": "S.A.P Chest"
+    },
+    {
+      "abbr": "C.A.P Head", "name": "Custom Armor Plating Helmet", "slot": "Head",
+      "cost": { "SAP_Helmet": 1, "Local Favor": 1, "Intelligence": 1, "Oil": 1 }, "dp": 4, "copies": 5,
+      "text": "Gain +2 for one defense die.",
+      "upgrade_from": "S.A.P Helmet"
+    },
+    {
+      "abbr": "C.A.P Legs", "name": "Custom Armor Plating Legs", "slot": "Legs",
+      "cost": { "SAP_Legs": 1, "Local Favor": 1, "Electricity": 1, "Oil": 1 }, "dp": 4, "copies": 5,
+      "text": "Gain +2 for one defense die.",
+      "upgrade_from": "S.A.P Legs"
+    },
+    {
+      "abbr": "T.I.L.T.S", "name": "Tactical Ion Team Link Shield", "slot": "Backpack",
+      "cost": { "Electricity": 1, "Industry": 1, "Intelligence": 2 }, "dp": 5, "copies": 5,
+      "text": "Pay cost once, choose X soldiers in squad — all get TILTS backpack free. While defending, swap attacker's dice between TILTS soldiers. No other backpack allowed with TILTS."
+    }
+  ],
+  "conspire_cards": [
+    {
+      "name": "Deal with Local Militia", "copies": 3, "timing": "Tactical",
+      "cost": { "Local Favor": 3 },
+      "text": "Choose a hex up to 2 hexes from your soldier. Spawn 3 local militia to attack a nearby enemy immediately. Militia have -1 to all dice and disperse after attack."
+    },
+    {
+      "name": "A Rough Night", "copies": 3, "timing": "Tactical",
+      "cost": { "Local Favor": 1, "Intelligence": 2 },
+      "text": "Choose a squad anywhere on the board. Immobilized AND -1 to combat rolls for next turn."
+    },
+    {
+      "name": "Traveling Med Bay", "copies": 3, "timing": "Tactical",
+      "cost": { "Any": "X (X<=3)" },
+      "text": "Exchange any 1 resource to heal 1 damage token. Up to 3 damage tokens."
+    },
+    {
+      "name": "Deal with a Local Representative", "copies": 3, "timing": "Tactical",
+      "cost": { "Any": 1 },
+      "text": "Conspire again, keep 2 conspire cards."
+    },
+    {
+      "name": "Abandoned Satellite Control Station", "copies": 3, "timing": "Tactical",
+      "cost": { "Electricity": 1 },
+      "text": "Exchange 1 Electricity for 3 Intelligence."
+    },
+    {
+      "name": "Build a Wind Farm", "copies": 3, "timing": "Tactical",
+      "cost": { "Industry": 1 },
+      "text": "Exchange 1 Industry for 3 Electricity."
+    },
+    {
+      "name": "Raid an Oil Cache", "copies": 3, "timing": "Tactical",
+      "cost": { "Intelligence": 1 },
+      "text": "Exchange 1 Intelligence for 3 Oil."
+    },
+    {
+      "name": "Factory Takeover", "copies": 3, "timing": "Tactical",
+      "cost": { "Local Favor": 1 },
+      "text": "Exchange 1 Local Favor for 3 Industry."
+    },
+    {
+      "name": "Build a Follower Camp", "copies": 3, "timing": "Tactical",
+      "cost": { "Industry": 1 },
+      "text": "Exchange 1 Industry for 3 Local Favor."
+    },
+    {
+      "name": "Hack a PortNet Relay", "copies": 3, "timing": "Tactical",
+      "cost": { "Intelligence": 1 },
+      "text": "Take 1 open card in spaceport deck and switch it with another."
+    },
+    {
+      "name": "Recruit Eager Volunteers", "copies": 3, "timing": "Tactical",
+      "cost": "Free",
+      "text": "Gain 1 Local Favor. Roll 1d6: on 5-6, gain another for any 1 resource."
+    },
+    {
+      "name": "Scout Ahead", "copies": 3, "timing": "Tactical",
+      "cost": "Free",
+      "text": "Gain 1 Intelligence. Roll 1d6: on 5-6, gain another for any 1 resource."
+    },
+    {
+      "name": "Tap into Oil Reserves", "copies": 3, "timing": "Tactical",
+      "cost": "Free",
+      "text": "Gain 1 Oil. Roll 1d6: on 5-6, gain another for any 1 resource."
+    },
+    {
+      "name": "Proper Planning", "copies": 3, "timing": "Tactical",
+      "cost": "Free",
+      "text": "Gain 1 Industry. Roll 1d6: on 5-6, gain another for any 1 resource."
+    },
+    {
+      "name": "Tap into the Local Power Grid", "copies": 3, "timing": "Tactical",
+      "cost": "Free",
+      "text": "Gain 1 Electricity. Roll 1d6: on 5-6, gain another for any 1 resource."
+    },
+    {
+      "name": "Guerrilla Warfare", "copies": 3, "timing": "Combat",
+      "cost": { "Local Favor": 1 },
+      "text": "Add 1d6 die to an attack combat roll of your choosing."
+    },
+    {
+      "name": "Defender Instant Shield", "copies": 3, "timing": "Combat",
+      "cost": { "Oil": 1 },
+      "text": "Add 1d6 to a defensive combat roll of your choosing."
+    },
+    {
+      "name": "Old School RPG", "copies": 3, "timing": "Combat",
+      "cost": "Free",
+      "text": "Add +1 to an attack combat roll."
+    },
+    {
+      "name": "One Pulse Barrier", "copies": 3, "timing": "Combat",
+      "cost": "Free",
+      "text": "Add +1 to a defense combat roll."
+    },
+    {
+      "name": "Knowledge is Power", "copies": 3, "timing": "Tactical",
+      "cost": "Free",
+      "text": "If you control 2/3 of Intelligence-producing tiles, gain 2 BACs from spaceport deck.",
+      "condition": "Control 2+ Intelligence tiles"
+    },
+    {
+      "name": "Civilian Goods Transport", "copies": 3, "timing": "Tactical",
+      "cost": "Free",
+      "text": "If you control 2/3 of Local Favor-producing tiles, gain any 4 resource tokens.",
+      "condition": "Control 2+ Local Favor tiles"
+    },
+    {
+      "name": "Black Gold Syndicate", "copies": 3, "timing": "Tactical",
+      "cost": "Free",
+      "text": "If you control 2/3 of Oil-producing tiles, gain 2 Conspire cards.",
+      "condition": "Control 2+ Oil tiles"
+    },
+    {
+      "name": "At the Cover of Darkness", "copies": 3, "timing": "Tactical",
+      "cost": "Free",
+      "text": "If you control 2/3 of Electricity-producing tiles, choose a player and steal: (1) 2 random resource tokens, (2) 1 random Conspire card, or (3) 1 random BAC from their hand.",
+      "condition": "Control 2+ Electricity tiles"
+    },
+    {
+      "name": "Factory Cost Savings", "copies": 3, "timing": "Tactical",
+      "cost": "Free",
+      "text": "If you control 2/3 of Industry-producing tiles, play a BAC without paying cost for 2 soldiers. May pay cost for the rest.",
+      "condition": "Control 2+ Industry tiles"
+    }
+  ],
+  "deck_counts": {
+    "total_BAC_cards": 100,
+    "BAC_unique_types": 20,
+    "BAC_copies_each": 5,
+    "total_conspire_cards": 72,
+    "conspire_unique_types": 24,
+    "conspire_copies_each": 3
+  },
+  "components_summary": {
+    "hex_tiles": 61,
+    "number_tokens": 16,
+    "dice": "14 d6",
+    "squad_boards": "16 (4 per player x 4 players). Each player starts with 2, additional boards earned during play.",
+    "soldier_miniatures": "112 player (4 colors x 28) + 24 separatist greys. Each player mini has magnetized attachment points for 5 equipment slots.",
+    "equipment_modules": "100 total (20 types x 5 copies). Physical magnetized parts with unique sculpts and abbreviation engraved on underside. Always paired with their BAC card.",
+    "BAC_cards": 100,
+    "conspire_cards": 72,
+    "resource_tokens": "many (5 types)",
+    "control_hex_frames": "4 colors",
+    "damage_tokens": "many",
+    "bunker_tokens": "several — neutral fortifications: +1 all defense dice on hex, 1 per hex max, any unit benefits, destroyed by attacker winning combat"
+  }
+}
