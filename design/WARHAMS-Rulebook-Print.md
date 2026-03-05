@@ -88,7 +88,7 @@ Number Tokens are placed on resource-producing Hexes during setup to determine w
 
 | Card Type                     | Total | Breakdown           |
 | ----------------------------- | :---: | ------------------- |
-| 🔫 **BAC** (Basic Armament Cards) | 100 | 20 types × 5 copies |
+| 🔫 **BAC** (Basic Armament Cards) | 160 | 20 types × 8 copies |
 | 🕵️ **Conspire Cards**          | 72  | 24 types × 3 copies |
 
 - **BACs** represent weapons, armor, gadgets, and upgrades equipped to your H.A.M.S.
@@ -115,7 +115,7 @@ Resources are the lifeblood of your campaign. Each type is produced by its corre
 | Component                | Details                                                              |
 | ------------------------ | -------------------------------------------------------------------- |
 | **H.A.M.S Miniatures**  | Soldier miniatures in 4 player colors — **28 per player** (enough for 4 Squads of 7 H.A.M.S each). Each mini has **magnetized attachment points** for the 5 equipment slots (Head, Chest, Legs, Backpack, Hands). Each base is **labeled with a squad letter and soldier number** (A1–A7, B1–B7, C1–C7, D1–D7), matching the Squad Board columns for damage tracking. |
-| **Equipment Modules**    | Physical miniature parts (helmets, chest plates, weapons, backpacks, leg armor) that magnetically attach to H.A.M.S minis. Each module corresponds to a BAC card type — e.g., a S.A.P Helmet module, an H.C.A.R rifle module. **5 copies** of each module type exist (matching the 5 copies of each BAC card). Each module has a **unique sculpt** per type and its **abbreviation engraved on the underside** for identification. The module's BAC card always accompanies it (on the Squad Board when equipped, on the hex when salvaged). |
+| **Equipment Modules**    | Physical miniature parts (helmets, chest plates, weapons, backpacks, leg armor) that magnetically attach to H.A.M.S minis. Each module corresponds to a BAC card type — e.g., a S.A.P Helmet module, an H.C.A.R rifle module. **8 copies** of each module type exist (matching the 8 copies of each BAC card). Each module has a **unique sculpt** per type and its **abbreviation engraved on the underside** for identification. The module's BAC card always accompanies it (on the Squad Board when equipped, on the hex when salvaged). |
 | **Separatist Miniatures** | **24** grey NPC soldiers — used for Separatist spawns, base defenders, and militia |
 | **Squad Boards**         | Up to 4 per player; each board tracks **7 H.A.M.S** with damage circles and a Lethal Hit Roll reference |
 
@@ -328,12 +328,22 @@ The active player may spend resource tokens to activate BAC cards from their han
 
 **Equipping a BAC:**
 
-1. Choose a BAC card from your **hand** (hidden) and pay its resource cost **per soldier** you wish to equip.
-2. Place the card face-up in the **Equipment Display** (shared area near the board) with a **reference module** on top — if the card is already there, discard it.
-3. Attach the matching **equipment module** (magnetized part) to each equipped soldier's miniature in the correct slot (Head, Chest, Legs, Backpack, or Hands).
-4. Each Squad can hold up to **X** different armament types, where **X = the number of H.A.M.S in that Squad**.
+There are two ways to equip a BAC — **unlocking** a new type, or **re-equipping** a type you've already unlocked.
 
-> **Example:** You have an H.C.A.R card in hand. You pay 1 Industry + 1 Electricity per soldier. The H.C.A.R card goes to the Equipment Display with a reference rifle on top, and you snap H.C.A.R rifle modules onto each equipped soldier's Hands slot. Everyone can see your soldiers are armed — and anyone can check the Equipment Display to see what H.C.A.R does.
+**Unlocking a new BAC type:**
+
+1. Choose a BAC card from your **hand** and place it face-up in the **Equipment Display** (shared reference area near the board). If the card is already in the Display, discard yours instead.
+2. Place one of your **Control Flags** on that card in the Equipment Display — this marks that you have **permanently unlocked** this BAC type.
+3. Pay the card's resource cost for **each soldier** you wish to equip.
+4. Attach the matching **equipment module** (magnetized part) to each equipped soldier's miniature in the correct slot (Head, Chest, Legs, Backpack, or Hands).
+
+**Re-equipping an unlocked BAC type:**
+
+If your Control Flag is already on a BAC card in the Equipment Display, you may equip additional soldiers with that type at any time during Phase 5 — no card needed, just pay the resource cost **per soldier** and attach the module.
+
+**Limit:** Only **8 copies** of each equipment module exist in the game. If all 8 are currently in use, no more soldiers can equip that type until a module is freed (destroyed modules return to the box and can be purchased again).
+
+> **Example:** You have an H.C.A.R card in hand. You place it in the Equipment Display and put your red flag on it — H.C.A.R is now unlocked for you permanently. You pay 1 Industry + 1 Electricity per soldier and snap H.C.A.R rifle modules onto their Hands slot. Next turn, you recruit a new soldier and want to arm them too — just pay 1 Industry + 1 Electricity again, no card needed.
 
 **Acquiring New BACs:**
 
@@ -641,7 +651,7 @@ The **owning player** rolls 1d6 to determine where the killing blow struck:
 
 #### 2. Module Destroyed
 
-Detach the equipment module from the struck slot and **remove it from the game** (return the module to the box). If the struck slot is **empty** (no module equipped), no module is destroyed — proceed directly to salvage distribution.
+Detach the equipment module from the struck slot and **return it to the box** (it becomes available for purchase again). If the struck slot is **empty** (no module equipped), no module is destroyed — proceed directly to salvage distribution.
 
 #### 3. Salvage Distribution
 
@@ -841,7 +851,7 @@ Modules with active abilities fall into two timing categories:
 
 ---
 
-### 📋 Full BAC Card List (20 Types × 5 Copies = 100 Cards)
+### 📋 Full BAC Card List (20 Types × 8 Copies = 160 Cards)
 
 | Abbr | Full Name | Slot | Cost | DP | Effect |
 |------|-----------|------|------|----|--------|

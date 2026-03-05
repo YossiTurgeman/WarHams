@@ -86,7 +86,7 @@ SVG wireframes exist in `design/assets/` for layout reference. These are **code-
 
 ### 4A. BAC Cards (Basic Armament Cards)
 
-**Count:** 20 unique designs × 5 copies each = **100 cards total**
+**Count:** 20 unique designs × 8 copies each = **160 cards total**
 **Print Size:** Standard poker card (63 × 88 mm / 2.5 × 3.5 in)
 **Bleed:** 3mm all sides
 
@@ -419,7 +419,7 @@ These require 3D modeling, not 2D illustration. Included here for completeness.
 
 ### 5B. Equipment Modules (Magnetized Attachments)
 
-**Count:** 20 unique sculpts × 5 copies each = **100 modules**
+**Count:** 20 unique sculpts × 8 copies each = **160 modules**
 **Key Feature:** Each module has a **unique sculpt** identifiable at table distance + **abbreviation engraved on underside** for confirmation.
 
 | Module | Slot | Sculpt Description |

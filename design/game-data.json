@@ -161,106 +161,106 @@
   "basic_armament_cards": [
     {
       "abbr": "S.A.P Chest", "name": "Standard Armor Plating Chest Piece", "slot": "Chest",
-      "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 5,
+      "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 8,
       "text": "Gain +1 for one defense die."
     },
     {
       "abbr": "S.A.P Helmet", "name": "Standard Armor Plating Helmet", "slot": "Head",
-      "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 5,
+      "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 8,
       "text": "Gain +1 for one defense die."
     },
     {
       "abbr": "S.A.P Legs", "name": "Standard Armor Plating Legs", "slot": "Legs",
-      "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 5,
+      "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 8,
       "text": "Gain +1 for one defense die."
     },
     {
       "abbr": "J.J", "name": "Jump Jets", "slot": "Legs",
-      "cost": { "Industry": 1, "Intelligence": 1 }, "dp": 2, "copies": 5,
+      "cost": { "Industry": 1, "Intelligence": 1 }, "dp": 2, "copies": 8,
       "text": "This soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate."
     },
     {
       "abbr": "S.H.A.D", "name": "Sensory Helmet, Advisory Drone", "slot": "Head",
-      "cost": { "Intelligence": 2, "Electricity": 1 }, "dp": 4, "copies": 5,
+      "cost": { "Intelligence": 2, "Electricity": 1 }, "dp": 4, "copies": 8,
       "text": "If attacked, before combat starts, attacking player must reveal his conspire cards to you."
     },
     {
       "abbr": "H.C.A.R", "name": "Heavy Caliber Assault Rifle", "slot": "Hands",
-      "cost": { "Industry": 1, "Electricity": 1 }, "dp": 2, "copies": 5,
+      "cost": { "Industry": 1, "Electricity": 1 }, "dp": 2, "copies": 8,
       "text": "Add +1 to this soldier's attack die."
     },
     {
       "abbr": "P.A.E.H", "name": "Personal Accuracy Enhancement Helmet", "slot": "Head",
-      "cost": { "Local Favor": 1, "Electricity": 1, "Intelligence": 1 }, "dp": 4, "copies": 5,
+      "cost": { "Local Favor": 1, "Electricity": 1, "Intelligence": 1 }, "dp": 4, "copies": 8,
       "text": "Gain +1 to your attack die if you also carry an HCAR."
     },
     {
       "abbr": "B.A.S.R", "name": "Bolt Action Sniper Rifle", "slot": "Hands",
-      "cost": { "Electricity": 1, "Intelligence": 1, "Industry": 1 }, "dp": 4, "copies": 5,
+      "cost": { "Electricity": 1, "Intelligence": 1, "Industry": 1 }, "dp": 4, "copies": 8,
       "text": "On your turn, before combat, throw 2 dice and choose a target soldier up to 2 hexes away. Target defends normally. Attacking soldier skips normal combat. While defending: -1 to defense die."
     },
     {
       "abbr": "S.L.I.M.E", "name": "Squad Light Interoperable Mortar Encampment", "slot": "Backpack",
-      "cost": { "Industry": 1, "Oil": 2, "Local Favor": 2 }, "dp": 5, "copies": 5,
+      "cost": { "Industry": 1, "Oil": 2, "Local Favor": 2 }, "dp": 5, "copies": 8,
       "text": "Choose 2 soldiers to carry SLIME. Throw 4 dice, target squad up to 3 hexes away. Target defends normally. Attacking soldiers skip normal combat. Defenders get -1 to all defense dice. While defending: -1 to defense die.",
       "special": "Requires 2 soldiers. Civilian damage penalty on Local Favor hexes."
     },
     {
       "abbr": "B.E.A.R", "name": "Battlefield Extraction Airlift Rover", "slot": "Chest",
-      "cost": { "Industry": 1, "Oil": 1, "Local Favor": 1, "Intelligence": 1, "Electricity": 1 }, "dp": 3, "copies": 5,
+      "cost": { "Industry": 1, "Oil": 1, "Local Favor": 1, "Intelligence": 1, "Electricity": 1 }, "dp": 3, "copies": 8,
       "text": "During resource gathering, after picking your resource, choose 1 more resource token of any kind."
     },
     {
       "abbr": "P.L.A.S.T.E.R", "name": "Personal Lasting Aid Surgical Treatment Enhancement Robot", "slot": "Chest",
-      "cost": { "Electricity": 1, "Local Favor": 1 }, "dp": 2, "copies": 5,
+      "cost": { "Electricity": 1, "Local Favor": 1 }, "dp": 2, "copies": 8,
       "text": "Remove up to 2 damage tokens. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap."
     },
     {
       "abbr": "N.I.N.J.A", "name": "Nir Ion Nullifier Jammer Aid", "slot": "Legs",
-      "cost": { "Intelligence": 1, "Electricity": 1 }, "dp": 2, "copies": 5,
+      "cost": { "Intelligence": 1, "Electricity": 1 }, "dp": 2, "copies": 8,
       "text": "Add +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap."
     },
     {
       "abbr": "D.U.D.S", "name": "Deployable Unital Defense System", "slot": "Backpack",
-      "cost": { "Local Favor": 1, "Oil": 1, "Electricity": 1 }, "dp": 4, "copies": 5,
+      "cost": { "Local Favor": 1, "Oil": 1, "Electricity": 1 }, "dp": 4, "copies": 8,
       "text": "Place a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. Flip this card (one-use)."
     },
     {
       "abbr": "L.P.M", "name": "Laser Pointer Marker", "slot": "Backpack",
-      "cost": { "Electricity": 1, "Local Favor": 1, "Intelligence": 1 }, "dp": 3, "copies": 5,
+      "cost": { "Electricity": 1, "Local Favor": 1, "Intelligence": 1 }, "dp": 3, "copies": 8,
       "text": "Other soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes."
     },
     {
       "abbr": "R.S.G", "name": "Repeating Shotgun", "slot": "Hands",
-      "cost": { "Electricity": 1, "Local Favor": 1 }, "dp": 2, "copies": 5,
+      "cost": { "Electricity": 1, "Local Favor": 1 }, "dp": 2, "copies": 8,
       "text": "If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1."
     },
     {
       "abbr": "P.C.S.M.G", "name": "Projectile Correcting Sub Machine Gun", "slot": "Hands",
-      "cost": { "Electricity": 1, "Industry": 1, "Intelligence": 1 }, "dp": 3, "copies": 5,
+      "cost": { "Electricity": 1, "Industry": 1, "Intelligence": 1 }, "dp": 3, "copies": 8,
       "text": "If target squad is up to 1 hex away, roll 2d6 for this soldier's attack instead of 1d6 and pick the higher result."
     },
     {
       "abbr": "C.A.P Chest", "name": "Custom Armor Plating Chest", "slot": "Chest",
-      "cost": { "SAP_Chest": 1, "Local Favor": 1, "Industry": 1, "Oil": 1 }, "dp": 4, "copies": 5,
+      "cost": { "SAP_Chest": 1, "Local Favor": 1, "Industry": 1, "Oil": 1 }, "dp": 4, "copies": 8,
       "text": "Gain +2 for one defense die.",
       "upgrade_from": "S.A.P Chest"
     },
     {
       "abbr": "C.A.P Head", "name": "Custom Armor Plating Helmet", "slot": "Head",
-      "cost": { "SAP_Helmet": 1, "Local Favor": 1, "Intelligence": 1, "Oil": 1 }, "dp": 4, "copies": 5,
+      "cost": { "SAP_Helmet": 1, "Local Favor": 1, "Intelligence": 1, "Oil": 1 }, "dp": 4, "copies": 8,
       "text": "Gain +2 for one defense die.",
       "upgrade_from": "S.A.P Helmet"
     },
     {
       "abbr": "C.A.P Legs", "name": "Custom Armor Plating Legs", "slot": "Legs",
-      "cost": { "SAP_Legs": 1, "Local Favor": 1, "Electricity": 1, "Oil": 1 }, "dp": 4, "copies": 5,
+      "cost": { "SAP_Legs": 1, "Local Favor": 1, "Electricity": 1, "Oil": 1 }, "dp": 4, "copies": 8,
       "text": "Gain +2 for one defense die.",
       "upgrade_from": "S.A.P Legs"
     },
     {
       "abbr": "T.I.L.T.S", "name": "Tactical Ion Team Link Shield", "slot": "Backpack",
-      "cost": { "Electricity": 1, "Industry": 1, "Intelligence": 2 }, "dp": 5, "copies": 5,
+      "cost": { "Electricity": 1, "Industry": 1, "Intelligence": 2 }, "dp": 5, "copies": 8,
       "text": "Pay cost once, choose X soldiers in squad — all get TILTS backpack free. While defending, swap attacker's dice between TILTS soldiers. No other backpack allowed with TILTS."
     }
   ],
@@ -405,7 +405,7 @@
     "dice": "14 d6",
     "squad_boards": "16 (4 per player x 4 players). Each player starts with 2, additional boards earned during play.",
     "soldier_miniatures": "112 player (4 colors x 28) + 24 separatist greys. Each player mini has magnetized attachment points for 5 equipment slots.",
-    "equipment_modules": "100 total (20 types x 5 copies). Physical magnetized parts with unique sculpts and abbreviation engraved on underside. Always paired with their BAC card.",
+    "equipment_modules": "160 total (20 types x 8 copies). Physical magnetized parts with unique sculpts and abbreviation engraved on underside. Destroyed modules return to the box for re-purchase.",
     "BAC_cards": 100,
     "conspire_cards": 72,
     "resource_tokens": "many (5 types)",
