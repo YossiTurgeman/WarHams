@@ -54,35 +54,35 @@
       "color": "Black",
       "tile": "Oil Rig",
       "token": "Oil Drum (black on white, black border)",
-      "card_depiction": "Fuel"
+      "depiction": "Fuel"
     },
     {
       "name": "Electricity",
       "color": "Yellow",
       "tile": "Power Plant",
       "token": "Lightning Bolt (yellow on white, yellow border)",
-      "card_depiction": "Electricity Bolt"
+      "depiction": "Electricity Bolt"
     },
     {
       "name": "Intelligence",
       "color": "Blue",
       "tile": "Radar Dish",
       "token": "Transmitting Wave (blue on white, blue border)",
-      "card_depiction": "Intel Operator Room"
+      "depiction": "Intel Operator Room"
     },
     {
       "name": "Industry",
       "color": "Red",
       "tile": "Factory",
       "token": "Hammer (red on white, red border)",
-      "card_depiction": "Industry Factory"
+      "depiction": "Industry Factory"
     },
     {
       "name": "Local Favor",
       "color": "Green",
       "tile": "City/Village",
       "token": "Recruit (green on white, green border)",
-      "card_depiction": "Militia Base"
+      "depiction": "Militia Base"
     }
   ],
   "special_tiles": [
@@ -101,23 +101,29 @@
       "mechanics": "Each spaceport has a printed number (1–6). BACs land here on doubles matching the printed number. Can be captured for passive BAC collection."
     }
   ],
+  "bac_setup": {
+    "deal": 3,
+    "method": "draft",
+    "draft_direction": "left",
+    "description": "Deal 3 BAC cards to each player. Each player picks 1, passes 2 left. Picks 1 from received cards, passes 1 left. Keeps the final card. Result: 3-card starting hand."
+  },
   "turn_phases": [
     { "phase": 1, "name": "Resource Production", "description": "Roll 3d6, add resource tokens to corresponding hex numbers. Doubles = BAC from Planet Bound Area to matching spaceport. Triples = active player chooses spaceport placement + may move 1 Planet Bound BAC." },
     { "phase": 2, "name": "Movement", "description": "Move squads 1 hex (2 with Jump Jets). Each soldier moves independently but must stay within 2 hexes of at least one squadmate (squad coherency). Skip movement to Conspire instead." },
     { "phase": 3, "name": "Combat", "description": "Initiate combat with enemies within 1-2 hexes. See combat system." },
-    { "phase": 4, "name": "Resource Gathering", "description": "Pick up resources from same/adjacent hex. Winner picks first. BEAR card allows +1 pickup." },
+    { "phase": 4, "name": "Resource Gathering", "description": "Active player collects resources from same/adjacent hex. If combat occurred, defending player(s) also collect. Winner picks first, then loser. If no combat, only active player collects. BEAR card allows +1 pickup." },
     { "phase": 5, "name": "Purchase & Equip", "description": "Buy upgrades with resources. Each squad can hold X armaments where X = number of soldiers." },
     { "phase": 6, "name": "Trade", "description": "Trade resources with other players." },
-    { "phase": 7, "name": "Move Separatists", "description": "Instigate Uprising first (conquered base owners may pay 3 Local Favor to spawn 3 Separatists at an unconquered base, once per base per round). Then separatists: consume resources, move toward produced resources, or roll for random direction." }
+    { "phase": 7, "name": "Move Separatists", "description": "Instigate Uprising first (conquered base owners may pay 3 Local Favor to spawn 3 Separatists at an unconquered base, once per base per round). Then separatists: consume resources, move toward produced resources, or roll for random direction. If a Separatist enters a player-occupied hex, immediate combat triggers (player defends, Separatist attacks with -1 dice)." }
   ],
   "combat_system": {
     "attack_defense_rolls": "Each player rolls 1d6 per engaged soldier (within 2 hexes of enemy). Soldiers outside range sit out. Attacker assigns dice to defender's soldiers. Defender aligns defense dice.",
     "more_soldiers_advantage": "Extra dice are rolled but only best are chosen, giving advantage",
-    "engagement_range": "Only soldiers within 2 hexes of at least one enemy soldier in the target squad participate. Extended-range weapons (B.A.S.R, S.L.I.M.E) count as engaged from their weapon range.",
+    "engagement_range": "Only soldiers within 2 hexes of at least one enemy soldier in the target squad participate. S.L.I.M.E (mortar, 3 hex range) counts as engaged from beyond normal range. B.A.S.R (sniper, 2 hex) fires in pre-combat at normal engagement range; range extendable to 4 hexes via L.P.M.",
     "bonuses": "Add equipment bonuses after initial roll",
     "card_play": "Defender plays combat cards first, then attacker",
     "damage_resolution": "Difference in dice = damage tokens. Soldier takes 3 damage max, 4th = death.",
-    "counterattack": "Defending blocks with +3 or more difference trigger counterattack (defender becomes attacker)",
+    "counterattack": "Defending blocks with +3 or more difference trigger counterattack (defender becomes attacker). Counterattacks can chain but each successive chain suffers cumulative -1 Combat Fatigue penalty to all dice rolls (1st counter: no penalty, 2nd: -1, 3rd: -2, etc.)",
     "module_activation": {
       "combat_modules": "Activate during combat resolution at Step 3 (equipment bonuses). E.g., N.I.N.J.A.",
       "field_modules": "Activate during Phase 5 (Purchase & Equip). E.g., P.L.A.S.T.E.R, D.U.D.S.",
@@ -127,7 +133,8 @@
     "death": {
       "lethal_hit_roll": "d6 determines which slot was hit (1=head, 2=backpack, 3=legs, 4-5=chest, 6=hands)",
       "destroyed_module": "Module in hit slot is destroyed (removed from game)",
-      "salvage": "Owner picks 1 remaining module, attacker picks 1, rest left on hex as salvage (picked up for free by any soldier)"
+      "salvage": "Owner picks 1 remaining module, attacker picks 1, rest left on hex as salvage (picked up for free by any soldier)",
+      "coherency_check": "After death, check if surviving squadmates are beyond 2 hexes from all allies. Disconnected soldiers fight alone (own dice only, no Squad-level BAC effects) and must rejoin coherency next Movement phase."
     }
   },
   "soldier_slots": {
@@ -195,7 +202,7 @@
     {
       "abbr": "S.L.I.M.E", "name": "Squad Light Interoperable Mortar Encampment", "slot": "Backpack",
       "cost": { "Industry": 1, "Oil": 2, "Local Favor": 2 }, "dp": 5, "copies": 5,
-      "text": "Choose 2 soldiers to carry SLIME. Throw 4 dice, target squad up to 3 hexes away. Target defends normally. Attacking soldiers skip normal combat. Defenders get -1 to all defense dice.",
+      "text": "Choose 2 soldiers to carry SLIME. Throw 4 dice, target squad up to 3 hexes away. Target defends normally. Attacking soldiers skip normal combat. Defenders get -1 to all defense dice. While defending: -1 to defense die.",
       "special": "Requires 2 soldiers. Civilian damage penalty on Local Favor hexes."
     },
     {
@@ -231,7 +238,7 @@
     {
       "abbr": "P.C.S.M.G", "name": "Projectile Correcting Sub Machine Gun", "slot": "Hands",
       "cost": { "Electricity": 1, "Industry": 1, "Intelligence": 1 }, "dp": 3, "copies": 5,
-      "text": "If target squad is up to 1 hex away, when combat starts, choose a target, roll 2d6, choose the best for this combat."
+      "text": "If target squad is up to 1 hex away, roll 2d6 for this soldier's attack instead of 1d6 and pick the higher result."
     },
     {
       "abbr": "C.A.P Chest", "name": "Custom Armor Plating Chest", "slot": "Chest",
@@ -306,32 +313,32 @@
     {
       "name": "Hack a PortNet Relay", "copies": 3, "timing": "Tactical",
       "cost": { "Intelligence": 1 },
-      "text": "Take 1 open card in spaceport deck and switch it with another."
+      "text": "Take 1 face-up BAC from the Planet Bound Area into your hand. Immediately refill the empty slot from the Spaceport Deck."
     },
     {
       "name": "Recruit Eager Volunteers", "copies": 3, "timing": "Tactical",
       "cost": "Free",
-      "text": "Gain 1 Local Favor. Roll 1d6: on 5-6, gain another for any 1 resource."
+      "text": "Gain 1 Local Favor. Roll 1d6: on 5-6, gain 1 additional resource token of any type you choose."
     },
     {
       "name": "Scout Ahead", "copies": 3, "timing": "Tactical",
       "cost": "Free",
-      "text": "Gain 1 Intelligence. Roll 1d6: on 5-6, gain another for any 1 resource."
+      "text": "Gain 1 Intelligence. Roll 1d6: on 5-6, gain 1 additional resource token of any type you choose."
     },
     {
       "name": "Tap into Oil Reserves", "copies": 3, "timing": "Tactical",
       "cost": "Free",
-      "text": "Gain 1 Oil. Roll 1d6: on 5-6, gain another for any 1 resource."
+      "text": "Gain 1 Oil. Roll 1d6: on 5-6, gain 1 additional resource token of any type you choose."
     },
     {
       "name": "Proper Planning", "copies": 3, "timing": "Tactical",
       "cost": "Free",
-      "text": "Gain 1 Industry. Roll 1d6: on 5-6, gain another for any 1 resource."
+      "text": "Gain 1 Industry. Roll 1d6: on 5-6, gain 1 additional resource token of any type you choose."
     },
     {
       "name": "Tap into the Local Power Grid", "copies": 3, "timing": "Tactical",
       "cost": "Free",
-      "text": "Gain 1 Electricity. Roll 1d6: on 5-6, gain another for any 1 resource."
+      "text": "Gain 1 Electricity. Roll 1d6: on 5-6, gain 1 additional resource token of any type you choose."
     },
     {
       "name": "Guerrilla Warfare", "copies": 3, "timing": "Combat",
@@ -402,7 +409,7 @@
     "BAC_cards": 100,
     "conspire_cards": 72,
     "resource_tokens": "many (5 types)",
-    "control_hex_frames": "4 colors",
+    "control_flags": "25 per player, 4 colors (100 total). Used for hex control and Equipment Display tracking. Flags on Equipment Display are permanent — never removed once placed, even if all soldiers carrying that module die. Marks unlocked BAC types for re-equipping",
     "damage_tokens": "many",
     "bunker_tokens": "several — neutral fortifications: +1 all defense dice on hex, 1 per hex max, any unit benefits, destroyed by attacker winning combat"
   }

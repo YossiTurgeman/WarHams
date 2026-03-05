@@ -124,6 +124,68 @@
 
 > **Balance Review Status:** 8 issues found and fixed. All BAC DP ratios normalized, armor stacking balanced, win conditions reachable, Separatist cap defined, Conspire cards tuned.
 
+## Task 5b: 🔴 Rules Audit — Fourth Pass
+
+- [x] **C1 🔴 CRITICAL — Phase 4: Who actually collects resources?** ✅ FIXED
+  - Clarified: **active player always collects + defending players involved in combat also collect**. Winner picks first, loser second. No combat = only active player. Updated: Turn Structure intro (added Phase 4 exception), Phase 4 section, both quick references, game-data.json.
+- [x] **C2 🔴 CRITICAL — P.C.S.M.G effect is mechanically vague** ✅ FIXED
+  - Clarified: within 1 hex, P.C.S.M.G soldier **rolls 2d6 instead of 1d6** for their attack die and picks the higher result (roll with advantage). Updated: rulebook BAC table, game-data.json.
+- [x] **M1 🟡 MEDIUM — Phase 7 omits Instigate Uprising** ✅ FIXED
+  - Added **Step 0 — Instigate Uprising** to Phase 7 section before Consume/Seek/Wander, cross-referencing the Separatist section for full details.
+- [x] **M2 🟡 MEDIUM — End of Round references BAC cards on spaceport hexes** ✅ FIXED
+  - Rewritten to correctly reference **Unloading Zone**: controlled spaceports with container markers → collect BACs from matching UZ slot, remove container, reset slot.
+- [x] **M3 🟡 MEDIUM — B.A.S.R labeled "extended range" but has 2-hex range** ✅ FIXED
+  - Removed B.A.S.R from "extended range" grouping. Now correctly notes S.L.I.M.E as the only inherently extended-range weapon (3 hex). B.A.S.R described as pre-combat at normal 2-hex range, extendable via L.P.M. Updated: Initiating Combat section, game-data.json.
+- [x] **M4 🟡 MEDIUM — T.I.L.T.S "pay once" contradicts equipping rules** ✅ FIXED
+  - Added **Exception — T.I.L.T.S** note to Equipping Rules: pay listed cost once to equip any number of soldiers in the same Squad.
+- [x] **M5 🟡 MEDIUM — Hack a PortNet Relay wording is ambiguous** ✅ FIXED
+  - Clarified: take 1 face-up BAC from PBA **into your hand**, then refill slot from Spaceport Deck. Updated: rulebook Conspire table, game-data.json.
+- [x] **M6 🟡 MEDIUM — Separatists moving onto player-occupied hexes** ✅ FIXED
+  - Added rule: Separatists entering a player-occupied hex trigger **immediate combat** (player defends, Separatist attacks with −1 dice). Resolve before moving other Separatists. Updated: Phase 7 Wander section, game-data.json.
+- [x] **M7 🟡 MEDIUM — S.L.I.M.E crew behavior when defending** ✅ FIXED
+  - Added **−1 defense when defending** to S.L.I.M.E, matching B.A.S.R's penalty. Both heavy pre-combat weapons now carry a defensive tradeoff. Updated: rulebook BAC table, Special Weapon Rules, game-data.json.
+- [x] **N1 🟢 MINOR — Death: no rule for empty hit slot** ✅ FIXED
+  - Added clarification: if struck slot is **empty**, no module is destroyed — proceed to salvage distribution. Updated: Death section (Module Destroyed step).
+- [x] **N2 🟢 MINOR — Card Anatomy lists "Set Indicator" but set bonuses removed** ✅ FIXED
+  - Removed "Set Indicator" row from Card Anatomy table. No set bonuses exist after B1/B8 fixes.
+
+> **Fourth Pass Status:** 11 issues found and fixed (2 critical, 7 medium, 2 minor). Phase 4 collection clarified, P.C.S.M.G defined, Instigate Uprising cross-referenced, Unloading Zone corrected, B.A.S.R range fixed, T.I.L.T.S exception noted, Hack a PortNet Relay clarified, Separatist movement rule added, S.L.I.M.E defense penalty added, empty slot edge case covered, Set Indicator removed.
+
+## Task 5c: 🔴 Rules Audit — Fifth Pass
+
+- [x] **M8 🟡 MEDIUM — Controlling Territory End-of-Round Bonus still says "BAC cards on hexes"** ✅ FIXED
+  - Updated Controlling Territory End-of-Round Bonus to correctly reference **Unloading Zone**, matching the End of Round section fix from M2.
+- [x] **M9 🟡 MEDIUM — Resource table columns still say "Card Color" / "Card Depiction"** ✅ FIXED
+  - Renamed columns to **"Color"** and **"Depiction"** in both Components and Quick Reference tables. Renamed `card_depiction` → `depiction` in game-data.json (all 5 resources).
+- [x] **M10 🟡 MEDIUM — Doubles: do matched hexes produce resources once or twice?** ✅ FIXED
+  - Clarified: each **unique number** produces once — duplicates don't double production. Added doubles example. Replaced ambiguous "third die" sentence with clear "all unique numbers produce normally" text.
+- [x] **N3 🟢 MINOR — B.A.S.R BAC table missing "pick higher result"** ✅ FIXED
+  - Updated BAC table to **"roll 2d6 (pick higher)"**, matching Special Weapon Rules section.
+- [x] **N4 🟢 MINOR — Free Resource Conspire cards bonus wording ambiguous** ✅ FIXED
+  - Reworded all 5 Free Resource cards: **"gain 1 additional resource token of any type you choose"**. Updated: rulebook Conspire table, game-data.json (all 5 entries).
+
+> **Fifth Pass Status:** 5 issues found and fixed (3 medium, 2 minor). Unloading Zone reference fixed in Territory section, resource table columns renamed, doubles production clarified, B.A.S.R "pick higher" added, Free Resource bonus wording clarified.
+
+## Task 5d: 🟡 Playability Review — Player Experience Issues
+
+- [ ] **P1 🟡 MEDIUM — No starting resources = dead first turn** ⏭️ SKIPPED
+  - Players start with 0 resources and 3 BACs. Can't equip or recruit turn 1. First 1-2 rounds feel like waiting.
+  - Deferred — revisit after playtesting.
+- [x] **P2 🟡 MEDIUM — Counterattack chains can loop forever** ✅ FIXED
+  - Added **Combat Fatigue** mechanic: counterattacks can still chain, but each successive counterattack suffers a cumulative **−1 penalty** to all dice rolls (1st counter: no penalty, 2nd: −1, 3rd: −2, etc.). Naturally decays — extremely unlikely past 2 chains. Updated: Step 6 + worked example, both quick references, game-data.json.
+- [ ] **P3 🟡 MEDIUM — Active player moves ALL Separatists — tedious** ⏭️ SKIPPED
+  - Could be 15-20+ Separatists. Active player moves every one, every turn. Boring bookkeeping.
+  - Deferred — revisit after playtesting.
+- [x] **P4 🟡 MEDIUM — Squad coherency broken by death — no rule** ✅ FIXED
+  - Added **Step 5: Coherency Check** to Death sequence. Surviving soldiers beyond 2 hexes of all squadmates are disconnected — fight alone (own dice only, no Squad-level BAC effects), must rejoin next Movement phase. Same rules as J.J disconnection. Updated: Death section (both rulebooks), game-data.json.
+- [x] **P5 🟢 MINOR — Phase 4 resource collection priority is complex** ✅ FIXED
+  - Added **Quick Priority Reminder** callout box to Phase 4 (① winner → ② loser → ③ active player). Updated both quick reference tables with inline priority summary. Rules unchanged, just clearer presentation. Updated: both rulebooks.
+- [x] **P6 🟢 MINOR — Flag removal from Equipment Display unclear** ✅ FIXED
+  - Clarified: **flags are permanent**. Once placed on a BAC card in the Equipment Display, your flag stays for the rest of the game — even if all soldiers carrying that module die. Marks that you've unlocked the BAC type and can re-equip it. Updated: components table, Equipping Rules (both rulebooks), game-data.json.
+- [ ] **P7 🟢 MINOR — "Oldest player goes first" is awkward** ⏭️ SKIPPED
+  - Could create discomfort in mixed-age groups.
+  - Keeping as-is — revisit after playtesting.
+
 ## Task 6: 🖥️ Tabletop Simulator Prototype
 - [ ] Set up TTS mod project structure
 - [ ] Build hex board with randomized tile placement inside planet frame

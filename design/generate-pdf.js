@@ -15,16 +15,20 @@ const lines = md.split('\n');
 
 const doc = new PDFDocument({
   size: 'A4',
-  margins: { top: 60, bottom: 60, left: 50, right: 50 },
+  margins: { top: 60, bottom: 0, left: 50, right: 50 },
   info: {
     Title: 'W.A.R H.A.M.S — The Battle for Planet X — Official Rulebook',
     Author: 'W.A.R H.A.M.S Design Team',
     Subject: 'Board Game Rulebook',
   },
-  bufferPages: true,
 });
 
-const stream = fs.createWriteStream(OUTPUT);
+let outputPath = OUTPUT;
+try { fs.accessSync(OUTPUT, fs.constants.W_OK); } catch (e) {
+  outputPath = OUTPUT.replace('.pdf', '-new.pdf');
+  console.log('Original PDF locked, writing to: ' + outputPath);
+}
+const stream = fs.createWriteStream(outputPath);
 doc.pipe(stream);
 
 // Color palette
@@ -50,18 +54,31 @@ const COLORS = {
 const PAGE_WIDTH = 595.28; // A4
 const CONTENT_WIDTH = PAGE_WIDTH - 100; // margins
 let y = 60;
+let pageNum = 0;
+
+// Sync y on any auto-paginated pages PDFKit creates
+doc.on('pageAdded', () => {
+  y = 60;
+});
+
+function addInlineFooter() {
+  doc.font('Helvetica').fontSize(8).fillColor(COLORS.lightText);
+  doc.text(
+    `W.A.R H.A.M.S -- The Battle for Planet X    |    Page ${pageNum}`,
+    50,
+    doc.page.height - 40,
+    { width: CONTENT_WIDTH, align: 'center', lineBreak: false }
+  );
+}
 
 function checkPageBreak(needed) {
   if (y + needed > doc.page.height - 60) {
+    if (pageNum > 0) addInlineFooter();
     doc.addPage();
-    y = 60;
+    pageNum++;
     return true;
   }
   return false;
-}
-
-function addFooter() {
-  // Will be added via bufferPages at the end
 }
 
 function drawText(text, options = {}) {
@@ -96,14 +113,44 @@ function drawHR() {
   y += 10;
 }
 
+function sanitizeForHelvetica(text) {
+  // Replace special Unicode characters that Helvetica/WinAnsi can't render
+  return text
+    // Arrows
+    .replace(/\u2192/g, '->')    // →
+    .replace(/\u2190/g, '<-')    // ←
+    // Math operators
+    .replace(/\u2212/g, '-')     // minus sign
+    .replace(/\u2264/g, '<=')    // ≤
+    .replace(/\u2265/g, '>=')    // ≥
+    // Check/cross marks
+    .replace(/\u2705/g, '[Y]')   // ✅
+    .replace(/\u274C/g, '[X]')   // ❌
+    // Color squares
+    .replace(/\u2B1B/g, '')      // ⬛
+    .replace(/\u2B1C/g, '')      // ⬜
+    // Strip all remaining emoji (surrogate pairs + common emoji ranges)
+    .replace(/[\u{1F000}-\u{1FFFF}]/gu, '')
+    .replace(/[\u{2600}-\u{27BF}]/gu, function(m) {
+      if (m === '\u2022') return m; // bullet
+      return '';
+    })
+    .replace(/[\u{FE00}-\u{FE0F}]/gu, '') // variation selectors
+    .replace(/[\u{200D}]/gu, '')           // zero-width joiner
+    .replace(/\s{2,}/g, ' ')              // collapse double spaces from removed emoji
+    .trim();
+}
+
 function parseInlineFormatting(text) {
   // Strip markdown inline formatting for plain text rendering
-  return text
-    .replace(/\*\*\*(.*?)\*\*\*/g, '$1')
-    .replace(/\*\*(.*?)\*\*/g, '$1')
-    .replace(/\*(.*?)\*/g, '$1')
-    .replace(/`(.*?)`/g, '$1')
-    .replace(/\[(.*?)\]\(.*?\)/g, '$1');
+  return sanitizeForHelvetica(
+    text
+      .replace(/\*\*\*(.*?)\*\*\*/g, '$1')
+      .replace(/\*\*(.*?)\*\*/g, '$1')
+      .replace(/\*(.*?)\*/g, '$1')
+      .replace(/`(.*?)`/g, '$1')
+      .replace(/\[(.*?)\]\(.*?\)/g, '$1')
+  );
 }
 
 function drawRichText(text, options = {}) {
@@ -121,65 +168,96 @@ function renderTable(tableLines) {
     line.split('|').map((c) => c.trim()).filter((c) => c.length > 0);
 
   const headers = parseRow(tableLines[0]);
-  // Skip separator line (index 1)
   const rows = tableLines.slice(2).map(parseRow);
   const colCount = headers.length;
-
   if (colCount === 0) return;
 
-  const colWidth = Math.min(CONTENT_WIDTH / colCount, 200);
-  const tableWidth = Math.min(colCount * colWidth, CONTENT_WIDTH);
-  const actualColWidths = [];
+  const CELL_PAD = 3;
+  const CELL_FONT = 7;
+  const HDR_FONT = 7.5;
+  const MIN_ROW_H = 16;
 
-  // Calculate column widths proportionally
-  const totalWeight = headers.reduce((sum, h) => sum + Math.max(h.length, 5), 0);
-  headers.forEach((h) => {
-    actualColWidths.push((Math.max(h.length, 5) / totalWeight) * CONTENT_WIDTH);
+  // Column widths proportional to max content length, with minimum width
+  const MIN_COL_W = 55;
+  const colMaxLen = headers.map((h, ci) => {
+    let max = h.length;
+    rows.forEach((r) => { if (r[ci]) max = Math.max(max, r[ci].length); });
+    return Math.max(max, 5);
   });
+  const totalWeight = colMaxLen.reduce((s, l) => s + l, 0);
+  let colWidths = colMaxLen.map((len) => (len / totalWeight) * CONTENT_WIDTH);
+  // Enforce minimum width — redistribute from wider columns
+  let deficit = 0;
+  let wideCount = 0;
+  colWidths.forEach((w) => { if (w < MIN_COL_W) deficit += MIN_COL_W - w; else wideCount++; });
+  if (deficit > 0 && wideCount > 0) {
+    const shrinkEach = deficit / wideCount;
+    colWidths = colWidths.map((w) => w < MIN_COL_W ? MIN_COL_W : w - shrinkEach);
+  }
 
-  const rowHeight = 18;
-  const totalHeight = (1 + rows.length) * rowHeight + 4;
-
-  checkPageBreak(Math.min(totalHeight, 200));
-
-  // Header row
-  let x = 50;
-  doc.rect(x, y, CONTENT_WIDTH, rowHeight).fill(COLORS.tableHeader);
-  headers.forEach((h, i) => {
-    doc.font('Helvetica-Bold').fontSize(7.5).fillColor(COLORS.tableHeaderText);
-    doc.text(parseInlineFormatting(h), x + 3, y + 4, {
-      width: actualColWidths[i] - 6,
-      height: rowHeight,
-      ellipsis: true,
+  // Calculate dynamic row height based on actual text wrapping
+  function calcRowH(cells, fontSize, fontName) {
+    let maxH = MIN_ROW_H;
+    doc.font(fontName).fontSize(fontSize);
+    cells.forEach((cell, ci) => {
+      if (ci >= colCount) return;
+      const h = doc.heightOfString(parseInlineFormatting(cell || ''), { width: colWidths[ci] - 6 }) + CELL_PAD * 2;
+      if (h > maxH) maxH = h;
     });
-    x += actualColWidths[i];
-  });
-  y += rowHeight;
+    return Math.ceil(maxH);
+  }
+
+  // Draw one row (header or data)
+  function drawRow(cells, isHeader, stripe) {
+    const fontSize = isHeader ? HDR_FONT : CELL_FONT;
+    const fontName = isHeader ? 'Helvetica-Bold' : 'Helvetica';
+    const h = calcRowH(cells, fontSize, fontName);
+
+    let x = 50;
+    // Background
+    if (isHeader) {
+      doc.rect(x, y, CONTENT_WIDTH, h).fill(COLORS.tableHeader);
+    } else if (stripe) {
+      doc.rect(x, y, CONTENT_WIDTH, h).fill(COLORS.tableStripe);
+    }
+    // Cell text
+    cells.forEach((cell, ci) => {
+      if (ci >= colCount) return;
+      const fc = isHeader ? COLORS.tableHeaderText : COLORS.text;
+      doc.font(fontName).fontSize(fontSize).fillColor(fc);
+      doc.text(parseInlineFormatting(cell || ''), x + 3, y + CELL_PAD, { width: colWidths[ci] - 6 });
+      x += colWidths[ci];
+    });
+    // Bottom border line
+    doc.strokeColor(COLORS.tableBorder).lineWidth(0.5);
+    doc.moveTo(50, y + h).lineTo(50 + CONTENT_WIDTH, y + h).stroke();
+    y += h;
+  }
+
+  // Try to keep small tables together on one page
+  const estHeight = rows.reduce((sum, r) => sum + calcRowH(r, CELL_FONT, 'Helvetica'), 0)
+    + calcRowH(headers, HDR_FONT, 'Helvetica-Bold');
+  if (estHeight <= doc.page.height - 120) {
+    checkPageBreak(estHeight + 8);
+  }
+
+  // Top border + header
+  doc.strokeColor(COLORS.tableBorder).lineWidth(0.5);
+  doc.moveTo(50, y).lineTo(50 + CONTENT_WIDTH, y).stroke();
+  drawRow(headers, true, false);
 
   // Data rows
   rows.forEach((row, ri) => {
-    checkPageBreak(rowHeight);
-    x = 50;
-    if (ri % 2 === 0) {
-      doc.rect(x, y, CONTENT_WIDTH, rowHeight).fill(COLORS.tableStripe);
+    const h = calcRowH(row, CELL_FONT, 'Helvetica');
+    if (checkPageBreak(h)) {
+      // Repeat header on new page
+      doc.strokeColor(COLORS.tableBorder).lineWidth(0.5);
+      doc.moveTo(50, y).lineTo(50 + CONTENT_WIDTH, y).stroke();
+      drawRow(headers, true, false);
     }
-
-    row.forEach((cell, ci) => {
-      if (ci >= colCount) return;
-      doc.font('Helvetica').fontSize(7).fillColor(COLORS.text);
-      doc.text(parseInlineFormatting(cell), x + 3, y + 4, {
-        width: actualColWidths[ci] - 6,
-        height: rowHeight - 2,
-        ellipsis: true,
-      });
-      x += actualColWidths[ci];
-    });
-    y += rowHeight;
+    drawRow(row, false, ri % 2 === 0);
   });
 
-  // Table border
-  doc.strokeColor(COLORS.tableBorder).lineWidth(0.5);
-  doc.rect(50, y - (1 + rows.length) * rowHeight, CONTENT_WIDTH, (1 + rows.length) * rowHeight).stroke();
   y += 8;
 }
 
@@ -189,13 +267,12 @@ let inBlockquote = false;
 let blockquoteLines = [];
 let inTable = false;
 let tableLines = [];
+let lastWasHR = false;
 
 function flushBlockquote() {
   if (blockquoteLines.length === 0) return;
   const text = blockquoteLines.map((l) => l.replace(/^>\s*/, '')).join(' ').trim();
 
-  checkPageBreak(40);
-  // Draw blockquote background
   doc.font('Helvetica').fontSize(8);
   const h = doc.heightOfString(parseInlineFormatting(text), { width: CONTENT_WIDTH - 30 }) + 16;
   checkPageBreak(h + 4);
@@ -222,7 +299,10 @@ doc.rect(0, 0, PAGE_WIDTH, doc.page.height).fill('#0a0a0f');
 y = 200;
 doc.font('Helvetica-Bold').fontSize(36).fillColor('#e0d0a0');
 doc.text('W.A.R H.A.M.S', 50, y, { width: CONTENT_WIDTH, align: 'center' });
-y = doc.y + 10;
+y = doc.y + 6;
+doc.font('Helvetica').fontSize(9).fillColor('#998866');
+doc.text('WORLD ACCESS RETRIEVABLE HEAVY ASSAULT MODIFIABLE SUITES', 50, y, { width: CONTENT_WIDTH, align: 'center' });
+y = doc.y + 16;
 doc.font('Helvetica').fontSize(16).fillColor('#cc4444');
 doc.text('THE BATTLE FOR PLANET X', 50, y, { width: CONTENT_WIDTH, align: 'center' });
 y = doc.y + 40;
@@ -243,7 +323,7 @@ doc.font('Helvetica').fontSize(10).fillColor('#556677');
 doc.text('2–4 Players  •  Ages 14+  •  90–150 Minutes', 50, y, { width: CONTENT_WIDTH, align: 'center' });
 
 doc.addPage();
-y = 60;
+pageNum++; // = 1 (first content page)
 
 while (i < lines.length) {
   const line = lines[i];
@@ -258,8 +338,9 @@ while (i < lines.length) {
   if (line.includes('page-break')) {
     flushBlockquote();
     flushTable();
+    if (pageNum > 0) addInlineFooter();
     doc.addPage();
-    y = 60;
+    pageNum++;
     i++;
     continue;
   }
@@ -295,7 +376,7 @@ while (i < lines.length) {
 
   // Headings
   if (line.startsWith('# ')) {
-    checkPageBreak(50);
+    checkPageBreak(120);
     const text = parseInlineFormatting(line.replace(/^#+\s*/, ''));
     drawText(text, { fontSize: 22, color: COLORS.heading1, bold: true, spacing: 8 });
     // Underline
@@ -308,7 +389,7 @@ while (i < lines.length) {
   if (line.startsWith('## ')) {
     flushBlockquote();
     flushTable();
-    checkPageBreak(40);
+    checkPageBreak(100);
     y += 6;
     const text = parseInlineFormatting(line.replace(/^#+\s*/, ''));
     drawText(text, { fontSize: 16, color: COLORS.heading2, bold: true, spacing: 6 });
@@ -319,7 +400,7 @@ while (i < lines.length) {
   }
 
   if (line.startsWith('### ')) {
-    checkPageBreak(30);
+    checkPageBreak(70);
     y += 4;
     const text = parseInlineFormatting(line.replace(/^#+\s*/, ''));
     drawText(text, { fontSize: 13, color: COLORS.heading3, bold: true, spacing: 5 });
@@ -328,7 +409,7 @@ while (i < lines.length) {
   }
 
   if (line.startsWith('#### ')) {
-    checkPageBreak(25);
+    checkPageBreak(50);
     y += 2;
     const text = parseInlineFormatting(line.replace(/^#+\s*/, ''));
     drawText(text, { fontSize: 11, color: COLORS.heading4, bold: true, spacing: 4 });
@@ -336,12 +417,18 @@ while (i < lines.length) {
     continue;
   }
 
-  // Horizontal rule
+  // Horizontal rule (skip consecutive HRs to avoid empty pages)
   if (line.match(/^---+$/)) {
-    drawHR();
+    if (!lastWasHR) {
+      drawHR();
+      lastWasHR = true;
+    }
     i++;
     continue;
   }
+
+  // Any content below this point is non-HR, so reset the flag
+  lastWasHR = false;
 
   // List items
   if (line.match(/^\s*[-*]\s/)) {
@@ -362,7 +449,7 @@ while (i < lines.length) {
   // Bold section headers (like **Step 1 — ...**)
   if (line.startsWith('**') && line.includes('**')) {
     const text = parseInlineFormatting(line);
-    checkPageBreak(20);
+    checkPageBreak(50);
     drawText(text, { fontSize: 10, bold: true, spacing: 4 });
     i++;
     continue;
@@ -379,24 +466,13 @@ while (i < lines.length) {
 flushBlockquote();
 flushTable();
 
-// Add page numbers
-const pageCount = doc.bufferedPageRange().count;
-for (let p = 0; p < pageCount; p++) {
-  doc.switchToPage(p);
-  if (p === 0) continue; // Skip title page
-  doc.font('Helvetica').fontSize(8).fillColor(COLORS.lightText);
-  doc.text(
-    `W.A.R H.A.M.S — The Battle for Planet X    |    Page ${p} of ${pageCount - 1}`,
-    50,
-    doc.page.height - 40,
-    { width: CONTENT_WIDTH, align: 'center' }
-  );
-}
+// Add footer to the last page
+if (pageNum > 0) addInlineFooter();
 
 doc.end();
 
 stream.on('finish', () => {
-  const stats = fs.statSync(OUTPUT);
+  const stats = fs.statSync(outputPath);
   console.log(`PDF generated: ${OUTPUT}`);
-  console.log(`Size: ${(stats.size / 1024).toFixed(0)} KB, Pages: ${pageCount}`);
+  console.log(`Size: ${(stats.size / 1024).toFixed(0)} KB, Pages: ${pageNum + 1}`);
 });

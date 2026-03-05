@@ -1,0 +1,23 @@
+{
+  "name": "warhams",
+  "version": "1.0.0",
+  "description": "A sci-fi board game of corporate warfare, territorial control, and tactical betrayal for **2–4 players**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YossiTurgeman/WarHams.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YossiTurgeman/WarHams/issues"
+  },
+  "homepage": "https://github.com/YossiTurgeman/WarHams#readme",
+  "dependencies": {
+    "pdfkit": "^0.17.2"
+  }
+}
