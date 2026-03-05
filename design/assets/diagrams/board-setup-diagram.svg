@@ -443,7 +443,7 @@
   <text x="120" y="305" text-anchor="middle" font-size="8" fill="#889999">5 H.A.M.S</text>
 
   <text x="120" y="355" text-anchor="middle" class="callout">⑦ Starting Hand</text>
-  <text x="120" y="370" text-anchor="middle" class="label-sm">3 BAC cards (face-down)</text>
+  <text x="120" y="370" text-anchor="middle" class="label-sm">3 BAC cards (drafted)</text>
   <g transform="translate(45,380)">
     <rect x="0" y="0" width="38" height="55" rx="3" fill="#1a1d28" stroke="#556677" stroke-width="1.5"/>
     <text x="19" y="30" text-anchor="middle" font-size="8" fill="#667788">?</text>
@@ -484,7 +484,7 @@
   <text x="890" y="488" class="step-num">2.</text><text x="910" y="488" class="step-text">Shuffle 61 hexes face-down, fill entire board</text>
   <text x="890" y="506" class="step-num">3.</text><text x="910" y="506" class="step-text">Flip all hexes face-up — reveal the planet</text>
   <text x="890" y="524" class="step-num">4.</text><text x="910" y="524" class="step-text">Place 16 number tokens on resource hexes</text>
-  <text x="890" y="542" class="step-num">5.</text><text x="910" y="542" class="step-text">Shuffle 100 BACs → deal 3 each, 6 face-up</text>
+  <text x="890" y="542" class="step-num">5.</text><text x="910" y="542" class="step-text">Shuffle 100 BACs → deal 3, draft (pick 1 pass left), 6 face-up</text>
   <text x="890" y="560" class="step-num">6.</text><text x="910" y="560" class="step-text">Shuffle 72 Conspire cards face-down</text>
   <text x="890" y="578" class="step-num">7.</text><text x="910" y="578" class="step-text">Each player: 2 squad boards + 10 soldiers</text>
   <text x="890" y="596" class="step-num">8.</text><text x="910" y="596" class="step-text">Oldest player goes first (clockwise)</text>
