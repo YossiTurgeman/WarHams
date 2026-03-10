@@ -894,6 +894,8 @@ A player may forfeit a Squad's **Movement** (Phase 2) OR **Combat** (Phase 3) to
 
 A single Squad may Conspire in **both** Phase 2 and Phase 3 of the same turn (forfeiting both movement and combat), drawing twice.
 
+**Hand Limit:** A player may hold a maximum of **7 Conspire Cards**. At the end of your turn, if you have more than 7, discard down to 7 (your choice which to discard).
+
 ### Playing Conspire Cards
 
 Conspire Cards fall into two timing categories:
