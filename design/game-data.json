@@ -91,7 +91,7 @@
       "color": "Grey",
       "count": 3,
       "printed_numbers": [2, 4, 6],
-      "mechanics": "Each base has a printed number (2, 4, or 6). Spawns 3 separatists when that number is rolled (if insufficient minis remain, spawn as many as possible — excess lost). Once captured, stops natural spawning. Conquering requires defeating 7 separatists. Controller may Instigate Uprising (Phase 7): pay 3 Local Favor to spawn 3 Separatists at any unconquered base (once per round per conquered base). All 3 bases captured: produce 1 Local Favor when number rolled."
+      "mechanics": "Each base has a printed number (2, 4, or 6). Spawns 3 separatists only when the Separatist Die (grey d6) matches the base number (if insufficient minis remain, spawn as many as possible — excess lost). Once captured, stops natural spawning. Conquering requires defeating 7 separatists. Controller may Instigate Uprising (Phase 7): pay 3 Local Favor to spawn 3 Separatists at any unconquered base (once per round per conquered base). All 3 bases captured: produce 1 Local Favor when number rolled."
     },
     {
       "name": "Spaceport Drop Zone",
@@ -108,7 +108,7 @@
     "description": "Deal 3 BAC cards to each player. Each player picks 1, passes 2 left. Picks 1 from received cards, passes 1 left. Keeps the final card. Result: 3-card starting hand."
   },
   "turn_phases": [
-    { "phase": 1, "name": "Resource Production", "description": "Roll 3d6, add resource tokens to corresponding hex numbers. Doubles = BAC from Planet Bound Area to matching spaceport. Triples = active player chooses spaceport placement + may move 1 Planet Bound BAC." },
+    { "phase": 1, "name": "Resource Production", "description": "Roll 2d6 + 1 Separatist Die (grey). All 3 dice produce resources. Only the Separatist Die triggers spawning at bases. Doubles = BAC from Planet Bound Area to matching spaceport. Triples = active player chooses spaceport placement + may move 1 Planet Bound BAC." },
     { "phase": 2, "name": "Movement", "description": "Move squads 1 hex (2 with Jump Jets). Each soldier moves independently but must stay within 2 hexes of at least one squadmate (squad coherency). Skip movement to Conspire instead." },
     { "phase": 3, "name": "Combat", "description": "Initiate combat with enemies within 1-2 hexes. See combat system." },
     { "phase": 4, "name": "Resource Gathering", "description": "Active player collects resources from same/adjacent hex. If combat occurred, defending player(s) also collect. Winner picks first, then loser. If no combat, only active player collects. BEAR card allows +1 pickup." },

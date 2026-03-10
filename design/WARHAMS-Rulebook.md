@@ -90,7 +90,8 @@ Resources are the lifeblood of your campaign. Each type is produced by its corre
 
 ### 🎲 Dice
 
-- **14 six-sided dice (d6)** — used for combat, resource production, and event resolution.
+- **13 six-sided dice (d6)** — used for combat, resource production, and event resolution.
+- **1 Separatist Die (d6)** — a distinct-colored d6 (grey) used as one of the 3 resource dice during Phase 1. Only this die triggers Separatist spawning.
 
 ### 🧍 Miniatures & Boards
 
@@ -206,13 +207,13 @@ Starting from the first player and proceeding clockwise, each player completes *
 
 ### Phase 1: Resource Production
 
-The active player rolls **3d6**. For each **unique number** rolled, place 1 corresponding resource token on **every** hex tile bearing that number token. Duplicate dice do not produce extra resources — rolling the same number twice still produces only once for that number. This includes hexes currently occupied by Separatist forces.
+The active player rolls **2d6 + 1 Separatist Die** (a grey d6). All three dice produce resources normally — for each **unique number** rolled, place 1 corresponding resource token on **every** hex tile bearing that number token. Duplicate dice do not produce extra resources — rolling the same number twice still produces only once for that number. This includes hexes currently occupied by Separatist forces.
 
-> **Example:** You roll 2, 4, 6. Every hex with a "2" number token receives 1 resource token of its type, then every hex with a "4" token, then every hex with a "6" token.
+> **Example:** You roll 2, 4, and the Separatist Die shows 6. Every hex with a "2", "4", or "6" number token receives 1 resource token of its type.
 >
-> **Example (Doubles):** You roll 3, 3, 5. Every hex with a "3" token receives 1 resource token (not 2 — duplicates don't double production), and every hex with a "5" token receives 1 resource token. The doubled 3s also trigger a BAC delivery (see Doubles below).
+> **Example (Doubles):** You roll 3, 3, and the Separatist Die shows 5. Every hex with a "3" token receives 1 resource token (not 2 — duplicates don't double production), and every hex with a "5" token receives 1 resource token. The doubled 3s also trigger a BAC delivery (see Doubles below).
 
-**Separatist Spawning** — If any die matches a **Separatist Base's printed number** (2, 4, or 6), spawn **3 Separatist miniatures** at that base. They immediately scatter to different nearest resource hexes (see **Separatists** section for full details).
+**Separatist Spawning** — Only the **Separatist Die** (grey) triggers spawning. If the Separatist Die matches a **Separatist Base's printed number** (2, 4, or 6), spawn **3 Separatist miniatures** at that base. They immediately scatter to different nearest resource hexes (see **Separatists** section for full details). The other two dice never trigger spawns.
 
 **Doubles** — If two of the three dice show the same number (e.g., 3, 3, 5):
 
