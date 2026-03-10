@@ -322,7 +322,7 @@ If your Control Flag is already on a BAC card in the Equipment Display, you may 
 
 **Limit:** Only **8 copies** of each equipment module exist in the game. If all 8 are currently in use, no more soldiers can equip that type until a module is freed (destroyed modules return to the box and can be purchased again).
 
-> **Example:** You have an H.C.A.R card in hand. You place it in the Equipment Display and put your red flag on it — H.C.A.R is now unlocked for you permanently. You pay 1 Industry + 1 Electricity per soldier and snap H.C.A.R rifle modules onto their Hands slot. Next turn, you recruit a new soldier and want to arm them too — just pay 1 Industry + 1 Electricity again, no card needed.
+> **Example:** You have an H.C.A.R (Heavy Caliber Assault Rifle) card in hand. You place it in the Equipment Display and put your red flag on it — H.C.A.R is now unlocked for you permanently. You pay 1 Industry + 1 Electricity per soldier and snap H.C.A.R rifle modules onto their Hands slot. Next turn, you recruit a new soldier and want to arm them too — just pay 1 Industry + 1 Electricity again, no card needed.
 
 **Acquiring New BACs:**
 
