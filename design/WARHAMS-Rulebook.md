@@ -303,7 +303,7 @@ Collected resource tokens go directly into the player's personal supply.
 
 ### Phase 5: Purchase & Equip
 
-The active player may spend resource tokens to activate BAC cards from their hand and equip their soldiers with the corresponding equipment modules.
+The active player may unlock and equip BAC types, acquire new BAC cards, recruit soldiers, and create new Squads. All actions in this phase may be performed in any order and any number of times (resources permitting).
 
 **Equipping a BAC:**
 
@@ -311,10 +311,12 @@ There are two ways to equip a BAC — **unlocking** a new type, or **re-equippin
 
 **Unlocking a new BAC type:**
 
-1. Choose a BAC card from your **hand** and place it face-up in the **Equipment Display** (shared reference area near the board). If the card is already in the Display, discard yours instead.
+1. Choose a BAC card from your **hand** and place it face-up in the **Equipment Display** (shared reference area near the board). If the card is already in the Display, discard your copy instead.
 2. Place one of your **Control Flags** on that card in the Equipment Display — this marks that you have **permanently unlocked** this BAC type.
 3. Pay the card's resource cost for **each soldier** you wish to equip.
 4. Attach the matching **equipment module** (magnetized part) to each equipped soldier's miniature in the correct slot (Head, Chest, Legs, Backpack, or Hands).
+
+Equipping has no location requirement — you may equip any of your soldiers regardless of where they are on the board. Soldiers recruited this phase may also be equipped immediately.
 
 **Re-equipping an unlocked BAC type:**
 
