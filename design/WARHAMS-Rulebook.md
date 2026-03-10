@@ -663,6 +663,7 @@ When using area-of-effect weaponry — specifically **S.L.I.M.E** (mortar) or ot
 
 | Separatist Rule | Detail |
 |---|---|
+| **Rolled By** | The player to the **left** of the player fighting the Separatists rolls all Separatist dice |
 | **Dice Penalty** | Separatists roll with **−1 to all dice** (minimum result of 1) |
 | **Fragile** | Each Separatist has only **1 life** — any hit kills them instantly |
 | **Blocking Movement** | A soldier may not move through or collect resources from a hex occupied by Separatists without defeating them first |
