@@ -375,7 +375,10 @@ Pay the soldier recruitment cost **× the number of soldiers** in the new Squad 
 The active player may trade resource tokens freely with any other player. Both parties must agree to the terms of the trade. There is no limit to the number of trades per turn.
 
 - Only **resource tokens** may be traded. BAC cards, Conspire Cards, and equipment cannot be traded.
+- All trades must be **two-sided** — both players must give and receive at least 1 resource token. No gifting or taking resources for free.
 - Trades must be executed immediately — no promises of future payment or deferred trades are enforceable.
+
+> **Example:** Trading 1 Oil for 1 Electricity is valid. Giving 2 Oil for nothing in return is not.
 
 ---
 
