@@ -113,7 +113,7 @@
     { "phase": 3, "name": "Combat", "description": "Initiate combat with enemies within 1-2 hexes. See combat system." },
     { "phase": 4, "name": "Resource Gathering", "description": "Active player collects resources from same/adjacent hex. If combat occurred, defending player(s) also collect. Winner picks first, then loser. If no combat, only active player collects. BEAR card allows +1 pickup." },
     { "phase": 5, "name": "Purchase & Equip", "description": "Buy upgrades with resources. Each squad can hold X armaments where X = number of soldiers." },
-    { "phase": 6, "name": "Trade", "description": "Trade resources with other players. At end of turn, discard Conspire cards down to 7 if over limit." },
+    { "phase": 6, "name": "Trade", "description": "Trade resources with other players (two-sided only, no gifting). Bank trade: 3:1 ratio (return 3 of one type, take 1 of any other). At end of turn, discard Conspire cards down to 7 if over limit." },
     { "phase": 7, "name": "Move Separatists", "description": "Instigate Uprising first (conquered base owners may pay 3 Local Favor to spawn 3 Separatists at an unconquered base, once per base per round). Then separatists: consume resources, move toward produced resources, or roll for random direction. If a Separatist enters a player-occupied hex, immediate combat triggers (player defends, Separatist attacks with -1 dice)." }
   ],
   "combat_system": {

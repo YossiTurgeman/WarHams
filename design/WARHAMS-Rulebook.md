@@ -355,8 +355,9 @@ The active player may trade resource tokens freely with any other player. Both p
 - Only **resource tokens** may be traded. BAC cards, Conspire Cards, and equipment cannot be traded.
 - All trades must be **two-sided** — both players must give and receive at least 1 resource token. No gifting or taking resources for free.
 - Trades must be executed immediately — no promises of future payment or deferred trades are enforceable.
+- **Bank Trade:** You may trade with the supply at a **3:1 ratio** — return 3 of any single resource type to the supply and take 1 of any other type. No limit on bank trades per turn.
 
-> **Example:** Trading 1 Oil for 1 Electricity is valid. Giving 2 Oil for nothing in return is not.
+> **Example:** Trading 1 Oil for 1 Electricity with another player is valid. Giving 1 Oil for nothing in return is not. If no one will trade, you can return 3 Oil to the supply and take 1 Electricity from the bank.
 
 ---
 
