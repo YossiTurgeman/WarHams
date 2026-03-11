@@ -389,8 +389,10 @@ while (i < lines.length) {
   if (line.startsWith('## ')) {
     flushBlockquote();
     flushTable();
-    checkPageBreak(100);
-    y += 6;
+    // Major sections always start on a new page
+    if (pageNum > 0) addInlineFooter();
+    doc.addPage();
+    pageNum++;
     const text = parseInlineFormatting(line.replace(/^#+\s*/, ''));
     drawText(text, { fontSize: 16, color: COLORS.heading2, bold: true, spacing: 6 });
     doc.strokeColor(COLORS.heading2).lineWidth(1).moveTo(50, y - 2).lineTo(PAGE_WIDTH - 50, y - 2).stroke();
@@ -400,7 +402,9 @@ while (i < lines.length) {
   }
 
   if (line.startsWith('### ')) {
-    checkPageBreak(70);
+    // Reserve enough space for the heading + at least a few lines of content below it
+    // so the heading never orphans at the bottom of a page
+    checkPageBreak(140);
     y += 4;
     const text = parseInlineFormatting(line.replace(/^#+\s*/, ''));
     drawText(text, { fontSize: 13, color: COLORS.heading3, bold: true, spacing: 5 });
@@ -409,7 +413,7 @@ while (i < lines.length) {
   }
 
   if (line.startsWith('#### ')) {
-    checkPageBreak(50);
+    checkPageBreak(100);
     y += 2;
     const text = parseInlineFormatting(line.replace(/^#+\s*/, ''));
     drawText(text, { fontSize: 11, color: COLORS.heading4, bold: true, spacing: 4 });
@@ -449,7 +453,7 @@ while (i < lines.length) {
   // Bold section headers (like **Step 1 — ...**)
   if (line.startsWith('**') && line.includes('**')) {
     const text = parseInlineFormatting(line);
-    checkPageBreak(50);
+    checkPageBreak(80);
     drawText(text, { fontSize: 10, bold: true, spacing: 4 });
     i++;
     continue;
