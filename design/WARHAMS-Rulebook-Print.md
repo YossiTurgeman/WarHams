@@ -281,7 +281,7 @@ A player may choose to move some Squads and Conspire with others — the choice 
 
 ### Phase 3: Combat
 
-If any enemy units — whether belonging to other players or Separatist forces — are within **2 hexes** of the active player's soldiers, the active player **may** declare combat. Combat is never mandatory. Only **engaged** soldiers (within 2 hexes of the target) participate and roll dice.
+If any enemy units — whether belonging to other players or Separatist forces — are within **2 hexes** of the active player's soldiers, the active player **may** declare combat. Player-vs-player combat is never mandatory — you always choose whether to attack. Separatist combat in Phase 7 is mandatory (see **Fighting Separatists**). Only **engaged** soldiers (within 2 hexes of the target) participate and roll dice.
 
 To declare combat:
 
@@ -458,7 +458,7 @@ Combat is the heart of W.A.R H.A.M.S. When corporations clash over hexes, resour
 
 ### Initiating Combat
 
-During **Phase 3** of the active player's turn, they may declare an attack with any of their Squads against an enemy Squad (or Separatist group). Combat is never mandatory.
+During **Phase 3** of the active player's turn, they may declare an attack with any of their Squads against an enemy Squad (or Separatist group). Player-vs-player combat is never mandatory — you always choose whether to attack. Separatist combat in Phase 7 is mandatory (see **Fighting Separatists**).
 
 - Each Squad may declare **one attack** per turn.
 - To initiate combat, at least **one** of the attacking Squad's soldiers must be within **2 hexes** of at least **one** soldier in the target Squad.

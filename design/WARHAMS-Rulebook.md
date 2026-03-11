@@ -434,7 +434,7 @@ Combat is the heart of W.A.R H.A.M.S. When corporations clash over hexes, resour
 
 ### Initiating Combat
 
-During **Phase 3** of the active player's turn, they may declare an attack with any of their Squads against an enemy Squad (or Separatist group). Combat is never mandatory.
+During **Phase 3** of the active player's turn, they may declare an attack with any of their Squads against an enemy Squad (or Separatist group). Player-vs-player combat is never mandatory — you always choose whether to attack. Separatist combat in Phase 7 is mandatory (see **Fighting Separatists**).
 
 - Each Squad may declare **one attack** per turn.
 - To initiate combat, at least **one** of the attacking Squad's soldiers must be within **2 hexes** of at least **one** soldier in the target Squad.
