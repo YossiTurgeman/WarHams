@@ -372,10 +372,18 @@ Any player who controls a conquered Separatist Base may pay **3 Local Favor** to
 Every Separatist sitting on a hex with resource tokens removes **1 token** (return it to the supply). Resolve all Separatists simultaneously.
 
 **Step 3 — Move**
-The active player rolls **1d6** once for direction. This single roll applies to **all** Separatists that move this phase.
 
 - **Seekers**: Any Separatist within **3 hexes** of a resource hex with tokens moves toward the **nearest** one (up to 3 hexes). Split Seekers evenly among available targets.
-- **Wanderers**: All remaining Separatists move **up to 3 hexes** in the rolled direction. If a Wanderer hits the board edge, it stops.
+- **Wanderers**: All remaining Separatists wander. The active player rolls **1d6 once** — all Wanderers move **up to 3 hexes** in that direction.
+
+| Roll | Direction |
+|------|-----------|
+| 1    | North     |
+| 2    | Northeast |
+| 3    | Southeast |
+| 4    | South     |
+| 5    | Southwest |
+| 6    | Northwest |
 
 Move all Separatists before resolving any combat.
 
