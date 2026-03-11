@@ -390,7 +390,7 @@ Move all Separatists before resolving any combat.
 **Step 4 — Resolve Combats**
 After all movement is complete, resolve combat on every hex where Separatists and player soldiers now share a space. The defending player fights normally; the player to their **left** rolls all Separatist dice (with the standard −1 penalty). Resolve each contested hex in clockwise order starting from the active player.
 
-> **Tip:** Leave resources on strategic hexes to lure Seekers toward opponents. Clear resources near your territory to force random Wandering away from you.
+> **Tip:** Leave resources on strategic hexes to lure Seekers toward opponents. Clear resources near your territory so nearby Separatists become Wanderers instead — their direction is random and less predictable than a straight line to your stockpile.
 
 ---
 
