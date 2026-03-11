@@ -385,37 +385,26 @@ The active player may trade resource tokens freely with any other player. Both p
 
 ### Phase 7: Move Separatists
 
-The active player moves **all** Separatist units on the board, following this sequence:
+All Separatist movement is resolved in four quick steps. **Each player moves Separatists in or adjacent to their own territory** (hexes they control or have soldiers on). Unclaimed Separatists are moved by the active player.
 
-**Step 0 — Instigate Uprising**
-Before normal Separatist behavior, any player who controls a conquered Separatist Base may pay **3 Local Favor** to spawn **3 Separatists** at any ONE unconquered base. They scatter per normal spawning rules. Once per round per conquered base you control (see **Separatists — Instigate Uprising** for full details).
+**Step 1 — Instigate Uprising**
+Any player who controls a conquered Separatist Base may pay **3 Local Favor** to spawn **3 Separatists** at any ONE unconquered base. They scatter per normal spawning rules. Once per round per conquered base you control (see **Separatists — Instigate Uprising** for full details).
 
-**Step 1 — Consume Resources**
-If a Separatist is on a hex with produced resource tokens, remove **1 resource token** from that hex (the Separatist consumes it). Return the token to the supply.
+**Step 2 — Consume**
+Every Separatist sitting on a hex with resource tokens removes **1 token** (return it to the supply). Resolve all Separatists simultaneously.
 
-**Step 2 — Seek Resources**
-If there is a resource-producing hex with available resource tokens within **3 hexes**, move the Separatist toward it (up to 3 hexes of movement).
+**Step 3 — Move**
+The active player rolls **1d6** once for direction. This single roll applies to **all** Separatists that move this phase.
 
-- If multiple valid target hexes exist, **roll to determine** which one the Separatist moves toward.
-- If multiple Separatists are eligible to move, divide them among available resource targets as evenly as possible.
+- **Seekers**: Any Separatist within **3 hexes** of a resource hex with tokens moves toward the **nearest** one (up to 3 hexes). Split Seekers evenly among available targets.
+- **Wanderers**: All remaining Separatists move **up to 3 hexes** in the rolled direction. If a Wanderer hits the board edge, it stops.
 
-**Step 3 — Wander**
-For any Separatist not on a resource hex (or on one with no remaining resources), roll **1d6** to determine its direction of movement:
+Move all Separatists before resolving any combat.
 
-| Roll | Direction |
-|------|-----------|
-| 1    | North     |
-| 2    | Northeast |
-| 3    | Southeast |
-| 4    | South     |
-| 5    | Southwest |
-| 6    | Northwest |
+**Step 4 — Resolve Combats**
+After all movement is complete, resolve combat on every hex where Separatists and player soldiers now share a space. The defending player fights normally; the player to their **left** rolls all Separatist dice (with the standard −1 penalty). Resolve each contested hex in clockwise order starting from the active player.
 
-Move the Separatist **up to 3 hexes** in the rolled direction.
-
-**Separatists Entering Player Hexes** — If a Separatist's movement brings it onto a hex occupied by a player's soldiers, **immediate combat** is triggered. The player defends normally; the Separatist attacks with its standard −1 dice penalty. Resolve the combat before continuing to move other Separatists.
-
-> **Tip:** Clever players can manipulate Separatist movement by leaving resources on strategic hexes to lure them toward opponents, or by clearing resources to force random wandering away from your territory.
+> **Tip:** Leave resources on strategic hexes to lure Seekers toward opponents. Clear resources near your territory to force random Wandering away from you.
 
 ---
 
@@ -444,7 +433,7 @@ Then a new round begins with the first player.
 | 4     | Resource Gathering    | Collect tokens from occupied/adjacent hexes. Priority: winner → loser → active player (if no combat) |
 | 5     | Purchase & Equip      | Spend resource tokens to buy and equip BACs, recruit soldiers, or create new Squads |
 | 6     | Trade                 | Trade resource tokens freely with other players by mutual agreement   |
-| 7     | Move Separatists      | Move all NPC Separatist forces: consume → seek resources → wander randomly |
+| 7     | Move Separatists      | Uprising → consume → 1 roll moves all Separatists → resolve combats |
 
 ---
 ---
@@ -988,9 +977,11 @@ When a number matching a **Separatist Base's printed number** is rolled during P
 
 ### Behavior (Phase 7)
 
-1. **Consume** — If on a hex with resource tokens, remove 1 token.
-2. **Seek** — Move toward nearest resource hex with tokens within 3 hexes.
-3. **Wander** — Roll 1d6 for direction, move up to 3 hexes.
+Each player moves Separatists in or adjacent to their own territory. Unclaimed Separatists are moved by the active player.
+
+1. **Consume** — Every Separatist on a hex with tokens removes 1 token (all at once).
+2. **Move** — Active player rolls **1d6 once** for wander direction. **Seekers** (within 3 hexes of a resource hex with tokens) move toward the nearest one. **Wanderers** (all others) move up to 3 hexes in the rolled direction. Move all before resolving combat.
+3. **Combat** — Resolve each hex where Separatists and soldiers share space. Player to the **left** of the defender rolls Separatist dice.
 
 ### Fighting Separatists
 
@@ -1128,7 +1119,7 @@ DP come from **equipped BAC cards** — each BAC's DP value counts toward your t
 | 4 | Resource Gathering | Collect tokens from occupied/adjacent hexes. Priority: winner → loser → active player (if no combat) |
 | 5 | Purchase & Equip | Buy and equip BACs, recruit soldiers, create Squads |
 | 6 | Trade | Trade resource tokens freely with other players |
-| 7 | Move Separatists | Move all NPC Separatist forces |
+| 7 | Move Separatists | Uprising → consume → 1 roll moves all → resolve combats |
 
 ### Key Costs
 
