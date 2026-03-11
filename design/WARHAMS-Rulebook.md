@@ -439,7 +439,7 @@ During **Phase 3** of the active player's turn, they may declare an attack with 
 - Each Squad may declare **one attack** per turn.
 - To initiate combat, at least **one** of the attacking Squad's soldiers must be within **2 hexes** of at least **one** soldier in the target Squad.
 - **Engaged soldiers only:** Only soldiers within **2 hexes** of at least one enemy soldier in the target Squad participate in combat and roll dice. Soldiers outside this range **sit out** — they do not roll attack or defense dice.
-- **S.L.I.M.E** (mortar) has extended range and may fire from beyond 2 hexes (up to 3 hexes). Mortar crew count as engaged even if outside normal range. **B.A.S.R** (Bolt Action Sniper Rifle) fires at up to 2 hexes in a **pre-combat step** — within normal engagement range, but its range can be extended via **L.P.M** (up to 4 hexes). See **Special Weapon Rules** below.
+- **S.L.I.M.E** (mortar) has extended range and may fire from beyond 2 hexes (up to 3 hexes). Mortar crew count as engaged even if outside normal range. **B.A.S.R** (Bolt Action Sniper Rifle) fires at up to 2 hexes in a **pre-combat step** — within normal engagement range, but its range can be extended via **L.P.M** (Laser Pointer Module) (up to 4 hexes). See **Special Weapon Rules** below.
 - Only the **active player** may initiate combat. Defenders respond during combat resolution but do not choose to attack on another player's turn.
 
 ---
