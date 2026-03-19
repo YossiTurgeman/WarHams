@@ -592,11 +592,11 @@ After all damage is resolved, check **every** defender's matchup for a potential
 
 **Counterattack Trigger:** Any defending soldier whose defense die beat the attack die by **3 or more** earns a **Counterattack**.
 
-| Attack Die | Defense Die | Difference | Result |
-|:---:|:---:|:---:|---|
-| 2 | 6 | +4 for defender | **COUNTERATTACK** triggered |
-| 3 | 6 | +3 for defender | **COUNTERATTACK** triggered |
-| 4 | 6 | +2 for defender | No counterattack (difference < 3) |
+| Defender | Attack Die | Defense Die | Difference | Result |
+|---|:---:|:---:|:---:|---|
+| Soldier A | 6 | 5 | +0 (attacker won) | No counterattack |
+| Soldier B | 4 | 4 | +0 for defender | No counterattack (difference < 3) |
+| Soldier C | 1 | 6 | +5 for defender | **COUNTERATTACK** triggered |
 
 When a Counterattack is triggered:
 
