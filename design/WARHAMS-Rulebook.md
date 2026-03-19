@@ -291,6 +291,8 @@ After all combats are resolved, the active player collects resources from the bo
 
 Before collecting resources, any player whose soldier occupies a hex containing **salvage modules** (left behind after a death — see **Death in W.A.R H.A.M.S, Step 4**) may pick them up. Salvaged modules can be equipped for **free** — simply attach the module to the soldier's miniature. Salvage collection follows the same priority order listed above.
 
+A player may choose to **forfeit** their salvage pickup and instead collect **1 resource token** from the same hex during this step. This counts as their collection for the turn — they do not collect again in Step 2.
+
 **Step 2 — Resource Collection:**
 
 - Each soldier may pick up **1 resource token** from the hex they currently occupy.
