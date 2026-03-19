@@ -275,7 +275,7 @@ To declare combat:
 
 ---
 
-### Phase 4: Resource Gathering
+### Phase 4: Salvage & Resource Gathering
 
 After all combats are resolved, the active player collects resources from the board. If combat occurred this turn, any **defending player** involved in that combat also collects resources during this phase.
 
@@ -289,7 +289,7 @@ After all combats are resolved, the active player collects resources from the bo
 
 **Step 1 — Salvage Collection (if any):**
 
-Before collecting resources, any player whose soldier occupies or is adjacent to a hex containing **salvage modules** (left behind after a death — see **Death in W.A.R H.A.M.S, Step 4**) may pick them up first. Salvaged modules can be equipped for **free** — simply attach the module to the soldier's miniature. Salvage collection follows the same priority order listed above.
+Before collecting resources, any player whose soldier occupies a hex containing **salvage modules** (left behind after a death — see **Death in W.A.R H.A.M.S, Step 4**) may pick them up. Salvaged modules can be equipped for **free** — simply attach the module to the soldier's miniature. Salvage collection follows the same priority order listed above.
 
 **Step 2 — Resource Collection:**
 
@@ -420,7 +420,7 @@ Then a new round begins with the first player.
 | 1     | Resource Production   | Roll 3d6, spawn resources on matching hexes. Doubles/triples = BAC drops at spaceports |
 | 2     | Movement              | Move each soldier up to 1 hex (2 with J.J). Alternatively, Conspire instead of moving a Squad |
 | 3     | Combat                | Declare attacks against enemies within 2 hexes. Only engaged soldiers (within 2 hexes of target) roll dice |
-| 4     | Resource Gathering    | Collect tokens from occupied/adjacent hexes. Priority: winner → loser → active player (if no combat) |
+| 4     | Salvage & Resource Gathering | Salvage modules from current hex first, then collect resource tokens. Priority: winner → loser → active player (if no combat) |
 | 5     | Purchase & Equip      | Spend resource tokens to buy and equip BACs, recruit soldiers, or create new Squads |
 | 6     | Trade                 | Trade resource tokens freely with other players by mutual agreement   |
 | 7     | Move Separatists      | Uprising → consume → 1 roll moves all Separatists → resolve combats |
@@ -666,7 +666,7 @@ Detach the equipment module from the struck slot and **return it to the box** (i
 
 #### 4. Salvage
 
-Modules left on the hex may be picked up by **any** soldier occupying that hex or an adjacent hex during **Phase 4: Resource Gathering, Step 1 (Salvage Collection)**. Salvage collection happens **before** regular resource gathering. Salvaged modules can be equipped for **free** (the cost was already paid) — simply attach the module to the soldier's mini. Check the **Equipment Display** to confirm the module's identity and effect.
+Modules left on the hex may be picked up by **any** soldier occupying that hex during **Phase 4: Salvage & Resource Gathering, Step 1 (Salvage Collection)**. Salvage collection happens **before** regular resource gathering. Salvaged modules can be equipped for **free** (the cost was already paid) — simply attach the module to the soldier's mini. Check the **Equipment Display** to confirm the module's identity and effect.
 
 #### 5. Coherency Check
 
