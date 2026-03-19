@@ -594,9 +594,9 @@ After all damage is resolved, check **every** defender's matchup for a potential
 
 | Attack Die | Defense Die | Difference | Result |
 |:---:|:---:|:---:|---|
-| 2 | 6 | +4 for defender | ✅ **COUNTERATTACK** triggered |
-| 3 | 6 | +3 for defender | ✅ **COUNTERATTACK** triggered |
-| 4 | 6 | +2 for defender | ❌ No counterattack (difference < 3) |
+| 2 | 6 | +4 for defender | **COUNTERATTACK** triggered |
+| 3 | 6 | +3 for defender | **COUNTERATTACK** triggered |
+| 4 | 6 | +2 for defender | No counterattack (difference < 3) |
 
 When a Counterattack is triggered:
 

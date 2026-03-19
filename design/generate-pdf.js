@@ -24,7 +24,10 @@ const doc = new PDFDocument({
 });
 
 let outputPath = OUTPUT;
-try { fs.accessSync(OUTPUT, fs.constants.W_OK); } catch (e) {
+try {
+  const fd = fs.openSync(OUTPUT, 'r+');
+  fs.closeSync(fd);
+} catch (e) {
   outputPath = OUTPUT.replace('.pdf', '-new.pdf');
   console.log('Original PDF locked, writing to: ' + outputPath);
 }
