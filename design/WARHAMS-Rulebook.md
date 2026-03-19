@@ -604,12 +604,24 @@ When a Counterattack is triggered:
 2. All normal combat rules apply (Steps 1–6), using only the counterattacking soldier(s) and the original attacker's soldiers they were matched against.
 3. **Counterattacks can chain** — but each successive counterattack suffers a cumulative **−1 Combat Fatigue penalty** to all dice rolls. The 1st counterattack has no penalty, the 2nd has −1, the 3rd has −2, etc. This makes extended chains increasingly unlikely to trigger.
 
-> **Worked Example:**
+> **Worked Example — Counterattack:**
 >
-> Soldier X (defender) was matched: Attack 2 vs Defense 6.
-> The defense die exceeds the attack die by **4** (6 − 2 = 4). This triggers a **Counterattack**.
-> Soldier X now becomes the attacker in a mini-combat round. Both sides roll 1d6, assign dice, apply bonuses, play cards, and resolve damage as normal.
-> If the original attacker's defense triggers *another* counterattack, both sides apply **−1 Combat Fatigue** to all rolls in that round. A third chain would apply −2, and so on.
+> Continuing from the earlier combat: The Attacker assigned a **2** against Soldier C's defense of **6**.
+> Difference: 6 − 2 = **4** (≥ 3) — **Counterattack triggered!**
+>
+> **Mini-Combat Round (Chain 1 — no fatigue penalty):**
+> Soldier C is now the Attacker. Both sides roll 1d6:
+>
+> | Matchup | Attack Die | Defense Die | Result |
+> |---|:---:|:---:|---|
+> | Soldier C vs Original Attacker | 5 | 2 | **HIT** (3 damage) |
+>
+> The original attacker's defense die (2) lost by 3 — exactly the threshold.
+> **Another Counterattack triggers!**
+>
+> **Mini-Combat Round (Chain 2 — Combat Fatigue: −1 to all dice):**
+> The original attacker strikes back. Both roll 1d6, but subtract 1 from each roll (minimum 1).
+> Attacker rolls 4 (−1 = **3**), Defender rolls 3 (−1 = **2**) — **HIT** (1 damage). No further counterattack (difference < 3).
 
 ---
 

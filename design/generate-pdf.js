@@ -271,16 +271,70 @@ let lastWasHR = false;
 
 function flushBlockquote() {
   if (blockquoteLines.length === 0) return;
-  const text = blockquoteLines.map((l) => l.replace(/^>\s*/, '')).join(' ').trim();
 
-  doc.font('Helvetica').fontSize(8);
-  const h = doc.heightOfString(parseInlineFormatting(text), { width: CONTENT_WIDTH - 30 }) + 16;
-  checkPageBreak(h + 4);
-  doc.rect(50, y, CONTENT_WIDTH, h).fill(COLORS.blockquoteBg);
-  doc.rect(50, y, 3, h).fill(COLORS.blockquoteBorder);
-  doc.font('Helvetica').fontSize(8).fillColor(COLORS.heading4);
-  doc.text(parseInlineFormatting(text), 60, y + 8, { width: CONTENT_WIDTH - 30 });
-  y = doc.y + 8;
+  // Strip the leading '> ' from each line
+  const stripped = blockquoteLines.map((l) => l.replace(/^>\s?/, ''));
+
+  // Split into segments: runs of text vs runs of table lines
+  const segments = [];
+  let currentText = [];
+  let currentTable = [];
+
+  function pushText() {
+    const t = currentText.join(' ').trim();
+    if (t) segments.push({ type: 'text', content: t });
+    currentText = [];
+  }
+  function pushTable() {
+    if (currentTable.length > 0) segments.push({ type: 'table', lines: currentTable });
+    currentTable = [];
+  }
+
+  for (const sl of stripped) {
+    if (sl.includes('|') && sl.trim().startsWith('|')) {
+      pushText();
+      currentTable.push(sl);
+    } else {
+      pushTable();
+      if (sl.trim() !== '') currentText.push(sl);
+    }
+  }
+  pushText();
+  pushTable();
+
+  // Estimate total height for background rect
+  let totalH = 16; // padding
+  for (const seg of segments) {
+    if (seg.type === 'text') {
+      doc.font('Helvetica').fontSize(8);
+      totalH += doc.heightOfString(parseInlineFormatting(seg.content), { width: CONTENT_WIDTH - 30 }) + 6;
+    } else {
+      // Rough table height estimate: header + rows * rowHeight
+      totalH += (seg.lines.length) * 18 + 8;
+    }
+  }
+
+  checkPageBreak(totalH + 4);
+
+  // Draw background and accent border
+  const bgStartY = y;
+  doc.rect(50, y, CONTENT_WIDTH, totalH).fill(COLORS.blockquoteBg);
+  doc.rect(50, y, 3, totalH).fill(COLORS.blockquoteBorder);
+
+  y += 8; // top padding
+
+  for (const seg of segments) {
+    if (seg.type === 'text') {
+      doc.font('Helvetica').fontSize(8).fillColor(COLORS.heading4);
+      doc.text(parseInlineFormatting(seg.content), 60, y, { width: CONTENT_WIDTH - 30 });
+      y = doc.y + 6;
+    } else {
+      // Render an embedded table inside the blockquote
+      renderTable(seg.lines);
+    }
+  }
+
+  y += 4; // bottom padding
 
   blockquoteLines = [];
   inBlockquote = false;
