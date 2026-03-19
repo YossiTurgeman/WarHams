@@ -630,7 +630,7 @@ When a Counterattack is triggered:
 >
 > Difference is only 1 — no further counterattack. The chain ends.
 
----
+<div style="page-break-before: always;"></div>
 
 ### ☠️ Death in W.A.R H.A.M.S
 
