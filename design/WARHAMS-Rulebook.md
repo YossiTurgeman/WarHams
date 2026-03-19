@@ -503,7 +503,7 @@ Each matchup is now a one-on-one comparison:
 
 > **Worked Example — Dice Assignment:**
 >
-> Attacker rolls: **6, 4, 1** — Defender rolls: **5, 4, 2**
+> Attacker rolls: **6, 4, 1** — Defender rolls: **5, 4, 6**
 >
 > The Attacker assigns:
 >
@@ -511,7 +511,7 @@ Each matchup is now a one-on-one comparison:
 > |---|:---:|:---:|---|
 > | Soldier A | 6 | 5 | **HIT** (6 − 5 = 1 damage) |
 > | Soldier B | 4 | 4 | **BLOCKED** (tie goes to defender) |
-> | Soldier C | 1 | 2 | **BLOCKED** (defense wins) |
+> | Soldier C | 1 | 6 | **BLOCKED** (defense wins) |
 >
 > **Total:** 1 hit dealing 1 damage token to Soldier A.
 >
@@ -606,8 +606,8 @@ When a Counterattack is triggered:
 
 > **Worked Example — Counterattack:**
 >
-> Continuing from the earlier combat: The Attacker assigned a **2** against Soldier C's defense of **6**.
-> Difference: 6 − 2 = **4** (≥ 3) — **Counterattack triggered!**
+> Continuing from the earlier combat: The Attacker assigned a **1** against Soldier C's defense of **6**.
+> Difference: 6 − 1 = **5** (≥ 3) — **Counterattack triggered!**
 >
 > **Mini-Combat Round (Chain 1 — no fatigue penalty):**
 > Soldier C is now the Attacker. Both sides roll 1d6:
