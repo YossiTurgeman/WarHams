@@ -672,7 +672,7 @@ Modules left on the hex may be picked up by **any** soldier occupying that hex d
 
 #### 5. Coherency Check
 
-After a death, check if any surviving squadmates are now **beyond 2 hexes** from all other squadmates. If so, those soldiers are **disconnected** — they fight alone (own dice only, no Squad-level BAC effects), identical to the J.J disconnection rules. Disconnected soldiers **must** use their next Movement phase to move back within 2 hexes of a squadmate. Until they rejoin, they cannot benefit from effects like S.L.I.M.E crew, L.P.M spotting, or other Squad-level abilities.
+After a death, check if any surviving squadmates are now **beyond 2 hexes** from all other squadmates. If so, those soldiers are **disconnected** — they fight alone (own dice only, no Squad-level BAC effects), identical to the J.J disconnection rules. Disconnected soldiers suffer a **−1 penalty to all dice rolls** (minimum 1) and **must** use their next Movement phase to move back within 2 hexes of a squadmate. Until they rejoin, they cannot benefit from effects like S.L.I.M.E crew, L.P.M spotting, or other Squad-level abilities.
 
 ---
 
