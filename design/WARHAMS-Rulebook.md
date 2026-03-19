@@ -287,7 +287,11 @@ After all combats are resolved, the active player collects resources from the bo
 
 > **Quick Priority Reminder:** ① Combat winner → ② Combat loser → ③ Active player (if no combat or tie). One collection per player.
 
-**Collection Rules:**
+**Step 1 — Salvage Collection (if any):**
+
+Before collecting resources, any player whose soldier occupies or is adjacent to a hex containing **salvage modules** (left behind after a death — see **Death in W.A.R H.A.M.S, Step 4**) may pick them up first. Salvaged modules can be equipped for **free** — simply attach the module to the soldier's miniature. Salvage collection follows the same priority order listed above.
+
+**Step 2 — Resource Collection:**
 
 - Each soldier may pick up **1 resource token** from the hex they currently occupy **or** from any single adjacent hex.
 - A soldier equipped with **B.E.A.R** (Battlefield Extraction Airlift Rover) may pick up **1 additional** resource token of any type from the same or adjacent hex.
@@ -662,7 +666,7 @@ Detach the equipment module from the struck slot and **return it to the box** (i
 
 #### 4. Salvage
 
-Modules left on the hex may be picked up by **any** soldier occupying that hex or an adjacent hex during **Phase 4: Resource Gathering**. Salvaged modules can be equipped for **free** (the cost was already paid) — simply attach the module to the soldier's mini. Check the **Equipment Display** to confirm the module's identity and effect.
+Modules left on the hex may be picked up by **any** soldier occupying that hex or an adjacent hex during **Phase 4: Resource Gathering, Step 1 (Salvage Collection)**. Salvage collection happens **before** regular resource gathering. Salvaged modules can be equipped for **free** (the cost was already paid) — simply attach the module to the soldier's mini. Check the **Equipment Display** to confirm the module's identity and effect.
 
 #### 5. Coherency Check
 
