@@ -614,9 +614,9 @@ When a Counterattack is triggered:
 >
 > | Matchup | Attack Die | Defense Die | Result |
 > |---|:---:|:---:|---|
-> | Soldier C vs Original Attacker | 5 | 2 | **HIT** (3 damage) |
+> | Soldier C vs Original Attacker | 2 | 5 | **BLOCKED** (defense wins by 3) |
 >
-> The original attacker's defense die (2) lost by 3 — exactly the threshold.
+> The original attacker's defense die (5) beat the attack die (2) by **3** — exactly the threshold.
 > **Another Counterattack triggers!**
 >
 > **Mini-Combat Round (Chain 2 — Combat Fatigue: −1 to all dice):**
