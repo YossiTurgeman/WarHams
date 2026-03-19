@@ -620,8 +620,15 @@ When a Counterattack is triggered:
 > **Another Counterattack triggers!**
 >
 > **Mini-Combat Round (Chain 2 — Combat Fatigue: −1 to all dice):**
-> The original attacker strikes back. Both roll 1d6, but subtract 1 from each roll (minimum 1).
-> Attacker rolls 4 (−1 = **3**), Defender rolls 3 (−1 = **2**) — **HIT** (1 damage). No further counterattack (difference < 3).
+> The original attacker strikes back. Both roll 1d6, but subtract 1 from each roll (minimum 1):
+>
+> | Matchup | Raw Roll | Fatigue | Final Die | Result |
+> |---|:---:|:---:|:---:|---|
+> | Original Attacker (attack) | 4 | −1 | **3** | |
+> | Soldier C (defense) | 3 | −1 | **2** | |
+> | **Result** | | | 3 vs 2 | **HIT** (1 damage) |
+>
+> Difference is only 1 — no further counterattack. The chain ends.
 
 ---
 
