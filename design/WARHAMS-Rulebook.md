@@ -293,8 +293,8 @@ Before collecting resources, any player whose soldier occupies a hex containing 
 
 **Step 2 — Resource Collection:**
 
-- Each soldier may pick up **1 resource token** from the hex they currently occupy **or** from any single adjacent hex.
-- A soldier equipped with **B.E.A.R** (Battlefield Extraction Airlift Rover) may pick up **1 additional** resource token of any type from the same or adjacent hex.
+- Each soldier may pick up **1 resource token** from the hex they currently occupy.
+- A soldier equipped with **B.E.A.R** (Battlefield Extraction Airlift Rover) may pick up **1 additional** resource token of any type from the same hex.
 - Continue in priority order until all accessible resources have been claimed or no player wishes to collect further.
 
 > **Important:** Resources **cannot** be collected from a hex occupied by Separatist units. Defeat them first.
