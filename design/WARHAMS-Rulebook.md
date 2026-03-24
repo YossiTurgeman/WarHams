@@ -580,6 +580,10 @@ For each **HIT** (attack die > defense die):
 - Damage tokens are placed directly on the soldier's slot on the Squad Board.
 - **Damage persists between turns.** A wounded H.A.M.S remains wounded until healed by a card effect or ability.
 
+**Combat Winner**
+
+The player who inflicted **more total damage** across all matchups in this combat is the **combat winner**.
+
 **Death Threshold**
 
 A H.A.M.S can sustain a maximum of **3 damage tokens**. When a soldier would receive a **4th damage token**, that soldier **dies**.
@@ -600,7 +604,7 @@ After all damage is resolved, check **every** defender's matchup for a potential
 
 | Defender | Attack Die | Defense Die | Difference | Result |
 |---|:---:|:---:|:---:|---|
-| Soldier A | 6 | 5 | +0 (attacker won) | No counterattack |
+| Soldier A | 6 | 5 | −1 (attacker won) | No counterattack |
 | Soldier B | 4 | 4 | +0 for defender | No counterattack (difference < 3) |
 | Soldier C | 1 | 6 | +5 for defender | **COUNTERATTACK** triggered |
 
@@ -662,8 +666,8 @@ Detach the equipment module from the struck slot and **return it to the box** (i
 
 | Pick Order | Player | Action |
 |:---:|---|---|
-| 1st | **Owner** (dead soldier's player) | Choose **1** remaining equipped module to keep — may immediately attach it to another soldier in the same Squad for **free** |
-| 2nd | **Attacker** (killing player) | Choose **1** remaining equipped module to take — may immediately attach it to one of their soldiers for **free** |
+| 1st | **Owner** (dead soldier's player) | Choose **1** remaining equipped module to keep — may immediately attach it to another existing soldier in the same Squad for **free**, provided that soldier is not outside of coherency |
+| 2nd | **Attacker** (killing player) | Choose **1** remaining equipped module to take — may immediately attach it to one of their soldiers for **free**, provided that soldier is not outside of coherency |
 | 3rd | — | All remaining modules are **left on the hex** as salvage |
 
 #### 4. Salvage
@@ -701,7 +705,7 @@ When using area-of-effect weaponry — specifically **S.L.I.M.E** (mortar) or ot
 
 ### 🔫 Special Weapon Rules
 
-#### B.A.S.R — Sniper Rifle
+#### B.A.S.R (Bolt Action Sniper Rifle) — Sniper Rifle
 
 > *One shot. One kill. Before anyone else fires.*
 
@@ -713,7 +717,7 @@ When using area-of-effect weaponry — specifically **S.L.I.M.E** (mortar) or ot
 | **Restriction** | Sniper does **not** participate in normal combat |
 | **Vulnerability** | **−1 defense** when attacked directly |
 
-#### S.L.I.M.E — Mortar
+#### S.L.I.M.E (Squad Light Interoperable Mortar Encampment) — Mortar
 
 > *Rain fire from a distance.*
 
@@ -727,7 +731,7 @@ When using area-of-effect weaponry — specifically **S.L.I.M.E** (mortar) or ot
 | **Vulnerability** | **−1 defense** when attacked directly |
 | **Civilian Damage** | Applies on City/Village hexes |
 
-#### L.P.M — Laser Pointer Module
+#### L.P.M (Laser Pointer Marker) — Laser Pointer Module
 
 > *Paint the target. Let the heavy weapons do the rest.*
 
@@ -831,7 +835,7 @@ The **modules on the minis are the source of truth** — not cards, not boards. 
 ### Equipping Rules
 
 - Choose a BAC card from your **hand** and pay the listed resource cost **per soldier** you wish to equip.
-- If this BAC type is not yet in the **Equipment Display**, place the card face-up there with a **reference module** on top. If it's already in the Equipment Display, discard the card (the reference is already visible).
+- If this BAC type is not yet in the **Equipment Display**, place the card face-up there and place one of your **Control Flags** on it to mark it as permanently unlocked. If it's already in the Equipment Display, discard the card and place your flag on the existing card.
 - Attach the matching **equipment module** (physical magnetized part) to each equipped soldier's miniature in the correct slot.
 - **Modules = Truth:** The physical modules on minis are the definitive record of who has what. The Equipment Display is for reference only.
 - **Flags are permanent:** Once your Control Flag is placed on a BAC card in the Equipment Display, it stays for the rest of the game — even if all your soldiers carrying that module die. Your flag marks that you've unlocked that BAC type and can pay to equip it again.
