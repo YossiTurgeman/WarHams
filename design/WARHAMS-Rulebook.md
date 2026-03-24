@@ -859,6 +859,8 @@ Modules with active abilities fall into two timing categories:
 
 ---
 
+<div style="page-break-before: always;"></div>
+
 ### 📋 Full BAC Card List (20 Types × 8 Copies = 160 Cards)
 
 | Abbr | Full Name | Slot | Cost | DP | Effect |
