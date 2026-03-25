@@ -876,7 +876,7 @@ Modules with active abilities fall into two timing categories:
 | P.A.E.H | Personal Accuracy Enhancement Helmet | Head | 1 Local Favor, 1 Electricity, 1 Intelligence | 4 | This soldier gets +1 to its attack die while also equipped with H.C.A.R |
 | B.A.S.R | Bolt Action Sniper Rifle | Hands | 1 Electricity, 1 Intelligence, 1 Industry | 4 | Pre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get −1 to defense die |
 | S.L.I.M.E | Squad Light Interoperable Mortar Encampment | Backpack | 1 Industry, 2 Oil, 2 Local Favor | 5 | Requires 2 soldiers. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes. Crew skips normal combat. While defending: −1 to defense die. Civilian Damage Rule applies on City/Village hexes |
-| B.E.A.R | Battlefield Extraction Airlift Rover | Chest | 1 Oil, 1 Industry, 1 Electricity | 3 | Pick 1 extra resource during Phase 4 |
+| B.E.A.R | Battlefield Extraction Airlift Rover | Chest | 1 Oil, 1 Industry, 1 Electricity | 3 | Pick 1 extra resource token from the same hex during Phase 4 |
 | P.L.A.S.T.E.R | Personal Lasting Aid Surgical Treatment Enhancement Robot | Chest | 1 Electricity, 1 Local Favor | 2 | Remove up to 2 damage tokens from any soldier on the same hex. **Tap**. Recharge at City/Spaceport for 1 Electricity |
 | N.I.N.J.A | Nir Ion Nullifier Jammer Aid | Legs | 1 Intelligence, 1 Electricity | 2 | +3 to one defense die. **Tap**. Recharge for 2 Electricity |
 | D.U.D.S | Deployable Unital Defense System | Backpack | 1 Local Favor, 1 Oil, 1 Electricity | 4 | Place bunker token: +1 all defense dice on this hex. **Flip** (one-use) |

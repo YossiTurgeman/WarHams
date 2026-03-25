@@ -208,7 +208,7 @@
     {
       "abbr": "B.E.A.R", "name": "Battlefield Extraction Airlift Rover", "slot": "Chest",
       "cost": { "Oil": 1, "Industry": 1, "Electricity": 1 }, "dp": 3, "copies": 8,
-      "text": "During resource gathering, after picking your resource, choose 1 more resource token of any kind."
+      "text": "During resource gathering, after picking your resource, pick 1 extra resource token from the same hex."
     },
     {
       "abbr": "P.L.A.S.T.E.R", "name": "Personal Lasting Aid Surgical Treatment Enhancement Robot", "slot": "Chest",
