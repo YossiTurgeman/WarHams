@@ -227,7 +227,7 @@
     },
     {
       "abbr": "L.P.M", "name": "Laser Pointer Marker", "slot": "Backpack",
-      "cost": { "Electricity": 1, "Local Favor": 1, "Intelligence": 1 }, "dp": 3, "copies": 8,
+      "cost": { "Electricity": 1, "Local Favor": 1, "Intelligence": 1 }, "dp": 4, "copies": 8,
       "text": "Other soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes."
     },
     {
