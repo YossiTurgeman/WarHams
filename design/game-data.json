@@ -222,7 +222,7 @@
     },
     {
       "abbr": "D.U.D.S", "name": "Deployable Unital Defense System", "slot": "Backpack",
-      "cost": { "Local Favor": 1, "Oil": 1, "Industry": 1 }, "dp": 4, "copies": 8,
+      "cost": { "Local Favor": 1, "Oil": 1, "Industry": 1 }, "dp": "Bunker: 5 (deployer) / 3 (other)", "copies": 8,
       "text": "Place a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot."
     },
     {
