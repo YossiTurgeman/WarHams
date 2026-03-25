@@ -842,7 +842,7 @@ The **modules on the minis are the source of truth** — not cards, not boards. 
 - **S.A.P → C.A.P Upgrade:** Custom Armor Plating (C.A.P) requires trading in the corresponding S.A.P piece as part of the upgrade cost. Detach the S.A.P module from the mini and return it to the supply, then attach the C.A.P module.
 - **Armor Stacking:** S.A.P and C.A.P pieces each grant their defense bonus independently (+1 per S.A.P piece, +2 per C.A.P piece). There are no set bonuses — equip as many or as few armor pieces as your strategy demands.
 - **Tapping:** Some modules are **Tapped** (rotated 90° on the mini or marked with a tap token) when activated. A Tapped module cannot be used again until **Untapped** (recharged) — typically at a City or Spaceport for a resource cost.
-- **One-Shot:** Modules marked as one-use (e.g., D.U.D.S) are **flipped/marked** after activation. They cannot be used again but still count toward DP.
+- **One-Shot:** Modules marked as one-use (e.g., D.U.D.S) are **removed from the soldier** after activation, freeing the slot. The module is returned to the supply and no longer counts toward DP.
 
 ### Activating Modules
 
@@ -879,7 +879,7 @@ Modules with active abilities fall into two timing categories:
 | B.E.A.R | Battlefield Extraction Airlift Rover | Chest | 1 Oil, 1 Industry, 1 Electricity | 3 | Pick 1 extra resource token from the same hex during Phase 4 |
 | P.L.A.S.T.E.R | Personal Lasting Aid Surgical Treatment Enhancement Robot | Chest | 1 Electricity, 1 Local Favor | 2 | Remove up to 2 damage tokens from any soldier on the same hex. **Tap**. Recharge at City/Spaceport for 1 Electricity |
 | N.I.N.J.A | Nir Ion Nullifier Jammer Aid | Legs | 1 Intelligence, 1 Electricity | 2 | +3 to one defense die. **Tap**. Recharge for 2 Electricity |
-| D.U.D.S | Deployable Unital Defense System | Backpack | 1 Local Favor, 1 Oil, 1 Electricity | 4 | Place bunker token: +1 all defense dice on this hex. **Flip** (one-use) |
+| D.U.D.S | Deployable Unital Defense System | Backpack | 1 Local Favor, 1 Oil, 1 Electricity | 4 | Place bunker token: +1 all defense dice on this hex. One-use: remove the module after deployment, freeing the backpack slot |
 | L.P.M | Laser Pointer Marker | Backpack | 1 Electricity, 1 Local Favor, 1 Intelligence | 4 | B.A.S.R/S.L.I.M.E can target enemies adjacent to L.P.M carrier. Max 4 hex range |
 | R.S.G | Repeating Shotgun | Hands | 1 Electricity, 1 Local Favor | 2 | Within 1 hex: +2 attack. Beyond 1 hex: −1 attack |
 | P.C.S.M.G | Projectile Correcting Sub Machine Gun | Hands | 1 Electricity, 1 Industry, 1 Intelligence | 3 | Within 1 hex: roll 3d6 for attack instead of 1d6, pick the highest result |
