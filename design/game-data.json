@@ -162,17 +162,17 @@
     {
       "abbr": "S.A.P Chest", "name": "Standard Armor Plating Chest Piece", "slot": "Chest",
       "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 8,
-      "text": "Gain +1 for one defense die."
+      "text": "This soldier gets +1 to its defense die."
     },
     {
       "abbr": "S.A.P Helmet", "name": "Standard Armor Plating Helmet", "slot": "Head",
       "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 8,
-      "text": "Gain +1 for one defense die."
+      "text": "This soldier gets +1 to its defense die."
     },
     {
       "abbr": "S.A.P Legs", "name": "Standard Armor Plating Legs", "slot": "Legs",
       "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 8,
-      "text": "Gain +1 for one defense die."
+      "text": "This soldier gets +1 to its defense die."
     },
     {
       "abbr": "J.J", "name": "Jump Jets", "slot": "Legs",
@@ -243,19 +243,19 @@
     {
       "abbr": "C.A.P Chest", "name": "Custom Armor Plating Chest", "slot": "Chest",
       "cost": { "SAP_Chest": 1, "Local Favor": 1, "Industry": 1, "Oil": 1 }, "dp": 4, "copies": 8,
-      "text": "Gain +2 for one defense die.",
+      "text": "This soldier gets +2 to its defense die.",
       "upgrade_from": "S.A.P Chest"
     },
     {
       "abbr": "C.A.P Head", "name": "Custom Armor Plating Helmet", "slot": "Head",
       "cost": { "SAP_Helmet": 1, "Local Favor": 1, "Intelligence": 1, "Oil": 1 }, "dp": 4, "copies": 8,
-      "text": "Gain +2 for one defense die.",
+      "text": "This soldier gets +2 to its defense die.",
       "upgrade_from": "S.A.P Helmet"
     },
     {
       "abbr": "C.A.P Legs", "name": "Custom Armor Plating Legs", "slot": "Legs",
       "cost": { "SAP_Legs": 1, "Local Favor": 1, "Electricity": 1, "Oil": 1 }, "dp": 4, "copies": 8,
-      "text": "Gain +2 for one defense die.",
+      "text": "This soldier gets +2 to its defense die.",
       "upgrade_from": "S.A.P Legs"
     },
     {

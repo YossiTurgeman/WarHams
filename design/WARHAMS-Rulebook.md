@@ -864,12 +864,12 @@ Modules with active abilities fall into two timing categories:
 
 | Abbr | Full Name | Slot | Cost | DP | Effect |
 |------|-----------|------|------|----|--------|
-| S.A.P Chest | Standard Armor Plating Chest Piece | Chest | 1 Oil, 1 Industry | 1 | +1 defense die |
-| S.A.P Helmet | Standard Armor Plating Helmet | Head | 1 Oil, 1 Industry | 1 | +1 defense die |
-| S.A.P Legs | Standard Armor Plating Legs | Legs | 1 Oil, 1 Industry | 1 | +1 defense die |
-| C.A.P Chest | Custom Armor Plating Chest | Chest | 1 S.A.P Chest + 1 Local Favor, 1 Industry, 1 Oil | 4 | +2 defense die |
-| C.A.P Head | Custom Armor Plating Helmet | Head | 1 S.A.P Head + 1 Local Favor, 1 Intelligence, 1 Oil | 4 | +2 defense die |
-| C.A.P Legs | Custom Armor Plating Legs | Legs | 1 S.A.P Legs + 1 Local Favor, 1 Electricity, 1 Oil | 4 | +2 defense die |
+| S.A.P Chest | Standard Armor Plating Chest Piece | Chest | 1 Oil, 1 Industry | 1 | This soldier gets +1 to its defense die |
+| S.A.P Helmet | Standard Armor Plating Helmet | Head | 1 Oil, 1 Industry | 1 | This soldier gets +1 to its defense die |
+| S.A.P Legs | Standard Armor Plating Legs | Legs | 1 Oil, 1 Industry | 1 | This soldier gets +1 to its defense die |
+| C.A.P Chest | Custom Armor Plating Chest | Chest | 1 S.A.P Chest + 1 Local Favor, 1 Industry, 1 Oil | 4 | This soldier gets +2 to its defense die |
+| C.A.P Head | Custom Armor Plating Helmet | Head | 1 S.A.P Head + 1 Local Favor, 1 Intelligence, 1 Oil | 4 | This soldier gets +2 to its defense die |
+| C.A.P Legs | Custom Armor Plating Legs | Legs | 1 S.A.P Legs + 1 Local Favor, 1 Electricity, 1 Oil | 4 | This soldier gets +2 to its defense die |
 | J.J | Jump Jets | Legs | 1 Industry, 1 Intelligence | 2 | Move 2 hexes instead of 1. May override squad coherency (fights alone while disconnected, no Squad-level BAC effects) |
 | S.H.A.D | Sensory Helmet, Advisory Drone | Head | 2 Intelligence, 1 Electricity | 5 | Attacker must reveal Conspire cards before combat |
 | H.C.A.R | Heavy Caliber Assault Rifle | Hands | 1 Industry, 1 Electricity | 2 | +1 attack die |
