@@ -192,7 +192,7 @@
     {
       "abbr": "P.A.E.H", "name": "Personal Accuracy Enhancement Helmet", "slot": "Head",
       "cost": { "Local Favor": 1, "Electricity": 1, "Intelligence": 1 }, "dp": 4, "copies": 8,
-      "text": "Gain +1 to your attack die if you also carry an HCAR."
+      "text": "This soldier gets +1 to its attack die while also equipped with H.C.A.R."
     },
     {
       "abbr": "B.A.S.R", "name": "Bolt Action Sniper Rifle", "slot": "Hands",
