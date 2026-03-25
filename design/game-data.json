@@ -186,7 +186,7 @@
     },
     {
       "abbr": "H.C.A.R", "name": "Heavy Caliber Assault Rifle", "slot": "Hands",
-      "cost": { "Industry": 1, "Electricity": 1 }, "dp": 2, "copies": 8,
+      "cost": { "Industry": 1, "Oil": 1 }, "dp": 2, "copies": 8,
       "text": "Add +1 to this soldier's attack die."
     },
     {
@@ -196,7 +196,7 @@
     },
     {
       "abbr": "B.A.S.R", "name": "Bolt Action Sniper Rifle", "slot": "Hands",
-      "cost": { "Electricity": 1, "Intelligence": 1, "Industry": 1 }, "dp": 4, "copies": 8,
+      "cost": { "Oil": 1, "Intelligence": 1, "Industry": 1 }, "dp": 4, "copies": 8,
       "text": "Pre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die."
     },
     {
@@ -222,7 +222,7 @@
     },
     {
       "abbr": "D.U.D.S", "name": "Deployable Unital Defense System", "slot": "Backpack",
-      "cost": { "Local Favor": 1, "Oil": 1, "Electricity": 1 }, "dp": 4, "copies": 8,
+      "cost": { "Local Favor": 1, "Oil": 1, "Industry": 1 }, "dp": 4, "copies": 8,
       "text": "Place a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot."
     },
     {
@@ -232,7 +232,7 @@
     },
     {
       "abbr": "R.S.G", "name": "Repeating Shotgun", "slot": "Hands",
-      "cost": { "Electricity": 1, "Local Favor": 1 }, "dp": 2, "copies": 8,
+      "cost": { "Oil": 1, "Local Favor": 1 }, "dp": 2, "copies": 8,
       "text": "If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1."
     },
     {
