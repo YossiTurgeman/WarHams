@@ -755,7 +755,7 @@ Bunker tokens are placed by the **D.U.D.S** (Deployable Unital Defense System) e
 | **Stacking** | **1 bunker per hex** maximum |
 | **Persistence** | Bunker tokens remain on the hex until destroyed |
 | **Destruction** | An attacker who wins combat on a bunkered hex may choose to **destroy the bunker** (remove the token) instead of claiming the hex |
-| **Bunker DP** | The player who controls the bunkered hex earns DP: **5 DP** if they are the original deployer, **3 DP** if they captured it from another player |
+| **Bunker DP** | Deployer earns **2 DP** permanently upon deployment. Whoever controls the bunkered hex earns an additional **2 DP** (total 4 DP for deployer holding their own bunker) |
 
 > **Tip:** Bunkers alter the terrain permanently — place them on chokepoints you plan to hold, but beware: if you lose the hex, your enemies dig in behind your own fortifications.
 
@@ -880,7 +880,7 @@ Modules with active abilities fall into two timing categories:
 | B.E.A.R | Battlefield Extraction Airlift Rover | Chest | 1 Oil, 1 Industry, 1 Electricity | 3 | Pick 1 extra resource token from the same hex during Phase 4 |
 | P.L.A.S.T.E.R | Personal Lasting Aid Surgical Treatment Enhancement Robot | Chest | 1 Electricity, 1 Local Favor | 2 | Remove up to 2 damage tokens from any soldier on the same hex. **Tap**. Recharge at City/Spaceport for 1 Electricity |
 | N.I.N.J.A | Nir Ion Nullifier Jammer Aid | Legs | 1 Intelligence, 1 Electricity | 2 | +3 to one defense die. **Tap**. Recharge for 2 Electricity |
-| D.U.D.S | Deployable Unital Defense System | Backpack | 1 Local Favor, 1 Oil, 1 Industry | — | Place bunker token: +1 all defense dice on this hex. One-use: remove the module after deployment, freeing the backpack slot. Bunker DP: **5 DP** to the deployer while they control the hex, **3 DP** to any other player who controls it |
+| D.U.D.S | Deployable Unital Defense System | Backpack | 1 Local Favor, 1 Oil, 1 Industry | 2 | Place bunker token: +1 all defense dice on this hex. One-use: remove the module after deployment, freeing the backpack slot. Deployer earns **2 DP** permanently on deployment. Whoever controls the bunkered hex earns an additional **2 DP** |
 | L.P.M | Laser Pointer Marker | Backpack | 1 Electricity, 1 Local Favor, 1 Intelligence | 4 | B.A.S.R/S.L.I.M.E can target enemies adjacent to L.P.M carrier. Max 4 hex range |
 | R.S.G | Repeating Shotgun | Hands | 1 Oil, 1 Local Favor | 2 | Within 1 hex: +2 attack. Beyond 1 hex: −1 attack |
 | P.C.S.M.G | Projectile Correcting Sub Machine Gun | Hands | 1 Electricity, 1 Industry, 1 Intelligence | 3 | Within 1 hex: roll 3d6 for attack instead of 1d6, pick the highest result |
