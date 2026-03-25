@@ -213,7 +213,7 @@
     {
       "abbr": "P.L.A.S.T.E.R", "name": "Personal Lasting Aid Surgical Treatment Enhancement Robot", "slot": "Chest",
       "cost": { "Electricity": 1, "Local Favor": 1 }, "dp": 2, "copies": 8,
-      "text": "Remove up to 2 damage tokens. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap."
+      "text": "Remove up to 2 damage tokens from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap."
     },
     {
       "abbr": "N.I.N.J.A", "name": "Nir Ion Nullifier Jammer Aid", "slot": "Legs",
