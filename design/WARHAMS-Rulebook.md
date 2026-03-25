@@ -839,7 +839,7 @@ The **modules on the minis are the source of truth** — not cards, not boards. 
 - Attach the matching **equipment module** (physical magnetized part) to each equipped soldier's miniature in the correct slot.
 - **Modules = Truth:** The physical modules on minis are the definitive record of who has what. The Equipment Display is for reference only.
 - **Flags are permanent:** Once your Control Flag is placed on a BAC card in the Equipment Display, it stays for the rest of the game — even if all your soldiers carrying that module die. Your flag marks that you've unlocked that BAC type and can pay to equip it again.
-- **Exception — T.I.L.T.S (Tactical Ion Team Link Shield):** Pay the listed cost **once** to equip any number of soldiers in the same Squad. All equipped soldiers receive the T.I.L.T.S backpack module. See T.I.L.T.S card text for full details.
+- **Exception — T.I.L.T.S (Tactical Ion Team Link Shield):** Pay the listed cost **per soldier** as normal. During combat, two **adjacent** T.I.L.T.S soldiers may swap one attacker's assigned die between them. **Tap** both T.I.L.T.S modules after use. Recharge at City/Spaceport by paying the full listed cost again (1 Electricity, 1 Industry, 2 Intelligence). No other backpack module may be equipped alongside T.I.L.T.S.
 - **S.A.P → C.A.P Upgrade:** Custom Armor Plating (C.A.P) requires trading in the corresponding S.A.P piece as part of the upgrade cost. Detach the S.A.P module from the mini and return it to the supply, then attach the C.A.P module.
 - **Armor Stacking:** S.A.P and C.A.P pieces each grant their defense bonus independently (+1 per S.A.P piece, +2 per C.A.P piece). There are no set bonuses — equip as many or as few armor pieces as your strategy demands.
 - **Tapping:** Some modules are **Tapped** (rotated 90° on the mini or marked with a tap token) when activated. A Tapped module cannot be used again until **Untapped** (recharged) — typically at a City or Spaceport for a resource cost.
@@ -884,7 +884,7 @@ Modules with active abilities fall into two timing categories:
 | L.P.M | Laser Pointer Marker | Backpack | 1 Electricity, 1 Local Favor, 1 Intelligence | 3 | B.A.S.R/S.L.I.M.E can target enemies adjacent to L.P.M carrier. Max 4 hex range |
 | R.S.G | Repeating Shotgun | Hands | 1 Electricity, 1 Local Favor | 2 | Within 1 hex: +2 attack. Beyond 1 hex: −1 attack |
 | P.C.S.M.G | Projectile Correcting Sub Machine Gun | Hands | 1 Electricity, 1 Industry, 1 Intelligence | 3 | Within 1 hex: roll 2d6 for attack instead of 1d6, pick the higher result |
-| T.I.L.T.S | Tactical Ion Team Link Shield | Backpack | 1 Electricity, 1 Industry, 2 Intelligence | 5 | Pay once for X soldiers. Swap attacker's dice between T.I.L.T.S soldiers. No other backpack allowed |
+| T.I.L.T.S | Tactical Ion Team Link Shield | Backpack | 1 Electricity, 1 Industry, 2 Intelligence | 5 | Two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. **Tap** both modules. Recharge: pay full cost again. No other backpack allowed |
 
 ---
 
