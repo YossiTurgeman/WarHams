@@ -863,50 +863,28 @@ Modules with active abilities fall into two timing categories:
 
 ### 📋 Full BAC Card List (20 Types × 5 Copies = 100 Cards)
 
-**🛡️ Armor (6 types)**
-
-| Abbr | Full Name | Slot | Cost | DP | Effect |
-|------|-----------|------|------|----|--------|
-| S.A.P Chest | Standard Armor Plating Chest Piece | Chest | 1 Oil, 1 Industry | 1 | This soldier gets +1 to its defense die |
-| S.A.P Helmet | Standard Armor Plating Helmet | Head | 1 Oil, 1 Industry | 1 | This soldier gets +1 to its defense die |
-| S.A.P Legs | Standard Armor Plating Legs | Legs | 1 Oil, 1 Industry | 1 | This soldier gets +1 to its defense die |
-| C.A.P Chest | Custom Armor Plating Chest | Chest | 1 S.A.P Chest + 1 Local Favor, 1 Industry, 1 Oil | 4 | This soldier gets +2 to its defense die |
-| C.A.P Head | Custom Armor Plating Helmet | Head | 1 S.A.P Head + 1 Local Favor, 1 Intelligence, 1 Oil | 4 | This soldier gets +2 to its defense die |
-| C.A.P Legs | Custom Armor Plating Legs | Legs | 1 S.A.P Legs + 1 Local Favor, 1 Electricity, 1 Oil | 4 | This soldier gets +2 to its defense die |
-
-**🔫 Weapons (3 types)**
-
-| Abbr | Full Name | Slot | Cost | DP | Effect |
-|------|-----------|------|------|----|--------|
-| H.C.A.R | Heavy Caliber Assault Rifle | Hands | 1 Industry, 1 Oil | 2 | +1 attack die |
-| R.S.G | Repeating Shotgun | Hands | 1 Oil, 1 Local Favor | 2 | Within 1 hex: +2 attack. Beyond 1 hex: −1 attack |
-| P.C.S.M.G | Projectile Correcting Sub Machine Gun | Hands | 1 Electricity, 1 Industry, 1 Intelligence | 3 | Within 1 hex: roll 3d6 for attack instead of 1d6, pick the highest result |
-
-**💣 Heavy Weapons (2 types)**
-
-| Abbr | Full Name | Slot | Cost | DP | Effect |
-|------|-----------|------|------|----|--------|
-| B.A.S.R | Bolt Action Sniper Rifle | Hands | 1 Oil, 1 Intelligence, 1 Industry | 4 | Pre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get −1 to defense die |
-| S.L.I.M.E | Squad Light Interoperable Mortar Encampment | Backpack | 1 Industry, 2 Oil, 2 Local Favor | 5 | Requires 2 soldiers. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes. Crew skips normal combat. While defending: −1 to defense die. Civilian Damage Rule applies on City/Village hexes |
-
-**🔧 Support (4 types)**
-
-| Abbr | Full Name | Slot | Cost | DP | Effect |
-|------|-----------|------|------|----|--------|
-| P.L.A.S.T.E.R | Personal Lasting Aid Surgical Treatment Enhancement Robot | Chest | 1 Electricity, 1 Local Favor | 2 | Remove up to 2 damage tokens from any soldier on the same hex. **Tap**. Recharge at City/Spaceport for 1 Electricity |
-| B.E.A.R | Battlefield Extraction Airlift Rover | Chest | 1 Oil, 1 Industry, 1 Electricity | 3 | Pick 1 extra resource token from the same hex during Phase 4 |
-| L.P.M | Laser Pointer Marker | Backpack | 1 Electricity, 1 Local Favor, 1 Intelligence | 4 | B.A.S.R/S.L.I.M.E can target enemies adjacent to L.P.M carrier. Max 4 hex range |
-| D.U.D.S | Deployable Unital Defense System | Backpack | 1 Local Favor, 1 Oil, 1 Industry | 2 | Place bunker token: +1 all defense dice on this hex. One-use: remove the module after deployment, freeing the backpack slot. Deployer earns **2 DP** permanently on deployment. Whoever controls the bunkered hex earns an additional **2 DP** |
-
-**⚡ Tech (5 types)**
-
-| Abbr | Full Name | Slot | Cost | DP | Effect |
-|------|-----------|------|------|----|--------|
-| J.J | Jump Jets | Legs | 1 Industry, 1 Intelligence | 2 | Move 2 hexes instead of 1. May override squad coherency (fights alone while disconnected, no Squad-level BAC effects) |
-| S.H.A.D | Sensory Helmet, Advisory Drone | Head | 2 Intelligence, 1 Electricity | 5 | Attacker must reveal Conspire cards before combat |
-| P.A.E.H | Personal Accuracy Enhancement Helmet | Head | 1 Local Favor, 1 Electricity, 1 Intelligence | 4 | This soldier gets +1 to its attack die while also equipped with H.C.A.R |
-| N.I.N.J.A | Nir Ion Nullifier Jammer Aid | Legs | 1 Intelligence, 1 Electricity | 2 | +3 to one defense die. **Tap**. Recharge for 2 Electricity |
-| T.I.L.T.S | Tactical Ion Team Link Shield | Backpack | 1 Electricity, 1 Industry, 2 Intelligence | 5 | Two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active. No other backpack allowed |
+| Category | Abbr | Full Name | Slot | Cost | DP | Effect |
+|----------|------|-----------|------|------|----|--------|
+| **🛡️ Armor** | S.A.P Chest | Standard Armor Plating Chest Piece | Chest | 1 Oil, 1 Industry | 1 | This soldier gets +1 to its defense die |
+| | S.A.P Helmet | Standard Armor Plating Helmet | Head | 1 Oil, 1 Industry | 1 | This soldier gets +1 to its defense die |
+| | S.A.P Legs | Standard Armor Plating Legs | Legs | 1 Oil, 1 Industry | 1 | This soldier gets +1 to its defense die |
+| | C.A.P Chest | Custom Armor Plating Chest | Chest | 1 S.A.P Chest + 1 LF, 1 Ind, 1 Oil | 4 | This soldier gets +2 to its defense die |
+| | C.A.P Head | Custom Armor Plating Helmet | Head | 1 S.A.P Head + 1 LF, 1 Int, 1 Oil | 4 | This soldier gets +2 to its defense die |
+| | C.A.P Legs | Custom Armor Plating Legs | Legs | 1 S.A.P Legs + 1 LF, 1 Elec, 1 Oil | 4 | This soldier gets +2 to its defense die |
+| **🔫 Weapons** | H.C.A.R | Heavy Caliber Assault Rifle | Hands | 1 Ind, 1 Oil | 2 | +1 attack die |
+| | R.S.G | Repeating Shotgun | Hands | 1 Oil, 1 LF | 2 | Within 1 hex: +2 attack. Beyond 1 hex: −1 attack |
+| | P.C.S.M.G | Projectile Correcting Sub Machine Gun | Hands | 1 Elec, 1 Ind, 1 Int | 3 | Within 1 hex: roll 3d6 pick highest |
+| **💣 Heavy** | B.A.S.R | Bolt Action Sniper Rifle | Hands | 1 Oil, 1 Int, 1 Ind | 4 | Pre-combat: 2d6 pick higher, target 1 soldier up to 2 hexes. Sniper skips combat. Both get −1 defense |
+| | S.L.I.M.E | Squad Light Interoperable Mortar Encampment | Backpack | 1 Ind, 2 Oil, 2 LF | 5 | 2-soldier crew. 4d6 normal matchups, target squad up to 3 hexes. Crew skips combat. −1 defense. Civilian Damage Rule |
+| **🔧 Support** | P.L.A.S.T.E.R | Personal Lasting Aid Surgical Treatment Enhancement Robot | Chest | 1 Elec, 1 LF | 2 | Heal up to 2 damage on any soldier same hex. **Tap**. Recharge: 1 Elec |
+| | B.E.A.R | Battlefield Extraction Airlift Rover | Chest | 1 Oil, 1 Ind, 1 Elec | 3 | +1 extra resource from same hex during Phase 4 |
+| | L.P.M | Laser Pointer Marker | Backpack | 1 Elec, 1 LF, 1 Int | 4 | B.A.S.R/S.L.I.M.E target enemies near L.P.M carrier. Max 4 hex |
+| | D.U.D.S | Deployable Unital Defense System | Backpack | 1 LF, 1 Oil, 1 Ind | 2 | Place bunker: +1 all defense dice. One-use, frees slot. 2 DP deploy + 2 DP to hex controller |
+| **⚡ Tech** | J.J | Jump Jets | Legs | 1 Ind, 1 Int | 2 | Move 2 hexes. May override coherency (fights alone) |
+| | S.H.A.D | Sensory Helmet, Advisory Drone | Head | 2 Int, 1 Elec | 5 | Attacker must reveal Conspire cards before combat |
+| | P.A.E.H | Personal Accuracy Enhancement Helmet | Head | 1 LF, 1 Elec, 1 Int | 4 | +1 attack die while also equipped with H.C.A.R |
+| | N.I.N.J.A | Nir Ion Nullifier Jammer Aid | Legs | 1 Int, 1 Elec | 2 | +3 to one defense die. **Tap**. Recharge: 2 Elec |
+| | T.I.L.T.S | Tactical Ion Team Link Shield | Backpack | 1 Elec, 1 Ind, 2 Int | 5 | Adjacent T.I.L.T.S pair swap one attacker die. Always active. No other backpack |
 
 ---
 
