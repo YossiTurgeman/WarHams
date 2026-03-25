@@ -181,7 +181,7 @@
     },
     {
       "abbr": "S.H.A.D", "name": "Sensory Helmet, Advisory Drone", "slot": "Head",
-      "cost": { "Intelligence": 2, "Electricity": 1 }, "dp": 4, "copies": 8,
+      "cost": { "Intelligence": 2, "Electricity": 1 }, "dp": 5, "copies": 8,
       "text": "If attacked, before combat starts, attacking player must reveal his conspire cards to you."
     },
     {

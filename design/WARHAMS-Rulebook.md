@@ -871,7 +871,7 @@ Modules with active abilities fall into two timing categories:
 | C.A.P Head | Custom Armor Plating Helmet | Head | 1 S.A.P Head + 1 Local Favor, 1 Intelligence, 1 Oil | 4 | +2 defense die |
 | C.A.P Legs | Custom Armor Plating Legs | Legs | 1 S.A.P Legs + 1 Local Favor, 1 Electricity, 1 Oil | 4 | +2 defense die |
 | J.J | Jump Jets | Legs | 1 Industry, 1 Intelligence | 2 | Move 2 hexes instead of 1. May override squad coherency (fights alone while disconnected, no Squad-level BAC effects) |
-| S.H.A.D | Sensory Helmet, Advisory Drone | Head | 2 Intelligence, 1 Electricity | 4 | Attacker must reveal Conspire cards before combat |
+| S.H.A.D | Sensory Helmet, Advisory Drone | Head | 2 Intelligence, 1 Electricity | 5 | Attacker must reveal Conspire cards before combat |
 | H.C.A.R | Heavy Caliber Assault Rifle | Hands | 1 Industry, 1 Electricity | 2 | +1 attack die |
 | P.A.E.H | Personal Accuracy Enhancement Helmet | Head | 1 Local Favor, 1 Electricity, 1 Intelligence | 4 | +1 attack die if soldier also carries H.C.A.R |
 | B.A.S.R | Bolt Action Sniper Rifle | Hands | 1 Electricity, 1 Intelligence, 1 Industry | 4 | Pre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes. Sniper skips normal combat. −1 defense |
