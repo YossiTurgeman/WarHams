@@ -189,42 +189,44 @@
 ## Task 5e: 🔴 BAC Rebalance & Wording Overhaul
 
 ### Overpowered BACs
-- [ ] **BAC-1 🔴 CRITICAL — T.I.L.T.S is broken** — "Pay once, equip X soldiers free" breaks economy; squad-wide dice swapping is too strong on d6; generates 25–35 DP from a single purchase
-- [ ] **BAC-2 🔴 CRITICAL — S.L.I.M.E is overtuned** — 4 attack dice + global −1 defense debuff + 3-hex range + no retaliation = too much in one card
+- [x] **BAC-1 🔴 CRITICAL — T.I.L.T.S is broken** ✅ FIXED — pay per soldier, adjacent only, always active, no other backpack allowed
+- [x] **BAC-2 🔴 CRITICAL — S.L.I.M.E is overtuned** ✅ FIXED — removed −1 defense debuff, added Civilian Damage Rule reference
 - [x] **BAC-3 🟡 MEDIUM — D.U.D.S scales too well** ⏭️ ACCEPTABLE — one-shot, neutral, destroyable; +1 is fair. Turtle meta addressed by BAC-21 (defense stacking cap). Revisit after playtesting.
 - [x] **BAC-4 🟡 MEDIUM — N.I.N.J.A timing undefined** ✅ ALREADY DEFINED — activates at Step 3 (equipment bonuses), after matchup assignment but before Conspire cards. Strong but fair as a tap ability. Revisit after playtesting.
 
 ### Underwhelming BACs
-- [ ] **BAC-5 🟡 MEDIUM — B.E.A.R is too weak for its cost** — costs 1 of every resource (competes with recruiting), risky Chest slot (destroyed on 4–5), gives only 1 extra resource/turn
-- [ ] **BAC-6 🟡 MEDIUM — S.H.A.D is low-impact** — revealing Conspire cards doesn't deny or punish; weak for 3 resources and 4 DP
-- [ ] **BAC-7 🟡 MEDIUM — P.C.S.M.G is dominated by H.C.A.R** — costs more, range-restricted, mathematically close to +1 flat
-- [ ] **BAC-8 🟢 MINOR — L.P.M is parasitic** — does nothing without B.A.S.R/S.L.I.M.E; crowded backpack slot
+- [x] **BAC-5 🟡 MEDIUM — B.E.A.R is too weak for its cost** ✅ FIXED — reduced cost to 1 Oil, 1 Industry, 1 Electricity (removed Intelligence and Local Favor)
+- [x] **BAC-6 🟡 MEDIUM — S.H.A.D is low-impact** ✅ FIXED — increased DP from 4 to 5
+- [x] **BAC-7 🟡 MEDIUM — P.C.S.M.G is dominated by H.C.A.R** ✅ FIXED — buffed to 3d6 pick highest at close range
+- [x] **BAC-8 🟢 MINOR — L.P.M is parasitic** ✅ FIXED — increased DP from 3 to 4
 
 ### Wording Fixes
-- [ ] **BAC-9 🔴 CRITICAL — Armor card wording ambiguous** — "Gain +1 for one defense die" → should be "This soldier gets +1 to its defense die"
-- [ ] **BAC-10 🟡 MEDIUM — P.A.E.H wording unclear** — needs to specify same-soldier requirement; use consistent H.C.A.R formatting
-- [ ] **BAC-11 🟡 MEDIUM — B.A.S.R wording unclear** — "throw 2 dice" ambiguous (pick higher? both count?); target defense undefined; "−1 defense" scope unclear
-- [ ] **BAC-12 🟡 MEDIUM — S.L.I.M.E wording unclear** — how are 4 dice assigned? debuff scope? civilian penalty undefined
-- [ ] **BAC-13 🟡 MEDIUM — T.I.L.T.S wording unclear** — what is "X"? what does "free" mean? scope of equipping?
-- [ ] **BAC-14 🟡 MEDIUM — N.I.N.J.A / P.L.A.S.T.E.R timing undefined** — before/after rolls? on carrier only or any squadmate?
-- [ ] **BAC-15 🟡 MEDIUM — B.E.A.R extra resource source undefined** — "any kind" from where — same hex, supply, any hex?
-- [ ] **BAC-16 🟡 MEDIUM — D.U.D.S "flip this card" doesn't fit module system** — needs to specify post-deployment state of backpack slot
+- [x] **BAC-9 🔴 CRITICAL — Armor card wording ambiguous** ✅ FIXED — all S.A.P/C.A.P now read "This soldier gets +N to its defense die"
+- [x] **BAC-10 🟡 MEDIUM — P.A.E.H wording unclear** ✅ FIXED — specifies same-soldier H.C.A.R requirement
+- [x] **BAC-11 🟡 MEDIUM — B.A.S.R wording unclear** ✅ FIXED — clarified: both sniper and target get −1 defense when defending
+- [x] **BAC-12 🟡 MEDIUM — S.L.I.M.E wording unclear** ✅ FIXED — 4d6 assigned as normal matchups, civilian damage referenced
+- [x] **BAC-13 🟡 MEDIUM — T.I.L.T.S wording unclear** ✅ FIXED — resolved by BAC-1 rework
+- [x] **BAC-14 🟡 MEDIUM — N.I.N.J.A / P.L.A.S.T.E.R timing undefined** ✅ FIXED — already defined (Step 3 / Phase 5); P.L.A.S.T.E.R heals any soldier on same hex
+- [x] **BAC-15 🟡 MEDIUM — B.E.A.R extra resource source undefined** ✅ FIXED — extra resource from same hex
+- [x] **BAC-16 🟡 MEDIUM — D.U.D.S "flip this card" doesn't fit module system** ✅ FIXED — module removed after deployment, frees backpack slot
 
 ### Resource & Economy Issues
-- [ ] **BAC-17 🟡 MEDIUM — Electricity is over-demanded** — most BAC costs + recharges + recruiting all need it; cards costing Electricity are more expensive than they look
-- [ ] **BAC-18 🟡 MEDIUM — Intelligence has no recruiting pressure** — makes Intelligence-only BACs (J.J, N.I.N.J.A, T.I.L.T.S) cheaper than they appear
-- [ ] **BAC-19 🟢 MINOR — Chest slot is overpriced across the set** — destroyed on roll 4–5 (2/6 chance vs 1/6 others) but Chest BACs aren't cheaper/stronger to compensate
-- [ ] **BAC-20 🟢 MINOR — DP values don't match actual power** — S.H.A.D 4 DP but weak; T.I.L.T.S 5 DP but generates far more; SAP only 1 DP but very effective
+- [x] **BAC-17 🟡 MEDIUM — Electricity is over-demanded** ✅ FIXED — swapped H.C.A.R/R.S.G/B.A.S.R to Oil, D.U.D.S to Industry. Electricity now 9/20 (was 13/20)
+- [x] **BAC-18 🟡 MEDIUM — Intelligence has no recruiting pressure** ⏭️ DEFERRED — accepted as design feature (tech vs growth currency). Revisit after playtesting.
+- [x] **BAC-19 🟢 MINOR — Chest slot is overpriced across the set** ⏭️ DEFERRED — revisit after playtesting
+- [x] **BAC-20 🟢 MINOR — DP values don't match actual power** ✅ FIXED — S.H.A.D bumped to 5 DP; D.U.D.S bunker DP split: 2 DP on deployment + 2 DP to hex controller
 
 ### Structural Design Issues
-- [ ] **BAC-21 🔴 CRITICAL — Defense stacking creates unkillable tanks** — SAP+CAP+NINJA+DUDS can push defense beyond what d6 combat can overcome
-- [ ] **BAC-22 🟡 MEDIUM — Indirect fire is non-interactive** — S.L.I.M.E/B.A.S.R/L.P.M can hit from 3–4 hexes with no retaliation
-- [ ] **BAC-23 🟡 MEDIUM — Backpack slot is overloaded** — T.I.L.T.S, S.L.I.M.E, D.U.D.S, L.P.M all compete for one slot
-- [ ] **BAC-24 🟡 MEDIUM — 8-copy cap + permanent unlock = monopoly risk** — first player to unlock premium BACs can lock others out
-- [ ] **BAC-25 🟡 MEDIUM — Turtling may become optimal** — strong defense BACs + bunkers + only attacker initiates combat
+- [x] **BAC-21 🔴 CRITICAL — Defense stacking creates unkillable tanks** ⏭️ DEFERRED — revisit after playtesting
+- [x] **BAC-22 🟡 MEDIUM — Indirect fire is non-interactive** ⏭️ DEFERRED — targets defend normally, both weapons have −1 defense vulnerability. Revisit after playtesting.
+- [x] **BAC-23 🟡 MEDIUM — Backpack slot is overloaded** ⏭️ DEFERRED — D.U.D.S now frees slot after use. Revisit after playtesting.
+- [x] **BAC-24 🟡 MEDIUM — 8-copy cap + permanent unlock = monopoly risk** ⏭️ DEFERRED — revisit after playtesting
+- [x] **BAC-25 🟡 MEDIUM — Turtling may become optimal** ⏭️ DEFERRED — bunker DP incentivizes capturing, not just building. Revisit after playtesting.
 
 ### Data Inconsistency
-- [ ] **BAC-26 🟡 MEDIUM — Card count mismatch** — rulebook says 20 × 8 = 160 cards, but setup says 100 BAC cards with 5 copies each
+- [x] **BAC-26 🟡 MEDIUM — Card count mismatch** ✅ FIXED — standardized to 5 copies per type = 100 BAC cards. 8 physical modules remain per type.
+
+> **BAC Rebalance Status:** 26 issues reviewed. 16 fixed, 3 acceptable/already defined, 7 deferred to playtesting.
 
 ## Task 6: 🖥️ Tabletop Simulator Prototype
 - [ ] Set up TTS mod project structure
