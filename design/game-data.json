@@ -197,7 +197,7 @@
     {
       "abbr": "B.A.S.R", "name": "Bolt Action Sniper Rifle", "slot": "Hands",
       "cost": { "Electricity": 1, "Intelligence": 1, "Industry": 1 }, "dp": 4, "copies": 8,
-      "text": "On your turn, before combat, throw 2 dice and choose a target soldier up to 2 hexes away. Target defends normally. Attacking soldier skips normal combat. While defending: -1 to defense die."
+      "text": "Pre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6) but with -1 to defense die. Sniper skips normal combat. Sniper gets -1 to defense die when attacked."
     },
     {
       "abbr": "S.L.I.M.E", "name": "Squad Light Interoperable Mortar Encampment", "slot": "Backpack",
