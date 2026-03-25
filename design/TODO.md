@@ -186,6 +186,46 @@
   - Could create discomfort in mixed-age groups.
   - Keeping as-is — revisit after playtesting.
 
+## Task 5e: 🔴 BAC Rebalance & Wording Overhaul
+
+### Overpowered BACs
+- [ ] **BAC-1 🔴 CRITICAL — T.I.L.T.S is broken** — "Pay once, equip X soldiers free" breaks economy; squad-wide dice swapping is too strong on d6; generates 25–35 DP from a single purchase
+- [ ] **BAC-2 🔴 CRITICAL — S.L.I.M.E is overtuned** — 4 attack dice + global −1 defense debuff + 3-hex range + no retaliation = too much in one card
+- [ ] **BAC-3 🟡 MEDIUM — D.U.D.S scales too well** — +1 defense to all soldiers on hex scales with squad size; contributes to turtle meta
+- [ ] **BAC-4 🟡 MEDIUM — N.I.N.J.A timing undefined** — +3 defense is enormous on d6; if usable after seeing dice assignments, it's broken
+
+### Underwhelming BACs
+- [ ] **BAC-5 🟡 MEDIUM — B.E.A.R is too weak for its cost** — costs 1 of every resource (competes with recruiting), risky Chest slot (destroyed on 4–5), gives only 1 extra resource/turn
+- [ ] **BAC-6 🟡 MEDIUM — S.H.A.D is low-impact** — revealing Conspire cards doesn't deny or punish; weak for 3 resources and 4 DP
+- [ ] **BAC-7 🟡 MEDIUM — P.C.S.M.G is dominated by H.C.A.R** — costs more, range-restricted, mathematically close to +1 flat
+- [ ] **BAC-8 🟢 MINOR — L.P.M is parasitic** — does nothing without B.A.S.R/S.L.I.M.E; crowded backpack slot
+
+### Wording Fixes
+- [ ] **BAC-9 🔴 CRITICAL — Armor card wording ambiguous** — "Gain +1 for one defense die" → should be "This soldier gets +1 to its defense die"
+- [ ] **BAC-10 🟡 MEDIUM — P.A.E.H wording unclear** — needs to specify same-soldier requirement; use consistent H.C.A.R formatting
+- [ ] **BAC-11 🟡 MEDIUM — B.A.S.R wording unclear** — "throw 2 dice" ambiguous (pick higher? both count?); target defense undefined; "−1 defense" scope unclear
+- [ ] **BAC-12 🟡 MEDIUM — S.L.I.M.E wording unclear** — how are 4 dice assigned? debuff scope? civilian penalty undefined
+- [ ] **BAC-13 🟡 MEDIUM — T.I.L.T.S wording unclear** — what is "X"? what does "free" mean? scope of equipping?
+- [ ] **BAC-14 🟡 MEDIUM — N.I.N.J.A / P.L.A.S.T.E.R timing undefined** — before/after rolls? on carrier only or any squadmate?
+- [ ] **BAC-15 🟡 MEDIUM — B.E.A.R extra resource source undefined** — "any kind" from where — same hex, supply, any hex?
+- [ ] **BAC-16 🟡 MEDIUM — D.U.D.S "flip this card" doesn't fit module system** — needs to specify post-deployment state of backpack slot
+
+### Resource & Economy Issues
+- [ ] **BAC-17 🟡 MEDIUM — Electricity is over-demanded** — most BAC costs + recharges + recruiting all need it; cards costing Electricity are more expensive than they look
+- [ ] **BAC-18 🟡 MEDIUM — Intelligence has no recruiting pressure** — makes Intelligence-only BACs (J.J, N.I.N.J.A, T.I.L.T.S) cheaper than they appear
+- [ ] **BAC-19 🟢 MINOR — Chest slot is overpriced across the set** — destroyed on roll 4–5 (2/6 chance vs 1/6 others) but Chest BACs aren't cheaper/stronger to compensate
+- [ ] **BAC-20 🟢 MINOR — DP values don't match actual power** — S.H.A.D 4 DP but weak; T.I.L.T.S 5 DP but generates far more; SAP only 1 DP but very effective
+
+### Structural Design Issues
+- [ ] **BAC-21 🔴 CRITICAL — Defense stacking creates unkillable tanks** — SAP+CAP+NINJA+DUDS can push defense beyond what d6 combat can overcome
+- [ ] **BAC-22 🟡 MEDIUM — Indirect fire is non-interactive** — S.L.I.M.E/B.A.S.R/L.P.M can hit from 3–4 hexes with no retaliation
+- [ ] **BAC-23 🟡 MEDIUM — Backpack slot is overloaded** — T.I.L.T.S, S.L.I.M.E, D.U.D.S, L.P.M all compete for one slot
+- [ ] **BAC-24 🟡 MEDIUM — 8-copy cap + permanent unlock = monopoly risk** — first player to unlock premium BACs can lock others out
+- [ ] **BAC-25 🟡 MEDIUM — Turtling may become optimal** — strong defense BACs + bunkers + only attacker initiates combat
+
+### Data Inconsistency
+- [ ] **BAC-26 🟡 MEDIUM — Card count mismatch** — rulebook says 20 × 8 = 160 cards, but setup says 100 BAC cards with 5 copies each
+
 ## Task 6: 🖥️ Tabletop Simulator Prototype
 - [ ] Set up TTS mod project structure
 - [ ] Build hex board with randomized tile placement inside planet frame
