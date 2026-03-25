@@ -191,8 +191,8 @@
 ### Overpowered BACs
 - [ ] **BAC-1 🔴 CRITICAL — T.I.L.T.S is broken** — "Pay once, equip X soldiers free" breaks economy; squad-wide dice swapping is too strong on d6; generates 25–35 DP from a single purchase
 - [ ] **BAC-2 🔴 CRITICAL — S.L.I.M.E is overtuned** — 4 attack dice + global −1 defense debuff + 3-hex range + no retaliation = too much in one card
-- [ ] **BAC-3 🟡 MEDIUM — D.U.D.S scales too well** — +1 defense to all soldiers on hex scales with squad size; contributes to turtle meta
-- [ ] **BAC-4 🟡 MEDIUM — N.I.N.J.A timing undefined** — +3 defense is enormous on d6; if usable after seeing dice assignments, it's broken
+- [x] **BAC-3 🟡 MEDIUM — D.U.D.S scales too well** ⏭️ ACCEPTABLE — one-shot, neutral, destroyable; +1 is fair. Turtle meta addressed by BAC-21 (defense stacking cap). Revisit after playtesting.
+- [x] **BAC-4 🟡 MEDIUM — N.I.N.J.A timing undefined** ✅ ALREADY DEFINED — activates at Step 3 (equipment bonuses), after matchup assignment but before Conspire cards. Strong but fair as a tap ability. Revisit after playtesting.
 
 ### Underwhelming BACs
 - [ ] **BAC-5 🟡 MEDIUM — B.E.A.R is too weak for its cost** — costs 1 of every resource (competes with recruiting), risky Chest slot (destroyed on 4–5), gives only 1 extra resource/turn
