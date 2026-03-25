@@ -70,7 +70,7 @@ Number Tokens are placed on resource-producing Hexes during setup to determine w
 
 | Card Type                     | Total | Breakdown           |
 | ----------------------------- | :---: | ------------------- |
-| 🔫 **BAC** (Basic Armament Cards) | 160 | 20 types × 8 copies |
+| 🔫 **BAC** (Basic Armament Cards) | 100 | 20 types × 5 copies |
 | 🕵️ **Conspire Cards**          | 72  | 24 types × 3 copies |
 
 - **BACs** represent weapons, armor, gadgets, and upgrades equipped to your H.A.M.S.
@@ -98,7 +98,7 @@ Resources are the lifeblood of your campaign. Each type is produced by its corre
 | Component                | Details                                                              |
 | ------------------------ | -------------------------------------------------------------------- |
 | **H.A.M.S Miniatures**  | Soldier miniatures in 4 player colors — **28 per player** (enough for 4 Squads of 7 H.A.M.S each). Each mini has **magnetized attachment points** for the 5 equipment slots (Head, Chest, Legs, Backpack, Hands). Each base is **labeled with a squad letter and soldier number** (A1–A7, B1–B7, C1–C7, D1–D7), matching the Squad Board columns for damage tracking. |
-| **Equipment Modules**    | Physical miniature parts (helmets, chest plates, weapons, backpacks, leg armor) that magnetically attach to H.A.M.S minis. Each module corresponds to a BAC card type — e.g., a S.A.P (Standard Armor Plating) Helmet module, an H.C.A.R (Heavy Caliber Assault Rifle) rifle module. **8 copies** of each module type exist (matching the 8 copies of each BAC card). Each module has a **unique sculpt** per type and its **abbreviation engraved on the underside** for identification. When a BAC is equipped, its card is placed in the communal **Equipment Display** near the play area for all players to reference. The physical module on the mini is the source of truth for who has what equipped. |
+| **Equipment Modules**    | Physical miniature parts (helmets, chest plates, weapons, backpacks, leg armor) that magnetically attach to H.A.M.S minis. Each module corresponds to a BAC card type — e.g., a S.A.P (Standard Armor Plating) Helmet module, an H.C.A.R (Heavy Caliber Assault Rifle) rifle module. **8 copies** of each module type exist (more than the 5 BAC cards per type, ensuring modules are available for re-equipping via the flag system). Each module has a **unique sculpt** per type and its **abbreviation engraved on the underside** for identification. When a BAC is equipped, its card is placed in the communal **Equipment Display** near the play area for all players to reference. The physical module on the mini is the source of truth for who has what equipped. |
 | **Separatist Miniatures** | **24** grey NPC soldiers — used for Separatist spawns, base defenders, and militia |
 | **Squad Boards**         | Up to 4 per player; each board tracks **7 H.A.M.S** with damage circles and a Lethal Hit Roll reference |
 
@@ -330,7 +330,7 @@ If your Control Flag is already on a BAC card in the Equipment Display, you may 
 
 **Limit:** Only **8 copies** of each equipment module exist in the game. If all 8 are currently in use, no more soldiers can equip that type until a module is freed (destroyed modules return to the box and can be purchased again).
 
-> **Example:** You have an H.C.A.R (Heavy Caliber Assault Rifle) card in hand. You place it in the Equipment Display and put your red flag on it — H.C.A.R is now unlocked for you permanently. You pay 1 Industry + 1 Electricity per soldier and snap H.C.A.R rifle modules onto their Hands slot. Next turn, you recruit a new soldier and want to arm them too — just pay 1 Industry + 1 Electricity again, no card needed.
+> **Example:** You have an H.C.A.R (Heavy Caliber Assault Rifle) card in hand. You place it in the Equipment Display and put your red flag on it — H.C.A.R is now unlocked for you permanently. You pay 1 Industry + 1 Oil per soldier and snap H.C.A.R rifle modules onto their Hands slot. Next turn, you recruit a new soldier and want to arm them too — just pay 1 Industry + 1 Oil again, no card needed.
 
 **Acquiring New BACs:**
 
@@ -861,7 +861,7 @@ Modules with active abilities fall into two timing categories:
 
 <div style="page-break-before: always;"></div>
 
-### 📋 Full BAC Card List (20 Types × 8 Copies = 160 Cards)
+### 📋 Full BAC Card List (20 Types × 5 Copies = 100 Cards)
 
 | Abbr | Full Name | Slot | Cost | DP | Effect |
 |------|-----------|------|------|----|--------|

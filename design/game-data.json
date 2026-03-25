@@ -161,106 +161,106 @@
   "basic_armament_cards": [
     {
       "abbr": "S.A.P Chest", "name": "Standard Armor Plating Chest Piece", "slot": "Chest",
-      "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 8,
+      "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 5,
       "text": "This soldier gets +1 to its defense die."
     },
     {
       "abbr": "S.A.P Helmet", "name": "Standard Armor Plating Helmet", "slot": "Head",
-      "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 8,
+      "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 5,
       "text": "This soldier gets +1 to its defense die."
     },
     {
       "abbr": "S.A.P Legs", "name": "Standard Armor Plating Legs", "slot": "Legs",
-      "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 8,
+      "cost": { "Oil": 1, "Industry": 1 }, "dp": 1, "copies": 5,
       "text": "This soldier gets +1 to its defense die."
     },
     {
       "abbr": "J.J", "name": "Jump Jets", "slot": "Legs",
-      "cost": { "Industry": 1, "Intelligence": 1 }, "dp": 2, "copies": 8,
+      "cost": { "Industry": 1, "Intelligence": 1 }, "dp": 2, "copies": 5,
       "text": "This soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate."
     },
     {
       "abbr": "S.H.A.D", "name": "Sensory Helmet, Advisory Drone", "slot": "Head",
-      "cost": { "Intelligence": 2, "Electricity": 1 }, "dp": 5, "copies": 8,
+      "cost": { "Intelligence": 2, "Electricity": 1 }, "dp": 5, "copies": 5,
       "text": "If attacked, before combat starts, attacking player must reveal his conspire cards to you."
     },
     {
       "abbr": "H.C.A.R", "name": "Heavy Caliber Assault Rifle", "slot": "Hands",
-      "cost": { "Industry": 1, "Oil": 1 }, "dp": 2, "copies": 8,
+      "cost": { "Industry": 1, "Oil": 1 }, "dp": 2, "copies": 5,
       "text": "Add +1 to this soldier's attack die."
     },
     {
       "abbr": "P.A.E.H", "name": "Personal Accuracy Enhancement Helmet", "slot": "Head",
-      "cost": { "Local Favor": 1, "Electricity": 1, "Intelligence": 1 }, "dp": 4, "copies": 8,
+      "cost": { "Local Favor": 1, "Electricity": 1, "Intelligence": 1 }, "dp": 4, "copies": 5,
       "text": "This soldier gets +1 to its attack die while also equipped with H.C.A.R."
     },
     {
       "abbr": "B.A.S.R", "name": "Bolt Action Sniper Rifle", "slot": "Hands",
-      "cost": { "Oil": 1, "Intelligence": 1, "Industry": 1 }, "dp": 4, "copies": 8,
+      "cost": { "Oil": 1, "Intelligence": 1, "Industry": 1 }, "dp": 4, "copies": 5,
       "text": "Pre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die."
     },
     {
       "abbr": "S.L.I.M.E", "name": "Squad Light Interoperable Mortar Encampment", "slot": "Backpack",
-      "cost": { "Industry": 1, "Oil": 2, "Local Favor": 2 }, "dp": 5, "copies": 8,
+      "cost": { "Industry": 1, "Oil": 2, "Local Favor": 2 }, "dp": 5, "copies": 5,
       "text": "Choose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
       "special": "Requires 2 soldiers."
     },
     {
       "abbr": "B.E.A.R", "name": "Battlefield Extraction Airlift Rover", "slot": "Chest",
-      "cost": { "Oil": 1, "Industry": 1, "Electricity": 1 }, "dp": 3, "copies": 8,
+      "cost": { "Oil": 1, "Industry": 1, "Electricity": 1 }, "dp": 3, "copies": 5,
       "text": "During resource gathering, after picking your resource, pick 1 extra resource token from the same hex."
     },
     {
       "abbr": "P.L.A.S.T.E.R", "name": "Personal Lasting Aid Surgical Treatment Enhancement Robot", "slot": "Chest",
-      "cost": { "Electricity": 1, "Local Favor": 1 }, "dp": 2, "copies": 8,
+      "cost": { "Electricity": 1, "Local Favor": 1 }, "dp": 2, "copies": 5,
       "text": "Remove up to 2 damage tokens from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap."
     },
     {
       "abbr": "N.I.N.J.A", "name": "Nir Ion Nullifier Jammer Aid", "slot": "Legs",
-      "cost": { "Intelligence": 1, "Electricity": 1 }, "dp": 2, "copies": 8,
+      "cost": { "Intelligence": 1, "Electricity": 1 }, "dp": 2, "copies": 5,
       "text": "Add +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap."
     },
     {
       "abbr": "D.U.D.S", "name": "Deployable Unital Defense System", "slot": "Backpack",
-      "cost": { "Local Favor": 1, "Oil": 1, "Industry": 1 }, "dp": 2, "bunker_dp": "2 DP permanent on deployment + 2 DP to hex controller", "copies": 8,
+      "cost": { "Local Favor": 1, "Oil": 1, "Industry": 1 }, "dp": 2, "bunker_dp": "2 DP permanent on deployment + 2 DP to hex controller", "copies": 5,
       "text": "Place a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot."
     },
     {
       "abbr": "L.P.M", "name": "Laser Pointer Marker", "slot": "Backpack",
-      "cost": { "Electricity": 1, "Local Favor": 1, "Intelligence": 1 }, "dp": 4, "copies": 8,
+      "cost": { "Electricity": 1, "Local Favor": 1, "Intelligence": 1 }, "dp": 4, "copies": 5,
       "text": "Other soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes."
     },
     {
       "abbr": "R.S.G", "name": "Repeating Shotgun", "slot": "Hands",
-      "cost": { "Oil": 1, "Local Favor": 1 }, "dp": 2, "copies": 8,
+      "cost": { "Oil": 1, "Local Favor": 1 }, "dp": 2, "copies": 5,
       "text": "If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1."
     },
     {
       "abbr": "P.C.S.M.G", "name": "Projectile Correcting Sub Machine Gun", "slot": "Hands",
-      "cost": { "Electricity": 1, "Industry": 1, "Intelligence": 1 }, "dp": 3, "copies": 8,
+      "cost": { "Electricity": 1, "Industry": 1, "Intelligence": 1 }, "dp": 3, "copies": 5,
       "text": "If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result."
     },
     {
       "abbr": "C.A.P Chest", "name": "Custom Armor Plating Chest", "slot": "Chest",
-      "cost": { "SAP_Chest": 1, "Local Favor": 1, "Industry": 1, "Oil": 1 }, "dp": 4, "copies": 8,
+      "cost": { "SAP_Chest": 1, "Local Favor": 1, "Industry": 1, "Oil": 1 }, "dp": 4, "copies": 5,
       "text": "This soldier gets +2 to its defense die.",
       "upgrade_from": "S.A.P Chest"
     },
     {
       "abbr": "C.A.P Head", "name": "Custom Armor Plating Helmet", "slot": "Head",
-      "cost": { "SAP_Helmet": 1, "Local Favor": 1, "Intelligence": 1, "Oil": 1 }, "dp": 4, "copies": 8,
+      "cost": { "SAP_Helmet": 1, "Local Favor": 1, "Intelligence": 1, "Oil": 1 }, "dp": 4, "copies": 5,
       "text": "This soldier gets +2 to its defense die.",
       "upgrade_from": "S.A.P Helmet"
     },
     {
       "abbr": "C.A.P Legs", "name": "Custom Armor Plating Legs", "slot": "Legs",
-      "cost": { "SAP_Legs": 1, "Local Favor": 1, "Electricity": 1, "Oil": 1 }, "dp": 4, "copies": 8,
+      "cost": { "SAP_Legs": 1, "Local Favor": 1, "Electricity": 1, "Oil": 1 }, "dp": 4, "copies": 5,
       "text": "This soldier gets +2 to its defense die.",
       "upgrade_from": "S.A.P Legs"
     },
     {
       "abbr": "T.I.L.T.S", "name": "Tactical Ion Team Link Shield", "slot": "Backpack",
-      "cost": { "Electricity": 1, "Industry": 1, "Intelligence": 2 }, "dp": 5, "copies": 8,
+      "cost": { "Electricity": 1, "Industry": 1, "Intelligence": 2 }, "dp": 5, "copies": 5,
       "text": "Pay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S."
     }
   ],
