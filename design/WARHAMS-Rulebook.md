@@ -713,9 +713,9 @@ When using area-of-effect weaponry — specifically **S.L.I.M.E** (mortar) or ot
 |---|---|
 | **Timing** | Fires **before** normal combat (pre-combat step) |
 | **Dice** | Roll **2d6**, pick the higher result |
-| **Target** | **1 specific soldier** up to **2 hexes** away. Target defends normally (1d6) but with **−1 to defense die** |
+| **Target** | **1 specific soldier** up to **2 hexes** away. Target defends normally (1d6) |
 | **Restriction** | Sniper does **not** participate in normal combat |
-| **Vulnerability** | Sniper gets **−1 to defense die** when attacked |
+| **Vulnerability** | While defending: both the sniper and the target get **−1 to defense die** |
 
 #### S.L.I.M.E (Squad Light Interoperable Mortar Encampment) — Mortar
 
@@ -874,7 +874,7 @@ Modules with active abilities fall into two timing categories:
 | S.H.A.D | Sensory Helmet, Advisory Drone | Head | 2 Intelligence, 1 Electricity | 5 | Attacker must reveal Conspire cards before combat |
 | H.C.A.R | Heavy Caliber Assault Rifle | Hands | 1 Industry, 1 Electricity | 2 | +1 attack die |
 | P.A.E.H | Personal Accuracy Enhancement Helmet | Head | 1 Local Favor, 1 Electricity, 1 Intelligence | 4 | This soldier gets +1 to its attack die while also equipped with H.C.A.R |
-| B.A.S.R | Bolt Action Sniper Rifle | Hands | 1 Electricity, 1 Intelligence, 1 Industry | 4 | Pre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes. Target defends normally (1d6) but with −1 to defense die. Sniper skips normal combat. Sniper gets −1 to defense die when attacked |
+| B.A.S.R | Bolt Action Sniper Rifle | Hands | 1 Electricity, 1 Intelligence, 1 Industry | 4 | Pre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get −1 to defense die |
 | S.L.I.M.E | Squad Light Interoperable Mortar Encampment | Backpack | 1 Industry, 2 Oil, 2 Local Favor | 5 | Requires 2 soldiers. Roll 4 dice, target squad up to 3 hexes. Crew skips combat. While defending: −1 to defense die. Civilian Damage Rule applies on City/Village hexes |
 | B.E.A.R | Battlefield Extraction Airlift Rover | Chest | 1 Oil, 1 Industry, 1 Electricity | 3 | Pick 1 extra resource during Phase 4 |
 | P.L.A.S.T.E.R | Personal Lasting Aid Surgical Treatment Enhancement Robot | Chest | 1 Electricity, 1 Local Favor | 2 | Remove up to 2 damage tokens. **Tap**. Recharge at City/Spaceport for 1 Electricity |
