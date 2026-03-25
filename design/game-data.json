@@ -207,7 +207,7 @@
     },
     {
       "abbr": "B.E.A.R", "name": "Battlefield Extraction Airlift Rover", "slot": "Chest",
-      "cost": { "Industry": 1, "Oil": 1, "Local Favor": 1, "Intelligence": 1, "Electricity": 1 }, "dp": 3, "copies": 8,
+      "cost": { "Oil": 1, "Industry": 1, "Electricity": 1 }, "dp": 3, "copies": 8,
       "text": "During resource gathering, after picking your resource, choose 1 more resource token of any kind."
     },
     {
