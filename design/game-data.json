@@ -238,7 +238,7 @@
     {
       "abbr": "P.C.S.M.G", "name": "Projectile Correcting Sub Machine Gun", "slot": "Hands",
       "cost": { "Electricity": 1, "Industry": 1, "Intelligence": 1 }, "dp": 3, "copies": 8,
-      "text": "If target squad is up to 1 hex away, roll 2d6 for this soldier's attack instead of 1d6 and pick the higher result."
+      "text": "If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result."
     },
     {
       "abbr": "C.A.P Chest", "name": "Custom Armor Plating Chest", "slot": "Chest",
