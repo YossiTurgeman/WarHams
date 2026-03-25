@@ -202,8 +202,8 @@
     {
       "abbr": "S.L.I.M.E", "name": "Squad Light Interoperable Mortar Encampment", "slot": "Backpack",
       "cost": { "Industry": 1, "Oil": 2, "Local Favor": 2 }, "dp": 5, "copies": 8,
-      "text": "Choose 2 soldiers to carry SLIME. Throw 4 dice, target squad up to 3 hexes away. Target defends normally. Attacking soldiers skip normal combat. Defenders get -1 to all defense dice. While defending: -1 to defense die.",
-      "special": "Requires 2 soldiers. Civilian damage penalty on Local Favor hexes."
+      "text": "Choose 2 soldiers to carry S.L.I.M.E. Roll 4 dice, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
+      "special": "Requires 2 soldiers."
     },
     {
       "abbr": "B.E.A.R", "name": "Battlefield Extraction Airlift Rover", "slot": "Chest",
