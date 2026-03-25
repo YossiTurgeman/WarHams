@@ -261,7 +261,7 @@
     {
       "abbr": "T.I.L.T.S", "name": "Tactical Ion Team Link Shield", "slot": "Backpack",
       "cost": { "Electricity": 1, "Industry": 1, "Intelligence": 2 }, "dp": 5, "copies": 8,
-      "text": "Pay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Tap both T.I.L.T.S modules after use. Recharge at City/Spaceport by paying the full listed cost again. No other backpack module allowed with T.I.L.T.S."
+      "text": "Pay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S."
     }
   ],
   "conspire_cards": [
