@@ -167,8 +167,13 @@ function drawRichText(text, options = {}) {
 function renderTable(tableLines) {
   if (tableLines.length < 2) return;
 
-  const parseRow = (line) =>
-    line.split('|').map((c) => c.trim()).filter((c) => c.length > 0);
+  const parseRow = (line) => {
+    const parts = line.split('|').map((c) => c.trim());
+    // Remove leading and trailing empty strings from outer pipes, keep inner empties
+    if (parts.length > 0 && parts[0] === '') parts.shift();
+    if (parts.length > 0 && parts[parts.length - 1] === '') parts.pop();
+    return parts;
+  };
 
   const headers = parseRow(tableLines[0]);
   const rows = tableLines.slice(2).map(parseRow);
