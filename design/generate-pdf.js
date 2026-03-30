@@ -182,10 +182,11 @@ function renderTable(tableLines) {
 
   // Column widths proportional to max content length, with minimum width
   const MIN_COL_W = 55;
+  const MAX_COL_WEIGHT = 80; // Cap any single column's weight to prevent it from dominating
   const colMaxLen = headers.map((h, ci) => {
     let max = h.length;
     rows.forEach((r) => { if (r[ci]) max = Math.max(max, r[ci].length); });
-    return Math.max(max, 5);
+    return Math.min(Math.max(max, 5), MAX_COL_WEIGHT);
   });
   const totalWeight = colMaxLen.reduce((s, l) => s + l, 0);
   let colWidths = colMaxLen.map((len) => (len / totalWeight) * CONTENT_WIDTH);
