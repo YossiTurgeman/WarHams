@@ -1051,7 +1051,11 @@ Move a Squad to any hex → place your colored **Control Flag** on it. This appl
 
 ### End-of-Round Bonus
 
+> ⚠️ **Important: This happens at the END OF THE ROUND — after ALL players have completed their turns. It does NOT happen at the end of each individual player's turn.**
+
 At the **end of each round** (after all players have completed their turns), any uncollected resource tokens on your controlled hexes are added to your supply. Additionally, any spaceport hexes you control with container markers grant you the BAC cards from the matching Unloading Zone slot. See the **End of Round** step in the Turn Structure for full details.
+
+Territory collection is resolved **simultaneously for all players** once the final player's turn (including Phase 7) is complete.
 
 ---
 
