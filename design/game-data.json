@@ -17,7 +17,7 @@
       "id": "military",
       "name": "Military Supremacy",
       "description": "Have 4 full squads of 7 soldiers and hold for 1 round — competition's HQs pull them back",
-      "requirement": "4 squads with 7 soldiers each (28 total). Declare at end of turn; win at start of next turn if still at 28+"
+      "requirement": "4 squads with 7 soldiers each (28 total). Declare at end of turn; win at start of next turn if still at 28+. Tie: highest DP wins; if DP tied, continue playing"
     },
     {
       "id": "dominance",

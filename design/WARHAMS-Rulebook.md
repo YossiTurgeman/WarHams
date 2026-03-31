@@ -1084,6 +1084,8 @@ Your corporate HQ dispatches a full battalion. With the majority of orbital acce
 
 When you reach 28 soldiers, **declare Military Supremacy** at the end of your turn. If you still have 28 or more soldiers at the **start of your next turn**, you win. Every opponent gets one full turn to try to knock your numbers down before the victory is confirmed.
 
+**Tie:** If two or more players both hold 28+ soldiers when checks resolve, the player with the **highest Dominance Points (DP)** wins. If DP is also tied, continue playing until the tie is broken.
+
 Your overwhelming military presence renders further conflict pointless. Rival HQs withdraw. You are promoted to conquer bigger, richer planets.
 
 ---
