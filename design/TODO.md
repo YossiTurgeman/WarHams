@@ -229,18 +229,25 @@
 > **BAC Rebalance Status:** 26 issues reviewed. 16 fixed, 3 acceptable/already defined, 7 deferred to playtesting.
 
 ## Task 6: 🖥️ Tabletop Simulator Prototype
-- [ ] Set up TTS mod project structure
-- [ ] Build hex board with randomized tile placement inside planet frame
-- [ ] Create all hex tile assets for TTS
-- [ ] Implement BAC card deck (100 cards) with spaceport deck + planet bound area
-- [ ] Implement Conspire card deck (72 cards) with draw/discard
-- [ ] Build squad board UI with drag-and-drop module slots
-- [ ] Script dice rolling (3d6 resource production, combat dice)
-- [ ] Implement resource token spawning on hex tiles
-- [ ] Add number tokens (1-6) placement system
-- [ ] Build control hex frame system (player colors)
-- [ ] Add damage token tracking on squad boards
-- [ ] Implement turn tracker and DP counter
-- [ ] Add separatist miniature spawning and movement logic
-- [ ] Player hand zones and hidden information
-- [ ] Scripted automation (resource production on roll, separatist spawning on matching numbers)
+- [x] Set up TTS mod project structure ✅ — `tts/` directory with save generator, Lua scripts, README
+- [x] Build hex board with randomized tile placement inside planet frame ✅ — Lua script with Random + Fixed board modes, 61-hex axial grid
+- [x] Create all hex tile assets for TTS ✅ — Color-coded placeholder tiles (8 types), ready for art replacement
+- [x] Implement BAC card deck (100 cards) with spaceport deck + planet bound area ✅ — 20 types × 5 copies, full descriptions from game-data.json
+- [x] Implement Conspire card deck (72 cards) with draw/discard ✅ — 24 types × 3 copies, timing/cost/conditions included
+- [x] Build squad board UI with drag-and-drop module slots ✅ — 16 squad boards (4 per player), placeholder tiles
+- [x] Script dice rolling (3d6 resource production, combat dice) ✅ — 3 resource dice + 11 combat dice (color-coded per player)
+- [x] Implement resource token spawning on hex tiles ✅ — 5 infinite bags (Oil/Elec/Intel/Ind/LF) with colored tokens
+- [x] Add number tokens (1-6) placement system ✅ — 16 tokens in bag + Lua auto-placement during board setup
+- [x] Build control hex frame system (player colors) ✅ — 4 bags × 25 frames per player
+- [x] Add damage token tracking on squad boards ✅ — Infinite bag of red damage tokens
+- [x] Implement turn tracker and DP counter ✅ — Notecard with round/DP/spaceport tracking
+- [x] Add separatist miniature spawning and movement logic ✅ — Bag of 24 grey minis (manual movement for now)
+- [x] Player hand zones and hidden information ✅ — 4 player zones in corners + flag bags
+- [ ] Scripted automation (resource production on roll, separatist spawning on matching numbers) — DEFERRED to post-playtesting
+- [x] Unloading Zone + Cargo Containers ✅ — 6 containers with labeled zone area
+- [x] Planet Bound Area + Equipment Display ✅ — Labeled zones for face-up BAC display and flag tracking
+- [x] Bunker tokens ✅ — Bag of 12 bunker tokens
+- [x] Player flags (25 per player) ✅ — 4 bags for Equipment Display tracking
+- [x] Save file generator ✅ — `tts/generate-save.js` builds save from game-data.json + setup.lua
+
+> **TTS Prototype Status:** Manual play sandbox complete (610 total objects). All game components present with placeholder art. Board setup offers Random or Fixed layout. Scripted automation deferred to post-playtesting.
