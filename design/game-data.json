@@ -10,8 +10,8 @@
     {
       "id": "spaceports",
       "name": "Spaceport Domination",
-      "description": "Control 4 of 6 space ports — HQ sends a full battalion, rivals can't resupply and flee off-world",
-      "requirement": "Control 4 of the 6 spaceport landing zones"
+      "description": "Control majority of spaceports — HQ sends a full battalion, rivals can't resupply and flee off-world",
+      "requirement": "2 players: control 5 of 6 spaceports. 3-4 players: control 4 of 6 spaceports"
     },
     {
       "id": "military",

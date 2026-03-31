@@ -1067,7 +1067,12 @@ Three paths lead to victory. The first player to achieve **any** condition wins 
 
 ### 🚀 Victory 1: Spaceport Domination
 
-**Control 4 of the 6 Spaceport Landing Zones.**
+**Control the required number of Spaceport Landing Zones:**
+
+| Players | Spaceports Needed |
+|:---:|:---:|
+| 2 | **5 of 6** |
+| 3–4 | **4 of 6** |
 
 Your corporate HQ dispatches a full battalion. With the majority of orbital access locked down, rival corporations can no longer resupply — they flee off-world in panic. You win command of the planet.
 
