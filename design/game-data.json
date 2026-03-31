@@ -91,7 +91,7 @@
       "color": "Grey",
       "count": 3,
       "printed_numbers": [2, 4, 6],
-      "mechanics": "Each base has a printed number (2, 4, or 6). Spawns 3 separatists only when the Separatist Die (grey d6) matches the base number (if insufficient minis remain, spawn as many as possible — excess lost). Once captured, stops natural spawning. Conquering requires defeating 7 separatists. Controller may Instigate Uprising (Phase 7): pay 3 Local Favor to spawn 3 Separatists at any unconquered base (once per round per conquered base). All 3 bases captured: produce 1 Local Favor when number rolled."
+      "mechanics": "Each base has a printed number (2, 4, or 6). Spawns 3 separatists only when the Separatist Die (grey d6) matches the base number (if insufficient minis remain, spawn as many as possible — excess lost). Once captured, stops natural spawning. Conquering requires defeating 7 separatists — base defenders roll full d6 (no −1 penalty). Roaming separatists still suffer −1. Controller may Instigate Uprising (Phase 7): pay 3 Local Favor to spawn 3 Separatists at any unconquered base (once per round per conquered base). All 3 bases captured: produce 1 Local Favor when number rolled."
     },
     {
       "name": "Spaceport Drop Zone",

@@ -696,10 +696,10 @@ When using area-of-effect weaponry — specifically **S.L.I.M.E** (mortar) or ot
 | Separatist Rule | Detail |
 |---|---|
 | **Rolled By** | The player to the **left** of the player fighting the Separatists rolls all Separatist dice |
-| **Dice Penalty** | Separatists roll with **−1 to all dice** (minimum result of 1) |
+| **Dice Penalty** | Roaming Separatists roll with **−1 to all dice** (minimum result of 1) |
 | **Fragile** | Each Separatist has only **1 life** — any hit kills them instantly |
 | **Blocking Movement** | A soldier may not move through or collect resources from a hex occupied by Separatists without defeating them first |
-| **Conquering a Base** | The base spawns **7 Separatists** when first engaged. All 7 must be defeated to conquer |
+| **Conquering a Base** | The base spawns **7 Separatists** when first engaged. All 7 must be defeated to conquer. **Base defenders roll full d6 (no −1 penalty)** — they are dug in and fight at full strength |
 
 ---
 
