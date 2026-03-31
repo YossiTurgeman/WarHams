@@ -780,7 +780,7 @@ Bunker tokens are placed by the **D.U.D.S** (Deployable Unital Defense System) e
 | Damage tokens to kill a H.A.M.S | **4** (dies on the 4th token) |
 | Counterattack trigger | Defense beats attack by **3 or more** (chains get −1 cumulative fatigue) |
 | Separatist lives | **1** (dies on any hit) |
-| Separatist dice penalty | **−1 to all rolls** |
+| Separatist dice penalty | **−1 to all rolls** (roaming only; base defenders roll full d6) |
 
 ---
 ---
@@ -996,13 +996,13 @@ Each player moves Separatists in or adjacent to their own territory. Unclaimed S
 
 | Rule | Detail |
 |------|--------|
-| **Dice Penalty** | −1 to all dice |
+| **Dice Penalty** | Roaming Separatists: −1 to all dice. **Base defenders roll full d6 (no −1 penalty)** |
 | **Hit Points** | 1 life — any hit kills instantly |
 | **Mandatory** | Must fight before collecting resources or moving through |
 
 ### Conquering Bases
 
-- Attack triggers 7 defenders at the base.
+- Attack triggers 7 defenders at the base. **Base defenders roll full d6 (no −1 penalty)** — they are dug in and fight at full strength.
 - Once all 7 are defeated, place your Control Flag.
 - Conquered bases **stop spawning naturally** (their printed number no longer triggers spawns).
 - Once ALL 3 bases are captured: bases produce 1 Local Favor when their number is rolled.
