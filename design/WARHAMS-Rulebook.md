@@ -1080,7 +1080,9 @@ Your corporate HQ dispatches a full battalion. With the majority of orbital acce
 
 ### 💪 Victory 2: Military Supremacy
 
-**Field 4 full Squads of 7 H.A.M.S each (28 soldiers total).**
+**Field 4 full Squads of 7 H.A.M.S each (28 soldiers total) and hold them for 1 full round.**
+
+When you reach 28 soldiers, **declare Military Supremacy** at the end of your turn. If you still have 28 or more soldiers at the **start of your next turn**, you win. Every opponent gets one full turn to try to knock your numbers down before the victory is confirmed.
 
 Your overwhelming military presence renders further conflict pointless. Rival HQs withdraw. You are promoted to conquer bigger, richer planets.
 
