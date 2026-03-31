@@ -268,7 +268,7 @@
     {
       "name": "Deal with Local Militia", "copies": 3, "timing": "Tactical",
       "cost": { "Local Favor": 3 },
-      "text": "Choose a hex up to 2 hexes from your soldier. Spawn 3 local militia to attack a nearby enemy immediately. Militia have -1 to all dice and disperse after attack."
+      "text": "Choose a hex up to 2 hexes from your soldier. Spawn 3 local militia to attack a nearby enemy immediately (spawning is mandatory). Use spare Separatist minis or any substitute if unavailable. Militia have -1 to all dice and disperse after attack."
     },
     {
       "name": "A Rough Night", "copies": 3, "timing": "Tactical",

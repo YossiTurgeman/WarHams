@@ -1031,8 +1031,8 @@ Militia are temporary local fighters summoned by the **Deal with Local Militia**
 
 | Rule | Detail |
 |------|--------|
-| **Spawning** | Place 3 militia on a hex within 2 hexes of one of your soldiers |
-| **Components** | Use spare Separatist miniatures or generic tokens |
+| **Spawning** | Place 3 militia on a hex within 2 hexes of one of your soldiers. Spawning is **mandatory** — the card effect cannot be partially resolved |
+| **Components** | Use spare Separatist miniatures. If none are available, use any substitute (coins, tokens, dice, etc.) |
 | **Combat** | Militia immediately attack one adjacent enemy Squad using normal combat rules |
 | **Dice Penalty** | −1 to all dice (same as Separatists) |
 | **Hit Points** | 1 life each — any hit kills instantly |
