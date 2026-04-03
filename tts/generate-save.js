@@ -55,12 +55,33 @@ function baseObj(name, nickname, desc, tf, color = null) {
 // ─── All ObjectStates ───────────────────────────────────────────────
 const objects = [];
 
-// ─── 1. SETUP PANEL (scripted block with board setup buttons) ──────
+// ═══════════════════════════════════════════════════════════════════
+// TABLE LAYOUT — everything within ±14 x, ±14 z
+// All rotY = 0 for consistent text alignment
+//
+//  z = -14  ┌─────────────────────────────────┐
+//           │  P1(Red) area    P2(Blue) area   │
+//  z = -10  │  [squad boards]  [squad boards]  │
+//           │                                  │
+//  z = -6   │  [resource bags across top]      │
+//           │                                  │
+//  z = -2   │  [decks/zones flanking center]   │
+//  z =  0   │        *** BOARD CENTER ***      │
+//  z =  2   │  [setup panel above center]      │
+//           │                                  │
+//  z =  6   │  [misc bags across bottom]       │
+//           │                                  │
+//  z = 10   │  [squad boards]  [squad boards]  │
+//  z = 14   │  P3(Green) area  P4(Yellow) area │
+//           └─────────────────────────────────┘
+// ═══════════════════════════════════════════════════════════════════
+
+// ─── 1. SETUP PANEL (scripted block, above board center) ───────────
 const setupPanel = baseObj(
     "BlockSquare",
     "SETUP PANEL — Click Buttons",
     "Click buttons to generate the hex board.\nRandom = shuffled tiles.\nFixed = balanced playtesting layout.",
-    transform(0, 1.05, 0, 0, { x: 4, y: 0.1, z: 2 }),
+    transform(0, 1.05, -2, 0, { x: 4, y: 0.1, z: 1.5 }),
     { r: 0.15, g: 0.15, b: 0.2 }
 );
 setupPanel.LuaScript = luaScript;
@@ -68,28 +89,13 @@ setupPanel.LuaScriptState = "";
 objects.push(setupPanel);
 
 // ─── 2. BAC CARD DECK (100 cards) ──────────────────────────────────
-// Use a single shared deck image (1x1 grid placeholder).
-// TTS requires a valid-looking URL format for CustomDeck — use a known
-// public 1x1 white card placeholder hosted on imgur.
-const BAC_FACE = "https://i.imgur.com/wUFnJCH.png";   // simple white square
-const BAC_BACK = "https://i.imgur.com/wUFnJCH.png";
-const CONSPIRE_FACE = "https://i.imgur.com/wUFnJCH.png";
-const CONSPIRE_BACK = "https://i.imgur.com/wUFnJCH.png";
+const CARD_IMG = "https://i.imgur.com/wUFnJCH.png";
 
 function buildBACDeck() {
     const cards = [];
     const bacs = gameData.basic_armament_cards;
-
-    // Use a single CustomDeck entry for the whole deck (1x1 grid = 1 card face)
     const deckDef = {
-        1: {
-            FaceURL: BAC_FACE,
-            BackURL: BAC_BACK,
-            NumWidth: 1,
-            NumHeight: 1,
-            BackIsHidden: true,
-            UniqueBack: false
-        }
+        1: { FaceURL: CARD_IMG, BackURL: CARD_IMG, NumWidth: 1, NumHeight: 1, BackIsHidden: true, UniqueBack: false }
     };
 
     bacs.forEach((bac, typeIdx) => {
@@ -100,30 +106,20 @@ function buildBACDeck() {
                 `[${bac.category}] Slot: ${bac.slot}`,
                 `Cost: ${costStr}`,
                 `DP: ${bac.dp}`,
-                '',
-                bac.text,
+                '', bac.text,
                 bac.special ? `Special: ${bac.special}` : ''
             ].join('\n').trim();
 
-            const card = baseObj(
-                "Card",
-                bac.abbr,
-                desc,
-                transform(0, 0.1 * (typeIdx * bac.copies + copy), 0)
-            );
-            card.CardID = 100; // all use deck 1, card index 0
+            const card = baseObj("Card", bac.abbr, desc, transform(0, 0.1 * (typeIdx * bac.copies + copy), 0));
+            card.CardID = 100;
             card.CustomDeck = deckDef;
             cards.push(card);
         }
     });
 
-    const deck = baseObj(
-        "Deck",
-        "BAC Deck",
-        `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards (${gameData.deck_counts.BAC_unique_types} types x ${gameData.deck_counts.BAC_copies_each} copies)\n\nDraw 3 per player during setup, then draft.\nHover over cards to see stats.`,
-        transform(18, 1.5, 0, 180),
-        { r: 0.8, g: 0.6, b: 0.3 }
-    );
+    const deck = baseObj("Deck", "BAC Deck",
+        `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards\nDraw 3 per player, then draft.\nHover cards to see stats.`,
+        transform(10, 1.5, -3, 0), { r: 0.8, g: 0.6, b: 0.3 });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = deckDef;
     deck.ContainedObjects = cards;
@@ -135,16 +131,8 @@ objects.push(buildBACDeck());
 function buildConspireDeck() {
     const cards = [];
     const conspires = gameData.conspire_cards;
-
     const deckDef = {
-        2: {
-            FaceURL: CONSPIRE_FACE,
-            BackURL: CONSPIRE_BACK,
-            NumWidth: 1,
-            NumHeight: 1,
-            BackIsHidden: true,
-            UniqueBack: false
-        }
+        2: { FaceURL: CARD_IMG, BackURL: CARD_IMG, NumWidth: 1, NumHeight: 1, BackIsHidden: true, UniqueBack: false }
     };
 
     conspires.forEach((card, typeIdx) => {
@@ -152,32 +140,20 @@ function buildConspireDeck() {
             const costStr = typeof card.cost === 'string' ? card.cost :
                 Object.entries(card.cost).map(([k, v]) => `${v} ${k}`).join(', ');
             const desc = [
-                `[${card.timing}]`,
-                `Cost: ${costStr}`,
-                '',
-                card.text,
+                `[${card.timing}]`, `Cost: ${costStr}`, '', card.text,
                 card.condition ? `Condition: ${card.condition}` : ''
             ].join('\n').trim();
 
-            const c = baseObj(
-                "Card",
-                card.name,
-                desc,
-                transform(0, 0.1 * (typeIdx * card.copies + copy), 0)
-            );
-            c.CardID = 200; // deck 2, card index 0
+            const c = baseObj("Card", card.name, desc, transform(0, 0.1 * (typeIdx * card.copies + copy), 0));
+            c.CardID = 200;
             c.CustomDeck = deckDef;
             cards.push(c);
         }
     });
 
-    const deck = baseObj(
-        "Deck",
-        "Conspire Deck",
-        `Conspire Cards — ${gameData.deck_counts.total_conspire_cards} cards (${gameData.deck_counts.conspire_unique_types} types x ${gameData.deck_counts.conspire_copies_each} copies)\n\nForfeit Movement or Combat to draw 1.\nHover over cards to see effects.`,
-        transform(-18, 1.5, 0, 180),
-        { r: 0.3, g: 0.2, b: 0.5 }
-    );
+    const deck = baseObj("Deck", "Conspire Deck",
+        `Conspire Cards — ${gameData.deck_counts.total_conspire_cards} cards\nForfeit Movement or Combat to draw 1.\nHover cards to see effects.`,
+        transform(-10, 1.5, -3, 0), { r: 0.3, g: 0.2, b: 0.5 });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = deckDef;
     deck.ContainedObjects = cards;
@@ -186,370 +162,221 @@ function buildConspireDeck() {
 objects.push(buildConspireDeck());
 
 // ─── 4. DICE ───────────────────────────────────────────────────────
-// Resource dice (2 white + 1 grey separatist die)
-const resourceDice = [
-    { name: "Resource Die 1", color: { r: 1, g: 1, b: 1 }, x: 8, z: 12 },
-    { name: "Resource Die 2", color: { r: 1, g: 1, b: 1 }, x: 9.5, z: 12 },
-    { name: "Separatist Die (Grey)", color: { r: 0.5, g: 0.5, b: 0.5 }, x: 11, z: 12 },
-];
-resourceDice.forEach(d => {
+// Resource dice grouped together near board
+[
+    { name: "Resource Die 1", color: { r: 1, g: 1, b: 1 }, x: -1 },
+    { name: "Resource Die 2", color: { r: 1, g: 1, b: 1 }, x: 0 },
+    { name: "Separatist Die", color: { r: 0.5, g: 0.5, b: 0.5 }, x: 1 },
+].forEach(d => {
     objects.push(baseObj("Die_6", d.name,
-        d.name.includes("Separatist") ?
-            "Grey die — triggers Separatist spawning at matching base numbers" :
-            "White die — resource production",
-        transform(d.x, 2, d.z), d.color));
+        d.name.includes("Separatist") ? "Grey — triggers Separatist spawning" : "Resource production",
+        transform(d.x, 2, -4), d.color));
 });
 
-// Combat dice — 7 per player color for max engagement (28 total)
+// Combat dice — 7 per player color
 const playerColors = [
-    { label: "Red", color: { r: 0.86, g: 0.21, b: 0.21 } },
-    { label: "Blue", color: { r: 0.22, g: 0.38, b: 0.86 } },
-    { label: "Green", color: { r: 0.18, g: 0.72, b: 0.28 } },
-    { label: "Yellow", color: { r: 0.9, g: 0.82, b: 0.15 } },
+    { label: "Red",    color: { r: 0.86, g: 0.21, b: 0.21 } },
+    { label: "Blue",   color: { r: 0.22, g: 0.38, b: 0.86 } },
+    { label: "Green",  color: { r: 0.18, g: 0.72, b: 0.28 } },
+    { label: "Yellow", color: { r: 0.9,  g: 0.82, b: 0.15 } },
 ];
 playerColors.forEach((col, pi) => {
     for (let i = 0; i < 7; i++) {
-        objects.push(baseObj("Die_6",
-            `${col.label} D${i + 1}`,
+        objects.push(baseObj("Die_6", `${col.label} D${i + 1}`,
             `Combat die for ${col.label} player`,
-            transform(-12 + pi * 5, 2, 14 + i * 1.2),
-            col.color));
+            transform(-7 + pi * 4.5, 2, 5 + i * 1), col.color));
     }
 });
 
-// ─── 5. RESOURCE TOKEN BAGS (infinite) ─────────────────────────────
-// Use built-in checker pieces as tokens (no image URL needed)
+// ─── 5. RESOURCE TOKEN BAGS (infinite, row across top) ─────────────
 const resourceDefs = [
-    { name: "Oil",          color: { r: 0.15, g: 0.15, b: 0.15 }, x: -12 },
-    { name: "Electricity",  color: { r: 0.95, g: 0.85, b: 0.1 },  x: -6 },
-    { name: "Intelligence", color: { r: 0.2,  g: 0.4,  b: 0.9 },  x: 0 },
-    { name: "Industry",     color: { r: 0.85, g: 0.15, b: 0.15 }, x: 6 },
-    { name: "Local Favor",  color: { r: 0.15, g: 0.7,  b: 0.2 },  x: 12 },
+    { name: "Oil",          color: { r: 0.15, g: 0.15, b: 0.15 } },
+    { name: "Electricity",  color: { r: 0.95, g: 0.85, b: 0.1 } },
+    { name: "Intelligence", color: { r: 0.2,  g: 0.4,  b: 0.9 } },
+    { name: "Industry",     color: { r: 0.85, g: 0.15, b: 0.15 } },
+    { name: "Local Favor",  color: { r: 0.15, g: 0.7,  b: 0.2 } },
 ];
-resourceDefs.forEach(res => {
-    const token = baseObj(
-        "Checker_white",
-        `${res.name}`,
-        `${res.name} resource token`,
-        transform(0, 0.5, 0),
-        res.color
-    );
-
-    const bag = baseObj(
-        "Infinite_Bag",
-        `${res.name} Tokens`,
-        `Infinite bag of ${res.name} resource tokens.\nTake as needed during resource gathering.`,
-        transform(res.x, 2, -18),
-        res.color
-    );
+resourceDefs.forEach((res, i) => {
+    const token = baseObj("Checker_white", res.name, `${res.name} resource token`, transform(0, 0.5, 0), res.color);
+    const bag = baseObj("Infinite_Bag", `${res.name} Tokens`,
+        `Infinite bag of ${res.name} resource tokens.`,
+        transform(-8 + i * 4, 2, -7), res.color);
     bag.ContainedObjects = [token];
     objects.push(bag);
 });
 
-// ─── 6. PLAYER HAND ZONES (4 corners) ─────────────────────────────
+// ─── 6. PLAYER AREAS (4 sides, compact) ───────────────────────────
+// Players positioned along edges, not deep corners
 const playerZones = [
-    { name: "Player 1 (Red)",    ttsColor: "Red",    x: -28, z: -28 },
-    { name: "Player 2 (Blue)",   ttsColor: "Blue",   x: 28,  z: -28 },
-    { name: "Player 3 (Green)",  ttsColor: "Green",  x: -28, z: 28 },
-    { name: "Player 4 (Yellow)", ttsColor: "Yellow",  x: 28,  z: 28 },
+    { name: "Player 1 (Red)",    x: -8,  z: -13 },  // top-left
+    { name: "Player 2 (Blue)",   x:  8,  z: -13 },  // top-right
+    { name: "Player 3 (Green)",  x: -8,  z:  13 },  // bottom-left
+    { name: "Player 4 (Yellow)", x:  8,  z:  13 },  // bottom-right
 ];
 playerZones.forEach((p, idx) => {
-    const zone = baseObj(
-        "HandTrigger",
-        `${p.name} Hand Zone`,
-        `Hand zone for ${p.name}.\nCards placed here are hidden from other players.`,
-        transform(p.x, 3, p.z, 0, { x: 12, y: 5, z: 6 }),
-        playerColors[idx].color
-    );
+    const zone = baseObj("HandTrigger", `${p.name} Hand`,
+        `Hand zone for ${p.name}. Cards here are hidden.`,
+        transform(p.x, 3, p.z, 0, { x: 8, y: 4, z: 3 }),
+        playerColors[idx].color);
     objects.push(zone);
 });
 
-// ─── 7. SOLDIER BAGS (28 per player, using pawns) ─────────────────
+// ─── 7. SOLDIER BAGS (28 per player) ──────────────────────────────
 playerColors.forEach((sc, idx) => {
     const soldiers = [];
     for (let i = 0; i < 28; i++) {
-        soldiers.push(baseObj(
-            "PlayerPawn",
-            `${sc.label} Soldier`,
-            `${sc.label} player soldier`,
-            transform(0, 0.5 * i, 0, 0, { x: 0.5, y: 0.5, z: 0.5 }),
-            sc.color
-        ));
+        soldiers.push(baseObj("PlayerPawn", `${sc.label} Soldier`, `${sc.label} player soldier`,
+            transform(0, 0.5 * i, 0, 0, { x: 0.5, y: 0.5, z: 0.5 }), sc.color));
     }
-    const bag = baseObj(
-        "Bag",
-        `${sc.label} Soldiers (28)`,
-        `28 ${sc.label} soldier miniatures.\nStart with 10 (2 squads x 5).\nGrow to max 28 (4 squads x 7).`,
-        transform(playerZones[idx].x + 6, 2, playerZones[idx].z),
-        sc.color
-    );
+    const bag = baseObj("Bag", `${sc.label} Soldiers (28)`,
+        `28 ${sc.label} soldiers. Start with 10 (2x5), max 28 (4x7).`,
+        transform(playerZones[idx].x - 3, 2, playerZones[idx].z), sc.color);
     bag.ContainedObjects = soldiers;
     objects.push(bag);
 });
 
-// ─── 8. SEPARATIST SOLDIERS (24 grey pawns) ────────────────────────
+// ─── 8. SEPARATIST SOLDIERS (24 grey) ──────────────────────────────
 const sepSoldiers = [];
 for (let i = 0; i < 24; i++) {
-    sepSoldiers.push(baseObj(
-        "PlayerPawn",
-        "Separatist",
-        "Grey Separatist soldier",
-        transform(0, 0.5 * i, 0, 0, { x: 0.5, y: 0.5, z: 0.5 }),
-        { r: 0.5, g: 0.5, b: 0.5 }
-    ));
+    sepSoldiers.push(baseObj("PlayerPawn", "Separatist", "Grey Separatist soldier",
+        transform(0, 0.5 * i, 0, 0, { x: 0.5, y: 0.5, z: 0.5 }), { r: 0.5, g: 0.5, b: 0.5 }));
 }
-const sepBag = baseObj(
-    "Bag",
-    "Separatist Soldiers (24)",
-    "24 grey Separatist miniatures.\nSpawn at bases when Separatist Die matches.\nAlso used as Militia substitutes.",
-    transform(0, 2, 22),
-    { r: 0.5, g: 0.5, b: 0.5 }
-);
+const sepBag = baseObj("Bag", "Separatist Soldiers (24)",
+    "24 grey Separatists. Spawn at bases. Also used as Militia.",
+    transform(0, 2, 12), { r: 0.5, g: 0.5, b: 0.5 });
 sepBag.ContainedObjects = sepSoldiers;
 objects.push(sepBag);
 
-// ─── 9. SQUAD BOARDS (16 total — BlockRectangle per player) ───────
+// ─── 9. SQUAD BOARDS (4 per player, near their zone) ──────────────
 playerColors.forEach((sc, idx) => {
     for (let b = 0; b < 4; b++) {
-        const board = baseObj(
-            "BlockRectangle",
-            `${sc.label} Squad ${b + 1}`,
-            `Squad Board — ${sc.label} Player, Squad ${b + 1}\n7 soldier slots | 5 equipment slots each | 3 damage cap`,
-            transform(
-                playerZones[idx].x - 6 + b * 4.5,
-                1.05,
-                playerZones[idx].z - (playerZones[idx].z > 0 ? -4 : 4),
-                0,
-                { x: 2, y: 0.1, z: 3 }
-            ),
-            sc.color
-        );
+        const zOff = playerZones[idx].z > 0 ? -2.5 : 2.5;
+        const board = baseObj("BlockRectangle", `${sc.label} Squad ${b + 1}`,
+            `Squad Board — ${sc.label} Squad ${b + 1}\n7 slots | 5 equip each | 3 dmg cap`,
+            transform(playerZones[idx].x - 4.5 + b * 3, 1.05, playerZones[idx].z + zOff, 0, { x: 1.5, y: 0.1, z: 2 }),
+            sc.color);
         board.Locked = true;
         objects.push(board);
     }
 });
 
-// ─── 10. CONTROL HEX FRAME BAGS (checker pieces) ─────────────────
+// ─── 10. CONTROL MARKER BAGS ──────────────────────────────────────
 playerColors.forEach((sc, idx) => {
     const frames = [];
     for (let i = 0; i < 25; i++) {
-        frames.push(baseObj(
-            "Checker_white",
-            `${sc.label} Control`,
-            `Place on hex to mark ${sc.label} player territory control`,
-            transform(0, 0.3 * i, 0),
-            sc.color
-        ));
+        frames.push(baseObj("Checker_white", `${sc.label} Control`,
+            `${sc.label} territory control marker`, transform(0, 0.3 * i, 0), sc.color));
     }
-    const bag = baseObj(
-        "Bag",
-        `${sc.label} Control Markers (25)`,
-        `25 control markers for ${sc.label} player.\nPlace on hexes you control.`,
-        transform(playerZones[idx].x - 6, 2, playerZones[idx].z + (playerZones[idx].z > 0 ? 4 : -4)),
-        sc.color
-    );
+    const bag = baseObj("Bag", `${sc.label} Control (25)`, `25 control markers for ${sc.label}.`,
+        transform(playerZones[idx].x + 3, 2, playerZones[idx].z), sc.color);
     bag.ContainedObjects = frames;
     objects.push(bag);
 });
 
-// ─── 11. DAMAGE TOKENS (infinite bag of red checkers) ──────────────
-const dmgToken = baseObj(
-    "Checker_white",
-    "DMG",
-    "Damage token. 3 damage = death on 4th hit.",
-    transform(0, 0.5, 0),
-    { r: 0.9, g: 0.1, b: 0.1 }
-);
-const dmgBag = baseObj(
-    "Infinite_Bag",
-    "Damage Tokens",
-    "Infinite bag of damage tokens.\n3 per soldier max, 4th hit = death.",
-    transform(-15, 2, 22),
-    { r: 0.9, g: 0.1, b: 0.1 }
-);
+// ─── 11. DAMAGE TOKENS ────────────────────────────────────────────
+const dmgToken = baseObj("Checker_white", "DMG", "Damage. 3 max, 4th = death.", transform(0, 0.5, 0), { r: 0.9, g: 0.1, b: 0.1 });
+const dmgBag = baseObj("Infinite_Bag", "Damage Tokens", "Infinite damage tokens. 3 per soldier max.",
+    transform(-5, 2, 12), { r: 0.9, g: 0.1, b: 0.1 });
 dmgBag.ContainedObjects = [dmgToken];
 objects.push(dmgBag);
 
-// ─── 12. BUNKER TOKENS (BlockSquare pieces) ───────────────────────
+// ─── 12. BUNKER TOKENS ────────────────────────────────────────────
 const bunkerTokens = [];
 for (let i = 0; i < 12; i++) {
-    bunkerTokens.push(baseObj(
-        "BlockSquare",
-        "Bunker",
-        "+1 defense for any unit on this hex.\n1 per hex max. Destroyed by attacker winning combat.",
-        transform(0, 0.5 * i, 0, 0, { x: 0.8, y: 0.3, z: 0.8 }),
-        { r: 0.45, g: 0.38, b: 0.25 }
-    ));
+    bunkerTokens.push(baseObj("BlockSquare", "Bunker", "+1 defense, 1/hex max, destroyable.",
+        transform(0, 0.5 * i, 0, 0, { x: 0.8, y: 0.3, z: 0.8 }), { r: 0.45, g: 0.38, b: 0.25 }));
 }
-const bunkerBag = baseObj(
-    "Bag",
-    "Bunker Tokens (12)",
-    "Neutral fortifications.\n+1 defense for any unit on hex.\n1 per hex max. Deployed via D.U.D.S module.",
-    transform(-10, 2, 22),
-    { r: 0.45, g: 0.38, b: 0.25 }
-);
+const bunkerBag = baseObj("Bag", "Bunker Tokens (12)", "Neutral fortifications via D.U.D.S.",
+    transform(-3, 2, 12), { r: 0.45, g: 0.38, b: 0.25 });
 bunkerBag.ContainedObjects = bunkerTokens;
 objects.push(bunkerBag);
 
-// ─── 13. NUMBER TOKENS (16 — using dice as visual markers) ────────
-// Use small BlockSquare pieces with number in nickname
+// ─── 13. NUMBER TOKENS (16) ──────────────────────────────────────
 const numberPool = [1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6];
 const numTokens = [];
 numberPool.forEach((num, i) => {
-    numTokens.push(baseObj(
-        "BlockSquare",
-        `#${num}`,
-        `Number ${num} — resource hex produces when this is rolled`,
-        transform(0, 0.4 * i, 0, 0, { x: 0.5, y: 0.15, z: 0.5 }),
-        { r: 0.95, g: 0.92, b: 0.82 }
-    ));
+    numTokens.push(baseObj("BlockSquare", `#${num}`, `Number ${num} — produces on this roll`,
+        transform(0, 0.4 * i, 0, 0, { x: 0.5, y: 0.15, z: 0.5 }), { r: 0.95, g: 0.92, b: 0.82 }));
 });
-const numBag = baseObj(
-    "Bag",
-    "Number Tokens (16)",
-    "16 number tokens for resource hexes.\n2x1, 2x2, 3x3, 3x4, 3x5, 3x6.\nPlace on 15 resource tiles (one gets 2).\nSeparatist Bases and Spaceports have PRINTED numbers.",
-    transform(5, 2, 22),
-    { r: 0.95, g: 0.92, b: 0.82 }
-);
+const numBag = baseObj("Bag", "Number Tokens (16)", "For resource hexes. 2x1,2x2,3x3-6.",
+    transform(3, 2, 12), { r: 0.95, g: 0.92, b: 0.82 });
 numBag.ContainedObjects = numTokens;
 objects.push(numBag);
 
-// ─── 14. CARGO CONTAINERS (6 — small rectangles) ─────────────────
+// ─── 14. CARGO CONTAINERS (6, in a row) ──────────────────────────
 for (let i = 1; i <= 6; i++) {
-    const container = baseObj(
-        "BlockRectangle",
-        `Container #${i}`,
-        `Spaceport ${i} cargo container.\nPlace on spaceport hex when BAC lands.\nCollect BACs from Unloading Zone when squad arrives.`,
-        transform(22 + (i - 1) * 2.5, 1.2, 5, 0, { x: 1, y: 0.3, z: 0.6 }),
-        { r: 0.35, g: 0.5, b: 0.35 }
-    );
-    objects.push(container);
+    objects.push(baseObj("BlockRectangle", `Container #${i}`,
+        `Spaceport ${i} cargo container.`,
+        transform(10 + (i - 1) * 1.8, 1.2, 2, 0, { x: 0.8, y: 0.3, z: 0.5 }),
+        { r: 0.35, g: 0.5, b: 0.35 }));
 }
 
-// ─── 15. ZONE LABELS (BlockRectangle as labeled areas) ────────────
-// Unloading Zone
-const uzLabel = baseObj(
-    "BlockRectangle",
-    "UNLOADING ZONE",
-    "BAC cards land here on doubles.\n6 slots matching Spaceport numbers 1-6.\nPlace cargo container on spaceport when BAC arrives.\nCollect: squad on spaceport takes all BACs from slot, remove container.",
-    transform(25, 1.02, 3, 0, { x: 8, y: 0.05, z: 2 }),
-    { r: 0.2, g: 0.3, b: 0.2 }
-);
+// ─── 15. ZONE LABELS ──────────────────────────────────────────────
+const uzLabel = baseObj("BlockRectangle", "UNLOADING ZONE",
+    "BAC cards land here on doubles. 6 slots for Spaceports 1-6.",
+    transform(14, 1.02, 1, 0, { x: 6, y: 0.05, z: 1 }), { r: 0.2, g: 0.3, b: 0.2 });
 uzLabel.Locked = true;
 objects.push(uzLabel);
 
-// Planet Bound Area
-const pbaLabel = baseObj(
-    "BlockRectangle",
-    "PLANET BOUND AREA",
-    "Face-up BAC display area.\nDuring setup: deal cards face-up here.\nRefill empty slots from Spaceport Deck.",
-    transform(18, 1.02, 6, 0, { x: 6, y: 0.05, z: 2 }),
-    { r: 0.2, g: 0.15, b: 0.1 }
-);
+const pbaLabel = baseObj("BlockRectangle", "PLANET BOUND AREA",
+    "Face-up BAC display. Refill from Spaceport Deck.",
+    transform(10, 1.02, 3.5, 0, { x: 4, y: 0.05, z: 1 }), { r: 0.2, g: 0.15, b: 0.1 });
 pbaLabel.Locked = true;
 objects.push(pbaLabel);
 
-// Equipment Display
-const eqDisplay = baseObj(
-    "BlockRectangle",
-    "EQUIPMENT DISPLAY",
-    "Shared display area.\nFirst time equipping a BAC type: place card face-up here + your flag.\nFlags are permanent.",
-    transform(18, 1.02, -6, 0, { x: 8, y: 0.05, z: 3 }),
-    { r: 0.15, g: 0.12, b: 0.08 }
-);
+const eqDisplay = baseObj("BlockRectangle", "EQUIPMENT DISPLAY",
+    "First-time equip: place BAC face-up + your flag. Flags permanent.",
+    transform(10, 1.02, -1, 0, { x: 4, y: 0.05, z: 1.5 }), { r: 0.15, g: 0.12, b: 0.08 });
 eqDisplay.Locked = true;
 objects.push(eqDisplay);
 
-// ─── 16. TURN TRACKER / DP COUNTER ────────────────────────────────
-const turnTracker = baseObj(
-    "Notecard",
-    "Turn & DP Tracker",
-    [
-        "W.A.R H.A.M.S — GAME TRACKER",
-        "================================",
-        "",
-        "ROUND: ___    ACTIVE PLAYER: ___",
-        "",
-        "--- Dominance Points ---",
-        "Player 1 (Red):    ___",
-        "Player 2 (Blue):   ___",
-        "Player 3 (Green):  ___",
-        "Player 4 (Yellow): ___",
-        "",
-        "--- Spaceports Controlled ---",
-        "P1: __/6  P2: __/6  P3: __/6  P4: __/6",
-        "",
-        "--- Victory Conditions ---",
-        "Spaceport Domination: 5/6 (2p) or 4/6 (3-4p)",
-        "Military Supremacy: 28 soldiers, hold 1 round",
-        "Dominance: 50 DP from equipped BACs",
-    ].join('\n'),
-    transform(-18, 2, -14, 0, { x: 3, y: 1, z: 3 }),
-    { r: 0.95, g: 0.9, b: 0.75 }
-);
+// ─── 16. TURN TRACKER & QUICK REFERENCE ───────────────────────────
+const turnTracker = baseObj("Notecard", "Turn & DP Tracker", [
+    "W.A.R H.A.M.S  GAME TRACKER",
+    "============================",
+    "", "ROUND: ___  ACTIVE PLAYER: ___",
+    "", "--- Dominance Points ---",
+    "P1 Red: ___  P2 Blue: ___",
+    "P3 Green: ___  P4 Yellow: ___",
+    "", "--- Spaceports Controlled ---",
+    "P1:__/6  P2:__/6  P3:__/6  P4:__/6",
+    "", "--- Victory ---",
+    "Spaceport: 5/6(2p) 4/6(3-4p)",
+    "Military: 28 soldiers, hold 1 round",
+    "Dominance: 50 DP from BACs",
+].join('\n'), transform(-13, 2, -3, 0, { x: 2, y: 1, z: 2 }), { r: 0.95, g: 0.9, b: 0.75 });
 objects.push(turnTracker);
 
-// ─── 17. PLAYER FLAG BAGS (checkers as flags) ─────────────────────
+const quickRef = baseObj("Notecard", "Quick Reference", [
+    "TURN PHASES",
+    "1. Resource Prod — Roll 2d6+Sep Die",
+    "2. Movement — 1 hex (2 w/ J.J)",
+    "3. Combat — within 2 hexes",
+    "4. Resource Gathering",
+    "5. Purchase & Equip",
+    "6. Trade (bank 3:1)",
+    "7. Move Separatists",
+    "", "COMBAT: Pre→1.Roll→2.Assign→",
+    "3.Equip bonus→4.Conspire→",
+    "5.Damage→6.Counter(3+ block)",
+    "", "SLOTS: 1=Head 2=Back 3=Legs",
+    "4-5=Chest 6=Hands",
+].join('\n'), transform(-13, 2, 1, 0, { x: 2, y: 1, z: 2 }), { r: 0.85, g: 0.9, b: 0.95 });
+objects.push(quickRef);
+
+// ─── 17. PLAYER FLAG BAGS ─────────────────────────────────────────
 playerColors.forEach((sc, idx) => {
     const flags = [];
     for (let i = 0; i < 25; i++) {
-        flags.push(baseObj(
-            "Checker_white",
-            `${sc.label} Flag`,
-            `${sc.label} player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.`,
-            transform(0, 0.3 * i, 0, 0, { x: 0.3, y: 0.3, z: 0.3 }),
-            sc.color
-        ));
+        flags.push(baseObj("Checker_white", `${sc.label} Flag`,
+            `${sc.label} flag — Equipment Display. Permanent.`,
+            transform(0, 0.3 * i, 0, 0, { x: 0.3, y: 0.3, z: 0.3 }), sc.color));
     }
-    const bag = baseObj(
-        "Bag",
-        `${sc.label} Flags (25)`,
-        `25 flags for ${sc.label} player.\nMark unlocked BAC types on Equipment Display.`,
-        transform(playerZones[idx].x + (playerZones[idx].x > 0 ? -6 : 6), 2, playerZones[idx].z + (playerZones[idx].z > 0 ? 4 : -4)),
-        sc.color
-    );
+    const bag = baseObj("Bag", `${sc.label} Flags (25)`, `Flags for Equipment Display.`,
+        transform(playerZones[idx].x, 2, playerZones[idx].z), sc.color);
     bag.ContainedObjects = flags;
     objects.push(bag);
 });
-
-// ─── 18. QUICK REFERENCE NOTECARD ─────────────────────────────────
-const quickRef = baseObj(
-    "Notecard",
-    "Quick Reference",
-    [
-        "TURN PHASES",
-        "============",
-        "1. Resource Production — Roll 2d6 + Separatist Die",
-        "2. Movement — Move squads (1 hex, 2 with J.J)",
-        "3. Combat — Attack enemies within 2 hexes",
-        "4. Resource Gathering — Collect from hexes",
-        "5. Purchase & Equip — Buy BAC modules",
-        "6. Trade — Trade resources / bank 3:1",
-        "7. Move Separatists — Consume/Seek/Wander",
-        "",
-        "COMBAT STEPS",
-        "=============",
-        "Pre: B.A.S.R/S.L.I.M.E fire",
-        "1. Roll 1d6 per engaged soldier",
-        "2. Attacker assigns dice to defenders",
-        "3. Add equipment bonuses",
-        "4. Play Conspire cards (defender first)",
-        "5. Compare matchups — difference = damage",
-        "6. Counterattack if defender blocks by 3+",
-        "",
-        "SOLDIER SLOTS (d6 hit roll)",
-        "===========================",
-        "1=Head  2=Backpack  3=Legs  4-5=Chest  6=Hands",
-        "",
-        "END OF ROUND",
-        "=============",
-        "Territory collection from controlled hexes",
-        "(after ALL players complete their turns)"
-    ].join('\n'),
-    transform(-18, 2, -20, 0, { x: 3, y: 1, z: 3 }),
-    { r: 0.85, g: 0.9, b: 0.95 }
-);
-objects.push(quickRef);
 
 // ─── BUILD SAVE FILE ──────────────────────────────────────────────
 const saveFile = {
@@ -561,8 +388,8 @@ const saveFile = {
     GameComplexity: "",
     Tags: ["Strategy", "Sci-Fi", "Wargame", "Hex Grid", "Custom"],
     Gravity: 0.5,
-    PlayArea: 1.0,
-    Table: "Table_RPG",
+    PlayArea: 0.5,
+    Table: "Table_Octagon",
     Sky: "Sky_Museum",
     Note: [
         "W.A.R H.A.M.S: The Battle for Planet X",

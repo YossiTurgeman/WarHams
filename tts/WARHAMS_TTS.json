@@ -13,8 +13,8 @@
     "Custom"
   ],
   "Gravity": 0.5,
-  "PlayArea": 1,
-  "Table": "Table_RPG",
+  "PlayArea": 0.5,
+  "Table": "Table_Octagon",
   "Sky": "Sky_Museum",
   "Note": "W.A.R H.A.M.S: The Battle for Planet X\n========================================\n\n2-4 Players | Sci-Fi Corporate Military Conquest\n\nSETUP:\n1. Click 'Random Board' or 'Fixed Board' on the Setup Panel\n2. Each player takes a soldier bag, flag bag, control markers, and 2 squad boards\n3. Place 10 soldiers (2 squads of 5) on starting hexes\n4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)\n5. Shuffle the Conspire Deck\n\nVICTORY CONDITIONS:\n- Spaceport Domination: 5/6 spaceports (2p) or 4/6 (3-4p)\n- Military Supremacy: Hold 28 soldiers for 1 full round\n- Dominance: 50 DP from equipped BAC cards\n\nSee design/WARHAMS-Rulebook.pdf for complete rules.",
   "TabStates": {},
@@ -28,13 +28,13 @@
       "Transform": {
         "posX": 0,
         "posY": 1.05,
-        "posZ": 0,
+        "posZ": -2,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
         "scaleX": 4,
         "scaleY": 0.1,
-        "scaleZ": 2
+        "scaleZ": 1.5
       },
       "Nickname": "SETUP PANEL — Click Buttons",
       "Description": "Click buttons to generate the hex board.\nRandom = shuffled tiles.\nFixed = balanced playtesting layout.",
@@ -59,18 +59,18 @@
       "GUID": "100065",
       "Name": "Deck",
       "Transform": {
-        "posX": 18,
+        "posX": 10,
         "posY": 1.5,
-        "posZ": 0,
+        "posZ": -3,
         "rotX": 0,
-        "rotY": 180,
+        "rotY": 0,
         "rotZ": 0,
         "scaleX": 1,
         "scaleY": 1,
         "scaleZ": 1
       },
       "Nickname": "BAC Deck",
-      "Description": "Basic Armament Cards — 100 cards (20 types x 5 copies)\n\nDraw 3 per player during setup, then draft.\nHover over cards to see stats.",
+      "Description": "Basic Armament Cards — 100 cards\nDraw 3 per player, then draft.\nHover cards to see stats.",
       "ColorDiffuse": {
         "r": 0.8,
         "g": 0.6,
@@ -4404,18 +4404,18 @@
       "GUID": "1000ae",
       "Name": "Deck",
       "Transform": {
-        "posX": -18,
+        "posX": -10,
         "posY": 1.5,
-        "posZ": 0,
+        "posZ": -3,
         "rotX": 0,
-        "rotY": 180,
+        "rotY": 0,
         "rotZ": 0,
         "scaleX": 1,
         "scaleY": 1,
         "scaleZ": 1
       },
       "Nickname": "Conspire Deck",
-      "Description": "Conspire Cards — 72 cards (24 types x 3 copies)\n\nForfeit Movement or Combat to draw 1.\nHover over cards to see effects.",
+      "Description": "Conspire Cards — 72 cards\nForfeit Movement or Combat to draw 1.\nHover cards to see effects.",
       "ColorDiffuse": {
         "r": 0.3,
         "g": 0.2,
@@ -7545,9 +7545,9 @@
       "GUID": "1000af",
       "Name": "Die_6",
       "Transform": {
-        "posX": 8,
+        "posX": -1,
         "posY": 2,
-        "posZ": 12,
+        "posZ": -4,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -7556,7 +7556,7 @@
         "scaleZ": 1
       },
       "Nickname": "Resource Die 1",
-      "Description": "White die — resource production",
+      "Description": "Resource production",
       "ColorDiffuse": {
         "r": 1,
         "g": 1,
@@ -7576,9 +7576,9 @@
       "GUID": "1000b0",
       "Name": "Die_6",
       "Transform": {
-        "posX": 9.5,
+        "posX": 0,
         "posY": 2,
-        "posZ": 12,
+        "posZ": -4,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -7587,7 +7587,7 @@
         "scaleZ": 1
       },
       "Nickname": "Resource Die 2",
-      "Description": "White die — resource production",
+      "Description": "Resource production",
       "ColorDiffuse": {
         "r": 1,
         "g": 1,
@@ -7607,9 +7607,9 @@
       "GUID": "1000b1",
       "Name": "Die_6",
       "Transform": {
-        "posX": 11,
+        "posX": 1,
         "posY": 2,
-        "posZ": 12,
+        "posZ": -4,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -7617,8 +7617,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Separatist Die (Grey)",
-      "Description": "Grey die — triggers Separatist spawning at matching base numbers",
+      "Nickname": "Separatist Die",
+      "Description": "Grey — triggers Separatist spawning",
       "ColorDiffuse": {
         "r": 0.5,
         "g": 0.5,
@@ -7638,9 +7638,9 @@
       "GUID": "1000b2",
       "Name": "Die_6",
       "Transform": {
-        "posX": -12,
+        "posX": -7,
         "posY": 2,
-        "posZ": 14,
+        "posZ": 5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -7669,9 +7669,9 @@
       "GUID": "1000b3",
       "Name": "Die_6",
       "Transform": {
-        "posX": -12,
+        "posX": -7,
         "posY": 2,
-        "posZ": 15.2,
+        "posZ": 6,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -7700,9 +7700,9 @@
       "GUID": "1000b4",
       "Name": "Die_6",
       "Transform": {
-        "posX": -12,
+        "posX": -7,
         "posY": 2,
-        "posZ": 16.4,
+        "posZ": 7,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -7731,9 +7731,9 @@
       "GUID": "1000b5",
       "Name": "Die_6",
       "Transform": {
-        "posX": -12,
+        "posX": -7,
         "posY": 2,
-        "posZ": 17.6,
+        "posZ": 8,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -7762,9 +7762,9 @@
       "GUID": "1000b6",
       "Name": "Die_6",
       "Transform": {
-        "posX": -12,
+        "posX": -7,
         "posY": 2,
-        "posZ": 18.8,
+        "posZ": 9,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -7793,9 +7793,9 @@
       "GUID": "1000b7",
       "Name": "Die_6",
       "Transform": {
-        "posX": -12,
+        "posX": -7,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 10,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -7824,9 +7824,9 @@
       "GUID": "1000b8",
       "Name": "Die_6",
       "Transform": {
-        "posX": -12,
+        "posX": -7,
         "posY": 2,
-        "posZ": 21.2,
+        "posZ": 11,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -7855,9 +7855,9 @@
       "GUID": "1000b9",
       "Name": "Die_6",
       "Transform": {
-        "posX": -7,
+        "posX": -2.5,
         "posY": 2,
-        "posZ": 14,
+        "posZ": 5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -7886,9 +7886,9 @@
       "GUID": "1000ba",
       "Name": "Die_6",
       "Transform": {
-        "posX": -7,
+        "posX": -2.5,
         "posY": 2,
-        "posZ": 15.2,
+        "posZ": 6,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -7917,9 +7917,9 @@
       "GUID": "1000bb",
       "Name": "Die_6",
       "Transform": {
-        "posX": -7,
+        "posX": -2.5,
         "posY": 2,
-        "posZ": 16.4,
+        "posZ": 7,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -7948,9 +7948,9 @@
       "GUID": "1000bc",
       "Name": "Die_6",
       "Transform": {
-        "posX": -7,
+        "posX": -2.5,
         "posY": 2,
-        "posZ": 17.6,
+        "posZ": 8,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -7979,9 +7979,9 @@
       "GUID": "1000bd",
       "Name": "Die_6",
       "Transform": {
-        "posX": -7,
+        "posX": -2.5,
         "posY": 2,
-        "posZ": 18.8,
+        "posZ": 9,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8010,9 +8010,9 @@
       "GUID": "1000be",
       "Name": "Die_6",
       "Transform": {
-        "posX": -7,
+        "posX": -2.5,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 10,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8041,9 +8041,9 @@
       "GUID": "1000bf",
       "Name": "Die_6",
       "Transform": {
-        "posX": -7,
+        "posX": -2.5,
         "posY": 2,
-        "posZ": 21.2,
+        "posZ": 11,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8072,9 +8072,9 @@
       "GUID": "1000c0",
       "Name": "Die_6",
       "Transform": {
-        "posX": -2,
+        "posX": 2,
         "posY": 2,
-        "posZ": 14,
+        "posZ": 5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8103,9 +8103,9 @@
       "GUID": "1000c1",
       "Name": "Die_6",
       "Transform": {
-        "posX": -2,
+        "posX": 2,
         "posY": 2,
-        "posZ": 15.2,
+        "posZ": 6,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8134,9 +8134,9 @@
       "GUID": "1000c2",
       "Name": "Die_6",
       "Transform": {
-        "posX": -2,
+        "posX": 2,
         "posY": 2,
-        "posZ": 16.4,
+        "posZ": 7,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8165,9 +8165,9 @@
       "GUID": "1000c3",
       "Name": "Die_6",
       "Transform": {
-        "posX": -2,
+        "posX": 2,
         "posY": 2,
-        "posZ": 17.6,
+        "posZ": 8,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8196,9 +8196,9 @@
       "GUID": "1000c4",
       "Name": "Die_6",
       "Transform": {
-        "posX": -2,
+        "posX": 2,
         "posY": 2,
-        "posZ": 18.8,
+        "posZ": 9,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8227,9 +8227,9 @@
       "GUID": "1000c5",
       "Name": "Die_6",
       "Transform": {
-        "posX": -2,
+        "posX": 2,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 10,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8258,9 +8258,9 @@
       "GUID": "1000c6",
       "Name": "Die_6",
       "Transform": {
-        "posX": -2,
+        "posX": 2,
         "posY": 2,
-        "posZ": 21.2,
+        "posZ": 11,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8289,9 +8289,9 @@
       "GUID": "1000c7",
       "Name": "Die_6",
       "Transform": {
-        "posX": 3,
+        "posX": 6.5,
         "posY": 2,
-        "posZ": 14,
+        "posZ": 5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8320,9 +8320,9 @@
       "GUID": "1000c8",
       "Name": "Die_6",
       "Transform": {
-        "posX": 3,
+        "posX": 6.5,
         "posY": 2,
-        "posZ": 15.2,
+        "posZ": 6,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8351,9 +8351,9 @@
       "GUID": "1000c9",
       "Name": "Die_6",
       "Transform": {
-        "posX": 3,
+        "posX": 6.5,
         "posY": 2,
-        "posZ": 16.4,
+        "posZ": 7,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8382,9 +8382,9 @@
       "GUID": "1000ca",
       "Name": "Die_6",
       "Transform": {
-        "posX": 3,
+        "posX": 6.5,
         "posY": 2,
-        "posZ": 17.6,
+        "posZ": 8,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8413,9 +8413,9 @@
       "GUID": "1000cb",
       "Name": "Die_6",
       "Transform": {
-        "posX": 3,
+        "posX": 6.5,
         "posY": 2,
-        "posZ": 18.8,
+        "posZ": 9,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8444,9 +8444,9 @@
       "GUID": "1000cc",
       "Name": "Die_6",
       "Transform": {
-        "posX": 3,
+        "posX": 6.5,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 10,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8475,9 +8475,9 @@
       "GUID": "1000cd",
       "Name": "Die_6",
       "Transform": {
-        "posX": 3,
+        "posX": 6.5,
         "posY": 2,
-        "posZ": 21.2,
+        "posZ": 11,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8506,9 +8506,9 @@
       "GUID": "1000cf",
       "Name": "Infinite_Bag",
       "Transform": {
-        "posX": -12,
+        "posX": -8,
         "posY": 2,
-        "posZ": -18,
+        "posZ": -7,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8517,7 +8517,7 @@
         "scaleZ": 1
       },
       "Nickname": "Oil Tokens",
-      "Description": "Infinite bag of Oil resource tokens.\nTake as needed during resource gathering.",
+      "Description": "Infinite bag of Oil resource tokens.",
       "ColorDiffuse": {
         "r": 0.15,
         "g": 0.15,
@@ -8570,9 +8570,9 @@
       "GUID": "1000d1",
       "Name": "Infinite_Bag",
       "Transform": {
-        "posX": -6,
+        "posX": -4,
         "posY": 2,
-        "posZ": -18,
+        "posZ": -7,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8581,7 +8581,7 @@
         "scaleZ": 1
       },
       "Nickname": "Electricity Tokens",
-      "Description": "Infinite bag of Electricity resource tokens.\nTake as needed during resource gathering.",
+      "Description": "Infinite bag of Electricity resource tokens.",
       "ColorDiffuse": {
         "r": 0.95,
         "g": 0.85,
@@ -8636,7 +8636,7 @@
       "Transform": {
         "posX": 0,
         "posY": 2,
-        "posZ": -18,
+        "posZ": -7,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8645,7 +8645,7 @@
         "scaleZ": 1
       },
       "Nickname": "Intelligence Tokens",
-      "Description": "Infinite bag of Intelligence resource tokens.\nTake as needed during resource gathering.",
+      "Description": "Infinite bag of Intelligence resource tokens.",
       "ColorDiffuse": {
         "r": 0.2,
         "g": 0.4,
@@ -8698,9 +8698,9 @@
       "GUID": "1000d5",
       "Name": "Infinite_Bag",
       "Transform": {
-        "posX": 6,
+        "posX": 4,
         "posY": 2,
-        "posZ": -18,
+        "posZ": -7,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8709,7 +8709,7 @@
         "scaleZ": 1
       },
       "Nickname": "Industry Tokens",
-      "Description": "Infinite bag of Industry resource tokens.\nTake as needed during resource gathering.",
+      "Description": "Infinite bag of Industry resource tokens.",
       "ColorDiffuse": {
         "r": 0.85,
         "g": 0.15,
@@ -8762,9 +8762,9 @@
       "GUID": "1000d7",
       "Name": "Infinite_Bag",
       "Transform": {
-        "posX": 12,
+        "posX": 8,
         "posY": 2,
-        "posZ": -18,
+        "posZ": -7,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8773,7 +8773,7 @@
         "scaleZ": 1
       },
       "Nickname": "Local Favor Tokens",
-      "Description": "Infinite bag of Local Favor resource tokens.\nTake as needed during resource gathering.",
+      "Description": "Infinite bag of Local Favor resource tokens.",
       "ColorDiffuse": {
         "r": 0.15,
         "g": 0.7,
@@ -8826,18 +8826,18 @@
       "GUID": "1000d8",
       "Name": "HandTrigger",
       "Transform": {
-        "posX": -28,
+        "posX": -8,
         "posY": 3,
-        "posZ": -28,
+        "posZ": -13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 12,
-        "scaleY": 5,
-        "scaleZ": 6
+        "scaleX": 8,
+        "scaleY": 4,
+        "scaleZ": 3
       },
-      "Nickname": "Player 1 (Red) Hand Zone",
-      "Description": "Hand zone for Player 1 (Red).\nCards placed here are hidden from other players.",
+      "Nickname": "Player 1 (Red) Hand",
+      "Description": "Hand zone for Player 1 (Red). Cards here are hidden.",
       "ColorDiffuse": {
         "r": 0.86,
         "g": 0.21,
@@ -8857,18 +8857,18 @@
       "GUID": "1000d9",
       "Name": "HandTrigger",
       "Transform": {
-        "posX": 28,
+        "posX": 8,
         "posY": 3,
-        "posZ": -28,
+        "posZ": -13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 12,
-        "scaleY": 5,
-        "scaleZ": 6
+        "scaleX": 8,
+        "scaleY": 4,
+        "scaleZ": 3
       },
-      "Nickname": "Player 2 (Blue) Hand Zone",
-      "Description": "Hand zone for Player 2 (Blue).\nCards placed here are hidden from other players.",
+      "Nickname": "Player 2 (Blue) Hand",
+      "Description": "Hand zone for Player 2 (Blue). Cards here are hidden.",
       "ColorDiffuse": {
         "r": 0.22,
         "g": 0.38,
@@ -8888,18 +8888,18 @@
       "GUID": "1000da",
       "Name": "HandTrigger",
       "Transform": {
-        "posX": -28,
+        "posX": -8,
         "posY": 3,
-        "posZ": 28,
+        "posZ": 13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 12,
-        "scaleY": 5,
-        "scaleZ": 6
+        "scaleX": 8,
+        "scaleY": 4,
+        "scaleZ": 3
       },
-      "Nickname": "Player 3 (Green) Hand Zone",
-      "Description": "Hand zone for Player 3 (Green).\nCards placed here are hidden from other players.",
+      "Nickname": "Player 3 (Green) Hand",
+      "Description": "Hand zone for Player 3 (Green). Cards here are hidden.",
       "ColorDiffuse": {
         "r": 0.18,
         "g": 0.72,
@@ -8919,18 +8919,18 @@
       "GUID": "1000db",
       "Name": "HandTrigger",
       "Transform": {
-        "posX": 28,
+        "posX": 8,
         "posY": 3,
-        "posZ": 28,
+        "posZ": 13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 12,
-        "scaleY": 5,
-        "scaleZ": 6
+        "scaleX": 8,
+        "scaleY": 4,
+        "scaleZ": 3
       },
-      "Nickname": "Player 4 (Yellow) Hand Zone",
-      "Description": "Hand zone for Player 4 (Yellow).\nCards placed here are hidden from other players.",
+      "Nickname": "Player 4 (Yellow) Hand",
+      "Description": "Hand zone for Player 4 (Yellow). Cards here are hidden.",
       "ColorDiffuse": {
         "r": 0.9,
         "g": 0.82,
@@ -8950,9 +8950,9 @@
       "GUID": "1000f8",
       "Name": "Bag",
       "Transform": {
-        "posX": -22,
+        "posX": -11,
         "posY": 2,
-        "posZ": -28,
+        "posZ": -13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -8961,7 +8961,7 @@
         "scaleZ": 1
       },
       "Nickname": "Red Soldiers (28)",
-      "Description": "28 Red soldier miniatures.\nStart with 10 (2 squads x 5).\nGrow to max 28 (4 squads x 7).",
+      "Description": "28 Red soldiers. Start with 10 (2x5), max 28 (4x7).",
       "ColorDiffuse": {
         "r": 0.86,
         "g": 0.21,
@@ -9851,9 +9851,9 @@
       "GUID": "100115",
       "Name": "Bag",
       "Transform": {
-        "posX": 34,
+        "posX": 5,
         "posY": 2,
-        "posZ": -28,
+        "posZ": -13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -9862,7 +9862,7 @@
         "scaleZ": 1
       },
       "Nickname": "Blue Soldiers (28)",
-      "Description": "28 Blue soldier miniatures.\nStart with 10 (2 squads x 5).\nGrow to max 28 (4 squads x 7).",
+      "Description": "28 Blue soldiers. Start with 10 (2x5), max 28 (4x7).",
       "ColorDiffuse": {
         "r": 0.22,
         "g": 0.38,
@@ -10752,9 +10752,9 @@
       "GUID": "100132",
       "Name": "Bag",
       "Transform": {
-        "posX": -22,
+        "posX": -11,
         "posY": 2,
-        "posZ": 28,
+        "posZ": 13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10763,7 +10763,7 @@
         "scaleZ": 1
       },
       "Nickname": "Green Soldiers (28)",
-      "Description": "28 Green soldier miniatures.\nStart with 10 (2 squads x 5).\nGrow to max 28 (4 squads x 7).",
+      "Description": "28 Green soldiers. Start with 10 (2x5), max 28 (4x7).",
       "ColorDiffuse": {
         "r": 0.18,
         "g": 0.72,
@@ -11653,9 +11653,9 @@
       "GUID": "10014f",
       "Name": "Bag",
       "Transform": {
-        "posX": 34,
+        "posX": 5,
         "posY": 2,
-        "posZ": 28,
+        "posZ": 13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11664,7 +11664,7 @@
         "scaleZ": 1
       },
       "Nickname": "Yellow Soldiers (28)",
-      "Description": "28 Yellow soldier miniatures.\nStart with 10 (2 squads x 5).\nGrow to max 28 (4 squads x 7).",
+      "Description": "28 Yellow soldiers. Start with 10 (2x5), max 28 (4x7).",
       "ColorDiffuse": {
         "r": 0.9,
         "g": 0.82,
@@ -12556,7 +12556,7 @@
       "Transform": {
         "posX": 0,
         "posY": 2,
-        "posZ": 22,
+        "posZ": 12,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -12565,7 +12565,7 @@
         "scaleZ": 1
       },
       "Nickname": "Separatist Soldiers (24)",
-      "Description": "24 grey Separatist miniatures.\nSpawn at bases when Separatist Die matches.\nAlso used as Militia substitutes.",
+      "Description": "24 grey Separatists. Spawn at bases. Also used as Militia.",
       "ColorDiffuse": {
         "r": 0.5,
         "g": 0.5,
@@ -13331,18 +13331,18 @@
       "GUID": "100169",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": -34,
+        "posX": -12.5,
         "posY": 1.05,
-        "posZ": -32,
+        "posZ": -10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Red Squad 1",
-      "Description": "Squad Board — Red Player, Squad 1\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Red Squad 1\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.86,
         "g": 0.21,
@@ -13362,18 +13362,18 @@
       "GUID": "10016a",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": -29.5,
+        "posX": -9.5,
         "posY": 1.05,
-        "posZ": -32,
+        "posZ": -10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Red Squad 2",
-      "Description": "Squad Board — Red Player, Squad 2\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Red Squad 2\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.86,
         "g": 0.21,
@@ -13393,18 +13393,18 @@
       "GUID": "10016b",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": -25,
+        "posX": -6.5,
         "posY": 1.05,
-        "posZ": -32,
+        "posZ": -10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Red Squad 3",
-      "Description": "Squad Board — Red Player, Squad 3\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Red Squad 3\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.86,
         "g": 0.21,
@@ -13424,18 +13424,18 @@
       "GUID": "10016c",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": -20.5,
+        "posX": -3.5,
         "posY": 1.05,
-        "posZ": -32,
+        "posZ": -10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Red Squad 4",
-      "Description": "Squad Board — Red Player, Squad 4\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Red Squad 4\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.86,
         "g": 0.21,
@@ -13455,18 +13455,18 @@
       "GUID": "10016d",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 22,
+        "posX": 3.5,
         "posY": 1.05,
-        "posZ": -32,
+        "posZ": -10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Blue Squad 1",
-      "Description": "Squad Board — Blue Player, Squad 1\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Blue Squad 1\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.22,
         "g": 0.38,
@@ -13486,18 +13486,18 @@
       "GUID": "10016e",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 26.5,
+        "posX": 6.5,
         "posY": 1.05,
-        "posZ": -32,
+        "posZ": -10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Blue Squad 2",
-      "Description": "Squad Board — Blue Player, Squad 2\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Blue Squad 2\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.22,
         "g": 0.38,
@@ -13517,18 +13517,18 @@
       "GUID": "10016f",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 31,
+        "posX": 9.5,
         "posY": 1.05,
-        "posZ": -32,
+        "posZ": -10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Blue Squad 3",
-      "Description": "Squad Board — Blue Player, Squad 3\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Blue Squad 3\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.22,
         "g": 0.38,
@@ -13548,18 +13548,18 @@
       "GUID": "100170",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 35.5,
+        "posX": 12.5,
         "posY": 1.05,
-        "posZ": -32,
+        "posZ": -10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Blue Squad 4",
-      "Description": "Squad Board — Blue Player, Squad 4\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Blue Squad 4\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.22,
         "g": 0.38,
@@ -13579,18 +13579,18 @@
       "GUID": "100171",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": -34,
+        "posX": -12.5,
         "posY": 1.05,
-        "posZ": 32,
+        "posZ": 10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Green Squad 1",
-      "Description": "Squad Board — Green Player, Squad 1\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Green Squad 1\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.18,
         "g": 0.72,
@@ -13610,18 +13610,18 @@
       "GUID": "100172",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": -29.5,
+        "posX": -9.5,
         "posY": 1.05,
-        "posZ": 32,
+        "posZ": 10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Green Squad 2",
-      "Description": "Squad Board — Green Player, Squad 2\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Green Squad 2\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.18,
         "g": 0.72,
@@ -13641,18 +13641,18 @@
       "GUID": "100173",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": -25,
+        "posX": -6.5,
         "posY": 1.05,
-        "posZ": 32,
+        "posZ": 10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Green Squad 3",
-      "Description": "Squad Board — Green Player, Squad 3\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Green Squad 3\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.18,
         "g": 0.72,
@@ -13672,18 +13672,18 @@
       "GUID": "100174",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": -20.5,
+        "posX": -3.5,
         "posY": 1.05,
-        "posZ": 32,
+        "posZ": 10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Green Squad 4",
-      "Description": "Squad Board — Green Player, Squad 4\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Green Squad 4\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.18,
         "g": 0.72,
@@ -13703,18 +13703,18 @@
       "GUID": "100175",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 22,
+        "posX": 3.5,
         "posY": 1.05,
-        "posZ": 32,
+        "posZ": 10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Yellow Squad 1",
-      "Description": "Squad Board — Yellow Player, Squad 1\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Yellow Squad 1\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.9,
         "g": 0.82,
@@ -13734,18 +13734,18 @@
       "GUID": "100176",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 26.5,
+        "posX": 6.5,
         "posY": 1.05,
-        "posZ": 32,
+        "posZ": 10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Yellow Squad 2",
-      "Description": "Squad Board — Yellow Player, Squad 2\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Yellow Squad 2\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.9,
         "g": 0.82,
@@ -13765,18 +13765,18 @@
       "GUID": "100177",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 31,
+        "posX": 9.5,
         "posY": 1.05,
-        "posZ": 32,
+        "posZ": 10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Yellow Squad 3",
-      "Description": "Squad Board — Yellow Player, Squad 3\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Yellow Squad 3\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.9,
         "g": 0.82,
@@ -13796,18 +13796,18 @@
       "GUID": "100178",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 35.5,
+        "posX": 12.5,
         "posY": 1.05,
-        "posZ": 32,
+        "posZ": 10.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2,
+        "scaleX": 1.5,
         "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Yellow Squad 4",
-      "Description": "Squad Board — Yellow Player, Squad 4\n7 soldier slots | 5 equipment slots each | 3 damage cap",
+      "Description": "Squad Board — Yellow Squad 4\n7 slots | 5 equip each | 3 dmg cap",
       "ColorDiffuse": {
         "r": 0.9,
         "g": 0.82,
@@ -13827,9 +13827,9 @@
       "GUID": "100192",
       "Name": "Bag",
       "Transform": {
-        "posX": -34,
+        "posX": -5,
         "posY": 2,
-        "posZ": -32,
+        "posZ": -13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -13837,8 +13837,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Red Control Markers (25)",
-      "Description": "25 control markers for Red player.\nPlace on hexes you control.",
+      "Nickname": "Red Control (25)",
+      "Description": "25 control markers for Red.",
       "ColorDiffuse": {
         "r": 0.86,
         "g": 0.21,
@@ -13869,7 +13869,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -13900,7 +13900,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -13931,7 +13931,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -13962,7 +13962,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -13993,7 +13993,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14024,7 +14024,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14055,7 +14055,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14086,7 +14086,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14117,7 +14117,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14148,7 +14148,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14179,7 +14179,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14210,7 +14210,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14241,7 +14241,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14272,7 +14272,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14303,7 +14303,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14334,7 +14334,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14365,7 +14365,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14396,7 +14396,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14427,7 +14427,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14458,7 +14458,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14489,7 +14489,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14520,7 +14520,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14551,7 +14551,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14582,7 +14582,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14613,7 +14613,7 @@
             "scaleZ": 1
           },
           "Nickname": "Red Control",
-          "Description": "Place on hex to mark Red player territory control",
+          "Description": "Red territory control marker",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -14635,9 +14635,9 @@
       "GUID": "1001ac",
       "Name": "Bag",
       "Transform": {
-        "posX": 22,
+        "posX": 11,
         "posY": 2,
-        "posZ": -32,
+        "posZ": -13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -14645,8 +14645,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Blue Control Markers (25)",
-      "Description": "25 control markers for Blue player.\nPlace on hexes you control.",
+      "Nickname": "Blue Control (25)",
+      "Description": "25 control markers for Blue.",
       "ColorDiffuse": {
         "r": 0.22,
         "g": 0.38,
@@ -14677,7 +14677,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -14708,7 +14708,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -14739,7 +14739,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -14770,7 +14770,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -14801,7 +14801,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -14832,7 +14832,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -14863,7 +14863,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -14894,7 +14894,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -14925,7 +14925,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -14956,7 +14956,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -14987,7 +14987,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -15018,7 +15018,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -15049,7 +15049,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -15080,7 +15080,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -15111,7 +15111,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -15142,7 +15142,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -15173,7 +15173,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -15204,7 +15204,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -15235,7 +15235,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -15266,7 +15266,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -15297,7 +15297,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -15328,7 +15328,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -15359,7 +15359,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -15390,7 +15390,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -15421,7 +15421,7 @@
             "scaleZ": 1
           },
           "Nickname": "Blue Control",
-          "Description": "Place on hex to mark Blue player territory control",
+          "Description": "Blue territory control marker",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -15443,9 +15443,9 @@
       "GUID": "1001c6",
       "Name": "Bag",
       "Transform": {
-        "posX": -34,
+        "posX": -5,
         "posY": 2,
-        "posZ": 32,
+        "posZ": 13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -15453,8 +15453,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Green Control Markers (25)",
-      "Description": "25 control markers for Green player.\nPlace on hexes you control.",
+      "Nickname": "Green Control (25)",
+      "Description": "25 control markers for Green.",
       "ColorDiffuse": {
         "r": 0.18,
         "g": 0.72,
@@ -15485,7 +15485,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15516,7 +15516,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15547,7 +15547,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15578,7 +15578,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15609,7 +15609,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15640,7 +15640,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15671,7 +15671,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15702,7 +15702,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15733,7 +15733,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15764,7 +15764,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15795,7 +15795,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15826,7 +15826,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15857,7 +15857,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15888,7 +15888,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15919,7 +15919,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15950,7 +15950,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -15981,7 +15981,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -16012,7 +16012,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -16043,7 +16043,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -16074,7 +16074,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -16105,7 +16105,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -16136,7 +16136,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -16167,7 +16167,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -16198,7 +16198,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -16229,7 +16229,7 @@
             "scaleZ": 1
           },
           "Nickname": "Green Control",
-          "Description": "Place on hex to mark Green player territory control",
+          "Description": "Green territory control marker",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -16251,9 +16251,9 @@
       "GUID": "1001e0",
       "Name": "Bag",
       "Transform": {
-        "posX": 22,
+        "posX": 11,
         "posY": 2,
-        "posZ": 32,
+        "posZ": 13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -16261,8 +16261,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Yellow Control Markers (25)",
-      "Description": "25 control markers for Yellow player.\nPlace on hexes you control.",
+      "Nickname": "Yellow Control (25)",
+      "Description": "25 control markers for Yellow.",
       "ColorDiffuse": {
         "r": 0.9,
         "g": 0.82,
@@ -16293,7 +16293,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16324,7 +16324,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16355,7 +16355,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16386,7 +16386,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16417,7 +16417,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16448,7 +16448,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16479,7 +16479,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16510,7 +16510,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16541,7 +16541,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16572,7 +16572,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16603,7 +16603,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16634,7 +16634,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16665,7 +16665,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16696,7 +16696,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16727,7 +16727,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16758,7 +16758,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16789,7 +16789,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16820,7 +16820,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16851,7 +16851,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16882,7 +16882,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16913,7 +16913,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16944,7 +16944,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -16975,7 +16975,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -17006,7 +17006,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -17037,7 +17037,7 @@
             "scaleZ": 1
           },
           "Nickname": "Yellow Control",
-          "Description": "Place on hex to mark Yellow player territory control",
+          "Description": "Yellow territory control marker",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -17059,9 +17059,9 @@
       "GUID": "1001e2",
       "Name": "Infinite_Bag",
       "Transform": {
-        "posX": -15,
+        "posX": -5,
         "posY": 2,
-        "posZ": 22,
+        "posZ": 12,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -17070,7 +17070,7 @@
         "scaleZ": 1
       },
       "Nickname": "Damage Tokens",
-      "Description": "Infinite bag of damage tokens.\n3 per soldier max, 4th hit = death.",
+      "Description": "Infinite damage tokens. 3 per soldier max.",
       "ColorDiffuse": {
         "r": 0.9,
         "g": 0.1,
@@ -17101,7 +17101,7 @@
             "scaleZ": 1
           },
           "Nickname": "DMG",
-          "Description": "Damage token. 3 damage = death on 4th hit.",
+          "Description": "Damage. 3 max, 4th = death.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.1,
@@ -17123,9 +17123,9 @@
       "GUID": "1001ef",
       "Name": "Bag",
       "Transform": {
-        "posX": -10,
+        "posX": -3,
         "posY": 2,
-        "posZ": 22,
+        "posZ": 12,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -17134,7 +17134,7 @@
         "scaleZ": 1
       },
       "Nickname": "Bunker Tokens (12)",
-      "Description": "Neutral fortifications.\n+1 defense for any unit on hex.\n1 per hex max. Deployed via D.U.D.S module.",
+      "Description": "Neutral fortifications via D.U.D.S.",
       "ColorDiffuse": {
         "r": 0.45,
         "g": 0.38,
@@ -17165,7 +17165,7 @@
             "scaleZ": 0.8
           },
           "Nickname": "Bunker",
-          "Description": "+1 defense for any unit on this hex.\n1 per hex max. Destroyed by attacker winning combat.",
+          "Description": "+1 defense, 1/hex max, destroyable.",
           "ColorDiffuse": {
             "r": 0.45,
             "g": 0.38,
@@ -17196,7 +17196,7 @@
             "scaleZ": 0.8
           },
           "Nickname": "Bunker",
-          "Description": "+1 defense for any unit on this hex.\n1 per hex max. Destroyed by attacker winning combat.",
+          "Description": "+1 defense, 1/hex max, destroyable.",
           "ColorDiffuse": {
             "r": 0.45,
             "g": 0.38,
@@ -17227,7 +17227,7 @@
             "scaleZ": 0.8
           },
           "Nickname": "Bunker",
-          "Description": "+1 defense for any unit on this hex.\n1 per hex max. Destroyed by attacker winning combat.",
+          "Description": "+1 defense, 1/hex max, destroyable.",
           "ColorDiffuse": {
             "r": 0.45,
             "g": 0.38,
@@ -17258,7 +17258,7 @@
             "scaleZ": 0.8
           },
           "Nickname": "Bunker",
-          "Description": "+1 defense for any unit on this hex.\n1 per hex max. Destroyed by attacker winning combat.",
+          "Description": "+1 defense, 1/hex max, destroyable.",
           "ColorDiffuse": {
             "r": 0.45,
             "g": 0.38,
@@ -17289,7 +17289,7 @@
             "scaleZ": 0.8
           },
           "Nickname": "Bunker",
-          "Description": "+1 defense for any unit on this hex.\n1 per hex max. Destroyed by attacker winning combat.",
+          "Description": "+1 defense, 1/hex max, destroyable.",
           "ColorDiffuse": {
             "r": 0.45,
             "g": 0.38,
@@ -17320,7 +17320,7 @@
             "scaleZ": 0.8
           },
           "Nickname": "Bunker",
-          "Description": "+1 defense for any unit on this hex.\n1 per hex max. Destroyed by attacker winning combat.",
+          "Description": "+1 defense, 1/hex max, destroyable.",
           "ColorDiffuse": {
             "r": 0.45,
             "g": 0.38,
@@ -17351,7 +17351,7 @@
             "scaleZ": 0.8
           },
           "Nickname": "Bunker",
-          "Description": "+1 defense for any unit on this hex.\n1 per hex max. Destroyed by attacker winning combat.",
+          "Description": "+1 defense, 1/hex max, destroyable.",
           "ColorDiffuse": {
             "r": 0.45,
             "g": 0.38,
@@ -17382,7 +17382,7 @@
             "scaleZ": 0.8
           },
           "Nickname": "Bunker",
-          "Description": "+1 defense for any unit on this hex.\n1 per hex max. Destroyed by attacker winning combat.",
+          "Description": "+1 defense, 1/hex max, destroyable.",
           "ColorDiffuse": {
             "r": 0.45,
             "g": 0.38,
@@ -17413,7 +17413,7 @@
             "scaleZ": 0.8
           },
           "Nickname": "Bunker",
-          "Description": "+1 defense for any unit on this hex.\n1 per hex max. Destroyed by attacker winning combat.",
+          "Description": "+1 defense, 1/hex max, destroyable.",
           "ColorDiffuse": {
             "r": 0.45,
             "g": 0.38,
@@ -17444,7 +17444,7 @@
             "scaleZ": 0.8
           },
           "Nickname": "Bunker",
-          "Description": "+1 defense for any unit on this hex.\n1 per hex max. Destroyed by attacker winning combat.",
+          "Description": "+1 defense, 1/hex max, destroyable.",
           "ColorDiffuse": {
             "r": 0.45,
             "g": 0.38,
@@ -17475,7 +17475,7 @@
             "scaleZ": 0.8
           },
           "Nickname": "Bunker",
-          "Description": "+1 defense for any unit on this hex.\n1 per hex max. Destroyed by attacker winning combat.",
+          "Description": "+1 defense, 1/hex max, destroyable.",
           "ColorDiffuse": {
             "r": 0.45,
             "g": 0.38,
@@ -17506,7 +17506,7 @@
             "scaleZ": 0.8
           },
           "Nickname": "Bunker",
-          "Description": "+1 defense for any unit on this hex.\n1 per hex max. Destroyed by attacker winning combat.",
+          "Description": "+1 defense, 1/hex max, destroyable.",
           "ColorDiffuse": {
             "r": 0.45,
             "g": 0.38,
@@ -17528,9 +17528,9 @@
       "GUID": "100200",
       "Name": "Bag",
       "Transform": {
-        "posX": 5,
+        "posX": 3,
         "posY": 2,
-        "posZ": 22,
+        "posZ": 12,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -17539,7 +17539,7 @@
         "scaleZ": 1
       },
       "Nickname": "Number Tokens (16)",
-      "Description": "16 number tokens for resource hexes.\n2x1, 2x2, 3x3, 3x4, 3x5, 3x6.\nPlace on 15 resource tiles (one gets 2).\nSeparatist Bases and Spaceports have PRINTED numbers.",
+      "Description": "For resource hexes. 2x1,2x2,3x3-6.",
       "ColorDiffuse": {
         "r": 0.95,
         "g": 0.92,
@@ -17570,7 +17570,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#1",
-          "Description": "Number 1 — resource hex produces when this is rolled",
+          "Description": "Number 1 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -17601,7 +17601,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#1",
-          "Description": "Number 1 — resource hex produces when this is rolled",
+          "Description": "Number 1 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -17632,7 +17632,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#2",
-          "Description": "Number 2 — resource hex produces when this is rolled",
+          "Description": "Number 2 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -17663,7 +17663,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#2",
-          "Description": "Number 2 — resource hex produces when this is rolled",
+          "Description": "Number 2 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -17694,7 +17694,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#3",
-          "Description": "Number 3 — resource hex produces when this is rolled",
+          "Description": "Number 3 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -17725,7 +17725,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#3",
-          "Description": "Number 3 — resource hex produces when this is rolled",
+          "Description": "Number 3 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -17756,7 +17756,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#3",
-          "Description": "Number 3 — resource hex produces when this is rolled",
+          "Description": "Number 3 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -17787,7 +17787,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#4",
-          "Description": "Number 4 — resource hex produces when this is rolled",
+          "Description": "Number 4 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -17818,7 +17818,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#4",
-          "Description": "Number 4 — resource hex produces when this is rolled",
+          "Description": "Number 4 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -17849,7 +17849,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#4",
-          "Description": "Number 4 — resource hex produces when this is rolled",
+          "Description": "Number 4 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -17880,7 +17880,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#5",
-          "Description": "Number 5 — resource hex produces when this is rolled",
+          "Description": "Number 5 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -17911,7 +17911,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#5",
-          "Description": "Number 5 — resource hex produces when this is rolled",
+          "Description": "Number 5 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -17942,7 +17942,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#5",
-          "Description": "Number 5 — resource hex produces when this is rolled",
+          "Description": "Number 5 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -17973,7 +17973,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#6",
-          "Description": "Number 6 — resource hex produces when this is rolled",
+          "Description": "Number 6 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -18004,7 +18004,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#6",
-          "Description": "Number 6 — resource hex produces when this is rolled",
+          "Description": "Number 6 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -18035,7 +18035,7 @@
             "scaleZ": 0.5
           },
           "Nickname": "#6",
-          "Description": "Number 6 — resource hex produces when this is rolled",
+          "Description": "Number 6 — produces on this roll",
           "ColorDiffuse": {
             "r": 0.95,
             "g": 0.92,
@@ -18057,18 +18057,18 @@
       "GUID": "100201",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 22,
+        "posX": 10,
         "posY": 1.2,
-        "posZ": 5,
+        "posZ": 2,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
+        "scaleX": 0.8,
         "scaleY": 0.3,
-        "scaleZ": 0.6
+        "scaleZ": 0.5
       },
       "Nickname": "Container #1",
-      "Description": "Spaceport 1 cargo container.\nPlace on spaceport hex when BAC lands.\nCollect BACs from Unloading Zone when squad arrives.",
+      "Description": "Spaceport 1 cargo container.",
       "ColorDiffuse": {
         "r": 0.35,
         "g": 0.5,
@@ -18088,18 +18088,18 @@
       "GUID": "100202",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 24.5,
+        "posX": 11.8,
         "posY": 1.2,
-        "posZ": 5,
+        "posZ": 2,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
+        "scaleX": 0.8,
         "scaleY": 0.3,
-        "scaleZ": 0.6
+        "scaleZ": 0.5
       },
       "Nickname": "Container #2",
-      "Description": "Spaceport 2 cargo container.\nPlace on spaceport hex when BAC lands.\nCollect BACs from Unloading Zone when squad arrives.",
+      "Description": "Spaceport 2 cargo container.",
       "ColorDiffuse": {
         "r": 0.35,
         "g": 0.5,
@@ -18119,18 +18119,18 @@
       "GUID": "100203",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 27,
+        "posX": 13.6,
         "posY": 1.2,
-        "posZ": 5,
+        "posZ": 2,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
+        "scaleX": 0.8,
         "scaleY": 0.3,
-        "scaleZ": 0.6
+        "scaleZ": 0.5
       },
       "Nickname": "Container #3",
-      "Description": "Spaceport 3 cargo container.\nPlace on spaceport hex when BAC lands.\nCollect BACs from Unloading Zone when squad arrives.",
+      "Description": "Spaceport 3 cargo container.",
       "ColorDiffuse": {
         "r": 0.35,
         "g": 0.5,
@@ -18150,18 +18150,18 @@
       "GUID": "100204",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 29.5,
+        "posX": 15.4,
         "posY": 1.2,
-        "posZ": 5,
+        "posZ": 2,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
+        "scaleX": 0.8,
         "scaleY": 0.3,
-        "scaleZ": 0.6
+        "scaleZ": 0.5
       },
       "Nickname": "Container #4",
-      "Description": "Spaceport 4 cargo container.\nPlace on spaceport hex when BAC lands.\nCollect BACs from Unloading Zone when squad arrives.",
+      "Description": "Spaceport 4 cargo container.",
       "ColorDiffuse": {
         "r": 0.35,
         "g": 0.5,
@@ -18181,18 +18181,18 @@
       "GUID": "100205",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 32,
+        "posX": 17.2,
         "posY": 1.2,
-        "posZ": 5,
+        "posZ": 2,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
+        "scaleX": 0.8,
         "scaleY": 0.3,
-        "scaleZ": 0.6
+        "scaleZ": 0.5
       },
       "Nickname": "Container #5",
-      "Description": "Spaceport 5 cargo container.\nPlace on spaceport hex when BAC lands.\nCollect BACs from Unloading Zone when squad arrives.",
+      "Description": "Spaceport 5 cargo container.",
       "ColorDiffuse": {
         "r": 0.35,
         "g": 0.5,
@@ -18212,18 +18212,18 @@
       "GUID": "100206",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 34.5,
+        "posX": 19,
         "posY": 1.2,
-        "posZ": 5,
+        "posZ": 2,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
+        "scaleX": 0.8,
         "scaleY": 0.3,
-        "scaleZ": 0.6
+        "scaleZ": 0.5
       },
       "Nickname": "Container #6",
-      "Description": "Spaceport 6 cargo container.\nPlace on spaceport hex when BAC lands.\nCollect BACs from Unloading Zone when squad arrives.",
+      "Description": "Spaceport 6 cargo container.",
       "ColorDiffuse": {
         "r": 0.35,
         "g": 0.5,
@@ -18243,18 +18243,18 @@
       "GUID": "100207",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 25,
+        "posX": 14,
         "posY": 1.02,
-        "posZ": 3,
+        "posZ": 1,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 8,
+        "scaleX": 6,
         "scaleY": 0.05,
-        "scaleZ": 2
+        "scaleZ": 1
       },
       "Nickname": "UNLOADING ZONE",
-      "Description": "BAC cards land here on doubles.\n6 slots matching Spaceport numbers 1-6.\nPlace cargo container on spaceport when BAC arrives.\nCollect: squad on spaceport takes all BACs from slot, remove container.",
+      "Description": "BAC cards land here on doubles. 6 slots for Spaceports 1-6.",
       "ColorDiffuse": {
         "r": 0.2,
         "g": 0.3,
@@ -18274,18 +18274,18 @@
       "GUID": "100208",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 18,
+        "posX": 10,
         "posY": 1.02,
-        "posZ": 6,
+        "posZ": 3.5,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 6,
+        "scaleX": 4,
         "scaleY": 0.05,
-        "scaleZ": 2
+        "scaleZ": 1
       },
       "Nickname": "PLANET BOUND AREA",
-      "Description": "Face-up BAC display area.\nDuring setup: deal cards face-up here.\nRefill empty slots from Spaceport Deck.",
+      "Description": "Face-up BAC display. Refill from Spaceport Deck.",
       "ColorDiffuse": {
         "r": 0.2,
         "g": 0.15,
@@ -18305,18 +18305,18 @@
       "GUID": "100209",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 18,
+        "posX": 10,
         "posY": 1.02,
-        "posZ": -6,
+        "posZ": -1,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 8,
+        "scaleX": 4,
         "scaleY": 0.05,
-        "scaleZ": 3
+        "scaleZ": 1.5
       },
       "Nickname": "EQUIPMENT DISPLAY",
-      "Description": "Shared display area.\nFirst time equipping a BAC type: place card face-up here + your flag.\nFlags are permanent.",
+      "Description": "First-time equip: place BAC face-up + your flag. Flags permanent.",
       "ColorDiffuse": {
         "r": 0.15,
         "g": 0.12,
@@ -18336,18 +18336,18 @@
       "GUID": "10020a",
       "Name": "Notecard",
       "Transform": {
-        "posX": -18,
+        "posX": -13,
         "posY": 2,
-        "posZ": -14,
+        "posZ": -3,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 3,
+        "scaleX": 2,
         "scaleY": 1,
-        "scaleZ": 3
+        "scaleZ": 2
       },
       "Nickname": "Turn & DP Tracker",
-      "Description": "W.A.R H.A.M.S — GAME TRACKER\n================================\n\nROUND: ___    ACTIVE PLAYER: ___\n\n--- Dominance Points ---\nPlayer 1 (Red):    ___\nPlayer 2 (Blue):   ___\nPlayer 3 (Green):  ___\nPlayer 4 (Yellow): ___\n\n--- Spaceports Controlled ---\nP1: __/6  P2: __/6  P3: __/6  P4: __/6\n\n--- Victory Conditions ---\nSpaceport Domination: 5/6 (2p) or 4/6 (3-4p)\nMilitary Supremacy: 28 soldiers, hold 1 round\nDominance: 50 DP from equipped BACs",
+      "Description": "W.A.R H.A.M.S  GAME TRACKER\n============================\n\nROUND: ___  ACTIVE PLAYER: ___\n\n--- Dominance Points ---\nP1 Red: ___  P2 Blue: ___\nP3 Green: ___  P4 Yellow: ___\n\n--- Spaceports Controlled ---\nP1:__/6  P2:__/6  P3:__/6  P4:__/6\n\n--- Victory ---\nSpaceport: 5/6(2p) 4/6(3-4p)\nMilitary: 28 soldiers, hold 1 round\nDominance: 50 DP from BACs",
       "ColorDiffuse": {
         "r": 0.95,
         "g": 0.9,
@@ -18364,12 +18364,43 @@
       "Hands": false
     },
     {
-      "GUID": "100224",
+      "GUID": "10020b",
+      "Name": "Notecard",
+      "Transform": {
+        "posX": -13,
+        "posY": 2,
+        "posZ": 1,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 2,
+        "scaleY": 1,
+        "scaleZ": 2
+      },
+      "Nickname": "Quick Reference",
+      "Description": "TURN PHASES\n1. Resource Prod — Roll 2d6+Sep Die\n2. Movement — 1 hex (2 w/ J.J)\n3. Combat — within 2 hexes\n4. Resource Gathering\n5. Purchase & Equip\n6. Trade (bank 3:1)\n7. Move Separatists\n\nCOMBAT: Pre→1.Roll→2.Assign→\n3.Equip bonus→4.Conspire→\n5.Damage→6.Counter(3+ block)\n\nSLOTS: 1=Head 2=Back 3=Legs\n4-5=Chest 6=Hands",
+      "ColorDiffuse": {
+        "r": 0.85,
+        "g": 0.9,
+        "b": 0.95
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false
+    },
+    {
+      "GUID": "100225",
       "Name": "Bag",
       "Transform": {
-        "posX": -22,
+        "posX": -8,
         "posY": 2,
-        "posZ": -32,
+        "posZ": -13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -18378,7 +18409,7 @@
         "scaleZ": 1
       },
       "Nickname": "Red Flags (25)",
-      "Description": "25 flags for Red player.\nMark unlocked BAC types on Equipment Display.",
+      "Description": "Flags for Equipment Display.",
       "ColorDiffuse": {
         "r": 0.86,
         "g": 0.21,
@@ -18395,7 +18426,7 @@
       "Hands": false,
       "ContainedObjects": [
         {
-          "GUID": "10020b",
+          "GUID": "10020c",
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
@@ -18409,38 +18440,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false
-        },
-        {
-          "GUID": "10020c",
-          "Name": "Checker_white",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.3,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.3,
-            "scaleY": 0.3,
-            "scaleZ": 0.3
-          },
-          "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18461,7 +18461,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 0.6,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18471,7 +18471,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18492,7 +18492,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 0.8999999999999999,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18502,7 +18502,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18523,7 +18523,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18533,7 +18533,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18554,7 +18554,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18564,7 +18564,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18585,7 +18585,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18595,7 +18595,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18616,7 +18616,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18626,7 +18626,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18647,7 +18647,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18657,7 +18657,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18678,7 +18678,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18688,7 +18688,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18709,7 +18709,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18719,7 +18719,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18740,7 +18740,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18750,7 +18750,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18771,7 +18771,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18781,7 +18781,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18802,7 +18802,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18812,7 +18812,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18833,7 +18833,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18843,7 +18843,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18864,7 +18864,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18874,7 +18874,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18895,7 +18895,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18905,7 +18905,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18926,7 +18926,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18936,7 +18936,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18957,7 +18957,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18967,7 +18967,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -18988,7 +18988,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18998,7 +18998,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -19019,7 +19019,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19029,7 +19029,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -19050,7 +19050,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19060,7 +19060,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -19081,7 +19081,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 6.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19091,7 +19091,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -19112,7 +19112,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
+            "posY": 6.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19122,7 +19122,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -19143,6 +19143,37 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
+            "posY": 6.8999999999999995,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "scaleZ": 0.3
+          },
+          "Nickname": "Red Flag",
+          "Description": "Red flag — Equipment Display. Permanent.",
+          "ColorDiffuse": {
+            "r": 0.86,
+            "g": 0.21,
+            "b": 0.21
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false
+        },
+        {
+          "GUID": "100224",
+          "Name": "Checker_white",
+          "Transform": {
+            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -19153,7 +19184,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Red Flag",
-          "Description": "Red player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Red flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.86,
             "g": 0.21,
@@ -19172,12 +19203,12 @@
       ]
     },
     {
-      "GUID": "10023e",
+      "GUID": "10023f",
       "Name": "Bag",
       "Transform": {
-        "posX": 22,
+        "posX": 8,
         "posY": 2,
-        "posZ": -32,
+        "posZ": -13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -19186,7 +19217,7 @@
         "scaleZ": 1
       },
       "Nickname": "Blue Flags (25)",
-      "Description": "25 flags for Blue player.\nMark unlocked BAC types on Equipment Display.",
+      "Description": "Flags for Equipment Display.",
       "ColorDiffuse": {
         "r": 0.22,
         "g": 0.38,
@@ -19203,7 +19234,7 @@
       "Hands": false,
       "ContainedObjects": [
         {
-          "GUID": "100225",
+          "GUID": "100226",
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
@@ -19217,38 +19248,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false
-        },
-        {
-          "GUID": "100226",
-          "Name": "Checker_white",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.3,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.3,
-            "scaleY": 0.3,
-            "scaleZ": 0.3
-          },
-          "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19269,7 +19269,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 0.6,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19279,7 +19279,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19300,7 +19300,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 0.8999999999999999,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19310,7 +19310,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19331,7 +19331,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19341,7 +19341,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19362,7 +19362,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19372,7 +19372,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19393,7 +19393,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19403,7 +19403,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19424,7 +19424,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19434,7 +19434,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19455,7 +19455,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19465,7 +19465,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19486,7 +19486,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19496,7 +19496,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19517,7 +19517,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19527,7 +19527,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19548,7 +19548,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19558,7 +19558,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19579,7 +19579,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19589,7 +19589,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19610,7 +19610,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19620,7 +19620,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19641,7 +19641,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19651,7 +19651,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19672,7 +19672,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19682,7 +19682,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19703,7 +19703,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19713,7 +19713,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19734,7 +19734,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19744,7 +19744,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19765,7 +19765,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19775,7 +19775,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19796,7 +19796,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19806,7 +19806,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19827,7 +19827,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19837,7 +19837,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19858,7 +19858,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19868,7 +19868,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19889,7 +19889,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 6.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19899,7 +19899,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19920,7 +19920,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
+            "posY": 6.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19930,7 +19930,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19951,6 +19951,37 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
+            "posY": 6.8999999999999995,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "scaleZ": 0.3
+          },
+          "Nickname": "Blue Flag",
+          "Description": "Blue flag — Equipment Display. Permanent.",
+          "ColorDiffuse": {
+            "r": 0.22,
+            "g": 0.38,
+            "b": 0.86
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false
+        },
+        {
+          "GUID": "10023e",
+          "Name": "Checker_white",
+          "Transform": {
+            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -19961,7 +19992,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Blue Flag",
-          "Description": "Blue player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Blue flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.22,
             "g": 0.38,
@@ -19980,12 +20011,12 @@
       ]
     },
     {
-      "GUID": "100258",
+      "GUID": "100259",
       "Name": "Bag",
       "Transform": {
-        "posX": -22,
+        "posX": -8,
         "posY": 2,
-        "posZ": 32,
+        "posZ": 13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -19994,7 +20025,7 @@
         "scaleZ": 1
       },
       "Nickname": "Green Flags (25)",
-      "Description": "25 flags for Green player.\nMark unlocked BAC types on Equipment Display.",
+      "Description": "Flags for Equipment Display.",
       "ColorDiffuse": {
         "r": 0.18,
         "g": 0.72,
@@ -20011,7 +20042,7 @@
       "Hands": false,
       "ContainedObjects": [
         {
-          "GUID": "10023f",
+          "GUID": "100240",
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
@@ -20025,38 +20056,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false
-        },
-        {
-          "GUID": "100240",
-          "Name": "Checker_white",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.3,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.3,
-            "scaleY": 0.3,
-            "scaleZ": 0.3
-          },
-          "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20077,7 +20077,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 0.6,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20087,7 +20087,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20108,7 +20108,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 0.8999999999999999,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20118,7 +20118,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20139,7 +20139,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20149,7 +20149,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20170,7 +20170,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20180,7 +20180,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20201,7 +20201,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20211,7 +20211,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20232,7 +20232,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20242,7 +20242,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20263,7 +20263,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20273,7 +20273,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20294,7 +20294,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20304,7 +20304,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20325,7 +20325,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20335,7 +20335,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20356,7 +20356,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20366,7 +20366,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20387,7 +20387,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20397,7 +20397,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20418,7 +20418,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20428,7 +20428,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20449,7 +20449,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20459,7 +20459,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20480,7 +20480,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20490,7 +20490,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20511,7 +20511,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20521,7 +20521,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20542,7 +20542,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20552,7 +20552,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20573,7 +20573,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20583,7 +20583,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20604,7 +20604,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20614,7 +20614,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20635,7 +20635,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20645,7 +20645,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20666,7 +20666,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20676,7 +20676,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20697,7 +20697,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 6.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20707,7 +20707,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20728,7 +20728,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
+            "posY": 6.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20738,7 +20738,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20759,6 +20759,37 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
+            "posY": 6.8999999999999995,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "scaleZ": 0.3
+          },
+          "Nickname": "Green Flag",
+          "Description": "Green flag — Equipment Display. Permanent.",
+          "ColorDiffuse": {
+            "r": 0.18,
+            "g": 0.72,
+            "b": 0.28
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false
+        },
+        {
+          "GUID": "100258",
+          "Name": "Checker_white",
+          "Transform": {
+            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -20769,7 +20800,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Green Flag",
-          "Description": "Green player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Green flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.18,
             "g": 0.72,
@@ -20788,12 +20819,12 @@
       ]
     },
     {
-      "GUID": "100272",
+      "GUID": "100273",
       "Name": "Bag",
       "Transform": {
-        "posX": 22,
+        "posX": 8,
         "posY": 2,
-        "posZ": 32,
+        "posZ": 13,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -20802,7 +20833,7 @@
         "scaleZ": 1
       },
       "Nickname": "Yellow Flags (25)",
-      "Description": "25 flags for Yellow player.\nMark unlocked BAC types on Equipment Display.",
+      "Description": "Flags for Equipment Display.",
       "ColorDiffuse": {
         "r": 0.9,
         "g": 0.82,
@@ -20819,7 +20850,7 @@
       "Hands": false,
       "ContainedObjects": [
         {
-          "GUID": "100259",
+          "GUID": "10025a",
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
@@ -20833,38 +20864,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
-          "ColorDiffuse": {
-            "r": 0.9,
-            "g": 0.82,
-            "b": 0.15
-          },
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false
-        },
-        {
-          "GUID": "10025a",
-          "Name": "Checker_white",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.3,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.3,
-            "scaleY": 0.3,
-            "scaleZ": 0.3
-          },
-          "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -20885,7 +20885,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 0.6,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20895,7 +20895,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -20916,7 +20916,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 0.8999999999999999,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20926,7 +20926,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -20947,7 +20947,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20957,7 +20957,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -20978,7 +20978,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20988,7 +20988,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21009,7 +21009,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21019,7 +21019,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21040,7 +21040,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21050,7 +21050,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21071,7 +21071,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21081,7 +21081,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21102,7 +21102,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21112,7 +21112,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21133,7 +21133,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21143,7 +21143,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21164,7 +21164,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21174,7 +21174,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21195,7 +21195,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21205,7 +21205,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21226,7 +21226,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21236,7 +21236,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21257,7 +21257,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21267,7 +21267,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21288,7 +21288,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21298,7 +21298,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21319,7 +21319,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21329,7 +21329,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21350,7 +21350,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21360,7 +21360,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21381,7 +21381,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21391,7 +21391,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21412,7 +21412,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21422,7 +21422,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21443,7 +21443,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21453,7 +21453,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21474,7 +21474,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21484,7 +21484,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21505,7 +21505,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 6.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21515,7 +21515,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21536,7 +21536,7 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
+            "posY": 6.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21546,7 +21546,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21567,6 +21567,37 @@
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
+            "posY": 6.8999999999999995,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "scaleZ": 0.3
+          },
+          "Nickname": "Yellow Flag",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
+          "ColorDiffuse": {
+            "r": 0.9,
+            "g": 0.82,
+            "b": 0.15
+          },
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false
+        },
+        {
+          "GUID": "100272",
+          "Name": "Checker_white",
+          "Transform": {
+            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -21577,7 +21608,7 @@
             "scaleZ": 0.3
           },
           "Nickname": "Yellow Flag",
-          "Description": "Yellow player flag.\nPlace on Equipment Display to mark unlocked BAC types.\nPermanent — never removed.",
+          "Description": "Yellow flag — Equipment Display. Permanent.",
           "ColorDiffuse": {
             "r": 0.9,
             "g": 0.82,
@@ -21594,37 +21625,6 @@
           "Hands": false
         }
       ]
-    },
-    {
-      "GUID": "100273",
-      "Name": "Notecard",
-      "Transform": {
-        "posX": -18,
-        "posY": 2,
-        "posZ": -20,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 0,
-        "scaleX": 3,
-        "scaleY": 1,
-        "scaleZ": 3
-      },
-      "Nickname": "Quick Reference",
-      "Description": "TURN PHASES\n============\n1. Resource Production — Roll 2d6 + Separatist Die\n2. Movement — Move squads (1 hex, 2 with J.J)\n3. Combat — Attack enemies within 2 hexes\n4. Resource Gathering — Collect from hexes\n5. Purchase & Equip — Buy BAC modules\n6. Trade — Trade resources / bank 3:1\n7. Move Separatists — Consume/Seek/Wander\n\nCOMBAT STEPS\n=============\nPre: B.A.S.R/S.L.I.M.E fire\n1. Roll 1d6 per engaged soldier\n2. Attacker assigns dice to defenders\n3. Add equipment bonuses\n4. Play Conspire cards (defender first)\n5. Compare matchups — difference = damage\n6. Counterattack if defender blocks by 3+\n\nSOLDIER SLOTS (d6 hit roll)\n===========================\n1=Head  2=Backpack  3=Legs  4-5=Chest  6=Hands\n\nEND OF ROUND\n=============\nTerritory collection from controlled hexes\n(after ALL players complete their turns)",
-      "ColorDiffuse": {
-        "r": 0.85,
-        "g": 0.9,
-        "b": 0.95
-      },
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false
     }
   ],
   "SnapPoints": [],
