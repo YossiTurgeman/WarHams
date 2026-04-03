@@ -125,12 +125,13 @@ end
 -------------------------------------------------------------------------------
 
 --- Spawn a single hex tile at the given world position.
+-- Uses BlockSquare (built-in, no image URL needed) with color tint.
 function spawnHexTile(position, tileData, label)
     spawnObject({
-        type     = "Custom_Tile",
+        type     = "BlockSquare",
         position = position,
         rotation = {0, 0, 0},
-        scale    = {1.8, 1, 1.8},
+        scale    = {1.8, 0.1, 1.8},
         callback_function = function(spawned)
             spawned.setName(tileData.type)
             spawned.setDescription(label or "")
@@ -142,17 +143,18 @@ function spawnHexTile(position, tileData, label)
 end
 
 --- Spawn a number token above a hex tile.
+-- Uses a small BlockSquare as a numbered marker.
 function spawnNumberToken(position, number)
     local tokenPos = {x = position.x, y = TOKEN_Y, z = position.z}
     spawnObject({
-        type     = "Custom_Tile",
+        type     = "BlockSquare",
         position = tokenPos,
         rotation = {0, 0, 0},
-        scale    = {0.6, 1, 0.6},
+        scale    = {0.5, 0.15, 0.5},
         callback_function = function(spawned)
-            spawned.setName("Number " .. tostring(number))
-            spawned.setDescription("Roll: " .. tostring(number))
-            spawned.setColorTint({r=1, g=1, b=1})
+            spawned.setName("#" .. tostring(number))
+            spawned.setDescription("Resource number: " .. tostring(number))
+            spawned.setColorTint({r=0.95, g=0.92, b=0.82})
             spawned.setLock(true)
             spawned.addTag(TILE_TAG)
         end
@@ -163,14 +165,14 @@ end
 function spawnNumberTokenOffset(position, number)
     local tokenPos = {x = position.x + 0.5, y = TOKEN_Y, z = position.z + 0.3}
     spawnObject({
-        type     = "Custom_Tile",
+        type     = "BlockSquare",
         position = tokenPos,
         rotation = {0, 0, 0},
-        scale    = {0.6, 1, 0.6},
+        scale    = {0.5, 0.15, 0.5},
         callback_function = function(spawned)
-            spawned.setName("Number " .. tostring(number))
-            spawned.setDescription("Roll: " .. tostring(number))
-            spawned.setColorTint({r=1, g=1, b=0.8})
+            spawned.setName("#" .. tostring(number))
+            spawned.setDescription("Resource number: " .. tostring(number) .. " (2nd)")
+            spawned.setColorTint({r=0.95, g=0.88, b=0.7})
             spawned.setLock(true)
             spawned.addTag(TILE_TAG)
         end
