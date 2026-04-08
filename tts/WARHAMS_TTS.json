@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1775649692,
+  "EpochTime": 1775650396,
   "Date": "2026-04-08",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -52,7 +52,7 @@
       "Transform": {
         "posX": 0,
         "posY": 1.05,
-        "posZ": -5,
+        "posZ": -7,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
@@ -95,9 +95,9 @@
       "GUID": "100065",
       "Name": "Deck",
       "Transform": {
-        "posX": 15,
+        "posX": 12,
         "posY": 1.5,
-        "posZ": -7,
+        "posZ": -11,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -6056,9 +6056,9 @@
       "GUID": "1000ae",
       "Name": "Deck",
       "Transform": {
-        "posX": -15,
+        "posX": -12,
         "posY": 1.5,
-        "posZ": -7,
+        "posZ": -11,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10367,7 +10367,7 @@
       "Transform": {
         "posX": -2,
         "posY": 2,
-        "posZ": -8,
+        "posZ": -9,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10412,7 +10412,7 @@
       "Transform": {
         "posX": 0,
         "posY": 2,
-        "posZ": -8,
+        "posZ": -9,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10457,7 +10457,7 @@
       "Transform": {
         "posX": 2,
         "posY": 2,
-        "posZ": -8,
+        "posZ": -9,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10502,7 +10502,7 @@
       "Transform": {
         "posX": -24,
         "posY": 2,
-        "posZ": -20,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10547,7 +10547,7 @@
       "Transform": {
         "posX": -22.8,
         "posY": 2,
-        "posZ": -20,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10592,7 +10592,7 @@
       "Transform": {
         "posX": -21.6,
         "posY": 2,
-        "posZ": -20,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10637,7 +10637,7 @@
       "Transform": {
         "posX": -20.4,
         "posY": 2,
-        "posZ": -20,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10682,7 +10682,7 @@
       "Transform": {
         "posX": -19.2,
         "posY": 2,
-        "posZ": -20,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10727,7 +10727,7 @@
       "Transform": {
         "posX": -18,
         "posY": 2,
-        "posZ": -20,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10772,7 +10772,7 @@
       "Transform": {
         "posX": -16.8,
         "posY": 2,
-        "posZ": -20,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10817,7 +10817,7 @@
       "Transform": {
         "posX": 18,
         "posY": 2,
-        "posZ": -20,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10862,7 +10862,7 @@
       "Transform": {
         "posX": 19.2,
         "posY": 2,
-        "posZ": -20,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10907,7 +10907,7 @@
       "Transform": {
         "posX": 20.4,
         "posY": 2,
-        "posZ": -20,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10952,7 +10952,7 @@
       "Transform": {
         "posX": 21.6,
         "posY": 2,
-        "posZ": -20,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -10997,7 +10997,7 @@
       "Transform": {
         "posX": 22.8,
         "posY": 2,
-        "posZ": -20,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11042,7 +11042,7 @@
       "Transform": {
         "posX": 24,
         "posY": 2,
-        "posZ": -20,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11087,7 +11087,7 @@
       "Transform": {
         "posX": 25.2,
         "posY": 2,
-        "posZ": -20,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11132,7 +11132,7 @@
       "Transform": {
         "posX": -24,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11177,7 +11177,7 @@
       "Transform": {
         "posX": -22.8,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11222,7 +11222,7 @@
       "Transform": {
         "posX": -21.6,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11267,7 +11267,7 @@
       "Transform": {
         "posX": -20.4,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11312,7 +11312,7 @@
       "Transform": {
         "posX": -19.2,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11357,7 +11357,7 @@
       "Transform": {
         "posX": -18,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11402,7 +11402,7 @@
       "Transform": {
         "posX": -16.8,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11447,7 +11447,7 @@
       "Transform": {
         "posX": 18,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11492,7 +11492,7 @@
       "Transform": {
         "posX": 19.2,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11537,7 +11537,7 @@
       "Transform": {
         "posX": 20.4,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11582,7 +11582,7 @@
       "Transform": {
         "posX": 21.6,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11627,7 +11627,7 @@
       "Transform": {
         "posX": 22.8,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11672,7 +11672,7 @@
       "Transform": {
         "posX": 24,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11717,7 +11717,7 @@
       "Transform": {
         "posX": 25.2,
         "posY": 2,
-        "posZ": 20,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11760,9 +11760,9 @@
       "GUID": "1000cf",
       "Name": "Infinite_Bag",
       "Transform": {
-        "posX": -16,
+        "posX": -12,
         "posY": 1.5,
-        "posZ": -14,
+        "posZ": -11,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11852,9 +11852,9 @@
       "GUID": "1000d1",
       "Name": "Infinite_Bag",
       "Transform": {
-        "posX": -8,
+        "posX": -6,
         "posY": 1.5,
-        "posZ": -14,
+        "posZ": -11,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11946,7 +11946,7 @@
       "Transform": {
         "posX": 0,
         "posY": 1.5,
-        "posZ": -14,
+        "posZ": -11,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -12036,9 +12036,9 @@
       "GUID": "1000d5",
       "Name": "Infinite_Bag",
       "Transform": {
-        "posX": 8,
+        "posX": 6,
         "posY": 1.5,
-        "posZ": -14,
+        "posZ": -11,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -12128,9 +12128,9 @@
       "GUID": "1000d7",
       "Name": "Infinite_Bag",
       "Transform": {
-        "posX": 16,
+        "posX": 12,
         "posY": 1.5,
-        "posZ": -14,
+        "posZ": -11,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -12222,7 +12222,7 @@
       "Transform": {
         "posX": -15,
         "posY": 4.84,
-        "posZ": -20,
+        "posZ": -18,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -12269,7 +12269,7 @@
       "Transform": {
         "posX": 15,
         "posY": 4.84,
-        "posZ": -20,
+        "posZ": -18,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -12316,7 +12316,7 @@
       "Transform": {
         "posX": -15,
         "posY": 4.84,
-        "posZ": 20,
+        "posZ": 18,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
@@ -12363,7 +12363,7 @@
       "Transform": {
         "posX": 15,
         "posY": 4.84,
-        "posZ": 20,
+        "posZ": 18,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
@@ -12408,9 +12408,9 @@
       "GUID": "1000f8",
       "Name": "Bag",
       "Transform": {
-        "posX": -20,
+        "posX": -18,
         "posY": 1.5,
-        "posZ": -22,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -13715,9 +13715,9 @@
       "GUID": "100115",
       "Name": "Bag",
       "Transform": {
-        "posX": 20,
+        "posX": 18,
         "posY": 1.5,
-        "posZ": -22,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -15022,9 +15022,9 @@
       "GUID": "100132",
       "Name": "Bag",
       "Transform": {
-        "posX": -20,
+        "posX": -18,
         "posY": 1.5,
-        "posZ": 22,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -16329,9 +16329,9 @@
       "GUID": "10014f",
       "Name": "Bag",
       "Transform": {
-        "posX": 20,
+        "posX": 18,
         "posY": 1.5,
-        "posZ": 22,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -17638,7 +17638,7 @@
       "Transform": {
         "posX": 0,
         "posY": 1.5,
-        "posZ": 16,
+        "posZ": 11,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -18763,15 +18763,15 @@
       "GUID": "100169",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": -21.5,
+        "posX": -22,
         "posY": 1.05,
-        "posZ": -26,
+        "posZ": -18,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 3.5,
+        "scaleX": 3,
         "scaleY": 0.1,
-        "scaleZ": 4.5
+        "scaleZ": 3.5
       },
       "Nickname": "Red Squad 1",
       "Description": "Squad Board — Red Squad 1\n7 slots | 5 equip each | 3 dmg cap",
@@ -18808,15 +18808,15 @@
       "GUID": "10016a",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": -14.5,
+        "posX": -15,
         "posY": 1.05,
-        "posZ": -26,
+        "posZ": -18,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 3.5,
+        "scaleX": 3,
         "scaleY": 0.1,
-        "scaleZ": 4.5
+        "scaleZ": 3.5
       },
       "Nickname": "Red Squad 2",
       "Description": "Squad Board — Red Squad 2\n7 slots | 5 equip each | 3 dmg cap",
@@ -18850,108 +18850,155 @@
       "XmlUI": ""
     },
     {
-      "GUID": "10016b",
-      "Name": "BlockRectangle",
-      "Transform": {
-        "posX": -7.5,
-        "posY": 1.05,
-        "posZ": -26,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 0,
-        "scaleX": 3.5,
-        "scaleY": 0.1,
-        "scaleZ": 4.5
-      },
-      "Nickname": "Red Squad 3",
-      "Description": "Squad Board — Red Squad 3\n7 slots | 5 equip each | 3 dmg cap",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 0.86,
-        "g": 0.21,
-        "b": 0.21
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "10016c",
-      "Name": "BlockRectangle",
-      "Transform": {
-        "posX": -0.5,
-        "posY": 1.05,
-        "posZ": -26,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 0,
-        "scaleX": 3.5,
-        "scaleY": 0.1,
-        "scaleZ": 4.5
-      },
-      "Nickname": "Red Squad 4",
-      "Description": "Squad Board — Red Squad 4\n7 slots | 5 equip each | 3 dmg cap",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 0.86,
-        "g": 0.21,
-        "b": 0.21
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
       "GUID": "10016d",
-      "Name": "BlockRectangle",
+      "Name": "Bag",
       "Transform": {
-        "posX": 0.5,
-        "posY": 1.05,
-        "posZ": -26,
+        "posX": -18.5,
+        "posY": 1.5,
+        "posZ": -18,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 3.5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Red Extra Boards",
+      "Description": "Extra squad boards for Red.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.86,
+        "g": 0.21,
+        "b": 0.21
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "10016b",
+          "Name": "BlockRectangle",
+          "Transform": {
+            "posX": 0,
+            "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 3,
+            "scaleY": 0.1,
+            "scaleZ": 3.5
+          },
+          "Nickname": "Red Squad 3",
+          "Description": "Squad Board — Red Squad 3\n7 slots | 5 equip each | 3 dmg cap",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.86,
+            "g": 0.21,
+            "b": 0.21
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "10016c",
+          "Name": "BlockRectangle",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.2,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 3,
+            "scaleY": 0.1,
+            "scaleZ": 3.5
+          },
+          "Nickname": "Red Squad 4",
+          "Description": "Squad Board — Red Squad 4\n7 slots | 5 equip each | 3 dmg cap",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.86,
+            "g": 0.21,
+            "b": 0.21
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "10016e",
+      "Name": "BlockRectangle",
+      "Transform": {
+        "posX": 15,
+        "posY": 1.05,
+        "posZ": -18,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 3,
         "scaleY": 0.1,
-        "scaleZ": 4.5
+        "scaleZ": 3.5
       },
       "Nickname": "Blue Squad 1",
       "Description": "Squad Board — Blue Squad 1\n7 slots | 5 equip each | 3 dmg cap",
@@ -18985,18 +19032,18 @@
       "XmlUI": ""
     },
     {
-      "GUID": "10016e",
+      "GUID": "10016f",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 7.5,
+        "posX": 22,
         "posY": 1.05,
-        "posZ": -26,
+        "posZ": -18,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 3.5,
+        "scaleX": 3,
         "scaleY": 0.1,
-        "scaleZ": 4.5
+        "scaleZ": 3.5
       },
       "Nickname": "Blue Squad 2",
       "Description": "Squad Board — Blue Squad 2\n7 slots | 5 equip each | 3 dmg cap",
@@ -19030,21 +19077,21 @@
       "XmlUI": ""
     },
     {
-      "GUID": "10016f",
-      "Name": "BlockRectangle",
+      "GUID": "100172",
+      "Name": "Bag",
       "Transform": {
-        "posX": 14.5,
-        "posY": 1.05,
-        "posZ": -26,
+        "posX": 18.5,
+        "posY": 1.5,
+        "posZ": -18,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 3.5,
-        "scaleY": 0.1,
-        "scaleZ": 4.5
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
       },
-      "Nickname": "Blue Squad 3",
-      "Description": "Squad Board — Blue Squad 3\n7 slots | 5 equip each | 3 dmg cap",
+      "Nickname": "Blue Extra Boards",
+      "Description": "Extra squad boards for Blue.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -19058,7 +19105,7 @@
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
-      "Locked": true,
+      "Locked": false,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -19072,66 +19119,113 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "100170",
+          "Name": "BlockRectangle",
+          "Transform": {
+            "posX": 0,
+            "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 3,
+            "scaleY": 0.1,
+            "scaleZ": 3.5
+          },
+          "Nickname": "Blue Squad 3",
+          "Description": "Squad Board — Blue Squad 3\n7 slots | 5 equip each | 3 dmg cap",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.22,
+            "g": 0.38,
+            "b": 0.86
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "100171",
+          "Name": "BlockRectangle",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.2,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 3,
+            "scaleY": 0.1,
+            "scaleZ": 3.5
+          },
+          "Nickname": "Blue Squad 4",
+          "Description": "Squad Board — Blue Squad 4\n7 slots | 5 equip each | 3 dmg cap",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.22,
+            "g": 0.38,
+            "b": 0.86
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
     },
     {
-      "GUID": "100170",
+      "GUID": "100173",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 21.5,
+        "posX": -22,
         "posY": 1.05,
-        "posZ": -26,
+        "posZ": 18,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 3.5,
+        "scaleX": 3,
         "scaleY": 0.1,
-        "scaleZ": 4.5
-      },
-      "Nickname": "Blue Squad 4",
-      "Description": "Squad Board — Blue Squad 4\n7 slots | 5 equip each | 3 dmg cap",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 0.22,
-        "g": 0.38,
-        "b": 0.86
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "100171",
-      "Name": "BlockRectangle",
-      "Transform": {
-        "posX": -21.5,
-        "posY": 1.05,
-        "posZ": 26,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 0,
-        "scaleX": 3.5,
-        "scaleY": 0.1,
-        "scaleZ": 4.5
+        "scaleZ": 3.5
       },
       "Nickname": "Green Squad 1",
       "Description": "Squad Board — Green Squad 1\n7 slots | 5 equip each | 3 dmg cap",
@@ -19165,18 +19259,18 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100172",
+      "GUID": "100174",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": -14.5,
+        "posX": -15,
         "posY": 1.05,
-        "posZ": 26,
+        "posZ": 18,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 3.5,
+        "scaleX": 3,
         "scaleY": 0.1,
-        "scaleZ": 4.5
+        "scaleZ": 3.5
       },
       "Nickname": "Green Squad 2",
       "Description": "Squad Board — Green Squad 2\n7 slots | 5 equip each | 3 dmg cap",
@@ -19210,21 +19304,21 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100173",
-      "Name": "BlockRectangle",
+      "GUID": "100177",
+      "Name": "Bag",
       "Transform": {
-        "posX": -7.5,
-        "posY": 1.05,
-        "posZ": 26,
+        "posX": -18.5,
+        "posY": 1.5,
+        "posZ": 18,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 3.5,
-        "scaleY": 0.1,
-        "scaleZ": 4.5
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
       },
-      "Nickname": "Green Squad 3",
-      "Description": "Squad Board — Green Squad 3\n7 slots | 5 equip each | 3 dmg cap",
+      "Nickname": "Green Extra Boards",
+      "Description": "Extra squad boards for Green.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -19238,7 +19332,7 @@
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
-      "Locked": true,
+      "Locked": false,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -19252,66 +19346,113 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "100175",
+          "Name": "BlockRectangle",
+          "Transform": {
+            "posX": 0,
+            "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 3,
+            "scaleY": 0.1,
+            "scaleZ": 3.5
+          },
+          "Nickname": "Green Squad 3",
+          "Description": "Squad Board — Green Squad 3\n7 slots | 5 equip each | 3 dmg cap",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.18,
+            "g": 0.72,
+            "b": 0.28
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "100176",
+          "Name": "BlockRectangle",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.2,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 3,
+            "scaleY": 0.1,
+            "scaleZ": 3.5
+          },
+          "Nickname": "Green Squad 4",
+          "Description": "Squad Board — Green Squad 4\n7 slots | 5 equip each | 3 dmg cap",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.18,
+            "g": 0.72,
+            "b": 0.28
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
     },
     {
-      "GUID": "100174",
+      "GUID": "100178",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": -0.5,
+        "posX": 15,
         "posY": 1.05,
-        "posZ": 26,
+        "posZ": 18,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 3.5,
+        "scaleX": 3,
         "scaleY": 0.1,
-        "scaleZ": 4.5
-      },
-      "Nickname": "Green Squad 4",
-      "Description": "Squad Board — Green Squad 4\n7 slots | 5 equip each | 3 dmg cap",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 0.18,
-        "g": 0.72,
-        "b": 0.28
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "100175",
-      "Name": "BlockRectangle",
-      "Transform": {
-        "posX": 0.5,
-        "posY": 1.05,
-        "posZ": 26,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 0,
-        "scaleX": 3.5,
-        "scaleY": 0.1,
-        "scaleZ": 4.5
+        "scaleZ": 3.5
       },
       "Nickname": "Yellow Squad 1",
       "Description": "Squad Board — Yellow Squad 1\n7 slots | 5 equip each | 3 dmg cap",
@@ -19345,18 +19486,18 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100176",
+      "GUID": "100179",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 7.5,
+        "posX": 22,
         "posY": 1.05,
-        "posZ": 26,
+        "posZ": 18,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 3.5,
+        "scaleX": 3,
         "scaleY": 0.1,
-        "scaleZ": 4.5
+        "scaleZ": 3.5
       },
       "Nickname": "Yellow Squad 2",
       "Description": "Squad Board — Yellow Squad 2\n7 slots | 5 equip each | 3 dmg cap",
@@ -19390,102 +19531,149 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100177",
-      "Name": "BlockRectangle",
-      "Transform": {
-        "posX": 14.5,
-        "posY": 1.05,
-        "posZ": 26,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 0,
-        "scaleX": 3.5,
-        "scaleY": 0.1,
-        "scaleZ": 4.5
-      },
-      "Nickname": "Yellow Squad 3",
-      "Description": "Squad Board — Yellow Squad 3\n7 slots | 5 equip each | 3 dmg cap",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 0.9,
-        "g": 0.82,
-        "b": 0.15
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "100178",
-      "Name": "BlockRectangle",
-      "Transform": {
-        "posX": 21.5,
-        "posY": 1.05,
-        "posZ": 26,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 0,
-        "scaleX": 3.5,
-        "scaleY": 0.1,
-        "scaleZ": 4.5
-      },
-      "Nickname": "Yellow Squad 4",
-      "Description": "Squad Board — Yellow Squad 4\n7 slots | 5 equip each | 3 dmg cap",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 0.9,
-        "g": 0.82,
-        "b": 0.15
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "100192",
+      "GUID": "10017c",
       "Name": "Bag",
       "Transform": {
-        "posX": -14,
+        "posX": 18.5,
         "posY": 1.5,
-        "posZ": -22,
+        "posZ": 18,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Yellow Extra Boards",
+      "Description": "Extra squad boards for Yellow.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.9,
+        "g": 0.82,
+        "b": 0.15
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "10017a",
+          "Name": "BlockRectangle",
+          "Transform": {
+            "posX": 0,
+            "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 3,
+            "scaleY": 0.1,
+            "scaleZ": 3.5
+          },
+          "Nickname": "Yellow Squad 3",
+          "Description": "Squad Board — Yellow Squad 3\n7 slots | 5 equip each | 3 dmg cap",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.9,
+            "g": 0.82,
+            "b": 0.15
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "10017b",
+          "Name": "BlockRectangle",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.2,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 3,
+            "scaleY": 0.1,
+            "scaleZ": 3.5
+          },
+          "Nickname": "Yellow Squad 4",
+          "Description": "Squad Board — Yellow Squad 4\n7 slots | 5 equip each | 3 dmg cap",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.9,
+            "g": 0.82,
+            "b": 0.15
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "100196",
+      "Name": "Bag",
+      "Transform": {
+        "posX": -10,
+        "posY": 1.5,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -19525,191 +19713,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100179",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Red Control",
-          "Description": "Red control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "10017a",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.3,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Red Control",
-          "Description": "Red control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "10017b",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.6,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Red Control",
-          "Description": "Red control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "10017c",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.8999999999999999,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Red Control",
-          "Description": "Red control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
           "GUID": "10017d",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 0,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19754,7 +19762,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19799,7 +19807,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19844,7 +19852,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19889,7 +19897,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19934,7 +19942,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19979,7 +19987,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20024,7 +20032,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20069,7 +20077,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20114,7 +20122,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20159,7 +20167,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20204,7 +20212,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20249,7 +20257,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20294,7 +20302,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20339,7 +20347,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20384,7 +20392,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20429,7 +20437,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20474,7 +20482,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20519,7 +20527,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20564,7 +20572,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20609,6 +20617,186 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
+            "posY": 6,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Red Control",
+          "Description": "Red control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.86,
+            "g": 0.21,
+            "b": 0.21
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "100192",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.3,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Red Control",
+          "Description": "Red control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.86,
+            "g": 0.21,
+            "b": 0.21
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "100193",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.6,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Red Control",
+          "Description": "Red control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.86,
+            "g": 0.21,
+            "b": 0.21
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "100194",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.8999999999999995,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Red Control",
+          "Description": "Red control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.86,
+            "g": 0.21,
+            "b": 0.21
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "100195",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -20652,12 +20840,12 @@
       ]
     },
     {
-      "GUID": "1001ac",
+      "GUID": "1001b0",
       "Name": "Bag",
       "Transform": {
-        "posX": 14,
+        "posX": 10,
         "posY": 1.5,
-        "posZ": -22,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -20697,191 +20885,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100193",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Blue Control",
-          "Description": "Blue control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "100194",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.3,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Blue Control",
-          "Description": "Blue control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "100195",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.6,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Blue Control",
-          "Description": "Blue control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "100196",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.8999999999999999,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Blue Control",
-          "Description": "Blue control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
           "GUID": "100197",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 0,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20926,7 +20934,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -20971,7 +20979,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21016,7 +21024,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21061,7 +21069,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21106,7 +21114,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21151,7 +21159,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21196,7 +21204,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21241,7 +21249,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21286,7 +21294,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21331,7 +21339,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21376,7 +21384,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21421,7 +21429,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21466,7 +21474,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21511,7 +21519,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21556,7 +21564,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21601,7 +21609,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21646,7 +21654,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21691,7 +21699,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21736,7 +21744,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21781,6 +21789,186 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
+            "posY": 6,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Blue Control",
+          "Description": "Blue control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.22,
+            "g": 0.38,
+            "b": 0.86
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001ac",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.3,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Blue Control",
+          "Description": "Blue control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.22,
+            "g": 0.38,
+            "b": 0.86
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001ad",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.6,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Blue Control",
+          "Description": "Blue control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.22,
+            "g": 0.38,
+            "b": 0.86
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001ae",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.8999999999999995,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Blue Control",
+          "Description": "Blue control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.22,
+            "g": 0.38,
+            "b": 0.86
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001af",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -21824,12 +22012,12 @@
       ]
     },
     {
-      "GUID": "1001c6",
+      "GUID": "1001ca",
       "Name": "Bag",
       "Transform": {
-        "posX": -14,
+        "posX": -10,
         "posY": 1.5,
-        "posZ": 22,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -21869,191 +22057,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1001ad",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Green Control",
-          "Description": "Green control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "1001ae",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.3,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Green Control",
-          "Description": "Green control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "1001af",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.6,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Green Control",
-          "Description": "Green control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "1001b0",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.8999999999999999,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Green Control",
-          "Description": "Green control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
           "GUID": "1001b1",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 0,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22098,7 +22106,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22143,7 +22151,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22188,7 +22196,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22233,7 +22241,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22278,7 +22286,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22323,7 +22331,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22368,7 +22376,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22413,7 +22421,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22458,7 +22466,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22503,7 +22511,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22548,7 +22556,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22593,7 +22601,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22638,7 +22646,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22683,7 +22691,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22728,7 +22736,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22773,7 +22781,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22818,7 +22826,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22863,7 +22871,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22908,7 +22916,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22953,6 +22961,186 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
+            "posY": 6,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Green Control",
+          "Description": "Green control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.18,
+            "g": 0.72,
+            "b": 0.28
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001c6",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.3,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Green Control",
+          "Description": "Green control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.18,
+            "g": 0.72,
+            "b": 0.28
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001c7",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.6,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Green Control",
+          "Description": "Green control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.18,
+            "g": 0.72,
+            "b": 0.28
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001c8",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.8999999999999995,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Green Control",
+          "Description": "Green control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.18,
+            "g": 0.72,
+            "b": 0.28
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001c9",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -22996,12 +23184,12 @@
       ]
     },
     {
-      "GUID": "1001e0",
+      "GUID": "1001e4",
       "Name": "Bag",
       "Transform": {
-        "posX": 14,
+        "posX": 10,
         "posY": 1.5,
-        "posZ": 22,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -23041,191 +23229,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1001c7",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Yellow Control",
-          "Description": "Yellow control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.9,
-            "g": 0.82,
-            "b": 0.15
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "1001c8",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.3,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Yellow Control",
-          "Description": "Yellow control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.9,
-            "g": 0.82,
-            "b": 0.15
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "1001c9",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.6,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Yellow Control",
-          "Description": "Yellow control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.9,
-            "g": 0.82,
-            "b": 0.15
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "1001ca",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.8999999999999999,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Yellow Control",
-          "Description": "Yellow control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.9,
-            "g": 0.82,
-            "b": 0.15
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
           "GUID": "1001cb",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 0,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23270,7 +23278,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23315,7 +23323,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23360,7 +23368,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23405,7 +23413,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23450,7 +23458,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23495,7 +23503,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23540,7 +23548,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23585,7 +23593,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23630,7 +23638,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23675,7 +23683,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23720,7 +23728,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23765,7 +23773,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23810,7 +23818,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23855,7 +23863,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23900,7 +23908,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23945,7 +23953,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23990,7 +23998,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24035,7 +24043,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24080,7 +24088,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24125,6 +24133,186 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
+            "posY": 6,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Yellow Control",
+          "Description": "Yellow control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.9,
+            "g": 0.82,
+            "b": 0.15
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001e0",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.3,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Yellow Control",
+          "Description": "Yellow control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.9,
+            "g": 0.82,
+            "b": 0.15
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001e1",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.6,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Yellow Control",
+          "Description": "Yellow control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.9,
+            "g": 0.82,
+            "b": 0.15
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001e2",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.8999999999999995,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Yellow Control",
+          "Description": "Yellow control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.9,
+            "g": 0.82,
+            "b": 0.15
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001e3",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -24168,12 +24356,12 @@
       ]
     },
     {
-      "GUID": "1001fa",
+      "GUID": "1001fe",
       "Name": "Bag",
       "Transform": {
-        "posX": -17,
+        "posX": -13,
         "posY": 1.5,
-        "posZ": -22,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -24213,191 +24401,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1001e1",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.7,
-            "scaleY": 0.7,
-            "scaleZ": 0.7
-          },
-          "Nickname": "Red Flag",
-          "Description": "Red flag — Equipment Display. Permanent.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "1001e2",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.3,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.7,
-            "scaleY": 0.7,
-            "scaleZ": 0.7
-          },
-          "Nickname": "Red Flag",
-          "Description": "Red flag — Equipment Display. Permanent.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "1001e3",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.6,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.7,
-            "scaleY": 0.7,
-            "scaleZ": 0.7
-          },
-          "Nickname": "Red Flag",
-          "Description": "Red flag — Equipment Display. Permanent.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "1001e4",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.8999999999999999,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.7,
-            "scaleY": 0.7,
-            "scaleZ": 0.7
-          },
-          "Nickname": "Red Flag",
-          "Description": "Red flag — Equipment Display. Permanent.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
           "GUID": "1001e5",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 0,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24442,7 +24450,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24487,7 +24495,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24532,7 +24540,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24577,7 +24585,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24622,7 +24630,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24667,7 +24675,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24712,7 +24720,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24757,7 +24765,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24802,7 +24810,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24847,7 +24855,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24892,7 +24900,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24937,7 +24945,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24982,7 +24990,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25027,7 +25035,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25072,7 +25080,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25117,7 +25125,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25162,7 +25170,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25207,7 +25215,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25252,7 +25260,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25297,6 +25305,186 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
+            "posY": 6,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "scaleZ": 0.7
+          },
+          "Nickname": "Red Flag",
+          "Description": "Red flag — Equipment Display. Permanent.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.86,
+            "g": 0.21,
+            "b": 0.21
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001fa",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.3,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "scaleZ": 0.7
+          },
+          "Nickname": "Red Flag",
+          "Description": "Red flag — Equipment Display. Permanent.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.86,
+            "g": 0.21,
+            "b": 0.21
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001fb",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.6,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "scaleZ": 0.7
+          },
+          "Nickname": "Red Flag",
+          "Description": "Red flag — Equipment Display. Permanent.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.86,
+            "g": 0.21,
+            "b": 0.21
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001fc",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.8999999999999995,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "scaleZ": 0.7
+          },
+          "Nickname": "Red Flag",
+          "Description": "Red flag — Equipment Display. Permanent.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.86,
+            "g": 0.21,
+            "b": 0.21
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001fd",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -25340,12 +25528,12 @@
       ]
     },
     {
-      "GUID": "100214",
+      "GUID": "100218",
       "Name": "Bag",
       "Transform": {
-        "posX": 17,
+        "posX": 13,
         "posY": 1.5,
-        "posZ": -22,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -25385,191 +25573,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1001fb",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.7,
-            "scaleY": 0.7,
-            "scaleZ": 0.7
-          },
-          "Nickname": "Blue Flag",
-          "Description": "Blue flag — Equipment Display. Permanent.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "1001fc",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.3,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.7,
-            "scaleY": 0.7,
-            "scaleZ": 0.7
-          },
-          "Nickname": "Blue Flag",
-          "Description": "Blue flag — Equipment Display. Permanent.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "1001fd",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.6,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.7,
-            "scaleY": 0.7,
-            "scaleZ": 0.7
-          },
-          "Nickname": "Blue Flag",
-          "Description": "Blue flag — Equipment Display. Permanent.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "1001fe",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.8999999999999999,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.7,
-            "scaleY": 0.7,
-            "scaleZ": 0.7
-          },
-          "Nickname": "Blue Flag",
-          "Description": "Blue flag — Equipment Display. Permanent.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
           "GUID": "1001ff",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 0,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25614,7 +25622,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25659,7 +25667,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25704,7 +25712,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25749,7 +25757,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25794,7 +25802,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25839,7 +25847,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25884,7 +25892,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25929,7 +25937,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25974,7 +25982,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26019,7 +26027,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26064,7 +26072,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26109,7 +26117,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26154,7 +26162,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26199,7 +26207,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26244,7 +26252,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26289,7 +26297,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26334,7 +26342,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26379,7 +26387,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26424,7 +26432,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26469,6 +26477,186 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
+            "posY": 6,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "scaleZ": 0.7
+          },
+          "Nickname": "Blue Flag",
+          "Description": "Blue flag — Equipment Display. Permanent.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.22,
+            "g": 0.38,
+            "b": 0.86
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "100214",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.3,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "scaleZ": 0.7
+          },
+          "Nickname": "Blue Flag",
+          "Description": "Blue flag — Equipment Display. Permanent.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.22,
+            "g": 0.38,
+            "b": 0.86
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "100215",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.6,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "scaleZ": 0.7
+          },
+          "Nickname": "Blue Flag",
+          "Description": "Blue flag — Equipment Display. Permanent.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.22,
+            "g": 0.38,
+            "b": 0.86
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "100216",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.8999999999999995,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "scaleZ": 0.7
+          },
+          "Nickname": "Blue Flag",
+          "Description": "Blue flag — Equipment Display. Permanent.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.22,
+            "g": 0.38,
+            "b": 0.86
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "100217",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -26512,12 +26700,12 @@
       ]
     },
     {
-      "GUID": "10022e",
+      "GUID": "100232",
       "Name": "Bag",
       "Transform": {
-        "posX": -17,
+        "posX": -13,
         "posY": 1.5,
-        "posZ": 22,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -26557,191 +26745,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100215",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.7,
-            "scaleY": 0.7,
-            "scaleZ": 0.7
-          },
-          "Nickname": "Green Flag",
-          "Description": "Green flag — Equipment Display. Permanent.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "100216",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.3,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.7,
-            "scaleY": 0.7,
-            "scaleZ": 0.7
-          },
-          "Nickname": "Green Flag",
-          "Description": "Green flag — Equipment Display. Permanent.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "100217",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.6,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.7,
-            "scaleY": 0.7,
-            "scaleZ": 0.7
-          },
-          "Nickname": "Green Flag",
-          "Description": "Green flag — Equipment Display. Permanent.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "100218",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
-            "posY": 0.8999999999999999,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.7,
-            "scaleY": 0.7,
-            "scaleZ": 0.7
-          },
-          "Nickname": "Green Flag",
-          "Description": "Green flag — Equipment Display. Permanent.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
           "GUID": "100219",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 0,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26786,7 +26794,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26831,7 +26839,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26876,7 +26884,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26921,7 +26929,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26966,7 +26974,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27011,7 +27019,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27056,7 +27064,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27101,7 +27109,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27146,7 +27154,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27191,7 +27199,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27236,7 +27244,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27281,7 +27289,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27326,7 +27334,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27371,7 +27379,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27416,7 +27424,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27461,7 +27469,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27506,7 +27514,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27551,7 +27559,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27596,7 +27604,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27641,6 +27649,186 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
+            "posY": 6,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "scaleZ": 0.7
+          },
+          "Nickname": "Green Flag",
+          "Description": "Green flag — Equipment Display. Permanent.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.18,
+            "g": 0.72,
+            "b": 0.28
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "10022e",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.3,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "scaleZ": 0.7
+          },
+          "Nickname": "Green Flag",
+          "Description": "Green flag — Equipment Display. Permanent.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.18,
+            "g": 0.72,
+            "b": 0.28
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "10022f",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.6,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "scaleZ": 0.7
+          },
+          "Nickname": "Green Flag",
+          "Description": "Green flag — Equipment Display. Permanent.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.18,
+            "g": 0.72,
+            "b": 0.28
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "100230",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 6.8999999999999995,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "scaleZ": 0.7
+          },
+          "Nickname": "Green Flag",
+          "Description": "Green flag — Equipment Display. Permanent.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.18,
+            "g": 0.72,
+            "b": 0.28
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "100231",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -27684,12 +27872,12 @@
       ]
     },
     {
-      "GUID": "100248",
+      "GUID": "10024c",
       "Name": "Bag",
       "Transform": {
-        "posX": 17,
+        "posX": 13,
         "posY": 1.5,
-        "posZ": 22,
+        "posZ": 15,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -27729,7 +27917,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "10022f",
+          "GUID": "100233",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -27774,7 +27962,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100230",
+          "GUID": "100234",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -27819,7 +28007,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100231",
+          "GUID": "100235",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -27864,7 +28052,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100232",
+          "GUID": "100236",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -27909,7 +28097,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100233",
+          "GUID": "100237",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -27954,7 +28142,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100234",
+          "GUID": "100238",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -27999,7 +28187,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100235",
+          "GUID": "100239",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28044,7 +28232,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100236",
+          "GUID": "10023a",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28089,7 +28277,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100237",
+          "GUID": "10023b",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28134,7 +28322,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100238",
+          "GUID": "10023c",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28179,7 +28367,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100239",
+          "GUID": "10023d",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28224,7 +28412,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10023a",
+          "GUID": "10023e",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28269,7 +28457,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10023b",
+          "GUID": "10023f",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28314,7 +28502,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10023c",
+          "GUID": "100240",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28359,7 +28547,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10023d",
+          "GUID": "100241",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28404,7 +28592,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10023e",
+          "GUID": "100242",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28449,7 +28637,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10023f",
+          "GUID": "100243",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28494,7 +28682,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100240",
+          "GUID": "100244",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28539,7 +28727,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100241",
+          "GUID": "100245",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28584,7 +28772,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100242",
+          "GUID": "100246",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28629,7 +28817,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100243",
+          "GUID": "100247",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28674,7 +28862,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100244",
+          "GUID": "100248",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28719,7 +28907,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100245",
+          "GUID": "100249",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28764,7 +28952,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100246",
+          "GUID": "10024a",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28809,7 +28997,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100247",
+          "GUID": "10024b",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -28856,12 +29044,12 @@
       ]
     },
     {
-      "GUID": "10024a",
+      "GUID": "10024e",
       "Name": "Infinite_Bag",
       "Transform": {
-        "posX": -8,
+        "posX": -6,
         "posY": 1.5,
-        "posZ": 16,
+        "posZ": 11,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -28901,7 +29089,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100249",
+          "GUID": "10024d",
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
@@ -28948,12 +29136,12 @@
       ]
     },
     {
-      "GUID": "100257",
+      "GUID": "10025b",
       "Name": "Bag",
       "Transform": {
-        "posX": -4,
+        "posX": -3,
         "posY": 1.5,
-        "posZ": 16,
+        "posZ": 11,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -28993,7 +29181,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "10024b",
+          "GUID": "10024f",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29038,7 +29226,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10024c",
+          "GUID": "100250",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29083,7 +29271,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10024d",
+          "GUID": "100251",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29128,7 +29316,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10024e",
+          "GUID": "100252",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29173,7 +29361,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10024f",
+          "GUID": "100253",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29218,7 +29406,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100250",
+          "GUID": "100254",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29263,7 +29451,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100251",
+          "GUID": "100255",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29308,7 +29496,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100252",
+          "GUID": "100256",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29353,7 +29541,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100253",
+          "GUID": "100257",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29398,7 +29586,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100254",
+          "GUID": "100258",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29443,7 +29631,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100255",
+          "GUID": "100259",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29488,7 +29676,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100256",
+          "GUID": "10025a",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29535,12 +29723,12 @@
       ]
     },
     {
-      "GUID": "100268",
+      "GUID": "10026c",
       "Name": "Bag",
       "Transform": {
-        "posX": 4,
+        "posX": 3,
         "posY": 1.5,
-        "posZ": 16,
+        "posZ": 11,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -29580,7 +29768,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100258",
+          "GUID": "10025c",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29625,7 +29813,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100259",
+          "GUID": "10025d",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29670,7 +29858,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10025a",
+          "GUID": "10025e",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29715,7 +29903,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10025b",
+          "GUID": "10025f",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29760,7 +29948,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10025c",
+          "GUID": "100260",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29805,7 +29993,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10025d",
+          "GUID": "100261",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29850,7 +30038,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10025e",
+          "GUID": "100262",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29895,7 +30083,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10025f",
+          "GUID": "100263",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29940,7 +30128,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100260",
+          "GUID": "100264",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -29985,7 +30173,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100261",
+          "GUID": "100265",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -30030,7 +30218,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100262",
+          "GUID": "100266",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -30075,7 +30263,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100263",
+          "GUID": "100267",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -30120,7 +30308,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100264",
+          "GUID": "100268",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -30165,7 +30353,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100265",
+          "GUID": "100269",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -30210,7 +30398,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100266",
+          "GUID": "10026a",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -30255,7 +30443,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100267",
+          "GUID": "10026b",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -30302,10 +30490,10 @@
       ]
     },
     {
-      "GUID": "100269",
+      "GUID": "10026d",
       "Name": "BlockSquare",
       "Transform": {
-        "posX": 12,
+        "posX": 10,
         "posY": 1.2,
         "posZ": 5,
         "rotX": 0,
@@ -30347,10 +30535,10 @@
       "XmlUI": ""
     },
     {
-      "GUID": "10026a",
+      "GUID": "10026e",
       "Name": "BlockSquare",
       "Transform": {
-        "posX": 14.5,
+        "posX": 12,
         "posY": 1.2,
         "posZ": 5,
         "rotX": 0,
@@ -30392,10 +30580,10 @@
       "XmlUI": ""
     },
     {
-      "GUID": "10026b",
+      "GUID": "10026f",
       "Name": "BlockSquare",
       "Transform": {
-        "posX": 17,
+        "posX": 14,
         "posY": 1.2,
         "posZ": 5,
         "rotX": 0,
@@ -30437,10 +30625,10 @@
       "XmlUI": ""
     },
     {
-      "GUID": "10026c",
+      "GUID": "100270",
       "Name": "BlockSquare",
       "Transform": {
-        "posX": 19.5,
+        "posX": 16,
         "posY": 1.2,
         "posZ": 5,
         "rotX": 0,
@@ -30482,10 +30670,10 @@
       "XmlUI": ""
     },
     {
-      "GUID": "10026d",
+      "GUID": "100271",
       "Name": "BlockSquare",
       "Transform": {
-        "posX": 22,
+        "posX": 18,
         "posY": 1.2,
         "posZ": 5,
         "rotX": 0,
@@ -30527,10 +30715,10 @@
       "XmlUI": ""
     },
     {
-      "GUID": "10026e",
+      "GUID": "100272",
       "Name": "BlockSquare",
       "Transform": {
-        "posX": 24.5,
+        "posX": 20,
         "posY": 1.2,
         "posZ": 5,
         "rotX": 0,
@@ -30572,18 +30760,18 @@
       "XmlUI": ""
     },
     {
-      "GUID": "10026f",
+      "GUID": "100273",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 20,
+        "posX": 16,
         "posY": 1.02,
         "posZ": 3,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 7,
+        "scaleX": 5,
         "scaleY": 0.05,
-        "scaleZ": 1.5
+        "scaleZ": 1
       },
       "Nickname": "UNLOADING ZONE",
       "Description": "BAC cards land here on doubles. 6 slots for Spaceports 1-6.",
@@ -30617,18 +30805,18 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100270",
+      "GUID": "100274",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 15,
+        "posX": 16,
         "posY": 1.02,
-        "posZ": 8,
+        "posZ": 7,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 5,
+        "scaleX": 4,
         "scaleY": 0.05,
-        "scaleZ": 1.5
+        "scaleZ": 1
       },
       "Nickname": "PLANET BOUND AREA",
       "Description": "Face-up BAC display. Refill from Spaceport Deck.",
@@ -30662,18 +30850,18 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100271",
+      "GUID": "100275",
       "Name": "BlockRectangle",
       "Transform": {
-        "posX": 15,
+        "posX": 16,
         "posY": 1.02,
-        "posZ": -2,
+        "posZ": -3,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 5,
+        "scaleX": 4,
         "scaleY": 0.05,
-        "scaleZ": 2
+        "scaleZ": 1.5
       },
       "Nickname": "EQUIPMENT DISPLAY",
       "Description": "First-time equip: place BAC face-up + your flag. Flags permanent.",
@@ -30707,18 +30895,18 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100272",
+      "GUID": "100276",
       "Name": "Notecard",
       "Transform": {
-        "posX": -22,
+        "posX": -18,
         "posY": 1.5,
-        "posZ": -5,
+        "posZ": -7,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1.5,
+        "scaleX": 1.2,
         "scaleY": 1,
-        "scaleZ": 1.5
+        "scaleZ": 1.2
       },
       "Nickname": "Turn & DP Tracker",
       "Description": "W.A.R H.A.M.S  GAME TRACKER\n============================\n\nROUND: ___  ACTIVE PLAYER: ___\n\n--- Dominance Points ---\nP1 Red: ___  P2 Blue: ___\nP3 Green: ___  P4 Yellow: ___\n\n--- Spaceports Controlled ---\nP1:__/6  P2:__/6  P3:__/6  P4:__/6\n\n--- Victory ---\nSpaceport: 5/6(2p) 4/6(3-4p)\nMilitary: 28 soldiers, hold 1 round\nDominance: 50 DP from BACs",
@@ -30752,18 +30940,18 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100273",
+      "GUID": "100277",
       "Name": "Notecard",
       "Transform": {
-        "posX": -22,
+        "posX": -18,
         "posY": 1.5,
-        "posZ": 2,
+        "posZ": -3,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1.5,
+        "scaleX": 1.2,
         "scaleY": 1,
-        "scaleZ": 1.5
+        "scaleZ": 1.2
       },
       "Nickname": "Quick Reference",
       "Description": "TURN PHASES\n1. Resource Prod — Roll 2d6+Sep Die\n2. Movement — 1 hex (2 w/ J.J)\n3. Combat — within 2 hexes\n4. Resource Gathering\n5. Purchase & Equip\n6. Trade (bank 3:1)\n7. Move Separatists\n\nCOMBAT: Pre→1.Roll→2.Assign→\n3.Equip bonus→4.Conspire→\n5.Damage→6.Counter(3+ block)\n\nSLOTS: 1=Head 2=Back 3=Legs\n4-5=Chest 6=Hands",
