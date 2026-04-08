@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "Date": "2026-04-03",
+  "Date": "2026-04-08",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
   "GameType": "",
@@ -13,8 +13,8 @@
     "Custom"
   ],
   "Gravity": 0.5,
-  "PlayArea": 0.5,
-  "Table": "Table_Octagon",
+  "PlayArea": 10,
+  "Table": "Table_Rectangle",
   "Sky": "Sky_Museum",
   "Note": "W.A.R H.A.M.S: The Battle for Planet X\n========================================\n\n2-4 Players | Sci-Fi Corporate Military Conquest\n\nSETUP:\n1. Click 'Random Board' or 'Fixed Board' on the Setup Panel\n2. Each player takes a soldier bag, flag bag, control markers, and 2 squad boards\n3. Place 10 soldiers (2 squads of 5) on starting hexes\n4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)\n5. Shuffle the Conspire Deck\n\nVICTORY CONDITIONS:\n- Spaceport Domination: 5/6 spaceports (2p) or 4/6 (3-4p)\n- Military Supremacy: Hold 28 soldiers for 1 full round\n- Dominance: 50 DP from equipped BAC cards\n\nSee design/WARHAMS-Rulebook.pdf for complete rules.",
   "TabStates": {},
