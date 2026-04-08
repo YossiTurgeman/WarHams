@@ -271,7 +271,7 @@ playerColors.forEach((sc, idx) => {
         const boardImg = `https://placehold.co/400x600/${colorHexMap[sc.label]}/ffffff.png?text=${encodeURIComponent(sc.label + ' Squad ' + (b + 1))}`;
         const board = baseObj("BlockRectangle", `${sc.label} Squad ${b + 1}`,
             `Squad Board — ${sc.label} Squad ${b + 1}\n7 slots | 5 equip each | 3 dmg cap`,
-            transform(playerZones[idx].x - 7 + b * 5, 1.05, playerZones[idx].z + zOff, 0, { x: 2.5, y: 0.1, z: 3 }),
+            transform(playerZones[idx].x - 10 + b * 7, 1.05, playerZones[idx].z + zOff, 0, { x: 4, y: 0.1, z: 5 }),
             sc.color);
         board.Locked = true;
         objects.push(board);

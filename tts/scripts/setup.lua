@@ -16,9 +16,14 @@
 -- Constants
 -------------------------------------------------------------------------------
 
-local HEX_SIZE   = 3.5   -- flat-top hex radius in TTS units
-local TILE_Y     = 1.1   -- tile surface height
-local TOKEN_Y    = 1.8   -- number-token height (above tile)
+-- A Custom_Tile hex at scale 1.0 is ~2.18 TTS units wide (point-to-point).
+-- For tiles to touch: center spacing = tile_width, so HEX_SIZE = scale * 2.18 / 1.5
+-- With TILE_SCALE=1.3: HEX_SIZE = 1.3 * 2.18 / 1.5 ≈ 1.89
+-- Board radius (ring 4): 4 * 1.89 * 1.5 ≈ 11.3 units across — fits nicely.
+local HEX_SIZE    = 1.89  -- spacing factor for axial→world conversion
+local TILE_SCALE  = 1.3   -- visual scale of each hex Custom_Tile
+local TILE_Y      = 1.1   -- tile surface height
+local TOKEN_Y     = 1.35  -- number-token height (above tile)
 local TILE_TAG   = "WARHAMS_HEX"  -- tag for cleanup identification
 
 -- Tile definitions
@@ -133,7 +138,7 @@ function spawnHexTile(position, tileData, label)
             Transform = {
                 posX = position.x, posY = position.y, posZ = position.z,
                 rotX = 0, rotY = 0, rotZ = 0,
-                scaleX = 1.5, scaleY = 1, scaleZ = 1.5
+                scaleX = TILE_SCALE, scaleY = 1, scaleZ = TILE_SCALE
             },
             Nickname = tileData.type,
             Description = label or "",
@@ -200,7 +205,7 @@ end
 
 --- Spawn a second number token offset slightly so both are visible.
 function spawnNumberTokenOffset(position, number)
-    local tokenPos = {x = position.x + 0.5, y = TOKEN_Y, z = position.z + 0.3}
+    local tokenPos = {x = position.x + 0.4, y = TOKEN_Y, z = position.z + 0.25}
     spawnObjectData({
         data = {
             Name = "Custom_Tile",
