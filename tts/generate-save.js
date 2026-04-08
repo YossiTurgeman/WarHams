@@ -389,7 +389,7 @@ const saveFile = {
     Tags: ["Strategy", "Sci-Fi", "Wargame", "Hex Grid", "Custom"],
     Gravity: 0.5,
     PlayArea: 10.0,
-    Table: "Table_Rectangle",
+    Table: "Table_Square",
     Sky: "Sky_Museum",
     Note: [
         "W.A.R H.A.M.S: The Battle for Planet X",
