@@ -31,7 +31,7 @@ function transform(x, y, z, rotY = 0, scale = 1) {
     };
 }
 
-// Base object template
+// Base object template — only include fields TTS expects
 function baseObj(name, nickname, desc, tf, color = null) {
     return {
         GUID: nextGUID(),
@@ -46,9 +46,7 @@ function baseObj(name, nickname, desc, tf, color = null) {
         Autoraise: true,
         Sticky: true,
         Tooltip: true,
-        GridProjection: false,
-        HideWhenFaceDown: false,
-        Hands: false
+        GridProjection: false
     };
 }
 
@@ -113,6 +111,8 @@ function buildBACDeck() {
             const card = baseObj("Card", bac.abbr, desc, transform(0, 0.1 * (typeIdx * bac.copies + copy), 0));
             card.CardID = 100;
             card.CustomDeck = deckDef;
+            card.HideWhenFaceDown = true;
+            card.Hands = true;
             cards.push(card);
         }
     });
@@ -122,6 +122,8 @@ function buildBACDeck() {
         transform(10, 1.5, -3, 0), { r: 0.8, g: 0.6, b: 0.3 });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = deckDef;
+    deck.HideWhenFaceDown = true;
+    deck.Hands = true;
     deck.ContainedObjects = cards;
     return deck;
 }
@@ -147,6 +149,8 @@ function buildConspireDeck() {
             const c = baseObj("Card", card.name, desc, transform(0, 0.1 * (typeIdx * card.copies + copy), 0));
             c.CardID = 200;
             c.CustomDeck = deckDef;
+            c.HideWhenFaceDown = true;
+            c.Hands = true;
             cards.push(c);
         }
     });
@@ -156,6 +160,8 @@ function buildConspireDeck() {
         transform(-10, 1.5, -3, 0), { r: 0.3, g: 0.2, b: 0.5 });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = deckDef;
+    deck.HideWhenFaceDown = true;
+    deck.Hands = true;
     deck.ContainedObjects = cards;
     return deck;
 }

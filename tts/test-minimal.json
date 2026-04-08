@@ -1,0 +1,71 @@
+{
+  "SaveName": "WARHAMS Test",
+  "GameMode": "",
+  "Date": "2026-04-08",
+  "Table": "Table_Square",
+  "Sky": "Sky_Museum",
+  "Note": "Minimal test",
+  "Rules": "",
+  "LuaScript": "",
+  "LuaScriptState": "",
+  "XmlUI": "",
+  "ObjectStates": [
+    {
+      "GUID": "aaa001",
+      "Name": "BlockSquare",
+      "Transform": {
+        "posX": 0, "posY": 2, "posZ": 0,
+        "rotX": 0, "rotY": 0, "rotZ": 0,
+        "scaleX": 2, "scaleY": 0.2, "scaleZ": 2
+      },
+      "Nickname": "Test Block",
+      "Description": "A simple red block",
+      "ColorDiffuse": { "r": 1, "g": 0, "b": 0 },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false
+    },
+    {
+      "GUID": "aaa002",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": 3, "posY": 2, "posZ": 0,
+        "rotX": 0, "rotY": 0, "rotZ": 0,
+        "scaleX": 1, "scaleY": 1, "scaleZ": 1
+      },
+      "Nickname": "Test Die",
+      "Description": "A white d6",
+      "ColorDiffuse": { "r": 1, "g": 1, "b": 1 },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false
+    },
+    {
+      "GUID": "aaa003",
+      "Name": "PlayerPawn",
+      "Transform": {
+        "posX": -3, "posY": 2, "posZ": 0,
+        "rotX": 0, "rotY": 0, "rotZ": 0,
+        "scaleX": 1, "scaleY": 1, "scaleZ": 1
+      },
+      "Nickname": "Test Pawn",
+      "Description": "A pawn",
+      "ColorDiffuse": { "r": 0.8, "g": 0.2, "b": 0.2 },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false
+    }
+  ]
+}
