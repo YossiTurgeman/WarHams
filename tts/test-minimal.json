@@ -1,26 +1,50 @@
 {
   "SaveName": "WARHAMS Test",
-  "GameMode": "",
-  "Date": "2026-04-08",
+  "GameMode": "None",
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Date": "4/8/2026 12:00:00 PM",
   "Table": "Table_Square",
   "Sky": "Sky_Museum",
   "Note": "Minimal test",
   "Rules": "",
+  "PlayerTurn": "",
   "LuaScript": "",
   "LuaScriptState": "",
   "XmlUI": "",
+  "VersionNumber": "v13.3.0",
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 2.0,
+    "ySize": 2.0
+  },
+  "DrawImage": "",
   "ObjectStates": [
     {
       "GUID": "aaa001",
       "Name": "BlockSquare",
       "Transform": {
-        "posX": 0, "posY": 2, "posZ": 0,
-        "rotX": 0, "rotY": 0, "rotZ": 0,
-        "scaleX": 2, "scaleY": 0.2, "scaleZ": 2
+        "posX": 0.0,
+        "posY": 2.0,
+        "posZ": 0.0,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 2.0,
+        "scaleY": 0.2,
+        "scaleZ": 2.0
       },
       "Nickname": "Test Block",
       "Description": "A simple red block",
-      "ColorDiffuse": { "r": 1, "g": 0, "b": 0 },
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0
+      },
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -33,39 +57,31 @@
       "GUID": "aaa002",
       "Name": "Die_6",
       "Transform": {
-        "posX": 3, "posY": 2, "posZ": 0,
-        "rotX": 0, "rotY": 0, "rotZ": 0,
-        "scaleX": 1, "scaleY": 1, "scaleZ": 1
+        "posX": 3.0,
+        "posY": 2.0,
+        "posZ": 0.0,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
       },
       "Nickname": "Test Die",
       "Description": "A white d6",
-      "ColorDiffuse": { "r": 1, "g": 1, "b": 1 },
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false
-    },
-    {
-      "GUID": "aaa003",
-      "Name": "PlayerPawn",
-      "Transform": {
-        "posX": -3, "posY": 2, "posZ": 0,
-        "rotX": 0, "rotY": 0, "rotZ": 0,
-        "scaleX": 1, "scaleY": 1, "scaleZ": 1
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
       },
-      "Nickname": "Test Pawn",
-      "Description": "A pawn",
-      "ColorDiffuse": { "r": 0.8, "g": 0.2, "b": 0.2 },
       "Locked": false,
       "Grid": true,
       "Snap": true,
       "Autoraise": true,
       "Sticky": true,
       "Tooltip": true,
-      "GridProjection": false
+      "GridProjection": false,
+      "MaterialIndex": 0
     }
   ]
 }
