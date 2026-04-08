@@ -16,21 +16,21 @@
 -- Constants
 -------------------------------------------------------------------------------
 
-local HEX_SIZE   = 2.0   -- flat-top hex radius in TTS units
+local HEX_SIZE   = 3.5   -- flat-top hex radius in TTS units
 local TILE_Y     = 1.1   -- tile surface height
-local TOKEN_Y    = 1.5   -- number-token height (above tile)
+local TOKEN_Y    = 1.8   -- number-token height (above tile)
 local TILE_TAG   = "WARHAMS_HEX"  -- tag for cleanup identification
 
 -- Tile definitions
 local TILE_POOL = {
-    {type = "Oil Rig",         color = {r=0.1, g=0.1, b=0.1}, count = 3,  resource = true},
-    {type = "Power Plant",     color = {r=1,   g=0.9, b=0},   count = 3,  resource = true},
-    {type = "Factory",         color = {r=0.8, g=0.1, b=0.1}, count = 3,  resource = true},
-    {type = "Radar Dish",      color = {r=0.2, g=0.4, b=0.9}, count = 3,  resource = true},
-    {type = "City/Village",    color = {r=0.1, g=0.7, b=0.2}, count = 3,  resource = true},
-    {type = "Separatist Base", color = {r=0.5, g=0.5, b=0.5}, count = 3,  resource = false, numbers = {2, 4, 6}},
-    {type = "Spaceport",       color = {r=0.6, g=0.2, b=0.8}, count = 6,  resource = false, numbers = {1, 2, 3, 4, 5, 6}},
-    {type = "Terrain",         color = {r=0.6, g=0.5, b=0.3}, count = 37, resource = false},
+    {type = "Oil Rig",         imageURL = "https://placehold.co/200x200/1a1a1a/ffffff.png?text=OIL",       count = 3,  resource = true},
+    {type = "Power Plant",     imageURL = "https://placehold.co/200x200/e6d200/000000.png?text=POWER",     count = 3,  resource = true},
+    {type = "Factory",         imageURL = "https://placehold.co/200x200/cc1a1a/ffffff.png?text=FACTORY",    count = 3,  resource = true},
+    {type = "Radar Dish",      imageURL = "https://placehold.co/200x200/3366e6/ffffff.png?text=INTEL",      count = 3,  resource = true},
+    {type = "City/Village",    imageURL = "https://placehold.co/200x200/1ab333/ffffff.png?text=CITY",       count = 3,  resource = true},
+    {type = "Separatist Base", imageURL = "https://placehold.co/200x200/666666/ffffff.png?text=SEP+BASE",   count = 3,  resource = false, numbers = {2, 4, 6}},
+    {type = "Spaceport",       imageURL = "https://placehold.co/200x200/9933cc/ffffff.png?text=SPACEPORT",  count = 6,  resource = false, numbers = {1, 2, 3, 4, 5, 6}},
+    {type = "Terrain",         imageURL = "https://placehold.co/200x200/998866/ffffff.png?text=TERRAIN",    count = 37, resource = false},
 }
 
 -- Number token pool for the 15 resource hexes (16 tokens total)
@@ -107,7 +107,7 @@ function buildFlatTilePool()
         for i = 1, def.count do
             local entry = {
                 type     = def.type,
-                color    = def.color,
+                imageURL = def.imageURL,
                 resource = def.resource,
             }
             -- Assign fixed numbers for Separatist Bases and Spaceports
@@ -125,37 +125,74 @@ end
 -------------------------------------------------------------------------------
 
 --- Spawn a single hex tile at the given world position.
--- Uses BlockSquare (built-in, no image URL needed) with color tint.
+-- Uses spawnObjectData with Custom_Tile (Type=1 hex).
 function spawnHexTile(position, tileData, label)
-    spawnObject({
-        type     = "BlockSquare",
-        position = position,
-        rotation = {0, 0, 0},
-        scale    = {1.8, 0.1, 1.8},
+    spawnObjectData({
+        data = {
+            Name = "Custom_Tile",
+            Transform = {
+                posX = position.x, posY = position.y, posZ = position.z,
+                rotX = 0, rotY = 0, rotZ = 0,
+                scaleX = 1.5, scaleY = 1, scaleZ = 1.5
+            },
+            Nickname = tileData.type,
+            Description = label or "",
+            ColorDiffuse = {r=1, g=1, b=1},
+            Locked = true,
+            Grid = true,
+            Snap = true,
+            Autoraise = true,
+            Sticky = true,
+            Tooltip = true,
+            GridProjection = false,
+            CustomImage = {
+                ImageURL = tileData.imageURL,
+                ImageSecondaryURL = "",
+                WidthScale = 0,
+                CustomTile = {
+                    Type = 1,
+                    Thickness = 0.1,
+                    Stackable = false,
+                    Stretch = true
+                }
+            }
+        },
         callback_function = function(spawned)
-            spawned.setName(tileData.type)
-            spawned.setDescription(label or "")
-            spawned.setColorTint(tileData.color)
-            spawned.setLock(true)
             spawned.addTag(TILE_TAG)
         end
     })
 end
 
 --- Spawn a number token above a hex tile.
--- Uses a small BlockSquare as a numbered marker.
+-- Uses spawnObjectData with Custom_Tile (Type=2 circle).
 function spawnNumberToken(position, number)
     local tokenPos = {x = position.x, y = TOKEN_Y, z = position.z}
-    spawnObject({
-        type     = "BlockSquare",
-        position = tokenPos,
-        rotation = {0, 0, 0},
-        scale    = {0.5, 0.15, 0.5},
+    spawnObjectData({
+        data = {
+            Name = "Custom_Tile",
+            Transform = {
+                posX = tokenPos.x, posY = tokenPos.y, posZ = tokenPos.z,
+                rotX = 0, rotY = 0, rotZ = 0,
+                scaleX = 0.4, scaleY = 1, scaleZ = 0.4
+            },
+            Nickname = "#" .. tostring(number),
+            Description = "Resource number: " .. tostring(number),
+            ColorDiffuse = {r=1, g=1, b=1},
+            Locked = true,
+            Grid = true, Snap = true, Autoraise = true, Sticky = true, Tooltip = true, GridProjection = false,
+            CustomImage = {
+                ImageURL = "https://placehold.co/100x100/f5f0d0/333333.png?text=" .. tostring(number),
+                ImageSecondaryURL = "",
+                WidthScale = 0,
+                CustomTile = {
+                    Type = 2,
+                    Thickness = 0.05,
+                    Stackable = false,
+                    Stretch = true
+                }
+            }
+        },
         callback_function = function(spawned)
-            spawned.setName("#" .. tostring(number))
-            spawned.setDescription("Resource number: " .. tostring(number))
-            spawned.setColorTint({r=0.95, g=0.92, b=0.82})
-            spawned.setLock(true)
             spawned.addTag(TILE_TAG)
         end
     })
@@ -164,16 +201,32 @@ end
 --- Spawn a second number token offset slightly so both are visible.
 function spawnNumberTokenOffset(position, number)
     local tokenPos = {x = position.x + 0.5, y = TOKEN_Y, z = position.z + 0.3}
-    spawnObject({
-        type     = "BlockSquare",
-        position = tokenPos,
-        rotation = {0, 0, 0},
-        scale    = {0.5, 0.15, 0.5},
+    spawnObjectData({
+        data = {
+            Name = "Custom_Tile",
+            Transform = {
+                posX = tokenPos.x, posY = tokenPos.y, posZ = tokenPos.z,
+                rotX = 0, rotY = 0, rotZ = 0,
+                scaleX = 0.4, scaleY = 1, scaleZ = 0.4
+            },
+            Nickname = "#" .. tostring(number),
+            Description = "Resource number: " .. tostring(number) .. " (2nd)",
+            ColorDiffuse = {r=1, g=1, b=1},
+            Locked = true,
+            Grid = true, Snap = true, Autoraise = true, Sticky = true, Tooltip = true, GridProjection = false,
+            CustomImage = {
+                ImageURL = "https://placehold.co/100x100/f0e8c0/333333.png?text=" .. tostring(number),
+                ImageSecondaryURL = "",
+                WidthScale = 0,
+                CustomTile = {
+                    Type = 2,
+                    Thickness = 0.05,
+                    Stackable = false,
+                    Stretch = true
+                }
+            }
+        },
         callback_function = function(spawned)
-            spawned.setName("#" .. tostring(number))
-            spawned.setDescription("Resource number: " .. tostring(number) .. " (2nd)")
-            spawned.setColorTint({r=0.95, g=0.88, b=0.7})
-            spawned.setLock(true)
             spawned.addTag(TILE_TAG)
         end
     })
@@ -284,7 +337,7 @@ function setupFixedBoard()
         local function makeTile(typeName)
             for _, def in ipairs(TILE_POOL) do
                 if def.type == typeName then
-                    return {type = def.type, color = def.color, resource = def.resource}
+                    return {type = def.type, imageURL = def.imageURL, resource = def.resource}
                 end
             end
         end
