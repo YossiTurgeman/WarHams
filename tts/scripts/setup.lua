@@ -3,66 +3,74 @@
     Handles Random and Fixed board layout for a 61-hex circular grid.
 
     Hex breakdown:
-      15 Resource tiles (3 Oil Rigs, 3 Power Plants, 3 Factories, 3 Radar Dishes, 3 Cities/Villages)
+      15 Resource tiles (3 Oil Rigs, 3 Power Plants, 3 Factories, 3 Radar Dishes, 3 Cities)
        3 Separatist Bases (numbered 2, 4, 6)
        6 Spaceport Drop Zones (numbered 1-6)
       37 Terrain tiles
-    ─────────────────────────────────────────────────────────
+    
     Number tokens placed on the 15 resource hexes:
       2×1, 2×2, 3×3, 3×4, 3×5, 3×6 = 16 tokens → 15 hexes (one hex receives 2)
+
+    Tiles are spawned as colored BlockSquare objects (no external images needed).
 ]]
 
 -------------------------------------------------------------------------------
 -- Constants
 -------------------------------------------------------------------------------
 
--- A Custom_Tile hex at scale 1.0 is ~2.18 TTS units wide (point-to-point).
--- For tiles to touch: center spacing = tile_width, so HEX_SIZE = scale * 2.18 / 1.5
--- With TILE_SCALE=1.3: HEX_SIZE = 1.3 * 2.18 / 1.5 ≈ 1.89
--- Board radius (ring 4): 4 * 1.89 * 1.5 ≈ 11.3 units across — fits nicely.
-local HEX_SIZE    = 1.89  -- spacing factor for axial→world conversion
-local TILE_SCALE  = 1.3   -- visual scale of each hex Custom_Tile
-local TILE_Y      = 1.1   -- tile surface height
-local TOKEN_Y     = 1.35  -- number-token height (above tile)
-local TILE_TAG   = "WARHAMS_HEX"  -- tag for cleanup identification
+-- Hex grid spacing: flat-top hexagons
+-- A BlockSquare at scale 1 is 1 TTS unit. We scale them to ~1.3 for nice hex tiles.
+-- For flat-top hex tiling with side-length s, center-to-center spacing is:
+--   horizontal: 1.5 * width   vertical: sqrt(3) * width
+-- At TILE_SCALE=1.3, the block is 1.3 units wide.
+-- We want tiles to touch/nearly touch, so spacing = 1.3 * 1.15 = ~1.5
+local HEX_SIZE    = 1.5    -- center-to-center spacing factor
+local TILE_SCALE  = 1.3    -- visual scale of each hex tile (BlockSquare)
+local TILE_Y      = 1.1    -- tile surface height
+local TOKEN_Y     = 1.6    -- number-token height (above tile)
+local TILE_TAG    = "WARHAMS_HEX"
 
--- Tile definitions
+-- Tile type definitions with colors
+local TILE_TYPES = {
+    ["Oil Rig"]         = {r = 0.12, g = 0.12, b = 0.12},  -- near black
+    ["Power Plant"]     = {r = 0.95, g = 0.85, b = 0.10},  -- yellow
+    ["Factory"]         = {r = 0.85, g = 0.15, b = 0.15},  -- red
+    ["Radar Dish"]      = {r = 0.20, g = 0.40, b = 0.90},  -- blue
+    ["City/Village"]    = {r = 0.15, g = 0.72, b = 0.25},  -- green
+    ["Separatist Base"] = {r = 0.50, g = 0.50, b = 0.50},  -- grey
+    ["Spaceport"]       = {r = 0.60, g = 0.25, b = 0.80},  -- purple
+    ["Terrain"]         = {r = 0.60, g = 0.53, b = 0.40},  -- tan/brown
+}
+
+-- Tile pool definition
 local TILE_POOL = {
-    {type = "Oil Rig",         imageURL = "https://placehold.co/200x200/1a1a1a/ffffff.png?text=OIL",       count = 3,  resource = true},
-    {type = "Power Plant",     imageURL = "https://placehold.co/200x200/e6d200/000000.png?text=POWER",     count = 3,  resource = true},
-    {type = "Factory",         imageURL = "https://placehold.co/200x200/cc1a1a/ffffff.png?text=FACTORY",    count = 3,  resource = true},
-    {type = "Radar Dish",      imageURL = "https://placehold.co/200x200/3366e6/ffffff.png?text=INTEL",      count = 3,  resource = true},
-    {type = "City/Village",    imageURL = "https://placehold.co/200x200/1ab333/ffffff.png?text=CITY",       count = 3,  resource = true},
-    {type = "Separatist Base", imageURL = "https://placehold.co/200x200/666666/ffffff.png?text=SEP+BASE",   count = 3,  resource = false, numbers = {2, 4, 6}},
-    {type = "Spaceport",       imageURL = "https://placehold.co/200x200/9933cc/ffffff.png?text=SPACEPORT",  count = 6,  resource = false, numbers = {1, 2, 3, 4, 5, 6}},
-    {type = "Terrain",         imageURL = "https://placehold.co/200x200/998866/ffffff.png?text=TERRAIN",    count = 37, resource = false},
+    {type = "Oil Rig",         count = 3,  resource = true},
+    {type = "Power Plant",     count = 3,  resource = true},
+    {type = "Factory",         count = 3,  resource = true},
+    {type = "Radar Dish",      count = 3,  resource = true},
+    {type = "City/Village",    count = 3,  resource = true},
+    {type = "Separatist Base", count = 3,  resource = false, numbers = {2, 4, 6}},
+    {type = "Spaceport",       count = 6,  resource = false, numbers = {1, 2, 3, 4, 5, 6}},
+    {type = "Terrain",         count = 37, resource = false},
 }
 
 -- Number token pool for the 15 resource hexes (16 tokens total)
 local NUMBER_TOKEN_POOL = {1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6}
 
 -------------------------------------------------------------------------------
--- Hex Grid Utilities
+-- Hex Grid Utilities (flat-top orientation)
 -------------------------------------------------------------------------------
 
---- Convert axial coordinates (q, r) to a TTS world position.
--- Uses flat-top hex orientation.
 function axialToWorld(q, r)
     local x = HEX_SIZE * (3/2 * q)
     local z = HEX_SIZE * (math.sqrt(3)/2 * q + math.sqrt(3) * r)
     return {x = x, y = TILE_Y, z = z}
 end
 
---- Generate all 61 axial coordinate pairs for rings 0-4.
--- Ring 0: 1 hex, Ring 1: 6, Ring 2: 12, Ring 3: 18, Ring 4: 24 = 61 total.
 function generateHexPositions()
     local positions = {}
-
-    -- Ring 0 — center
     table.insert(positions, {q = 0, r = 0})
 
-    -- Rings 1-4
-    -- Cube direction vectors for the six hex sides
     local directions = {
         {dq =  1, dr =  0},
         {dq =  0, dr =  1},
@@ -73,10 +81,8 @@ function generateHexPositions()
     }
 
     for ring = 1, 4 do
-        -- Start at the "top-right" corner of the ring
         local q = ring
         local r = 0
-
         for side = 1, 6 do
             for step = 1, ring do
                 table.insert(positions, {q = q, r = r})
@@ -90,7 +96,7 @@ function generateHexPositions()
 end
 
 -------------------------------------------------------------------------------
--- Shuffle Utility (Fisher-Yates)
+-- Shuffle (Fisher-Yates)
 -------------------------------------------------------------------------------
 
 function shuffle(t)
@@ -102,20 +108,17 @@ function shuffle(t)
 end
 
 -------------------------------------------------------------------------------
--- Flat Tile Pool Builder
+-- Build flat tile pool
 -------------------------------------------------------------------------------
 
---- Expand TILE_POOL into a flat list of 61 individual tile entries.
 function buildFlatTilePool()
     local flat = {}
     for _, def in ipairs(TILE_POOL) do
         for i = 1, def.count do
             local entry = {
                 type     = def.type,
-                imageURL = def.imageURL,
                 resource = def.resource,
             }
-            -- Assign fixed numbers for Separatist Bases and Spaceports
             if def.numbers then
                 entry.number = def.numbers[i]
             end
@@ -126,124 +129,58 @@ function buildFlatTilePool()
 end
 
 -------------------------------------------------------------------------------
--- Tile & Token Spawning
+-- Spawn a hex tile as a colored BlockSquare
 -------------------------------------------------------------------------------
 
---- Spawn a single hex tile at the given world position.
--- Uses spawnObjectData with Custom_Tile (Type=1 hex).
 function spawnHexTile(position, tileData, label)
-    spawnObjectData({
-        data = {
-            Name = "Custom_Tile",
-            Transform = {
-                posX = position.x, posY = position.y, posZ = position.z,
-                rotX = 0, rotY = 0, rotZ = 0,
-                scaleX = TILE_SCALE, scaleY = 1, scaleZ = TILE_SCALE
-            },
-            Nickname = tileData.type,
-            Description = label or "",
-            ColorDiffuse = {r=1, g=1, b=1},
-            Locked = true,
-            Grid = true,
-            Snap = true,
-            Autoraise = true,
-            Sticky = true,
-            Tooltip = true,
-            GridProjection = false,
-            CustomImage = {
-                ImageURL = tileData.imageURL,
-                ImageSecondaryURL = "",
-                WidthScale = 0,
-                CustomTile = {
-                    Type = 1,
-                    Thickness = 0.1,
-                    Stackable = false,
-                    Stretch = true
-                }
-            }
-        },
-        callback_function = function(spawned)
-            spawned.addTag(TILE_TAG)
-        end
-    })
-end
-
---- Spawn a number token above a hex tile.
--- Uses spawnObjectData with Custom_Tile (Type=2 circle).
-function spawnNumberToken(position, number)
-    local tokenPos = {x = position.x, y = TOKEN_Y, z = position.z}
-    spawnObjectData({
-        data = {
-            Name = "Custom_Tile",
-            Transform = {
-                posX = tokenPos.x, posY = tokenPos.y, posZ = tokenPos.z,
-                rotX = 0, rotY = 0, rotZ = 0,
-                scaleX = 0.4, scaleY = 1, scaleZ = 0.4
-            },
-            Nickname = "#" .. tostring(number),
-            Description = "Resource number: " .. tostring(number),
-            ColorDiffuse = {r=1, g=1, b=1},
-            Locked = true,
-            Grid = true, Snap = true, Autoraise = true, Sticky = true, Tooltip = true, GridProjection = false,
-            CustomImage = {
-                ImageURL = "https://placehold.co/100x100/f5f0d0/333333.png?text=" .. tostring(number),
-                ImageSecondaryURL = "",
-                WidthScale = 0,
-                CustomTile = {
-                    Type = 2,
-                    Thickness = 0.05,
-                    Stackable = false,
-                    Stretch = true
-                }
-            }
-        },
-        callback_function = function(spawned)
-            spawned.addTag(TILE_TAG)
-        end
-    })
-end
-
---- Spawn a second number token offset slightly so both are visible.
-function spawnNumberTokenOffset(position, number)
-    local tokenPos = {x = position.x + 0.4, y = TOKEN_Y, z = position.z + 0.25}
-    spawnObjectData({
-        data = {
-            Name = "Custom_Tile",
-            Transform = {
-                posX = tokenPos.x, posY = tokenPos.y, posZ = tokenPos.z,
-                rotX = 0, rotY = 0, rotZ = 0,
-                scaleX = 0.4, scaleY = 1, scaleZ = 0.4
-            },
-            Nickname = "#" .. tostring(number),
-            Description = "Resource number: " .. tostring(number) .. " (2nd)",
-            ColorDiffuse = {r=1, g=1, b=1},
-            Locked = true,
-            Grid = true, Snap = true, Autoraise = true, Sticky = true, Tooltip = true, GridProjection = false,
-            CustomImage = {
-                ImageURL = "https://placehold.co/100x100/f0e8c0/333333.png?text=" .. tostring(number),
-                ImageSecondaryURL = "",
-                WidthScale = 0,
-                CustomTile = {
-                    Type = 2,
-                    Thickness = 0.05,
-                    Stackable = false,
-                    Stretch = true
-                }
-            }
-        },
-        callback_function = function(spawned)
-            spawned.addTag(TILE_TAG)
+    local color = TILE_TYPES[tileData.type] or {r=0.5, g=0.5, b=0.5}
+    
+    spawnObject({
+        type = "BlockSquare",
+        position = {position.x, position.y, position.z},
+        rotation = {0, 30, 0},
+        scale = {TILE_SCALE, 0.15, TILE_SCALE},
+        sound = false,
+        callback_function = function(obj)
+            obj.setName(label or tileData.type)
+            obj.setDescription(tileData.type)
+            obj.setColorTint(color)
+            obj.setLock(true)
+            obj.addTag(TILE_TAG)
         end
     })
 end
 
 -------------------------------------------------------------------------------
--- Cleanup — remove all tiles from a previous setup
+-- Spawn number tokens as small colored BlockSquare
+-------------------------------------------------------------------------------
+
+function spawnNumberToken(position, number, offset_x, offset_z)
+    local ox = offset_x or 0
+    local oz = offset_z or 0
+    
+    spawnObject({
+        type = "BlockSquare",
+        position = {position.x + ox, TOKEN_Y, position.z + oz},
+        rotation = {0, 0, 0},
+        scale = {0.4, 0.1, 0.4},
+        sound = false,
+        callback_function = function(obj)
+            obj.setName("#" .. tostring(number))
+            obj.setDescription("Resource number: " .. tostring(number))
+            obj.setColorTint({r=0.96, g=0.93, b=0.82})
+            obj.setLock(true)
+            obj.addTag(TILE_TAG)
+        end
+    })
+end
+
+-------------------------------------------------------------------------------
+-- Cleanup
 -------------------------------------------------------------------------------
 
 function cleanupBoard()
-    local allObjects = getObjects()
-    for _, obj in ipairs(allObjects) do
+    for _, obj in ipairs(getObjects()) do
         if obj.hasTag(TILE_TAG) then
             obj.destruct()
         end
@@ -251,27 +188,27 @@ function cleanupBoard()
 end
 
 -------------------------------------------------------------------------------
--- Place Number Tokens on Resource Hexes
+-- Place number tokens on resource hexes
 -------------------------------------------------------------------------------
 
---- Distribute number tokens across the resource hex positions.
--- 16 tokens go onto 15 hexes; one randomly chosen hex receives two.
 function placeNumberTokens(resourcePositions)
-    local tokens = {unpack(NUMBER_TOKEN_POOL)}
+    local tokens = {}
+    for _, v in ipairs(NUMBER_TOKEN_POOL) do
+        table.insert(tokens, v)
+    end
     shuffle(tokens)
 
-    -- First 15 tokens go 1-per-hex
     for i = 1, 15 do
         spawnNumberToken(resourcePositions[i], tokens[i])
     end
 
-    -- 16th token goes on a random resource hex (that hex now has 2)
+    -- 16th token on a random hex (offset so both visible)
     local doubleIdx = math.random(1, 15)
-    spawnNumberTokenOffset(resourcePositions[doubleIdx], tokens[16])
+    spawnNumberToken(resourcePositions[doubleIdx], tokens[16], 0.35, 0.2)
 end
 
 -------------------------------------------------------------------------------
--- Random Board Setup
+-- Random Board
 -------------------------------------------------------------------------------
 
 function setupRandomBoard()
@@ -280,21 +217,16 @@ function setupRandomBoard()
     Wait.frames(function()
         math.randomseed(os.time())
 
-        -- 1. Generate all 61 hex positions
         local hexCoords = generateHexPositions()
-
-        -- 2. Build and shuffle the flat tile pool
         local tiles = buildFlatTilePool()
         shuffle(tiles)
 
-        -- 3. Place each tile; collect resource-hex world positions
         local resourcePositions = {}
 
         for i, coord in ipairs(hexCoords) do
             local worldPos = axialToWorld(coord.q, coord.r)
             local tile = tiles[i]
 
-            -- Build a display label
             local label = tile.type
             if tile.number then
                 label = label .. " #" .. tostring(tile.number)
@@ -307,27 +239,16 @@ function setupRandomBoard()
             end
         end
 
-        -- 4. Place number tokens on the 15 resource hexes
         Wait.frames(function()
             placeNumberTokens(resourcePositions)
             broadcastToAll("W.A.R H.A.M.S — Random Board generated!", {r=0.2, g=0.8, b=1})
-        end, 30)
+        end, 60)
     end, 5)
 end
 
 -------------------------------------------------------------------------------
--- Fixed Board Setup — balanced, predetermined layout for playtesting
+-- Fixed Board (balanced layout)
 -------------------------------------------------------------------------------
-
---[[
-    Fixed layout strategy:
-      • Center (ring 0): Terrain — neutral ground
-      • Ring 1 (6 hexes): 3 resources spread evenly, 3 terrain
-      • Ring 2 (12 hexes): 6 resources, 3 Separatist Bases, 3 terrain
-      • Ring 3 (18 hexes): 6 resources, 6 Spaceports, 6 terrain
-      • Ring 4 (24 hexes): all Terrain (outer border)
-    Resources are interleaved by type so no two of the same kind are adjacent.
-]]
 
 function setupFixedBoard()
     cleanupBoard()
@@ -338,32 +259,20 @@ function setupFixedBoard()
         local hexCoords = generateHexPositions()
         local resourcePositions = {}
 
-        -- Pre-build tile data lookup by type for convenience
         local function makeTile(typeName)
             for _, def in ipairs(TILE_POOL) do
                 if def.type == typeName then
-                    return {type = def.type, imageURL = def.imageURL, resource = def.resource}
+                    return {type = def.type, resource = def.resource}
                 end
             end
         end
 
-        -- Ordered resource types for interleaving
-        local resourceTypes = {"Oil Rig", "Power Plant", "Factory", "Radar Dish", "City/Village"}
+        local layout = {}
 
-        -- Index tracking: hexCoords[1]=center, [2..7]=ring1, [8..19]=ring2,
-        --                  [20..37]=ring3, [38..61]=ring4
-
-        local layout = {} -- indexed same as hexCoords
-
-        -----------------------------------------------------------------------
         -- Ring 0 (index 1): Terrain center
-        -----------------------------------------------------------------------
         layout[1] = makeTile("Terrain")
 
-        -----------------------------------------------------------------------
-        -- Ring 1 (indices 2-7): alternate resource / terrain
-        -- Positions 2,4,6 → resources; 3,5,7 → terrain
-        -----------------------------------------------------------------------
+        -- Ring 1 (indices 2-7): alternate resource/terrain
         local ring1Resources = {"Oil Rig", "Power Plant", "Factory"}
         local ri = 1
         for i = 2, 7 do
@@ -376,12 +285,8 @@ function setupFixedBoard()
             end
         end
 
-        -----------------------------------------------------------------------
-        -- Ring 2 (indices 8-19): 6 resources + 3 Separatist Bases + 3 terrain
-        -- Every 4th hex is a Separatist Base, every other pair is resource/terrain
-        -----------------------------------------------------------------------
+        -- Ring 2 (indices 8-19): resources, separatist bases, terrain
         local ring2Pattern = {
-            -- index offset, tile type
             "Radar Dish", "Terrain", "Separatist Base",
             "City/Village", "Terrain", "Separatist Base",
             "Oil Rig", "Terrain", "Separatist Base",
@@ -399,42 +304,32 @@ function setupFixedBoard()
             end
         end
 
-        -----------------------------------------------------------------------
-        -- Ring 3 (indices 20-37): 6 resources + 6 Spaceports + 6 terrain
-        -- Evenly distribute: every 3rd position cycles resource→spaceport→terrain
-        -----------------------------------------------------------------------
+        -- Ring 3 (indices 20-37): resources, spaceports, terrain
         local ring3Resources = {"City/Village", "Oil Rig", "Power Plant", "Factory", "Radar Dish", "City/Village"}
         local r3ri = 1
         local spaceportNum = 1
         for i = 20, 37 do
-            local offset = i - 19
-            local mod = (offset - 1) % 3
+            local off = i - 19
+            local mod = (off - 1) % 3
             if mod == 0 then
-                -- Resource
                 layout[i] = makeTile(ring3Resources[r3ri])
                 layout[i].resource = true
                 r3ri = r3ri + 1
             elseif mod == 1 then
-                -- Spaceport
                 layout[i] = makeTile("Spaceport")
                 layout[i].number = spaceportNum
                 spaceportNum = spaceportNum + 1
             else
-                -- Terrain
                 layout[i] = makeTile("Terrain")
             end
         end
 
-        -----------------------------------------------------------------------
-        -- Ring 4 (indices 38-61): all Terrain (outer border)
-        -----------------------------------------------------------------------
+        -- Ring 4 (indices 38-61): all Terrain
         for i = 38, 61 do
             layout[i] = makeTile("Terrain")
         end
 
-        -----------------------------------------------------------------------
         -- Spawn all tiles
-        -----------------------------------------------------------------------
         for i, coord in ipairs(hexCoords) do
             local worldPos = axialToWorld(coord.q, coord.r)
             local tile = layout[i]
@@ -451,11 +346,10 @@ function setupFixedBoard()
             end
         end
 
-        -- Place number tokens on the 15 resource hexes
         Wait.frames(function()
             placeNumberTokens(resourcePositions)
             broadcastToAll("W.A.R H.A.M.S — Fixed Board generated!", {r=0.2, g=1, b=0.4})
-        end, 30)
+        end, 60)
     end, 5)
 end
 
@@ -474,22 +368,21 @@ function onFixedSetup(obj, playerColor, altClick)
 end
 
 -------------------------------------------------------------------------------
--- On Load — create setup UI buttons on the scripted object
+-- On Load — create setup UI buttons
 -------------------------------------------------------------------------------
 
 function onLoad(saveState)
-    -- Clear any leftover buttons from a previous session
     self.clearButtons()
 
     self.createButton({
         click_function  = "onRandomSetup",
         function_owner  = self,
-        label           = "Random Board",
-        position        = {-2, 0.2, 0},
-        width           = 1200,
-        height          = 400,
-        font_size       = 200,
-        color           = {r=0.2, g=0.2, b=0.2},
+        label           = "Random\nBoard",
+        position        = {-1.2, 0.25, 0},
+        width           = 900,
+        height          = 500,
+        font_size       = 180,
+        color           = {r=0.15, g=0.4, b=0.15},
         font_color      = {r=1, g=1, b=1},
         tooltip         = "Generate a randomized 61-hex board",
     })
@@ -497,12 +390,12 @@ function onLoad(saveState)
     self.createButton({
         click_function  = "onFixedSetup",
         function_owner  = self,
-        label           = "Fixed Board",
-        position        = {2, 0.2, 0},
-        width           = 1200,
-        height          = 400,
-        font_size       = 200,
-        color           = {r=0.2, g=0.2, b=0.2},
+        label           = "Fixed\nBoard",
+        position        = {1.2, 0.25, 0},
+        width           = 900,
+        height          = 500,
+        font_size       = 180,
+        color           = {r=0.15, g=0.15, b=0.4},
         font_color      = {r=1, g=1, b=1},
         tooltip         = "Generate a balanced fixed board for playtesting",
     })
