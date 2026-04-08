@@ -394,8 +394,8 @@ const saveFile = {
     GameComplexity: "",
     Tags: ["Strategy", "Sci-Fi", "Wargame", "Hex Grid", "Custom"],
     Gravity: 0.5,
-    PlayArea: 10.0,
-    Table: "Table_Square",
+    PlayArea: 100.0,
+    Table: "Table_Poker",
     Sky: "Sky_Museum",
     Note: [
         "W.A.R H.A.M.S: The Battle for Planet X",
@@ -417,6 +417,10 @@ const saveFile = {
         "",
         "See design/WARHAMS-Rulebook.pdf for complete rules."
     ].join('\n'),
+    Rules: "",
+    PlayerTurn: "",
+    DrawImage: "",
+    Grid: { Type: 0, Lines: false, Snapping: false, Offset: false, BothSnapping: false, xSize: 2.0, ySize: 2.0 },
     TabStates: {},
     LuaScript: "",
     LuaScriptState: "",
