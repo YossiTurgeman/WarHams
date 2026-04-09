@@ -20,12 +20,19 @@ const path = require('path');
 const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design', 'game-data.json'), 'utf8'));
 const luaScript = fs.readFileSync(path.join(__dirname, 'scripts', 'setup.lua'), 'utf8');
 
-// Card images — using known-working imgur URLs that TTS can load
-// (placeholder card backs from user's working TTS saves)
-const BAC_FACE = "https://i.imgur.com/iI6SISE.jpg";
-const BAC_BACK = "https://i.imgur.com/DFp70rc.png";
-const CONSPIRE_FACE = "https://i.imgur.com/G6AhzVZ.jpg";
-const CONSPIRE_BACK = "https://i.imgur.com/DFp70rc.png";
+// Card images — hosted on GitHub, unique face per card type
+const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
+const BAC_BACK = `${CARD_BASE}/bac_back.png`;
+const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png`;
+
+function bacFaceURL(abbr) {
+    const slug = abbr.replace(/[^a-zA-Z0-9]/g, "_").toLowerCase();
+    return `${CARD_BASE}/bac_${slug}.png`;
+}
+function conspireFaceURL(name) {
+    const slug = name.replace(/[^a-zA-Z0-9]/g, "_").toLowerCase();
+    return `${CARD_BASE}/conspire_${slug}.png`;
+}
 
 // GUID generator — 6 hex chars
 let guidCounter = 0x100000;
@@ -107,10 +114,11 @@ function buildBACDeck() {
     const cards = [];
     const allCustomDecks = {};
     gameData.basic_armament_cards.forEach(bac => {
+        const faceURL = bacFaceURL(bac.abbr);
         for (let c = 0; c < bac.copies; c++) {
             // Each individual card gets its own unique deck definition ID
             const thisDeckId = nextDeckDefId++;
-            const deckDef = { [String(thisDeckId)]: { FaceURL: BAC_FACE, BackURL: BAC_BACK, NumWidth: 1, NumHeight: 1, BackIsHidden: true, UniqueBack: false, Type: 0 } };
+            const deckDef = { [String(thisDeckId)]: { FaceURL: faceURL, BackURL: BAC_BACK, NumWidth: 1, NumHeight: 1, BackIsHidden: true, UniqueBack: false, Type: 0 } };
             Object.assign(allCustomDecks, deckDef);
             const costStr = typeof bac.cost === 'string' ? bac.cost : Object.entries(bac.cost).map(([k,v]) => `${v} ${k}`).join(', ');
             const desc = `[${bac.category}] Slot: ${bac.slot}\nCost: ${costStr}\nDP: ${bac.dp}\n\n${bac.text}${bac.special ? '\nSpecial: ' + bac.special : ''}`;
@@ -141,9 +149,10 @@ function buildConspireDeck() {
     const cards = [];
     const allCustomDecks = {};
     gameData.conspire_cards.forEach(cc => {
+        const faceURL = conspireFaceURL(cc.name);
         for (let c = 0; c < cc.copies; c++) {
             const thisDeckId = nextDeckDefId++;
-            const deckDef = { [String(thisDeckId)]: { FaceURL: CONSPIRE_FACE, BackURL: CONSPIRE_BACK, NumWidth: 1, NumHeight: 1, BackIsHidden: true, UniqueBack: false, Type: 0 } };
+            const deckDef = { [String(thisDeckId)]: { FaceURL: faceURL, BackURL: CONSPIRE_BACK, NumWidth: 1, NumHeight: 1, BackIsHidden: true, UniqueBack: false, Type: 0 } };
             Object.assign(allCustomDecks, deckDef);
             const costStr = typeof cc.cost === 'string' ? cc.cost : Object.entries(cc.cost).map(([k,v]) => `${v} ${k}`).join(', ');
             const desc = `[${cc.timing}]\nCost: ${costStr}\n\n${cc.text}${cc.condition ? '\nCondition: ' + cc.condition : ''}`;
