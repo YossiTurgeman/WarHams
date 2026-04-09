@@ -102,16 +102,16 @@ setupPanel.LuaScript = luaScript;
 objects.push(setupPanel);
 
 // ─── 2. BAC DECK (100 cards) ─────────────────────────────────────────
+let nextDeckDefId = 100;  // global counter so BAC and Conspire don't collide
 function buildBACDeck() {
     const cards = [];
-    let deckId = 100;  // starting deck definition ID
     const allCustomDecks = {};
     gameData.basic_armament_cards.forEach(bac => {
-        // Each unique BAC type gets its own deck definition (same image, but unique ID)
-        const thisDeckId = deckId++;
-        const deckDef = { [String(thisDeckId)]: { FaceURL: BAC_FACE, BackURL: BAC_BACK, NumWidth: 1, NumHeight: 1, BackIsHidden: true, UniqueBack: false, Type: 0 } };
-        Object.assign(allCustomDecks, deckDef);
         for (let c = 0; c < bac.copies; c++) {
+            // Each individual card gets its own unique deck definition ID
+            const thisDeckId = nextDeckDefId++;
+            const deckDef = { [String(thisDeckId)]: { FaceURL: BAC_FACE, BackURL: BAC_BACK, NumWidth: 1, NumHeight: 1, BackIsHidden: true, UniqueBack: false, Type: 0 } };
+            Object.assign(allCustomDecks, deckDef);
             const costStr = typeof bac.cost === 'string' ? bac.cost : Object.entries(bac.cost).map(([k,v]) => `${v} ${k}`).join(', ');
             const desc = `[${bac.category}] Slot: ${bac.slot}\nCost: ${costStr}\nDP: ${bac.dp}\n\n${bac.text}${bac.special ? '\nSpecial: ' + bac.special : ''}`;
             const card = baseObj("CardCustom", bac.abbr, desc, 0, 0.1 * cards.length, 0);
@@ -139,13 +139,12 @@ objects.push(buildBACDeck());
 // ─── 3. CONSPIRE DECK (72 cards) ────────────────────────────────────
 function buildConspireDeck() {
     const cards = [];
-    let deckId = 200;  // starting deck definition ID (separate range from BAC)
     const allCustomDecks = {};
     gameData.conspire_cards.forEach(cc => {
-        const thisDeckId = deckId++;
-        const deckDef = { [String(thisDeckId)]: { FaceURL: CONSPIRE_FACE, BackURL: CONSPIRE_BACK, NumWidth: 1, NumHeight: 1, BackIsHidden: true, UniqueBack: false, Type: 0 } };
-        Object.assign(allCustomDecks, deckDef);
         for (let c = 0; c < cc.copies; c++) {
+            const thisDeckId = nextDeckDefId++;
+            const deckDef = { [String(thisDeckId)]: { FaceURL: CONSPIRE_FACE, BackURL: CONSPIRE_BACK, NumWidth: 1, NumHeight: 1, BackIsHidden: true, UniqueBack: false, Type: 0 } };
+            Object.assign(allCustomDecks, deckDef);
             const costStr = typeof cc.cost === 'string' ? cc.cost : Object.entries(cc.cost).map(([k,v]) => `${v} ${k}`).join(', ');
             const desc = `[${cc.timing}]\nCost: ${costStr}\n\n${cc.text}${cc.condition ? '\nCondition: ' + cc.condition : ''}`;
             const card = baseObj("CardCustom", cc.name, desc, 0, 0.1 * cards.length, 0);
