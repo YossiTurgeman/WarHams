@@ -21,17 +21,19 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 const luaScript = fs.readFileSync(path.join(__dirname, 'scripts', 'setup.lua'), 'utf8');
 
 // Card images — hosted on GitHub, unique face per card type
+// Cache-bust param forces TTS to re-download after image updates
+const CARD_VERSION = "v2";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
-const BAC_BACK = `${CARD_BASE}/bac_back.png`;
-const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png`;
+const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
+const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
 
 function bacFaceURL(abbr) {
     const slug = abbr.replace(/[^a-zA-Z0-9]/g, "_").toLowerCase();
-    return `${CARD_BASE}/bac_${slug}.png`;
+    return `${CARD_BASE}/bac_${slug}.png?${CARD_VERSION}`;
 }
 function conspireFaceURL(name) {
     const slug = name.replace(/[^a-zA-Z0-9]/g, "_").toLowerCase();
-    return `${CARD_BASE}/conspire_${slug}.png`;
+    return `${CARD_BASE}/conspire_${slug}.png?${CARD_VERSION}`;
 }
 
 // GUID generator — 6 hex chars
