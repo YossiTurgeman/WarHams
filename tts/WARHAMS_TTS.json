@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1775723862,
+  "EpochTime": 1775724526,
   "Date": "2026-04-09",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -93,7 +93,7 @@
     },
     {
       "GUID": "100065",
-      "Name": "Deck",
+      "Name": "DeckCustom",
       "Transform": {
         "posX": 10,
         "posY": 1.5,
@@ -136,109 +136,280 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "DeckIDs": [
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100
+        10000,
+        10000,
+        10000,
+        10000,
+        10000,
+        10100,
+        10100,
+        10100,
+        10100,
+        10100,
+        10200,
+        10200,
+        10200,
+        10200,
+        10200,
+        10300,
+        10300,
+        10300,
+        10300,
+        10300,
+        10400,
+        10400,
+        10400,
+        10400,
+        10400,
+        10500,
+        10500,
+        10500,
+        10500,
+        10500,
+        10600,
+        10600,
+        10600,
+        10600,
+        10600,
+        10700,
+        10700,
+        10700,
+        10700,
+        10700,
+        10800,
+        10800,
+        10800,
+        10800,
+        10800,
+        10900,
+        10900,
+        10900,
+        10900,
+        10900,
+        11000,
+        11000,
+        11000,
+        11000,
+        11000,
+        11100,
+        11100,
+        11100,
+        11100,
+        11100,
+        11200,
+        11200,
+        11200,
+        11200,
+        11200,
+        11300,
+        11300,
+        11300,
+        11300,
+        11300,
+        11400,
+        11400,
+        11400,
+        11400,
+        11400,
+        11500,
+        11500,
+        11500,
+        11500,
+        11500,
+        11600,
+        11600,
+        11600,
+        11600,
+        11600,
+        11700,
+        11700,
+        11700,
+        11700,
+        11700,
+        11800,
+        11800,
+        11800,
+        11800,
+        11800,
+        11900,
+        11900,
+        11900,
+        11900,
+        11900
       ],
       "CustomDeck": {
-        "1": {
+        "100": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "101": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "102": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "103": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "104": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "105": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "106": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "107": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "108": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "109": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "110": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "111": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "112": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "113": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "114": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "115": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "116": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "117": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "118": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "119": {
           "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
           "NumWidth": 1,
@@ -252,7 +423,7 @@
       "ContainedObjects": [
         {
           "GUID": "100001",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0,
@@ -294,9 +465,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10000,
           "CustomDeck": {
-            "1": {
+            "100": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -310,7 +481,7 @@
         },
         {
           "GUID": "100002",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.1,
@@ -352,9 +523,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10000,
           "CustomDeck": {
-            "1": {
+            "100": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -368,7 +539,7 @@
         },
         {
           "GUID": "100003",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.2,
@@ -410,9 +581,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10000,
           "CustomDeck": {
-            "1": {
+            "100": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -426,7 +597,7 @@
         },
         {
           "GUID": "100004",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.30000000000000004,
@@ -468,9 +639,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10000,
           "CustomDeck": {
-            "1": {
+            "100": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -484,7 +655,7 @@
         },
         {
           "GUID": "100005",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.4,
@@ -526,9 +697,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10000,
           "CustomDeck": {
-            "1": {
+            "100": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -542,7 +713,7 @@
         },
         {
           "GUID": "100006",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.5,
@@ -584,9 +755,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10100,
           "CustomDeck": {
-            "1": {
+            "101": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -600,7 +771,7 @@
         },
         {
           "GUID": "100007",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.6000000000000001,
@@ -642,9 +813,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10100,
           "CustomDeck": {
-            "1": {
+            "101": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -658,7 +829,7 @@
         },
         {
           "GUID": "100008",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.7000000000000001,
@@ -700,9 +871,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10100,
           "CustomDeck": {
-            "1": {
+            "101": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -716,7 +887,7 @@
         },
         {
           "GUID": "100009",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.8,
@@ -758,9 +929,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10100,
           "CustomDeck": {
-            "1": {
+            "101": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -774,7 +945,7 @@
         },
         {
           "GUID": "10000a",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.9,
@@ -816,9 +987,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10100,
           "CustomDeck": {
-            "1": {
+            "101": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -832,7 +1003,7 @@
         },
         {
           "GUID": "10000b",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1,
@@ -874,9 +1045,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10200,
           "CustomDeck": {
-            "1": {
+            "102": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -890,7 +1061,7 @@
         },
         {
           "GUID": "10000c",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.1,
@@ -932,9 +1103,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10200,
           "CustomDeck": {
-            "1": {
+            "102": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -948,7 +1119,7 @@
         },
         {
           "GUID": "10000d",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.2000000000000002,
@@ -990,9 +1161,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10200,
           "CustomDeck": {
-            "1": {
+            "102": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1006,7 +1177,7 @@
         },
         {
           "GUID": "10000e",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.3,
@@ -1048,9 +1219,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10200,
           "CustomDeck": {
-            "1": {
+            "102": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1064,7 +1235,7 @@
         },
         {
           "GUID": "10000f",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.4000000000000001,
@@ -1106,9 +1277,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10200,
           "CustomDeck": {
-            "1": {
+            "102": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1122,7 +1293,7 @@
         },
         {
           "GUID": "100010",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.5,
@@ -1164,9 +1335,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10300,
           "CustomDeck": {
-            "1": {
+            "103": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1180,7 +1351,7 @@
         },
         {
           "GUID": "100011",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.6,
@@ -1222,9 +1393,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10300,
           "CustomDeck": {
-            "1": {
+            "103": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1238,7 +1409,7 @@
         },
         {
           "GUID": "100012",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.7000000000000002,
@@ -1280,9 +1451,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10300,
           "CustomDeck": {
-            "1": {
+            "103": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1296,7 +1467,7 @@
         },
         {
           "GUID": "100013",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.8,
@@ -1338,9 +1509,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10300,
           "CustomDeck": {
-            "1": {
+            "103": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1354,7 +1525,7 @@
         },
         {
           "GUID": "100014",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.9000000000000001,
@@ -1396,9 +1567,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10300,
           "CustomDeck": {
-            "1": {
+            "103": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1412,7 +1583,7 @@
         },
         {
           "GUID": "100015",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2,
@@ -1454,9 +1625,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10400,
           "CustomDeck": {
-            "1": {
+            "104": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1470,7 +1641,7 @@
         },
         {
           "GUID": "100016",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.1,
@@ -1512,9 +1683,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10400,
           "CustomDeck": {
-            "1": {
+            "104": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1528,7 +1699,7 @@
         },
         {
           "GUID": "100017",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.2,
@@ -1570,9 +1741,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10400,
           "CustomDeck": {
-            "1": {
+            "104": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1586,7 +1757,7 @@
         },
         {
           "GUID": "100018",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.3000000000000003,
@@ -1628,9 +1799,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10400,
           "CustomDeck": {
-            "1": {
+            "104": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1644,7 +1815,7 @@
         },
         {
           "GUID": "100019",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.4000000000000004,
@@ -1686,9 +1857,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10400,
           "CustomDeck": {
-            "1": {
+            "104": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1702,7 +1873,7 @@
         },
         {
           "GUID": "10001a",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.5,
@@ -1744,9 +1915,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10500,
           "CustomDeck": {
-            "1": {
+            "105": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1760,7 +1931,7 @@
         },
         {
           "GUID": "10001b",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.6,
@@ -1802,9 +1973,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10500,
           "CustomDeck": {
-            "1": {
+            "105": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1818,7 +1989,7 @@
         },
         {
           "GUID": "10001c",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.7,
@@ -1860,9 +2031,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10500,
           "CustomDeck": {
-            "1": {
+            "105": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1876,7 +2047,7 @@
         },
         {
           "GUID": "10001d",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.8000000000000003,
@@ -1918,9 +2089,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10500,
           "CustomDeck": {
-            "1": {
+            "105": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1934,7 +2105,7 @@
         },
         {
           "GUID": "10001e",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.9000000000000004,
@@ -1976,9 +2147,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10500,
           "CustomDeck": {
-            "1": {
+            "105": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -1992,7 +2163,7 @@
         },
         {
           "GUID": "10001f",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3,
@@ -2034,9 +2205,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10600,
           "CustomDeck": {
-            "1": {
+            "106": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2050,7 +2221,7 @@
         },
         {
           "GUID": "100020",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.1,
@@ -2092,9 +2263,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10600,
           "CustomDeck": {
-            "1": {
+            "106": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2108,7 +2279,7 @@
         },
         {
           "GUID": "100021",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.2,
@@ -2150,9 +2321,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10600,
           "CustomDeck": {
-            "1": {
+            "106": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2166,7 +2337,7 @@
         },
         {
           "GUID": "100022",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.3000000000000003,
@@ -2208,9 +2379,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10600,
           "CustomDeck": {
-            "1": {
+            "106": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2224,7 +2395,7 @@
         },
         {
           "GUID": "100023",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.4000000000000004,
@@ -2266,9 +2437,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10600,
           "CustomDeck": {
-            "1": {
+            "106": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2282,7 +2453,7 @@
         },
         {
           "GUID": "100024",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.5,
@@ -2324,9 +2495,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10700,
           "CustomDeck": {
-            "1": {
+            "107": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2340,7 +2511,7 @@
         },
         {
           "GUID": "100025",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.6,
@@ -2382,9 +2553,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10700,
           "CustomDeck": {
-            "1": {
+            "107": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2398,7 +2569,7 @@
         },
         {
           "GUID": "100026",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.7,
@@ -2440,9 +2611,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10700,
           "CustomDeck": {
-            "1": {
+            "107": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2456,7 +2627,7 @@
         },
         {
           "GUID": "100027",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.8000000000000003,
@@ -2498,9 +2669,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10700,
           "CustomDeck": {
-            "1": {
+            "107": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2514,7 +2685,7 @@
         },
         {
           "GUID": "100028",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.9000000000000004,
@@ -2556,9 +2727,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10700,
           "CustomDeck": {
-            "1": {
+            "107": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2572,7 +2743,7 @@
         },
         {
           "GUID": "100029",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4,
@@ -2614,9 +2785,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10800,
           "CustomDeck": {
-            "1": {
+            "108": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2630,7 +2801,7 @@
         },
         {
           "GUID": "10002a",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.1000000000000005,
@@ -2672,9 +2843,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10800,
           "CustomDeck": {
-            "1": {
+            "108": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2688,7 +2859,7 @@
         },
         {
           "GUID": "10002b",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.2,
@@ -2730,9 +2901,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10800,
           "CustomDeck": {
-            "1": {
+            "108": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2746,7 +2917,7 @@
         },
         {
           "GUID": "10002c",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.3,
@@ -2788,9 +2959,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10800,
           "CustomDeck": {
-            "1": {
+            "108": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2804,7 +2975,7 @@
         },
         {
           "GUID": "10002d",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.4,
@@ -2846,9 +3017,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10800,
           "CustomDeck": {
-            "1": {
+            "108": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2862,7 +3033,7 @@
         },
         {
           "GUID": "10002e",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.5,
@@ -2904,9 +3075,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10900,
           "CustomDeck": {
-            "1": {
+            "109": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2920,7 +3091,7 @@
         },
         {
           "GUID": "10002f",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.6000000000000005,
@@ -2962,9 +3133,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10900,
           "CustomDeck": {
-            "1": {
+            "109": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -2978,7 +3149,7 @@
         },
         {
           "GUID": "100030",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.7,
@@ -3020,9 +3191,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10900,
           "CustomDeck": {
-            "1": {
+            "109": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3036,7 +3207,7 @@
         },
         {
           "GUID": "100031",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.800000000000001,
@@ -3078,9 +3249,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10900,
           "CustomDeck": {
-            "1": {
+            "109": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3094,7 +3265,7 @@
         },
         {
           "GUID": "100032",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.9,
@@ -3136,9 +3307,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 10900,
           "CustomDeck": {
-            "1": {
+            "109": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3152,7 +3323,7 @@
         },
         {
           "GUID": "100033",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5,
@@ -3194,9 +3365,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11000,
           "CustomDeck": {
-            "1": {
+            "110": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3210,7 +3381,7 @@
         },
         {
           "GUID": "100034",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.1000000000000005,
@@ -3252,9 +3423,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11000,
           "CustomDeck": {
-            "1": {
+            "110": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3268,7 +3439,7 @@
         },
         {
           "GUID": "100035",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.2,
@@ -3310,9 +3481,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11000,
           "CustomDeck": {
-            "1": {
+            "110": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3326,7 +3497,7 @@
         },
         {
           "GUID": "100036",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.300000000000001,
@@ -3368,9 +3539,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11000,
           "CustomDeck": {
-            "1": {
+            "110": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3384,7 +3555,7 @@
         },
         {
           "GUID": "100037",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.4,
@@ -3426,9 +3597,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11000,
           "CustomDeck": {
-            "1": {
+            "110": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3442,7 +3613,7 @@
         },
         {
           "GUID": "100038",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.5,
@@ -3484,9 +3655,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11100,
           "CustomDeck": {
-            "1": {
+            "111": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3500,7 +3671,7 @@
         },
         {
           "GUID": "100039",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.6000000000000005,
@@ -3542,9 +3713,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11100,
           "CustomDeck": {
-            "1": {
+            "111": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3558,7 +3729,7 @@
         },
         {
           "GUID": "10003a",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.7,
@@ -3600,9 +3771,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11100,
           "CustomDeck": {
-            "1": {
+            "111": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3616,7 +3787,7 @@
         },
         {
           "GUID": "10003b",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.800000000000001,
@@ -3658,9 +3829,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11100,
           "CustomDeck": {
-            "1": {
+            "111": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3674,7 +3845,7 @@
         },
         {
           "GUID": "10003c",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.9,
@@ -3716,9 +3887,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11100,
           "CustomDeck": {
-            "1": {
+            "111": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3732,7 +3903,7 @@
         },
         {
           "GUID": "10003d",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6,
@@ -3774,9 +3945,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11200,
           "CustomDeck": {
-            "1": {
+            "112": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3790,7 +3961,7 @@
         },
         {
           "GUID": "10003e",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.1000000000000005,
@@ -3832,9 +4003,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11200,
           "CustomDeck": {
-            "1": {
+            "112": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3848,7 +4019,7 @@
         },
         {
           "GUID": "10003f",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.2,
@@ -3890,9 +4061,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11200,
           "CustomDeck": {
-            "1": {
+            "112": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3906,7 +4077,7 @@
         },
         {
           "GUID": "100040",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.300000000000001,
@@ -3948,9 +4119,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11200,
           "CustomDeck": {
-            "1": {
+            "112": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -3964,7 +4135,7 @@
         },
         {
           "GUID": "100041",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.4,
@@ -4006,9 +4177,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11200,
           "CustomDeck": {
-            "1": {
+            "112": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4022,7 +4193,7 @@
         },
         {
           "GUID": "100042",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.5,
@@ -4064,9 +4235,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11300,
           "CustomDeck": {
-            "1": {
+            "113": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4080,7 +4251,7 @@
         },
         {
           "GUID": "100043",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.6000000000000005,
@@ -4122,9 +4293,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11300,
           "CustomDeck": {
-            "1": {
+            "113": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4138,7 +4309,7 @@
         },
         {
           "GUID": "100044",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.7,
@@ -4180,9 +4351,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11300,
           "CustomDeck": {
-            "1": {
+            "113": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4196,7 +4367,7 @@
         },
         {
           "GUID": "100045",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.800000000000001,
@@ -4238,9 +4409,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11300,
           "CustomDeck": {
-            "1": {
+            "113": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4254,7 +4425,7 @@
         },
         {
           "GUID": "100046",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.9,
@@ -4296,9 +4467,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11300,
           "CustomDeck": {
-            "1": {
+            "113": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4312,7 +4483,7 @@
         },
         {
           "GUID": "100047",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 7,
@@ -4354,9 +4525,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11400,
           "CustomDeck": {
-            "1": {
+            "114": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4370,7 +4541,7 @@
         },
         {
           "GUID": "100048",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 7.1000000000000005,
@@ -4412,9 +4583,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11400,
           "CustomDeck": {
-            "1": {
+            "114": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4428,7 +4599,7 @@
         },
         {
           "GUID": "100049",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 7.2,
@@ -4470,9 +4641,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11400,
           "CustomDeck": {
-            "1": {
+            "114": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4486,7 +4657,7 @@
         },
         {
           "GUID": "10004a",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 7.300000000000001,
@@ -4528,9 +4699,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11400,
           "CustomDeck": {
-            "1": {
+            "114": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4544,7 +4715,7 @@
         },
         {
           "GUID": "10004b",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 7.4,
@@ -4586,9 +4757,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11400,
           "CustomDeck": {
-            "1": {
+            "114": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4602,7 +4773,7 @@
         },
         {
           "GUID": "10004c",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 7.5,
@@ -4644,9 +4815,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11500,
           "CustomDeck": {
-            "1": {
+            "115": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4660,7 +4831,7 @@
         },
         {
           "GUID": "10004d",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 7.6000000000000005,
@@ -4702,9 +4873,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11500,
           "CustomDeck": {
-            "1": {
+            "115": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4718,7 +4889,7 @@
         },
         {
           "GUID": "10004e",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 7.7,
@@ -4760,9 +4931,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11500,
           "CustomDeck": {
-            "1": {
+            "115": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4776,7 +4947,7 @@
         },
         {
           "GUID": "10004f",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 7.800000000000001,
@@ -4818,9 +4989,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11500,
           "CustomDeck": {
-            "1": {
+            "115": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4834,7 +5005,7 @@
         },
         {
           "GUID": "100050",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 7.9,
@@ -4876,9 +5047,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11500,
           "CustomDeck": {
-            "1": {
+            "115": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4892,7 +5063,7 @@
         },
         {
           "GUID": "100051",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 8,
@@ -4934,9 +5105,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11600,
           "CustomDeck": {
-            "1": {
+            "116": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -4950,7 +5121,7 @@
         },
         {
           "GUID": "100052",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 8.1,
@@ -4992,9 +5163,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11600,
           "CustomDeck": {
-            "1": {
+            "116": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5008,7 +5179,7 @@
         },
         {
           "GUID": "100053",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 8.200000000000001,
@@ -5050,9 +5221,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11600,
           "CustomDeck": {
-            "1": {
+            "116": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5066,7 +5237,7 @@
         },
         {
           "GUID": "100054",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 8.3,
@@ -5108,9 +5279,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11600,
           "CustomDeck": {
-            "1": {
+            "116": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5124,7 +5295,7 @@
         },
         {
           "GUID": "100055",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 8.4,
@@ -5166,9 +5337,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11600,
           "CustomDeck": {
-            "1": {
+            "116": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5182,7 +5353,7 @@
         },
         {
           "GUID": "100056",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 8.5,
@@ -5224,9 +5395,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11700,
           "CustomDeck": {
-            "1": {
+            "117": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5240,7 +5411,7 @@
         },
         {
           "GUID": "100057",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 8.6,
@@ -5282,9 +5453,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11700,
           "CustomDeck": {
-            "1": {
+            "117": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5298,7 +5469,7 @@
         },
         {
           "GUID": "100058",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 8.700000000000001,
@@ -5340,9 +5511,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11700,
           "CustomDeck": {
-            "1": {
+            "117": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5356,7 +5527,7 @@
         },
         {
           "GUID": "100059",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 8.8,
@@ -5398,9 +5569,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11700,
           "CustomDeck": {
-            "1": {
+            "117": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5414,7 +5585,7 @@
         },
         {
           "GUID": "10005a",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 8.9,
@@ -5456,9 +5627,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11700,
           "CustomDeck": {
-            "1": {
+            "117": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5472,7 +5643,7 @@
         },
         {
           "GUID": "10005b",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 9,
@@ -5514,9 +5685,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11800,
           "CustomDeck": {
-            "1": {
+            "118": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5530,7 +5701,7 @@
         },
         {
           "GUID": "10005c",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 9.1,
@@ -5572,9 +5743,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11800,
           "CustomDeck": {
-            "1": {
+            "118": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5588,7 +5759,7 @@
         },
         {
           "GUID": "10005d",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 9.200000000000001,
@@ -5630,9 +5801,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11800,
           "CustomDeck": {
-            "1": {
+            "118": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5646,7 +5817,7 @@
         },
         {
           "GUID": "10005e",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 9.3,
@@ -5688,9 +5859,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11800,
           "CustomDeck": {
-            "1": {
+            "118": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5704,7 +5875,7 @@
         },
         {
           "GUID": "10005f",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 9.4,
@@ -5746,9 +5917,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11800,
           "CustomDeck": {
-            "1": {
+            "118": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5762,7 +5933,7 @@
         },
         {
           "GUID": "100060",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 9.5,
@@ -5804,9 +5975,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11900,
           "CustomDeck": {
-            "1": {
+            "119": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5820,7 +5991,7 @@
         },
         {
           "GUID": "100061",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 9.600000000000001,
@@ -5862,9 +6033,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11900,
           "CustomDeck": {
-            "1": {
+            "119": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5878,7 +6049,7 @@
         },
         {
           "GUID": "100062",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 9.700000000000001,
@@ -5920,9 +6091,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11900,
           "CustomDeck": {
-            "1": {
+            "119": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5936,7 +6107,7 @@
         },
         {
           "GUID": "100063",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 9.8,
@@ -5978,9 +6149,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11900,
           "CustomDeck": {
-            "1": {
+            "119": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -5994,7 +6165,7 @@
         },
         {
           "GUID": "100064",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 9.9,
@@ -6036,9 +6207,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 100,
+          "CardID": 11900,
           "CustomDeck": {
-            "1": {
+            "119": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png",
               "NumWidth": 1,
@@ -6054,7 +6225,7 @@
     },
     {
       "GUID": "1000ae",
-      "Name": "Deck",
+      "Name": "DeckCustom",
       "Transform": {
         "posX": -10,
         "posY": 1.5,
@@ -6097,81 +6268,288 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "DeckIDs": [
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200,
-        200
+        20000,
+        20000,
+        20000,
+        20100,
+        20100,
+        20100,
+        20200,
+        20200,
+        20200,
+        20300,
+        20300,
+        20300,
+        20400,
+        20400,
+        20400,
+        20500,
+        20500,
+        20500,
+        20600,
+        20600,
+        20600,
+        20700,
+        20700,
+        20700,
+        20800,
+        20800,
+        20800,
+        20900,
+        20900,
+        20900,
+        21000,
+        21000,
+        21000,
+        21100,
+        21100,
+        21100,
+        21200,
+        21200,
+        21200,
+        21300,
+        21300,
+        21300,
+        21400,
+        21400,
+        21400,
+        21500,
+        21500,
+        21500,
+        21600,
+        21600,
+        21600,
+        21700,
+        21700,
+        21700,
+        21800,
+        21800,
+        21800,
+        21900,
+        21900,
+        21900,
+        22000,
+        22000,
+        22000,
+        22100,
+        22100,
+        22100,
+        22200,
+        22200,
+        22200,
+        22300,
+        22300,
+        22300
       ],
       "CustomDeck": {
-        "2": {
+        "200": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "201": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "202": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "203": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "204": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "205": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "206": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "207": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "208": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "209": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "210": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "211": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "212": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "213": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "214": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "215": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "216": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "217": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "218": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "219": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "220": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "221": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "222": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "223": {
           "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
           "NumWidth": 1,
@@ -6185,7 +6563,7 @@
       "ContainedObjects": [
         {
           "GUID": "100066",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0,
@@ -6227,9 +6605,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20000,
           "CustomDeck": {
-            "2": {
+            "200": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -6243,7 +6621,7 @@
         },
         {
           "GUID": "100067",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.1,
@@ -6285,9 +6663,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20000,
           "CustomDeck": {
-            "2": {
+            "200": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -6301,7 +6679,7 @@
         },
         {
           "GUID": "100068",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.2,
@@ -6343,9 +6721,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20000,
           "CustomDeck": {
-            "2": {
+            "200": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -6359,7 +6737,7 @@
         },
         {
           "GUID": "100069",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.30000000000000004,
@@ -6401,9 +6779,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20100,
           "CustomDeck": {
-            "2": {
+            "201": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -6417,7 +6795,7 @@
         },
         {
           "GUID": "10006a",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.4,
@@ -6459,9 +6837,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20100,
           "CustomDeck": {
-            "2": {
+            "201": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -6475,7 +6853,7 @@
         },
         {
           "GUID": "10006b",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.5,
@@ -6517,9 +6895,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20100,
           "CustomDeck": {
-            "2": {
+            "201": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -6533,7 +6911,7 @@
         },
         {
           "GUID": "10006c",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.6000000000000001,
@@ -6575,9 +6953,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20200,
           "CustomDeck": {
-            "2": {
+            "202": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -6591,7 +6969,7 @@
         },
         {
           "GUID": "10006d",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.7000000000000001,
@@ -6633,9 +7011,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20200,
           "CustomDeck": {
-            "2": {
+            "202": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -6649,7 +7027,7 @@
         },
         {
           "GUID": "10006e",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.8,
@@ -6691,9 +7069,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20200,
           "CustomDeck": {
-            "2": {
+            "202": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -6707,7 +7085,7 @@
         },
         {
           "GUID": "10006f",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0.9,
@@ -6749,9 +7127,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20300,
           "CustomDeck": {
-            "2": {
+            "203": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -6765,7 +7143,7 @@
         },
         {
           "GUID": "100070",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1,
@@ -6807,9 +7185,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20300,
           "CustomDeck": {
-            "2": {
+            "203": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -6823,7 +7201,7 @@
         },
         {
           "GUID": "100071",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.1,
@@ -6865,9 +7243,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20300,
           "CustomDeck": {
-            "2": {
+            "203": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -6881,7 +7259,7 @@
         },
         {
           "GUID": "100072",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.2000000000000002,
@@ -6923,9 +7301,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20400,
           "CustomDeck": {
-            "2": {
+            "204": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -6939,7 +7317,7 @@
         },
         {
           "GUID": "100073",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.3,
@@ -6981,9 +7359,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20400,
           "CustomDeck": {
-            "2": {
+            "204": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -6997,7 +7375,7 @@
         },
         {
           "GUID": "100074",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.4000000000000001,
@@ -7039,9 +7417,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20400,
           "CustomDeck": {
-            "2": {
+            "204": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7055,7 +7433,7 @@
         },
         {
           "GUID": "100075",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.5,
@@ -7097,9 +7475,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20500,
           "CustomDeck": {
-            "2": {
+            "205": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7113,7 +7491,7 @@
         },
         {
           "GUID": "100076",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.6,
@@ -7155,9 +7533,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20500,
           "CustomDeck": {
-            "2": {
+            "205": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7171,7 +7549,7 @@
         },
         {
           "GUID": "100077",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.7000000000000002,
@@ -7213,9 +7591,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20500,
           "CustomDeck": {
-            "2": {
+            "205": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7229,7 +7607,7 @@
         },
         {
           "GUID": "100078",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.8,
@@ -7271,9 +7649,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20600,
           "CustomDeck": {
-            "2": {
+            "206": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7287,7 +7665,7 @@
         },
         {
           "GUID": "100079",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 1.9000000000000001,
@@ -7329,9 +7707,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20600,
           "CustomDeck": {
-            "2": {
+            "206": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7345,7 +7723,7 @@
         },
         {
           "GUID": "10007a",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2,
@@ -7387,9 +7765,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20600,
           "CustomDeck": {
-            "2": {
+            "206": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7403,7 +7781,7 @@
         },
         {
           "GUID": "10007b",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.1,
@@ -7445,9 +7823,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20700,
           "CustomDeck": {
-            "2": {
+            "207": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7461,7 +7839,7 @@
         },
         {
           "GUID": "10007c",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.2,
@@ -7503,9 +7881,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20700,
           "CustomDeck": {
-            "2": {
+            "207": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7519,7 +7897,7 @@
         },
         {
           "GUID": "10007d",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.3000000000000003,
@@ -7561,9 +7939,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20700,
           "CustomDeck": {
-            "2": {
+            "207": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7577,7 +7955,7 @@
         },
         {
           "GUID": "10007e",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.4000000000000004,
@@ -7619,9 +7997,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20800,
           "CustomDeck": {
-            "2": {
+            "208": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7635,7 +8013,7 @@
         },
         {
           "GUID": "10007f",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.5,
@@ -7677,9 +8055,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20800,
           "CustomDeck": {
-            "2": {
+            "208": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7693,7 +8071,7 @@
         },
         {
           "GUID": "100080",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.6,
@@ -7735,9 +8113,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20800,
           "CustomDeck": {
-            "2": {
+            "208": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7751,7 +8129,7 @@
         },
         {
           "GUID": "100081",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.7,
@@ -7793,9 +8171,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20900,
           "CustomDeck": {
-            "2": {
+            "209": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7809,7 +8187,7 @@
         },
         {
           "GUID": "100082",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.8000000000000003,
@@ -7851,9 +8229,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20900,
           "CustomDeck": {
-            "2": {
+            "209": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7867,7 +8245,7 @@
         },
         {
           "GUID": "100083",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 2.9000000000000004,
@@ -7909,9 +8287,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 20900,
           "CustomDeck": {
-            "2": {
+            "209": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7925,7 +8303,7 @@
         },
         {
           "GUID": "100084",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3,
@@ -7967,9 +8345,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21000,
           "CustomDeck": {
-            "2": {
+            "210": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -7983,7 +8361,7 @@
         },
         {
           "GUID": "100085",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.1,
@@ -8025,9 +8403,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21000,
           "CustomDeck": {
-            "2": {
+            "210": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8041,7 +8419,7 @@
         },
         {
           "GUID": "100086",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.2,
@@ -8083,9 +8461,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21000,
           "CustomDeck": {
-            "2": {
+            "210": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8099,7 +8477,7 @@
         },
         {
           "GUID": "100087",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.3000000000000003,
@@ -8141,9 +8519,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21100,
           "CustomDeck": {
-            "2": {
+            "211": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8157,7 +8535,7 @@
         },
         {
           "GUID": "100088",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.4000000000000004,
@@ -8199,9 +8577,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21100,
           "CustomDeck": {
-            "2": {
+            "211": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8215,7 +8593,7 @@
         },
         {
           "GUID": "100089",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.5,
@@ -8257,9 +8635,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21100,
           "CustomDeck": {
-            "2": {
+            "211": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8273,7 +8651,7 @@
         },
         {
           "GUID": "10008a",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.6,
@@ -8315,9 +8693,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21200,
           "CustomDeck": {
-            "2": {
+            "212": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8331,7 +8709,7 @@
         },
         {
           "GUID": "10008b",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.7,
@@ -8373,9 +8751,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21200,
           "CustomDeck": {
-            "2": {
+            "212": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8389,7 +8767,7 @@
         },
         {
           "GUID": "10008c",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.8000000000000003,
@@ -8431,9 +8809,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21200,
           "CustomDeck": {
-            "2": {
+            "212": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8447,7 +8825,7 @@
         },
         {
           "GUID": "10008d",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 3.9000000000000004,
@@ -8489,9 +8867,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21300,
           "CustomDeck": {
-            "2": {
+            "213": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8505,7 +8883,7 @@
         },
         {
           "GUID": "10008e",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4,
@@ -8547,9 +8925,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21300,
           "CustomDeck": {
-            "2": {
+            "213": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8563,7 +8941,7 @@
         },
         {
           "GUID": "10008f",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.1000000000000005,
@@ -8605,9 +8983,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21300,
           "CustomDeck": {
-            "2": {
+            "213": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8621,7 +8999,7 @@
         },
         {
           "GUID": "100090",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.2,
@@ -8663,9 +9041,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21400,
           "CustomDeck": {
-            "2": {
+            "214": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8679,7 +9057,7 @@
         },
         {
           "GUID": "100091",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.3,
@@ -8721,9 +9099,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21400,
           "CustomDeck": {
-            "2": {
+            "214": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8737,7 +9115,7 @@
         },
         {
           "GUID": "100092",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.4,
@@ -8779,9 +9157,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21400,
           "CustomDeck": {
-            "2": {
+            "214": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8795,7 +9173,7 @@
         },
         {
           "GUID": "100093",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.5,
@@ -8837,9 +9215,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21500,
           "CustomDeck": {
-            "2": {
+            "215": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8853,7 +9231,7 @@
         },
         {
           "GUID": "100094",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.6000000000000005,
@@ -8895,9 +9273,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21500,
           "CustomDeck": {
-            "2": {
+            "215": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8911,7 +9289,7 @@
         },
         {
           "GUID": "100095",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.7,
@@ -8953,9 +9331,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21500,
           "CustomDeck": {
-            "2": {
+            "215": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -8969,7 +9347,7 @@
         },
         {
           "GUID": "100096",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.800000000000001,
@@ -9011,9 +9389,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21600,
           "CustomDeck": {
-            "2": {
+            "216": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9027,7 +9405,7 @@
         },
         {
           "GUID": "100097",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 4.9,
@@ -9069,9 +9447,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21600,
           "CustomDeck": {
-            "2": {
+            "216": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9085,7 +9463,7 @@
         },
         {
           "GUID": "100098",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5,
@@ -9127,9 +9505,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21600,
           "CustomDeck": {
-            "2": {
+            "216": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9143,7 +9521,7 @@
         },
         {
           "GUID": "100099",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.1000000000000005,
@@ -9185,9 +9563,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21700,
           "CustomDeck": {
-            "2": {
+            "217": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9201,7 +9579,7 @@
         },
         {
           "GUID": "10009a",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.2,
@@ -9243,9 +9621,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21700,
           "CustomDeck": {
-            "2": {
+            "217": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9259,7 +9637,7 @@
         },
         {
           "GUID": "10009b",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.300000000000001,
@@ -9301,9 +9679,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21700,
           "CustomDeck": {
-            "2": {
+            "217": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9317,7 +9695,7 @@
         },
         {
           "GUID": "10009c",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.4,
@@ -9359,9 +9737,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21800,
           "CustomDeck": {
-            "2": {
+            "218": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9375,7 +9753,7 @@
         },
         {
           "GUID": "10009d",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.5,
@@ -9417,9 +9795,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21800,
           "CustomDeck": {
-            "2": {
+            "218": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9433,7 +9811,7 @@
         },
         {
           "GUID": "10009e",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.6000000000000005,
@@ -9475,9 +9853,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21800,
           "CustomDeck": {
-            "2": {
+            "218": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9491,7 +9869,7 @@
         },
         {
           "GUID": "10009f",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.7,
@@ -9533,9 +9911,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21900,
           "CustomDeck": {
-            "2": {
+            "219": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9549,7 +9927,7 @@
         },
         {
           "GUID": "1000a0",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.800000000000001,
@@ -9591,9 +9969,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21900,
           "CustomDeck": {
-            "2": {
+            "219": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9607,7 +9985,7 @@
         },
         {
           "GUID": "1000a1",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 5.9,
@@ -9649,9 +10027,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 21900,
           "CustomDeck": {
-            "2": {
+            "219": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9665,7 +10043,7 @@
         },
         {
           "GUID": "1000a2",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6,
@@ -9707,9 +10085,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 22000,
           "CustomDeck": {
-            "2": {
+            "220": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9723,7 +10101,7 @@
         },
         {
           "GUID": "1000a3",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.1000000000000005,
@@ -9765,9 +10143,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 22000,
           "CustomDeck": {
-            "2": {
+            "220": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9781,7 +10159,7 @@
         },
         {
           "GUID": "1000a4",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.2,
@@ -9823,9 +10201,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 22000,
           "CustomDeck": {
-            "2": {
+            "220": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9839,7 +10217,7 @@
         },
         {
           "GUID": "1000a5",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.300000000000001,
@@ -9881,9 +10259,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 22100,
           "CustomDeck": {
-            "2": {
+            "221": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9897,7 +10275,7 @@
         },
         {
           "GUID": "1000a6",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.4,
@@ -9939,9 +10317,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 22100,
           "CustomDeck": {
-            "2": {
+            "221": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -9955,7 +10333,7 @@
         },
         {
           "GUID": "1000a7",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.5,
@@ -9997,9 +10375,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 22100,
           "CustomDeck": {
-            "2": {
+            "221": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -10013,7 +10391,7 @@
         },
         {
           "GUID": "1000a8",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.6000000000000005,
@@ -10055,9 +10433,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 22200,
           "CustomDeck": {
-            "2": {
+            "222": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -10071,7 +10449,7 @@
         },
         {
           "GUID": "1000a9",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.7,
@@ -10113,9 +10491,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 22200,
           "CustomDeck": {
-            "2": {
+            "222": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -10129,7 +10507,7 @@
         },
         {
           "GUID": "1000aa",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.800000000000001,
@@ -10171,9 +10549,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 22200,
           "CustomDeck": {
-            "2": {
+            "222": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -10187,7 +10565,7 @@
         },
         {
           "GUID": "1000ab",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 6.9,
@@ -10229,9 +10607,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 22300,
           "CustomDeck": {
-            "2": {
+            "223": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -10245,7 +10623,7 @@
         },
         {
           "GUID": "1000ac",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 7,
@@ -10287,9 +10665,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 22300,
           "CustomDeck": {
-            "2": {
+            "223": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,
@@ -10303,7 +10681,7 @@
         },
         {
           "GUID": "1000ad",
-          "Name": "Card",
+          "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 7.1000000000000005,
@@ -10345,9 +10723,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "CardID": 200,
+          "CardID": 22300,
           "CustomDeck": {
-            "2": {
+            "223": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_face.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png",
               "NumWidth": 1,

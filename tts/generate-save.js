@@ -103,14 +103,19 @@ objects.push(setupPanel);
 
 // ─── 2. BAC DECK (100 cards) ─────────────────────────────────────────
 function buildBACDeck() {
-    const deckDef = { "1": { FaceURL: BAC_FACE, BackURL: BAC_BACK, NumWidth: 1, NumHeight: 1, BackIsHidden: true, UniqueBack: false, Type: 0 } };
     const cards = [];
+    let deckId = 100;  // starting deck definition ID
+    const allCustomDecks = {};
     gameData.basic_armament_cards.forEach(bac => {
+        // Each unique BAC type gets its own deck definition (same image, but unique ID)
+        const thisDeckId = deckId++;
+        const deckDef = { [String(thisDeckId)]: { FaceURL: BAC_FACE, BackURL: BAC_BACK, NumWidth: 1, NumHeight: 1, BackIsHidden: true, UniqueBack: false, Type: 0 } };
+        Object.assign(allCustomDecks, deckDef);
         for (let c = 0; c < bac.copies; c++) {
             const costStr = typeof bac.cost === 'string' ? bac.cost : Object.entries(bac.cost).map(([k,v]) => `${v} ${k}`).join(', ');
             const desc = `[${bac.category}] Slot: ${bac.slot}\nCost: ${costStr}\nDP: ${bac.dp}\n\n${bac.text}${bac.special ? '\nSpecial: ' + bac.special : ''}`;
-            const card = baseObj("Card", bac.abbr, desc, 0, 0.1 * cards.length, 0);
-            card.CardID = 100;
+            const card = baseObj("CardCustom", bac.abbr, desc, 0, 0.1 * cards.length, 0);
+            card.CardID = thisDeckId * 100;
             card.CustomDeck = deckDef;
             card.SidewaysCard = false;
             card.HideWhenFaceDown = true;
@@ -118,11 +123,11 @@ function buildBACDeck() {
             cards.push(card);
         }
     });
-    const deck = baseObj("Deck", "BAC Deck",
+    const deck = baseObj("DeckCustom", "BAC Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards\nDraw 3 per player, then draft.\nHover cards to see stats.`,
         10, 1.5, -6, { color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
-    deck.CustomDeck = deckDef;
+    deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
     deck.Hands = true;
     deck.SidewaysCard = false;
@@ -133,14 +138,18 @@ objects.push(buildBACDeck());
 
 // ─── 3. CONSPIRE DECK (72 cards) ────────────────────────────────────
 function buildConspireDeck() {
-    const deckDef = { "2": { FaceURL: CONSPIRE_FACE, BackURL: CONSPIRE_BACK, NumWidth: 1, NumHeight: 1, BackIsHidden: true, UniqueBack: false, Type: 0 } };
     const cards = [];
+    let deckId = 200;  // starting deck definition ID (separate range from BAC)
+    const allCustomDecks = {};
     gameData.conspire_cards.forEach(cc => {
+        const thisDeckId = deckId++;
+        const deckDef = { [String(thisDeckId)]: { FaceURL: CONSPIRE_FACE, BackURL: CONSPIRE_BACK, NumWidth: 1, NumHeight: 1, BackIsHidden: true, UniqueBack: false, Type: 0 } };
+        Object.assign(allCustomDecks, deckDef);
         for (let c = 0; c < cc.copies; c++) {
             const costStr = typeof cc.cost === 'string' ? cc.cost : Object.entries(cc.cost).map(([k,v]) => `${v} ${k}`).join(', ');
             const desc = `[${cc.timing}]\nCost: ${costStr}\n\n${cc.text}${cc.condition ? '\nCondition: ' + cc.condition : ''}`;
-            const card = baseObj("Card", cc.name, desc, 0, 0.1 * cards.length, 0);
-            card.CardID = 200;
+            const card = baseObj("CardCustom", cc.name, desc, 0, 0.1 * cards.length, 0);
+            card.CardID = thisDeckId * 100;
             card.CustomDeck = deckDef;
             card.SidewaysCard = false;
             card.HideWhenFaceDown = true;
@@ -148,11 +157,11 @@ function buildConspireDeck() {
             cards.push(card);
         }
     });
-    const deck = baseObj("Deck", "Conspire Deck",
+    const deck = baseObj("DeckCustom", "Conspire Deck",
         `Conspire Cards — ${gameData.deck_counts.total_conspire_cards} cards\nForfeit Movement or Combat to draw 1.\nHover cards to see effects.`,
         -10, 1.5, -6, { color: { r: 0.3, g: 0.2, b: 0.5 } });
     deck.DeckIDs = cards.map(c => c.CardID);
-    deck.CustomDeck = deckDef;
+    deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
     deck.Hands = true;
     deck.SidewaysCard = false;
