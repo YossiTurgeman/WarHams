@@ -20,12 +20,12 @@ const path = require('path');
 const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design', 'game-data.json'), 'utf8'));
 const luaScript = fs.readFileSync(path.join(__dirname, 'scripts', 'setup.lua'), 'utf8');
 
-// Card images (hosted on GitHub for TTS compatibility)
-const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
-const BAC_FACE = `${CARD_BASE}/bac_face.png`;
-const BAC_BACK = `${CARD_BASE}/bac_back.png`;
-const CONSPIRE_FACE = `${CARD_BASE}/conspire_face.png`;
-const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png`;
+// Card images — using known-working imgur URLs that TTS can load
+// (placeholder card backs from user's working TTS saves)
+const BAC_FACE = "https://i.imgur.com/iI6SISE.jpg";
+const BAC_BACK = "https://i.imgur.com/DFp70rc.png";
+const CONSPIRE_FACE = "https://i.imgur.com/G6AhzVZ.jpg";
+const CONSPIRE_BACK = "https://i.imgur.com/DFp70rc.png";
 
 // GUID generator — 6 hex chars
 let guidCounter = 0x100000;
@@ -123,7 +123,7 @@ function buildBACDeck() {
             cards.push(card);
         }
     });
-    const deck = baseObj("DeckCustom", "BAC Deck",
+    const deck = baseObj("Deck", "BAC Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards\nDraw 3 per player, then draft.\nHover cards to see stats.`,
         10, 1.5, -6, { color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
@@ -157,7 +157,7 @@ function buildConspireDeck() {
             cards.push(card);
         }
     });
-    const deck = baseObj("DeckCustom", "Conspire Deck",
+    const deck = baseObj("Deck", "Conspire Deck",
         `Conspire Cards — ${gameData.deck_counts.total_conspire_cards} cards\nForfeit Movement or Combat to draw 1.\nHover cards to see effects.`,
         -10, 1.5, -6, { color: { r: 0.3, g: 0.2, b: 0.5 } });
     deck.DeckIDs = cards.map(c => c.CardID);
