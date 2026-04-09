@@ -20,11 +20,12 @@ const path = require('path');
 const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design', 'game-data.json'), 'utf8'));
 const luaScript = fs.readFileSync(path.join(__dirname, 'scripts', 'setup.lua'), 'utf8');
 
-// Card images (placehold.co — simple colored placeholders)
-const BAC_FACE = "https://placehold.co/300x420/cc9933/ffffff.png?text=B.A.C";
-const BAC_BACK = "https://placehold.co/300x420/664400/ffffff.png?text=BASIC+ARMAMENT";
-const CONSPIRE_FACE = "https://placehold.co/300x420/4033cc/ffffff.png?text=CONSPIRE";
-const CONSPIRE_BACK = "https://placehold.co/300x420/1a1a66/ffffff.png?text=CONSPIRE+CARD";
+// Card images (hosted on GitHub for TTS compatibility)
+const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
+const BAC_FACE = `${CARD_BASE}/bac_face.png`;
+const BAC_BACK = `${CARD_BASE}/bac_back.png`;
+const CONSPIRE_FACE = `${CARD_BASE}/conspire_face.png`;
+const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png`;
 
 // GUID generator — 6 hex chars
 let guidCounter = 0x100000;
