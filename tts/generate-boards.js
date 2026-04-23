@@ -13,18 +13,18 @@ const fs = require("fs");
 
 const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-print", "dist", "fonts", "open-sans");
 
-// Column width sized to fit "Backpack" label + small padding
-const COL_W = 100;
+// Column width sized to fit "Backpack" label + small padding (4x res for sharp text)
+const COL_W = 400;
 const COLS = 7;
-const COL_GAP = 4;
-const PAD = 6;
-const TITLE_H = 28;
-const HEADER_H = 20;
-const SLOT_H = 20;
-const SLOT_PAD = 2;
-const DMG_LABEL_H = 16;
-const DMG_BOX_H = 16;
-const DMG_BOX_PAD = 2;
+const COL_GAP = 16;
+const PAD = 24;
+const TITLE_H = 80;
+const HEADER_H = 70;
+const SLOT_H = 80;
+const SLOT_PAD = 8;
+const DMG_LABEL_H = 60;
+const DMG_BOX_H = 60;
+const DMG_BOX_PAD = 8;
 
 const equipSlots = ["Head", "Chest", "Chest", "Backpack", "Legs", "Hands"];
 
@@ -72,8 +72,8 @@ const colors = [
 ];
 
 async function main() {
-    const fontLabel = await loadFont(path.join(FONT_DIR, "open-sans-16-white", "open-sans-16-white.fnt"));
-    const fontSmall = await loadFont(path.join(FONT_DIR, "open-sans-8-white", "open-sans-8-white.fnt"));
+    const fontLabel = await loadFont(path.join(FONT_DIR, "open-sans-64-white", "open-sans-64-white.fnt"));
+    const fontSmall = await loadFont(path.join(FONT_DIR, "open-sans-32-white", "open-sans-32-white.fnt"));
 
     console.log(`Board dimensions: ${BOARD_W} x ${BOARD_H}`);
 
@@ -82,36 +82,36 @@ async function main() {
 
         // Title bar
         fillRect(img, 0, 0, BOARD_W, PAD + TITLE_H, pc.accent);
-        img.print({ font: fontLabel, x: PAD, y: PAD + 4, text: `SQUAD BOARD`, maxWidth: BOARD_W - PAD * 2 });
+        img.print({ font: fontLabel, x: PAD, y: PAD + 6, text: `SQUAD BOARD`, maxWidth: BOARD_W - PAD * 2 });
 
         // Outer border
-        drawRectOutline(img, 0, 0, BOARD_W, BOARD_H, 2, pc.light);
+        drawRectOutline(img, 0, 0, BOARD_W, BOARD_H, 6, pc.light);
 
         for (let s = 0; s < COLS; s++) {
             const cx = PAD + s * (COL_W + COL_GAP);
             const colH = COL_CONTENT_H;
 
             // Column outline
-            drawRectOutline(img, cx, COL_START_Y, COL_W, colH, 2, pc.accent);
+            drawRectOutline(img, cx, COL_START_Y, COL_W, colH, 4, pc.accent);
 
             // Soldier header
-            fillRect(img, cx + 2, COL_START_Y + 2, COL_W - 4, HEADER_H, pc.accent);
-            img.print({ font: fontSmall, x: cx + 4, y: COL_START_Y + 5, text: `Soldier ${s + 1}`, maxWidth: COL_W - 8 });
+            fillRect(img, cx + 4, COL_START_Y + 4, COL_W - 8, HEADER_H, pc.accent);
+            img.print({ font: fontSmall, x: cx + 12, y: COL_START_Y + 20, text: `Soldier ${s + 1}`, maxWidth: COL_W - 24 });
 
             // Equipment slots
-            let sy = COL_START_Y + HEADER_H + 2;
+            let sy = COL_START_Y + HEADER_H + 4;
             for (let e = 0; e < equipSlots.length; e++) {
-                drawRectOutline(img, cx + 4, sy, COL_W - 8, SLOT_H, 1, pc.light);
-                img.print({ font: fontSmall, x: cx + 6, y: sy + 4, text: equipSlots[e], maxWidth: COL_W - 12 });
+                drawRectOutline(img, cx + 12, sy, COL_W - 24, SLOT_H, 3, pc.light);
+                img.print({ font: fontSmall, x: cx + 20, y: sy + 22, text: equipSlots[e], maxWidth: COL_W - 40 });
                 sy += SLOT_H + SLOT_PAD;
             }
 
             // Damage track
-            img.print({ font: fontSmall, x: cx + 4, y: sy, text: "DMG", maxWidth: COL_W - 8 });
+            img.print({ font: fontSmall, x: cx + 12, y: sy + 10, text: "DMG", maxWidth: COL_W - 24 });
             sy += DMG_LABEL_H;
-            const dmgBoxW = Math.floor((COL_W - 12) / 3);
+            const dmgBoxW = Math.floor((COL_W - 40) / 3);
             for (let d = 0; d < 3; d++) {
-                drawRectOutline(img, cx + 4 + d * (dmgBoxW + 2), sy, dmgBoxW, DMG_BOX_H, 1, pc.light);
+                drawRectOutline(img, cx + 12 + d * (dmgBoxW + 6), sy, dmgBoxW, DMG_BOX_H, 3, pc.light);
             }
         }
 
