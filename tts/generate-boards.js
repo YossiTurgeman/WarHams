@@ -73,7 +73,7 @@ const colors = [
 
 async function main() {
     const fontLabel = await loadFont(path.join(FONT_DIR, "open-sans-16-white", "open-sans-16-white.fnt"));
-    const fontSmall = await loadFont(path.join(FONT_DIR, "open-sans-12-black", "open-sans-12-black.fnt"));
+    const fontSmall = await loadFont(path.join(FONT_DIR, "open-sans-8-white", "open-sans-8-white.fnt"));
 
     console.log(`Board dimensions: ${BOARD_W} x ${BOARD_H}`);
 
