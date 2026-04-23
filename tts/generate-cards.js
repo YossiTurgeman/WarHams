@@ -81,7 +81,7 @@ async function main() {
         const slug = bac.abbr.replace(/[^a-zA-Z0-9]/g, "_").toLowerCase();
         const img = new Jimp({ width: CARD_W, height: CARD_H, color: rgbaToInt(bacBg.r, bacBg.g, bacBg.b, 255) });
 
-        fillRect(img, 0, 0, CARD_W, 180, bacHeader);
+        fillRect(img, 0, 0, CARD_W, 290, bacHeader);
         drawBorder(img, 6, { r: 0xDD, g: 0xBB, b: 0x55 });
 
         // Title (abbreviation) - huge
@@ -90,7 +90,7 @@ async function main() {
         img.print({ font: fontTitle, x: pad, y: 145, text: bac.name, maxWidth: textW, maxHeight: 140 });
 
         // Category / Slot / DP
-        let y = 300;
+        let y = 310;
         img.print({ font: fontBody, x: pad, y, text: `[${bac.category}]  Slot: ${bac.slot}`, maxWidth: textW });
         y += 80;
         img.print({ font: fontBody, x: pad, y, text: `DP: ${bac.dp}`, maxWidth: textW });

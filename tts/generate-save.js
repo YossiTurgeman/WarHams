@@ -22,7 +22,7 @@ const luaScript = fs.readFileSync(path.join(__dirname, 'scripts', 'setup.lua'), 
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v5";
+const CARD_VERSION = "v6";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
