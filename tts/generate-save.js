@@ -35,6 +35,9 @@ function conspireFaceURL(name) {
     const slug = name.replace(/[^a-zA-Z0-9]/g, "_").toLowerCase();
     return `${CARD_BASE}/conspire_${slug}.png?${CARD_VERSION}`;
 }
+function squadBoardURL(colorName) {
+    return `${CARD_BASE}/squad_board_${colorName}.png?${CARD_VERSION}`;
+}
 
 // GUID generator — 6 hex chars
 let guidCounter = 0x100000;
@@ -272,8 +275,8 @@ const sepBag = baseObj("Bag", "Separatist Soldiers (24)", "24 grey Separatists. 
 sepBag.ContainedObjects = sepSoldiers;
 objects.push(sepBag);
 
-// ─── 10. SQUAD BOARDS (2 per player to start, BlockRectangle, locked)
-//     Smaller scale so they fit on table. 2 boards each, extras in bags.
+// ─── 10. SQUAD BOARDS (2 per player, Custom_Tile with generated images)
+//     Uses landscape custom tile images showing 7 soldier slots.
 const boardLayout = [
     // Red (P1): left side top
     { xs: [-22, -15], z: -16 },
@@ -284,20 +287,28 @@ const boardLayout = [
     // Yellow (P4): right side bottom
     { xs: [15, 22], z: 16 },
 ];
+function makeSquadBoard(pc, squadNum, px, py, pz, opts = {}) {
+    const board = baseObj("Custom_Tile", `${pc.label} Squad ${squadNum}`,
+        `Squad Board — ${pc.label} Squad ${squadNum}\n7 slots | 6 equip each | 3 dmg cap`,
+        px, py, pz, { scaleX: 2.5, scaleY: 1, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, locked: opts.locked || false });
+    board.CustomImage = {
+        ImageURL: squadBoardURL(pc.label.toLowerCase()),
+        ImageSecondaryURL: "",
+        ImageScalar: 1,
+        WidthScale: 0,
+        CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true }
+    };
+    return board;
+}
 playerColors.forEach((pc, idx) => {
     // 2 boards placed on table
     boardLayout[idx].xs.forEach((x, b) => {
-        const board = baseObj("BlockRectangle", `${pc.label} Squad ${b+1}`,
-            `Squad Board — ${pc.label} Squad ${b+1}\n7 slots | 5 equip each | 3 dmg cap`,
-            x, 1.05, boardLayout[idx].z, { scaleX: 2.5, scaleY: 0.1, scaleZ: 3, color: pc.color, locked: true });
-        objects.push(board);
+        objects.push(makeSquadBoard(pc, b + 1, x, 1.05, boardLayout[idx].z, { locked: true }));
     });
     // 2 extra boards in a bag
     const extras = [];
     for (let b = 2; b < 4; b++) {
-        extras.push(baseObj("BlockRectangle", `${pc.label} Squad ${b+1}`,
-            `Squad Board — ${pc.label} Squad ${b+1}\n7 slots | 5 equip each | 3 dmg cap`,
-            0, 0.2 * (b-2), 0, { scaleX: 2.5, scaleY: 0.1, scaleZ: 3, color: pc.color }));
+        extras.push(makeSquadBoard(pc, b + 1, 0, 0.2 * (b - 2), 0));
     }
     const extraBag = baseObj("Bag", `${pc.label} Extra Boards`, `Extra squad boards for ${pc.label}.`,
         boardLayout[idx].xs[0] + 3.5, 1.5, boardLayout[idx].z, { color: pc.color });

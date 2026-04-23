@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1776934469,
+  "EpochTime": 1776935099,
   "Date": "2026-04-23",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -20427,7 +20427,7 @@
     },
     {
       "GUID": "100169",
-      "Name": "BlockRectangle",
+      "Name": "Custom_Tile",
       "Transform": {
         "posX": -22,
         "posY": 1.05,
@@ -20436,11 +20436,11 @@
         "rotY": 0,
         "rotZ": 0,
         "scaleX": 2.5,
-        "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleY": 1,
+        "scaleZ": 2.5
       },
       "Nickname": "Red Squad 1",
-      "Description": "Squad Board — Red Squad 1\n7 slots | 5 equip each | 3 dmg cap",
+      "Description": "Squad Board — Red Squad 1\n7 slots | 6 equip each | 3 dmg cap",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -20448,9 +20448,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.86,
-        "g": 0.21,
-        "b": 0.21
+        "r": 1,
+        "g": 1,
+        "b": 1
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -20468,11 +20468,23 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_red.png?v6",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.1,
+          "Stackable": false,
+          "Stretch": true
+        }
+      }
     },
     {
       "GUID": "10016a",
-      "Name": "BlockRectangle",
+      "Name": "Custom_Tile",
       "Transform": {
         "posX": -15,
         "posY": 1.05,
@@ -20481,11 +20493,11 @@
         "rotY": 0,
         "rotZ": 0,
         "scaleX": 2.5,
-        "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleY": 1,
+        "scaleZ": 2.5
       },
       "Nickname": "Red Squad 2",
-      "Description": "Squad Board — Red Squad 2\n7 slots | 5 equip each | 3 dmg cap",
+      "Description": "Squad Board — Red Squad 2\n7 slots | 6 equip each | 3 dmg cap",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -20493,9 +20505,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.86,
-        "g": 0.21,
-        "b": 0.21
+        "r": 1,
+        "g": 1,
+        "b": 1
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -20513,7 +20525,19 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_red.png?v6",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.1,
+          "Stackable": false,
+          "Stretch": true
+        }
+      }
     },
     {
       "GUID": "10016d",
@@ -20562,7 +20586,7 @@
       "ContainedObjects": [
         {
           "GUID": "10016b",
-          "Name": "BlockRectangle",
+          "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
             "posY": 0,
@@ -20571,11 +20595,11 @@
             "rotY": 0,
             "rotZ": 0,
             "scaleX": 2.5,
-            "scaleY": 0.1,
-            "scaleZ": 3
+            "scaleY": 1,
+            "scaleZ": 2.5
           },
           "Nickname": "Red Squad 3",
-          "Description": "Squad Board — Red Squad 3\n7 slots | 5 equip each | 3 dmg cap",
+          "Description": "Squad Board — Red Squad 3\n7 slots | 6 equip each | 3 dmg cap",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -20583,9 +20607,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
+            "r": 1,
+            "g": 1,
+            "b": 1
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -20603,11 +20627,23 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_red.png?v6",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomTile": {
+              "Type": 0,
+              "Thickness": 0.1,
+              "Stackable": false,
+              "Stretch": true
+            }
+          }
         },
         {
           "GUID": "10016c",
-          "Name": "BlockRectangle",
+          "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
             "posY": 0.2,
@@ -20616,11 +20652,11 @@
             "rotY": 0,
             "rotZ": 0,
             "scaleX": 2.5,
-            "scaleY": 0.1,
-            "scaleZ": 3
+            "scaleY": 1,
+            "scaleZ": 2.5
           },
           "Nickname": "Red Squad 4",
-          "Description": "Squad Board — Red Squad 4\n7 slots | 5 equip each | 3 dmg cap",
+          "Description": "Squad Board — Red Squad 4\n7 slots | 6 equip each | 3 dmg cap",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -20628,9 +20664,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
+            "r": 1,
+            "g": 1,
+            "b": 1
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -20648,13 +20684,25 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_red.png?v6",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomTile": {
+              "Type": 0,
+              "Thickness": 0.1,
+              "Stackable": false,
+              "Stretch": true
+            }
+          }
         }
       ]
     },
     {
       "GUID": "10016e",
-      "Name": "BlockRectangle",
+      "Name": "Custom_Tile",
       "Transform": {
         "posX": 15,
         "posY": 1.05,
@@ -20663,11 +20711,11 @@
         "rotY": 0,
         "rotZ": 0,
         "scaleX": 2.5,
-        "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleY": 1,
+        "scaleZ": 2.5
       },
       "Nickname": "Blue Squad 1",
-      "Description": "Squad Board — Blue Squad 1\n7 slots | 5 equip each | 3 dmg cap",
+      "Description": "Squad Board — Blue Squad 1\n7 slots | 6 equip each | 3 dmg cap",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -20675,9 +20723,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.22,
-        "g": 0.38,
-        "b": 0.86
+        "r": 1,
+        "g": 1,
+        "b": 1
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -20695,11 +20743,23 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_blue.png?v6",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.1,
+          "Stackable": false,
+          "Stretch": true
+        }
+      }
     },
     {
       "GUID": "10016f",
-      "Name": "BlockRectangle",
+      "Name": "Custom_Tile",
       "Transform": {
         "posX": 22,
         "posY": 1.05,
@@ -20708,11 +20768,11 @@
         "rotY": 0,
         "rotZ": 0,
         "scaleX": 2.5,
-        "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleY": 1,
+        "scaleZ": 2.5
       },
       "Nickname": "Blue Squad 2",
-      "Description": "Squad Board — Blue Squad 2\n7 slots | 5 equip each | 3 dmg cap",
+      "Description": "Squad Board — Blue Squad 2\n7 slots | 6 equip each | 3 dmg cap",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -20720,9 +20780,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.22,
-        "g": 0.38,
-        "b": 0.86
+        "r": 1,
+        "g": 1,
+        "b": 1
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -20740,7 +20800,19 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_blue.png?v6",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.1,
+          "Stackable": false,
+          "Stretch": true
+        }
+      }
     },
     {
       "GUID": "100172",
@@ -20789,7 +20861,7 @@
       "ContainedObjects": [
         {
           "GUID": "100170",
-          "Name": "BlockRectangle",
+          "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
             "posY": 0,
@@ -20798,11 +20870,11 @@
             "rotY": 0,
             "rotZ": 0,
             "scaleX": 2.5,
-            "scaleY": 0.1,
-            "scaleZ": 3
+            "scaleY": 1,
+            "scaleZ": 2.5
           },
           "Nickname": "Blue Squad 3",
-          "Description": "Squad Board — Blue Squad 3\n7 slots | 5 equip each | 3 dmg cap",
+          "Description": "Squad Board — Blue Squad 3\n7 slots | 6 equip each | 3 dmg cap",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -20810,9 +20882,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
+            "r": 1,
+            "g": 1,
+            "b": 1
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -20830,11 +20902,23 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_blue.png?v6",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomTile": {
+              "Type": 0,
+              "Thickness": 0.1,
+              "Stackable": false,
+              "Stretch": true
+            }
+          }
         },
         {
           "GUID": "100171",
-          "Name": "BlockRectangle",
+          "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
             "posY": 0.2,
@@ -20843,11 +20927,11 @@
             "rotY": 0,
             "rotZ": 0,
             "scaleX": 2.5,
-            "scaleY": 0.1,
-            "scaleZ": 3
+            "scaleY": 1,
+            "scaleZ": 2.5
           },
           "Nickname": "Blue Squad 4",
-          "Description": "Squad Board — Blue Squad 4\n7 slots | 5 equip each | 3 dmg cap",
+          "Description": "Squad Board — Blue Squad 4\n7 slots | 6 equip each | 3 dmg cap",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -20855,9 +20939,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
+            "r": 1,
+            "g": 1,
+            "b": 1
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -20875,13 +20959,25 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_blue.png?v6",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomTile": {
+              "Type": 0,
+              "Thickness": 0.1,
+              "Stackable": false,
+              "Stretch": true
+            }
+          }
         }
       ]
     },
     {
       "GUID": "100173",
-      "Name": "BlockRectangle",
+      "Name": "Custom_Tile",
       "Transform": {
         "posX": -22,
         "posY": 1.05,
@@ -20890,11 +20986,11 @@
         "rotY": 0,
         "rotZ": 0,
         "scaleX": 2.5,
-        "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleY": 1,
+        "scaleZ": 2.5
       },
       "Nickname": "Green Squad 1",
-      "Description": "Squad Board — Green Squad 1\n7 slots | 5 equip each | 3 dmg cap",
+      "Description": "Squad Board — Green Squad 1\n7 slots | 6 equip each | 3 dmg cap",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -20902,9 +20998,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.18,
-        "g": 0.72,
-        "b": 0.28
+        "r": 1,
+        "g": 1,
+        "b": 1
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -20922,11 +21018,23 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_green.png?v6",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.1,
+          "Stackable": false,
+          "Stretch": true
+        }
+      }
     },
     {
       "GUID": "100174",
-      "Name": "BlockRectangle",
+      "Name": "Custom_Tile",
       "Transform": {
         "posX": -15,
         "posY": 1.05,
@@ -20935,11 +21043,11 @@
         "rotY": 0,
         "rotZ": 0,
         "scaleX": 2.5,
-        "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleY": 1,
+        "scaleZ": 2.5
       },
       "Nickname": "Green Squad 2",
-      "Description": "Squad Board — Green Squad 2\n7 slots | 5 equip each | 3 dmg cap",
+      "Description": "Squad Board — Green Squad 2\n7 slots | 6 equip each | 3 dmg cap",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -20947,9 +21055,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.18,
-        "g": 0.72,
-        "b": 0.28
+        "r": 1,
+        "g": 1,
+        "b": 1
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -20967,7 +21075,19 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_green.png?v6",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.1,
+          "Stackable": false,
+          "Stretch": true
+        }
+      }
     },
     {
       "GUID": "100177",
@@ -21016,7 +21136,7 @@
       "ContainedObjects": [
         {
           "GUID": "100175",
-          "Name": "BlockRectangle",
+          "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
             "posY": 0,
@@ -21025,11 +21145,11 @@
             "rotY": 0,
             "rotZ": 0,
             "scaleX": 2.5,
-            "scaleY": 0.1,
-            "scaleZ": 3
+            "scaleY": 1,
+            "scaleZ": 2.5
           },
           "Nickname": "Green Squad 3",
-          "Description": "Squad Board — Green Squad 3\n7 slots | 5 equip each | 3 dmg cap",
+          "Description": "Squad Board — Green Squad 3\n7 slots | 6 equip each | 3 dmg cap",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -21037,9 +21157,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
+            "r": 1,
+            "g": 1,
+            "b": 1
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -21057,11 +21177,23 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_green.png?v6",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomTile": {
+              "Type": 0,
+              "Thickness": 0.1,
+              "Stackable": false,
+              "Stretch": true
+            }
+          }
         },
         {
           "GUID": "100176",
-          "Name": "BlockRectangle",
+          "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
             "posY": 0.2,
@@ -21070,11 +21202,11 @@
             "rotY": 0,
             "rotZ": 0,
             "scaleX": 2.5,
-            "scaleY": 0.1,
-            "scaleZ": 3
+            "scaleY": 1,
+            "scaleZ": 2.5
           },
           "Nickname": "Green Squad 4",
-          "Description": "Squad Board — Green Squad 4\n7 slots | 5 equip each | 3 dmg cap",
+          "Description": "Squad Board — Green Squad 4\n7 slots | 6 equip each | 3 dmg cap",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -21082,9 +21214,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
+            "r": 1,
+            "g": 1,
+            "b": 1
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -21102,13 +21234,25 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_green.png?v6",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomTile": {
+              "Type": 0,
+              "Thickness": 0.1,
+              "Stackable": false,
+              "Stretch": true
+            }
+          }
         }
       ]
     },
     {
       "GUID": "100178",
-      "Name": "BlockRectangle",
+      "Name": "Custom_Tile",
       "Transform": {
         "posX": 15,
         "posY": 1.05,
@@ -21117,11 +21261,11 @@
         "rotY": 0,
         "rotZ": 0,
         "scaleX": 2.5,
-        "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleY": 1,
+        "scaleZ": 2.5
       },
       "Nickname": "Yellow Squad 1",
-      "Description": "Squad Board — Yellow Squad 1\n7 slots | 5 equip each | 3 dmg cap",
+      "Description": "Squad Board — Yellow Squad 1\n7 slots | 6 equip each | 3 dmg cap",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -21129,9 +21273,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.9,
-        "g": 0.82,
-        "b": 0.15
+        "r": 1,
+        "g": 1,
+        "b": 1
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -21149,11 +21293,23 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_yellow.png?v6",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.1,
+          "Stackable": false,
+          "Stretch": true
+        }
+      }
     },
     {
       "GUID": "100179",
-      "Name": "BlockRectangle",
+      "Name": "Custom_Tile",
       "Transform": {
         "posX": 22,
         "posY": 1.05,
@@ -21162,11 +21318,11 @@
         "rotY": 0,
         "rotZ": 0,
         "scaleX": 2.5,
-        "scaleY": 0.1,
-        "scaleZ": 3
+        "scaleY": 1,
+        "scaleZ": 2.5
       },
       "Nickname": "Yellow Squad 2",
-      "Description": "Squad Board — Yellow Squad 2\n7 slots | 5 equip each | 3 dmg cap",
+      "Description": "Squad Board — Yellow Squad 2\n7 slots | 6 equip each | 3 dmg cap",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -21174,9 +21330,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.9,
-        "g": 0.82,
-        "b": 0.15
+        "r": 1,
+        "g": 1,
+        "b": 1
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -21194,7 +21350,19 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_yellow.png?v6",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.1,
+          "Stackable": false,
+          "Stretch": true
+        }
+      }
     },
     {
       "GUID": "10017c",
@@ -21243,7 +21411,7 @@
       "ContainedObjects": [
         {
           "GUID": "10017a",
-          "Name": "BlockRectangle",
+          "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
             "posY": 0,
@@ -21252,11 +21420,11 @@
             "rotY": 0,
             "rotZ": 0,
             "scaleX": 2.5,
-            "scaleY": 0.1,
-            "scaleZ": 3
+            "scaleY": 1,
+            "scaleZ": 2.5
           },
           "Nickname": "Yellow Squad 3",
-          "Description": "Squad Board — Yellow Squad 3\n7 slots | 5 equip each | 3 dmg cap",
+          "Description": "Squad Board — Yellow Squad 3\n7 slots | 6 equip each | 3 dmg cap",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -21264,9 +21432,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.9,
-            "g": 0.82,
-            "b": 0.15
+            "r": 1,
+            "g": 1,
+            "b": 1
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -21284,11 +21452,23 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_yellow.png?v6",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomTile": {
+              "Type": 0,
+              "Thickness": 0.1,
+              "Stackable": false,
+              "Stretch": true
+            }
+          }
         },
         {
           "GUID": "10017b",
-          "Name": "BlockRectangle",
+          "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
             "posY": 0.2,
@@ -21297,11 +21477,11 @@
             "rotY": 0,
             "rotZ": 0,
             "scaleX": 2.5,
-            "scaleY": 0.1,
-            "scaleZ": 3
+            "scaleY": 1,
+            "scaleZ": 2.5
           },
           "Nickname": "Yellow Squad 4",
-          "Description": "Squad Board — Yellow Squad 4\n7 slots | 5 equip each | 3 dmg cap",
+          "Description": "Squad Board — Yellow Squad 4\n7 slots | 6 equip each | 3 dmg cap",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -21309,9 +21489,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.9,
-            "g": 0.82,
-            "b": 0.15
+            "r": 1,
+            "g": 1,
+            "b": 1
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -21329,7 +21509,19 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/squad_board_yellow.png?v6",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomTile": {
+              "Type": 0,
+              "Thickness": 0.1,
+              "Stackable": false,
+              "Stretch": true
+            }
+          }
         }
       ]
     },
