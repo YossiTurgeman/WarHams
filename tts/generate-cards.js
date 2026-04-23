@@ -140,13 +140,13 @@ async function main() {
         const slug = cc.name.replace(/[^a-zA-Z0-9]/g, "_").toLowerCase();
         const img = new Jimp({ width: CARD_W, height: CARD_H, color: rgbaToInt(conBg.r, conBg.g, conBg.b, 255) });
 
-        fillRect(img, 0, 0, CARD_W, 180, conHeader);
+        fillRect(img, 0, 0, CARD_W, 420, conHeader);
         drawBorder(img, 6, { r: 0x88, g: 0x66, b: 0xDD });
 
         // Title
-        img.print({ font: fontHuge, x: pad, y: 10, text: cc.name, maxWidth: textW, maxHeight: 280 });
+        img.print({ font: fontHuge, x: pad, y: 10, text: cc.name, maxWidth: textW, maxHeight: 400 });
 
-        let y = 300;
+        let y = 440;
         // Timing
         img.print({ font: fontBody, x: pad, y, text: `[${cc.timing}]`, maxWidth: textW });
         y += 80;
