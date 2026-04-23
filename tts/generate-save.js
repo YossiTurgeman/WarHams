@@ -22,7 +22,7 @@ const luaScript = fs.readFileSync(path.join(__dirname, 'scripts', 'setup.lua'), 
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v9";
+const CARD_VERSION = "v10";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
@@ -290,13 +290,13 @@ const boardLayout = [
 function makeSquadBoard(pc, squadNum, px, py, pz, opts = {}) {
     const board = baseObj("Custom_Tile", `${pc.label} Squad ${squadNum}`,
         `Squad Board — ${pc.label} Squad ${squadNum}\n7 slots | 6 equip each | 3 dmg cap`,
-        px, py, pz, { scaleX: 0.6, scaleY: 1, scaleZ: 0.6, rotY: opts.rotY || 0, color: { r: 1, g: 1, b: 1 } });
+        px, py, pz, { scaleX: 1, scaleY: 1, scaleZ: 1, rotY: opts.rotY || 0, color: { r: 1, g: 1, b: 1 } });
     board.CustomImage = {
         ImageURL: squadBoardURL(pc.label.toLowerCase()),
         ImageSecondaryURL: "",
         ImageScalar: 1,
         WidthScale: 0,
-        CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true }
+        CustomTile: { Type: 3, Thickness: 0.1, Stackable: false, Stretch: true }
     };
     return board;
 }
