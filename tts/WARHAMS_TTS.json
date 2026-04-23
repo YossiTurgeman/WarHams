@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1776939010,
+  "EpochTime": 1776939109,
   "Date": "2026-04-23",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -20435,9 +20435,9 @@
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 2.5,
+        "scaleX": 1.25,
         "scaleY": 1,
-        "scaleZ": 2.5
+        "scaleZ": 1.25
       },
       "Nickname": "Red Squad 1",
       "Description": "Squad Board — Red Squad 1\n7 slots | 6 equip each | 3 dmg cap",
@@ -20454,7 +20454,7 @@
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
-      "Locked": true,
+      "Locked": false,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -20492,9 +20492,9 @@
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 2.5,
+        "scaleX": 1.25,
         "scaleY": 1,
-        "scaleZ": 2.5
+        "scaleZ": 1.25
       },
       "Nickname": "Red Squad 2",
       "Description": "Squad Board — Red Squad 2\n7 slots | 6 equip each | 3 dmg cap",
@@ -20511,7 +20511,7 @@
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
-      "Locked": true,
+      "Locked": false,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -20594,9 +20594,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
+            "scaleX": 1.25,
             "scaleY": 1,
-            "scaleZ": 2.5
+            "scaleZ": 1.25
           },
           "Nickname": "Red Squad 3",
           "Description": "Squad Board — Red Squad 3\n7 slots | 6 equip each | 3 dmg cap",
@@ -20651,9 +20651,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
+            "scaleX": 1.25,
             "scaleY": 1,
-            "scaleZ": 2.5
+            "scaleZ": 1.25
           },
           "Nickname": "Red Squad 4",
           "Description": "Squad Board — Red Squad 4\n7 slots | 6 equip each | 3 dmg cap",
@@ -20710,9 +20710,9 @@
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 2.5,
+        "scaleX": 1.25,
         "scaleY": 1,
-        "scaleZ": 2.5
+        "scaleZ": 1.25
       },
       "Nickname": "Blue Squad 1",
       "Description": "Squad Board — Blue Squad 1\n7 slots | 6 equip each | 3 dmg cap",
@@ -20729,7 +20729,7 @@
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
-      "Locked": true,
+      "Locked": false,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -20767,9 +20767,9 @@
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 2.5,
+        "scaleX": 1.25,
         "scaleY": 1,
-        "scaleZ": 2.5
+        "scaleZ": 1.25
       },
       "Nickname": "Blue Squad 2",
       "Description": "Squad Board — Blue Squad 2\n7 slots | 6 equip each | 3 dmg cap",
@@ -20786,7 +20786,7 @@
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
-      "Locked": true,
+      "Locked": false,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -20869,9 +20869,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
+            "scaleX": 1.25,
             "scaleY": 1,
-            "scaleZ": 2.5
+            "scaleZ": 1.25
           },
           "Nickname": "Blue Squad 3",
           "Description": "Squad Board — Blue Squad 3\n7 slots | 6 equip each | 3 dmg cap",
@@ -20926,9 +20926,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
+            "scaleX": 1.25,
             "scaleY": 1,
-            "scaleZ": 2.5
+            "scaleZ": 1.25
           },
           "Nickname": "Blue Squad 4",
           "Description": "Squad Board — Blue Squad 4\n7 slots | 6 equip each | 3 dmg cap",
@@ -20985,9 +20985,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
+        "scaleX": 1.25,
         "scaleY": 1,
-        "scaleZ": 2.5
+        "scaleZ": 1.25
       },
       "Nickname": "Green Squad 1",
       "Description": "Squad Board — Green Squad 1\n7 slots | 6 equip each | 3 dmg cap",
@@ -21004,7 +21004,7 @@
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
-      "Locked": true,
+      "Locked": false,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -21042,9 +21042,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
+        "scaleX": 1.25,
         "scaleY": 1,
-        "scaleZ": 2.5
+        "scaleZ": 1.25
       },
       "Nickname": "Green Squad 2",
       "Description": "Squad Board — Green Squad 2\n7 slots | 6 equip each | 3 dmg cap",
@@ -21061,7 +21061,7 @@
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
-      "Locked": true,
+      "Locked": false,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -21144,9 +21144,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
+            "scaleX": 1.25,
             "scaleY": 1,
-            "scaleZ": 2.5
+            "scaleZ": 1.25
           },
           "Nickname": "Green Squad 3",
           "Description": "Squad Board — Green Squad 3\n7 slots | 6 equip each | 3 dmg cap",
@@ -21201,9 +21201,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
+            "scaleX": 1.25,
             "scaleY": 1,
-            "scaleZ": 2.5
+            "scaleZ": 1.25
           },
           "Nickname": "Green Squad 4",
           "Description": "Squad Board — Green Squad 4\n7 slots | 6 equip each | 3 dmg cap",
@@ -21260,9 +21260,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
+        "scaleX": 1.25,
         "scaleY": 1,
-        "scaleZ": 2.5
+        "scaleZ": 1.25
       },
       "Nickname": "Yellow Squad 1",
       "Description": "Squad Board — Yellow Squad 1\n7 slots | 6 equip each | 3 dmg cap",
@@ -21279,7 +21279,7 @@
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
-      "Locked": true,
+      "Locked": false,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -21317,9 +21317,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
+        "scaleX": 1.25,
         "scaleY": 1,
-        "scaleZ": 2.5
+        "scaleZ": 1.25
       },
       "Nickname": "Yellow Squad 2",
       "Description": "Squad Board — Yellow Squad 2\n7 slots | 6 equip each | 3 dmg cap",
@@ -21336,7 +21336,7 @@
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
-      "Locked": true,
+      "Locked": false,
       "Grid": true,
       "Snap": true,
       "IgnoreFoW": false,
@@ -21419,9 +21419,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
+            "scaleX": 1.25,
             "scaleY": 1,
-            "scaleZ": 2.5
+            "scaleZ": 1.25
           },
           "Nickname": "Yellow Squad 3",
           "Description": "Squad Board — Yellow Squad 3\n7 slots | 6 equip each | 3 dmg cap",
@@ -21476,9 +21476,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
+            "scaleX": 1.25,
             "scaleY": 1,
-            "scaleZ": 2.5
+            "scaleZ": 1.25
           },
           "Nickname": "Yellow Squad 4",
           "Description": "Squad Board — Yellow Squad 4\n7 slots | 6 equip each | 3 dmg cap",

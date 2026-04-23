@@ -290,7 +290,7 @@ const boardLayout = [
 function makeSquadBoard(pc, squadNum, px, py, pz, opts = {}) {
     const board = baseObj("Custom_Tile", `${pc.label} Squad ${squadNum}`,
         `Squad Board — ${pc.label} Squad ${squadNum}\n7 slots | 6 equip each | 3 dmg cap`,
-        px, py, pz, { scaleX: 2.5, scaleY: 1, scaleZ: 2.5, rotY: opts.rotY || 0, color: { r: 1, g: 1, b: 1 }, locked: opts.locked || false });
+        px, py, pz, { scaleX: 1.25, scaleY: 1, scaleZ: 1.25, rotY: opts.rotY || 0, color: { r: 1, g: 1, b: 1 } });
     board.CustomImage = {
         ImageURL: squadBoardURL(pc.label.toLowerCase()),
         ImageSecondaryURL: "",
@@ -303,7 +303,7 @@ function makeSquadBoard(pc, squadNum, px, py, pz, opts = {}) {
 playerColors.forEach((pc, idx) => {
     // 2 boards placed on table
     boardLayout[idx].xs.forEach((x, b) => {
-        objects.push(makeSquadBoard(pc, b + 1, x, 1.05, boardLayout[idx].z, { locked: true, rotY: boardLayout[idx].rotY }));
+        objects.push(makeSquadBoard(pc, b + 1, x, 1.05, boardLayout[idx].z, { rotY: boardLayout[idx].rotY }));
     });
     // 2 extra boards in a bag
     const extras = [];
