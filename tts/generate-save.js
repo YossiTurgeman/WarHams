@@ -290,7 +290,7 @@ const boardLayout = [
 function makeSquadBoard(pc, squadNum, px, py, pz, opts = {}) {
     const board = baseObj("Custom_Tile", `${pc.label} Squad ${squadNum}`,
         `Squad Board — ${pc.label} Squad ${squadNum}\n7 slots | 6 equip each | 3 dmg cap`,
-        px, py, pz, { scaleX: 1.25, scaleY: 1, scaleZ: 1.25, rotY: opts.rotY || 0, color: { r: 1, g: 1, b: 1 } });
+        px, py, pz, { scaleX: 0.6, scaleY: 1, scaleZ: 0.6, rotY: opts.rotY || 0, color: { r: 1, g: 1, b: 1 } });
     board.CustomImage = {
         ImageURL: squadBoardURL(pc.label.toLowerCase()),
         ImageSecondaryURL: "",
