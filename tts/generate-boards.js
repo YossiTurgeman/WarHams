@@ -15,7 +15,7 @@ const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-pri
 
 // Board dimensions — wide landscape for 7 soldier columns
 const BOARD_W = 2800;
-const BOARD_H = 640;
+const BOARD_H = 340;
 
 const outDir = path.join(__dirname, "cards");
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir);
@@ -86,30 +86,19 @@ async function main() {
             drawRectOutline(img, cx, startY, colW - 4, colH, 3, pc.accent);
 
             // Soldier header
-            fillRect(img, cx + 3, startY + 3, colW - 10, 34, pc.accent);
-            img.print({ font: fontLabel, x: cx + 8, y: startY + 10, text: `Soldier ${s + 1}`, maxWidth: colW - 20 });
+            fillRect(img, cx + 3, startY + 3, colW - 10, 24, pc.accent);
+            img.print({ font: fontLabel, x: cx + 8, y: startY + 6, text: `Soldier ${s + 1}`, maxWidth: colW - 20 });
 
             // Equipment slots (6 slots per soldier)
-            const slotStartY = startY + 42;
-            const slotH = 58;
-            const slotPad = 4;
+            const slotStartY = startY + 30;
+            const slotH = 28;
+            const slotPad = 3;
             for (let e = 0; e < equipSlots.length; e++) {
                 const sy = slotStartY + e * (slotH + slotPad);
                 // Slot box
-                drawRectOutline(img, cx + 8, sy, colW - 20, slotH, 2, pc.light);
+                drawRectOutline(img, cx + 6, sy, colW - 16, slotH, 2, pc.light);
                 // Slot label
-                img.print({ font: fontLabel, x: cx + 12, y: sy + 3, text: equipSlots[e], maxWidth: colW - 28 });
-                // Empty equip area
-                fillRect(img, cx + 12, sy + 20, colW - 28, slotH - 24, { r: pc.bg.r + 0x15, g: pc.bg.g + 0x15, b: pc.bg.b + 0x15 });
-            }
-
-            // Damage track (3 boxes at bottom)
-            const dmgY = slotStartY + equipSlots.length * (slotH + slotPad) + 4;
-            img.print({ font: fontLabel, x: cx + 8, y: dmgY, text: "DMG", maxWidth: colW - 20 });
-            const dmgBoxY = dmgY + 18;
-            const dmgBoxW = Math.floor((colW - 36) / 3);
-            for (let d = 0; d < 3; d++) {
-                drawRectOutline(img, cx + 10 + d * (dmgBoxW + 4), dmgBoxY, dmgBoxW, 28, 2, pc.light);
+                img.print({ font: fontLabel, x: cx + 10, y: sy + 6, text: equipSlots[e], maxWidth: colW - 24 });
             }
         }
 
