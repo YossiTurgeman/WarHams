@@ -13,9 +13,26 @@ const fs = require("fs");
 
 const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-print", "dist", "fonts", "open-sans");
 
-// Board dimensions — wide landscape for 7 soldier columns
-const BOARD_W = 2800;
-const BOARD_H = 340;
+// Column width sized to fit "Backpack" label + small padding
+const COL_W = 100;
+const COLS = 7;
+const COL_GAP = 4;
+const PAD = 6;
+const TITLE_H = 28;
+const HEADER_H = 20;
+const SLOT_H = 20;
+const SLOT_PAD = 2;
+const DMG_LABEL_H = 16;
+const DMG_BOX_H = 16;
+const DMG_BOX_PAD = 2;
+
+const equipSlots = ["Head", "Chest", "Chest", "Backpack", "Legs", "Hands"];
+
+// Calculate exact dimensions
+const BOARD_W = PAD + COLS * COL_W + (COLS - 1) * COL_GAP + PAD;
+const COL_START_Y = PAD + TITLE_H + 4;
+const COL_CONTENT_H = HEADER_H + 2 + equipSlots.length * (SLOT_H + SLOT_PAD) + DMG_LABEL_H + DMG_BOX_H + DMG_BOX_PAD;
+const BOARD_H = COL_START_Y + COL_CONTENT_H + PAD;
 
 const outDir = path.join(__dirname, "cards");
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir);
@@ -54,51 +71,47 @@ const colors = [
     { name: "yellow", bg: { r: 0x33, g: 0x33, b: 0x11 }, accent: { r: 0xCC, g: 0xAA, b: 0x33 }, light: { r: 0xFF, g: 0xDD, b: 0x66 } },
 ];
 
-const equipSlots = ["Head", "Chest", "Chest", "Backpack", "Legs", "Hands"];
-
 async function main() {
-    const fontTitle = await loadFont(path.join(FONT_DIR, "open-sans-64-white", "open-sans-64-white.fnt"));
-    const fontSmall = await loadFont(path.join(FONT_DIR, "open-sans-32-white", "open-sans-32-white.fnt"));
     const fontLabel = await loadFont(path.join(FONT_DIR, "open-sans-16-white", "open-sans-16-white.fnt"));
+    const fontSmall = await loadFont(path.join(FONT_DIR, "open-sans-12-black", "open-sans-12-black.fnt"));
+
+    console.log(`Board dimensions: ${BOARD_W} x ${BOARD_H}`);
 
     for (const pc of colors) {
         const img = new Jimp({ width: BOARD_W, height: BOARD_H, color: rgbaToInt(pc.bg.r, pc.bg.g, pc.bg.b, 255) });
 
         // Title bar
-        fillRect(img, 0, 0, BOARD_W, 50, pc.accent);
-        img.print({ font: fontSmall, x: 20, y: 8, text: `SQUAD BOARD`, maxWidth: BOARD_W - 40 });
+        fillRect(img, 0, 0, BOARD_W, PAD + TITLE_H, pc.accent);
+        img.print({ font: fontLabel, x: PAD, y: PAD + 4, text: `SQUAD BOARD`, maxWidth: BOARD_W - PAD * 2 });
 
         // Outer border
-        drawRectOutline(img, 0, 0, BOARD_W, BOARD_H, 4, pc.light);
+        drawRectOutline(img, 0, 0, BOARD_W, BOARD_H, 2, pc.light);
 
-        // 7 soldier columns
-        const cols = 7;
-        const colPad = 10;
-        const startX = colPad;
-        const startY = 58;
-        const colW = Math.floor((BOARD_W - colPad * 2) / cols);
-        const colH = BOARD_H - startY - colPad;
-
-        for (let s = 0; s < cols; s++) {
-            const cx = startX + s * colW;
+        for (let s = 0; s < COLS; s++) {
+            const cx = PAD + s * (COL_W + COL_GAP);
+            const colH = COL_CONTENT_H;
 
             // Column outline
-            drawRectOutline(img, cx, startY, colW - 4, colH, 3, pc.accent);
+            drawRectOutline(img, cx, COL_START_Y, COL_W, colH, 2, pc.accent);
 
             // Soldier header
-            fillRect(img, cx + 3, startY + 3, colW - 10, 24, pc.accent);
-            img.print({ font: fontLabel, x: cx + 8, y: startY + 6, text: `Soldier ${s + 1}`, maxWidth: colW - 20 });
+            fillRect(img, cx + 2, COL_START_Y + 2, COL_W - 4, HEADER_H, pc.accent);
+            img.print({ font: fontSmall, x: cx + 4, y: COL_START_Y + 5, text: `Soldier ${s + 1}`, maxWidth: COL_W - 8 });
 
-            // Equipment slots (6 slots per soldier)
-            const slotStartY = startY + 30;
-            const slotH = 28;
-            const slotPad = 3;
+            // Equipment slots
+            let sy = COL_START_Y + HEADER_H + 2;
             for (let e = 0; e < equipSlots.length; e++) {
-                const sy = slotStartY + e * (slotH + slotPad);
-                // Slot box
-                drawRectOutline(img, cx + 6, sy, colW - 16, slotH, 2, pc.light);
-                // Slot label
-                img.print({ font: fontLabel, x: cx + 10, y: sy + 6, text: equipSlots[e], maxWidth: colW - 24 });
+                drawRectOutline(img, cx + 4, sy, COL_W - 8, SLOT_H, 1, pc.light);
+                img.print({ font: fontSmall, x: cx + 6, y: sy + 4, text: equipSlots[e], maxWidth: COL_W - 12 });
+                sy += SLOT_H + SLOT_PAD;
+            }
+
+            // Damage track
+            img.print({ font: fontSmall, x: cx + 4, y: sy, text: "DMG", maxWidth: COL_W - 8 });
+            sy += DMG_LABEL_H;
+            const dmgBoxW = Math.floor((COL_W - 12) / 3);
+            for (let d = 0; d < 3; d++) {
+                drawRectOutline(img, cx + 4 + d * (dmgBoxW + 2), sy, dmgBoxW, DMG_BOX_H, 1, pc.light);
             }
         }
 
