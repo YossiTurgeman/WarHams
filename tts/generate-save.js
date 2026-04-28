@@ -22,7 +22,7 @@ const luaScript = fs.readFileSync(path.join(__dirname, 'scripts', 'setup.lua'), 
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v18";
+const CARD_VERSION = "v19";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
@@ -339,8 +339,8 @@ function makeSquadBoard(pc, squadNum, px, py, pz, opts = {}) {
 }
 playerColors.forEach((pc, idx) => {
     const cl = cornerLayout[idx];
-    // Two boards toward the center of the corner (tc = +5), side ±4
-    [-4, +4].forEach((side, b) => {
+    // Two boards side-by-side, well separated so they don't overlap (side ±8)
+    [-8, +8].forEach((side, b) => {
         const p = cornerSpot(idx, 5, side);
         objects.push(makeSquadBoard(pc, b + 1, p.x, 1.05, p.z, { rotY: cl.boardRotY }));
     });
