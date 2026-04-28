@@ -22,7 +22,7 @@ const luaScript = fs.readFileSync(path.join(__dirname, 'scripts', 'setup.lua'), 
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v16";
+const CARD_VERSION = "v17";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
@@ -107,19 +107,23 @@ objects.push(tableTile);
 
 // ═════════════════════════════════════════════════════════════════════
 //  TABLE LAYOUT — Custom 4× table usable area: X ≈ ±54, Z ≈ ±38
-//  (existing object positions stay within the original ±27 / ±19 footprint;
-//   extra space is available around the perimeter)
 //
-//  z ≈ -16: P1(Red) & P2(Blue) squad boards (2 each, compact)
-//  z ≈ -13: P1/P2 bags + combat dice
-//  z ≈  -9: Resource token bags
-//  z ≈  -6: Decks + notecards
-//  z ≈  -3: Setup panel + resource dice
-//  z =   0: *** BOARD CENTER *** (hexes spawn here via Lua)
-//  z ≈   5: Zone labels + cargo containers
-//  z ≈   9: Misc bags (damage, bunker, number, separatist)
-//  z ≈  13: P3/P4 bags + combat dice
-//  z ≈  16: P3(Green) & P4(Yellow) squad boards (2 each, compact)
+//  Each player owns one CORNER of the table. Anchors at (±42, ±28).
+//  Per corner (signed by sx,sz): squad boards toward center, combat
+//  dice in the middle, bags toward the edge, hand trigger at very edge.
+//
+//        -X side                             +X side
+//   ┌───────────────────────────────────────────────────┐
+//   │ GREEN corner                       YELLOW corner  │  +Z
+//   │  (-42, +28)                          (+42, +28)   │
+//   │                                                   │
+//   │              Decks + Resource bags                │
+//   │              CENTER (hexes spawn here)            │
+//   │              Misc bags / zones                    │
+//   │                                                   │
+//   │ RED corner                            BLUE corner │  -Z
+//   │  (-42, -28)                          (+42, -28)   │
+//   └───────────────────────────────────────────────────┘
 // ═════════════════════════════════════════════════════════════════════
 
 const playerColors = [
@@ -128,6 +132,34 @@ const playerColors = [
     { label: "Green",  color: { r: 0.18, g: 0.72, b: 0.28 }, fog: "Green" },
     { label: "Yellow", color: { r: 0.9,  g: 0.82, b: 0.15 }, fog: "Yellow" },
 ];
+
+// ─── Per-player corner layout ───────────────────────────────────────
+// sx: -1 = left side, +1 = right side
+// sz: -1 = bottom (player sits at -Z), +1 = top (player sits at +Z)
+// boardRotY: orientation so board text reads correctly to that player
+// handRotY:  hand-trigger orientation
+const cornerLayout = [
+    // Red — bottom-left
+    { sx: -1, sz: -1, anchor: { x: -42, z: -28 }, boardRotY: 180, handRotY:   0 },
+    // Blue — bottom-right
+    { sx:  1, sz: -1, anchor: { x:  42, z: -28 }, boardRotY: 180, handRotY:   0 },
+    // Green — top-left
+    { sx: -1, sz:  1, anchor: { x: -42, z:  28 }, boardRotY:   0, handRotY: 180 },
+    // Yellow — top-right
+    { sx:  1, sz:  1, anchor: { x:  42, z:  28 }, boardRotY:   0, handRotY: 180 },
+];
+
+// Helper: spot inside a corner, expressed in TOWARD-CENTER (tc) and
+// SIDE coordinates so layout reads naturally regardless of which corner.
+//   tc:  >0 = toward center, <0 = toward edge
+//   side: signed offset along the player's left/right axis
+function cornerSpot(idx, tc, side) {
+    const { sx, sz, anchor } = cornerLayout[idx];
+    return {
+        x: anchor.x + sx * side,    // sx flips left/right
+        z: anchor.z - sz * tc,      // -sz so +tc moves toward center
+    };
+}
 
 // ─── 1. SETUP PANEL ──────────────────────────────────────────────────
 const setupPanel = baseObj("BlockSquare", "SETUP PANEL", 
@@ -217,17 +249,14 @@ objects.push(buildConspireDeck());
         d.x, 2, -3, { color: d.color }));
 });
 
-// ─── 5. COMBAT DICE (7 per player, near their area) ─────────────────
-const diceZones = [
-    { xStart: -22, z: -13 },  // Red
-    { xStart:  14, z: -13 },  // Blue
-    { xStart: -22, z:  13 },  // Green
-    { xStart:  14, z:  13 },  // Yellow
-];
+// ─── 5. COMBAT DICE (7 per player, in their corner) ─────────────────
 playerColors.forEach((pc, idx) => {
     for (let i = 0; i < 7; i++) {
+        // Dice row in the middle of the corner (tc=0), spread across side axis
+        const side = -7 + i * 2.3;   // -7 .. +6.8
+        const p = cornerSpot(idx, 0, side);
         objects.push(baseObj("Die_6", `${pc.label} D${i+1}`, `Combat die for ${pc.label}`,
-            diceZones[idx].xStart + i * 1.2, 2, diceZones[idx].z, { color: pc.color }));
+            p.x, 2, p.z, { color: pc.color }));
     }
 });
 
@@ -247,28 +276,21 @@ resourceDefs.forEach((res, i) => {
     objects.push(bag);
 });
 
-// ─── 7. HAND TRIGGERS (from working saves: Y=4.84, scale 12/9.17/5) ─
-const handPositions = [
-    { x: -15, z: -17, rotY: 0 },     // Red
-    { x:  15, z: -17, rotY: 0 },     // Blue
-    { x: -15, z:  17, rotY: 180 },   // Green
-    { x:  15, z:  17, rotY: 180 },   // Yellow
-];
-handPositions.forEach((hp, idx) => {
-    const ht = baseObj("HandTrigger", `${playerColors[idx].label} Hand`, "",
-        hp.x, 4.84, hp.z, {
-            rotY: hp.rotY, scaleX: 12, scaleY: 9.17, scaleZ: 5,
-            color: { ...playerColors[idx].color, a: 0 }, locked: true, grid: false
+// ─── 7. HAND TRIGGERS — at the very edge of each player's corner ────
+playerColors.forEach((pc, idx) => {
+    const cl = cornerLayout[idx];
+    // Centered in corner X-wise, pushed to the table edge Z-wise (negative tc)
+    const p = cornerSpot(idx, -8, 0);
+    const ht = baseObj("HandTrigger", `${pc.label} Hand`, "",
+        p.x, 4.84, p.z, {
+            rotY: cl.handRotY, scaleX: 12, scaleY: 9.17, scaleZ: 5,
+            color: { ...pc.color, a: 0 }, locked: true, grid: false
         });
-    ht.FogColor = playerColors[idx].fog;
+    ht.FogColor = pc.fog;
     objects.push(ht);
 });
 
-// ─── 8. SOLDIER BAGS (28 PlayerPawn per player) ─────────────────────
-const soldierBagPos = [
-    { x: -10, z: -13 }, { x: 10, z: -13 },
-    { x: -10, z:  13 }, { x: 10, z:  13 },
-];
+// ─── 8. SOLDIER BAGS (28 PlayerPawn per player, in corner) ──────────
 const materialIndices = [1, 5, 4, 3]; // Red, Blue, Green, Yellow
 playerColors.forEach((pc, idx) => {
     const soldiers = [];
@@ -278,9 +300,10 @@ playerColors.forEach((pc, idx) => {
         soldier.MaterialIndex = materialIndices[idx];
         soldiers.push(soldier);
     }
+    const sp = cornerSpot(idx, -5, -7);
     const bag = baseObj("Bag", `${pc.label} Soldiers (28)`,
         `28 ${pc.label} soldiers. Start with 10 (2×5), max 28 (4×7).`,
-        soldierBagPos[idx].x, 1.5, soldierBagPos[idx].z, { color: pc.color });
+        sp.x, 1.5, sp.z, { color: pc.color });
     bag.ContainedObjects = soldiers;
     objects.push(bag);
 });
@@ -299,17 +322,8 @@ sepBag.ContainedObjects = sepSoldiers;
 objects.push(sepBag);
 
 // ─── 10. SQUAD BOARDS (2 per player, Custom_Tile with generated images)
-//     Uses landscape custom tile images showing 7 soldier slots.
-const boardLayout = [
-    // Red (P1): left side top — faces south (toward center)
-    { xs: [-22, -15], z: -16, rotY: 180 },
-    // Blue (P2): right side top — faces south (toward center)
-    { xs: [15, 22], z: -16, rotY: 180 },
-    // Green (P3): left side bottom — faces north (toward center)
-    { xs: [-22, -15], z: 16, rotY: 0 },
-    // Yellow (P4): right side bottom — faces north (toward center)
-    { xs: [15, 22], z: 16, rotY: 0 },
-];
+//     Squad boards sit toward the center of each player's corner so they
+//     are easily readable. Extras bag is tucked next to them.
 function makeSquadBoard(pc, squadNum, px, py, pz, opts = {}) {
     const board = baseObj("Custom_Tile", `${pc.label} Squad ${squadNum}`,
         `Squad Board — ${pc.label} Squad ${squadNum}\n7 slots | 6 equip each | 3 dmg cap`,
@@ -324,43 +338,39 @@ function makeSquadBoard(pc, squadNum, px, py, pz, opts = {}) {
     return board;
 }
 playerColors.forEach((pc, idx) => {
-    // 2 boards placed on table
-    boardLayout[idx].xs.forEach((x, b) => {
-        objects.push(makeSquadBoard(pc, b + 1, x, 1.05, boardLayout[idx].z, { rotY: boardLayout[idx].rotY }));
+    const cl = cornerLayout[idx];
+    // Two boards toward the center of the corner (tc = +5), side ±4
+    [-4, +4].forEach((side, b) => {
+        const p = cornerSpot(idx, 5, side);
+        objects.push(makeSquadBoard(pc, b + 1, p.x, 1.05, p.z, { rotY: cl.boardRotY }));
     });
-    // 2 extra boards in a bag
+    // Extras bag tucked next to the outer board (tc = +5, side = +9)
     const extras = [];
     for (let b = 2; b < 4; b++) {
         extras.push(makeSquadBoard(pc, b + 1, 0, 0.2 * (b - 2), 0));
     }
+    const ep = cornerSpot(idx, 5, 9);
     const extraBag = baseObj("Bag", `${pc.label} Extra Boards`, `Extra squad boards for ${pc.label}.`,
-        boardLayout[idx].xs[0] + 3.5, 1.5, boardLayout[idx].z, { color: pc.color });
+        ep.x, 1.5, ep.z, { color: pc.color });
     extraBag.ContainedObjects = extras;
     objects.push(extraBag);
 });
 
-// ─── 11. CONTROL MARKER BAGS (25 per player) ────────────────────────
-const controlBagPos = [
-    { x: -7, z: -13 }, { x: 7, z: -13 },
-    { x: -7, z:  13 }, { x: 7, z:  13 },
-];
+// ─── 11. CONTROL MARKER BAGS (25 per player, in corner) ─────────────
 playerColors.forEach((pc, idx) => {
     const markers = [];
     for (let i = 0; i < 25; i++) {
         markers.push(baseObj("Chinese_Checkers_Piece", `${pc.label} Control`, `${pc.label} control marker`,
             0, 0.3 * i, 0, { color: pc.color }));
     }
+    const sp = cornerSpot(idx, -5, -2.5);
     const bag = baseObj("Bag", `${pc.label} Control (25)`, `25 control markers for ${pc.label}.`,
-        controlBagPos[idx].x, 1.5, controlBagPos[idx].z, { color: pc.color });
+        sp.x, 1.5, sp.z, { color: pc.color });
     bag.ContainedObjects = markers;
     objects.push(bag);
 });
 
-// ─── 12. FLAG BAGS (25 per player) ──────────────────────────────────
-const flagBagPos = [
-    { x: -4, z: -13 }, { x: 4, z: -13 },
-    { x: -4, z:  13 }, { x: 4, z:  13 },
-];
+// ─── 12. FLAG BAGS (25 per player, in corner) ───────────────────────
 playerColors.forEach((pc, idx) => {
     const flags = [];
     for (let i = 0; i < 25; i++) {
@@ -386,8 +396,9 @@ playerColors.forEach((pc, idx) => {
         };
         flags.push(flag);
     }
+    const fp = cornerSpot(idx, -5, 2.5);
     const bag = baseObj("Bag", `${pc.label} Flags (25)`, "Flags for Equipment Display.",
-        flagBagPos[idx].x, 1.5, flagBagPos[idx].z, { color: pc.color });
+        fp.x, 1.5, fp.z, { color: pc.color });
     bag.ContainedObjects = flags;
     objects.push(bag);
 });
