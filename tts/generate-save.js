@@ -22,7 +22,7 @@ const luaScript = fs.readFileSync(path.join(__dirname, 'scripts', 'setup.lua'), 
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v15";
+const CARD_VERSION = "v16";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
@@ -43,6 +43,7 @@ function flagURL(colorName) {
 }
 const FLAG_MESH_URL = `${CARD_BASE}/flag.obj?${CARD_VERSION}`;
 const FLAG_DIFFUSE_URL = `${CARD_BASE}/flag-texture.png?${CARD_VERSION}`;
+const TABLE_SURFACE_URL = `${CARD_BASE}/table_surface.png?${CARD_VERSION}`;
 
 // GUID generator — 6 hex chars
 let guidCounter = 0x100000;
@@ -88,9 +89,26 @@ function baseObj(name, nickname, desc, px, py, pz, opts = {}) {
 
 const objects = [];
 
+// ─── 0. CUSTOM TABLE SURFACE (4× area of stock Table_RPG) ───────────
+// We use Table_None and place a giant locked Custom_Tile at y≈0.95 so the
+// usable play area is ~108 × 76 (±54 X, ±38 Z), 4× the area of Table_RPG.
+const tableTile = baseObj("Custom_Tile", "Play Surface",
+    "W.A.R.H.A.M.S play surface — 4× standard table area.",
+    0, 0.9, 0,
+    { scaleX: 54, scaleY: 1, scaleZ: 38, color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
+tableTile.CustomImage = {
+    ImageURL: TABLE_SURFACE_URL,
+    ImageSecondaryURL: "",
+    ImageScalar: 1,
+    WidthScale: 0,
+    CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
+};
+objects.push(tableTile);
+
 // ═════════════════════════════════════════════════════════════════════
-//  TABLE LAYOUT — Table_RPG usable area: X ≈ ±27, Z ≈ ±19
-//  (verified from working saves — objects beyond this fall off)
+//  TABLE LAYOUT — Custom 4× table usable area: X ≈ ±54, Z ≈ ±38
+//  (existing object positions stay within the original ±27 / ±19 footprint;
+//   extra space is available around the perimeter)
 //
 //  z ≈ -16: P1(Red) & P2(Blue) squad boards (2 each, compact)
 //  z ≈ -13: P1/P2 bags + combat dice
@@ -473,7 +491,7 @@ const saveFile = {
     Tags: ["Strategy", "Sci-Fi", "Wargame"],
     Gravity: 0.5,
     PlayArea: 0.5,
-    Table: "Table_RPG",
+    Table: "Table_None",
     Sky: "Sky_Museum",
     Note: [
         "W.A.R H.A.M.S: The Battle for Planet X",
