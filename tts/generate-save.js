@@ -22,7 +22,7 @@ const luaScript = fs.readFileSync(path.join(__dirname, 'scripts', 'setup.lua'), 
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v17";
+const CARD_VERSION = "v18";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
@@ -344,12 +344,12 @@ playerColors.forEach((pc, idx) => {
         const p = cornerSpot(idx, 5, side);
         objects.push(makeSquadBoard(pc, b + 1, p.x, 1.05, p.z, { rotY: cl.boardRotY }));
     });
-    // Extras bag tucked next to the outer board (tc = +5, side = +9)
+    // Extras bag in the same row as the other pouches (tc = -5, side = +7)
     const extras = [];
     for (let b = 2; b < 4; b++) {
         extras.push(makeSquadBoard(pc, b + 1, 0, 0.2 * (b - 2), 0));
     }
-    const ep = cornerSpot(idx, 5, 9);
+    const ep = cornerSpot(idx, -5, 7);
     const extraBag = baseObj("Bag", `${pc.label} Extra Boards`, `Extra squad boards for ${pc.label}.`,
         ep.x, 1.5, ep.z, { color: pc.color });
     extraBag.ContainedObjects = extras;
