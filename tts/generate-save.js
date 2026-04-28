@@ -22,7 +22,7 @@ const luaScript = fs.readFileSync(path.join(__dirname, 'scripts', 'setup.lua'), 
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v12";
+const CARD_VERSION = "v13";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
@@ -37,6 +37,9 @@ function conspireFaceURL(name) {
 }
 function squadBoardURL(colorName) {
     return `${CARD_BASE}/squad_board_${colorName}.png?${CARD_VERSION}`;
+}
+function flagURL(colorName) {
+    return `${CARD_BASE}/flag_${colorName}.png?${CARD_VERSION}`;
 }
 
 // GUID generator — 6 hex chars
@@ -341,8 +344,23 @@ const flagBagPos = [
 playerColors.forEach((pc, idx) => {
     const flags = [];
     for (let i = 0; i < 25; i++) {
-        flags.push(baseObj("Chinese_Checkers_Piece", `${pc.label} Flag`, `${pc.label} flag — Equipment Display. Permanent.`,
-            0, 0.3 * i, 0, { scaleX: 0.7, scaleY: 0.7, scaleZ: 0.7, color: pc.color }));
+        const flag = baseObj("Custom_Token", `${pc.label} Flag`,
+            `${pc.label} flag — Equipment Display. Permanent.`,
+            0, 0.3 * i, 0,
+            { scaleX: 0.6, scaleY: 0.6, scaleZ: 0.6, color: { r: 1, g: 1, b: 1 } });
+        flag.CustomImage = {
+            ImageURL: flagURL(pc.label.toLowerCase()),
+            ImageSecondaryURL: "",
+            ImageScalar: 1,
+            WidthScale: 0,
+            CustomToken: {
+                Thickness: 0.1,
+                MergeDistancePixels: 15.0,
+                StandUp: true,
+                Stackable: false,
+            },
+        };
+        flags.push(flag);
     }
     const bag = baseObj("Bag", `${pc.label} Flags (25)`, "Flags for Equipment Display.",
         flagBagPos[idx].x, 1.5, flagBagPos[idx].z, { color: pc.color });
