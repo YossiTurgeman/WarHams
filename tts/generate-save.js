@@ -22,7 +22,7 @@ const luaScript = fs.readFileSync(path.join(__dirname, 'scripts', 'setup.lua'), 
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v14";
+const CARD_VERSION = "v15";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
@@ -41,6 +41,8 @@ function squadBoardURL(colorName) {
 function flagURL(colorName) {
     return `${CARD_BASE}/flag_${colorName}.png?${CARD_VERSION}`;
 }
+const FLAG_MESH_URL = `${CARD_BASE}/flag.obj?${CARD_VERSION}`;
+const FLAG_DIFFUSE_URL = `${CARD_BASE}/flag-texture.png?${CARD_VERSION}`;
 
 // GUID generator — 6 hex chars
 let guidCounter = 0x100000;
@@ -344,21 +346,25 @@ const flagBagPos = [
 playerColors.forEach((pc, idx) => {
     const flags = [];
     for (let i = 0; i < 25; i++) {
-        const flag = baseObj("Custom_Token", `${pc.label} Flag`,
+        const flag = baseObj("Custom_Model", `${pc.label} Flag`,
             `${pc.label} flag — Equipment Display. Permanent.`,
             0, 0.3 * i, 0,
-            { scaleX: 0.6, scaleY: 0.6, scaleZ: 0.6, color: { r: 1, g: 1, b: 1 } });
-        flag.CustomImage = {
-            ImageURL: flagURL(pc.label.toLowerCase()),
-            ImageSecondaryURL: "",
-            ImageScalar: 1,
-            WidthScale: 0,
-            CustomToken: {
-                Thickness: 0.1,
-                MergeDistancePixels: 15.0,
-                StandUp: true,
-                Stackable: false,
+            { scaleX: 1, scaleY: 1, scaleZ: 1, color: pc.color });
+        flag.CustomMesh = {
+            MeshURL: FLAG_MESH_URL,
+            DiffuseURL: FLAG_DIFFUSE_URL,
+            NormalURL: "",
+            ColliderURL: "",
+            Convex: true,
+            MaterialIndex: 3,
+            TypeIndex: 6,
+            CustomShader: {
+                SpecularColor: { r: 1, g: 1, b: 1 },
+                SpecularIntensity: 0.1,
+                SpecularSharpness: 3,
+                FresnelStrength: 0,
             },
+            CastShadows: true,
         };
         flags.push(flag);
     }
