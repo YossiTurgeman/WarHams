@@ -20,7 +20,14 @@ const H = 512;
 const POLE_X = 60;
 const POLE_W = 18;
 const POLE_TOP = 30;
-const POLE_BOTTOM = 470;
+const POLE_BOTTOM = 440;
+
+// Base geometry (wide rounded plinth that gives the flag a stable foot)
+const BASE_CX = POLE_X + Math.floor(POLE_W / 2);
+const BASE_TOP = POLE_BOTTOM - 6;       // slight overlap with pole bottom
+const BASE_BOTTOM = 498;                // near image bottom (StandUp lines up here)
+const BASE_HALF_W_TOP = 50;             // narrow at top of base
+const BASE_HALF_W_BOTTOM = 110;         // wide at bottom (the actual stand)
 
 // Flag geometry (rectangle attached to top of pole, with V-cut tail)
 const FLAG_LEFT = POLE_X + POLE_W;
@@ -153,9 +160,40 @@ async function main() {
         // (refill interior so we keep a solid ball with thin outline)
         fillCircle(img, POLE_X + Math.floor(POLE_W / 2), POLE_TOP, 11, POLE_TIP_COLOR);
 
-        // Pole base — small flared foot so it stands nicely
-        fillRect(img, POLE_X - 8, POLE_BOTTOM - 6, POLE_W + 16, 12, POLE_COLOR);
-        drawRectOutline(img, POLE_X - 8, POLE_BOTTOM - 6, POLE_W + 16, 12, 2, POLE_OUTLINE);
+        // Pole base — wide trapezoidal plinth so the token stands stably
+        // and clearly reads as a flag base.
+        const baseH = BASE_BOTTOM - BASE_TOP;
+        for (let py = BASE_TOP; py < BASE_BOTTOM; py++) {
+            const t = (py - BASE_TOP) / baseH; // 0 at top, 1 at bottom
+            const halfW = Math.round(BASE_HALF_W_TOP + t * (BASE_HALF_W_BOTTOM - BASE_HALF_W_TOP));
+            for (let px = BASE_CX - halfW; px <= BASE_CX + halfW; px++) {
+                setPx(img, px, py, POLE_COLOR);
+            }
+        }
+        // Base outline (left + right sloped edges, plus bottom)
+        for (let py = BASE_TOP; py < BASE_BOTTOM; py++) {
+            const t = (py - BASE_TOP) / baseH;
+            const halfW = Math.round(BASE_HALF_W_TOP + t * (BASE_HALF_W_BOTTOM - BASE_HALF_W_TOP));
+            for (let k = 0; k < 3; k++) {
+                setPx(img, BASE_CX - halfW + k, py, POLE_OUTLINE);
+                setPx(img, BASE_CX + halfW - k, py, POLE_OUTLINE);
+            }
+        }
+        for (let k = 0; k < 4; k++) {
+            for (let px = BASE_CX - BASE_HALF_W_BOTTOM; px <= BASE_CX + BASE_HALF_W_BOTTOM; px++) {
+                setPx(img, px, BASE_BOTTOM - 1 - k, POLE_OUTLINE);
+            }
+        }
+        // Decorative band across upper portion of the base
+        const bandY = BASE_TOP + Math.floor(baseH * 0.35);
+        const bandHalfW = Math.round(
+            BASE_HALF_W_TOP + (bandY - BASE_TOP) / baseH * (BASE_HALF_W_BOTTOM - BASE_HALF_W_TOP)
+        );
+        for (let k = 0; k < 6; k++) {
+            for (let px = BASE_CX - bandHalfW + 4; px <= BASE_CX + bandHalfW - 4; px++) {
+                setPx(img, px, bandY + k, POLE_OUTLINE);
+            }
+        }
 
         await img.write(path.join(outDir, `flag_${pc.name}.png`));
         console.log(`Flag: ${pc.name}`);
