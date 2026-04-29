@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v28";
+const CARD_VERSION = "v29";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
@@ -267,12 +267,21 @@ playerColors.forEach((pc, idx) => {
 // stored in a regular Bag so each token spawns upright on its base.
 // (Infinite_Bag auto-orients spawned items toward the puller — we don't want
 //  that for these 3D shapes.)
+// Uniform scale factor per token so each model's top extent equals the
+// hammer's top extent (mesh y ≈ 0.78). Keeps proportions correct (no
+// distortion) while making all five tokens the same visual height.
+//   Native top y of each mesh:
+//     Barrel ≈ 0.62  → scale 1.258
+//     Lightning ≈ 0.67  → scale 1.164
+//     Wave ≈ 0.70  → scale 1.114
+//     Hammer ≈ 0.78  → scale 1.000  (reference)
+//     Recruit ≈ 0.85  → scale 0.918
 const resourceDefs = [
-    { name: "Oil",          mesh: BARREL_MESH_URL,    diffuse: BARREL_DIFFUSE_URL,    label: "WW2 steel drum",   color: { r: 0.12, g: 0.12, b: 0.12 } },
-    { name: "Electricity",  mesh: LIGHTNING_MESH_URL, diffuse: RESOURCE_DIFFUSE_URL,  label: "lightning bolt",    color: { r: 0.95, g: 0.82, b: 0.10 } },
-    { name: "Intelligence", mesh: WAVE_MESH_URL,      diffuse: RESOURCE_DIFFUSE_URL,  label: "transmitting wave", color: { r: 0.20, g: 0.45, b: 0.95 } },
-    { name: "Industry",     mesh: HAMMER_MESH_URL,    diffuse: RESOURCE_DIFFUSE_URL,  label: "hammer",            color: { r: 0.85, g: 0.15, b: 0.15 } },
-    { name: "Local Favor",  mesh: RECRUIT_MESH_URL,   diffuse: RESOURCE_DIFFUSE_URL,  label: "recruit",           color: { r: 0.15, g: 0.70, b: 0.20 } },
+    { name: "Oil",          mesh: BARREL_MESH_URL,    diffuse: BARREL_DIFFUSE_URL,    label: "WW2 steel drum",    scale: 1.258, color: { r: 0.12, g: 0.12, b: 0.12 } },
+    { name: "Electricity",  mesh: LIGHTNING_MESH_URL, diffuse: RESOURCE_DIFFUSE_URL,  label: "lightning bolt",    scale: 1.164, color: { r: 0.95, g: 0.82, b: 0.10 } },
+    { name: "Intelligence", mesh: WAVE_MESH_URL,      diffuse: RESOURCE_DIFFUSE_URL,  label: "transmitting wave", scale: 1.114, color: { r: 0.20, g: 0.45, b: 0.95 } },
+    { name: "Industry",     mesh: HAMMER_MESH_URL,    diffuse: RESOURCE_DIFFUSE_URL,  label: "hammer",            scale: 1.000, color: { r: 0.85, g: 0.15, b: 0.15 } },
+    { name: "Local Favor",  mesh: RECRUIT_MESH_URL,   diffuse: RESOURCE_DIFFUSE_URL,  label: "recruit",           scale: 0.918, color: { r: 0.15, g: 0.70, b: 0.20 } },
 ];
 function makeResourceToken(res) {
     const token = baseObj("Custom_Model", res.name,
@@ -280,7 +289,7 @@ function makeResourceToken(res) {
         0, 1.0, 0,
         {
             rotX: 0, rotY: 0, rotZ: 0,
-            scaleX: 1.0, scaleY: 1.0, scaleZ: 1.0,
+            scaleX: res.scale, scaleY: res.scale, scaleZ: res.scale,
             color: res.color,
         });
     token.CustomMesh = {
