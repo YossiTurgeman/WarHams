@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/YossiTurgeman/WarHams#readme",
   "dependencies": {
+    "jimp": "^1.6.1",
     "pdfkit": "^0.17.2"
   }
 }
