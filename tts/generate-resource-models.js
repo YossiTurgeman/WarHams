@@ -66,14 +66,18 @@ function lathe(centerX, centerZ, profile, segs = 20, capBottom = true, capTop = 
         }
     }
     if (capBottom) {
+        // Bottom cap: normal must point -Y (away from solid). Triangle
+        // (c, ring[i], ring[i+1]) gives Edge1 × Edge2 = (0, -sin(δ), 0).
         const c = addV(centerX, profile[0][0], centerZ);
         const ring = rings[0];
-        for (let i = 0; i < segs; i++) addTri(c, ring[(i + 1) % segs], ring[i]);
+        for (let i = 0; i < segs; i++) addTri(c, ring[i], ring[(i + 1) % segs]);
     }
     if (capTop) {
+        // Top cap: normal must point +Y. Triangle (c, ring[i+1], ring[i])
+        // gives Edge1 × Edge2 = (0, +sin(δ), 0).
         const c = addV(centerX, profile[profile.length - 1][0], centerZ);
         const ring = rings[rings.length - 1];
-        for (let i = 0; i < segs; i++) addTri(c, ring[i], ring[(i + 1) % segs]);
+        for (let i = 0; i < segs; i++) addTri(c, ring[(i + 1) % segs], ring[i]);
     }
 }
 
@@ -185,8 +189,7 @@ function extrudePolygon(points2D, halfThickness) {
 function buildLightning() {
     reset();
     // Small base disc — hidden by the bolt's footprint when viewed from above.
-    // No bottom cap: it sits flush on the table and would z-fight the surface.
-    lathe(0, 0, [[0, 0.13], [0.03, 0.15], [0.05, 0.13]], 16, false, true);
+    lathe(0, 0, [[0, 0.13], [0.03, 0.15], [0.05, 0.13]], 16, true, true);
 
     // Bolt silhouette in CCW order (viewed from +Z, with Y up). This is
     // the canonical 6-vertex thunderbolt path — top peak, two concave
@@ -211,8 +214,8 @@ function buildLightning() {
 // stacked above it — like the classic radio-wave icon viewed in 3D.
 function buildWave() {
     reset();
-    // Base disc — no bottom cap (z-fights table)
-    lathe(0, 0, [[0, 0.22], [0.04, 0.24], [0.06, 0.22]], 20, false, true);
+    // Base disc
+    lathe(0, 0, [[0, 0.22], [0.04, 0.24], [0.06, 0.22]], 20, true, true);
     // Mast / antenna pole
     lathe(0, 0, [[0.06, 0.04], [0.62, 0.04]], 10, false, true);
     // Ball cap on antenna
@@ -250,8 +253,8 @@ function buildWave() {
 // upright on a base disc that is hidden inside the handle bottom.
 function buildHammer() {
     reset();
-    // Small base disc so the hammer doesn't roll — no bottom cap (z-fights table)
-    lathe(0, 0, [[0, 0.16], [0.05, 0.18], [0.07, 0.16]], 16, false, true);
+    // Small base disc so the hammer doesn't roll
+    lathe(0, 0, [[0, 0.16], [0.05, 0.18], [0.07, 0.16]], 16, true, true);
     // Handle
     lathe(0, 0, [[0.05, 0.05], [0.70, 0.05]], 12, false, true);
     // Head — rectangular block straddling the top of the handle
@@ -265,8 +268,8 @@ function buildHammer() {
 // resource tokens.
 function buildRecruit() {
     reset();
-    // Base disc (hidden under the legs) — no bottom cap (z-fights table)
-    lathe(0, 0, [[0, 0.22], [0.025, 0.24], [0.04, 0.22]], 16, false, true);
+    // Base disc (hidden under the legs)
+    lathe(0, 0, [[0, 0.22], [0.025, 0.24], [0.04, 0.22]], 16, true, true);
     // Two legs (thin cylinders), centered ±0.07 on X
     lathe(-0.07, 0, [[0.04, 0.05], [0.32, 0.05]], 10, false, true);
     lathe( 0.07, 0, [[0.04, 0.05], [0.32, 0.05]], 10, false, true);

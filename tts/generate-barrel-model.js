@@ -90,28 +90,33 @@ function buildLathe(centerX, centerZ, profilePts, capBottom = true, capTop = tru
         }
     }
     if (capBottom) {
+        // Bottom cap: normal must point -Y. Triangle (c, ring[i], ring[ni])
+        // gives the correct outward (downward) normal.
         const c = addV(centerX, profilePts[0][0], centerZ);
         const ring = rings[0];
         for (let i = 0; i < SEG; i++) {
             const ni = (i + 1) % SEG;
-            addTri(c, ring[ni], ring[i]); // CW from below = normal down
+            addTri(c, ring[i], ring[ni]);
         }
     }
     if (capTop) {
+        // Top cap: normal must point +Y. Triangle (c, ring[ni], ring[i])
+        // gives the correct outward (upward) normal.
         const c = addV(centerX, profilePts[profilePts.length - 1][0], centerZ);
         const ring = rings[rings.length - 1];
         for (let i = 0; i < SEG; i++) {
             const ni = (i + 1) % SEG;
-            addTri(c, ring[i], ring[ni]); // CCW from above = normal up
+            addTri(c, ring[ni], ring[i]);
         }
     }
 }
 
 // Main barrel body — perfectly symmetric solid of revolution so the
 // convex collider rests flat on the table.
-// No bottom cap: it sits flush on the table and would z-fight the
-// table surface, producing fan-shaped flicker artifacts.
-buildLathe(0, 0, profile, /*capBottom*/ false, /*capTop*/ true);
+// Bottom cap re-enabled now that the cap winding produces the correct
+// outward (downward) normal — it's back-facing from above and hidden by
+// the table from below, so no z-fighting.
+buildLathe(0, 0, profile, /*capBottom*/ true, /*capTop*/ true);
 
 // ─── Write OBJ ──────────────────────────────────────────────────────
 const lines = [
