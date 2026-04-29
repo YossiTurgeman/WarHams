@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v31";
+const CARD_VERSION = "v32";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
@@ -192,7 +192,7 @@ function buildBACDeck() {
     });
     const deck = baseObj("Deck", "BAC Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards\nDraw 3 per player, then draft.\nHover cards to see stats.`,
-        10, 1.5, -6, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        44, 1.5, -20, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -226,7 +226,7 @@ function buildConspireDeck() {
     });
     const deck = baseObj("Deck", "Conspire Deck",
         `Conspire Cards — ${gameData.deck_counts.total_conspire_cards} cards\nForfeit Movement or Combat to draw 1.\nHover cards to see effects.`,
-        -10, 1.5, -6, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
+        44, 1.5, 20, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -313,9 +313,11 @@ function makeResourceToken(res) {
 resourceDefs.forEach((res, i) => {
     const tokens = [];
     for (let n = 0; n < 50; n++) tokens.push(makeResourceToken(res));
+    // Resource bags lined up along the right edge of the table, between
+    // the BAC deck (z=-20) and the Conspire deck (z=+20).
     const bag = baseObj("Bag", `${res.name} Tokens (50)`,
         `Stack of ${res.name} tokens (${res.label}). Each spawns upright on its base.`,
-        -12 + i * 6, 1.5, -9, { color: res.color });
+        44, 1.5, -12 + i * 6, { color: res.color });
     bag.ContainedObjects = tokens;
     objects.push(bag);
 });
