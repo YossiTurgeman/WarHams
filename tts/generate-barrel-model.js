@@ -109,7 +109,9 @@ function buildLathe(centerX, centerZ, profilePts, capBottom = true, capTop = tru
 
 // Main barrel body — perfectly symmetric solid of revolution so the
 // convex collider rests flat on the table.
-buildLathe(0, 0, profile, /*capBottom*/ true, /*capTop*/ true);
+// No bottom cap: it sits flush on the table and would z-fight the
+// table surface, producing fan-shaped flicker artifacts.
+buildLathe(0, 0, profile, /*capBottom*/ false, /*capTop*/ true);
 
 // ─── Write OBJ ──────────────────────────────────────────────────────
 const lines = [
