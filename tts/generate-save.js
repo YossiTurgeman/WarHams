@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v22";
+const CARD_VERSION = "v23";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
@@ -287,8 +287,8 @@ function makeOilBarrelToken() {
         TypeIndex: 0,
         CustomShader: {
             SpecularColor: { r: 1, g: 1, b: 1 },
-            SpecularIntensity: 0.35,
-            SpecularSharpness: 4,
+            SpecularIntensity: 0,   // matte — moving highlight made it look like spinning
+            SpecularSharpness: 2,
             FresnelStrength: 0,
         },
         CastShadows: true,
