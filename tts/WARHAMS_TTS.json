@@ -1,7 +1,7 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1777379022,
-  "Date": "2026-04-28",
+  "EpochTime": 1777467303,
+  "Date": "2026-04-29",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
   "GameType": "",
@@ -15,7 +15,7 @@
   "PlayArea": 0.5,
   "Table": "Table_None",
   "Sky": "Sky_Museum",
-  "Note": "W.A.R H.A.M.S: The Battle for Planet X\n========================================\n\n2-4 Players | Sci-Fi Corporate Military Conquest\n\nSETUP:\n1. Click 'Random Board' or 'Fixed Board' on the Setup Panel\n2. Each player takes a soldier bag, flag bag, control markers, and 2 squad boards\n3. Place 10 soldiers (2 squads of 5) on starting hexes\n4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)\n5. Shuffle the Conspire Deck\n\nVICTORY CONDITIONS:\n- Spaceport Domination: 5/6 spaceports (2p) or 4/6 (3-4p)\n- Military Supremacy: Hold 28 soldiers for 1 full round\n- Dominance: 50 DP from equipped BAC cards",
+  "Note": "W.A.R H.A.M.S: The Battle for Planet X\n========================================\n\n2-4 Players | Sci-Fi Corporate Military Conquest\n\nSETUP:\n1. Place hex tiles manually to build the planet board\n2. Each player takes a soldier bag, flag bag, control markers, and 2 squad boards\n3. Place 10 soldiers (2 squads of 5) on starting hexes\n4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)\n5. Shuffle the Conspire Deck\n\nVICTORY CONDITIONS:\n- Spaceport Domination: 5/6 spaceports (2p) or 4/6 (3-4p)\n- Military Supremacy: Hold 28 soldiers for 1 full round\n- Dominance: 50 DP from equipped BAC cards",
   "Rules": "",
   "PlayerTurn": "",
   "DrawImage": "",
@@ -104,52 +104,7 @@
       }
     },
     {
-      "GUID": "100001",
-      "Name": "BlockSquare",
-      "Transform": {
-        "posX": 0,
-        "posY": 1.05,
-        "posZ": -3,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 0,
-        "scaleX": 4,
-        "scaleY": 0.2,
-        "scaleZ": 2
-      },
-      "Nickname": "SETUP PANEL",
-      "Description": "Click a button to generate the hex board.\nRandom = shuffled tiles.\nFixed = balanced playtesting layout.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 0.15,
-        "g": 0.15,
-        "b": 0.2
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "--[[\n    W.A.R H.A.M.S — Tabletop Simulator Board Setup Script\n    Handles Random and Fixed board layout for a 61-hex circular grid.\n\n    Hex breakdown:\n      15 Resource tiles (3 Oil Rigs, 3 Power Plants, 3 Factories, 3 Radar Dishes, 3 Cities)\n       3 Separatist Bases (numbered 2, 4, 6)\n       6 Spaceport Drop Zones (numbered 1-6)\n      37 Terrain tiles\n    \n    Number tokens placed on the 15 resource hexes:\n      2×1, 2×2, 3×3, 3×4, 3×5, 3×6 = 16 tokens → 15 hexes (one hex receives 2)\n\n    Tiles are spawned as colored BlockSquare objects (no external images needed).\n]]\n\n-------------------------------------------------------------------------------\n-- Constants\n-------------------------------------------------------------------------------\n\n-- Hex grid spacing: flat-top hexagons\n-- A BlockSquare at scale 1 is 1 TTS unit. We scale them to ~1.3 for nice hex tiles.\n-- For flat-top hex tiling with side-length s, center-to-center spacing is:\n--   horizontal: 1.5 * width   vertical: sqrt(3) * width\n-- At TILE_SCALE=1.3, the block is 1.3 units wide.\n-- We want tiles to touch/nearly touch, so spacing = 1.3 * 1.15 = ~1.5\nlocal HEX_SIZE    = 1.5    -- center-to-center spacing factor\nlocal TILE_SCALE  = 1.3    -- visual scale of each hex tile (BlockSquare)\nlocal TILE_Y      = 1.1    -- tile surface height\nlocal TOKEN_Y     = 1.6    -- number-token height (above tile)\nlocal TILE_TAG    = \"WARHAMS_HEX\"\n\n-- Tile type definitions with colors\nlocal TILE_TYPES = {\n    [\"Oil Rig\"]         = {r = 0.12, g = 0.12, b = 0.12},  -- near black\n    [\"Power Plant\"]     = {r = 0.95, g = 0.85, b = 0.10},  -- yellow\n    [\"Factory\"]         = {r = 0.85, g = 0.15, b = 0.15},  -- red\n    [\"Radar Dish\"]      = {r = 0.20, g = 0.40, b = 0.90},  -- blue\n    [\"City/Village\"]    = {r = 0.15, g = 0.72, b = 0.25},  -- green\n    [\"Separatist Base\"] = {r = 0.50, g = 0.50, b = 0.50},  -- grey\n    [\"Spaceport\"]       = {r = 0.60, g = 0.25, b = 0.80},  -- purple\n    [\"Terrain\"]         = {r = 0.60, g = 0.53, b = 0.40},  -- tan/brown\n}\n\n-- Tile pool definition\nlocal TILE_POOL = {\n    {type = \"Oil Rig\",         count = 3,  resource = true},\n    {type = \"Power Plant\",     count = 3,  resource = true},\n    {type = \"Factory\",         count = 3,  resource = true},\n    {type = \"Radar Dish\",      count = 3,  resource = true},\n    {type = \"City/Village\",    count = 3,  resource = true},\n    {type = \"Separatist Base\", count = 3,  resource = false, numbers = {2, 4, 6}},\n    {type = \"Spaceport\",       count = 6,  resource = false, numbers = {1, 2, 3, 4, 5, 6}},\n    {type = \"Terrain\",         count = 37, resource = false},\n}\n\n-- Number token pool for the 15 resource hexes (16 tokens total)\nlocal NUMBER_TOKEN_POOL = {1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6}\n\n-------------------------------------------------------------------------------\n-- Hex Grid Utilities (flat-top orientation)\n-------------------------------------------------------------------------------\n\nfunction axialToWorld(q, r)\n    local x = HEX_SIZE * (3/2 * q)\n    local z = HEX_SIZE * (math.sqrt(3)/2 * q + math.sqrt(3) * r)\n    return {x = x, y = TILE_Y, z = z}\nend\n\nfunction generateHexPositions()\n    local positions = {}\n    table.insert(positions, {q = 0, r = 0})\n\n    local directions = {\n        {dq =  1, dr =  0},\n        {dq =  0, dr =  1},\n        {dq = -1, dr =  1},\n        {dq = -1, dr =  0},\n        {dq =  0, dr = -1},\n        {dq =  1, dr = -1},\n    }\n\n    for ring = 1, 4 do\n        local q = ring\n        local r = 0\n        for side = 1, 6 do\n            for step = 1, ring do\n                table.insert(positions, {q = q, r = r})\n                q = q + directions[side].dq\n                r = r + directions[side].dr\n            end\n        end\n    end\n\n    return positions\nend\n\n-------------------------------------------------------------------------------\n-- Shuffle (Fisher-Yates)\n-------------------------------------------------------------------------------\n\nfunction shuffle(t)\n    for i = #t, 2, -1 do\n        local j = math.random(1, i)\n        t[i], t[j] = t[j], t[i]\n    end\n    return t\nend\n\n-------------------------------------------------------------------------------\n-- Build flat tile pool\n-------------------------------------------------------------------------------\n\nfunction buildFlatTilePool()\n    local flat = {}\n    for _, def in ipairs(TILE_POOL) do\n        for i = 1, def.count do\n            local entry = {\n                type     = def.type,\n                resource = def.resource,\n            }\n            if def.numbers then\n                entry.number = def.numbers[i]\n            end\n            table.insert(flat, entry)\n        end\n    end\n    return flat\nend\n\n-------------------------------------------------------------------------------\n-- Spawn a hex tile as a colored BlockSquare\n-------------------------------------------------------------------------------\n\nfunction spawnHexTile(position, tileData, label)\n    local color = TILE_TYPES[tileData.type] or {r=0.5, g=0.5, b=0.5}\n    \n    spawnObject({\n        type = \"BlockSquare\",\n        position = {position.x, position.y, position.z},\n        rotation = {0, 30, 0},\n        scale = {TILE_SCALE, 0.15, TILE_SCALE},\n        sound = false,\n        callback_function = function(obj)\n            obj.setName(label or tileData.type)\n            obj.setDescription(tileData.type)\n            obj.setColorTint(color)\n            obj.setLock(true)\n            obj.addTag(TILE_TAG)\n        end\n    })\nend\n\n-------------------------------------------------------------------------------\n-- Spawn number tokens as small colored BlockSquare\n-------------------------------------------------------------------------------\n\nfunction spawnNumberToken(position, number, offset_x, offset_z)\n    local ox = offset_x or 0\n    local oz = offset_z or 0\n    \n    spawnObject({\n        type = \"BlockSquare\",\n        position = {position.x + ox, TOKEN_Y, position.z + oz},\n        rotation = {0, 0, 0},\n        scale = {0.4, 0.1, 0.4},\n        sound = false,\n        callback_function = function(obj)\n            obj.setName(\"#\" .. tostring(number))\n            obj.setDescription(\"Resource number: \" .. tostring(number))\n            obj.setColorTint({r=0.96, g=0.93, b=0.82})\n            obj.setLock(true)\n            obj.addTag(TILE_TAG)\n        end\n    })\nend\n\n-------------------------------------------------------------------------------\n-- Cleanup\n-------------------------------------------------------------------------------\n\nfunction cleanupBoard()\n    for _, obj in ipairs(getObjects()) do\n        if obj.hasTag(TILE_TAG) then\n            obj.destruct()\n        end\n    end\nend\n\n-------------------------------------------------------------------------------\n-- Place number tokens on resource hexes\n-------------------------------------------------------------------------------\n\nfunction placeNumberTokens(resourcePositions)\n    local tokens = {}\n    for _, v in ipairs(NUMBER_TOKEN_POOL) do\n        table.insert(tokens, v)\n    end\n    shuffle(tokens)\n\n    for i = 1, 15 do\n        spawnNumberToken(resourcePositions[i], tokens[i])\n    end\n\n    -- 16th token on a random hex (offset so both visible)\n    local doubleIdx = math.random(1, 15)\n    spawnNumberToken(resourcePositions[doubleIdx], tokens[16], 0.35, 0.2)\nend\n\n-------------------------------------------------------------------------------\n-- Random Board\n-------------------------------------------------------------------------------\n\nfunction setupRandomBoard()\n    cleanupBoard()\n\n    Wait.frames(function()\n        math.randomseed(os.time())\n\n        local hexCoords = generateHexPositions()\n        local tiles = buildFlatTilePool()\n        shuffle(tiles)\n\n        local resourcePositions = {}\n\n        for i, coord in ipairs(hexCoords) do\n            local worldPos = axialToWorld(coord.q, coord.r)\n            local tile = tiles[i]\n\n            local label = tile.type\n            if tile.number then\n                label = label .. \" #\" .. tostring(tile.number)\n            end\n\n            spawnHexTile(worldPos, tile, label)\n\n            if tile.resource then\n                table.insert(resourcePositions, worldPos)\n            end\n        end\n\n        Wait.frames(function()\n            placeNumberTokens(resourcePositions)\n            broadcastToAll(\"W.A.R H.A.M.S — Random Board generated!\", {r=0.2, g=0.8, b=1})\n        end, 60)\n    end, 5)\nend\n\n-------------------------------------------------------------------------------\n-- Fixed Board (balanced layout)\n-------------------------------------------------------------------------------\n\nfunction setupFixedBoard()\n    cleanupBoard()\n\n    Wait.frames(function()\n        math.randomseed(os.time())\n\n        local hexCoords = generateHexPositions()\n        local resourcePositions = {}\n\n        local function makeTile(typeName)\n            for _, def in ipairs(TILE_POOL) do\n                if def.type == typeName then\n                    return {type = def.type, resource = def.resource}\n                end\n            end\n        end\n\n        local layout = {}\n\n        -- Ring 0 (index 1): Terrain center\n        layout[1] = makeTile(\"Terrain\")\n\n        -- Ring 1 (indices 2-7): alternate resource/terrain\n        local ring1Resources = {\"Oil Rig\", \"Power Plant\", \"Factory\"}\n        local ri = 1\n        for i = 2, 7 do\n            if i % 2 == 0 then\n                layout[i] = makeTile(ring1Resources[ri])\n                layout[i].resource = true\n                ri = ri + 1\n            else\n                layout[i] = makeTile(\"Terrain\")\n            end\n        end\n\n        -- Ring 2 (indices 8-19): resources, separatist bases, terrain\n        local ring2Pattern = {\n            \"Radar Dish\", \"Terrain\", \"Separatist Base\",\n            \"City/Village\", \"Terrain\", \"Separatist Base\",\n            \"Oil Rig\", \"Terrain\", \"Separatist Base\",\n            \"Power Plant\", \"Factory\", \"Radar Dish\",\n        }\n        local sepNumbers = {2, 4, 6}\n        local sepIdx = 1\n        for i = 8, 19 do\n            local offset = i - 7\n            local ttype = ring2Pattern[offset]\n            layout[i] = makeTile(ttype)\n            if ttype == \"Separatist Base\" then\n                layout[i].number = sepNumbers[sepIdx]\n                sepIdx = sepIdx + 1\n            end\n        end\n\n        -- Ring 3 (indices 20-37): resources, spaceports, terrain\n        local ring3Resources = {\"City/Village\", \"Oil Rig\", \"Power Plant\", \"Factory\", \"Radar Dish\", \"City/Village\"}\n        local r3ri = 1\n        local spaceportNum = 1\n        for i = 20, 37 do\n            local off = i - 19\n            local mod = (off - 1) % 3\n            if mod == 0 then\n                layout[i] = makeTile(ring3Resources[r3ri])\n                layout[i].resource = true\n                r3ri = r3ri + 1\n            elseif mod == 1 then\n                layout[i] = makeTile(\"Spaceport\")\n                layout[i].number = spaceportNum\n                spaceportNum = spaceportNum + 1\n            else\n                layout[i] = makeTile(\"Terrain\")\n            end\n        end\n\n        -- Ring 4 (indices 38-61): all Terrain\n        for i = 38, 61 do\n            layout[i] = makeTile(\"Terrain\")\n        end\n\n        -- Spawn all tiles\n        for i, coord in ipairs(hexCoords) do\n            local worldPos = axialToWorld(coord.q, coord.r)\n            local tile = layout[i]\n\n            local label = tile.type\n            if tile.number then\n                label = label .. \" #\" .. tostring(tile.number)\n            end\n\n            spawnHexTile(worldPos, tile, label)\n\n            if tile.resource then\n                table.insert(resourcePositions, worldPos)\n            end\n        end\n\n        Wait.frames(function()\n            placeNumberTokens(resourcePositions)\n            broadcastToAll(\"W.A.R H.A.M.S — Fixed Board generated!\", {r=0.2, g=1, b=0.4})\n        end, 60)\n    end, 5)\nend\n\n-------------------------------------------------------------------------------\n-- Button Callbacks\n-------------------------------------------------------------------------------\n\nfunction onRandomSetup(obj, playerColor, altClick)\n    broadcastToAll(playerColor .. \" is generating a Random board...\", {r=1, g=1, b=1})\n    setupRandomBoard()\nend\n\nfunction onFixedSetup(obj, playerColor, altClick)\n    broadcastToAll(playerColor .. \" is generating a Fixed board...\", {r=1, g=1, b=1})\n    setupFixedBoard()\nend\n\n-------------------------------------------------------------------------------\n-- On Load — create setup UI buttons\n-------------------------------------------------------------------------------\n\nfunction onLoad(saveState)\n    self.clearButtons()\n\n    self.createButton({\n        click_function  = \"onRandomSetup\",\n        function_owner  = self,\n        label           = \"Random\\nBoard\",\n        position        = {-1.2, 0.25, 0},\n        width           = 900,\n        height          = 500,\n        font_size       = 180,\n        color           = {r=0.15, g=0.4, b=0.15},\n        font_color      = {r=1, g=1, b=1},\n        tooltip         = \"Generate a randomized 61-hex board\",\n    })\n\n    self.createButton({\n        click_function  = \"onFixedSetup\",\n        function_owner  = self,\n        label           = \"Fixed\\nBoard\",\n        position        = {1.2, 0.25, 0},\n        width           = 900,\n        height          = 500,\n        font_size       = 180,\n        color           = {r=0.15, g=0.15, b=0.4},\n        font_color      = {r=1, g=1, b=1},\n        tooltip         = \"Generate a balanced fixed board for playtesting\",\n    })\n\n    broadcastToAll(\"W.A.R H.A.M.S — Board Setup ready. Choose Random or Fixed.\", {r=1, g=0.85, b=0})\nend\n",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "100066",
+      "GUID": "100065",
       "Name": "Deck",
       "Transform": {
         "posX": 10,
@@ -1199,7 +1154,7 @@
       "SidewaysCard": false,
       "ContainedObjects": [
         {
-          "GUID": "100002",
+          "GUID": "100001",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -1257,7 +1212,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100003",
+          "GUID": "100002",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -1315,7 +1270,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100004",
+          "GUID": "100003",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -1373,7 +1328,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100005",
+          "GUID": "100004",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -1431,7 +1386,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100006",
+          "GUID": "100005",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -1489,7 +1444,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100007",
+          "GUID": "100006",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -1547,7 +1502,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100008",
+          "GUID": "100007",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -1605,7 +1560,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100009",
+          "GUID": "100008",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -1663,7 +1618,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10000a",
+          "GUID": "100009",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -1721,7 +1676,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10000b",
+          "GUID": "10000a",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -1779,7 +1734,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10000c",
+          "GUID": "10000b",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -1837,7 +1792,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10000d",
+          "GUID": "10000c",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -1895,7 +1850,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10000e",
+          "GUID": "10000d",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -1953,7 +1908,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10000f",
+          "GUID": "10000e",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2011,7 +1966,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100010",
+          "GUID": "10000f",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2069,7 +2024,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100011",
+          "GUID": "100010",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2127,7 +2082,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100012",
+          "GUID": "100011",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2185,7 +2140,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100013",
+          "GUID": "100012",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2243,7 +2198,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100014",
+          "GUID": "100013",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2301,7 +2256,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100015",
+          "GUID": "100014",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2359,7 +2314,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100016",
+          "GUID": "100015",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2417,7 +2372,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100017",
+          "GUID": "100016",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2475,7 +2430,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100018",
+          "GUID": "100017",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2533,7 +2488,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100019",
+          "GUID": "100018",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2591,7 +2546,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10001a",
+          "GUID": "100019",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2649,7 +2604,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10001b",
+          "GUID": "10001a",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2707,7 +2662,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10001c",
+          "GUID": "10001b",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2765,7 +2720,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10001d",
+          "GUID": "10001c",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2823,7 +2778,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10001e",
+          "GUID": "10001d",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2881,7 +2836,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10001f",
+          "GUID": "10001e",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2939,7 +2894,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100020",
+          "GUID": "10001f",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -2997,7 +2952,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100021",
+          "GUID": "100020",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3055,7 +3010,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100022",
+          "GUID": "100021",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3113,7 +3068,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100023",
+          "GUID": "100022",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3171,7 +3126,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100024",
+          "GUID": "100023",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3229,7 +3184,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100025",
+          "GUID": "100024",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3287,7 +3242,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100026",
+          "GUID": "100025",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3345,7 +3300,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100027",
+          "GUID": "100026",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3403,7 +3358,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100028",
+          "GUID": "100027",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3461,7 +3416,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100029",
+          "GUID": "100028",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3519,7 +3474,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10002a",
+          "GUID": "100029",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3577,7 +3532,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10002b",
+          "GUID": "10002a",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3635,7 +3590,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10002c",
+          "GUID": "10002b",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3693,7 +3648,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10002d",
+          "GUID": "10002c",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3751,7 +3706,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10002e",
+          "GUID": "10002d",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3809,7 +3764,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10002f",
+          "GUID": "10002e",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3867,7 +3822,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100030",
+          "GUID": "10002f",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3925,7 +3880,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100031",
+          "GUID": "100030",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -3983,7 +3938,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100032",
+          "GUID": "100031",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4041,7 +3996,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100033",
+          "GUID": "100032",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4099,7 +4054,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100034",
+          "GUID": "100033",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4157,7 +4112,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100035",
+          "GUID": "100034",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4215,7 +4170,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100036",
+          "GUID": "100035",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4273,7 +4228,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100037",
+          "GUID": "100036",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4331,7 +4286,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100038",
+          "GUID": "100037",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4389,7 +4344,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100039",
+          "GUID": "100038",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4447,7 +4402,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10003a",
+          "GUID": "100039",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4505,7 +4460,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10003b",
+          "GUID": "10003a",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4563,7 +4518,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10003c",
+          "GUID": "10003b",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4621,7 +4576,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10003d",
+          "GUID": "10003c",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4679,7 +4634,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10003e",
+          "GUID": "10003d",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4737,7 +4692,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10003f",
+          "GUID": "10003e",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4795,7 +4750,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100040",
+          "GUID": "10003f",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4853,7 +4808,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100041",
+          "GUID": "100040",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4911,7 +4866,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100042",
+          "GUID": "100041",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -4969,7 +4924,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100043",
+          "GUID": "100042",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5027,7 +4982,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100044",
+          "GUID": "100043",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5085,7 +5040,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100045",
+          "GUID": "100044",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5143,7 +5098,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100046",
+          "GUID": "100045",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5201,7 +5156,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100047",
+          "GUID": "100046",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5259,7 +5214,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100048",
+          "GUID": "100047",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5317,7 +5272,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100049",
+          "GUID": "100048",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5375,7 +5330,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10004a",
+          "GUID": "100049",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5433,7 +5388,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10004b",
+          "GUID": "10004a",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5491,7 +5446,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10004c",
+          "GUID": "10004b",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5549,7 +5504,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10004d",
+          "GUID": "10004c",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5607,7 +5562,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10004e",
+          "GUID": "10004d",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5665,7 +5620,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10004f",
+          "GUID": "10004e",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5723,7 +5678,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100050",
+          "GUID": "10004f",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5781,7 +5736,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100051",
+          "GUID": "100050",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5839,7 +5794,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100052",
+          "GUID": "100051",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5897,7 +5852,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100053",
+          "GUID": "100052",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -5955,7 +5910,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100054",
+          "GUID": "100053",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6013,7 +5968,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100055",
+          "GUID": "100054",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6071,7 +6026,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100056",
+          "GUID": "100055",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6129,7 +6084,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100057",
+          "GUID": "100056",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6187,7 +6142,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100058",
+          "GUID": "100057",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6245,7 +6200,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100059",
+          "GUID": "100058",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6303,7 +6258,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10005a",
+          "GUID": "100059",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6361,7 +6316,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10005b",
+          "GUID": "10005a",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6419,7 +6374,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10005c",
+          "GUID": "10005b",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6477,7 +6432,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10005d",
+          "GUID": "10005c",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6535,7 +6490,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10005e",
+          "GUID": "10005d",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6593,7 +6548,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10005f",
+          "GUID": "10005e",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6651,7 +6606,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100060",
+          "GUID": "10005f",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6709,7 +6664,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100061",
+          "GUID": "100060",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6767,7 +6722,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100062",
+          "GUID": "100061",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6825,7 +6780,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100063",
+          "GUID": "100062",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6883,7 +6838,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100064",
+          "GUID": "100063",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -6941,7 +6896,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100065",
+          "GUID": "100064",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -7001,7 +6956,7 @@
       ]
     },
     {
-      "GUID": "1000af",
+      "GUID": "1000ae",
       "Name": "Deck",
       "Transform": {
         "posX": -10,
@@ -7771,7 +7726,7 @@
       "SidewaysCard": false,
       "ContainedObjects": [
         {
-          "GUID": "100067",
+          "GUID": "100066",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -7829,7 +7784,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100068",
+          "GUID": "100067",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -7887,7 +7842,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100069",
+          "GUID": "100068",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -7945,7 +7900,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10006a",
+          "GUID": "100069",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8003,7 +7958,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10006b",
+          "GUID": "10006a",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8061,7 +8016,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10006c",
+          "GUID": "10006b",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8119,7 +8074,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10006d",
+          "GUID": "10006c",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8177,7 +8132,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10006e",
+          "GUID": "10006d",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8235,7 +8190,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10006f",
+          "GUID": "10006e",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8293,7 +8248,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100070",
+          "GUID": "10006f",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8351,7 +8306,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100071",
+          "GUID": "100070",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8409,7 +8364,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100072",
+          "GUID": "100071",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8467,7 +8422,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100073",
+          "GUID": "100072",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8525,7 +8480,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100074",
+          "GUID": "100073",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8583,7 +8538,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100075",
+          "GUID": "100074",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8641,7 +8596,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100076",
+          "GUID": "100075",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8699,7 +8654,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100077",
+          "GUID": "100076",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8757,7 +8712,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100078",
+          "GUID": "100077",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8815,7 +8770,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100079",
+          "GUID": "100078",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8873,7 +8828,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10007a",
+          "GUID": "100079",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8931,7 +8886,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10007b",
+          "GUID": "10007a",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -8989,7 +8944,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10007c",
+          "GUID": "10007b",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9047,7 +9002,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10007d",
+          "GUID": "10007c",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9105,7 +9060,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10007e",
+          "GUID": "10007d",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9163,7 +9118,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10007f",
+          "GUID": "10007e",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9221,7 +9176,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100080",
+          "GUID": "10007f",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9279,7 +9234,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100081",
+          "GUID": "100080",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9337,7 +9292,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100082",
+          "GUID": "100081",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9395,7 +9350,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100083",
+          "GUID": "100082",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9453,7 +9408,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100084",
+          "GUID": "100083",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9511,7 +9466,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100085",
+          "GUID": "100084",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9569,7 +9524,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100086",
+          "GUID": "100085",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9627,7 +9582,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100087",
+          "GUID": "100086",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9685,7 +9640,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100088",
+          "GUID": "100087",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9743,7 +9698,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100089",
+          "GUID": "100088",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9801,7 +9756,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10008a",
+          "GUID": "100089",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9859,7 +9814,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10008b",
+          "GUID": "10008a",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9917,7 +9872,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10008c",
+          "GUID": "10008b",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -9975,7 +9930,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10008d",
+          "GUID": "10008c",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10033,7 +9988,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10008e",
+          "GUID": "10008d",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10091,7 +10046,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10008f",
+          "GUID": "10008e",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10149,7 +10104,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100090",
+          "GUID": "10008f",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10207,7 +10162,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100091",
+          "GUID": "100090",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10265,7 +10220,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100092",
+          "GUID": "100091",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10323,7 +10278,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100093",
+          "GUID": "100092",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10381,7 +10336,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100094",
+          "GUID": "100093",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10439,7 +10394,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100095",
+          "GUID": "100094",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10497,7 +10452,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100096",
+          "GUID": "100095",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10555,7 +10510,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100097",
+          "GUID": "100096",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10613,7 +10568,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100098",
+          "GUID": "100097",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10671,7 +10626,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "100099",
+          "GUID": "100098",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10729,7 +10684,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10009a",
+          "GUID": "100099",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10787,7 +10742,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10009b",
+          "GUID": "10009a",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10845,7 +10800,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10009c",
+          "GUID": "10009b",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10903,7 +10858,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10009d",
+          "GUID": "10009c",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -10961,7 +10916,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10009e",
+          "GUID": "10009d",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11019,7 +10974,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "10009f",
+          "GUID": "10009e",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11077,7 +11032,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "1000a0",
+          "GUID": "10009f",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11135,7 +11090,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "1000a1",
+          "GUID": "1000a0",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11193,7 +11148,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "1000a2",
+          "GUID": "1000a1",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11251,7 +11206,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "1000a3",
+          "GUID": "1000a2",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11309,7 +11264,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "1000a4",
+          "GUID": "1000a3",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11367,7 +11322,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "1000a5",
+          "GUID": "1000a4",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11425,7 +11380,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "1000a6",
+          "GUID": "1000a5",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11483,7 +11438,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "1000a7",
+          "GUID": "1000a6",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11541,7 +11496,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "1000a8",
+          "GUID": "1000a7",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11599,7 +11554,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "1000a9",
+          "GUID": "1000a8",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11657,7 +11612,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "1000aa",
+          "GUID": "1000a9",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11715,7 +11670,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "1000ab",
+          "GUID": "1000aa",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11773,7 +11728,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "1000ac",
+          "GUID": "1000ab",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11831,7 +11786,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "1000ad",
+          "GUID": "1000ac",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11889,7 +11844,7 @@
           "SidewaysCard": false
         },
         {
-          "GUID": "1000ae",
+          "GUID": "1000ad",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
@@ -11949,7 +11904,7 @@
       ]
     },
     {
-      "GUID": "1000b0",
+      "GUID": "1000af",
       "Name": "Die_6",
       "Transform": {
         "posX": 8,
@@ -11994,7 +11949,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000b1",
+      "GUID": "1000b0",
       "Name": "Die_6",
       "Transform": {
         "posX": 10,
@@ -12039,7 +11994,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000b2",
+      "GUID": "1000b1",
       "Name": "Die_6",
       "Transform": {
         "posX": 12,
@@ -12084,7 +12039,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000b3",
+      "GUID": "1000b2",
       "Name": "Die_6",
       "Transform": {
         "posX": -35,
@@ -12129,7 +12084,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000b4",
+      "GUID": "1000b3",
       "Name": "Die_6",
       "Transform": {
         "posX": -37.3,
@@ -12174,7 +12129,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000b5",
+      "GUID": "1000b4",
       "Name": "Die_6",
       "Transform": {
         "posX": -39.6,
@@ -12219,7 +12174,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000b6",
+      "GUID": "1000b5",
       "Name": "Die_6",
       "Transform": {
         "posX": -41.9,
@@ -12264,7 +12219,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000b7",
+      "GUID": "1000b6",
       "Name": "Die_6",
       "Transform": {
         "posX": -44.2,
@@ -12309,7 +12264,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000b8",
+      "GUID": "1000b7",
       "Name": "Die_6",
       "Transform": {
         "posX": -46.5,
@@ -12354,7 +12309,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000b9",
+      "GUID": "1000b8",
       "Name": "Die_6",
       "Transform": {
         "posX": -48.8,
@@ -12399,7 +12354,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000ba",
+      "GUID": "1000b9",
       "Name": "Die_6",
       "Transform": {
         "posX": 35,
@@ -12444,7 +12399,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000bb",
+      "GUID": "1000ba",
       "Name": "Die_6",
       "Transform": {
         "posX": 37.3,
@@ -12489,7 +12444,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000bc",
+      "GUID": "1000bb",
       "Name": "Die_6",
       "Transform": {
         "posX": 39.6,
@@ -12534,7 +12489,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000bd",
+      "GUID": "1000bc",
       "Name": "Die_6",
       "Transform": {
         "posX": 41.9,
@@ -12579,7 +12534,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000be",
+      "GUID": "1000bd",
       "Name": "Die_6",
       "Transform": {
         "posX": 44.2,
@@ -12624,7 +12579,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000bf",
+      "GUID": "1000be",
       "Name": "Die_6",
       "Transform": {
         "posX": 46.5,
@@ -12669,7 +12624,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000c0",
+      "GUID": "1000bf",
       "Name": "Die_6",
       "Transform": {
         "posX": 48.8,
@@ -12714,7 +12669,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000c1",
+      "GUID": "1000c0",
       "Name": "Die_6",
       "Transform": {
         "posX": -35,
@@ -12759,7 +12714,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000c2",
+      "GUID": "1000c1",
       "Name": "Die_6",
       "Transform": {
         "posX": -37.3,
@@ -12804,7 +12759,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000c3",
+      "GUID": "1000c2",
       "Name": "Die_6",
       "Transform": {
         "posX": -39.6,
@@ -12849,7 +12804,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000c4",
+      "GUID": "1000c3",
       "Name": "Die_6",
       "Transform": {
         "posX": -41.9,
@@ -12894,7 +12849,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000c5",
+      "GUID": "1000c4",
       "Name": "Die_6",
       "Transform": {
         "posX": -44.2,
@@ -12939,7 +12894,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000c6",
+      "GUID": "1000c5",
       "Name": "Die_6",
       "Transform": {
         "posX": -46.5,
@@ -12984,7 +12939,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000c7",
+      "GUID": "1000c6",
       "Name": "Die_6",
       "Transform": {
         "posX": -48.8,
@@ -13029,7 +12984,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000c8",
+      "GUID": "1000c7",
       "Name": "Die_6",
       "Transform": {
         "posX": 35,
@@ -13074,7 +13029,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000c9",
+      "GUID": "1000c8",
       "Name": "Die_6",
       "Transform": {
         "posX": 37.3,
@@ -13119,7 +13074,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000ca",
+      "GUID": "1000c9",
       "Name": "Die_6",
       "Transform": {
         "posX": 39.6,
@@ -13164,7 +13119,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000cb",
+      "GUID": "1000ca",
       "Name": "Die_6",
       "Transform": {
         "posX": 41.9,
@@ -13209,7 +13164,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000cc",
+      "GUID": "1000cb",
       "Name": "Die_6",
       "Transform": {
         "posX": 44.2,
@@ -13254,7 +13209,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000cd",
+      "GUID": "1000cc",
       "Name": "Die_6",
       "Transform": {
         "posX": 46.5,
@@ -13299,7 +13254,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000ce",
+      "GUID": "1000cd",
       "Name": "Die_6",
       "Transform": {
         "posX": 48.8,
@@ -13344,7 +13299,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000d0",
+      "GUID": "1000cf",
       "Name": "Infinite_Bag",
       "Transform": {
         "posX": -12,
@@ -13389,7 +13344,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1000cf",
+          "GUID": "1000ce",
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
@@ -13436,7 +13391,7 @@
       ]
     },
     {
-      "GUID": "1000d2",
+      "GUID": "1000d1",
       "Name": "Infinite_Bag",
       "Transform": {
         "posX": -6,
@@ -13481,7 +13436,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1000d1",
+          "GUID": "1000d0",
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
@@ -13528,7 +13483,7 @@
       ]
     },
     {
-      "GUID": "1000d4",
+      "GUID": "1000d3",
       "Name": "Infinite_Bag",
       "Transform": {
         "posX": 0,
@@ -13573,7 +13528,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1000d3",
+          "GUID": "1000d2",
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
@@ -13620,7 +13575,7 @@
       ]
     },
     {
-      "GUID": "1000d6",
+      "GUID": "1000d5",
       "Name": "Infinite_Bag",
       "Transform": {
         "posX": 6,
@@ -13665,7 +13620,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1000d5",
+          "GUID": "1000d4",
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
@@ -13712,7 +13667,7 @@
       ]
     },
     {
-      "GUID": "1000d8",
+      "GUID": "1000d7",
       "Name": "Infinite_Bag",
       "Transform": {
         "posX": 12,
@@ -13757,7 +13712,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1000d7",
+          "GUID": "1000d6",
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
@@ -13804,7 +13759,7 @@
       ]
     },
     {
-      "GUID": "1000d9",
+      "GUID": "1000d8",
       "Name": "HandTrigger",
       "Transform": {
         "posX": -42,
@@ -13851,7 +13806,7 @@
       "FogColor": "Red"
     },
     {
-      "GUID": "1000da",
+      "GUID": "1000d9",
       "Name": "HandTrigger",
       "Transform": {
         "posX": 42,
@@ -13898,7 +13853,7 @@
       "FogColor": "Blue"
     },
     {
-      "GUID": "1000db",
+      "GUID": "1000da",
       "Name": "HandTrigger",
       "Transform": {
         "posX": -42,
@@ -13945,7 +13900,7 @@
       "FogColor": "Green"
     },
     {
-      "GUID": "1000dc",
+      "GUID": "1000db",
       "Name": "HandTrigger",
       "Transform": {
         "posX": 42,
@@ -13992,7 +13947,7 @@
       "FogColor": "Yellow"
     },
     {
-      "GUID": "1000f9",
+      "GUID": "1000f8",
       "Name": "Bag",
       "Transform": {
         "posX": -35,
@@ -14037,11 +13992,57 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1000dd",
+          "GUID": "1000dc",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
             "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Red Soldier",
+          "Description": "Red player soldier",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.86,
+            "g": 0.21,
+            "b": 0.21
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "MaterialIndex": 1
+        },
+        {
+          "GUID": "1000dd",
+          "Name": "PlayerPawn",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14087,7 +14088,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 0.5,
+            "posY": 1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14133,7 +14134,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 1,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14179,7 +14180,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14225,7 +14226,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 2,
+            "posY": 2.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14271,7 +14272,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 2.5,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14317,7 +14318,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 3.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14363,7 +14364,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 3.5,
+            "posY": 4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14409,7 +14410,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 4,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14455,7 +14456,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14501,7 +14502,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 5,
+            "posY": 5.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14547,7 +14548,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 5.5,
+            "posY": 6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14593,7 +14594,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 6.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14639,7 +14640,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 6.5,
+            "posY": 7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14685,7 +14686,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 7,
+            "posY": 7.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14731,7 +14732,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 7.5,
+            "posY": 8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14777,7 +14778,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 8,
+            "posY": 8.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14823,7 +14824,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 8.5,
+            "posY": 9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14869,7 +14870,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 9,
+            "posY": 9.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14915,7 +14916,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 9.5,
+            "posY": 10,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -14961,7 +14962,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 10,
+            "posY": 10.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15007,7 +15008,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 10.5,
+            "posY": 11,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15053,7 +15054,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 11,
+            "posY": 11.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15099,7 +15100,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 11.5,
+            "posY": 12,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15145,7 +15146,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 12,
+            "posY": 12.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15191,7 +15192,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 12.5,
+            "posY": 13,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15237,52 +15238,6 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 13,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Red Soldier",
-          "Description": "Red player soldier",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "MaterialIndex": 1
-        },
-        {
-          "GUID": "1000f8",
-          "Name": "PlayerPawn",
-          "Transform": {
-            "posX": 0,
             "posY": 13.5,
             "posZ": 0,
             "rotX": 0,
@@ -15327,7 +15282,7 @@
       ]
     },
     {
-      "GUID": "100116",
+      "GUID": "100115",
       "Name": "Bag",
       "Transform": {
         "posX": 35,
@@ -15372,11 +15327,57 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1000fa",
+          "GUID": "1000f9",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
             "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Blue Soldier",
+          "Description": "Blue player soldier",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.22,
+            "g": 0.38,
+            "b": 0.86
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "MaterialIndex": 5
+        },
+        {
+          "GUID": "1000fa",
+          "Name": "PlayerPawn",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15422,7 +15423,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 0.5,
+            "posY": 1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15468,7 +15469,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 1,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15514,7 +15515,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15560,7 +15561,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 2,
+            "posY": 2.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15606,7 +15607,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 2.5,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15652,7 +15653,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 3.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15698,7 +15699,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 3.5,
+            "posY": 4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15744,7 +15745,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 4,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15790,7 +15791,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15836,7 +15837,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 5,
+            "posY": 5.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15882,7 +15883,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 5.5,
+            "posY": 6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15928,7 +15929,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 6.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -15974,7 +15975,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 6.5,
+            "posY": 7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16020,7 +16021,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 7,
+            "posY": 7.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16066,7 +16067,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 7.5,
+            "posY": 8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16112,7 +16113,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 8,
+            "posY": 8.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16158,7 +16159,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 8.5,
+            "posY": 9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16204,7 +16205,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 9,
+            "posY": 9.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16250,7 +16251,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 9.5,
+            "posY": 10,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16296,7 +16297,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 10,
+            "posY": 10.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16342,7 +16343,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 10.5,
+            "posY": 11,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16388,7 +16389,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 11,
+            "posY": 11.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16434,7 +16435,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 11.5,
+            "posY": 12,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16480,7 +16481,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 12,
+            "posY": 12.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16526,7 +16527,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 12.5,
+            "posY": 13,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16572,52 +16573,6 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 13,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Blue Soldier",
-          "Description": "Blue player soldier",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "MaterialIndex": 5
-        },
-        {
-          "GUID": "100115",
-          "Name": "PlayerPawn",
-          "Transform": {
-            "posX": 0,
             "posY": 13.5,
             "posZ": 0,
             "rotX": 0,
@@ -16662,7 +16617,7 @@
       ]
     },
     {
-      "GUID": "100133",
+      "GUID": "100132",
       "Name": "Bag",
       "Transform": {
         "posX": -35,
@@ -16707,11 +16662,57 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100117",
+          "GUID": "100116",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
             "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Green Soldier",
+          "Description": "Green player soldier",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.18,
+            "g": 0.72,
+            "b": 0.28
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "MaterialIndex": 4
+        },
+        {
+          "GUID": "100117",
+          "Name": "PlayerPawn",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16757,7 +16758,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 0.5,
+            "posY": 1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16803,7 +16804,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 1,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16849,7 +16850,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16895,7 +16896,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 2,
+            "posY": 2.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16941,7 +16942,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 2.5,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -16987,7 +16988,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 3.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17033,7 +17034,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 3.5,
+            "posY": 4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17079,7 +17080,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 4,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17125,7 +17126,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17171,7 +17172,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 5,
+            "posY": 5.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17217,7 +17218,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 5.5,
+            "posY": 6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17263,7 +17264,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 6.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17309,7 +17310,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 6.5,
+            "posY": 7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17355,7 +17356,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 7,
+            "posY": 7.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17401,7 +17402,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 7.5,
+            "posY": 8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17447,7 +17448,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 8,
+            "posY": 8.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17493,7 +17494,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 8.5,
+            "posY": 9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17539,7 +17540,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 9,
+            "posY": 9.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17585,7 +17586,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 9.5,
+            "posY": 10,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17631,7 +17632,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 10,
+            "posY": 10.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17677,7 +17678,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 10.5,
+            "posY": 11,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17723,7 +17724,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 11,
+            "posY": 11.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17769,7 +17770,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 11.5,
+            "posY": 12,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17815,7 +17816,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 12,
+            "posY": 12.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17861,7 +17862,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 12.5,
+            "posY": 13,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -17907,52 +17908,6 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 13,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Green Soldier",
-          "Description": "Green player soldier",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "MaterialIndex": 4
-        },
-        {
-          "GUID": "100132",
-          "Name": "PlayerPawn",
-          "Transform": {
-            "posX": 0,
             "posY": 13.5,
             "posZ": 0,
             "rotX": 0,
@@ -17997,7 +17952,7 @@
       ]
     },
     {
-      "GUID": "100150",
+      "GUID": "10014f",
       "Name": "Bag",
       "Transform": {
         "posX": 35,
@@ -18042,11 +17997,57 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100134",
+          "GUID": "100133",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
             "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Yellow Soldier",
+          "Description": "Yellow player soldier",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.9,
+            "g": 0.82,
+            "b": 0.15
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "MaterialIndex": 3
+        },
+        {
+          "GUID": "100134",
+          "Name": "PlayerPawn",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18092,7 +18093,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 0.5,
+            "posY": 1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18138,7 +18139,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 1,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18184,7 +18185,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18230,7 +18231,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 2,
+            "posY": 2.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18276,7 +18277,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 2.5,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18322,7 +18323,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 3.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18368,7 +18369,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 3.5,
+            "posY": 4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18414,7 +18415,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 4,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18460,7 +18461,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18506,7 +18507,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 5,
+            "posY": 5.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18552,7 +18553,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 5.5,
+            "posY": 6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18598,7 +18599,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 6.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18644,7 +18645,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 6.5,
+            "posY": 7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18690,7 +18691,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 7,
+            "posY": 7.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18736,7 +18737,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 7.5,
+            "posY": 8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18782,7 +18783,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 8,
+            "posY": 8.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18828,7 +18829,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 8.5,
+            "posY": 9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18874,7 +18875,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 9,
+            "posY": 9.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18920,7 +18921,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 9.5,
+            "posY": 10,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -18966,7 +18967,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 10,
+            "posY": 10.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19012,7 +19013,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 10.5,
+            "posY": 11,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19058,7 +19059,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 11,
+            "posY": 11.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19104,7 +19105,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 11.5,
+            "posY": 12,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19150,7 +19151,7 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 12,
+            "posY": 12.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -19196,52 +19197,6 @@
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
-            "posY": 12.5,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Yellow Soldier",
-          "Description": "Yellow player soldier",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.9,
-            "g": 0.82,
-            "b": 0.15
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "MaterialIndex": 3
-        },
-        {
-          "GUID": "10014e",
-          "Name": "PlayerPawn",
-          "Transform": {
-            "posX": 0,
             "posY": 13,
             "posZ": 0,
             "rotX": 0,
@@ -19284,7 +19239,7 @@
           "MaterialIndex": 3
         },
         {
-          "GUID": "10014f",
+          "GUID": "10014e",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -19332,7 +19287,7 @@
       ]
     },
     {
-      "GUID": "100169",
+      "GUID": "100168",
       "Name": "Bag",
       "Transform": {
         "posX": 0,
@@ -19377,7 +19332,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100151",
+          "GUID": "100150",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -19423,7 +19378,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100152",
+          "GUID": "100151",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -19469,7 +19424,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100153",
+          "GUID": "100152",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -19515,7 +19470,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100154",
+          "GUID": "100153",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -19561,7 +19516,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100155",
+          "GUID": "100154",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -19607,7 +19562,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100156",
+          "GUID": "100155",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -19653,7 +19608,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100157",
+          "GUID": "100156",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -19699,7 +19654,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100158",
+          "GUID": "100157",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -19745,7 +19700,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100159",
+          "GUID": "100158",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -19791,7 +19746,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "10015a",
+          "GUID": "100159",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -19837,7 +19792,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "10015b",
+          "GUID": "10015a",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -19883,7 +19838,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "10015c",
+          "GUID": "10015b",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -19929,7 +19884,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "10015d",
+          "GUID": "10015c",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -19975,7 +19930,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "10015e",
+          "GUID": "10015d",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -20021,7 +19976,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "10015f",
+          "GUID": "10015e",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -20067,7 +20022,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100160",
+          "GUID": "10015f",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -20113,7 +20068,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100161",
+          "GUID": "100160",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -20159,7 +20114,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100162",
+          "GUID": "100161",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -20205,7 +20160,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100163",
+          "GUID": "100162",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -20251,7 +20206,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100164",
+          "GUID": "100163",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -20297,7 +20252,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100165",
+          "GUID": "100164",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -20343,7 +20298,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100166",
+          "GUID": "100165",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -20389,7 +20344,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100167",
+          "GUID": "100166",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -20435,7 +20390,7 @@
           "MaterialIndex": 8
         },
         {
-          "GUID": "100168",
+          "GUID": "100167",
           "Name": "PlayerPawn",
           "Transform": {
             "posX": 0,
@@ -20483,7 +20438,7 @@
       ]
     },
     {
-      "GUID": "10016a",
+      "GUID": "100169",
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -34,
@@ -20540,7 +20495,7 @@
       }
     },
     {
-      "GUID": "10016b",
+      "GUID": "10016a",
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -50,
@@ -20597,7 +20552,7 @@
       }
     },
     {
-      "GUID": "10016e",
+      "GUID": "10016d",
       "Name": "Bag",
       "Transform": {
         "posX": -49,
@@ -20642,7 +20597,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "10016c",
+          "GUID": "10016b",
           "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
@@ -20699,7 +20654,7 @@
           }
         },
         {
-          "GUID": "10016d",
+          "GUID": "10016c",
           "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
@@ -20758,7 +20713,7 @@
       ]
     },
     {
-      "GUID": "10016f",
+      "GUID": "10016e",
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 34,
@@ -20815,7 +20770,7 @@
       }
     },
     {
-      "GUID": "100170",
+      "GUID": "10016f",
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 50,
@@ -20872,7 +20827,7 @@
       }
     },
     {
-      "GUID": "100173",
+      "GUID": "100172",
       "Name": "Bag",
       "Transform": {
         "posX": 49,
@@ -20917,7 +20872,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100171",
+          "GUID": "100170",
           "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
@@ -20974,7 +20929,7 @@
           }
         },
         {
-          "GUID": "100172",
+          "GUID": "100171",
           "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
@@ -21033,7 +20988,7 @@
       ]
     },
     {
-      "GUID": "100174",
+      "GUID": "100173",
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -34,
@@ -21090,7 +21045,7 @@
       }
     },
     {
-      "GUID": "100175",
+      "GUID": "100174",
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -50,
@@ -21147,7 +21102,7 @@
       }
     },
     {
-      "GUID": "100178",
+      "GUID": "100177",
       "Name": "Bag",
       "Transform": {
         "posX": -49,
@@ -21192,7 +21147,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100176",
+          "GUID": "100175",
           "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
@@ -21249,7 +21204,7 @@
           }
         },
         {
-          "GUID": "100177",
+          "GUID": "100176",
           "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
@@ -21308,7 +21263,7 @@
       ]
     },
     {
-      "GUID": "100179",
+      "GUID": "100178",
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 34,
@@ -21365,7 +21320,7 @@
       }
     },
     {
-      "GUID": "10017a",
+      "GUID": "100179",
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 50,
@@ -21422,7 +21377,7 @@
       }
     },
     {
-      "GUID": "10017d",
+      "GUID": "10017c",
       "Name": "Bag",
       "Transform": {
         "posX": 49,
@@ -21467,7 +21422,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "10017b",
+          "GUID": "10017a",
           "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
@@ -21524,7 +21479,7 @@
           }
         },
         {
-          "GUID": "10017c",
+          "GUID": "10017b",
           "Name": "Custom_Tile",
           "Transform": {
             "posX": 0,
@@ -21583,7 +21538,7 @@
       ]
     },
     {
-      "GUID": "100197",
+      "GUID": "100196",
       "Name": "Bag",
       "Transform": {
         "posX": -39.5,
@@ -21628,11 +21583,56 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "10017e",
+          "GUID": "10017d",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
             "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Red Control",
+          "Description": "Red control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.86,
+            "g": 0.21,
+            "b": 0.21
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "10017e",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21677,7 +21677,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 0.3,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21722,7 +21722,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 0.6,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21767,7 +21767,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 0.8999999999999999,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21812,7 +21812,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21857,7 +21857,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21902,7 +21902,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21947,7 +21947,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -21992,7 +21992,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22037,7 +22037,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22082,7 +22082,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22127,7 +22127,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22172,7 +22172,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22217,7 +22217,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22262,7 +22262,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22307,7 +22307,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22352,7 +22352,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22397,7 +22397,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22442,7 +22442,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22487,7 +22487,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22532,7 +22532,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 6.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22577,7 +22577,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 6.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22622,7 +22622,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 6.8999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22667,51 +22667,6 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Red Control",
-          "Description": "Red control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "100196",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -22755,7 +22710,7 @@
       ]
     },
     {
-      "GUID": "1001b1",
+      "GUID": "1001b0",
       "Name": "Bag",
       "Transform": {
         "posX": 39.5,
@@ -22800,11 +22755,56 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100198",
+          "GUID": "100197",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
             "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Blue Control",
+          "Description": "Blue control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.22,
+            "g": 0.38,
+            "b": 0.86
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "100198",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22849,7 +22849,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 0.3,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22894,7 +22894,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 0.6,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22939,7 +22939,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 0.8999999999999999,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -22984,7 +22984,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23029,7 +23029,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23074,7 +23074,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23119,7 +23119,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23164,7 +23164,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23209,7 +23209,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23254,7 +23254,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23299,7 +23299,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23344,7 +23344,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23389,7 +23389,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23434,7 +23434,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23479,7 +23479,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23524,7 +23524,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23569,7 +23569,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23614,7 +23614,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23659,7 +23659,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23704,7 +23704,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 6.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23749,7 +23749,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 6.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23794,7 +23794,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 6.8999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -23839,51 +23839,6 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Blue Control",
-          "Description": "Blue control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "1001b0",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -23927,7 +23882,7 @@
       ]
     },
     {
-      "GUID": "1001cb",
+      "GUID": "1001ca",
       "Name": "Bag",
       "Transform": {
         "posX": -39.5,
@@ -23972,11 +23927,56 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1001b2",
+          "GUID": "1001b1",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
             "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Green Control",
+          "Description": "Green control marker",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.18,
+            "g": 0.72,
+            "b": 0.28
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "1001b2",
+          "Name": "Chinese_Checkers_Piece",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24021,7 +24021,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 0.3,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24066,7 +24066,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 0.6,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24111,7 +24111,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 0.8999999999999999,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24156,7 +24156,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24201,7 +24201,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24246,7 +24246,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24291,7 +24291,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24336,7 +24336,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24381,7 +24381,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24426,7 +24426,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24471,7 +24471,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24516,7 +24516,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24561,7 +24561,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24606,7 +24606,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24651,7 +24651,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24696,7 +24696,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24741,7 +24741,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24786,7 +24786,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24831,7 +24831,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24876,7 +24876,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 6.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24921,7 +24921,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 6.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -24966,7 +24966,7 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 6.8999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -25011,51 +25011,6 @@
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Green Control",
-          "Description": "Green control marker",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "1001ca",
-          "Name": "Chinese_Checkers_Piece",
-          "Transform": {
-            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -25099,7 +25054,7 @@
       ]
     },
     {
-      "GUID": "1001e5",
+      "GUID": "1001e4",
       "Name": "Bag",
       "Transform": {
         "posX": 39.5,
@@ -25144,7 +25099,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1001cc",
+          "GUID": "1001cb",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25189,7 +25144,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001cd",
+          "GUID": "1001cc",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25234,7 +25189,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001ce",
+          "GUID": "1001cd",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25279,7 +25234,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001cf",
+          "GUID": "1001ce",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25324,7 +25279,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001d0",
+          "GUID": "1001cf",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25369,7 +25324,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001d1",
+          "GUID": "1001d0",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25414,7 +25369,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001d2",
+          "GUID": "1001d1",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25459,7 +25414,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001d3",
+          "GUID": "1001d2",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25504,7 +25459,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001d4",
+          "GUID": "1001d3",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25549,7 +25504,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001d5",
+          "GUID": "1001d4",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25594,7 +25549,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001d6",
+          "GUID": "1001d5",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25639,7 +25594,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001d7",
+          "GUID": "1001d6",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25684,7 +25639,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001d8",
+          "GUID": "1001d7",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25729,7 +25684,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001d9",
+          "GUID": "1001d8",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25774,7 +25729,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001da",
+          "GUID": "1001d9",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25819,7 +25774,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001db",
+          "GUID": "1001da",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25864,7 +25819,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001dc",
+          "GUID": "1001db",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25909,7 +25864,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001dd",
+          "GUID": "1001dc",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25954,7 +25909,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001de",
+          "GUID": "1001dd",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -25999,7 +25954,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001df",
+          "GUID": "1001de",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -26044,7 +25999,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001e0",
+          "GUID": "1001df",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -26089,7 +26044,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001e1",
+          "GUID": "1001e0",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -26134,7 +26089,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001e2",
+          "GUID": "1001e1",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -26179,7 +26134,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001e3",
+          "GUID": "1001e2",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -26224,7 +26179,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "1001e4",
+          "GUID": "1001e3",
           "Name": "Chinese_Checkers_Piece",
           "Transform": {
             "posX": 0,
@@ -26271,7 +26226,7 @@
       ]
     },
     {
-      "GUID": "1001ff",
+      "GUID": "1001fe",
       "Name": "Bag",
       "Transform": {
         "posX": -44.5,
@@ -26316,11 +26271,76 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1001e6",
+          "GUID": "1001e5",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Red Flag",
+          "Description": "Red flag — Equipment Display. Permanent.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.86,
+            "g": 0.21,
+            "b": 0.21
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v19",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v19",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 3,
+            "TypeIndex": 6,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.1,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "1001e6",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26385,7 +26405,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 0.3,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26450,7 +26470,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 0.6,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26515,7 +26535,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 0.8999999999999999,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26580,7 +26600,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26645,7 +26665,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26710,7 +26730,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26775,7 +26795,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26840,7 +26860,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26905,7 +26925,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -26970,7 +26990,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27035,7 +27055,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27100,7 +27120,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27165,7 +27185,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27230,7 +27250,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27295,7 +27315,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27360,7 +27380,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27425,7 +27445,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27490,7 +27510,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27555,7 +27575,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27620,7 +27640,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 6.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27685,7 +27705,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 6.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27750,7 +27770,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 6.8999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -27815,71 +27835,6 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Red Flag",
-          "Description": "Red flag — Equipment Display. Permanent.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v19",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v19",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 3,
-            "TypeIndex": 6,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.1,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          }
-        },
-        {
-          "GUID": "1001fe",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -27943,7 +27898,7 @@
       ]
     },
     {
-      "GUID": "100219",
+      "GUID": "100218",
       "Name": "Bag",
       "Transform": {
         "posX": 44.5,
@@ -27988,11 +27943,76 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100200",
+          "GUID": "1001ff",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Blue Flag",
+          "Description": "Blue flag — Equipment Display. Permanent.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.22,
+            "g": 0.38,
+            "b": 0.86
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v19",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v19",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 3,
+            "TypeIndex": 6,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.1,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "100200",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -28057,7 +28077,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 0.3,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -28122,7 +28142,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 0.6,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -28187,7 +28207,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 0.8999999999999999,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -28252,7 +28272,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -28317,7 +28337,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -28382,7 +28402,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -28447,7 +28467,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -28512,7 +28532,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -28577,7 +28597,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -28642,7 +28662,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -28707,7 +28727,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -28772,7 +28792,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -28837,7 +28857,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -28902,7 +28922,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -28967,7 +28987,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -29032,7 +29052,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -29097,7 +29117,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -29162,7 +29182,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -29227,7 +29247,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -29292,7 +29312,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 6.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -29357,7 +29377,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 6.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -29422,7 +29442,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 6.8999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -29487,71 +29507,6 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Blue Flag",
-          "Description": "Blue flag — Equipment Display. Permanent.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v19",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v19",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 3,
-            "TypeIndex": 6,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.1,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          }
-        },
-        {
-          "GUID": "100218",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -29615,7 +29570,7 @@
       ]
     },
     {
-      "GUID": "100233",
+      "GUID": "100232",
       "Name": "Bag",
       "Transform": {
         "posX": -44.5,
@@ -29660,11 +29615,76 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "10021a",
+          "GUID": "100219",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "Green Flag",
+          "Description": "Green flag — Equipment Display. Permanent.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.18,
+            "g": 0.72,
+            "b": 0.28
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v19",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v19",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 3,
+            "TypeIndex": 6,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.1,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "10021a",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -29729,7 +29749,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 0.3,
+            "posY": 0.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -29794,7 +29814,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 0.6,
+            "posY": 0.8999999999999999,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -29859,7 +29879,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 0.8999999999999999,
+            "posY": 1.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -29924,7 +29944,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 1.2,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -29989,7 +30009,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 1.5,
+            "posY": 1.7999999999999998,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -30054,7 +30074,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 1.7999999999999998,
+            "posY": 2.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -30119,7 +30139,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 2.1,
+            "posY": 2.4,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -30184,7 +30204,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 2.4,
+            "posY": 2.6999999999999997,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -30249,7 +30269,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 2.6999999999999997,
+            "posY": 3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -30314,7 +30334,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 3,
+            "posY": 3.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -30379,7 +30399,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 3.3,
+            "posY": 3.5999999999999996,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -30444,7 +30464,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 3.5999999999999996,
+            "posY": 3.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -30509,7 +30529,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 3.9,
+            "posY": 4.2,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -30574,7 +30594,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 4.2,
+            "posY": 4.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -30639,7 +30659,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 4.5,
+            "posY": 4.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -30704,7 +30724,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 4.8,
+            "posY": 5.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -30769,7 +30789,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 5.1,
+            "posY": 5.3999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -30834,7 +30854,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 5.3999999999999995,
+            "posY": 5.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -30899,7 +30919,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 5.7,
+            "posY": 6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -30964,7 +30984,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 6,
+            "posY": 6.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -31029,7 +31049,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 6.3,
+            "posY": 6.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -31094,7 +31114,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 6.6,
+            "posY": 6.8999999999999995,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -31159,71 +31179,6 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 6.8999999999999995,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Green Flag",
-          "Description": "Green flag — Equipment Display. Permanent.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v19",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v19",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 3,
-            "TypeIndex": 6,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.1,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          }
-        },
-        {
-          "GUID": "100232",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
             "posY": 7.199999999999999,
             "posZ": 0,
             "rotX": 0,
@@ -31287,7 +31242,7 @@
       ]
     },
     {
-      "GUID": "10024d",
+      "GUID": "10024c",
       "Name": "Bag",
       "Transform": {
         "posX": 44.5,
@@ -31332,7 +31287,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100234",
+          "GUID": "100233",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31397,7 +31352,7 @@
           }
         },
         {
-          "GUID": "100235",
+          "GUID": "100234",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31462,7 +31417,7 @@
           }
         },
         {
-          "GUID": "100236",
+          "GUID": "100235",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31527,7 +31482,7 @@
           }
         },
         {
-          "GUID": "100237",
+          "GUID": "100236",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31592,7 +31547,7 @@
           }
         },
         {
-          "GUID": "100238",
+          "GUID": "100237",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31657,7 +31612,7 @@
           }
         },
         {
-          "GUID": "100239",
+          "GUID": "100238",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31722,7 +31677,7 @@
           }
         },
         {
-          "GUID": "10023a",
+          "GUID": "100239",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31787,7 +31742,7 @@
           }
         },
         {
-          "GUID": "10023b",
+          "GUID": "10023a",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31852,7 +31807,7 @@
           }
         },
         {
-          "GUID": "10023c",
+          "GUID": "10023b",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31917,7 +31872,7 @@
           }
         },
         {
-          "GUID": "10023d",
+          "GUID": "10023c",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31982,7 +31937,7 @@
           }
         },
         {
-          "GUID": "10023e",
+          "GUID": "10023d",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32047,7 +32002,7 @@
           }
         },
         {
-          "GUID": "10023f",
+          "GUID": "10023e",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32112,7 +32067,7 @@
           }
         },
         {
-          "GUID": "100240",
+          "GUID": "10023f",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32177,7 +32132,7 @@
           }
         },
         {
-          "GUID": "100241",
+          "GUID": "100240",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32242,7 +32197,7 @@
           }
         },
         {
-          "GUID": "100242",
+          "GUID": "100241",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32307,7 +32262,7 @@
           }
         },
         {
-          "GUID": "100243",
+          "GUID": "100242",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32372,7 +32327,7 @@
           }
         },
         {
-          "GUID": "100244",
+          "GUID": "100243",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32437,7 +32392,7 @@
           }
         },
         {
-          "GUID": "100245",
+          "GUID": "100244",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32502,7 +32457,7 @@
           }
         },
         {
-          "GUID": "100246",
+          "GUID": "100245",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32567,7 +32522,7 @@
           }
         },
         {
-          "GUID": "100247",
+          "GUID": "100246",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32632,7 +32587,7 @@
           }
         },
         {
-          "GUID": "100248",
+          "GUID": "100247",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32697,7 +32652,7 @@
           }
         },
         {
-          "GUID": "100249",
+          "GUID": "100248",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32762,7 +32717,7 @@
           }
         },
         {
-          "GUID": "10024a",
+          "GUID": "100249",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32827,7 +32782,7 @@
           }
         },
         {
-          "GUID": "10024b",
+          "GUID": "10024a",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32892,7 +32847,7 @@
           }
         },
         {
-          "GUID": "10024c",
+          "GUID": "10024b",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32959,7 +32914,7 @@
       ]
     },
     {
-      "GUID": "10024f",
+      "GUID": "10024e",
       "Name": "Infinite_Bag",
       "Transform": {
         "posX": -6,
@@ -33004,7 +32959,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "10024e",
+          "GUID": "10024d",
           "Name": "Checker_white",
           "Transform": {
             "posX": 0,
@@ -33051,7 +33006,7 @@
       ]
     },
     {
-      "GUID": "10025c",
+      "GUID": "10025b",
       "Name": "Bag",
       "Transform": {
         "posX": -3,
@@ -33096,7 +33051,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100250",
+          "GUID": "10024f",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33141,7 +33096,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100251",
+          "GUID": "100250",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33186,7 +33141,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100252",
+          "GUID": "100251",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33231,7 +33186,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100253",
+          "GUID": "100252",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33276,7 +33231,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100254",
+          "GUID": "100253",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33321,7 +33276,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100255",
+          "GUID": "100254",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33366,7 +33321,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100256",
+          "GUID": "100255",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33411,7 +33366,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100257",
+          "GUID": "100256",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33456,7 +33411,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100258",
+          "GUID": "100257",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33501,7 +33456,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100259",
+          "GUID": "100258",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33546,7 +33501,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10025a",
+          "GUID": "100259",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33591,7 +33546,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10025b",
+          "GUID": "10025a",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33638,7 +33593,7 @@
       ]
     },
     {
-      "GUID": "10026d",
+      "GUID": "10026c",
       "Name": "Bag",
       "Transform": {
         "posX": 3,
@@ -33683,7 +33638,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "10025d",
+          "GUID": "10025c",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33728,7 +33683,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10025e",
+          "GUID": "10025d",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33773,7 +33728,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10025f",
+          "GUID": "10025e",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33818,7 +33773,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100260",
+          "GUID": "10025f",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33863,7 +33818,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100261",
+          "GUID": "100260",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33908,7 +33863,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100262",
+          "GUID": "100261",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33953,7 +33908,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100263",
+          "GUID": "100262",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -33998,7 +33953,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100264",
+          "GUID": "100263",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -34043,7 +33998,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100265",
+          "GUID": "100264",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -34088,7 +34043,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100266",
+          "GUID": "100265",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -34133,7 +34088,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100267",
+          "GUID": "100266",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -34178,7 +34133,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100268",
+          "GUID": "100267",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -34223,7 +34178,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "100269",
+          "GUID": "100268",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -34268,7 +34223,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10026a",
+          "GUID": "100269",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -34313,7 +34268,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10026b",
+          "GUID": "10026a",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -34358,7 +34313,7 @@
           "XmlUI": ""
         },
         {
-          "GUID": "10026c",
+          "GUID": "10026b",
           "Name": "BlockSquare",
           "Transform": {
             "posX": 0,
@@ -34405,7 +34360,7 @@
       ]
     },
     {
-      "GUID": "10026e",
+      "GUID": "10026d",
       "Name": "BlockSquare",
       "Transform": {
         "posX": 4,
@@ -34450,7 +34405,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "10026f",
+      "GUID": "10026e",
       "Name": "BlockSquare",
       "Transform": {
         "posX": 6.5,
@@ -34495,7 +34450,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100270",
+      "GUID": "10026f",
       "Name": "BlockSquare",
       "Transform": {
         "posX": 9,
@@ -34540,7 +34495,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100271",
+      "GUID": "100270",
       "Name": "BlockSquare",
       "Transform": {
         "posX": 11.5,
@@ -34585,7 +34540,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100272",
+      "GUID": "100271",
       "Name": "BlockSquare",
       "Transform": {
         "posX": 14,
@@ -34630,7 +34585,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100273",
+      "GUID": "100272",
       "Name": "BlockSquare",
       "Transform": {
         "posX": 16.5,
@@ -34675,7 +34630,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100274",
+      "GUID": "100273",
       "Name": "BlockRectangle",
       "Transform": {
         "posX": 16,
@@ -34720,7 +34675,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100275",
+      "GUID": "100274",
       "Name": "BlockRectangle",
       "Transform": {
         "posX": 16,
@@ -34765,7 +34720,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100276",
+      "GUID": "100275",
       "Name": "BlockRectangle",
       "Transform": {
         "posX": 16,
@@ -34810,7 +34765,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100277",
+      "GUID": "100276",
       "Name": "Notecard",
       "Transform": {
         "posX": -18,
@@ -34855,7 +34810,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "100278",
+      "GUID": "100277",
       "Name": "Notecard",
       "Transform": {
         "posX": -22,

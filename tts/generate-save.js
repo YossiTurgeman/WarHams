@@ -18,7 +18,6 @@ const fs = require('fs');
 const path = require('path');
 
 const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design', 'game-data.json'), 'utf8'));
-const luaScript = fs.readFileSync(path.join(__dirname, 'scripts', 'setup.lua'), 'utf8');
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
@@ -161,14 +160,7 @@ function cornerSpot(idx, tc, side) {
     };
 }
 
-// ─── 1. SETUP PANEL ──────────────────────────────────────────────────
-const setupPanel = baseObj("BlockSquare", "SETUP PANEL", 
-    "Click a button to generate the hex board.\nRandom = shuffled tiles.\nFixed = balanced playtesting layout.",
-    0, 1.05, -3, { scaleX: 4, scaleY: 0.2, scaleZ: 2, rotY: 0, color: { r: 0.15, g: 0.15, b: 0.2 }, locked: true });
-setupPanel.LuaScript = luaScript;
-objects.push(setupPanel);
-
-// ─── 2. BAC DECK (100 cards) ─────────────────────────────────────────
+// ─── 1. BAC DECK (100 cards) ─────────────────────────────────────────
 let nextDeckDefId = 100;  // global counter so BAC and Conspire don't collide
 function buildBACDeck() {
     const cards = [];
@@ -509,7 +501,7 @@ const saveFile = {
         "========================================",
         "", "2-4 Players | Sci-Fi Corporate Military Conquest",
         "", "SETUP:",
-        "1. Click 'Random Board' or 'Fixed Board' on the Setup Panel",
+        "1. Place hex tiles manually to build the planet board",
         "2. Each player takes a soldier bag, flag bag, control markers, and 2 squad boards",
         "3. Place 10 soldiers (2 squads of 5) on starting hexes",
         "4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)",
