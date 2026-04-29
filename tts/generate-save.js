@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v23";
+const CARD_VERSION = "v24";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
@@ -44,6 +44,11 @@ const FLAG_MESH_URL = `${CARD_BASE}/flag.obj?${CARD_VERSION}`;
 const FLAG_DIFFUSE_URL = `${CARD_BASE}/flag-texture.png?${CARD_VERSION}`;
 const BARREL_MESH_URL = `${CARD_BASE}/barrel.obj?${CARD_VERSION}`;
 const BARREL_DIFFUSE_URL = `${CARD_BASE}/barrel-texture.png?${CARD_VERSION}`;
+const RESOURCE_DIFFUSE_URL = `${CARD_BASE}/resource-texture.png?${CARD_VERSION}`;
+const LIGHTNING_MESH_URL = `${CARD_BASE}/lightning.obj?${CARD_VERSION}`;
+const WAVE_MESH_URL = `${CARD_BASE}/wave.obj?${CARD_VERSION}`;
+const HAMMER_MESH_URL = `${CARD_BASE}/hammer.obj?${CARD_VERSION}`;
+const RECRUIT_MESH_URL = `${CARD_BASE}/recruit.obj?${CARD_VERSION}`;
 const TABLE_SURFACE_URL = `${CARD_BASE}/table_surface.png?${CARD_VERSION}`;
 
 // GUID generator — 6 hex chars
@@ -255,31 +260,32 @@ playerColors.forEach((pc, idx) => {
 });
 
 // ─── 6. RESOURCE TOKEN BAGS ─────────────────────────────────────────
+// Per rulebook: each resource has a prescribed depiction.
+//   Oil → Oil Drum, Electricity → Lightning Bolt, Intelligence → Transmitting
+//   Wave, Industry → Hammer, Local Favor → Recruit.
+// All five are Custom_Model meshes built bottom-up (y=0 at the base) and
+// stored in a regular Bag so each token spawns upright on its base.
+// (Infinite_Bag auto-orients spawned items toward the puller — we don't want
+//  that for these 3D shapes.)
 const resourceDefs = [
-    { name: "Oil",          color: { r: 0.15, g: 0.15, b: 0.15 } },
-    { name: "Electricity",  color: { r: 0.95, g: 0.85, b: 0.1 } },
-    { name: "Intelligence", color: { r: 0.2,  g: 0.4,  b: 0.9 } },
-    { name: "Industry",     color: { r: 0.85, g: 0.15, b: 0.15 } },
-    { name: "Local Favor",  color: { r: 0.15, g: 0.7,  b: 0.2 } },
+    { name: "Oil",          mesh: BARREL_MESH_URL,    diffuse: BARREL_DIFFUSE_URL,    label: "WW2 steel drum",   color: { r: 0.12, g: 0.12, b: 0.12 } },
+    { name: "Electricity",  mesh: LIGHTNING_MESH_URL, diffuse: RESOURCE_DIFFUSE_URL,  label: "lightning bolt",    color: { r: 0.95, g: 0.82, b: 0.10 } },
+    { name: "Intelligence", mesh: WAVE_MESH_URL,      diffuse: RESOURCE_DIFFUSE_URL,  label: "transmitting wave", color: { r: 0.20, g: 0.45, b: 0.95 } },
+    { name: "Industry",     mesh: HAMMER_MESH_URL,    diffuse: RESOURCE_DIFFUSE_URL,  label: "hammer",            color: { r: 0.85, g: 0.15, b: 0.15 } },
+    { name: "Local Favor",  mesh: RECRUIT_MESH_URL,   diffuse: RESOURCE_DIFFUSE_URL,  label: "recruit",           color: { r: 0.15, g: 0.70, b: 0.20 } },
 ];
-// Build a single resource-token sample that the Infinite_Bag clones.
-// Oil uses a 3D oil-barrel mesh (Custom_Model); other resources stay as
-// flat colored checkers for now.
-function makeOilBarrelToken() {
-    // Mesh is built with the bottom of the barrel at y=0 and absolute
-    // WW2-drum proportions (~0.62 tall × 0.40 dia). Use uniform scale 1
-    // and explicit upright rotation so it spawns standing on its base.
-    const token = baseObj("Custom_Model", "Oil",
-        "Oil resource token — WW2 steel drum",
+function makeResourceToken(res) {
+    const token = baseObj("Custom_Model", res.name,
+        `${res.name} resource token — ${res.label}`,
         0, 1.0, 0,
         {
             rotX: 0, rotY: 0, rotZ: 0,
             scaleX: 1.0, scaleY: 1.0, scaleZ: 1.0,
-            color: { r: 0.12, g: 0.12, b: 0.12 },
+            color: res.color,
         });
     token.CustomMesh = {
-        MeshURL: BARREL_MESH_URL,
-        DiffuseURL: BARREL_DIFFUSE_URL,
+        MeshURL: res.mesh,
+        DiffuseURL: res.diffuse,
         NormalURL: "",
         ColliderURL: "",
         Convex: true,
@@ -287,7 +293,7 @@ function makeOilBarrelToken() {
         TypeIndex: 0,
         CustomShader: {
             SpecularColor: { r: 1, g: 1, b: 1 },
-            SpecularIntensity: 0,   // matte — moving highlight made it look like spinning
+            SpecularIntensity: 0,   // matte — moving highlight reads as rotation
             SpecularSharpness: 2,
             FresnelStrength: 0,
         },
@@ -296,24 +302,12 @@ function makeOilBarrelToken() {
     return token;
 }
 resourceDefs.forEach((res, i) => {
-    if (res.name === "Oil") {
-        // Regular Bag with a stack of pre-rotated barrels. Unlike
-        // Infinite_Bag (which auto-orients spawned items toward the
-        // puller), a regular Bag preserves each contained item's saved
-        // rotation, so every barrel comes out standing upright.
-        const barrels = [];
-        for (let n = 0; n < 50; n++) barrels.push(makeOilBarrelToken());
-        const bag = baseObj("Bag", "Oil Barrels (50)",
-            "Stack of WW2 oil drums. Each spawns upright on its base.",
-            -12 + i * 6, 1.5, -9, { color: res.color });
-        bag.ContainedObjects = barrels;
-        objects.push(bag);
-        return;
-    }
-    const token = baseObj("Checker_white", res.name, `${res.name} resource token`, 0, 0.5, 0, { color: res.color });
-    const bag = baseObj("Infinite_Bag", `${res.name} Tokens`, `Infinite bag of ${res.name} tokens.`,
+    const tokens = [];
+    for (let n = 0; n < 50; n++) tokens.push(makeResourceToken(res));
+    const bag = baseObj("Bag", `${res.name} Tokens (50)`,
+        `Stack of ${res.name} tokens (${res.label}). Each spawns upright on its base.`,
         -12 + i * 6, 1.5, -9, { color: res.color });
-    bag.ContainedObjects = [token];
+    bag.ContainedObjects = tokens;
     objects.push(bag);
 });
 
