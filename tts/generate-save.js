@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v21";
+const CARD_VERSION = "v22";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
@@ -296,9 +296,21 @@ function makeOilBarrelToken() {
     return token;
 }
 resourceDefs.forEach((res, i) => {
-    const token = res.name === "Oil"
-        ? makeOilBarrelToken()
-        : baseObj("Checker_white", res.name, `${res.name} resource token`, 0, 0.5, 0, { color: res.color });
+    if (res.name === "Oil") {
+        // Regular Bag with a stack of pre-rotated barrels. Unlike
+        // Infinite_Bag (which auto-orients spawned items toward the
+        // puller), a regular Bag preserves each contained item's saved
+        // rotation, so every barrel comes out standing upright.
+        const barrels = [];
+        for (let n = 0; n < 50; n++) barrels.push(makeOilBarrelToken());
+        const bag = baseObj("Bag", "Oil Barrels (50)",
+            "Stack of WW2 oil drums. Each spawns upright on its base.",
+            -12 + i * 6, 1.5, -9, { color: res.color });
+        bag.ContainedObjects = barrels;
+        objects.push(bag);
+        return;
+    }
+    const token = baseObj("Checker_white", res.name, `${res.name} resource token`, 0, 0.5, 0, { color: res.color });
     const bag = baseObj("Infinite_Bag", `${res.name} Tokens`, `Infinite bag of ${res.name} tokens.`,
         -12 + i * 6, 1.5, -9, { color: res.color });
     bag.ContainedObjects = [token];
