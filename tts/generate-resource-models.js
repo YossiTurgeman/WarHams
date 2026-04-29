@@ -117,20 +117,60 @@ function sphere(cx, cy, cz, r, latSeg = 8, lonSeg = 12) {
     }
 }
 
-// Extrude a closed 2D polygon (in the X-Y plane) along Z by ±halfThickness.
-// Pass points in counter-clockwise order when viewed from +Z.
+// Ear-clipping triangulator for a simple, possibly non-convex polygon.
+// Points must be in CCW order when viewed from +Z. Returns an array of
+// triangle index triples into the original points array.
+function triangulatePolygon(pts) {
+    function pointInTri(p, a, b, c) {
+        const d1 = (p[0]-b[0])*(a[1]-b[1]) - (a[0]-b[0])*(p[1]-b[1]);
+        const d2 = (p[0]-c[0])*(b[1]-c[1]) - (b[0]-c[0])*(p[1]-c[1]);
+        const d3 = (p[0]-a[0])*(c[1]-a[1]) - (c[0]-a[0])*(p[1]-a[1]);
+        const hasNeg = (d1 < 0) || (d2 < 0) || (d3 < 0);
+        const hasPos = (d1 > 0) || (d2 > 0) || (d3 > 0);
+        return !(hasNeg && hasPos);
+    }
+    const idx = pts.map((_, i) => i);
+    const tris = [];
+    let safety = pts.length * pts.length;
+    while (idx.length > 3 && safety-- > 0) {
+        let earFound = false;
+        for (let i = 0; i < idx.length; i++) {
+            const i0 = idx[(i - 1 + idx.length) % idx.length];
+            const i1 = idx[i];
+            const i2 = idx[(i + 1) % idx.length];
+            const a = pts[i0], b = pts[i1], c = pts[i2];
+            // CCW convex (ear) check
+            const cross = (b[0]-a[0])*(c[1]-a[1]) - (b[1]-a[1])*(c[0]-a[0]);
+            if (cross <= 0) continue; // reflex vertex
+            // No other polygon vertex inside this candidate ear?
+            let bad = false;
+            for (const k of idx) {
+                if (k === i0 || k === i1 || k === i2) continue;
+                if (pointInTri(pts[k], a, b, c)) { bad = true; break; }
+            }
+            if (bad) continue;
+            tris.push([i0, i1, i2]);
+            idx.splice(i, 1);
+            earFound = true;
+            break;
+        }
+        if (!earFound) break; // give up — produces a partial mesh, but no crash
+    }
+    if (idx.length === 3) tris.push([idx[0], idx[1], idx[2]]);
+    return tris;
+}
+
+// Extrude a closed 2D polygon (X-Y plane) along Z by ±halfThickness.
+// Pass points in CCW order when viewed from +Z. Polygon may be non-convex.
 function extrudePolygon(points2D, halfThickness) {
     const front = points2D.map(([x, y]) => addV(x, y, +halfThickness));
-    const back = points2D.map(([x, y]) => addV(x, y, -halfThickness));
-    // Front face — fan from points2D[0]
-    for (let i = 1; i < points2D.length - 1; i++) {
-        addTri(front[0], front[i], front[i + 1]);
-    }
-    // Back face — reverse winding
-    for (let i = 1; i < points2D.length - 1; i++) {
-        addTri(back[0], back[i + 1], back[i]);
-    }
-    // Side quads
+    const back  = points2D.map(([x, y]) => addV(x, y, -halfThickness));
+    const tris = triangulatePolygon(points2D);
+    // Front face — CCW from +Z (matches polygon winding)
+    for (const [a, b, c] of tris) addTri(front[a], front[b], front[c]);
+    // Back face — reversed winding so normals face -Z
+    for (const [a, b, c] of tris) addTri(back[a], back[c], back[b]);
+    // Side quads around the perimeter
     for (let i = 0; i < points2D.length; i++) {
         const ni = (i + 1) % points2D.length;
         addQuad(front[i], front[ni], back[ni], back[i]);
@@ -138,28 +178,30 @@ function extrudePolygon(points2D, halfThickness) {
 }
 
 // ─── 1. LIGHTNING BOLT (Electricity) ──────────────────────────────────
-// Classic bolt silhouette extruded a bit in Z, sitting on a small disc base
-// so it stands upright.
+// Classic 7-vertex zigzag bolt silhouette (matches the canonical
+// "thunderbolt" SVG icon shape) extruded thin in Z, sitting on a small
+// disc base so it stands upright. Uses ear-clipping triangulation
+// because the silhouette is non-convex.
 function buildLightning() {
     reset();
-    // Small base disc so the bolt has somewhere to rest on.
-    lathe(0, 0, [[0, 0.16], [0.04, 0.18], [0.06, 0.16]], 16, true, true);
+    // Small base disc — hidden by the bolt's footprint when viewed from above.
+    lathe(0, 0, [[0, 0.13], [0.03, 0.15], [0.05, 0.13]], 16, true, true);
 
-    // Bolt silhouette — points listed CCW (from +Z view).
-    // Total height ~0.7, sits on top of the disc (y=0.06 .. 0.76).
-    const yBase = 0.06;
+    // Bolt silhouette in CCW order (viewed from +Z, with Y up). This is
+    // the canonical 6-vertex thunderbolt path — top peak, two concave
+    // waist notches, single bottom tip, single wide right tip.
+    // Sits on the disc (y starts at 0.05). Total H ≈ 0.62, max W ≈ 0.20.
+    const yBase = 0.05;
     const pts = [
-        // Start at bottom-tip and go CCW around the silhouette
-        [ 0.00, yBase + 0.00],   // bottom tip
-        [ 0.18, yBase + 0.30],   // up-right along lower stroke
-        [ 0.02, yBase + 0.30],   // notch back toward center
-        [ 0.20, yBase + 0.70],   // up to top edge
-        [-0.02, yBase + 0.70],   // top-left corner
-        [-0.18, yBase + 0.42],   // down along upper stroke
-        [-0.02, yBase + 0.42],   // notch back toward center
-        [-0.20, yBase + 0.10],   // down to bottom-left
+        [ +0.014, yBase + 0.62],  // 0: top peak
+        [ -0.100, yBase + 0.26],  // 1: lower-left of upper jag
+        [  0.000, yBase + 0.26],  // 2: concave waist — right side of upper jag
+        [ -0.028, yBase + 0.00],  // 3: bottom tip
+        [ +0.100, yBase + 0.38],  // 4: wide tip — right side of lower jag
+        [  0.000, yBase + 0.38],  // 5: concave waist — left side of lower jag
     ];
-    extrudePolygon(pts, 0.04);
+    // Thin in Z so the bolt reads as a slim metallic strip.
+    extrudePolygon(pts, 0.02);
     writeObj("lightning.obj", "Lightning");
 }
 
