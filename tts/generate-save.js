@@ -348,26 +348,15 @@ playerColors.forEach((pc, idx) => {
     objects.push(extraBag);
 });
 
-// ─── 11. CONTROL MARKER BAGS (25 per player, in corner) ─────────────
-playerColors.forEach((pc, idx) => {
-    const markers = [];
-    for (let i = 0; i < 25; i++) {
-        markers.push(baseObj("Chinese_Checkers_Piece", `${pc.label} Control`, `${pc.label} control marker`,
-            0, 0.3 * i, 0, { color: pc.color }));
-    }
-    const sp = cornerSpot(idx, -5, -2.5);
-    const bag = baseObj("Bag", `${pc.label} Control (25)`, `25 control markers for ${pc.label}.`,
-        sp.x, 1.5, sp.z, { color: pc.color });
-    bag.ContainedObjects = markers;
-    objects.push(bag);
-});
-
-// ─── 12. FLAG BAGS (25 per player, in corner) ───────────────────────
+// ─── 11. CONTROL FLAG BAGS (25 per player, in corner) ───────────────
+// Per rulebook: a single set of Control Flags is used BOTH to mark
+// territorial control on hexes AND to mark unlocked BAC types on the
+// Equipment Display. One unified component, two uses.
 playerColors.forEach((pc, idx) => {
     const flags = [];
     for (let i = 0; i < 25; i++) {
-        const flag = baseObj("Custom_Model", `${pc.label} Flag`,
-            `${pc.label} flag — Equipment Display. Permanent.`,
+        const flag = baseObj("Custom_Model", `${pc.label} Control Flag`,
+            `${pc.label} Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.`,
             0, 0.3 * i, 0,
             { scaleX: 1, scaleY: 1, scaleZ: 1, color: pc.color });
         flag.CustomMesh = {
@@ -388,8 +377,9 @@ playerColors.forEach((pc, idx) => {
         };
         flags.push(flag);
     }
-    const fp = cornerSpot(idx, -5, 2.5);
-    const bag = baseObj("Bag", `${pc.label} Flags (25)`, "Flags for Equipment Display.",
+    const fp = cornerSpot(idx, -5, 0);
+    const bag = baseObj("Bag", `${pc.label} Control Flags (25)`,
+        "Mark hex control AND Equipment Display unlocks. One bag, two uses.",
         fp.x, 1.5, fp.z, { color: pc.color });
     bag.ContainedObjects = flags;
     objects.push(bag);
@@ -502,7 +492,7 @@ const saveFile = {
         "", "2-4 Players | Sci-Fi Corporate Military Conquest",
         "", "SETUP:",
         "1. Place hex tiles manually to build the planet board",
-        "2. Each player takes a soldier bag, flag bag, control markers, and 2 squad boards",
+        "2. Each player takes a soldier bag, Control Flag bag, and 2 squad boards",
         "3. Place 10 soldiers (2 squads of 5) on starting hexes",
         "4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)",
         "5. Shuffle the Conspire Deck",
