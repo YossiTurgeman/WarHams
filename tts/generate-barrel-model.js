@@ -1,12 +1,21 @@
 #!/usr/bin/env node
 /**
- * W.A.R H.A.M.S — Oil Barrel Mesh Generator
- * Outputs a Wavefront .obj of a 3D oil drum:
- *   - cylindrical body with subtle middle bulge
- *   - two raised ring ridges (top + bottom rims)
+ * W.A.R H.A.M.S — WW2 Steel Oil Drum Mesh Generator
+ *
+ * Builds a Wavefront .obj that looks like a classic 55-gallon military
+ * oil drum:
+ *   - cylindrical body with two raised rolling hoops at ~1/3 and 2/3 height
+ *   - top + bottom chime rings (the rolled rim that holds the head on)
  *   - solid top and bottom caps
- * The mesh is colored at runtime via TTS ColorDiffuse, so a single shared
- * mesh + a 1px white diffuse texture covers any tint.
+ *   - small bung (filling plug) on the top head
+ *
+ * The mesh is built bottom-up: the base of the barrel sits at y = 0, so the
+ * model rests firmly on the table with its local origin at the bottom
+ * center. Height ≈ 0.62 TTS units, diameter ≈ 0.40 — roughly the 35"×23"
+ * proportions of a real 55-gal drum (≈1.5:1).
+ *
+ * Colored at runtime via TTS ColorDiffuse, so a single shared mesh + a
+ * solid white diffuse covers any tint.
  *
  * Usage: node generate-barrel-model.js
  * Outputs: tts/cards/barrel.obj, tts/cards/barrel-texture.png
@@ -20,21 +29,37 @@ const outDir = path.join(__dirname, "cards");
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir);
 
 // ─── Geometry parameters (TTS units) ────────────────────────────────
-const SEG = 24;            // radial segments
+const SEG = 24;             // radial segments
 
-// Profile of revolution — list of [y, radius] sample points along the side.
-// Defines the silhouette of the barrel from bottom to top.
-const profile = [
-    [0.00, 0.38],   // bottom edge
-    [0.04, 0.42],   // bottom rim peak
-    [0.08, 0.40],   // rim taper back in
-    [0.30, 0.46],   // body bulge starts
-    [0.50, 0.48],   // mid bulge peak
-    [0.70, 0.46],   // body bulge ends
-    [0.92, 0.40],   // taper toward top rim
-    [0.96, 0.42],   // top rim peak
-    [1.00, 0.38],   // top edge
+const BODY_R = 0.20;        // straight side radius
+const HOOP_R = 0.225;       // rolling hoop / chime peak radius
+const TOTAL_H = 0.62;       // overall barrel height (sit-on-table)
+
+// Vertical landmarks expressed as fractions of TOTAL_H, then scaled.
+const profileFrac = [
+    [0.00, BODY_R],   // bottom rim outer edge (touches the table)
+    [0.03, HOOP_R],   // bottom chime peak
+    [0.06, HOOP_R],   // chime top
+    [0.09, BODY_R],   // taper back to body
+    [0.30, BODY_R],   // body straight
+    [0.32, HOOP_R],   // lower rolling hoop start
+    [0.36, HOOP_R],   // lower rolling hoop end
+    [0.38, BODY_R],
+    [0.62, BODY_R],   // body straight
+    [0.64, HOOP_R],   // upper rolling hoop start
+    [0.68, HOOP_R],   // upper rolling hoop end
+    [0.70, BODY_R],
+    [0.91, BODY_R],
+    [0.94, HOOP_R],   // top chime peak
+    [0.97, HOOP_R],   // chime top
+    [1.00, BODY_R],   // top rim
 ];
+const profile = profileFrac.map(([f, r]) => [f * TOTAL_H, r]);
+
+// Bung (filling plug) on top head — small protruding cylinder offset from center.
+const BUNG_R = 0.035;
+const BUNG_H = 0.02;
+const BUNG_OFFSET = 0.10;   // distance from barrel axis along +X
 
 // ─── OBJ builders ───────────────────────────────────────────────────
 const verts = [];     // each: [x,y,z]
@@ -47,50 +72,65 @@ function addV(x, y, z) {
 function addTri(a, b, c) { faces.push([a, b, c]); }
 function addQuad(a, b, c, d) { addTri(a, b, c); addTri(a, c, d); }
 
-// Build rings of vertices around Y axis at each profile height.
-const rings = profile.map(([y, r]) => {
-    const ring = [];
-    for (let i = 0; i < SEG; i++) {
-        const a = (i / SEG) * Math.PI * 2;
-        ring.push(addV(Math.cos(a) * r, y, Math.sin(a) * r));
+// Build rings of vertices around the Y axis at each profile height.
+function buildLathe(centerX, centerZ, profilePts, capBottom = true, capTop = true) {
+    const rings = profilePts.map(([y, r]) => {
+        const ring = [];
+        for (let i = 0; i < SEG; i++) {
+            const a = (i / SEG) * Math.PI * 2;
+            ring.push(addV(centerX + Math.cos(a) * r, y, centerZ + Math.sin(a) * r));
+        }
+        return ring;
+    });
+    // Side surfaces between successive rings.
+    for (let k = 0; k < rings.length - 1; k++) {
+        const lower = rings[k];
+        const upper = rings[k + 1];
+        for (let i = 0; i < SEG; i++) {
+            const ni = (i + 1) % SEG;
+            addQuad(lower[i], lower[ni], upper[ni], upper[i]);
+        }
     }
-    return ring;
-});
-
-// Side surfaces between successive rings.
-for (let k = 0; k < rings.length - 1; k++) {
-    const lower = rings[k];
-    const upper = rings[k + 1];
-    for (let i = 0; i < SEG; i++) {
-        const ni = (i + 1) % SEG;
-        addQuad(lower[i], lower[ni], upper[ni], upper[i]);
+    if (capBottom) {
+        const c = addV(centerX, profilePts[0][0], centerZ);
+        const ring = rings[0];
+        for (let i = 0; i < SEG; i++) {
+            const ni = (i + 1) % SEG;
+            addTri(c, ring[ni], ring[i]); // CW from below = normal down
+        }
+    }
+    if (capTop) {
+        const c = addV(centerX, profilePts[profilePts.length - 1][0], centerZ);
+        const ring = rings[rings.length - 1];
+        for (let i = 0; i < SEG; i++) {
+            const ni = (i + 1) % SEG;
+            addTri(c, ring[i], ring[ni]); // CCW from above = normal up
+        }
     }
 }
 
-// Bottom cap (CW so normal points down).
-const bottomCenter = addV(0, profile[0][0], 0);
-const bottomRing = rings[0];
-for (let i = 0; i < SEG; i++) {
-    const ni = (i + 1) % SEG;
-    addTri(bottomCenter, bottomRing[ni], bottomRing[i]);
-}
+// Main barrel body
+buildLathe(0, 0, profile, /*capBottom*/ true, /*capTop*/ true);
 
-// Top cap.
-const topCenter = addV(0, profile[profile.length - 1][0], 0);
-const topRing = rings[rings.length - 1];
-for (let i = 0; i < SEG; i++) {
-    const ni = (i + 1) % SEG;
-    addTri(topCenter, topRing[i], topRing[ni]);
-}
+// Bung cylinder protruding from top head
+const bungProfile = [
+    [TOTAL_H,            BUNG_R],
+    [TOTAL_H + BUNG_H,   BUNG_R],
+];
+buildLathe(BUNG_OFFSET, 0, bungProfile, /*capBottom*/ false, /*capTop*/ true);
 
 // ─── Write OBJ ──────────────────────────────────────────────────────
-const lines = ["# W.A.R.H.A.M.S 3D oil barrel mesh", "o Barrel"];
+const lines = [
+    "# W.A.R.H.A.M.S WW2 oil drum mesh",
+    `# verts: ${verts.length}, tris-and-faces written below`,
+    "o OilBarrel",
+];
 for (const [x, y, z] of verts) lines.push(`v ${x.toFixed(5)} ${y.toFixed(5)} ${z.toFixed(5)}`);
 for (const [a, b, c] of faces) lines.push(`f ${a} ${b} ${c}`);
 fs.writeFileSync(path.join(outDir, "barrel.obj"), lines.join("\n") + "\n");
 console.log(`barrel.obj: ${verts.length} verts, ${faces.length} tris`);
 
-// ─── Write 1×1 white diffuse texture (TTS Custom_Model requires a diffuse URL) ─
+// ─── Write a small white diffuse texture (TTS Custom_Model requires one) ─
 async function writeTexture() {
     const tex = new Jimp({ width: 4, height: 4, color: 0xFFFFFFFF });
     await tex.write(path.join(outDir, "barrel-texture.png"));

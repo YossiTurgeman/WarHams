@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v20";
+const CARD_VERSION = "v21";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
@@ -266,10 +266,17 @@ const resourceDefs = [
 // Oil uses a 3D oil-barrel mesh (Custom_Model); other resources stay as
 // flat colored checkers for now.
 function makeOilBarrelToken() {
+    // Mesh is built with the bottom of the barrel at y=0 and absolute
+    // WW2-drum proportions (~0.62 tall × 0.40 dia). Use uniform scale 1
+    // and explicit upright rotation so it spawns standing on its base.
     const token = baseObj("Custom_Model", "Oil",
-        "Oil resource token (barrel)",
-        0, 0.5, 0,
-        { scaleX: 0.7, scaleY: 0.7, scaleZ: 0.7, color: { r: 0.15, g: 0.15, b: 0.15 } });
+        "Oil resource token — WW2 steel drum",
+        0, 1.0, 0,
+        {
+            rotX: 0, rotY: 0, rotZ: 0,
+            scaleX: 1.0, scaleY: 1.0, scaleZ: 1.0,
+            color: { r: 0.12, g: 0.12, b: 0.12 },
+        });
     token.CustomMesh = {
         MeshURL: BARREL_MESH_URL,
         DiffuseURL: BARREL_DIFFUSE_URL,
@@ -280,7 +287,7 @@ function makeOilBarrelToken() {
         TypeIndex: 0,
         CustomShader: {
             SpecularColor: { r: 1, g: 1, b: 1 },
-            SpecularIntensity: 0.25,
+            SpecularIntensity: 0.35,
             SpecularSharpness: 4,
             FresnelStrength: 0,
         },
