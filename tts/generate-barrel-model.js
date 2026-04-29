@@ -90,13 +90,14 @@ function buildLathe(centerX, centerZ, profilePts, capBottom = true, capTop = tru
         }
     }
     if (capBottom) {
-        // Bottom cap: normal must point -Y. Triangle (c, ring[i], ring[ni])
-        // gives the correct outward (downward) normal.
+        // Two-sided bottom cap so the underside is opaque from any angle
+        // (rendering convention can vary; safest to emit both windings).
         const c = addV(centerX, profilePts[0][0], centerZ);
         const ring = rings[0];
         for (let i = 0; i < SEG; i++) {
             const ni = (i + 1) % SEG;
-            addTri(c, ring[i], ring[ni]);
+            addTri(c, ring[i], ring[ni]); // outward-facing (normal -Y)
+            addTri(c, ring[ni], ring[i]); // duplicate, opposite winding
         }
     }
     if (capTop) {
