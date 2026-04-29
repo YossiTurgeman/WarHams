@@ -188,8 +188,10 @@ function extrudePolygon(points2D, halfThickness) {
 // because the silhouette is non-convex.
 function buildLightning() {
     reset();
-    // Small base disc — hidden by the bolt's footprint when viewed from above.
-    lathe(0, 0, [[0, 0.13], [0.03, 0.15], [0.05, 0.13]], 16, true, true);
+    // Base disc sized so it visually matches the wave's base (visual r ≈ 0.245
+    // after the per-token uniform scale of 1.164 in generate-save.js).
+    //   mesh r = 0.245 / 1.164 ≈ 0.210
+    lathe(0, 0, [[0, 0.210], [0.03, 0.230], [0.05, 0.210]], 20, true, true);
 
     // Bolt silhouette in CCW order (viewed from +Z, with Y up). This is
     // the canonical 6-vertex thunderbolt path — top peak, two concave
@@ -253,8 +255,9 @@ function buildWave() {
 // upright on a base disc that is hidden inside the handle bottom.
 function buildHammer() {
     reset();
-    // Small base disc so the hammer doesn't roll
-    lathe(0, 0, [[0, 0.16], [0.05, 0.18], [0.07, 0.16]], 16, true, true);
+    // Base disc sized to visually match the wave's base (visual r ≈ 0.245).
+    // Hammer scale = 1.000, so mesh r = 0.245.
+    lathe(0, 0, [[0, 0.245], [0.05, 0.265], [0.07, 0.245]], 20, true, true);
     // Handle
     lathe(0, 0, [[0.05, 0.05], [0.70, 0.05]], 12, false, true);
     // Head — rectangular block straddling the top of the handle
@@ -268,8 +271,9 @@ function buildHammer() {
 // resource tokens.
 function buildRecruit() {
     reset();
-    // Base disc (hidden under the legs)
-    lathe(0, 0, [[0, 0.22], [0.025, 0.24], [0.04, 0.22]], 16, true, true);
+    // Base disc sized to visually match the wave's base (visual r ≈ 0.245).
+    // Recruit scale = 0.918, so mesh r = 0.245 / 0.918 ≈ 0.267.
+    lathe(0, 0, [[0, 0.267], [0.025, 0.287], [0.04, 0.267]], 20, true, true);
     // Two legs (thin cylinders), centered ±0.07 on X
     lathe(-0.07, 0, [[0.04, 0.05], [0.32, 0.05]], 10, false, true);
     lathe( 0.07, 0, [[0.04, 0.05], [0.32, 0.05]], 10, false, true);
