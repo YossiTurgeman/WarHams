@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v19";
+const CARD_VERSION = "v20";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
@@ -42,6 +42,8 @@ function flagURL(colorName) {
 }
 const FLAG_MESH_URL = `${CARD_BASE}/flag.obj?${CARD_VERSION}`;
 const FLAG_DIFFUSE_URL = `${CARD_BASE}/flag-texture.png?${CARD_VERSION}`;
+const BARREL_MESH_URL = `${CARD_BASE}/barrel.obj?${CARD_VERSION}`;
+const BARREL_DIFFUSE_URL = `${CARD_BASE}/barrel-texture.png?${CARD_VERSION}`;
 const TABLE_SURFACE_URL = `${CARD_BASE}/table_surface.png?${CARD_VERSION}`;
 
 // GUID generator — 6 hex chars
@@ -260,8 +262,36 @@ const resourceDefs = [
     { name: "Industry",     color: { r: 0.85, g: 0.15, b: 0.15 } },
     { name: "Local Favor",  color: { r: 0.15, g: 0.7,  b: 0.2 } },
 ];
+// Build a single resource-token sample that the Infinite_Bag clones.
+// Oil uses a 3D oil-barrel mesh (Custom_Model); other resources stay as
+// flat colored checkers for now.
+function makeOilBarrelToken() {
+    const token = baseObj("Custom_Model", "Oil",
+        "Oil resource token (barrel)",
+        0, 0.5, 0,
+        { scaleX: 0.7, scaleY: 0.7, scaleZ: 0.7, color: { r: 0.15, g: 0.15, b: 0.15 } });
+    token.CustomMesh = {
+        MeshURL: BARREL_MESH_URL,
+        DiffuseURL: BARREL_DIFFUSE_URL,
+        NormalURL: "",
+        ColliderURL: "",
+        Convex: true,
+        MaterialIndex: 3,
+        TypeIndex: 0,
+        CustomShader: {
+            SpecularColor: { r: 1, g: 1, b: 1 },
+            SpecularIntensity: 0.25,
+            SpecularSharpness: 4,
+            FresnelStrength: 0,
+        },
+        CastShadows: true,
+    };
+    return token;
+}
 resourceDefs.forEach((res, i) => {
-    const token = baseObj("Checker_white", res.name, `${res.name} resource token`, 0, 0.5, 0, { color: res.color });
+    const token = res.name === "Oil"
+        ? makeOilBarrelToken()
+        : baseObj("Checker_white", res.name, `${res.name} resource token`, 0, 0.5, 0, { color: res.color });
     const bag = baseObj("Infinite_Bag", `${res.name} Tokens`, `Infinite bag of ${res.name} tokens.`,
         -12 + i * 6, 1.5, -9, { color: res.color });
     bag.ContainedObjects = [token];
