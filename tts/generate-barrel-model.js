@@ -56,10 +56,8 @@ const profileFrac = [
 ];
 const profile = profileFrac.map(([f, r]) => [f * TOTAL_H, r]);
 
-// Bung (filling plug) on top head — small protruding cylinder offset from center.
-const BUNG_R = 0.035;
-const BUNG_H = 0.02;
-const BUNG_OFFSET = 0.10;   // distance from barrel axis along +X
+// (No bung — an off-center protrusion would skew the convex collider and
+//  the barrel would rest tilted and oscillate.)
 
 // ─── OBJ builders ───────────────────────────────────────────────────
 const verts = [];     // each: [x,y,z]
@@ -109,15 +107,9 @@ function buildLathe(centerX, centerZ, profilePts, capBottom = true, capTop = tru
     }
 }
 
-// Main barrel body
+// Main barrel body — perfectly symmetric solid of revolution so the
+// convex collider rests flat on the table.
 buildLathe(0, 0, profile, /*capBottom*/ true, /*capTop*/ true);
-
-// Bung cylinder protruding from top head
-const bungProfile = [
-    [TOTAL_H,            BUNG_R],
-    [TOTAL_H + BUNG_H,   BUNG_R],
-];
-buildLathe(BUNG_OFFSET, 0, bungProfile, /*capBottom*/ false, /*capTop*/ true);
 
 // ─── Write OBJ ──────────────────────────────────────────────────────
 const lines = [
