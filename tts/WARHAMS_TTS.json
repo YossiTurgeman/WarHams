@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1777540086,
+  "EpochTime": 1777542197,
   "Date": "2026-04-30",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -30018,7 +30018,7 @@
       "ContainedObjects": [
         {
           "GUID": "1001d1",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 0,
@@ -30026,9 +30026,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red A1",
           "Description": "Red Squad A — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30062,20 +30062,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_A1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_A1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001d2",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 0.5,
@@ -30083,9 +30077,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red A2",
           "Description": "Red Squad A — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30119,20 +30113,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_A2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_A2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001d3",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 1,
@@ -30140,9 +30128,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red A3",
           "Description": "Red Squad A — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30176,20 +30164,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_A3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_A3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001d4",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 1.5,
@@ -30197,9 +30179,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red A4",
           "Description": "Red Squad A — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30233,20 +30215,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_A4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_A4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001d5",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 2,
@@ -30254,9 +30230,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red A5",
           "Description": "Red Squad A — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30290,20 +30266,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_A5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_A5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001d6",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 2.5,
@@ -30311,9 +30281,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red A6",
           "Description": "Red Squad A — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30347,20 +30317,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_A6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_A6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001d7",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 3,
@@ -30368,9 +30332,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red A7",
           "Description": "Red Squad A — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30404,20 +30368,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_A7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_A7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001d8",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 3.5,
@@ -30425,9 +30383,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red B1",
           "Description": "Red Squad B — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30461,20 +30419,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_B1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_B1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001d9",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 4,
@@ -30482,9 +30434,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red B2",
           "Description": "Red Squad B — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30518,20 +30470,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_B2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_B2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001da",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 4.5,
@@ -30539,9 +30485,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red B3",
           "Description": "Red Squad B — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30575,20 +30521,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_B3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_B3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001db",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 5,
@@ -30596,9 +30536,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red B4",
           "Description": "Red Squad B — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30632,20 +30572,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_B4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_B4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001dc",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 5.5,
@@ -30653,9 +30587,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red B5",
           "Description": "Red Squad B — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30689,20 +30623,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_B5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_B5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001dd",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 6,
@@ -30710,9 +30638,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red B6",
           "Description": "Red Squad B — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30746,20 +30674,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_B6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_B6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001de",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 6.5,
@@ -30767,9 +30689,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red B7",
           "Description": "Red Squad B — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30803,20 +30725,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_B7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_B7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001df",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 7,
@@ -30824,9 +30740,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red C1",
           "Description": "Red Squad C — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30860,20 +30776,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_C1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_C1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001e0",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 7.5,
@@ -30881,9 +30791,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red C2",
           "Description": "Red Squad C — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30917,20 +30827,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_C2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_C2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001e1",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 8,
@@ -30938,9 +30842,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red C3",
           "Description": "Red Squad C — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30974,20 +30878,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_C3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_C3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001e2",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 8.5,
@@ -30995,9 +30893,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red C4",
           "Description": "Red Squad C — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31031,20 +30929,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_C4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_C4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001e3",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 9,
@@ -31052,9 +30944,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red C5",
           "Description": "Red Squad C — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31088,20 +30980,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_C5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_C5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001e4",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 9.5,
@@ -31109,9 +30995,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red C6",
           "Description": "Red Squad C — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31145,20 +31031,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_C6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_C6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001e5",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 10,
@@ -31166,9 +31046,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red C7",
           "Description": "Red Squad C — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31202,20 +31082,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_C7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_C7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001e6",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 10.5,
@@ -31223,9 +31097,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red D1",
           "Description": "Red Squad D — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31259,20 +31133,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_D1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_D1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001e7",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 11,
@@ -31280,9 +31148,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red D2",
           "Description": "Red Squad D — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31316,20 +31184,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_D2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_D2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001e8",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 11.5,
@@ -31337,9 +31199,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red D3",
           "Description": "Red Squad D — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31373,20 +31235,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_D3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_D3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001e9",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 12,
@@ -31394,9 +31250,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red D4",
           "Description": "Red Squad D — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31430,20 +31286,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_D4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_D4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001ea",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 12.5,
@@ -31451,9 +31301,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red D5",
           "Description": "Red Squad D — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31487,20 +31337,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_D5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_D5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001eb",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 13,
@@ -31508,9 +31352,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red D6",
           "Description": "Red Squad D — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31544,20 +31388,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_D6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_D6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001ec",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 13.5,
@@ -31565,9 +31403,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Red D7",
           "Description": "Red Squad D — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31601,15 +31439,9 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_D7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_red_D7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         }
       ]
@@ -31661,7 +31493,7 @@
       "ContainedObjects": [
         {
           "GUID": "1001ee",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 0,
@@ -31669,9 +31501,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue A1",
           "Description": "Blue Squad A — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31705,20 +31537,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_A1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_A1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001ef",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 0.5,
@@ -31726,9 +31552,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue A2",
           "Description": "Blue Squad A — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31762,20 +31588,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_A2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_A2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001f0",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 1,
@@ -31783,9 +31603,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue A3",
           "Description": "Blue Squad A — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31819,20 +31639,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_A3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_A3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001f1",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 1.5,
@@ -31840,9 +31654,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue A4",
           "Description": "Blue Squad A — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31876,20 +31690,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_A4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_A4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001f2",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 2,
@@ -31897,9 +31705,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue A5",
           "Description": "Blue Squad A — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31933,20 +31741,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_A5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_A5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001f3",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 2.5,
@@ -31954,9 +31756,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue A6",
           "Description": "Blue Squad A — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31990,20 +31792,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_A6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_A6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001f4",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 3,
@@ -32011,9 +31807,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue A7",
           "Description": "Blue Squad A — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32047,20 +31843,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_A7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_A7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001f5",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 3.5,
@@ -32068,9 +31858,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue B1",
           "Description": "Blue Squad B — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32104,20 +31894,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_B1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_B1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001f6",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 4,
@@ -32125,9 +31909,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue B2",
           "Description": "Blue Squad B — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32161,20 +31945,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_B2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_B2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001f7",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 4.5,
@@ -32182,9 +31960,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue B3",
           "Description": "Blue Squad B — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32218,20 +31996,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_B3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_B3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001f8",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 5,
@@ -32239,9 +32011,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue B4",
           "Description": "Blue Squad B — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32275,20 +32047,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_B4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_B4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001f9",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 5.5,
@@ -32296,9 +32062,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue B5",
           "Description": "Blue Squad B — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32332,20 +32098,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_B5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_B5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001fa",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 6,
@@ -32353,9 +32113,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue B6",
           "Description": "Blue Squad B — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32389,20 +32149,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_B6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_B6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001fb",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 6.5,
@@ -32410,9 +32164,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue B7",
           "Description": "Blue Squad B — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32446,20 +32200,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_B7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_B7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001fc",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 7,
@@ -32467,9 +32215,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue C1",
           "Description": "Blue Squad C — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32503,20 +32251,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_C1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_C1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001fd",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 7.5,
@@ -32524,9 +32266,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue C2",
           "Description": "Blue Squad C — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32560,20 +32302,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_C2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_C2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001fe",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 8,
@@ -32581,9 +32317,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue C3",
           "Description": "Blue Squad C — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32617,20 +32353,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_C3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_C3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "1001ff",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 8.5,
@@ -32638,9 +32368,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue C4",
           "Description": "Blue Squad C — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32674,20 +32404,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_C4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_C4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100200",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 9,
@@ -32695,9 +32419,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue C5",
           "Description": "Blue Squad C — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32731,20 +32455,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_C5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_C5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100201",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 9.5,
@@ -32752,9 +32470,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue C6",
           "Description": "Blue Squad C — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32788,20 +32506,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_C6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_C6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100202",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 10,
@@ -32809,9 +32521,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue C7",
           "Description": "Blue Squad C — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32845,20 +32557,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_C7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_C7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100203",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 10.5,
@@ -32866,9 +32572,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue D1",
           "Description": "Blue Squad D — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32902,20 +32608,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_D1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_D1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100204",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 11,
@@ -32923,9 +32623,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue D2",
           "Description": "Blue Squad D — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32959,20 +32659,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_D2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_D2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100205",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 11.5,
@@ -32980,9 +32674,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue D3",
           "Description": "Blue Squad D — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33016,20 +32710,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_D3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_D3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100206",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 12,
@@ -33037,9 +32725,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue D4",
           "Description": "Blue Squad D — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33073,20 +32761,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_D4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_D4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100207",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 12.5,
@@ -33094,9 +32776,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue D5",
           "Description": "Blue Squad D — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33130,20 +32812,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_D5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_D5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100208",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 13,
@@ -33151,9 +32827,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue D6",
           "Description": "Blue Squad D — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33187,20 +32863,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_D6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_D6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100209",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 13.5,
@@ -33208,9 +32878,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Blue D7",
           "Description": "Blue Squad D — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33244,15 +32914,9 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_D7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_blue_D7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         }
       ]
@@ -33304,7 +32968,7 @@
       "ContainedObjects": [
         {
           "GUID": "10020b",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 0,
@@ -33312,9 +32976,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green A1",
           "Description": "Green Squad A — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33348,20 +33012,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_A1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_A1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10020c",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 0.5,
@@ -33369,9 +33027,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green A2",
           "Description": "Green Squad A — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33405,20 +33063,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_A2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_A2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10020d",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 1,
@@ -33426,9 +33078,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green A3",
           "Description": "Green Squad A — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33462,20 +33114,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_A3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_A3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10020e",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 1.5,
@@ -33483,9 +33129,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green A4",
           "Description": "Green Squad A — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33519,20 +33165,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_A4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_A4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10020f",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 2,
@@ -33540,9 +33180,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green A5",
           "Description": "Green Squad A — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33576,20 +33216,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_A5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_A5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100210",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 2.5,
@@ -33597,9 +33231,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green A6",
           "Description": "Green Squad A — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33633,20 +33267,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_A6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_A6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100211",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 3,
@@ -33654,9 +33282,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green A7",
           "Description": "Green Squad A — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33690,20 +33318,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_A7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_A7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100212",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 3.5,
@@ -33711,9 +33333,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green B1",
           "Description": "Green Squad B — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33747,20 +33369,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_B1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_B1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100213",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 4,
@@ -33768,9 +33384,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green B2",
           "Description": "Green Squad B — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33804,20 +33420,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_B2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_B2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100214",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 4.5,
@@ -33825,9 +33435,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green B3",
           "Description": "Green Squad B — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33861,20 +33471,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_B3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_B3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100215",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 5,
@@ -33882,9 +33486,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green B4",
           "Description": "Green Squad B — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33918,20 +33522,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_B4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_B4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100216",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 5.5,
@@ -33939,9 +33537,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green B5",
           "Description": "Green Squad B — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33975,20 +33573,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_B5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_B5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100217",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 6,
@@ -33996,9 +33588,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green B6",
           "Description": "Green Squad B — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34032,20 +33624,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_B6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_B6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100218",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 6.5,
@@ -34053,9 +33639,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green B7",
           "Description": "Green Squad B — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34089,20 +33675,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_B7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_B7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100219",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 7,
@@ -34110,9 +33690,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green C1",
           "Description": "Green Squad C — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34146,20 +33726,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_C1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_C1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10021a",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 7.5,
@@ -34167,9 +33741,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green C2",
           "Description": "Green Squad C — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34203,20 +33777,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_C2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_C2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10021b",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 8,
@@ -34224,9 +33792,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green C3",
           "Description": "Green Squad C — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34260,20 +33828,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_C3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_C3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10021c",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 8.5,
@@ -34281,9 +33843,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green C4",
           "Description": "Green Squad C — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34317,20 +33879,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_C4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_C4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10021d",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 9,
@@ -34338,9 +33894,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green C5",
           "Description": "Green Squad C — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34374,20 +33930,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_C5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_C5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10021e",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 9.5,
@@ -34395,9 +33945,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green C6",
           "Description": "Green Squad C — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34431,20 +33981,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_C6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_C6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10021f",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 10,
@@ -34452,9 +33996,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green C7",
           "Description": "Green Squad C — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34488,20 +34032,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_C7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_C7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100220",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 10.5,
@@ -34509,9 +34047,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green D1",
           "Description": "Green Squad D — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34545,20 +34083,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_D1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_D1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100221",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 11,
@@ -34566,9 +34098,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green D2",
           "Description": "Green Squad D — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34602,20 +34134,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_D2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_D2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100222",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 11.5,
@@ -34623,9 +34149,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green D3",
           "Description": "Green Squad D — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34659,20 +34185,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_D3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_D3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100223",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 12,
@@ -34680,9 +34200,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green D4",
           "Description": "Green Squad D — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34716,20 +34236,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_D4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_D4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100224",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 12.5,
@@ -34737,9 +34251,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green D5",
           "Description": "Green Squad D — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34773,20 +34287,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_D5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_D5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100225",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 13,
@@ -34794,9 +34302,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green D6",
           "Description": "Green Squad D — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34830,20 +34338,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_D6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_D6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100226",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 13.5,
@@ -34851,9 +34353,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Green D7",
           "Description": "Green Squad D — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34887,15 +34389,9 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_D7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_green_D7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         }
       ]
@@ -34947,7 +34443,7 @@
       "ContainedObjects": [
         {
           "GUID": "100228",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 0,
@@ -34955,9 +34451,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow A1",
           "Description": "Yellow Squad A — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34991,20 +34487,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_A1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_A1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100229",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 0.5,
@@ -35012,9 +34502,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow A2",
           "Description": "Yellow Squad A — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35048,20 +34538,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_A2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_A2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10022a",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 1,
@@ -35069,9 +34553,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow A3",
           "Description": "Yellow Squad A — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35105,20 +34589,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_A3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_A3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10022b",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 1.5,
@@ -35126,9 +34604,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow A4",
           "Description": "Yellow Squad A — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35162,20 +34640,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_A4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_A4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10022c",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 2,
@@ -35183,9 +34655,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow A5",
           "Description": "Yellow Squad A — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35219,20 +34691,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_A5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_A5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10022d",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 2.5,
@@ -35240,9 +34706,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow A6",
           "Description": "Yellow Squad A — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35276,20 +34742,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_A6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_A6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10022e",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 3,
@@ -35297,9 +34757,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow A7",
           "Description": "Yellow Squad A — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35333,20 +34793,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_A7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_A7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10022f",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 3.5,
@@ -35354,9 +34808,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow B1",
           "Description": "Yellow Squad B — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35390,20 +34844,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_B1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_B1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100230",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 4,
@@ -35411,9 +34859,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow B2",
           "Description": "Yellow Squad B — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35447,20 +34895,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_B2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_B2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100231",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 4.5,
@@ -35468,9 +34910,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow B3",
           "Description": "Yellow Squad B — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35504,20 +34946,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_B3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_B3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100232",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 5,
@@ -35525,9 +34961,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow B4",
           "Description": "Yellow Squad B — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35561,20 +34997,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_B4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_B4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100233",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 5.5,
@@ -35582,9 +35012,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow B5",
           "Description": "Yellow Squad B — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35618,20 +35048,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_B5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_B5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100234",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 6,
@@ -35639,9 +35063,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow B6",
           "Description": "Yellow Squad B — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35675,20 +35099,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_B6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_B6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100235",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 6.5,
@@ -35696,9 +35114,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow B7",
           "Description": "Yellow Squad B — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35732,20 +35150,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_B7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_B7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100236",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 7,
@@ -35753,9 +35165,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow C1",
           "Description": "Yellow Squad C — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35789,20 +35201,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_C1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_C1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100237",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 7.5,
@@ -35810,9 +35216,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow C2",
           "Description": "Yellow Squad C — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35846,20 +35252,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_C2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_C2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100238",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 8,
@@ -35867,9 +35267,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow C3",
           "Description": "Yellow Squad C — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35903,20 +35303,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_C3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_C3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100239",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 8.5,
@@ -35924,9 +35318,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow C4",
           "Description": "Yellow Squad C — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35960,20 +35354,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_C4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_C4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10023a",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 9,
@@ -35981,9 +35369,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow C5",
           "Description": "Yellow Squad C — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36017,20 +35405,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_C5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_C5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10023b",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 9.5,
@@ -36038,9 +35420,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow C6",
           "Description": "Yellow Squad C — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36074,20 +35456,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_C6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_C6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10023c",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 10,
@@ -36095,9 +35471,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow C7",
           "Description": "Yellow Squad C — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36131,20 +35507,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_C7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_C7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10023d",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 10.5,
@@ -36152,9 +35522,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow D1",
           "Description": "Yellow Squad D — Soldier 1\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36188,20 +35558,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_D1.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_D1.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10023e",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 11,
@@ -36209,9 +35573,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow D2",
           "Description": "Yellow Squad D — Soldier 2\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36245,20 +35609,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_D2.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_D2.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "10023f",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 11.5,
@@ -36266,9 +35624,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow D3",
           "Description": "Yellow Squad D — Soldier 3\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36302,20 +35660,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_D3.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_D3.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100240",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 12,
@@ -36323,9 +35675,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow D4",
           "Description": "Yellow Squad D — Soldier 4\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36359,20 +35711,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_D4.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_D4.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100241",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 12.5,
@@ -36380,9 +35726,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow D5",
           "Description": "Yellow Squad D — Soldier 5\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36416,20 +35762,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_D5.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_D5.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100242",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 13,
@@ -36437,9 +35777,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow D6",
           "Description": "Yellow Squad D — Soldier 6\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36473,20 +35813,14 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_D6.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_D6.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         },
         {
           "GUID": "100243",
-          "Name": "Custom_Token",
+          "Name": "Figurine_Custom",
           "Transform": {
             "posX": 0,
             "posY": 13.5,
@@ -36494,9 +35828,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
-            "scaleZ": 0.9
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "Yellow D7",
           "Description": "Yellow Squad D — Soldier 7\n40mm base with printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36530,15 +35864,9 @@
           "XmlUI": "",
           "CustomImage": {
             "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_D7.png?v33",
-            "ImageSecondaryURL": "",
+            "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/soldier_yellow_D7.png?v33",
             "ImageScalar": 1,
-            "WidthScale": 0,
-            "CustomToken": {
-              "Thickness": 0.18,
-              "MergeDistancePixels": 5,
-              "Stand": true,
-              "Stackable": false
-            }
+            "WidthScale": 0
           }
         }
       ]

@@ -354,27 +354,22 @@ function soldierImageURL(colorName, id) {
 }
 function makeSoldierStandee(pc, squadLetter, soldierNum, px, py, pz) {
     const id = `${squadLetter}${soldierNum}`;
+    const url = soldierImageURL(pc.label.toLowerCase(), id);
     const obj = baseObj(
-        "Custom_Token",
+        "Figurine_Custom",
         `${pc.label} ${id}`,
         `${pc.label} Squad ${squadLetter} — Soldier ${soldierNum}\n` +
         `40mm base with printed ID and 3 blood-drop divots.\n` +
         `Magnet points: Head, Chest, Hands, Legs, Backpack.\n` +
         `4th damage peg = death.`,
         px, py, pz,
-        { color: pc.color, scaleX: 0.9, scaleY: 0.9, scaleZ: 0.9 }
+        { color: pc.color, scaleX: 1.0, scaleY: 1.0, scaleZ: 1.0 }
     );
     obj.CustomImage = {
-        ImageURL: soldierImageURL(pc.label.toLowerCase(), id),
-        ImageSecondaryURL: "",
+        ImageURL: url,
+        ImageSecondaryURL: url, // same image on the back so the figurine is double-sided
         ImageScalar: 1,
-        WidthScale: 0,
-        CustomToken: {
-            Thickness: 0.18,
-            MergeDistancePixels: 5,
-            Stand: true,
-            Stackable: false
-        }
+        WidthScale: 0
     };
     return obj;
 }
