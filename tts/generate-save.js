@@ -349,27 +349,39 @@ playerColors.forEach((pc, idx) => {
 // under the standee or beside it. Damage pegs (separate bag) are placed
 // near the standee — three per soldier max, 4th = death.
 const SQUAD_LETTERS = ["A", "B", "C", "D"];
-function soldierImageURL(colorName, id) {
+function soldierTextureURL(colorName, id) {
     return `${CARD_BASE}/soldier_${colorName}_${id}.png?${CARD_VERSION}`;
 }
+const SOLDIER_MESH_URL = `https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/models/hams-soldier.obj?${CARD_VERSION}`;
 function makeSoldierStandee(pc, squadLetter, soldierNum, px, py, pz) {
     const id = `${squadLetter}${soldierNum}`;
-    const url = soldierImageURL(pc.label.toLowerCase(), id);
     const obj = baseObj(
-        "Figurine_Custom",
+        "Custom_Model",
         `${pc.label} ${id}`,
         `${pc.label} Squad ${squadLetter} — Soldier ${soldierNum}\n` +
-        `40mm base with printed ID and 3 blood-drop divots.\n` +
+        `40mm magnetized base — printed ID and 3 blood-drop divots.\n` +
         `Magnet points: Head, Chest, Hands, Legs, Backpack.\n` +
         `4th damage peg = death.`,
         px, py, pz,
-        { color: pc.color, scaleX: 1.0, scaleY: 1.0, scaleZ: 1.0 }
+        // Scale the mesh up so the mini reads at hex scale (the OBJ is in
+        // ~1 inch units; 2.5× gives a properly-tabletop-sized figurine)
+        { color: pc.color, scaleX: 2.5, scaleY: 2.5, scaleZ: 2.5 }
     );
-    obj.CustomImage = {
-        ImageURL: url,
-        ImageSecondaryURL: url, // same image on the back so the figurine is double-sided
-        ImageScalar: 1,
-        WidthScale: 0
+    obj.CustomMesh = {
+        MeshURL: SOLDIER_MESH_URL,
+        DiffuseURL: soldierTextureURL(pc.label.toLowerCase(), id),
+        NormalURL: "",
+        ColliderURL: "",
+        Convex: true,
+        MaterialIndex: 0,    // 0 = plastic
+        TypeIndex: 1,        // 1 = figurine (vertical pickup, snaps to grid)
+        CustomShader: {
+            SpecularColor: { r: 1, g: 1, b: 1 },
+            SpecularIntensity: 0.05,
+            SpecularSharpness: 2,
+            FresnelStrength: 0
+        },
+        CastShadows: true
     };
     return obj;
 }
