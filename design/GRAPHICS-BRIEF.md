@@ -34,7 +34,6 @@ SVG wireframes exist in `design/assets/` for layout reference. These are **code-
 | `tokens/bunker-token.svg` | Bunker fortification marker |
 | `tokens/cargo-container.svg` | Cargo container |
 | `tokens/control-hex-frame.svg` | Control flag (now renamed to flags — see below) |
-| `boards/squad-board.svg` | Squad board layout (7 soldiers × 5 slots + damage) |
 | `logo/warhams-logo.svg` | Game logo |
 | `box-art/box-art-concept.svg` | Box art concept |
 | `reference/player-reference-sheet.svg` | Quick reference card |
@@ -48,10 +47,10 @@ SVG wireframes exist in `design/assets/` for layout reference. These are **code-
 ### Player Colors (4 factions)
 | Player | Primary | Use |
 |--------|---------|-----|
-| Player 1 | **Red** (#cc3333) | Miniatures, flags, squad boards |
-| Player 2 | **Blue** (#3366cc) | Miniatures, flags, squad boards |
-| Player 3 | **Yellow** (#ccaa00) | Miniatures, flags, squad boards |
-| Player 4 | **Green** (#339933) | Miniatures, flags, squad boards |
+| Player 1 | **Red** (#cc3333) | Miniatures, bases, flags |
+| Player 2 | **Blue** (#3366cc) | Miniatures, bases, flags |
+| Player 3 | **Yellow** (#ccaa00) | Miniatures, bases, flags |
+| Player 4 | **Green** (#339933) | Miniatures, bases, flags |
 
 ### Resource Colors
 | Resource | Color | Hex Code | Token Shape |
@@ -288,11 +287,13 @@ SVG wireframes exist in `design/assets/` for layout reference. These are **code-
 
 ---
 
-### 4F. Damage Tokens
+### 4F. Damage Pegs (Blood Drops)
 
-**Count:** ~50+ (soldiers take up to 3 damage before death on 4th)
-**Shape:** Circular, ~15mm diameter (smaller than resource tokens)
-**Design:** Red/dark red with a wound/damage icon (crack, explosion, blood drop). Simple, recognizable at a glance.
+**Count:** ~150+ (sufficient for many wounded soldiers; each base holds up to 3 pegs)
+**Physical Form:** Small **3D blood-drop shaped pegs** that snap into the divots on a soldier's base
+**Size:** ~5–6mm tall, ~4mm wide at the base, tapered top — must fit the divot snugly
+**Color:** Translucent red / glossy dark red, suggesting fresh blood
+**Design notes:** Bottom of the peg is a flat-bottomed cylinder sized to the divot (friction or light magnet retention). Body sculpted as a classic teardrop/blood-drop. No printed graphics needed — the form is the message.
 
 ---
 
@@ -323,35 +324,26 @@ SVG wireframes exist in `design/assets/` for layout reference. These are **code-
 
 ---
 
-### 4J. Squad Boards
+### 4J. Lethal Hit Reference Card
 
-**Count:** 16 total (4 per player × 4 players)
-**Size:** ~160 × 60mm (landscape, compact — about the size of a large bookmark)
-**Material:** Thick cardboard, player-colored border
+**Count:** 4 (one per player, optional shared)
+**Size:** ~85 × 55mm (poker / bridge card size)
+**Material:** Cardboard
 
-**Design rationale:** Equipment is tracked on the miniatures themselves (magnetic modules) and the shared Equipment Display — not on the squad board. The squad board's job is purely **damage tracking** and **hit-location reference** for the Lethal Hit Roll on death.
-
-#### Layout (see `squad-board.svg`)
+**Design rationale:** Squad boards are removed. Damage lives on the mini base (3 divots), soldier ID lives on the mini base, equipment lives on the mini. A small reference card carries the Lethal Hit Roll mapping for quick lookup on death.
 
 ```
-┌──────────────────────────────────────────────────────────────┐
-│ SQUAD   │  _1     │  _2     │  _3     │  _4     │  _5     │  _6     │  _7     │
-│  _      │  🪖     │  🪖     │  🪖     │  🪖     │  🪖     │  🪖     │  🪖     │
-│         │ ○ ○ ○ ☠ │ ○ ○ ○ ☠ │ ○ ○ ○ ☠ │ ○ ○ ○ ☠ │ ○ ○ ○ ☠ │ ○ ○ ○ ☠ │ ○ ○ ○ ☠ │
-│ DP:___  │         │         │         │         │         │         │         │
-├──────────────────────────────────────────────────────────────┤
-│ LETHAL HIT: ⚀HEAD  ⚁BACKPACK  ⚂LEGS  ⚃⚄CHEST  ⚅HANDS    │
-└──────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────┐
+│  LETHAL HIT ROLL — d6              │
+├─────────────────────────────────────┤
+│  ⚀  Head                           │
+│  ⚁  Backpack                       │
+│  ⚂  Legs                           │
+│  ⚃  Chest                          │
+│  ⚄  Chest                          │
+│  ⚅  Hands                          │
+└─────────────────────────────────────┘
 ```
-
-**Per Soldier Column:**
-- Soldier number + silhouette icon at top
-- 3 damage circles (○) + KIA skull (☠) — place damage tokens on circles, 4th token = death
-
-**Left Sidebar:** Squad number, DP counter
-**Bottom Legend:** Lethal Hit Roll mapping (rolled on death to determine which equipment slot is destroyed)
-
-**Player Color:** Each set of 4 boards has a colored border matching the player (Red/Blue/Yellow/Green).
 
 ---
 
@@ -411,9 +403,19 @@ These require 3D modeling, not 2D illustration. Included here for completeness.
 - Backpack (upper back)
 - Hands (weapon grip)
 
-**Base Sculpt:** Generic soldier in powered suit — no equipment attached. Should look complete but "unequipped" (basic undersuit/frame visible at attachment points).
+**Body Sculpt:** Generic soldier in powered suit — no equipment attached. Should look complete but "unequipped" (basic undersuit/frame visible at attachment points). Soldier connects to base via a magnet in each foot/peg.
 
-**Base Numbering:** Each mini's base has a **squad letter + soldier number** engraved/printed on the rim (A1–A7, B1–B7, C1–C7, D1–D7), matching the Squad Board columns. Each player color set contains 4 groups of 7 labeled minis (one group per squad).
+#### H.A.M.S Base (40mm Round)
+
+Each soldier sits on a dedicated **40mm round base** with the following features:
+
+| Feature | Spec |
+|---|---|
+| **Diameter** | 40mm round |
+| **Top magnet(s)** | 1–2 magnets in the foot footprint to hold the mini in place; mini is removable so the base stays put while body is swapped if needed |
+| **Squad ID print/engrave** | Squad letter + soldier number on the top rim or front face: A1–A7, B1–B7, C1–C7, D1–D7. Each player color set contains 4 squads × 7 = 28 labeled bases |
+| **Damage divots** | **3 blood-drop shaped divots** sculpted into the top surface of the base, sized to receive the Damage Pegs (see 4F). Recommended placement: arranged in an arc behind/beside the soldier so they're visible from above without obscuring the mini |
+| **Player color** | Base ring or rim painted in player color (Red/Blue/Yellow/Green) for instant ownership identification |
 
 **Colors:** 4 sets in Red, Blue, Yellow, Green (solid color plastic or primed).
 
@@ -494,10 +496,10 @@ If working in phases, prioritize in this order:
    - 8 hex tile types (6-8 terrain variants)
    - 5 resource tokens
    - Number tokens
-   - Damage tokens
+   - Damage pegs (blood-drop sculpts)
 
 2. **Phase 2 — Full Component Set**
-   - Squad boards (4 player colors)
+   - Lethal Hit Reference card (4 player colors)
    - Player reference sheets
    - Bunker tokens
    - Cargo containers
@@ -510,7 +512,9 @@ If working in phases, prioritize in this order:
    - Rulebook interior illustrations
 
 4. **Phase 4 — 3D Models (Separate Artist)**
-   - H.A.M.S base soldier sculpt with magnet points
+   - H.A.M.S base soldier sculpt with 5 magnet points
+   - **40mm magnetized base** with squad/soldier number printed and 3 blood-drop divots sculpted into the top surface
+   - **Damage pegs** — translucent red blood-drop sculpts sized to fit the base divots
    - 20 equipment module sculpts
    - Separatist soldier sculpt
    - Control flag miniature

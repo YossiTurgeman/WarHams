@@ -251,3 +251,25 @@
 - [x] Save file generator ✅ — `tts/generate-save.js` builds save from game-data.json + setup.lua
 
 > **TTS Prototype Status:** Manual play sandbox complete (610 total objects). All game components present with placeholder art. Board setup offers Random or Fixed layout. Scripted automation deferred to post-playtesting.
+
+## Task 7: 🪖 Squad Board Removal & On-Mini State (v33)
+
+**Design pivot:** Squad boards are redundant. All soldier state moves onto the miniature itself.
+
+- [x] **#27 — Soldier ID printed on 40mm magnetized base** (squad letter + number, A1–A7, B1–B7, C1–C7, D1–D7) — spec'd in rulebook + graphics brief
+- [x] **#28 — Damage tracking via 3 blood-drop divots on the base** (insert red pegs; 4th wound = death) — spec'd in rulebook + graphics brief
+- [x] **#29 — Equipment as 5 magnetized add-ons on the mini** (Head, Chest, Hands, Legs, Backpack) — already specified, reaffirmed
+- [x] **#30 — Damage Tokens renamed to Damage Pegs** — global rename in rulebook + game-data.json
+- [x] **#31 — Squad Boards removed from rulebook components, setup, combat resolution, and Quick Reference** — done in `WARHAMS-Rulebook.md` and `WARHAMS-Rulebook-Print.md`
+- [x] **#32 — Damage resolution rewritten** — pegs go into divots on the defending mini's base, not on a board slot
+- [x] **#33 — Setup updated** — players take 10 minis (2 squads of 5) + a damage-peg pool; no squad boards distributed
+- [x] **#34 — Graphics brief updated** — new Damage Peg spec (4F), new Lethal Hit Reference Card (4J replacing Squad Boards), new H.A.M.S Base spec (5A)
+- [x] **#35 — game-data.json components_summary updated** — `squad_boards` key removed, `damage_tokens` → `damage_pegs`, soldier_miniatures expanded with base spec
+- [x] **#36 — TTS: stop generating squad board images** ✅ — `tts/generate-boards.js` replaced with deprecation tombstone (no-op)
+- [x] **#37 — TTS: remove squad boards from save layout** ✅ — `tts/generate-save.js` Section 10 removed; 4× squad board tiles + 4× extra-board bags cleared from the table
+- [x] **#38 — TTS: damage pegs replace damage tokens** ✅ — bag renamed to "Damage Pegs", item nickname "Blood Peg" with darker red tint; description references base divots
+- [x] **#39 — TTS: per-mini squad/soldier ID + standee figurines** ✅ — replaced generic chess-pawn `PlayerPawn` with **stand-up `Custom_Token` figurines**. New script `tts/generate-soldier-figures.js` produces 112 PNGs (4 colors × 28 soldiers) showing a soldier silhouette in player color above a 40mm base disc with the printed squad letter + soldier number and 3 visible blood-drop divots. TTS extrudes the image into a vertical figurine via `CustomToken.Stand=true`. Each soldier is also nicknamed `Red A1` … `Yellow D7` for scripts/UI. This is the TTS analog of the physical mini on its numbered magnetized base.
+- [x] **#40 — Regenerate `WARHAMS-Rulebook.pdf`** ✅ — 30 pages, 80 KB, reflects all v33 changes
+- [x] **#41 — `CARD_VERSION` bumped v32 → v33** ✅ — cache-busts updated TTS art + JSON
+
+> **v33 Status:** ✅ COMPLETE. Squad boards removed from rulebook, game-data, graphics brief, and TTS save. Soldier state lives entirely on the mini: ID printed on the 40mm magnetized base (TTS nicknames mirror this), damage tracked via blood-drop pegs in 3 divots, equipment as 5 magnetized add-ons. Rulebook PDF and TTS save regenerated.

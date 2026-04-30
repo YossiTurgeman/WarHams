@@ -122,7 +122,7 @@
     "engagement_range": "Only soldiers within 2 hexes of at least one enemy soldier in the target squad participate. S.L.I.M.E (mortar, 3 hex range) counts as engaged from beyond normal range. B.A.S.R (sniper, 2 hex) fires in pre-combat at normal engagement range; range extendable to 4 hexes via L.P.M.",
     "bonuses": "Add equipment bonuses after initial roll",
     "card_play": "Defender plays combat cards first, then attacker",
-    "damage_resolution": "Difference in dice = damage tokens. Soldier takes 3 damage max, 4th = death.",
+    "damage_resolution": "Difference in dice = damage pegs inserted into divots on the defending soldier's base. Each base has 3 blood-drop divots; soldier takes 3 damage max, 4th = death.",
     "counterattack": "Defending blocks with +3 or more difference trigger counterattack (defender becomes attacker). Counterattacks can chain but each successive chain suffers cumulative -1 Combat Fatigue penalty to all dice rolls (1st counter: no penalty, 2nd: -1, 3rd: -2, etc.)",
     "module_activation": {
       "combat_modules": "Activate during combat resolution at Step 3 (equipment bonuses). E.g., N.I.N.J.A.",
@@ -213,7 +213,7 @@
     {
       "abbr": "P.L.A.S.T.E.R", "name": "Personal Lasting Aid Surgical Treatment Enhancement Robot", "category": "Support", "slot": "Chest",
       "cost": { "Electricity": 1, "Local Favor": 1 }, "dp": 2, "copies": 5,
-      "text": "Remove up to 2 damage tokens from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap."
+      "text": "Remove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap."
     },
     {
       "abbr": "N.I.N.J.A", "name": "Nir Ion Nullifier Jammer Aid", "category": "Tech", "slot": "Legs",
@@ -278,7 +278,7 @@
     {
       "name": "Traveling Med Bay", "copies": 3, "timing": "Tactical",
       "cost": { "Any": "X (X<=3)" },
-      "text": "Exchange any 1 resource to heal 1 damage token. Up to 3 damage tokens."
+      "text": "Exchange any 1 resource to heal 1 damage peg. Up to 3 damage pegs."
     },
     {
       "name": "Deal with a Local Representative", "copies": 3, "timing": "Tactical",
@@ -403,14 +403,13 @@
     "hex_tiles": 61,
     "number_tokens": 16,
     "dice": "14 d6",
-    "squad_boards": "16 (4 per player x 4 players). Each player starts with 2, additional boards earned during play.",
-    "soldier_miniatures": "112 player (4 colors x 28) + 24 separatist greys. Each player mini has magnetized attachment points for 5 equipment slots.",
+    "soldier_miniatures": "112 player (4 colors x 28) + 24 separatist greys. Each player mini has 5 magnetized attachment points (Head, Chest, Legs, Backpack, Hands) and sits on a 40mm magnetized round base printed with a squad letter and soldier number (A1-A7, B1-B7, C1-C7, D1-D7) and bearing 3 blood-drop divots for damage tracking.",
     "equipment_modules": "160 total (20 types x 8 copies). Physical magnetized parts with unique sculpts and abbreviation engraved on underside. Destroyed modules return to the box for re-purchase.",
     "BAC_cards": 100,
     "conspire_cards": 72,
     "resource_tokens": "many (5 types)",
     "control_flags": "25 per player, 4 colors (100 total). Used for hex control and Equipment Display tracking. Flags on Equipment Display are permanent — never removed once placed, even if all soldiers carrying that module die. Marks unlocked BAC types for re-equipping",
-    "damage_tokens": "many",
+    "damage_pegs": "Pool of small red blood-drop pegs that snap into the divots on soldier bases. Each base holds up to 3 pegs (4th wound = death).",
     "bunker_tokens": "several — neutral fortifications: +1 all defense dice on hex, 1 per hex max, any unit benefits, destroyed by attacker winning combat"
   }
 }

@@ -111,14 +111,13 @@ Resources are the lifeblood of your campaign. Each type is produced by its corre
 - **13 six-sided dice (d6)** — used for combat, resource production, and event resolution.
 - **1 Separatist Die (d6)** — a distinct-colored d6 (grey) used as one of the 3 resource dice during Phase 1. Only this die triggers Separatist spawning.
 
-### 🧍 Miniatures & Boards
+### 🧍 Miniatures
 
 | Component                | Details                                                              |
 | ------------------------ | -------------------------------------------------------------------- |
-| **H.A.M.S Miniatures**  | Soldier miniatures in 4 player colors — **28 per player** (enough for 4 Squads of 7 H.A.M.S each). Each mini has **magnetized attachment points** for the 5 equipment slots (Head, Chest, Legs, Backpack, Hands). Each base is **labeled with a squad letter and soldier number** (A1–A7, B1–B7, C1–C7, D1–D7), matching the Squad Board columns for damage tracking. |
-| **Equipment Modules**    | Physical miniature parts (helmets, chest plates, weapons, backpacks, leg armor) that magnetically attach to H.A.M.S minis. Each module corresponds to a BAC card type — e.g., a S.A.P Helmet module, an H.C.A.R rifle module. **8 copies** of each module type exist (matching the 8 copies of each BAC card). Each module has a **unique sculpt** per type and its **abbreviation engraved on the underside** for identification. The module's BAC card always accompanies it (on the Squad Board when equipped, on the hex when salvaged). |
+| **H.A.M.S Miniatures**  | Soldier miniatures in 4 player colors — **28 per player** (enough for 4 Squads of 7 H.A.M.S each). Each mini has **5 magnetized attachment points** for the equipment slots (Head, Chest, Legs, Backpack, Hands). Each soldier sits on a **40mm magnetized round base** printed with a **squad letter and soldier number** (A1–A7, B1–B7, C1–C7, D1–D7) and bearing **3 blood-drop divots** for damage tracking. |
+| **Equipment Modules**    | Physical miniature parts (helmets, chest plates, weapons, backpacks, leg armor) that magnetically attach to H.A.M.S minis. Each module corresponds to a BAC card type — e.g., a S.A.P Helmet module, an H.C.A.R rifle module. **8 copies** of each module type exist (matching the 8 copies of each BAC card). Each module has a **unique sculpt** per type and its **abbreviation engraved on the underside** for identification. The module's BAC card lives in the shared **Equipment Display**; the physical module on the mini is the source of truth for who has what equipped. |
 | **Separatist Miniatures** | **24** grey NPC soldiers — used for Separatist spawns, base defenders, and militia |
-| **Squad Boards**         | Up to 4 per player; each board tracks **7 H.A.M.S** with damage circles and a Lethal Hit Roll reference |
 
 ### 🛡️ Tokens & Accessories
 
@@ -127,7 +126,7 @@ Resources are the lifeblood of your campaign. Each type is produced by its corre
 | **Control Flags**      | **25 small colored flag miniatures per player** (one set per player color). Used to mark territorial control on hex tiles AND to mark equipped BAC types on the Equipment Display |
 | **Cargo Containers**   | 12 numbered plastic containers 2*(1–6) placed on spaceport hexes when BACs arrive. Matching containers near the board form the **Unloading Zone** where BAC cards that landed on a specific space port are stored |
 | **Equipment Display**  | Shared area near the board where one copy of each BAC card is placed face-up as a reference. When a player equips a BAC type, place one of your **Control Flags** on that card to show your access. Multiple players' flags can be on the same card. **Flags stay permanently** — once placed, your flag is never removed, even if all your soldiers carrying that module die. It marks that you've unlocked that BAC type and can re-equip it |
-| **Damage Tokens**      | Track wounds on individual H.A.M.S                                                  |
+| **Damage Pegs**        | Small red blood-drop pegs that snap into the divots on a soldier's base. Each base holds up to 3 pegs (4th wound = death). |
 | **Bunker Tokens**      | Neutral fortifications placed by D.U.D.S: +1 all defense dice on hex. 1 per hex max. Any unit benefits. Destroyed by attacker winning combat on the hex |
 | **Planet Frame**       | Circular board edge made of **5 interlocking cardboard puzzle pieces** that snap together to form the planet boundary. All 61 Hex tiles fill the entire interior. |
 
@@ -182,10 +181,10 @@ Shuffle all **72 Conspire Cards** and place them face-down near the board as the
 **Step 7 — Muster Your Forces**
 Each player takes the following in their chosen color:
 
-- **2 Squad Boards**
-- **10 H.A.M.S Miniatures** (place **5 H.A.M.S** on each Squad Board)
+- **10 H.A.M.S Miniatures** (organized into **2 Squads of 5 soldiers each**, e.g. A1–A5 and B1–B5)
+- **A pool of damage pegs** kept beside the play area
 
-> 🧩 *Additional Squad Boards and H.A.M.S are earned during the game. You may eventually command up to 4 Squads of 7 H.A.M.S each.*
+> 🧩 *Additional H.A.M.S are recruited during the game. You may eventually command up to 4 Squads of 7 H.A.M.S each (28 total).*
 
 **Step 8 — Determine First Player**
 The **oldest player** takes the first turn. Play order proceeds **clockwise** from the first player.
@@ -515,7 +514,7 @@ The extra dice provide **more options** — not more attacks or defenses. The nu
 
 After both sides have selected their dice, the **Attacker** assigns matchups. This is one of the most tactically important moments in combat.
 
-1. The **Attacker** places each of their selected attack dice in front of a specific defending H.A.M.S on the defender's Squad Board. Each defending soldier receives exactly **one** attack die.
+1. The **Attacker** places each of their selected attack dice in front of a specific defending H.A.M.S miniature. Each defending soldier receives exactly **one** attack die.
 2. The **Defender** then assigns their defense dice, placing one defense die next to each attack die.
 
 Each matchup is now a one-on-one comparison:
@@ -537,7 +536,7 @@ Each matchup is now a one-on-one comparison:
 > | Soldier B | 4 | 4 | **BLOCKED** (tie goes to defender) |
 > | Soldier C | 1 | 2 | **BLOCKED** (defense wins) |
 >
-> **Total:** 1 hit dealing 1 damage token to Soldier A.
+> **Total:** 1 hit dealing 1 damage peg to Soldier A.
 >
 > *Note: The Attacker chose to throw their 6 at Soldier A. A different assignment would have changed the outcome entirely. Choose your matchups wisely.*
 
@@ -594,19 +593,19 @@ After all dice modifications and card effects are applied, calculate final damag
 
 For each **HIT** (attack die > defense die):
 
-- The **difference** between the final attack value and the final defense value equals the number of **damage tokens** placed on that defending H.A.M.S.
-- Damage tokens are placed directly on the soldier's slot on the Squad Board.
+- The **difference** between the final attack value and the final defense value equals the number of **damage pegs** placed on that defending H.A.M.S.
+- Each base has **3 blood-drop divots**. Insert one red peg per point of damage taken.
 - **Damage persists between turns.** A wounded H.A.M.S remains wounded until healed by a card effect or ability.
 
 **Death Threshold**
 
-A H.A.M.S can sustain a maximum of **3 damage tokens**. When a soldier would receive a **4th damage token**, that soldier **dies**.
+A H.A.M.S can sustain a maximum of **3 damage pegs**. When a soldier would receive a **4th damage peg**, that soldier **dies**.
 
 > **Worked Example:**
 >
-> Soldier A already carries 2 damage tokens from a previous turn. In this combat, Soldier A's matchup results in a HIT dealing 2 damage.
+> Soldier A already carries 2 damage pegs from a previous turn. In this combat, Soldier A's matchup results in a HIT dealing 2 damage.
 >
-> Soldier A now has 2 + 2 = **4 damage tokens** → Soldier A is **killed**.
+> Soldier A now has 2 + 2 = **4 damage pegs** → Soldier A is **killed**.
 
 ---
 
@@ -639,7 +638,7 @@ When a Counterattack is triggered:
 
 ### ☠️ Death in W.A.R H.A.M.S
 
-When a H.A.M.S accumulates 4 or more damage tokens, the soldier is killed. Resolve immediately:
+When a H.A.M.S accumulates 4 or more damage pegs, the soldier is killed. Resolve immediately:
 
 #### 1. Lethal Hit Roll
 
@@ -765,14 +764,14 @@ Bunker tokens are placed by the **D.U.D.S** (Deployable Unital Defense System) e
 | **Step 2** | Attacker assigns matchups; Defender assigns defense dice | Both |
 | **Step 3** | Apply equipment bonuses (+attack, +defense) | Both |
 | **Step 4** | Play Conspire Cards (Defender first, then Attacker) | Both |
-| **Step 5** | Resolve damage (attack − defense = damage tokens) | — |
+| **Step 5** | Resolve damage (attack − defense = damage pegs) | — |
 | **Step 6** | Check for Counterattacks (defense beat attack by 3+) | Defender |
 
 **Key Thresholds:**
 
 | Threshold | Value |
 |---|---|
-| Damage tokens to kill a H.A.M.S | **4** (dies on the 4th token) |
+| Damage pegs to kill a H.A.M.S | **4** (dies on the 4th peg) |
 | Counterattack trigger | Defense beats attack by **3 or more** (chains get −1 cumulative fatigue) |
 | Separatist lives | **1** (dies on any hit) |
 | Separatist dice penalty | **−1 to all rolls** |
@@ -873,7 +872,7 @@ Modules with active abilities fall into two timing categories:
 | B.A.S.R | Bolt Action Sniper Rifle | Hands | 1 Electricity, 1 Intelligence, 1 Industry | 4 | Pre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes. Sniper skips normal combat. −1 defense |
 | S.L.I.M.E | Squad Light Interoperable Mortar Encampment | Backpack | 1 Industry, 2 Oil, 2 Local Favor | 5 | Requires 2 soldiers. Roll 4 dice, target squad up to 3 hexes. Crew skips combat. Defenders −1 defense. While defending: −1 to defense die |
 | B.E.A.R | Battlefield Extraction Airlift Rover | Chest | 1 each of all 5 resources | 3 | Pick 1 extra resource during Phase 4 |
-| P.L.A.S.T.E.R | Personal Lasting Aid Surgical Treatment Enhancement Robot | Chest | 1 Electricity, 1 Local Favor | 2 | Remove up to 2 damage tokens. **Tap**. Recharge at City/Spaceport for 1 Electricity |
+| P.L.A.S.T.E.R | Personal Lasting Aid Surgical Treatment Enhancement Robot | Chest | 1 Electricity, 1 Local Favor | 2 | Remove up to 2 damage pegs. **Tap**. Recharge at City/Spaceport for 1 Electricity |
 | N.I.N.J.A | Nir Ion Nullifier Jammer Aid | Legs | 1 Intelligence, 1 Electricity | 2 | +3 to one defense die. **Tap**. Recharge for 2 Electricity |
 | D.U.D.S | Deployable Unital Defense System | Backpack | 1 Local Favor, 1 Oil, 1 Electricity | 4 | Place bunker token: +1 all defense dice on this hex. **Flip** (one-use) |
 | L.P.M | Laser Pointer Marker | Backpack | 1 Electricity, 1 Local Favor, 1 Intelligence | 3 | B.A.S.R/S.L.I.M.E can target enemies adjacent to L.P.M carrier. Max 4 hex range |
@@ -957,7 +956,7 @@ When the Conspire Deck is empty, shuffle the discard pile to form a new deck.
 |------|------|--------|:------:|
 | Deal with Local Militia | 3 Local Favor | Spawn 3 militia on a hex within 2 hexes of your soldier. They immediately attack one adjacent enemy Squad, then are removed (see Militia Rules below) | 3 |
 | A Rough Night | 1 Local Favor, 2 Intelligence | Target any Squad: immobilized AND −1 combat rolls next turn | 3 |
-| Traveling Med Bay | X resources (X ≤ 3) | Exchange any 1 resource to heal 1 damage token. Repeat up to 3× | 3 |
+| Traveling Med Bay | X resources (X ≤ 3) | Exchange any 1 resource to heal 1 damage peg. Repeat up to 3× | 3 |
 | Deal with a Local Representative | 1 any resource | Conspire again, keep **2** cards instead of 1 | 3 |
 | Hack a PortNet Relay | 1 Intelligence | Take 1 face-up BAC from the Planet Bound Area into your hand. Immediately refill the empty slot from the Spaceport Deck | 3 |
 

@@ -32,9 +32,8 @@ Both modes automatically:
 | Resource Token Bags | Top edge | 5 bags (Oil/Elec/Intel/Ind/LF) |
 | Player Soldier Bags | Corners | 4 bags × 28 soldiers |
 | Separatist Bag | Edge | 1 bag × 24 grey soldiers |
-| Squad Boards | Near players | 16 (4 per player) |
 | Control Frame Bags | Near players | 4 bags × 25 frames |
-| Damage Token Bag | Edge | Infinite bag |
+| Damage Pegs Bag | Edge | Infinite bag (blood-drop pegs for base divots) |
 | Bunker Token Bag | Edge | Bag |
 | Number Tokens | On resource hexes | 16 tokens |
 | Cargo Containers | Unloading Zone | 6 containers |
@@ -46,8 +45,8 @@ All components currently use **placeholder colors/images**. Replace with final a
 Art source files are in `design/assets/`:
 - `hex-tiles/` — SVG hex tile art (8 types)
 - `cards/` — SVG card templates
-- `tokens/` — SVG token art (resources, damage, bunker, control frames, cargo)
-- `boards/` — SVG squad board
+- `tokens/` — SVG token art (resources, damage pegs, bunker, control frames, cargo)
+- `boards/` — (deprecated v33) historical squad board SVG; squad boards removed from the game
 
 ## File Structure
 ```

@@ -9,7 +9,7 @@
  *   - Correct HandTrigger Y position (4.84, not 3)
  *   - Only uses confirmed-working built-in object types
  *   - Proper layout within table bounds (±28 units)
- *   - Proportional notecard/squad board scales
+ *   - Proportional notecard scales (squad boards removed in v33)
  *
  * Usage: node generate-save.js
  */
@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v32";
+const CARD_VERSION = "v33";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
@@ -34,9 +34,9 @@ function conspireFaceURL(name) {
     const slug = name.replace(/[^a-zA-Z0-9]/g, "_").toLowerCase();
     return `${CARD_BASE}/conspire_${slug}.png?${CARD_VERSION}`;
 }
-function squadBoardURL(colorName) {
-    return `${CARD_BASE}/squad_board_${colorName}.png?${CARD_VERSION}`;
-}
+// Squad boards removed in v33 — soldier ID and damage now live on the mini's
+// 40mm magnetized base (printed squad letter + number, 3 blood-drop divots
+// for damage pegs). See design/WARHAMS-Rulebook.md.
 function flagURL(colorName) {
     return `${CARD_BASE}/flag_${colorName}.png?${CARD_VERSION}`;
 }
@@ -336,19 +336,63 @@ playerColors.forEach((pc, idx) => {
     objects.push(ht);
 });
 
-// ─── 8. SOLDIER BAGS (28 PlayerPawn per player, in corner) ──────────
-const materialIndices = [1, 5, 4, 3]; // Red, Blue, Green, Yellow
+// ─── 8. SOLDIER STANDEES (28 Custom_Token per player, in corner) ────
+// v33: each H.A.M.S is a stand-up Custom_Token figurine that visually
+// mirrors the physical mini-on-a-numbered-base spec from the rulebook.
+// Top of the image = the soldier silhouette in player color; bottom of
+// the image = the 40mm base disc with the squad letter + soldier number
+// (A1-A7, B1-B7, C1-C7, D1-D7) and three blood-drop divots. TTS extrudes
+// the opaque pixels into a vertical figurine via Custom_Token Stand mode.
+// Equipment modules in the physical game (5 magnetized add-ons) are
+// played out by attaching the BAC card module to the soldier in the
+// Equipment Display; on the TTS table, players can stack BAC cards
+// under the standee or beside it. Damage pegs (separate bag) are placed
+// near the standee — three per soldier max, 4th = death.
+const SQUAD_LETTERS = ["A", "B", "C", "D"];
+function soldierImageURL(colorName, id) {
+    return `${CARD_BASE}/soldier_${colorName}_${id}.png?${CARD_VERSION}`;
+}
+function makeSoldierStandee(pc, squadLetter, soldierNum, px, py, pz) {
+    const id = `${squadLetter}${soldierNum}`;
+    const obj = baseObj(
+        "Custom_Token",
+        `${pc.label} ${id}`,
+        `${pc.label} Squad ${squadLetter} — Soldier ${soldierNum}\n` +
+        `40mm base with printed ID and 3 blood-drop divots.\n` +
+        `Magnet points: Head, Chest, Hands, Legs, Backpack.\n` +
+        `4th damage peg = death.`,
+        px, py, pz,
+        { color: pc.color, scaleX: 0.9, scaleY: 0.9, scaleZ: 0.9 }
+    );
+    obj.CustomImage = {
+        ImageURL: soldierImageURL(pc.label.toLowerCase(), id),
+        ImageSecondaryURL: "",
+        ImageScalar: 1,
+        WidthScale: 0,
+        CustomToken: {
+            Thickness: 0.18,
+            MergeDistancePixels: 5,
+            Stand: true,
+            Stackable: false
+        }
+    };
+    return obj;
+}
 playerColors.forEach((pc, idx) => {
     const soldiers = [];
-    for (let i = 0; i < 28; i++) {
-        const soldier = baseObj("PlayerPawn", `${pc.label} Soldier`, `${pc.label} player soldier`,
-            0, 0.5 * i, 0, { color: pc.color });
-        soldier.MaterialIndex = materialIndices[idx];
-        soldiers.push(soldier);
+    for (let s = 0; s < SQUAD_LETTERS.length; s++) {     // 4 squads per player
+        for (let n = 1; n <= 7; n++) {                    // 7 soldiers per squad
+            soldiers.push(
+                makeSoldierStandee(pc, SQUAD_LETTERS[s], n,
+                    0, 0.5 * (s * 7 + n - 1), 0)
+            );
+        }
     }
     const sp = cornerSpot(idx, -5, -7);
     const bag = baseObj("Bag", `${pc.label} Soldiers (28)`,
-        `28 ${pc.label} soldiers. Start with 10 (2×5), max 28 (4×7).`,
+        `28 ${pc.label} soldiers — 4 Squads (A/B/C/D) of 7 each. ` +
+        `Start with 10 (A1-A5 + B1-B5). Each standee is a Custom_Token figurine ` +
+        `with a printed 40mm base showing its squad letter + soldier number.`,
         sp.x, 1.5, sp.z, { color: pc.color });
     bag.ContainedObjects = soldiers;
     objects.push(bag);
@@ -367,40 +411,12 @@ const sepBag = baseObj("Bag", "Separatist Soldiers (24)", "24 grey Separatists. 
 sepBag.ContainedObjects = sepSoldiers;
 objects.push(sepBag);
 
-// ─── 10. SQUAD BOARDS (2 per player, Custom_Tile with generated images)
-//     Squad boards sit toward the center of each player's corner so they
-//     are easily readable. Extras bag is tucked next to them.
-function makeSquadBoard(pc, squadNum, px, py, pz, opts = {}) {
-    const board = baseObj("Custom_Tile", `${pc.label} Squad ${squadNum}`,
-        `Squad Board — ${pc.label} Squad ${squadNum}\n7 slots | 6 equip each | 3 dmg cap`,
-        px, py, pz, { scaleX: 2, scaleY: 1, scaleZ: 2, rotY: opts.rotY || 0, color: { r: 1, g: 1, b: 1 } });
-    board.CustomImage = {
-        ImageURL: squadBoardURL(pc.label.toLowerCase()),
-        ImageSecondaryURL: "",
-        ImageScalar: 1,
-        WidthScale: 0,
-        CustomTile: { Type: 3, Thickness: 0.1, Stackable: false, Stretch: true }
-    };
-    return board;
-}
-playerColors.forEach((pc, idx) => {
-    const cl = cornerLayout[idx];
-    // Two boards side-by-side, well separated so they don't overlap (side ±8)
-    [-8, +8].forEach((side, b) => {
-        const p = cornerSpot(idx, 5, side);
-        objects.push(makeSquadBoard(pc, b + 1, p.x, 1.05, p.z, { rotY: cl.boardRotY }));
-    });
-    // Extras bag in the same row as the other pouches (tc = -5, side = +7)
-    const extras = [];
-    for (let b = 2; b < 4; b++) {
-        extras.push(makeSquadBoard(pc, b + 1, 0, 0.2 * (b - 2), 0));
-    }
-    const ep = cornerSpot(idx, -5, 7);
-    const extraBag = baseObj("Bag", `${pc.label} Extra Boards`, `Extra squad boards for ${pc.label}.`,
-        ep.x, 1.5, ep.z, { color: pc.color });
-    extraBag.ContainedObjects = extras;
-    objects.push(extraBag);
-});
+// ─── 10. (REMOVED) SQUAD BOARDS ─────────────────────────────────────
+// As of v33, squad boards are deleted. All soldier state lives on the
+// mini itself: ID printed on the 40mm magnetized base, damage tracked
+// via blood-drop pegs in 3 divots on the base, equipment as magnetized
+// add-ons on the body. The freed corner area can be used for player
+// staging / equipment-module trays in a later pass.
 
 // ─── 11. CONTROL FLAG BAGS (25 per player, in corner) ───────────────
 // Per rulebook: a single set of Control Flags is used BOTH to mark
@@ -439,9 +455,11 @@ playerColors.forEach((pc, idx) => {
     objects.push(bag);
 });
 
-// ─── 13. DAMAGE TOKENS (infinite bag) ───────────────────────────────
-const dmgToken = baseObj("Checker_white", "DMG", "Damage. 3 max, 4th = death.", 0, 0.5, 0, { color: { r: 0.9, g: 0.1, b: 0.1 } });
-const dmgBag = baseObj("Infinite_Bag", "Damage Tokens", "Infinite damage tokens. 3 per soldier max.",
+// ─── 13. DAMAGE PEGS (infinite bag) ─────────────────────────────────
+// Blood-drop pegs that snap into the 3 divots on a soldier's 40mm base.
+// 4th wound = death. Physical product: translucent red blood-drop sculpts.
+const dmgToken = baseObj("Checker_white", "Blood Peg", "Damage peg. Insert into a divot on a soldier's base. 3 max, 4th = death.", 0, 0.5, 0, { color: { r: 0.85, g: 0.05, b: 0.05 } });
+const dmgBag = baseObj("Infinite_Bag", "Damage Pegs", "Infinite blood-drop damage pegs. Each soldier base has 3 divots; 4th wound = death.",
     -6, 1.5, 9, { color: { r: 0.9, g: 0.1, b: 0.1 } });
 dmgBag.ContainedObjects = [dmgToken];
 objects.push(dmgBag);
@@ -546,7 +564,7 @@ const saveFile = {
         "", "2-4 Players | Sci-Fi Corporate Military Conquest",
         "", "SETUP:",
         "1. Place hex tiles manually to build the planet board",
-        "2. Each player takes a soldier bag, Control Flag bag, and 2 squad boards",
+        "2. Each player takes a soldier bag and Control Flag bag (10 minis = 2 squads of 5; squad/soldier numbers printed on bases)",
         "3. Place 10 soldiers (2 squads of 5) on starting hexes",
         "4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)",
         "5. Shuffle the Conspire Deck",
