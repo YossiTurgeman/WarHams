@@ -97,36 +97,28 @@ async function buildTexture(color, squadLetter, soldierNum) {
     }
 
     // ── Top half: BASE DISC TOP VIEW ────────────────────────────
-    // Background fill (so any tiny UV bleed shows the player color, not transparency)
+    // v37: solid player color only — no painted rim ring or highlight
+    // ellipse. (The disc UV is squashed vertically, so circles drawn
+    // in image space appeared as vertical ellipses on the rendered
+    // base. The 3D divot wells provide the only base detail.)
     fillRect(img, 0, 0, W - 1, HALF - 1, color.fill);
 
-    // Outer rim ring (player edge color)
-    fillCircle(img, BASE_CX, BASE_CY, BASE_R, color.edge);
-    // Inner disc (player fill)
-    fillCircle(img, BASE_CX, BASE_CY, BASE_R - 8, color.fill);
-    // Light highlight ellipse (gives the disc a subtle 3D feel from above)
-    fillCircle(img, BASE_CX, BASE_CY - 4, BASE_R - 24, {
-        r: Math.min(255, color.fill.r + 28),
-        g: Math.min(255, color.fill.g + 28),
-        b: Math.min(255, color.fill.b + 28),
-    });
-
-    // v36: divots are now real 3D well geometry on the OBJ (raised
-    // octagonal sockets with red interiors). The red interior pixels
-    // are sampled from a small swatch in the bottom-left of the
-    // bottom half of the texture — image x∈[0,32], y∈[260,290].
+    // Red swatch sampled by the divot well INTERIORS so the 3D sockets
+    // on the OBJ read as blood-filled. Image x∈[0,32], y∈[260,290].
     fillRect(img, 0, HALF + 4, 32, HALF + 34, { r: 0xC8, g: 0x10, b: 0x10 });
 
     // ── Squad letter + soldier number label ─────────────────────
+    // v37: smaller font (64px black/white). UV squashes height by 2×,
+    // so 64px renders close to a 32px-tall glyph on the rendered base.
     const id = `${squadLetter}${soldierNum}`;
     const fontFile = color.dark
-        ? "open-sans/open-sans-128-black/open-sans-128-black.fnt"
-        : "open-sans/open-sans-128-white/open-sans-128-white.fnt";
+        ? "open-sans/open-sans-64-black/open-sans-64-black.fnt"
+        : "open-sans/open-sans-64-white/open-sans-64-white.fnt";
     const font = await loadFont(path.join(FONT_DIR, fontFile));
     img.print({
         font,
         x: 0,
-        y: BASE_CY - 86,            // shifts the cap-line so the glyph center sits roughly on BASE_CY-32
+        y: BASE_CY - 38,            // shifts the cap-line so the glyph center sits roughly on BASE_CY
         text: { text: id, alignmentX: 1 /* center */ },
         maxWidth: W,
     });
