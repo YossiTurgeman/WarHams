@@ -30,8 +30,12 @@ const OUT = path.join(__dirname, "models");
 if (!fs.existsSync(OUT)) fs.mkdirSync(OUT, { recursive: true });
 
 // ── Geometry parameters ─────────────────────────────────────────
-const BASE_R = 0.50;
-const BASE_H = 0.05;
+// v34: wider, heavier base for tipping stability — soldiers
+// must remain upright in TTS physics. Base radius now exceeds
+// half the figure's height so the center of mass stays inside
+// the support polygon even with arms extended.
+const BASE_R = 0.65;
+const BASE_H = 0.10;
 const BASE_SEGS = 24;
 
 const BODY_W = 0.40, BODY_H = 0.70, BODY_D = 0.22;
