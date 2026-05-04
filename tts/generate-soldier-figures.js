@@ -111,14 +111,11 @@ async function buildTexture(color, squadLetter, soldierNum) {
         b: Math.min(255, color.fill.b + 28),
     });
 
-    // 3 blood-drop divots arranged across the front edge of the disc
-    const divotR = 11;
-    const divotY = BASE_CY + BASE_R - 36;
-    const divotXs = [BASE_CX - 60, BASE_CX, BASE_CX + 60];
-    for (const dx of divotXs) {
-        fillCircle(img, dx, divotY, divotR, { r: 0x40, g: 0x05, b: 0x05 }); // dark well
-        fillCircle(img, dx, divotY - 2, divotR - 3, { r: 0xC8, g: 0x10, b: 0x10 }); // glossy red
-    }
+    // v36: divots are now real 3D well geometry on the OBJ (raised
+    // octagonal sockets with red interiors). The red interior pixels
+    // are sampled from a small swatch in the bottom-left of the
+    // bottom half of the texture — image x∈[0,32], y∈[260,290].
+    fillRect(img, 0, HALF + 4, 32, HALF + 34, { r: 0xC8, g: 0x10, b: 0x10 });
 
     // ── Squad letter + soldier number label ─────────────────────
     const id = `${squadLetter}${soldierNum}`;

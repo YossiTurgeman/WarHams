@@ -1,26 +1,33 @@
 #!/usr/bin/env node
 /**
- * W.A.R H.A.M.S — Soldier 3D Mesh Generator (v33)
+ * W.A.R H.A.M.S — Soldier 3D Mesh Generator (v36)
  *
  * Procedurally writes a single shared .obj mesh used by all 112 H.A.M.S
- * miniatures. The mesh is intentionally simple but reads as a real 3D
- * miniature (with thickness, depth, and a true horizontal base disc)
- * rather than a flat standee.
+ * miniatures. Per-soldier identity is carried by the diffuse texture
+ * (squad letter + soldier number printed on the base top).
  *
- * Geometry (in TTS units, ~1 unit ≈ 1 inch for figurines):
- *   • Base disc: 24-sided cylinder, radius 0.50, height 0.05
- *     (40mm physical = 1.57", scaled here for table presence)
- *   • Body box:  0.40 × 0.70 × 0.22 (W×H×D) sitting on the base
- *   • Head box:  0.30 × 0.25 × 0.22 above the body
- *   • Arms:      two thin boxes flanking the body
+ * v36 fixes:
+ *   • Legs added (2 boxes between base and torso) — soldier no longer
+ *     looks like a torso glued to a disc.
+ *   • Damage divots are real 3D well/socket geometry on the base top
+ *     (octagonal indents with a red interior) — pegs visibly slot in.
+ *   • Base top UV horizontally flipped so the printed ID reads left-
+ *     to-right when looking down at the figurine from above.
  *
- * UV layout (matches generate-soldier-figures.js):
- *   • Top half of texture (v: 0.5-1.0)  — the base disc viewed from above
- *     (ID label + 3 blood-drop divots are baked here)
- *   • Bottom half (v: 0.0-0.5)           — body fill in player color
+ * Geometry (Y-up, 1 unit ≈ 1 inch; soldiers spawn at 2.5× scale):
+ *   • Base disc — 24-sided cylinder, r=0.65, h=0.10
+ *   • 3 divot wells on the base front edge (octagonal, r=0.085, depth 0.025)
+ *   • Legs    — two boxes 0.16 × 0.30 × 0.20 (W×H×D) at x=±0.10
+ *   • Body    — 0.40 × 0.40 × 0.22 above the legs
+ *   • Head    — 0.30 × 0.25 × 0.22 above the body
+ *   • Arms    — two thin boxes 0.10 × 0.32 × 0.18 flanking the body
  *
- * Output: tts/models/hams-soldier.obj (shared by every soldier; the
- * per-soldier identity is carried entirely by the diffuse texture).
+ * Diffuse-texture UV layout (matches generate-soldier-figures.js):
+ *   • Top half  (v: 0.5–1.0) — base disc viewed from above
+ *     (ID label only — divot graphics removed in v36, divots are 3D now)
+ *   • Bottom half (v: 0.0–0.5) — solid player color for body/head/arm/rim
+ *   • Tiny red square at bottom-left (image y≈260–290, x≈0–32) — sampled
+ *     by the divot well INTERIORS so the sockets read as blood-filled.
  */
 
 const fs = require("fs");
@@ -30,25 +37,40 @@ const OUT = path.join(__dirname, "models");
 if (!fs.existsSync(OUT)) fs.mkdirSync(OUT, { recursive: true });
 
 // ── Geometry parameters ─────────────────────────────────────────
-// v34: wider, heavier base for tipping stability — soldiers
-// must remain upright in TTS physics. Base radius now exceeds
-// half the figure's height so the center of mass stays inside
-// the support polygon even with arms extended.
 const BASE_R = 0.65;
 const BASE_H = 0.10;
 const BASE_SEGS = 24;
 
-const BODY_W = 0.40, BODY_H = 0.70, BODY_D = 0.22;
-const HEAD_W = 0.30, HEAD_H = 0.25, HEAD_D = 0.22;
-const ARM_W = 0.10, ARM_H = 0.55, ARM_D = 0.18;
+// Legs sit on the base, body sits on the legs
+const LEG_W = 0.16, LEG_H = 0.30, LEG_D = 0.20;
+const LEG_GAP = 0.04;                                           // gap between legs
+const LEG_X = (LEG_W / 2) + (LEG_GAP / 2);                      // ±LEG_X
 
-// Base sits on y=0..BASE_H, body above it, head above body
-const BODY_Y0 = BASE_H;
+const BODY_W = 0.40, BODY_H = 0.40, BODY_D = 0.22;
+const HEAD_W = 0.30, HEAD_H = 0.25, HEAD_D = 0.22;
+const ARM_W = 0.10, ARM_H = 0.32, ARM_D = 0.18;
+
+const LEG_Y0 = BASE_H;
+const LEG_Y1 = LEG_Y0 + LEG_H;
+const BODY_Y0 = LEG_Y1;
 const BODY_Y1 = BODY_Y0 + BODY_H;
 const HEAD_Y0 = BODY_Y1;
 const HEAD_Y1 = HEAD_Y0 + HEAD_H;
-const ARM_Y0 = BODY_Y0 + 0.05;
+const ARM_Y0 = BODY_Y0 + 0.04;
 const ARM_Y1 = ARM_Y0 + ARM_H;
+
+// ── Divot well geometry ─────────────────────────────────────────
+const DIVOT_SEGS = 8;
+const DIVOT_OUTER_R = 0.085;
+const DIVOT_INNER_R = 0.052;
+const DIVOT_RIM_H = 0.025;                                      // depth of the well rim above base top
+const DIVOT_DIST = 0.42;                                        // distance from base center
+// Three divots arranged in an arc on the FRONT edge (+Z half) of the base
+const DIVOT_CENTERS = [
+    { x: -0.36, z: 0.30 },
+    { x:  0.00, z: 0.42 },
+    { x:  0.36, z: 0.30 },
+];
 
 // ── OBJ writer plumbing ─────────────────────────────────────────
 const verts = [];
@@ -73,42 +95,110 @@ function tri(a, b, c, ua, ub, uc) {
 }
 
 // ── UV regions ──────────────────────────────────────────────────
-// Top half of texture — base disc seen from above (carries the ID label)
+// Top half of texture — base disc seen from above (carries ID label).
+// v36: U is flipped (0.5 - x/r * 0.5) so when the player looks down at
+// the base from above (camera +Y, +X to the right of screen), the
+// printed text reads left-to-right instead of mirrored.
 function uvBaseTop(x, z) {
-    // vertex base (x,z) ∈ [-BASE_R, BASE_R]² → UV (0..1, 0.5..1)
-    const u = 0.5 + (x / BASE_R) * 0.5;
+    const u = 0.5 - (x / BASE_R) * 0.5;
     const t = 0.75 + (z / BASE_R) * 0.25;
     return uv(u, t);
 }
-// Bottom half of texture — solid body color region. Pick a stable
-// midpoint so there's no aliasing between adjacent faces.
+// Bottom half — solid body color region. Single shared UV.
 function uvBody() {
     return uv(0.5, 0.25);
 }
+// Tiny red zone in the bottom-left of the bottom half (image y∈[260,290],
+// x∈[0,32]) painted by generate-soldier-figures.js. Sampled by the well
+// interiors so they read as blood-filled sockets.
+function uvWellRed() {
+    return uv(0.03, 0.45);
+}
 
-// ── Pre-compute reusable UV indices ─────────────────────────────
-const uvBodyIdx = uvBody(); // single shared UV for all body/arm/head/base-side faces
+// Pre-compute reusable UV indices
+const uvBodyIdx = uvBody();
+const uvWellIdx = uvWellRed();
 
-// ── Build base cylinder ─────────────────────────────────────────
+// ── Build base cylinder (rim + bottom; top is built later with holes) ──
 // Bottom ring (y=0), top ring (y=BASE_H), centered on origin
 const bottomRing = [];
 const topRing = [];
-const bottomRingUVs = []; // UVs for fan from bottom center (use body UV — invisible from gameplay)
-const topRingUVs = [];    // UVs for fan from top center (the ID-bearing top face)
+const topRingUVs = [];
 for (let i = 0; i < BASE_SEGS; i++) {
     const a = (i / BASE_SEGS) * Math.PI * 2;
     const x = Math.cos(a) * BASE_R;
     const z = Math.sin(a) * BASE_R;
     bottomRing.push(v(x, 0, z));
     topRing.push(v(x, BASE_H, z));
-    bottomRingUVs.push(uvBodyIdx);
     topRingUVs.push(uvBaseTop(x, z));
 }
 const bottomCenter = v(0, 0, 0);
+
+// Base BOTTOM fan (rarely seen; uses body UV)
+for (let i = 0; i < BASE_SEGS; i++) {
+    const a = bottomRing[i];
+    const b = bottomRing[(i + 1) % BASE_SEGS];
+    tri(bottomCenter, a, b, uvBodyIdx, uvBodyIdx, uvBodyIdx); // -Y normal
+}
+// Base SIDE rim (band of body color, normals pointing radially outward)
+for (let i = 0; i < BASE_SEGS; i++) {
+    const i2 = (i + 1) % BASE_SEGS;
+    quad(
+        bottomRing[i], topRing[i], topRing[i2], bottomRing[i2],
+        uvBodyIdx, uvBodyIdx, uvBodyIdx, uvBodyIdx
+    );
+}
+
+// ── Build base TOP face — fan from center, but 3 circular regions
+// around the divot centers are filled by the divot well rims instead.
+// The well rim's outer ring sits exactly on the base top plane and
+// gets stitched into the fan as if it were the outer edge of a hole.
+//
+// Strategy: for each fan triangle (topCenter, ringVert[i], ringVert[i+1]),
+// check if it overlaps any divot circle. If yes, replace it with a
+// "skirt" of triangles routing around the divot's outer ring. This is
+// implemented as a per-segment Delaunay-ish stitch that adds a couple
+// of triangles fanning from the segment edge to the divot ring.
+//
+// To keep the geometry simple, we use a coarser approach: put each
+// divot strictly between the center and the outer ring, then for the
+// 3 fan wedges that contain a divot, replace the simple
+// (center → outer) triangle with two triangle strips:
+//   center → divot ring (inner side)   — fan from center to divot back
+//   divot ring → outer ring (outer side) — strip from divot front to rim
 const topCenter = v(0, BASE_H, 0);
 const topCenterUV = uvBaseTop(0, 0);
 
-// Base TOP fan (fully visible from gameplay angles — uses the ID texture)
+// Build all 3 divot well rings up-front. Each well has:
+//   outerBot[i]  — at base top plane (BASE_H), radius DIVOT_OUTER_R
+//   outerTop[i]  — at BASE_H + DIVOT_RIM_H (raised lip)
+//   innerTop[i]  — at BASE_H + DIVOT_RIM_H, radius DIVOT_INNER_R
+//   innerBot[i]  — at BASE_H, radius DIVOT_INNER_R (well floor edge)
+//   floorCenter  — at BASE_H, divot center (well floor middle)
+const wells = DIVOT_CENTERS.map(({ x: cx, z: cz }) => {
+    const outerBot = [], outerTop = [], innerTop = [], innerBot = [];
+    for (let i = 0; i < DIVOT_SEGS; i++) {
+        const a = (i / DIVOT_SEGS) * Math.PI * 2;
+        const ca = Math.cos(a), sa = Math.sin(a);
+        outerBot.push(v(cx + ca * DIVOT_OUTER_R, BASE_H,                  cz + sa * DIVOT_OUTER_R));
+        outerTop.push(v(cx + ca * DIVOT_OUTER_R, BASE_H + DIVOT_RIM_H,    cz + sa * DIVOT_OUTER_R));
+        innerTop.push(v(cx + ca * DIVOT_INNER_R, BASE_H + DIVOT_RIM_H,    cz + sa * DIVOT_INNER_R));
+        innerBot.push(v(cx + ca * DIVOT_INNER_R, BASE_H,                  cz + sa * DIVOT_INNER_R));
+    }
+    const floorCenter = v(cx, BASE_H, cz);
+    return { cx, cz, outerBot, outerTop, innerTop, innerBot, floorCenter };
+});
+
+// Base TOP fan (from center to ring) with simple triangulation.
+// We stitch each divot's outerBot ring as if it were a "hole" by drawing
+// triangles from the topCenter to the back-half of the divot's outer ring,
+// and from the front-half of the divot's outer ring to the corresponding
+// outer-ring points of the base. This is a coarse approximation but
+// keeps each divot visually surrounded by base-top material.
+// For simplicity (and because the divots are small relative to the disc),
+// we draw the FULL fan from topCenter to the base outer ring, then OVERLAY
+// each divot's outer rim and walls. The well's outer-rim (outerBot ring)
+// sits exactly on the base top plane and visually punches through.
 for (let i = 0; i < BASE_SEGS; i++) {
     const a = topRing[i];
     const b = topRing[(i + 1) % BASE_SEGS];
@@ -116,19 +206,33 @@ for (let i = 0; i < BASE_SEGS; i++) {
     const ub = topRingUVs[(i + 1) % BASE_SEGS];
     tri(topCenter, b, a, topCenterUV, ub, ua); // wind so normal points +Y
 }
-// Base BOTTOM fan (rarely seen — body UV)
-for (let i = 0; i < BASE_SEGS; i++) {
-    const a = bottomRing[i];
-    const b = bottomRing[(i + 1) % BASE_SEGS];
-    tri(bottomCenter, a, b, uvBodyIdx, uvBodyIdx, uvBodyIdx); // -Y normal
-}
-// Base SIDE rim (band of body color)
-for (let i = 0; i < BASE_SEGS; i++) {
-    const i2 = (i + 1) % BASE_SEGS;
-    quad(
-        bottomRing[i], topRing[i], topRing[i2], bottomRing[i2],
-        uvBodyIdx, uvBodyIdx, uvBodyIdx, uvBodyIdx
-    );
+
+// ── Divot wells: rim sides, top annulus, inner walls, red floor ──
+for (const w of wells) {
+    for (let i = 0; i < DIVOT_SEGS; i++) {
+        const i2 = (i + 1) % DIVOT_SEGS;
+        // OUTER WALL of the rim — visible from outside, normal radially out
+        quad(
+            w.outerBot[i], w.outerTop[i], w.outerTop[i2], w.outerBot[i2],
+            uvBodyIdx, uvBodyIdx, uvBodyIdx, uvBodyIdx
+        );
+        // TOP ANNULUS — outer→inner top, faces +Y
+        quad(
+            w.outerTop[i], w.innerTop[i], w.innerTop[i2], w.outerTop[i2],
+            uvBodyIdx, uvBodyIdx, uvBodyIdx, uvBodyIdx
+        );
+        // INNER WALL — innerTop down to innerBot, normals point INWARD
+        // (toward well axis, so user looking down INTO the well sees red)
+        quad(
+            w.innerTop[i], w.innerBot[i], w.innerBot[i2], w.innerTop[i2],
+            uvWellIdx, uvWellIdx, uvWellIdx, uvWellIdx
+        );
+        // FLOOR fan — center → ring (CCW from above so normal +Y)
+        tri(
+            w.floorCenter, w.innerBot[i2], w.innerBot[i],
+            uvWellIdx, uvWellIdx, uvWellIdx
+        );
+    }
 }
 
 // ── Helper to build an axis-aligned box ─────────────────────────
@@ -146,9 +250,8 @@ function box(cx, cz, y0, y1, w, d) {
         v(cx - hx, y1, cz + hz), // 7
     ];
     const uA = uvBodyIdx;
-    // Faces — wind CCW when viewed from OUTSIDE so that face normals
-    // point outward. TTS backface-culls, so inverted winding renders
-    // boxes as hollow "U-bracket" shells (visible interior only).
+    // Faces — wind CCW when viewed from OUTSIDE so face normals point
+    // outward. TTS backface-culls; reversed winding renders boxes hollow.
     quad(c[0], c[4], c[5], c[1], uA, uA, uA, uA); // -Z front
     quad(c[1], c[5], c[6], c[2], uA, uA, uA, uA); // +X right
     quad(c[2], c[6], c[7], c[3], uA, uA, uA, uA); // +Z back
@@ -157,15 +260,17 @@ function box(cx, cz, y0, y1, w, d) {
     quad(c[3], c[0], c[1], c[2], uA, uA, uA, uA); // -Y bottom
 }
 
-// ── Body, head, arms ────────────────────────────────────────────
-box(0, 0, BODY_Y0, BODY_Y1, BODY_W, BODY_D);                       // torso
-box(0, 0, HEAD_Y0, HEAD_Y1, HEAD_W, HEAD_D);                       // head
+// ── Legs, body, head, arms ──────────────────────────────────────
+box(-LEG_X, 0, LEG_Y0, LEG_Y1, LEG_W, LEG_D);                          // left leg
+box(+LEG_X, 0, LEG_Y0, LEG_Y1, LEG_W, LEG_D);                          // right leg
+box(0,      0, BODY_Y0, BODY_Y1, BODY_W, BODY_D);                      // torso
+box(0,      0, HEAD_Y0, HEAD_Y1, HEAD_W, HEAD_D);                      // head
 box(-(BODY_W / 2 + ARM_W / 2 + 0.01), 0, ARM_Y0, ARM_Y1, ARM_W, ARM_D); // left arm
 box(+(BODY_W / 2 + ARM_W / 2 + 0.01), 0, ARM_Y0, ARM_Y1, ARM_W, ARM_D); // right arm
 
 // ── Emit OBJ ────────────────────────────────────────────────────
 const lines = [];
-lines.push("# W.A.R H.A.M.S — H.A.M.S Soldier (procedural, v33)");
+lines.push("# W.A.R H.A.M.S — H.A.M.S Soldier (procedural, v36)");
 lines.push("# Shared mesh; per-soldier identity carried by the diffuse texture.");
 lines.push("o hams_soldier");
 for (const [x, y, z] of verts) lines.push(`v ${x.toFixed(5)} ${y.toFixed(5)} ${z.toFixed(5)}`);
