@@ -146,13 +146,15 @@ function box(cx, cz, y0, y1, w, d) {
         v(cx - hx, y1, cz + hz), // 7
     ];
     const uA = uvBodyIdx;
-    // Faces (CCW from outside)
-    quad(c[0], c[1], c[5], c[4], uA, uA, uA, uA); // -Z
-    quad(c[1], c[2], c[6], c[5], uA, uA, uA, uA); // +X
-    quad(c[2], c[3], c[7], c[6], uA, uA, uA, uA); // +Z
-    quad(c[3], c[0], c[4], c[7], uA, uA, uA, uA); // -X
-    quad(c[4], c[5], c[6], c[7], uA, uA, uA, uA); // +Y top
-    quad(c[3], c[2], c[1], c[0], uA, uA, uA, uA); // -Y bottom
+    // Faces — wind CCW when viewed from OUTSIDE so that face normals
+    // point outward. TTS backface-culls, so inverted winding renders
+    // boxes as hollow "U-bracket" shells (visible interior only).
+    quad(c[0], c[4], c[5], c[1], uA, uA, uA, uA); // -Z front
+    quad(c[1], c[5], c[6], c[2], uA, uA, uA, uA); // +X right
+    quad(c[2], c[6], c[7], c[3], uA, uA, uA, uA); // +Z back
+    quad(c[3], c[7], c[4], c[0], uA, uA, uA, uA); // -X left
+    quad(c[4], c[7], c[6], c[5], uA, uA, uA, uA); // +Y top
+    quad(c[3], c[0], c[1], c[2], uA, uA, uA, uA); // -Y bottom
 }
 
 // ── Body, head, arms ────────────────────────────────────────────
