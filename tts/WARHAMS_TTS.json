@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1777985835,
+  "EpochTime": 1777986202,
   "Date": "2026-05-05",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -49250,8 +49250,8 @@
       ]
     },
     {
-      "GUID": "1002d5",
-      "Name": "Custom_Tile",
+      "GUID": "1002e5",
+      "Name": "Deck",
       "Transform": {
         "posX": 3,
         "posY": 1.5,
@@ -49259,12 +49259,12 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 180,
-        "scaleX": 1.1,
+        "scaleX": 1,
         "scaleY": 1,
-        "scaleZ": 1.1
+        "scaleZ": 1
       },
-      "Nickname": "#5",
-      "Description": "Number 5 — every resource hex marked with this token produces on a 5.",
+      "Nickname": "Number Tokens (16)",
+      "Description": "Catan-style chits placed on resource hexes during setup. Press R to shuffle, deal 1 per resource hex (one hex gets 2).",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -49288,881 +49288,1019 @@
       "Sticky": true,
       "Tooltip": true,
       "GridProjection": false,
-      "HideWhenFaceDown": false,
+      "HideWhenFaceDown": true,
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_5.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
+      "DeckIDs": [
+        27600,
+        27300,
+        27200,
+        27500,
+        27400,
+        27700,
+        27500,
+        27600,
+        27500,
+        27400,
+        27400,
+        27700,
+        27600,
+        27300,
+        27700,
+        27200
+      ],
+      "CustomDeck": {
+        "272": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_1.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "273": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_2.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "274": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_3.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "275": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_4.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "276": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_5.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "277": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_6.png",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
         }
-      }
+      },
+      "SidewaysCard": false,
+      "ContainedObjects": [
+        {
+          "GUID": "1002d5",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#5",
+          "Description": "Number 5 — every resource hex marked with this token produces on a 5.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27600,
+          "CustomDeck": {
+            "276": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_5.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "1002d6",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.1,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#2",
+          "Description": "Number 2 — every resource hex marked with this token produces on a 2.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27300,
+          "CustomDeck": {
+            "273": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_2.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "1002d7",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.2,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#1",
+          "Description": "Number 1 — every resource hex marked with this token produces on a 1.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27200,
+          "CustomDeck": {
+            "272": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_1.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "1002d8",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.30000000000000004,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#4",
+          "Description": "Number 4 — every resource hex marked with this token produces on a 4.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27500,
+          "CustomDeck": {
+            "275": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_4.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "1002d9",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.4,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#3",
+          "Description": "Number 3 — every resource hex marked with this token produces on a 3.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27400,
+          "CustomDeck": {
+            "274": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_3.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "1002da",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.5,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#6",
+          "Description": "Number 6 — every resource hex marked with this token produces on a 6.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27700,
+          "CustomDeck": {
+            "277": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_6.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "1002db",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.6000000000000001,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#4",
+          "Description": "Number 4 — every resource hex marked with this token produces on a 4.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27500,
+          "CustomDeck": {
+            "275": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_4.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "1002dc",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.7000000000000001,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#5",
+          "Description": "Number 5 — every resource hex marked with this token produces on a 5.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27600,
+          "CustomDeck": {
+            "276": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_5.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "1002dd",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.8,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#4",
+          "Description": "Number 4 — every resource hex marked with this token produces on a 4.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27500,
+          "CustomDeck": {
+            "275": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_4.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "1002de",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.9,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#3",
+          "Description": "Number 3 — every resource hex marked with this token produces on a 3.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27400,
+          "CustomDeck": {
+            "274": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_3.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "1002df",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 1,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#3",
+          "Description": "Number 3 — every resource hex marked with this token produces on a 3.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27400,
+          "CustomDeck": {
+            "274": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_3.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "1002e0",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 1.1,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#6",
+          "Description": "Number 6 — every resource hex marked with this token produces on a 6.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27700,
+          "CustomDeck": {
+            "277": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_6.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "1002e1",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 1.2000000000000002,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#5",
+          "Description": "Number 5 — every resource hex marked with this token produces on a 5.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27600,
+          "CustomDeck": {
+            "276": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_5.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "1002e2",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 1.3,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#2",
+          "Description": "Number 2 — every resource hex marked with this token produces on a 2.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27300,
+          "CustomDeck": {
+            "273": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_2.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "1002e3",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 1.4000000000000001,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#6",
+          "Description": "Number 6 — every resource hex marked with this token produces on a 6.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27700,
+          "CustomDeck": {
+            "277": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_6.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "1002e4",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 1.5,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "#1",
+          "Description": "Number 1 — every resource hex marked with this token produces on a 1.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 27200,
+          "CustomDeck": {
+            "272": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_1.png",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        }
+      ]
     },
     {
-      "GUID": "1002d6",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 3,
-        "posY": 1.68,
-        "posZ": 9,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 180,
-        "scaleX": 1.1,
-        "scaleY": 1,
-        "scaleZ": 1.1
-      },
-      "Nickname": "#2",
-      "Description": "Number 2 — every resource hex marked with this token produces on a 2.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_2.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
-        }
-      }
-    },
-    {
-      "GUID": "1002d7",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 3,
-        "posY": 1.8599999999999999,
-        "posZ": 9,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 180,
-        "scaleX": 1.1,
-        "scaleY": 1,
-        "scaleZ": 1.1
-      },
-      "Nickname": "#1",
-      "Description": "Number 1 — every resource hex marked with this token produces on a 1.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_1.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
-        }
-      }
-    },
-    {
-      "GUID": "1002d8",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 3,
-        "posY": 2.04,
-        "posZ": 9,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 180,
-        "scaleX": 1.1,
-        "scaleY": 1,
-        "scaleZ": 1.1
-      },
-      "Nickname": "#4",
-      "Description": "Number 4 — every resource hex marked with this token produces on a 4.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_4.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
-        }
-      }
-    },
-    {
-      "GUID": "1002d9",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 3,
-        "posY": 2.2199999999999998,
-        "posZ": 9,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 180,
-        "scaleX": 1.1,
-        "scaleY": 1,
-        "scaleZ": 1.1
-      },
-      "Nickname": "#3",
-      "Description": "Number 3 — every resource hex marked with this token produces on a 3.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_3.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
-        }
-      }
-    },
-    {
-      "GUID": "1002da",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 3,
-        "posY": 2.4,
-        "posZ": 9,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 180,
-        "scaleX": 1.1,
-        "scaleY": 1,
-        "scaleZ": 1.1
-      },
-      "Nickname": "#6",
-      "Description": "Number 6 — every resource hex marked with this token produces on a 6.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_6.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
-        }
-      }
-    },
-    {
-      "GUID": "1002db",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 3,
-        "posY": 2.58,
-        "posZ": 9,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 180,
-        "scaleX": 1.1,
-        "scaleY": 1,
-        "scaleZ": 1.1
-      },
-      "Nickname": "#4",
-      "Description": "Number 4 — every resource hex marked with this token produces on a 4.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_4.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
-        }
-      }
-    },
-    {
-      "GUID": "1002dc",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 3,
-        "posY": 2.76,
-        "posZ": 9,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 180,
-        "scaleX": 1.1,
-        "scaleY": 1,
-        "scaleZ": 1.1
-      },
-      "Nickname": "#5",
-      "Description": "Number 5 — every resource hex marked with this token produces on a 5.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_5.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
-        }
-      }
-    },
-    {
-      "GUID": "1002dd",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 3,
-        "posY": 2.94,
-        "posZ": 9,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 180,
-        "scaleX": 1.1,
-        "scaleY": 1,
-        "scaleZ": 1.1
-      },
-      "Nickname": "#4",
-      "Description": "Number 4 — every resource hex marked with this token produces on a 4.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_4.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
-        }
-      }
-    },
-    {
-      "GUID": "1002de",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 3,
-        "posY": 3.12,
-        "posZ": 9,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 180,
-        "scaleX": 1.1,
-        "scaleY": 1,
-        "scaleZ": 1.1
-      },
-      "Nickname": "#3",
-      "Description": "Number 3 — every resource hex marked with this token produces on a 3.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_3.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
-        }
-      }
-    },
-    {
-      "GUID": "1002df",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 3,
-        "posY": 3.3,
-        "posZ": 9,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 180,
-        "scaleX": 1.1,
-        "scaleY": 1,
-        "scaleZ": 1.1
-      },
-      "Nickname": "#3",
-      "Description": "Number 3 — every resource hex marked with this token produces on a 3.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_3.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
-        }
-      }
-    },
-    {
-      "GUID": "1002e0",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 3,
-        "posY": 3.48,
-        "posZ": 9,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 180,
-        "scaleX": 1.1,
-        "scaleY": 1,
-        "scaleZ": 1.1
-      },
-      "Nickname": "#6",
-      "Description": "Number 6 — every resource hex marked with this token produces on a 6.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_6.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
-        }
-      }
-    },
-    {
-      "GUID": "1002e1",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 3,
-        "posY": 3.66,
-        "posZ": 9,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 180,
-        "scaleX": 1.1,
-        "scaleY": 1,
-        "scaleZ": 1.1
-      },
-      "Nickname": "#5",
-      "Description": "Number 5 — every resource hex marked with this token produces on a 5.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_5.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
-        }
-      }
-    },
-    {
-      "GUID": "1002e2",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 3,
-        "posY": 3.84,
-        "posZ": 9,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 180,
-        "scaleX": 1.1,
-        "scaleY": 1,
-        "scaleZ": 1.1
-      },
-      "Nickname": "#2",
-      "Description": "Number 2 — every resource hex marked with this token produces on a 2.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_2.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
-        }
-      }
-    },
-    {
-      "GUID": "1002e3",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 3,
-        "posY": 4.02,
-        "posZ": 9,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 180,
-        "scaleX": 1.1,
-        "scaleY": 1,
-        "scaleZ": 1.1
-      },
-      "Nickname": "#6",
-      "Description": "Number 6 — every resource hex marked with this token produces on a 6.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_6.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
-        }
-      }
-    },
-    {
-      "GUID": "1002e4",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 3,
-        "posY": 4.199999999999999,
-        "posZ": 9,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 180,
-        "scaleX": 1.1,
-        "scaleY": 1,
-        "scaleZ": 1.1
-      },
-      "Nickname": "#1",
-      "Description": "Number 1 — every resource hex marked with this token produces on a 1.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_1.png",
-        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/number_back.png",
-        "ImageScalar": 1,
-        "WidthScale": 0,
-        "CustomTile": {
-          "Type": 2,
-          "Thickness": 0.12,
-          "Stackable": true,
-          "Stretch": true
-        }
-      }
-    },
-    {
-      "GUID": "1002e5",
+      "GUID": "1002e6",
       "Name": "BlockSquare",
       "Transform": {
         "posX": 4,
@@ -50207,7 +50345,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1002e6",
+      "GUID": "1002e7",
       "Name": "BlockSquare",
       "Transform": {
         "posX": 6.5,
@@ -50252,7 +50390,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1002e7",
+      "GUID": "1002e8",
       "Name": "BlockSquare",
       "Transform": {
         "posX": 9,
@@ -50297,7 +50435,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1002e8",
+      "GUID": "1002e9",
       "Name": "BlockSquare",
       "Transform": {
         "posX": 11.5,
@@ -50342,7 +50480,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1002e9",
+      "GUID": "1002ea",
       "Name": "BlockSquare",
       "Transform": {
         "posX": 14,
@@ -50387,7 +50525,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1002ea",
+      "GUID": "1002eb",
       "Name": "BlockSquare",
       "Transform": {
         "posX": 16.5,
@@ -50432,7 +50570,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1002eb",
+      "GUID": "1002ec",
       "Name": "BlockRectangle",
       "Transform": {
         "posX": 16,
@@ -50477,7 +50615,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1002ec",
+      "GUID": "1002ed",
       "Name": "BlockRectangle",
       "Transform": {
         "posX": 16,
@@ -50522,7 +50660,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1002ed",
+      "GUID": "1002ee",
       "Name": "BlockRectangle",
       "Transform": {
         "posX": 16,
@@ -50567,7 +50705,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1002ee",
+      "GUID": "1002ef",
       "Name": "Notecard",
       "Transform": {
         "posX": -18,
@@ -50612,7 +50750,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1002ef",
+      "GUID": "1002f0",
       "Name": "Notecard",
       "Transform": {
         "posX": -22,
