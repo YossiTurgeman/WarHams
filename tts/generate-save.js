@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v47";
+const CARD_VERSION = "v48";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -376,7 +376,10 @@ function makeSoldierStandee(pc, squadLetter, soldierNum, px, py, pz) {
         DiffuseURL: soldierTextureURL(pc.label.toLowerCase(), id),
         NormalURL: "",
         ColliderURL: "",
-        Convex: true,
+        // Convex: false so the divot WELLS are physically open — pegs
+        // can drop INTO the sockets instead of sitting on a convex hull
+        // that fills the wells with an invisible barrier.
+        Convex: false,
         MaterialIndex: 0,    // 0 = plastic
         TypeIndex: 1,        // 1 = figurine (vertical pickup, snaps to grid)
         CustomShader: {
@@ -491,21 +494,34 @@ playerColors.forEach((pc, idx) => {
 });
 
 // ─── 13. DAMAGE PEGS (infinite bag) ─────────────────────────────────
-// Blood-drop pegs that snap into the 3 divots on a soldier's 40mm base.
-// 4th wound = death. Physical product: translucent red blood-drop sculpts.
+// Blood-drop pegs that drop into the 3 divot wells on a soldier's base.
+// 4th wound = death.
 //
 // Sizing — the well in hams-soldier.obj has inner radius 0.052 in OBJ
 // units; the soldier renders at 2.5× scale, so the well opening on the
-// table is ~0.26 units across. The peg below uses Checker_white with a
-// non-uniform scale (0.30, 1.2, 0.30) so its diameter is ~0.18 and its
-// height ~0.24 — small enough to drop into the divot opening and tall
-// enough to stand visibly above the rim.
+// table is ~0.26 units across. The peg mesh below is a 12-sided
+// cylinder (radius 1.0 in OBJ space) with a domed top. Scaled to 0.10
+// in TTS, its world diameter is ~0.20 — comfortably under the well
+// opening — and it stands ~0.24 tall so it reads as a real inserted
+// peg from any angle.
+const PEG_MESH_URL = `${SOLDIER_BASE}/peg.obj`;
 const dmgToken = baseObj(
-    "Checker_white", "Blood Peg",
+    "Custom_Model", "Blood Peg",
     "Damage peg. Drops into a divot well on a soldier's base. 3 max, 4th = death.",
     0, 0.5, 0,
-    { scaleX: 0.30, scaleY: 1.2, scaleZ: 0.30, color: { r: 0.85, g: 0.05, b: 0.05 } }
+    { scaleX: 0.10, scaleY: 0.10, scaleZ: 0.10, color: { r: 0.85, g: 0.05, b: 0.05 } }
 );
+dmgToken.CustomMesh = {
+    MeshURL: PEG_MESH_URL,
+    DiffuseURL: "",
+    NormalURL: "",
+    ColliderURL: "",
+    Convex: true,
+    MaterialIndex: 0,
+    TypeIndex: 0,
+    CustomShader: { SpecularColor: { r: 1, g: 1, b: 1 }, SpecularIntensity: 0.4, SpecularSharpness: 3, FresnelStrength: 0.1 },
+    CastShadows: true,
+};
 const dmgBag = baseObj("Infinite_Bag", "Damage Pegs", "Infinite blood-drop damage pegs. Each soldier base has 3 divots; 4th wound = death.",
     -6, 1.5, 9, { color: { r: 0.9, g: 0.1, b: 0.1 } });
 dmgBag.ContainedObjects = [dmgToken];

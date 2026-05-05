@@ -36,7 +36,7 @@ const path = require("path");
 // Versioned output dir matches SOLDIER_BASE in generate-save.js.
 // TTS asset-caches by URL path (ignoring query strings), so we
 // publish each iteration at a brand-new path to force re-download.
-const VERSION = "v47";
+const VERSION = "v48";
 const OUT = path.join(__dirname, VERSION);
 if (!fs.existsSync(OUT)) fs.mkdirSync(OUT, { recursive: true });
 
