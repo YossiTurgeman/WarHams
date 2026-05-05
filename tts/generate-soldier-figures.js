@@ -120,8 +120,8 @@ async function buildTexture(color, squadLetter, soldierNum) {
     img.print({
         font,
         x: 0,
-        y: 18,                      // glyph cap-line near top of image — back-edge of disc opposite the visible divots
-        text: { text: id, alignmentX: 1 /* center */ },
+        y: 168,                     // glyph cap-line; center near image y≈200 — sits in the empty back half of the disc behind the legs
+        text: { text: id, alignmentX: 2 /* HorizontalAlign.CENTER (1=LEFT, 2=CENTER) */ },
         maxWidth: W,
     });
 
@@ -132,7 +132,7 @@ async function buildTexture(color, squadLetter, soldierNum) {
 // Bumping VERSION forces TTS to fetch from a brand-new URL path
 // (TTS strips ?query strings, so the older cache-bust technique
 // no longer works for these assets).
-const VERSION = "v40";
+const VERSION = "v41";
 (async () => {
     const outDir = path.join(__dirname, VERSION);
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
