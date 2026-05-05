@@ -113,4 +113,17 @@ async function buildToken(n, font) {
         await img.write(out);
         console.log(`wrote ${out}`);
     }
+
+    // Blank back face — same disc shape, no number/underline. Used as
+    // ImageSecondaryURL on the chits so the BACK is unprinted while
+    // only the FRONT carries the digit.
+    const back = new Jimp({ width: SIZE, height: SIZE, color: rgba({ r: 0, g: 0, b: 0 }, 0) });
+    const cx = SIZE / 2, cy = SIZE / 2;
+    const rOuter = SIZE / 2 - 4;
+    const rRing  = rOuter - 8;
+    fillCircle(back, cx, cy, rOuter, CREAM_DARK);
+    fillCircle(back, cx, cy, rRing, CREAM);
+    const backOut = path.join(OUT, "number_back.png");
+    await back.write(backOut);
+    console.log(`wrote ${backOut}`);
 })().catch(e => { console.error(e); process.exit(1); });
