@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1777981808,
+  "EpochTime": 1777982151,
   "Date": "2026-05-05",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -40070,9 +40070,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40083,9 +40083,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40105,20 +40105,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -40135,9 +40135,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40148,9 +40148,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40170,20 +40170,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -40200,9 +40200,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40213,9 +40213,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40235,20 +40235,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -40265,9 +40265,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40278,9 +40278,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40300,20 +40300,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -40330,9 +40330,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40343,9 +40343,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40365,20 +40365,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -40395,9 +40395,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40408,9 +40408,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40430,20 +40430,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -40460,9 +40460,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40473,9 +40473,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40495,20 +40495,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -40525,9 +40525,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40538,9 +40538,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40560,20 +40560,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -40590,9 +40590,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40603,9 +40603,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40625,20 +40625,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -40655,9 +40655,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40668,9 +40668,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40690,20 +40690,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -40720,9 +40720,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40733,9 +40733,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40755,20 +40755,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -40785,9 +40785,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40798,9 +40798,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40820,20 +40820,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -40850,9 +40850,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40863,9 +40863,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40885,20 +40885,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -40915,9 +40915,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40928,9 +40928,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40950,20 +40950,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -40980,9 +40980,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40993,9 +40993,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -41015,20 +41015,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -41045,9 +41045,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -41058,9 +41058,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -41080,20 +41080,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -41110,9 +41110,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -41123,9 +41123,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -41145,20 +41145,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -41175,9 +41175,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -41188,9 +41188,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -41210,20 +41210,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -41240,9 +41240,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -41253,9 +41253,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -41275,20 +41275,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -41305,9 +41305,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -41318,9 +41318,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -41340,20 +41340,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -41370,9 +41370,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -41383,9 +41383,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -41405,20 +41405,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -41435,9 +41435,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -41448,9 +41448,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -41470,20 +41470,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -41500,9 +41500,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -41513,9 +41513,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -41535,20 +41535,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },
@@ -41565,9 +41565,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 0.918,
+            "scaleY": 0.918,
+            "scaleZ": 0.918
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -41578,9 +41578,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.62,
-            "g": 0.62,
-            "b": 0.65
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.58
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -41600,20 +41600,20 @@
           "LuaScriptState": "",
           "XmlUI": "",
           "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/recruit.obj?v51",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/resource-texture.png?v51",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
             "CustomShader": {
               "SpecularColor": {
                 "r": 1,
                 "g": 1,
                 "b": 1
               },
-              "SpecularIntensity": 0.05,
+              "SpecularIntensity": 0,
               "SpecularSharpness": 2,
               "FresnelStrength": 0
             },

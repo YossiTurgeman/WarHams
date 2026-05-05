@@ -456,29 +456,31 @@ playerColors.forEach((pc, idx) => {
 });
 
 // ─── 9. SEPARATIST BAG (24 grey soldiers) ───────────────────────────
-// v51: Separatists now use the same H.A.M.S soldier mesh as player
-// soldiers (so they read as proper figurines on the table, not bare
-// Unity pawns), tinted grey via a label-free diffuse texture
-// (soldier_separatist.png).
-const SEPARATIST_TEXTURE_URL = `${SOLDIER_BASE}/soldier_separatist.png`;
-function makeSeparatistFigurine(stackIdx) {
+// v51 (round 2): Separatists reuse the RECRUIT (Local Favor) pawn mesh
+// — the small simple silhouette — tinted grey instead of green. This
+// matches the "look like Local Favor but in grey" spec and keeps
+// Separatists visually distinct from the much larger H.A.M.S
+// player-soldier figurines.
+function makeSeparatistPawn(stackIdx) {
     const sep = baseObj(
         "Custom_Model", "Separatist", "Grey Separatist soldier",
         0, 0.5 * stackIdx, 0,
-        // Match player-soldier scale (2.5×) so they share the table
-        { color: { r: 0.62, g: 0.62, b: 0.65 }, scaleX: 2.5, scaleY: 2.5, scaleZ: 2.5 }
+        // Match Local Favor's scale (0.918) so Separatists read at the
+        // same size as the green recruit pawns.
+        { scaleX: 0.918, scaleY: 0.918, scaleZ: 0.918,
+          color: { r: 0.55, g: 0.55, b: 0.58 } }
     );
     sep.CustomMesh = {
-        MeshURL: SOLDIER_MESH_URL,
-        DiffuseURL: SEPARATIST_TEXTURE_URL,
+        MeshURL: RECRUIT_MESH_URL,
+        DiffuseURL: RESOURCE_DIFFUSE_URL,
         NormalURL: "",
         ColliderURL: "",
         Convex: true,
-        MaterialIndex: 0,    // 0 = plastic
-        TypeIndex: 1,        // 1 = figurine (vertical pickup, snaps to grid)
+        MaterialIndex: 3,
+        TypeIndex: 0,
         CustomShader: {
             SpecularColor: { r: 1, g: 1, b: 1 },
-            SpecularIntensity: 0.05,
+            SpecularIntensity: 0,
             SpecularSharpness: 2,
             FresnelStrength: 0,
         },
@@ -487,7 +489,7 @@ function makeSeparatistFigurine(stackIdx) {
     return sep;
 }
 const sepSoldiers = [];
-for (let i = 0; i < 24; i++) sepSoldiers.push(makeSeparatistFigurine(i));
+for (let i = 0; i < 24; i++) sepSoldiers.push(makeSeparatistPawn(i));
 const sepBag = baseObj("Bag", "Separatist Soldiers (24)", "24 grey Separatists. Spawn at bases.",
     0, 1.5, 9, { color: { r: 0.5, g: 0.5, b: 0.5 } });
 sepBag.ContainedObjects = sepSoldiers;

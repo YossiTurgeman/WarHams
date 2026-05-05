@@ -148,37 +148,5 @@ const VERSION = "v51";
             }
         }
     }
-
-    // Separatist texture: grey, no ID label. Reuses the soldier mesh
-    // so Separatists look identical to player soldiers but unmarked.
-    const grey = { name: "separatist", fill: { r: 0x88, g: 0x88, b: 0x8C }, edge: { r: 0x30, g: 0x30, b: 0x33 }, dark: true };
-    const sepImg = await buildSeparatistTexture(grey);
-    await sepImg.write(path.join(outDir, "soldier_separatist.png"));
-    count++;
-
     console.log(`Generated ${count} soldier diffuse textures (512×512) in ${outDir}`);
 })();
-
-// Separatists share the soldier mesh but render as anonymous grey
-// figures — same UV layout, same 3 divot wells (so a damaged Separatist
-// could in theory still take a peg), but no squad/ID glyph.
-async function buildSeparatistTexture(color) {
-    const img = new Jimp({ width: W, height: H, color: rgba({ r: 0, g: 0, b: 0 }, 0) });
-
-    // Bottom half — solid grey body color with subtle vertical shading
-    fillRect(img, 0, HALF, W - 1, H - 1, color.fill);
-    for (let y = HALF; y < H; y++) {
-        const t = (y - HALF) / HALF;
-        const shade = {
-            r: Math.max(0, Math.round(color.fill.r * (1 - 0.18 * t))),
-            g: Math.max(0, Math.round(color.fill.g * (1 - 0.18 * t))),
-            b: Math.max(0, Math.round(color.fill.b * (1 - 0.18 * t))),
-        };
-        fillRect(img, 0, y, W - 1, y, shade);
-    }
-    // Top half — solid grey base disc, no ID label
-    fillRect(img, 0, 0, W - 1, HALF - 1, color.fill);
-    // Red swatch for the divot well interiors (sampled at x∈[0,32], y≈[260,290])
-    fillRect(img, 0, HALF + 4, 32, HALF + 34, { r: 0xC8, g: 0x10, b: 0x10 });
-    return img;
-}
