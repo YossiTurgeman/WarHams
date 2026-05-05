@@ -688,23 +688,11 @@ zones.forEach(z => {
     objects.push(label);
 });
 
-// ─── 18. TURN TRACKER ───────────────────────────────────────────────
-objects.push(baseObj("Notecard", "Turn & DP Tracker", [
-    "W.A.R H.A.M.S  GAME TRACKER",
-    "============================",
-    "", "ROUND: ___  ACTIVE PLAYER: ___",
-    "", "--- Dominance Points ---",
-    "P1 Red: ___  P2 Blue: ___",
-    "P3 Green: ___  P4 Yellow: ___",
-    "", "--- Spaceports Controlled ---",
-    "P1:__/6  P2:__/6  P3:__/6  P4:__/6",
-    "", "--- Victory ---",
-    "Spaceport: 5/6(2p) 4/6(3-4p)",
-    "Military: 28 soldiers, hold 1 round",
-    "Dominance: 50 DP from BACs",
-].join('\n'), -18, 1.5, -6, { scaleX: 1.2, scaleZ: 1.2, color: { r: 0.95, g: 0.9, b: 0.75 } }));
-
-// ─── 19. QUICK REFERENCE ────────────────────────────────────────────
+// ─── 18. REFERENCE NOTECARDS — Quick Ref + Full User Guide ──────────
+// Float locked beside the table (just past the western play-surface
+// edge at x=-54) so they're always reachable but never block the
+// hex map. The DP Tracker was removed — Dominance Points are tracked
+// per-player on each soldier's BAC display, not on a central card.
 objects.push(baseObj("Notecard", "Quick Reference", [
     "TURN PHASES",
     "1. Resource Prod — Roll 2d6+Sep Die",
@@ -719,7 +707,25 @@ objects.push(baseObj("Notecard", "Quick Reference", [
     "5.Damage→6.Counter(3+ block)",
     "", "SLOTS: 1=Head 2=Back 3=Legs",
     "4-5=Chest 6=Hands",
-].join('\n'), -22, 1.5, -6, { scaleX: 1.2, scaleZ: 1.2, color: { r: 0.85, g: 0.9, b: 0.95 } }));
+    "", "VICTORY:",
+    "• Spaceport: 5/6(2p) 4/6(3-4p)",
+    "• Military: 28 soldiers, hold 1 rnd",
+    "• Dominance: 50 DP from BACs",
+].join('\n'), -60, 2.0, 8,
+    { scaleX: 1.5, scaleZ: 1.5, color: { r: 0.85, g: 0.9, b: 0.95 }, locked: true, grid: false }));
+
+// User Guide — full rulebook embedded as a notecard. Players can hover
+// and scroll through the description.
+const userGuideText = (() => {
+    try {
+        return fs.readFileSync(path.join(__dirname, "..", "design", "WARHAMS-Rulebook.md"), "utf8");
+    } catch (e) {
+        return "Rulebook not found — see design/WARHAMS-Rulebook.md in the repository.";
+    }
+})();
+objects.push(baseObj("Notecard", "User Guide (Full Rulebook)", userGuideText,
+    -60, 2.0, -8,
+    { scaleX: 1.5, scaleZ: 1.5, color: { r: 0.95, g: 0.9, b: 0.75 }, locked: true, grid: false }));
 
 // ═════════════════════════════════════════════════════════════════════
 //  BUILD SAVE FILE
