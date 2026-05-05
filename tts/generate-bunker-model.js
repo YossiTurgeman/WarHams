@@ -23,7 +23,12 @@ const path = require("path");
 const fs = require("fs");
 const { Jimp } = require("jimp");
 
-const outDir = path.join(__dirname, "cards");
+// Published under the versioned soldier path so TTS treats every bump
+// as a brand-new URL (TTS strips ?query strings, so path-based busting
+// is the only reliable cache-buster). Must match SOLDIER_BASE in
+// generate-save.js.
+const VERSION = "v51";
+const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
 // ─── Geometry ───────────────────────────────────────────────────────
@@ -76,11 +81,14 @@ function hexRing(y, r) {
 }
 
 // Connect two same-cardinality rings with quads. lower/upper are vertex
-// index arrays in matching CCW order; produces outward-facing faces.
+// index arrays in matching CCW-from-above order; this winding produces
+// outward-facing normals (verified against generate-soldier-obj.js's
+// base-rim quads). The "obvious" lower-lower-upper-upper order is the
+// REVERSED one that TTS backface-culls into invisibility.
 function bandSides(lower, upper) {
     for (let i = 0; i < lower.length; i++) {
         const ni = (i + 1) % lower.length;
-        addQuad(lower[i], lower[ni], upper[ni], upper[i]);
+        addQuad(lower[i], upper[i], upper[ni], lower[ni]);
     }
 }
 

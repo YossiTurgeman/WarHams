@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v50";
+const CARD_VERSION = "v51";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -48,8 +48,11 @@ const FLAG_MESH_URL = `${CARD_BASE}/flag.obj?${CARD_VERSION}`;
 const FLAG_DIFFUSE_URL = `${CARD_BASE}/flag-texture.png?${CARD_VERSION}`;
 const BARREL_MESH_URL = `${CARD_BASE}/barrel.obj?${CARD_VERSION}`;
 const BARREL_DIFFUSE_URL = `${CARD_BASE}/barrel-texture.png?${CARD_VERSION}`;
-const BUNKER_MESH_URL = `${CARD_BASE}/bunker.obj?${CARD_VERSION}`;
-const BUNKER_DIFFUSE_URL = `${CARD_BASE}/bunker-texture.png?${CARD_VERSION}`;
+// Bunker mesh published under the versioned soldier path so each
+// CARD_VERSION bump bypasses the TTS path-cache (query-string busting
+// doesn't actually work — TTS strips the ?query before caching).
+const BUNKER_MESH_URL = `${SOLDIER_BASE}/bunker.obj`;
+const BUNKER_DIFFUSE_URL = `${SOLDIER_BASE}/bunker-texture.png`;
 const RESOURCE_DIFFUSE_URL = `${CARD_BASE}/resource-texture.png?${CARD_VERSION}`;
 const LIGHTNING_MESH_URL = `${CARD_BASE}/lightning.obj?${CARD_VERSION}`;
 const WAVE_MESH_URL = `${CARD_BASE}/wave.obj?${CARD_VERSION}`;
