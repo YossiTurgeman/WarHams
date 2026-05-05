@@ -456,13 +456,38 @@ playerColors.forEach((pc, idx) => {
 });
 
 // ─── 9. SEPARATIST BAG (24 grey soldiers) ───────────────────────────
-const sepSoldiers = [];
-for (let i = 0; i < 24; i++) {
-    const sep = baseObj("PlayerPawn", "Separatist", "Grey Separatist soldier",
-        0, 0.5 * i, 0, { color: { r: 0.5, g: 0.5, b: 0.5 } });
-    sep.MaterialIndex = 8;
-    sepSoldiers.push(sep);
+// v51: Separatists now use the same H.A.M.S soldier mesh as player
+// soldiers (so they read as proper figurines on the table, not bare
+// Unity pawns), tinted grey via a label-free diffuse texture
+// (soldier_separatist.png).
+const SEPARATIST_TEXTURE_URL = `${SOLDIER_BASE}/soldier_separatist.png`;
+function makeSeparatistFigurine(stackIdx) {
+    const sep = baseObj(
+        "Custom_Model", "Separatist", "Grey Separatist soldier",
+        0, 0.5 * stackIdx, 0,
+        // Match player-soldier scale (2.5×) so they share the table
+        { color: { r: 0.62, g: 0.62, b: 0.65 }, scaleX: 2.5, scaleY: 2.5, scaleZ: 2.5 }
+    );
+    sep.CustomMesh = {
+        MeshURL: SOLDIER_MESH_URL,
+        DiffuseURL: SEPARATIST_TEXTURE_URL,
+        NormalURL: "",
+        ColliderURL: "",
+        Convex: true,
+        MaterialIndex: 0,    // 0 = plastic
+        TypeIndex: 1,        // 1 = figurine (vertical pickup, snaps to grid)
+        CustomShader: {
+            SpecularColor: { r: 1, g: 1, b: 1 },
+            SpecularIntensity: 0.05,
+            SpecularSharpness: 2,
+            FresnelStrength: 0,
+        },
+        CastShadows: true,
+    };
+    return sep;
 }
+const sepSoldiers = [];
+for (let i = 0; i < 24; i++) sepSoldiers.push(makeSeparatistFigurine(i));
 const sepBag = baseObj("Bag", "Separatist Soldiers (24)", "24 grey Separatists. Spawn at bases.",
     0, 1.5, 9, { color: { r: 0.5, g: 0.5, b: 0.5 } });
 sepBag.ContainedObjects = sepSoldiers;

@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1777981663,
+  "EpochTime": 1777981808,
   "Date": "2026-05-05",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -40062,7 +40062,7 @@
       "ContainedObjects": [
         {
           "GUID": "100245",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 0,
@@ -40070,9 +40070,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40083,9 +40083,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40104,11 +40104,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "100246",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 0.5,
@@ -40116,9 +40135,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40129,9 +40148,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40150,11 +40169,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "100247",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 1,
@@ -40162,9 +40200,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40175,9 +40213,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40196,11 +40234,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "100248",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 1.5,
@@ -40208,9 +40265,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40221,9 +40278,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40242,11 +40299,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "100249",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 2,
@@ -40254,9 +40330,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40267,9 +40343,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40288,11 +40364,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "10024a",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 2.5,
@@ -40300,9 +40395,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40313,9 +40408,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40334,11 +40429,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "10024b",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 3,
@@ -40346,9 +40460,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40359,9 +40473,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40380,11 +40494,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "10024c",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 3.5,
@@ -40392,9 +40525,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40405,9 +40538,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40426,11 +40559,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "10024d",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 4,
@@ -40438,9 +40590,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40451,9 +40603,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40472,11 +40624,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "10024e",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 4.5,
@@ -40484,9 +40655,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40497,9 +40668,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40518,11 +40689,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "10024f",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 5,
@@ -40530,9 +40720,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40543,9 +40733,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40564,11 +40754,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "100250",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 5.5,
@@ -40576,9 +40785,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40589,9 +40798,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40610,11 +40819,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "100251",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 6,
@@ -40622,9 +40850,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40635,9 +40863,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40656,11 +40884,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "100252",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 6.5,
@@ -40668,9 +40915,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40681,9 +40928,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40702,11 +40949,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "100253",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 7,
@@ -40714,9 +40980,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40727,9 +40993,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40748,11 +41014,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "100254",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 7.5,
@@ -40760,9 +41045,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40773,9 +41058,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40794,11 +41079,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "100255",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 8,
@@ -40806,9 +41110,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40819,9 +41123,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40840,11 +41144,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "100256",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 8.5,
@@ -40852,9 +41175,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40865,9 +41188,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40886,11 +41209,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "100257",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 9,
@@ -40898,9 +41240,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40911,9 +41253,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40932,11 +41274,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "100258",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 9.5,
@@ -40944,9 +41305,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -40957,9 +41318,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -40978,11 +41339,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "100259",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 10,
@@ -40990,9 +41370,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -41003,9 +41383,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -41024,11 +41404,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "10025a",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 10.5,
@@ -41036,9 +41435,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -41049,9 +41448,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -41070,11 +41469,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "10025b",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 11,
@@ -41082,9 +41500,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -41095,9 +41513,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -41116,11 +41534,30 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "10025c",
-          "Name": "PlayerPawn",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 11.5,
@@ -41128,9 +41565,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
+            "scaleX": 2.5,
+            "scaleY": 2.5,
+            "scaleZ": 2.5
           },
           "Nickname": "Separatist",
           "Description": "Grey Separatist soldier",
@@ -41141,9 +41578,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.5,
-            "g": 0.5,
-            "b": 0.5
+            "r": 0.62,
+            "g": 0.62,
+            "b": 0.65
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -41162,7 +41599,26 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
-          "MaterialIndex": 8
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/hams-soldier.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v51/soldier_separatist.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         }
       ]
     },
