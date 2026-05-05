@@ -659,16 +659,14 @@ function makeNumberChip(num, px, py, pz) {
     return chip;
 }
 const NUM_STACK_X = 3;
-const NUM_STACK_Y = 1.5;
 const NUM_STACK_Z = 9;
-// First chip is the visible top of the stack; the other 15 live inside
-// its ContainedObjects array. TTS renders them as a single stack on
-// the table with a Shuffle right-click action.
-const topChip = makeNumberChip(shuffledPool[0], NUM_STACK_X, NUM_STACK_Y, NUM_STACK_Z);
-topChip.ContainedObjects = shuffledPool.slice(1).map((num, i) =>
-    makeNumberChip(num, 0, 0.13 * (i + 1), 0)
-);
-objects.push(topChip);
+// Drop all 16 chips at the same XZ with stepped Y heights. They fall
+// under gravity onto each other and TTS auto-merges Stackable: true
+// Custom_Tiles on contact into a single stack — which exposes the
+// right-click "Shuffle" action without needing a Bag wrapper.
+shuffledPool.forEach((num, i) => {
+    objects.push(makeNumberChip(num, NUM_STACK_X, 1.5 + 0.18 * i, NUM_STACK_Z));
+});
 
 // ─── 16. CARGO CONTAINERS (6) ───────────────────────────────────────
 for (let i = 1; i <= 6; i++) {
