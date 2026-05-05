@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v48";
+const CARD_VERSION = "v49";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -379,9 +379,13 @@ function makeSoldierStandee(pc, squadLetter, soldierNum, px, py, pz) {
         // Convex: false so the divot WELLS are physically open — pegs
         // can drop INTO the sockets instead of sitting on a convex hull
         // that fills the wells with an invisible barrier.
+        // v49: TypeIndex 0 (Generic) instead of 1 (Figurine) because the
+        // Figurine type forces a convex-hull collider regardless of
+        // the Convex flag, which was filling the wells with an invisible
+        // barrier and also producing a corrupted display silhouette.
         Convex: false,
         MaterialIndex: 0,    // 0 = plastic
-        TypeIndex: 1,        // 1 = figurine (vertical pickup, snaps to grid)
+        TypeIndex: 0,        // 0 = generic (honors Convex: false)
         CustomShader: {
             SpecularColor: { r: 1, g: 1, b: 1 },
             SpecularIntensity: 0.05,
@@ -509,7 +513,10 @@ const dmgToken = baseObj(
     "Custom_Model", "Blood Peg",
     "Damage peg. Drops into a divot well on a soldier's base. 3 max, 4th = death.",
     0, 0.5, 0,
-    { scaleX: 0.10, scaleY: 0.10, scaleZ: 0.10, color: { r: 0.85, g: 0.05, b: 0.05 } }
+    // v49: shrunk from 0.10 → 0.085 so the peg's collider footprint is
+    // comfortably under the well's 0.13 world-radius opening even
+    // accounting for collision skin width.
+    { scaleX: 0.085, scaleY: 0.085, scaleZ: 0.085, color: { r: 0.85, g: 0.05, b: 0.05 } }
 );
 dmgToken.CustomMesh = {
     MeshURL: PEG_MESH_URL,
