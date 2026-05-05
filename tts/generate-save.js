@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v49";
+const CARD_VERSION = "v50";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -376,16 +376,17 @@ function makeSoldierStandee(pc, squadLetter, soldierNum, px, py, pz) {
         DiffuseURL: soldierTextureURL(pc.label.toLowerCase(), id),
         NormalURL: "",
         ColliderURL: "",
-        // Convex: false so the divot WELLS are physically open — pegs
-        // can drop INTO the sockets instead of sitting on a convex hull
-        // that fills the wells with an invisible barrier.
-        // v49: TypeIndex 0 (Generic) instead of 1 (Figurine) because the
-        // Figurine type forces a convex-hull collider regardless of
-        // the Convex flag, which was filling the wells with an invisible
-        // barrier and also producing a corrupted display silhouette.
-        Convex: false,
+        // v50: Convex back to TRUE (the v48/v49 Convex:false experiment
+        // broke the body silhouette into a flat L-strip — apparently TTS
+        // does something destructive to the visible mesh when it has to
+        // generate a non-convex collider from it). Pegs no longer rely
+        // on physically dropping INTO the wells — instead each soldier
+        // exposes 3 AttachedSnapPoints (added below) at the divot
+        // positions, so a player dragging a peg near a divot snaps it
+        // into place visually.
+        Convex: true,
         MaterialIndex: 0,    // 0 = plastic
-        TypeIndex: 0,        // 0 = generic (honors Convex: false)
+        TypeIndex: 1,        // 1 = figurine (vertical pickup, snaps to grid)
         CustomShader: {
             SpecularColor: { r: 1, g: 1, b: 1 },
             SpecularIntensity: 0.05,
@@ -394,6 +395,15 @@ function makeSoldierStandee(pc, squadLetter, soldierNum, px, py, pz) {
         },
         CastShadows: true
     };
+    // v50: snap a dragged peg straight into a divot well. Positions
+    // are in LOCAL OBJ-unit space (TTS applies the object's scale).
+    // Y = BASE_H + DIVOT_RIM_H = 0.125 puts the peg's bottom flush
+    // with the well rim, so it reads as inserted into the socket.
+    obj.AttachedSnapPoints = [
+        { Position: { x: -0.36, y: 0.125, z: 0.30 } },
+        { Position: { x:  0.00, y: 0.125, z: 0.42 } },
+        { Position: { x:  0.36, y: 0.125, z: 0.30 } },
+    ];
     return obj;
 }
 playerColors.forEach((pc, idx) => {
