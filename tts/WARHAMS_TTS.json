@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1777981160,
+  "EpochTime": 1777981402,
   "Date": "2026-05-05",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -47981,7 +47981,7 @@
         "scaleZ": 1
       },
       "Nickname": "Bunker Tokens (12)",
-      "Description": "Neutral fortifications via D.U.D.S.",
+      "Description": "Neutral WW2 concrete bunkers via D.U.D.S.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -47989,9 +47989,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.45,
-        "g": 0.38,
-        "b": 0.25
+        "r": 0.55,
+        "g": 0.55,
+        "b": 0.5
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -48013,7 +48013,7 @@
       "ContainedObjects": [
         {
           "GUID": "1002c8",
-          "Name": "BlockSquare",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 0,
@@ -48021,9 +48021,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.6,
-            "scaleY": 0.3,
-            "scaleZ": 0.6
+            "scaleX": 1.4,
+            "scaleY": 1.4,
+            "scaleZ": 1.4
           },
           "Nickname": "Bunker",
           "Description": "+1 defense, 1/hex max, destroyable.",
@@ -48034,9 +48034,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.45,
-            "g": 0.38,
-            "b": 0.25
+            "r": 0.58,
+            "g": 0.57,
+            "b": 0.52
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -48054,11 +48054,31 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker.obj?v50",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker-texture.png?v50",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "1002c9",
-          "Name": "BlockSquare",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 0.4,
@@ -48066,9 +48086,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.6,
-            "scaleY": 0.3,
-            "scaleZ": 0.6
+            "scaleX": 1.4,
+            "scaleY": 1.4,
+            "scaleZ": 1.4
           },
           "Nickname": "Bunker",
           "Description": "+1 defense, 1/hex max, destroyable.",
@@ -48079,9 +48099,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.45,
-            "g": 0.38,
-            "b": 0.25
+            "r": 0.58,
+            "g": 0.57,
+            "b": 0.52
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -48099,11 +48119,31 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker.obj?v50",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker-texture.png?v50",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "1002ca",
-          "Name": "BlockSquare",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 0.8,
@@ -48111,9 +48151,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.6,
-            "scaleY": 0.3,
-            "scaleZ": 0.6
+            "scaleX": 1.4,
+            "scaleY": 1.4,
+            "scaleZ": 1.4
           },
           "Nickname": "Bunker",
           "Description": "+1 defense, 1/hex max, destroyable.",
@@ -48124,9 +48164,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.45,
-            "g": 0.38,
-            "b": 0.25
+            "r": 0.58,
+            "g": 0.57,
+            "b": 0.52
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -48144,11 +48184,31 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker.obj?v50",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker-texture.png?v50",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "1002cb",
-          "Name": "BlockSquare",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 1.2000000000000002,
@@ -48156,9 +48216,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.6,
-            "scaleY": 0.3,
-            "scaleZ": 0.6
+            "scaleX": 1.4,
+            "scaleY": 1.4,
+            "scaleZ": 1.4
           },
           "Nickname": "Bunker",
           "Description": "+1 defense, 1/hex max, destroyable.",
@@ -48169,9 +48229,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.45,
-            "g": 0.38,
-            "b": 0.25
+            "r": 0.58,
+            "g": 0.57,
+            "b": 0.52
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -48189,11 +48249,31 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker.obj?v50",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker-texture.png?v50",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "1002cc",
-          "Name": "BlockSquare",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 1.6,
@@ -48201,9 +48281,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.6,
-            "scaleY": 0.3,
-            "scaleZ": 0.6
+            "scaleX": 1.4,
+            "scaleY": 1.4,
+            "scaleZ": 1.4
           },
           "Nickname": "Bunker",
           "Description": "+1 defense, 1/hex max, destroyable.",
@@ -48214,9 +48294,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.45,
-            "g": 0.38,
-            "b": 0.25
+            "r": 0.58,
+            "g": 0.57,
+            "b": 0.52
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -48234,11 +48314,31 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker.obj?v50",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker-texture.png?v50",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "1002cd",
-          "Name": "BlockSquare",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 2,
@@ -48246,9 +48346,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.6,
-            "scaleY": 0.3,
-            "scaleZ": 0.6
+            "scaleX": 1.4,
+            "scaleY": 1.4,
+            "scaleZ": 1.4
           },
           "Nickname": "Bunker",
           "Description": "+1 defense, 1/hex max, destroyable.",
@@ -48259,9 +48359,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.45,
-            "g": 0.38,
-            "b": 0.25
+            "r": 0.58,
+            "g": 0.57,
+            "b": 0.52
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -48279,11 +48379,31 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker.obj?v50",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker-texture.png?v50",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "1002ce",
-          "Name": "BlockSquare",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 2.4000000000000004,
@@ -48291,9 +48411,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.6,
-            "scaleY": 0.3,
-            "scaleZ": 0.6
+            "scaleX": 1.4,
+            "scaleY": 1.4,
+            "scaleZ": 1.4
           },
           "Nickname": "Bunker",
           "Description": "+1 defense, 1/hex max, destroyable.",
@@ -48304,9 +48424,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.45,
-            "g": 0.38,
-            "b": 0.25
+            "r": 0.58,
+            "g": 0.57,
+            "b": 0.52
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -48324,11 +48444,31 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker.obj?v50",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker-texture.png?v50",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "1002cf",
-          "Name": "BlockSquare",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 2.8000000000000003,
@@ -48336,9 +48476,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.6,
-            "scaleY": 0.3,
-            "scaleZ": 0.6
+            "scaleX": 1.4,
+            "scaleY": 1.4,
+            "scaleZ": 1.4
           },
           "Nickname": "Bunker",
           "Description": "+1 defense, 1/hex max, destroyable.",
@@ -48349,9 +48489,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.45,
-            "g": 0.38,
-            "b": 0.25
+            "r": 0.58,
+            "g": 0.57,
+            "b": 0.52
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -48369,11 +48509,31 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker.obj?v50",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker-texture.png?v50",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "1002d0",
-          "Name": "BlockSquare",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 3.2,
@@ -48381,9 +48541,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.6,
-            "scaleY": 0.3,
-            "scaleZ": 0.6
+            "scaleX": 1.4,
+            "scaleY": 1.4,
+            "scaleZ": 1.4
           },
           "Nickname": "Bunker",
           "Description": "+1 defense, 1/hex max, destroyable.",
@@ -48394,9 +48554,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.45,
-            "g": 0.38,
-            "b": 0.25
+            "r": 0.58,
+            "g": 0.57,
+            "b": 0.52
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -48414,11 +48574,31 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker.obj?v50",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker-texture.png?v50",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "1002d1",
-          "Name": "BlockSquare",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 3.6,
@@ -48426,9 +48606,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.6,
-            "scaleY": 0.3,
-            "scaleZ": 0.6
+            "scaleX": 1.4,
+            "scaleY": 1.4,
+            "scaleZ": 1.4
           },
           "Nickname": "Bunker",
           "Description": "+1 defense, 1/hex max, destroyable.",
@@ -48439,9 +48619,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.45,
-            "g": 0.38,
-            "b": 0.25
+            "r": 0.58,
+            "g": 0.57,
+            "b": 0.52
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -48459,11 +48639,31 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker.obj?v50",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker-texture.png?v50",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "1002d2",
-          "Name": "BlockSquare",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 4,
@@ -48471,9 +48671,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.6,
-            "scaleY": 0.3,
-            "scaleZ": 0.6
+            "scaleX": 1.4,
+            "scaleY": 1.4,
+            "scaleZ": 1.4
           },
           "Nickname": "Bunker",
           "Description": "+1 defense, 1/hex max, destroyable.",
@@ -48484,9 +48684,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.45,
-            "g": 0.38,
-            "b": 0.25
+            "r": 0.58,
+            "g": 0.57,
+            "b": 0.52
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -48504,11 +48704,31 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker.obj?v50",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker-texture.png?v50",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         },
         {
           "GUID": "1002d3",
-          "Name": "BlockSquare",
+          "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 4.4,
@@ -48516,9 +48736,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 0.6,
-            "scaleY": 0.3,
-            "scaleZ": 0.6
+            "scaleX": 1.4,
+            "scaleY": 1.4,
+            "scaleZ": 1.4
           },
           "Nickname": "Bunker",
           "Description": "+1 defense, 1/hex max, destroyable.",
@@ -48529,9 +48749,9 @@
             "z": 0
           },
           "ColorDiffuse": {
-            "r": 0.45,
-            "g": 0.38,
-            "b": 0.25
+            "r": 0.58,
+            "g": 0.57,
+            "b": 0.52
           },
           "LayoutGroupSortIndex": 0,
           "Value": 0,
@@ -48549,7 +48769,27 @@
           "Hands": false,
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": ""
+          "XmlUI": "",
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker.obj?v50",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bunker-texture.png?v50",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.05,
+              "SpecularSharpness": 2,
+              "FresnelStrength": 0
+            },
+            "CastShadows": true
+          }
         }
       ]
     },

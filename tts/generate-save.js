@@ -48,6 +48,8 @@ const FLAG_MESH_URL = `${CARD_BASE}/flag.obj?${CARD_VERSION}`;
 const FLAG_DIFFUSE_URL = `${CARD_BASE}/flag-texture.png?${CARD_VERSION}`;
 const BARREL_MESH_URL = `${CARD_BASE}/barrel.obj?${CARD_VERSION}`;
 const BARREL_DIFFUSE_URL = `${CARD_BASE}/barrel-texture.png?${CARD_VERSION}`;
+const BUNKER_MESH_URL = `${CARD_BASE}/bunker.obj?${CARD_VERSION}`;
+const BUNKER_DIFFUSE_URL = `${CARD_BASE}/bunker-texture.png?${CARD_VERSION}`;
 const RESOURCE_DIFFUSE_URL = `${CARD_BASE}/resource-texture.png?${CARD_VERSION}`;
 const LIGHTNING_MESH_URL = `${CARD_BASE}/lightning.obj?${CARD_VERSION}`;
 const WAVE_MESH_URL = `${CARD_BASE}/wave.obj?${CARD_VERSION}`;
@@ -545,13 +547,36 @@ dmgBag.ContainedObjects = [dmgToken];
 objects.push(dmgBag);
 
 // ─── 14. BUNKER TOKENS (bag of 12) ──────────────────────────────────
-const bunkerTokens = [];
-for (let i = 0; i < 12; i++) {
-    bunkerTokens.push(baseObj("BlockSquare", "Bunker", "+1 defense, 1/hex max, destroyable.",
-        0, 0.4 * i, 0, { scaleX: 0.6, scaleY: 0.3, scaleZ: 0.6, color: { r: 0.45, g: 0.38, b: 0.25 } }));
+// v50: WW2 hex pillbox mesh (concrete bunker with overhanging roof slab,
+// embrasure slit and observation cupola). Built by generate-bunker-model.js.
+function makeBunkerToken(stackIdx) {
+    const concrete = { r: 0.58, g: 0.57, b: 0.52 };  // weathered grey
+    const tok = baseObj("Custom_Model", "Bunker",
+        "+1 defense, 1/hex max, destroyable.",
+        0, 0.4 * stackIdx, 0,
+        { scaleX: 1.4, scaleY: 1.4, scaleZ: 1.4, color: concrete });
+    tok.CustomMesh = {
+        MeshURL: BUNKER_MESH_URL,
+        DiffuseURL: BUNKER_DIFFUSE_URL,
+        NormalURL: "",
+        ColliderURL: "",
+        Convex: true,
+        MaterialIndex: 1,    // 1 = wood/stone-ish (less plasticky than 0)
+        TypeIndex: 0,        // generic prop
+        CustomShader: {
+            SpecularColor: { r: 1, g: 1, b: 1 },
+            SpecularIntensity: 0.05,
+            SpecularSharpness: 2,
+            FresnelStrength: 0,
+        },
+        CastShadows: true,
+    };
+    return tok;
 }
-const bunkerBag = baseObj("Bag", "Bunker Tokens (12)", "Neutral fortifications via D.U.D.S.",
-    -3, 1.5, 9, { color: { r: 0.45, g: 0.38, b: 0.25 } });
+const bunkerTokens = [];
+for (let i = 0; i < 12; i++) bunkerTokens.push(makeBunkerToken(i));
+const bunkerBag = baseObj("Bag", "Bunker Tokens (12)", "Neutral WW2 concrete bunkers via D.U.D.S.",
+    -3, 1.5, 9, { color: { r: 0.55, g: 0.55, b: 0.50 } });
 bunkerBag.ContainedObjects = bunkerTokens;
 objects.push(bunkerBag);
 
