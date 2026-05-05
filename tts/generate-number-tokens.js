@@ -18,10 +18,17 @@ const { Jimp, loadFont } = require("jimp");
 const path = require("path");
 const fs = require("fs");
 
-const OUT = path.join(__dirname, "cards");
+// Published under the versioned soldier path so each VERSION bump
+// bypasses TTS's URL-path cache (TTS strips ?query strings before
+// looking up cached assets, so path-based busting is the only thing
+// that reliably works). Must match SOLDIER_BASE in generate-save.js.
+const VERSION = "v52";
+const OUT = path.join(__dirname, VERSION);
 if (!fs.existsSync(OUT)) fs.mkdirSync(OUT, { recursive: true });
 
-const SIZE = 512;                     // square texture; TTS crops to circle
+const SIZE = 256;                     // square texture; TTS crops to circle.
+                                      // 256 px keeps the 128 px glyph
+                                      // visually large (~50% disc dia).
 const CREAM      = { r: 0xF2, g: 0xE8, b: 0xC8 };
 const CREAM_DARK = { r: 0xCB, g: 0xB8, b: 0x88 };
 const INK        = { r: 0x14, g: 0x12, b: 0x10 };
@@ -52,29 +59,47 @@ function fillRing(img, cx, cy, rOuter, rInner, color) {
     }
 }
 
+function fillRect(img, x1, y1, x2, y2, color) {
+    for (let y = Math.max(0, y1); y <= Math.min(img.bitmap.height - 1, y2); y++)
+        for (let x = Math.max(0, x1); x <= Math.min(img.bitmap.width - 1, x2); x++)
+            img.setPixelColor(rgba(color), x, y);
+}
+
 async function buildToken(n, font) {
     // RGBA transparent canvas — disc is the only opaque region so the
     // Custom_Tile circular crop reads cleanly.
     const img = new Jimp({ width: SIZE, height: SIZE, color: rgba({ r: 0, g: 0, b: 0 }, 0) });
     const cx = SIZE / 2, cy = SIZE / 2;
-    const rOuter = SIZE / 2 - 8;
-    const rRing  = rOuter - 18;
+    const rOuter = SIZE / 2 - 4;       // thin outer rim
+    const rRing  = rOuter - 8;         // cream interior
 
     // Cream disc with darker cream rim
     fillCircle(img, cx, cy, rOuter, CREAM_DARK);
     fillCircle(img, cx, cy, rRing, CREAM);
 
-    // Big bold black number centered. jimp's print accepts alignmentX
-    // for horizontal centering; vertical centering is done by setting
-    // y so the 128 px glyph sits roughly mid-disc (cap-line at ~180).
+    // Big bold black number centered. jimp's print only supports
+    // horizontal alignment; vertical positioning is manual. We push
+    // the glyph slightly above center so there's room beneath it for
+    // the orientation bar without crowding the rim.
     const txt = String(n);
     img.print({
         font,
         x: 0,
-        y: 180,
+        y: 50,
         text: { text: txt, alignmentX: 2 /* HorizontalAlign.CENTER */ },
         maxWidth: SIZE,
     });
+
+    // Orientation bar: a short bold underline directly beneath the
+    // digit so players can tell which way is "down" on the chit
+    // (and so a 6 never reads as a 9 across the table).
+    const barW = 70;
+    const barH = 8;
+    const barX1 = cx - barW / 2;
+    const barX2 = cx + barW / 2;
+    const barY1 = cy + 50;
+    const barY2 = barY1 + barH;
+    fillRect(img, barX1, barY1, barX2, barY2, INK);
 
     return img;
 }
