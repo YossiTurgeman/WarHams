@@ -491,7 +491,7 @@ function makeSeparatistPawn(stackIdx) {
 const sepSoldiers = [];
 for (let i = 0; i < 24; i++) sepSoldiers.push(makeSeparatistPawn(i));
 const sepBag = baseObj("Bag", "Separatist Soldiers (24)", "24 grey Separatists. Spawn at bases.",
-    0, 1.5, 9, { color: { r: 0.5, g: 0.5, b: 0.5 } });
+    -44, 1.5, -6, { color: { r: 0.5, g: 0.5, b: 0.5 } });
 sepBag.ContainedObjects = sepSoldiers;
 objects.push(sepBag);
 
@@ -572,7 +572,7 @@ dmgToken.CustomMesh = {
     CastShadows: true,
 };
 const dmgBag = baseObj("Infinite_Bag", "Damage Pegs", "Infinite blood-drop damage pegs. Each soldier base has 3 divots; 4th wound = death.",
-    -6, 1.5, 9, { color: { r: 0.9, g: 0.1, b: 0.1 } });
+    -44, 1.5, -12, { color: { r: 0.9, g: 0.1, b: 0.1 } });
 dmgBag.ContainedObjects = [dmgToken];
 objects.push(dmgBag);
 
@@ -606,7 +606,7 @@ function makeBunkerToken(stackIdx) {
 const bunkerTokens = [];
 for (let i = 0; i < 12; i++) bunkerTokens.push(makeBunkerToken(i));
 const bunkerBag = baseObj("Bag", "Bunker Tokens (12)", "Neutral WW2 concrete bunkers via D.U.D.S.",
-    -3, 1.5, 9, { color: { r: 0.55, g: 0.55, b: 0.50 } });
+    -44, 1.5, 0, { color: { r: 0.55, g: 0.55, b: 0.50 } });
 bunkerBag.ContainedObjects = bunkerTokens;
 objects.push(bunkerBag);
 
@@ -659,7 +659,7 @@ const numberCards = shuffledNumbers.map((num, i) => {
 });
 const numberDeck = baseObj("Deck", "Number Tokens (16)",
     "Catan-style chits placed on resource hexes during setup. Press R to shuffle, deal 1 per resource hex (one hex gets 2).",
-    3, 1.5, 9, { rotZ: 180 });
+    -44, 1.5, 6, { rotZ: 180 });
 numberDeck.DeckIDs = numberCards.map(c => c.CardID);
 numberDeck.CustomDeck = numberDeckDefs;
 numberDeck.HideWhenFaceDown = true;
