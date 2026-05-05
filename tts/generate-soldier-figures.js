@@ -126,8 +126,13 @@ async function buildTexture(color, squadLetter, soldierNum) {
     return img;
 }
 
+// Versioned output dir matches SOLDIER_BASE in generate-save.js.
+// Bumping VERSION forces TTS to fetch from a brand-new URL path
+// (TTS strips ?query strings, so the older cache-bust technique
+// no longer works for these assets).
+const VERSION = "v38";
 (async () => {
-    const outDir = path.join(__dirname, "cards");
+    const outDir = path.join(__dirname, VERSION);
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
     let count = 0;

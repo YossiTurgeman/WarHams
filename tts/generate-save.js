@@ -21,8 +21,12 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v37";
+const CARD_VERSION = "v38";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
+// Soldier assets live in a VERSIONED path so TTS treats them as
+// brand-new URLs every bump — bypasses TTS's asset cache, which
+// strips ?query strings and would otherwise serve the stale file.
+const SOLDIER_BASE = `https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/${CARD_VERSION}`;
 const BAC_BACK = `${CARD_BASE}/bac_back.png?${CARD_VERSION}`;
 const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
 
@@ -350,9 +354,9 @@ playerColors.forEach((pc, idx) => {
 // near the standee — three per soldier max, 4th = death.
 const SQUAD_LETTERS = ["A", "B", "C", "D"];
 function soldierTextureURL(colorName, id) {
-    return `${CARD_BASE}/soldier_${colorName}_${id}.png?${CARD_VERSION}`;
+    return `${SOLDIER_BASE}/soldier_${colorName}_${id}.png`;
 }
-const SOLDIER_MESH_URL = `https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/models/hams-soldier.obj?${CARD_VERSION}`;
+const SOLDIER_MESH_URL = `${SOLDIER_BASE}/hams-soldier.obj`;
 function makeSoldierStandee(pc, squadLetter, soldierNum, px, py, pz) {
     const id = `${squadLetter}${soldierNum}`;
     const obj = baseObj(
