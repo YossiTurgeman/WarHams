@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v42";
+const CARD_VERSION = "v43";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -390,12 +390,33 @@ function makeSoldierStandee(pc, squadLetter, soldierNum, px, py, pz) {
     return obj;
 }
 playerColors.forEach((pc, idx) => {
-    // TTS bags are LIFO — the LAST item added is the FIRST item pulled.
-    // We want A1 to come out first, so we add D7…A1 in reverse order.
+    // Pre-deploy A1–A4 and B1–B4 as standees on the table near the
+    // player's corner. The remaining 20 soldiers (A5–A7, B5–B7, all of
+    // C, all of D) go into the bag in REVERSE order so A5 is pulled
+    // first when reinforcements arrive.
+    const PRE_DEPLOY = new Set(["A1", "A2", "A3", "A4", "B1", "B2", "B3", "B4"]);
+
+    // 2-row × 4-column grid: squad A nearer center, squad B nearer corner
+    const colSides = [-5.25, -1.75, 1.75, 5.25];   // 3.5u spacing, 4 columns
+    const rowTcs   = { A: 8, B: 4.5 };              // squad A toward center, B toward corner
+
+    for (const letter of SQUAD_LETTERS) {           // A, B, C, D
+        for (let n = 1; n <= 7; n++) {
+            const id = `${letter}${n}`;
+            if (!PRE_DEPLOY.has(id)) continue;
+            const sp = cornerSpot(idx, rowTcs[letter], colSides[n - 1]);
+            objects.push(makeSoldierStandee(pc, letter, n, sp.x, 1.4, sp.z));
+        }
+    }
+
+    // Remaining soldiers go into the bag — added in reverse so A5
+    // (next reinforcement) sits on top of the LIFO stack.
     const soldiers = [];
     let stackPos = 0;
-    for (let s = SQUAD_LETTERS.length - 1; s >= 0; s--) {  // D, C, B, A
-        for (let n = 7; n >= 1; n--) {                     // 7 down to 1
+    for (let s = SQUAD_LETTERS.length - 1; s >= 0; s--) {
+        for (let n = 7; n >= 1; n--) {
+            const id = `${SQUAD_LETTERS[s]}${n}`;
+            if (PRE_DEPLOY.has(id)) continue;
             soldiers.push(
                 makeSoldierStandee(pc, SQUAD_LETTERS[s], n,
                     0, 0.5 * stackPos++, 0)
@@ -403,10 +424,10 @@ playerColors.forEach((pc, idx) => {
         }
     }
     const sp = cornerSpot(idx, -5, -7);
-    const bag = baseObj("Bag", `${pc.label} Soldiers (28)`,
-        `28 ${pc.label} soldiers — 4 Squads (A/B/C/D) of 7 each. ` +
-        `Start with 10 (A1-A5 + B1-B5). Each standee is a Custom_Token figurine ` +
-        `with a printed 40mm base showing its squad letter + soldier number.`,
+    const bag = baseObj("Bag", `${pc.label} Soldiers (20)`,
+        `${pc.label} reinforcements — A5-A7, B5-B7, full C and D Squads. ` +
+        `Pre-deployed on the table: A1-A4 + B1-B4. Pull from this bag as ` +
+        `you recruit. Next out is A5.`,
         sp.x, 1.5, sp.z, { color: pc.color });
     bag.ContainedObjects = soldiers;
     objects.push(bag);
