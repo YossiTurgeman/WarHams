@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v41";
+const CARD_VERSION = "v42";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -390,12 +390,15 @@ function makeSoldierStandee(pc, squadLetter, soldierNum, px, py, pz) {
     return obj;
 }
 playerColors.forEach((pc, idx) => {
+    // TTS bags are LIFO — the LAST item added is the FIRST item pulled.
+    // We want A1 to come out first, so we add D7…A1 in reverse order.
     const soldiers = [];
-    for (let s = 0; s < SQUAD_LETTERS.length; s++) {     // 4 squads per player
-        for (let n = 1; n <= 7; n++) {                    // 7 soldiers per squad
+    let stackPos = 0;
+    for (let s = SQUAD_LETTERS.length - 1; s >= 0; s--) {  // D, C, B, A
+        for (let n = 7; n >= 1; n--) {                     // 7 down to 1
             soldiers.push(
                 makeSoldierStandee(pc, SQUAD_LETTERS[s], n,
-                    0, 0.5 * (s * 7 + n - 1), 0)
+                    0, 0.5 * stackPos++, 0)
             );
         }
     }
