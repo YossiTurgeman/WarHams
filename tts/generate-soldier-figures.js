@@ -108,8 +108,10 @@ async function buildTexture(color, squadLetter, soldierNum) {
     fillRect(img, 0, HALF + 4, 32, HALF + 34, { r: 0xC8, g: 0x10, b: 0x10 });
 
     // ── Squad letter + soldier number label ─────────────────────
-    // v37: smaller font (64px black/white). UV squashes height by 2×,
-    // so 64px renders close to a 32px-tall glyph on the rendered base.
+    // v39: 64px font, centered on the BACK half of the base disc
+    // (opposite the 3 divots which sit on the +Z front edge). In
+    // image space this is BASE_CY + ~50 — UV t ≈ 0.59 → world z
+    // around -0.4, well into the rear of the disc.
     const id = `${squadLetter}${soldierNum}`;
     const fontFile = color.dark
         ? "open-sans/open-sans-64-black/open-sans-64-black.fnt"
@@ -118,7 +120,7 @@ async function buildTexture(color, squadLetter, soldierNum) {
     img.print({
         font,
         x: 0,
-        y: BASE_CY - 38,            // shifts the cap-line so the glyph center sits roughly on BASE_CY
+        y: BASE_CY + 18,            // glyph cap-line; center ends up near image y≈50 below BASE_CY (back of disc)
         text: { text: id, alignmentX: 1 /* center */ },
         maxWidth: W,
     });
@@ -130,7 +132,7 @@ async function buildTexture(color, squadLetter, soldierNum) {
 // Bumping VERSION forces TTS to fetch from a brand-new URL path
 // (TTS strips ?query strings, so the older cache-bust technique
 // no longer works for these assets).
-const VERSION = "v38";
+const VERSION = "v39";
 (async () => {
     const outDir = path.join(__dirname, VERSION);
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
