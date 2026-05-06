@@ -19,17 +19,18 @@ const path = require("path");
 const fs = require("fs");
 const { Jimp, loadFont } = require("jimp");
 
-const VERSION = "v56";
+const VERSION = "v57";
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
 const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-print", "dist", "fonts");
 
 // ─── Canvas ─────────────────────────────────────────────────────────
-// Texture aspect 16:5 ≈ 3.2:1 — matches the in-world board (16 × 5
-// TTS units, see generate-save.js scaleX:8 scaleZ:2.5) so the slots
-// stay exactly card-shaped without geometric stretching.
-const W = 1600;
+// 7 card-shaped slots: 1 'DECK' slot on the left (where the
+// Spaceport Deck sits) + 6 numbered slots for the face-up Planet
+// Bound BACs. Texture aspect 1900:500 = 3.8:1 matches the in-world
+// board aspect (see generate-save.js).
+const W = 1900;
 const H = 500;
 const BLACK = 0x000000FF;
 const GOLD  = 0xC9A24EFF;        // muted antique gold
@@ -86,21 +87,22 @@ function strokeRect(img, x1, y1, x2, y2, thickness, color) {
     });
     img.composite(titleLayer, 0, 38);
 
-    // 6 card-shaped slot outlines, evenly spaced, beneath the title.
-    // Slot pixel dimensions chosen so that on the in-world board
-    // (16 × 5 TTS units), each slot maps to EXACTLY a standard TTS
-    // card footprint (2.5 × 3.5):
-    //   slot_w_world = (250 / 1600) × 16 = 2.5 ✓
+    // 7 card-shaped slot outlines (DECK + 6 numbered), evenly spaced
+    // beneath the title. Slot pixel dimensions chosen so each slot
+    // maps to EXACTLY a standard TTS card footprint (2.5 × 3.5) on
+    // the in-world board (~19 × 5 units):
+    //   slot_w_world = (250 / 1900) × 19 = 2.5 ✓
     //   slot_h_world = (350 / 500)  × 5  = 3.5 ✓
-    // Six 250-px slots + 5×4-px gaps = 1520 px row, leaving 40 px
+    // Seven 250-px slots + 6×4-px gaps = 1774 px row, leaving 63 px
     // margin on each side for the gold border to read cleanly.
     const SLOT_W = 250;
     const SLOT_H = 350;
     const SLOT_TOP = 80;
     const SLOT_GAP = 4;
-    const slotsTotalW = 6 * SLOT_W + 5 * SLOT_GAP;
+    const N_SLOTS = 7;
+    const slotsTotalW = N_SLOTS * SLOT_W + (N_SLOTS - 1) * SLOT_GAP;
     const slotsLeft = Math.floor((W - slotsTotalW) / 2);
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < N_SLOTS; i++) {
         const x1 = slotsLeft + i * (SLOT_W + SLOT_GAP);
         const y1 = SLOT_TOP;
         const x2 = x1 + SLOT_W - 1;
@@ -108,16 +110,17 @@ function strokeRect(img, x1, y1, x2, y2, thickness, color) {
         strokeRect(img, x1, y1, x2, y2, SLOT_BORDER, GOLD);
     }
 
-    // Slot labels "1" through "6" centered beneath each slot, gold.
+    // Slot labels — leftmost slot says "DECK", remaining 6 are "1"-"6".
     const labelFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-32-white/open-sans-32-white.fnt"));
     const labelLayer = new Jimp({ width: W, height: 60, color: 0x00000000 });
-    for (let i = 0; i < 6; i++) {
+    const slotLabels = ["DECK", "1", "2", "3", "4", "5", "6"];
+    for (let i = 0; i < N_SLOTS; i++) {
         const x1 = slotsLeft + i * (SLOT_W + SLOT_GAP);
         labelLayer.print({
             font: labelFont,
             x: x1,
             y: 0,
-            text: { text: String(i + 1), alignmentX: 2 },
+            text: { text: slotLabels[i], alignmentX: 2 },
             maxWidth: SLOT_W,
         });
     }

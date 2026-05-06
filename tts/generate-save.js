@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v56";
+const CARD_VERSION = "v57";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -760,17 +760,19 @@ zones.forEach(z => {
 // Texture aspect (3:1) matches the tile scale (18 x 6 TTS units) so
 // the slot outlines stay card-shaped.
 const PLANETBOUND_BOARD_URL = `${SOLDIER_BASE}/planetbound-board.png`;
-// Custom_Tile scale = 2 units per scale-unit (see Play Surface above:
-// scaleX 54 → 108-unit-wide table). Board target = 16 × 5 in-world
-// → scaleX 8, scaleZ 2.5. The texture's slot pixel dimensions are
-// chosen so each slot maps to EXACTLY 2.5 × 3.5 units = a standard
-// TTS card. Position: x=0 (centered between Green at x=-42 and
-// Yellow at x=+42), z=28 (top edge between the two top players).
-// rotY:180 so the title reads upright from the south-facing camera.
+// Custom_Tile X scale empirically renders ~6× wider than its scale
+// number (e.g. scaleX:8 produced a board where each slot was ~3 cards
+// wide, despite the texture/math saying it should be 1× card wide).
+// scaleZ behaves as the documented 2× factor. So to make each slot
+// match a 2.5×3.5 card on the in-world board (~19 wide × 5 deep):
+//   scaleX = 19 / 6 ≈ 3.17
+//   scaleZ = 5 / 2  = 2.5
+// rotY:180 so the title and 'DECK'/'1'-'6' labels read upright from
+// the south-facing camera.
 const pbBoard = baseObj("Custom_Tile", "Planet Bound Area",
-    "Movable board — always keep 6 face-up BAC cards in the marked slots. Refill from the Spaceport Deck whenever a card is taken.",
+    "Movable board with 7 slots: leftmost slot is for the Spaceport Deck, the other 6 hold the face-up Planet Bound BAC cards. Always keep 6 face-up; refill immediately whenever one is taken.",
     0, 1.02, 28,
-    { rotY: 180, scaleX: 8, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
+    { rotY: 180, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
 pbBoard.CustomImage = {
     ImageURL: PLANETBOUND_BOARD_URL,
     ImageSecondaryURL: "",
