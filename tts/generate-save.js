@@ -201,9 +201,14 @@ function buildBACDeck() {
             cards.push(card);
         }
     });
+    // Spawn at the DECK slot on the Planet Bound Area board.
+    // Board center: (0, 1.02, 28), scaleX 3.17 → ~19 world units wide.
+    // DECK slot is the leftmost slot in the texture (texture x≈188 of
+    // 1900 → 9.9% from left → -7.62 in local board X). After rotY:180
+    // that maps to world x ≈ +7.62. Z stays at the board's z=28.
     const deck = baseObj("Deck", "Spaceport Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
-        34, 1.5, -8, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        7.62, 1.5, 28, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
