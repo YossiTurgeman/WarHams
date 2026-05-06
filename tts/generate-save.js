@@ -705,7 +705,9 @@ function makeReferenceBook(nickname, desc, pdfUrl, px, py, pz, color) {
         px, py, pz,
         // Default Custom_PDF orientation lies the book flat with the
         // cover up; players right-click → Open to read the pages.
-        { scaleX: 2, scaleY: 2, scaleZ: 2, color, locked: true, grid: false });
+        // rotY: 90 turns the book 90° clockwise (viewed from above)
+        // so the long edge of the cover faces toward the camera.
+        { rotY: 90, scaleX: 2, scaleY: 2, scaleZ: 2, color, locked: true, grid: false });
     book.CustomPDF = {
         PDFUrl: pdfUrl,
         PDFPassword: "",
