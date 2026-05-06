@@ -22,7 +22,7 @@ const fs = require("fs");
 // bypasses TTS's URL-path cache (TTS strips ?query strings before
 // looking up cached assets, so path-based busting is the only thing
 // that reliably works). Must match SOLDIER_BASE in generate-save.js.
-const VERSION = "v55";
+const VERSION = "v56";
 const OUT = path.join(__dirname, VERSION);
 if (!fs.existsSync(OUT)) fs.mkdirSync(OUT, { recursive: true });
 

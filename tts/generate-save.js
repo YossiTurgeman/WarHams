@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v55";
+const CARD_VERSION = "v56";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -761,13 +761,16 @@ zones.forEach(z => {
 // the slot outlines stay card-shaped.
 const PLANETBOUND_BOARD_URL = `${SOLDIER_BASE}/planetbound-board.png`;
 // Custom_Tile scale = 2 units per scale-unit (see Play Surface above:
-// scaleX 54 → 108-unit-wide table). Board target ≈ 18 wide × 6 deep
-// → scaleX 9, scaleZ 3. rotY:180 so the title reads from the south
-// side of the table where the BAC deck/Conspire deck text faces.
+// scaleX 54 → 108-unit-wide table). Board target = 16 × 5 in-world
+// → scaleX 8, scaleZ 2.5. The texture's slot pixel dimensions are
+// chosen so each slot maps to EXACTLY 2.5 × 3.5 units = a standard
+// TTS card. Position: x=0 (centered between Green at x=-42 and
+// Yellow at x=+42), z=28 (top edge between the two top players).
+// rotY:180 so the title reads upright from the south-facing camera.
 const pbBoard = baseObj("Custom_Tile", "Planet Bound Area",
     "Movable board — always keep 6 face-up BAC cards in the marked slots. Refill from the Spaceport Deck whenever a card is taken.",
-    16, 1.02, 7,
-    { rotY: 180, scaleX: 9, scaleY: 0.2, scaleZ: 3, color: { r: 1, g: 1, b: 1 }, grid: false });
+    0, 1.02, 28,
+    { rotY: 180, scaleX: 8, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
 pbBoard.CustomImage = {
     ImageURL: PLANETBOUND_BOARD_URL,
     ImageSecondaryURL: "",
