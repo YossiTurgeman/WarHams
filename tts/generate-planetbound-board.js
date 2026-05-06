@@ -19,7 +19,7 @@ const path = require("path");
 const fs = require("fs");
 const { Jimp, loadFont } = require("jimp");
 
-const VERSION = "v54";
+const VERSION = "v55";
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
@@ -84,14 +84,18 @@ function strokeRect(img, x1, y1, x2, y2, thickness, color) {
     img.composite(titleLayer, 0, 38);
 
     // 6 card-shaped slot outlines, evenly spaced, beneath the title.
-    // Slot aspect 2.5:3.5 → use 165 x 231 px (close to 1:1.4).
-    const SLOT_W = 165;
-    const SLOT_H = 231;
-    const SLOT_TOP = 130;
-    const slotsTotalW = 6 * SLOT_W + 5 * 30;   // 30-px gaps between slots
+    // Slot dimensions chosen so that on the in-world board (18 x 6
+    // TTS units, see generate-save.js), each slot maps to ~2.6 x 3.6
+    // units — a hair larger than a standard TTS card (2.5 x 3.5) so
+    // cards drop in cleanly without overhanging the gold outline.
+    // Aspect 215:300 ≈ 0.717 ≈ card aspect 2.5/3.5 = 0.714.
+    const SLOT_W = 215;
+    const SLOT_H = 300;
+    const SLOT_TOP = 95;
+    const slotsTotalW = 6 * SLOT_W + 5 * 8;    // 8-px gap between slots
     const slotsLeft = Math.floor((W - slotsTotalW) / 2);
     for (let i = 0; i < 6; i++) {
-        const x1 = slotsLeft + i * (SLOT_W + 30);
+        const x1 = slotsLeft + i * (SLOT_W + 8);
         const y1 = SLOT_TOP;
         const x2 = x1 + SLOT_W - 1;
         const y2 = y1 + SLOT_H - 1;
@@ -102,7 +106,7 @@ function strokeRect(img, x1, y1, x2, y2, thickness, color) {
     const labelFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-32-white/open-sans-32-white.fnt"));
     const labelLayer = new Jimp({ width: W, height: 60, color: 0x00000000 });
     for (let i = 0; i < 6; i++) {
-        const x1 = slotsLeft + i * (SLOT_W + 30);
+        const x1 = slotsLeft + i * (SLOT_W + 8);
         labelLayer.print({
             font: labelFont,
             x: x1,
