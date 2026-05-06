@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v52";
+const CARD_VERSION = "v53";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -54,7 +54,7 @@ const BARREL_DIFFUSE_URL = `${CARD_BASE}/barrel-texture.png?${CARD_VERSION}`;
 const BUNKER_MESH_URL = `${SOLDIER_BASE}/bunker.obj`;
 const BUNKER_DIFFUSE_URL = `${SOLDIER_BASE}/bunker-texture.png`;
 const CONTAINER_MESH_URL = `${SOLDIER_BASE}/container.obj`;
-const CONTAINER_DIFFUSE_URL = `${SOLDIER_BASE}/container-texture.png`;
+function containerDiffuseURL(num) { return `${SOLDIER_BASE}/container_${num}.png`; }
 const RESOURCE_DIFFUSE_URL = `${CARD_BASE}/resource-texture.png?${CARD_VERSION}`;
 const LIGHTNING_MESH_URL = `${CARD_BASE}/lightning.obj?${CARD_VERSION}`;
 const WAVE_MESH_URL = `${CARD_BASE}/wave.obj?${CARD_VERSION}`;
@@ -700,7 +700,7 @@ function makeContainer(num, role, px, py, pz) {
         { rotY: 90, scaleX: 1.0, scaleY: 1.0, scaleZ: 1.0, color: c });
     cont.CustomMesh = {
         MeshURL: CONTAINER_MESH_URL,
-        DiffuseURL: CONTAINER_DIFFUSE_URL,
+        DiffuseURL: containerDiffuseURL(num),
         NormalURL: "",
         ColliderURL: "",
         Convex: true,
