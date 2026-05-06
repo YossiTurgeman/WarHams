@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v61";
+const CARD_VERSION = "v62";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -844,15 +844,18 @@ objects.push(uzBoard);
 // PB has slots that fit cards with scaleX:3.17 in a 1900×500
 // texture. Matching px-per-world ratio guarantees slots fit cards
 // the same way on this board too:
-//   scaleX = 2900 × (3.17 / 1900) = 4.84
-//   scaleZ =  900 × (2.50 /  500) = 4.50
+//   scaleX = 2900  × (3.17 / 1900) = 4.84
+//   scaleZ = 1000  × (2.50 /  500) = 5.00
+// (Texture H bumped 900 -> 1000 to add room between the two rows
+//  and a bottom margin below row 2.)
 // rotY:180 — flips the board so the title and slot grid face the
-// opposite direction.
+// opposite direction. Board nudged south (z -22 -> -25) per user
+// request.
 const EQUIPMENT_BOARD_URL = `${SOLDIER_BASE}/equipment-display-board.png`;
 const eqBoard = baseObj("Custom_Tile", "Equipment Display",
     "Shared reference board: 20 slots for face-up BAC cards (one per BAC type). When you unlock a new BAC type for the first time, place its card face-up here and drop one of your Control Flags on top to mark permanent access. Multiple flags may share a slot.",
-    0, 1.02, -22,
-    { rotY: 180, scaleX: 4.84, scaleY: 0.2, scaleZ: 4.50, color: { r: 1, g: 1, b: 1 }, grid: false });
+    0, 1.02, -25,
+    { rotY: 180, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
     ImageSecondaryURL: "",

@@ -26,7 +26,7 @@ const path = require("path");
 const fs = require("fs");
 const { Jimp, loadFont } = require("jimp");
 
-const VERSION = "v61";
+const VERSION = "v62";
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
@@ -34,7 +34,7 @@ const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-pri
 
 // ─── Canvas ─────────────────────────────────────────────────────────
 const W = 2900;
-const H = 900;
+const H = 1000;
 const BLACK = 0x000000FF;
 // Bright pure cyan — high contrast against pure black, distinct from
 // the gold (PB) and neon-green (UZ) board palettes.
@@ -100,7 +100,7 @@ function tintCyan(layer, w, h) {
     const COLS = 10;
     const ROWS = 2;
     const COL_GAP = 30;
-    const ROW_GAP = 40;
+    const ROW_GAP = 80;          // generous gap between the two rows
     const gridW = COLS * SLOT_W + (COLS - 1) * COL_GAP;
     const gridH = ROWS * SLOT_H + (ROWS - 1) * ROW_GAP;
     const gridLeft = Math.floor((W - gridW) / 2);
