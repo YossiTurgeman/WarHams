@@ -742,14 +742,14 @@ function makeContainer(num, role, px, py, pz) {
 // (see UZ board derivation in section 17b).
 const UZ_BOARD_X = 24;
 const UZ_BOARD_Z = 0;
-// Slot center pitches derived from the v58 board texture geometry
+// Slot center pitches derived from the v59 board texture geometry
 // (1000×950 px, 250×350 slots, gaps 30/50, gridTop 110), using the
-// empirical Custom_Tile X factor ~7.5×/scale-unit (PB deck position
-// iteration) and Z factor ~2×/scale-unit:
-//   W_world ≈ 1.67 × 7.5 = 12.5 ; Z_world ≈ 4.75 × 2 = 9.5
-//   col centers (px 220, 500, 780) → world x_off ≈ ±3.5
+// re-derived empirical Custom_Tile factor ~2× per scale-unit on
+// BOTH axes (see uzBoard scaleX/scaleZ comment):
+//   W_world ≈ 5.0  × 2 = 10.0 ; Z_world ≈ 4.75 × 2 = 9.5
+//   col centers (px 220, 500, 780) → world x_off ≈ ±2.8
 //   row centers (px 285, 685)      → world z_off ≈ +1.9 / -2.1
-const UZ_COL_PITCH = 3.5;        // world units between slot centers (X)
+const UZ_COL_PITCH = 2.8;        // world units between slot centers (X)
 const UZ_ROW_PITCH = 4.0;        // world units between slot centers (Z)
 for (let i = 1; i <= 6; i++) {
     const col = (i - 1) % 3;     // 0,1,2
@@ -817,12 +817,13 @@ objects.push(pbBoard);
 // Each slot is the home for the matching numbered cargo container;
 // BAC cards arriving at that spaceport stack face-up under it.
 //
-// Texture is 1000×950 px. Empirical Custom_Tile scaling (see
-// planetbound notes): X renders ~6× per scale-unit (with some
-// drift), Z renders ~2× per scale-unit. We aim for an in-world
-// footprint of ~10 × 9.5 units so each ~250-px slot maps roughly
-// to a 2.5 world-unit (card-width) slot.
-//   scaleX = 10  / 6 ≈ 1.67
+// Texture is 1000×950 px. EMPIRICAL Custom_Tile scaling (re-derived
+// after v59 rendered as a tall-narrow portrait): at small scale
+// values BOTH axes render ~2× per scale-unit (matches the documented
+// table_surface comment, NOT the earlier "X renders ~6×" claim that
+// was inferred from PB deck-positioning). To get a ~10 × 9.5 world
+// footprint so each 250-px slot maps to a ~2.5 world-unit card width:
+//   scaleX = 10  / 2 = 5.0
 //   scaleZ = 9.5 / 2 = 4.75
 // rotY:180 so the title and "1"-"6" labels read upright from the
 // south-facing camera.
@@ -830,7 +831,7 @@ const UNLOADING_BOARD_URL = `${SOLDIER_BASE}/unloading-zone-board.png`;
 const uzBoard = baseObj("Custom_Tile", "Unloading Zone",
     "Movable board with 6 slots (Spaceports 1-6). Place each numbered cargo container on its matching slot. BAC cards arriving at a spaceport stack face-up under that slot's container.",
     UZ_BOARD_X, 1.02, UZ_BOARD_Z,
-    { rotY: 180, scaleX: 1.67, scaleY: 0.2, scaleZ: 4.75, color: { r: 1, g: 1, b: 1 }, grid: false });
+    { rotY: 180, scaleX: 5.0, scaleY: 0.2, scaleZ: 4.75, color: { r: 1, g: 1, b: 1 }, grid: false });
 uzBoard.CustomImage = {
     ImageURL: UNLOADING_BOARD_URL,
     ImageSecondaryURL: "",
