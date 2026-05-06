@@ -205,10 +205,11 @@ function buildBACDeck() {
     // Board center: (0, 1.02, 28). Empirical iteration:
     //   x = +7.62 → deck landed in slot 5
     //   x = -7.62 → deck landed in slot 1 (1 slot right of DECK)
-    //   x = -10.12 → DECK slot (slot pitch ≈ 2.5 world units)
+    //   x = -10.12 → straddled DECK / slot 1 (leaning right into slot 1)
+    //   x = -11.37 → centered on DECK slot (slot pitch ≈ 2.5 world units)
     const deck = baseObj("Deck", "Spaceport Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
-        -10.12, 1.5, 28, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        -11.37, 1.5, 28, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
