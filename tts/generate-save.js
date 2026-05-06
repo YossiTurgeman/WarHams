@@ -688,44 +688,44 @@ zones.forEach(z => {
     objects.push(label);
 });
 
-// ─── 18. REFERENCE NOTECARDS — Quick Ref + Full User Guide ──────────
-// Float locked beside the table (just past the western play-surface
-// edge at x=-54) so they're always reachable but never block the
-// hex map. The DP Tracker was removed — Dominance Points are tracked
-// per-player on each soldier's BAC display, not on a central card.
-objects.push(baseObj("Notecard", "Quick Reference", [
-    "TURN PHASES",
-    "1. Resource Prod — Roll 2d6+Sep Die",
-    "2. Movement — 1 hex (2 w/ J.J)",
-    "3. Combat — within 2 hexes",
-    "4. Resource Gathering",
-    "5. Purchase & Equip",
-    "6. Trade (bank 3:1)",
-    "7. Move Separatists",
-    "", "COMBAT: Pre→1.Roll→2.Assign→",
-    "3.Equip bonus→4.Conspire→",
-    "5.Damage→6.Counter(3+ block)",
-    "", "SLOTS: 1=Head 2=Back 3=Legs",
-    "4-5=Chest 6=Hands",
-    "", "VICTORY:",
-    "• Spaceport: 5/6(2p) 4/6(3-4p)",
-    "• Military: 28 soldiers, hold 1 rnd",
-    "• Dominance: 50 DP from BACs",
-].join('\n'), -60, 2.0, 8,
-    { scaleX: 1.5, scaleZ: 1.5, color: { r: 0.85, g: 0.9, b: 0.95 }, locked: true, grid: false }));
-
-// User Guide — full rulebook embedded as a notecard. Players can hover
-// and scroll through the description.
-const userGuideText = (() => {
-    try {
-        return fs.readFileSync(path.join(__dirname, "..", "design", "WARHAMS-Rulebook.md"), "utf8");
-    } catch (e) {
-        return "Rulebook not found — see design/WARHAMS-Rulebook.md in the repository.";
-    }
-})();
-objects.push(baseObj("Notecard", "User Guide (Full Rulebook)", userGuideText,
+// ─── 18. REFERENCE BOOKS — Quick Ref + Full User Guide ──────────────
+// Custom_PDF objects render as physical book/folder shapes on the
+// table. Right-click → Open shows a scrollable PDF reader. The
+// previous Notecard implementation was a tiny flat note that didn't
+// look like a book and stayed on the play surface.
+//
+// Both books float locked just past the western play-surface edge
+// (x=-54), elevated above the table so they read as a "shelf"
+// beside the board. The Quick Reference sits on top, the full
+// User Guide just behind it.
+const QUICKREF_PDF_URL = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/design/WARHAMS-QuickRef.pdf";
+const RULEBOOK_PDF_URL = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/design/WARHAMS-Rulebook.pdf";
+function makeReferenceBook(nickname, desc, pdfUrl, px, py, pz, color) {
+    const book = baseObj("Custom_PDF", nickname, desc,
+        px, py, pz,
+        // Default Custom_PDF orientation lies the book flat with the
+        // cover up; players right-click → Open to read the pages.
+        { scaleX: 2, scaleY: 2, scaleZ: 2, color, locked: true, grid: false });
+    book.CustomPDF = {
+        PDFUrl: pdfUrl,
+        PDFPassword: "",
+        PDFPage: 0,
+        PDFPageOffset: 0,
+    };
+    return book;
+}
+objects.push(makeReferenceBook(
+    "Quick Reference", "Single-page summary: turn phases, combat sequence, equipment slots, victory conditions.",
+    QUICKREF_PDF_URL,
+    -60, 2.0, 8,
+    { r: 0.85, g: 0.90, b: 0.95 }
+));
+objects.push(makeReferenceBook(
+    "User Guide (Full Rulebook)", "Complete W.A.R H.A.M.S rulebook. Right-click → Open to read.",
+    RULEBOOK_PDF_URL,
     -60, 2.0, -8,
-    { scaleX: 1.5, scaleZ: 1.5, color: { r: 0.95, g: 0.9, b: 0.75 }, locked: true, grid: false }));
+    { r: 0.95, g: 0.90, b: 0.75 }
+));
 
 // ═════════════════════════════════════════════════════════════════════
 //  BUILD SAVE FILE
