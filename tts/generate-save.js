@@ -202,15 +202,13 @@ function buildBACDeck() {
         }
     });
     // Spawn at the DECK slot on the Planet Bound Area board.
-    // Board center: (0, 1.02, 28), scaleX 3.17 → ~19 world units wide.
-    // Empirically the texture's left edge maps to world's left edge
-    // (negative X) even with rotY:180 — the leftmost DECK slot at
-    // texture-x 188/1900 = 9.9% from left lands at world x ≈ -7.62
-    // (verified by previous-iteration screenshot where +7.62 put the
-    // deck visibly in slot 5).
+    // Board center: (0, 1.02, 28). Empirical iteration:
+    //   x = +7.62 → deck landed in slot 5
+    //   x = -7.62 → deck landed in slot 1 (1 slot right of DECK)
+    //   x = -10.12 → DECK slot (slot pitch ≈ 2.5 world units)
     const deck = baseObj("Deck", "Spaceport Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
-        -7.62, 1.5, 28, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        -10.12, 1.5, 28, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
