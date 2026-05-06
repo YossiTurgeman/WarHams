@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v57";
+const CARD_VERSION = "v58";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -728,28 +728,42 @@ function makeContainer(num, role, px, py, pz) {
     };
     return cont;
 }
-// Containers come in stacked pairs — the Board Marker sits ON TOP of
-// the matching Unloading Zone container so the two sets are visually
-// paired by colour AND co-located. Players lift the top one off when
-// a BAC arrives at that spaceport. Container height is ~0.5 TTS units;
-// we drop the top one in slightly higher so gravity settles it cleanly
-// onto the bottom one.
+// The 12 containers split into two functional sets:
+//   • UNLOADING ZONE set (6) — placed loose on the 6 slot outlines
+//     of the Unloading Zone board (see section 17b below). BAC cards
+//     arriving at a spaceport stack face-up under the matching
+//     container.
+//   • BOARD MARKER set (6) — kept off-board in a tight column on
+//     the right side of the table; players grab one and place it on
+//     the matching spaceport hex when a BAC arrives there.
 //
-// Layout: rotated 90° (long axis along Z), arranged in a 6-stack
-// column at x=39 — sandwiched between the card decks at x=34
-// (BAC z=-8, Conspire z=+8) and the resource bags at x=44
-// (z=-12,-6,0,6). The 6 stacks span z=-7.5..+7.5 in 3-unit steps
-// so the column visually bridges the two existing rows.
+// Unloading Zone board lives at (UZ_BOARD_X, UZ_BOARD_Z). Slot grid
+// is 3 cols × 2 rows; world slot pitch matches the texture geometry
+// (see UZ board derivation in section 17b).
+const UZ_BOARD_X = 24;
+const UZ_BOARD_Z = 0;
+const UZ_COL_PITCH = 2.8;        // world units between slot centers (X)
+const UZ_ROW_PITCH = 3.6;        // world units between slot centers (Z)
+for (let i = 1; i <= 6; i++) {
+    const col = (i - 1) % 3;     // 0,1,2
+    const row = Math.floor((i - 1) / 3); // 0 (top) or 1 (bottom)
+    // Texture-LEFT maps to world-LEFT (negative X) on rotY:180 tile.
+    // Texture-TOP maps to world+Z (away from south camera).
+    const px = UZ_BOARD_X + (col - 1) * UZ_COL_PITCH;
+    const pz = UZ_BOARD_Z + (0.5 - row) * UZ_ROW_PITCH;
+    objects.push(makeContainer(i, "Unloading Zone", px, 1.5, pz));
+}
+// Board-marker column — out of the way on the far right, between
+// the Conspire deck (x=34, z=+8) and the resource bags (x=44).
 for (let i = 1; i <= 6; i++) {
     const z = -7.5 + (i - 1) * 3;
-    objects.push(makeContainer(i, "Unloading Zone", 39, 1.2, z));
-    objects.push(makeContainer(i, "Board Marker",   39, 2.0, z));
+    objects.push(makeContainer(i, "Board Marker", 39, 1.2, z));
 }
 
 // ─── 17. ZONE LABELS (locked, thin, smaller) ────────────────────────
+// UNLOADING ZONE label removed — replaced by the textured Custom_Tile
+// board in section 17c.
 const zones = [
-    { name: "UNLOADING ZONE", desc: "BAC cards land here on doubles. 6 slots for Spaceports 1-6.",
-      x: 16, z: 3, sx: 5, sz: 1, color: { r: 0.2, g: 0.3, b: 0.2 } },
     { name: "EQUIPMENT DISPLAY", desc: "First-time equip: place BAC face-up + your flag. Flags permanent.",
       x: 16, z: -3, sx: 4, sz: 1.5, color: { r: 0.15, g: 0.12, b: 0.08 } },
 ];
@@ -788,6 +802,36 @@ pbBoard.CustomImage = {
     CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
 };
 objects.push(pbBoard);
+
+// ─── 17c. UNLOADING ZONE BOARD (movable Custom_Tile) ────────────────
+// Rectangular companion to the Planet Bound Area board: black with a
+// neon-green border, "UNLOADING ZONE" title, and 6 card-shaped slots
+// in a 3-col × 2-row grid (Spaceports 1-6, top-left → bottom-right).
+// Each slot is the home for the matching numbered cargo container;
+// BAC cards arriving at that spaceport stack face-up under it.
+//
+// Texture is 1000×950 px. Empirical Custom_Tile scaling (see
+// planetbound notes): X renders ~6× per scale-unit (with some
+// drift), Z renders ~2× per scale-unit. We aim for an in-world
+// footprint of ~10 × 9.5 units so each ~250-px slot maps roughly
+// to a 2.5 world-unit (card-width) slot.
+//   scaleX = 10  / 6 ≈ 1.67
+//   scaleZ = 9.5 / 2 = 4.75
+// rotY:180 so the title and "1"-"6" labels read upright from the
+// south-facing camera.
+const UNLOADING_BOARD_URL = `${SOLDIER_BASE}/unloading-zone-board.png`;
+const uzBoard = baseObj("Custom_Tile", "Unloading Zone",
+    "Movable board with 6 slots (Spaceports 1-6). Place each numbered cargo container on its matching slot. BAC cards arriving at a spaceport stack face-up under that slot's container.",
+    UZ_BOARD_X, 1.02, UZ_BOARD_Z,
+    { rotY: 180, scaleX: 1.67, scaleY: 0.2, scaleZ: 4.75, color: { r: 1, g: 1, b: 1 }, grid: false });
+uzBoard.CustomImage = {
+    ImageURL: UNLOADING_BOARD_URL,
+    ImageSecondaryURL: "",
+    ImageScalar: 1,
+    WidthScale: 0,
+    CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
+};
+objects.push(uzBoard);
 
 // ─── 18. REFERENCE BOOKS — Quick Ref + Full User Guide ──────────────
 // Custom_PDF objects render as physical book/folder shapes on the
