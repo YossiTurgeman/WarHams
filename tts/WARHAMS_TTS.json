@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778071421,
+  "EpochTime": 1778071823,
   "Date": "2026-05-06",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -50303,8 +50303,8 @@
       "GUID": "1002e6",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 21.2,
-        "posY": 1.5,
+        "posX": 31.2,
+        "posY": 1.2,
         "posZ": 2,
         "rotX": 0,
         "rotY": 90,
@@ -50368,8 +50368,73 @@
       "GUID": "1002e7",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 24,
-        "posY": 1.5,
+        "posX": 31.2,
+        "posY": 2,
+        "posZ": 2,
+        "rotX": 0,
+        "rotY": 90,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Container #1 (Board Marker)",
+      "Description": "Spaceport 1 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.85,
+        "g": 0.2,
+        "b": 0.18
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container_1.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "1002e8",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 34,
+        "posY": 1.2,
         "posZ": 2,
         "rotX": 0,
         "rotY": 90,
@@ -50430,11 +50495,76 @@
       }
     },
     {
-      "GUID": "1002e8",
+      "GUID": "1002e9",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 26.8,
-        "posY": 1.5,
+        "posX": 34,
+        "posY": 2,
+        "posZ": 2,
+        "rotX": 0,
+        "rotY": 90,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Container #2 (Board Marker)",
+      "Description": "Spaceport 2 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.1,
+        "g": 0.45,
+        "b": 0.75
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container_2.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "1002ea",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 36.8,
+        "posY": 1.2,
         "posZ": 2,
         "rotX": 0,
         "rotY": 90,
@@ -50495,11 +50625,76 @@
       }
     },
     {
-      "GUID": "1002e9",
+      "GUID": "1002eb",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 21.2,
-        "posY": 1.5,
+        "posX": 36.8,
+        "posY": 2,
+        "posZ": 2,
+        "rotX": 0,
+        "rotY": 90,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Container #3 (Board Marker)",
+      "Description": "Spaceport 3 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.95,
+        "g": 0.7,
+        "b": 0.1
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container_3.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "1002ec",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 31.2,
+        "posY": 1.2,
         "posZ": -2,
         "rotX": 0,
         "rotY": 90,
@@ -50560,11 +50755,76 @@
       }
     },
     {
-      "GUID": "1002ea",
+      "GUID": "1002ed",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 24,
-        "posY": 1.5,
+        "posX": 31.2,
+        "posY": 2,
+        "posZ": -2,
+        "rotX": 0,
+        "rotY": 90,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Container #4 (Board Marker)",
+      "Description": "Spaceport 4 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.2,
+        "g": 0.55,
+        "b": 0.3
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container_4.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "1002ee",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 34,
+        "posY": 1.2,
         "posZ": -2,
         "rotX": 0,
         "rotY": 90,
@@ -50625,11 +50885,76 @@
       }
     },
     {
-      "GUID": "1002eb",
+      "GUID": "1002ef",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 26.8,
-        "posY": 1.5,
+        "posX": 34,
+        "posY": 2,
+        "posZ": -2,
+        "rotX": 0,
+        "rotY": 90,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Container #5 (Board Marker)",
+      "Description": "Spaceport 5 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.85,
+        "g": 0.45,
+        "b": 0.1
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container_5.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "1002f0",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 36.8,
+        "posY": 1.2,
         "posZ": -2,
         "rotX": 0,
         "rotY": 90,
@@ -50690,337 +51015,12 @@
       }
     },
     {
-      "GUID": "1002ec",
-      "Name": "Custom_Model",
-      "Transform": {
-        "posX": 39,
-        "posY": 1.2,
-        "posZ": -7.5,
-        "rotX": 0,
-        "rotY": 90,
-        "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
-      },
-      "Nickname": "Container #1 (Board Marker)",
-      "Description": "Spaceport 1 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 0.85,
-        "g": 0.2,
-        "b": 0.18
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomMesh": {
-        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container.obj",
-        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container_1.png",
-        "NormalURL": "",
-        "ColliderURL": "",
-        "Convex": true,
-        "MaterialIndex": 1,
-        "TypeIndex": 0,
-        "CustomShader": {
-          "SpecularColor": {
-            "r": 1,
-            "g": 1,
-            "b": 1
-          },
-          "SpecularIntensity": 0.15,
-          "SpecularSharpness": 3,
-          "FresnelStrength": 0
-        },
-        "CastShadows": true
-      }
-    },
-    {
-      "GUID": "1002ed",
-      "Name": "Custom_Model",
-      "Transform": {
-        "posX": 39,
-        "posY": 1.2,
-        "posZ": -4.5,
-        "rotX": 0,
-        "rotY": 90,
-        "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
-      },
-      "Nickname": "Container #2 (Board Marker)",
-      "Description": "Spaceport 2 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 0.1,
-        "g": 0.45,
-        "b": 0.75
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomMesh": {
-        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container.obj",
-        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container_2.png",
-        "NormalURL": "",
-        "ColliderURL": "",
-        "Convex": true,
-        "MaterialIndex": 1,
-        "TypeIndex": 0,
-        "CustomShader": {
-          "SpecularColor": {
-            "r": 1,
-            "g": 1,
-            "b": 1
-          },
-          "SpecularIntensity": 0.15,
-          "SpecularSharpness": 3,
-          "FresnelStrength": 0
-        },
-        "CastShadows": true
-      }
-    },
-    {
-      "GUID": "1002ee",
-      "Name": "Custom_Model",
-      "Transform": {
-        "posX": 39,
-        "posY": 1.2,
-        "posZ": -1.5,
-        "rotX": 0,
-        "rotY": 90,
-        "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
-      },
-      "Nickname": "Container #3 (Board Marker)",
-      "Description": "Spaceport 3 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 0.95,
-        "g": 0.7,
-        "b": 0.1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomMesh": {
-        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container.obj",
-        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container_3.png",
-        "NormalURL": "",
-        "ColliderURL": "",
-        "Convex": true,
-        "MaterialIndex": 1,
-        "TypeIndex": 0,
-        "CustomShader": {
-          "SpecularColor": {
-            "r": 1,
-            "g": 1,
-            "b": 1
-          },
-          "SpecularIntensity": 0.15,
-          "SpecularSharpness": 3,
-          "FresnelStrength": 0
-        },
-        "CastShadows": true
-      }
-    },
-    {
-      "GUID": "1002ef",
-      "Name": "Custom_Model",
-      "Transform": {
-        "posX": 39,
-        "posY": 1.2,
-        "posZ": 1.5,
-        "rotX": 0,
-        "rotY": 90,
-        "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
-      },
-      "Nickname": "Container #4 (Board Marker)",
-      "Description": "Spaceport 4 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 0.2,
-        "g": 0.55,
-        "b": 0.3
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomMesh": {
-        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container.obj",
-        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container_4.png",
-        "NormalURL": "",
-        "ColliderURL": "",
-        "Convex": true,
-        "MaterialIndex": 1,
-        "TypeIndex": 0,
-        "CustomShader": {
-          "SpecularColor": {
-            "r": 1,
-            "g": 1,
-            "b": 1
-          },
-          "SpecularIntensity": 0.15,
-          "SpecularSharpness": 3,
-          "FresnelStrength": 0
-        },
-        "CastShadows": true
-      }
-    },
-    {
-      "GUID": "1002f0",
-      "Name": "Custom_Model",
-      "Transform": {
-        "posX": 39,
-        "posY": 1.2,
-        "posZ": 4.5,
-        "rotX": 0,
-        "rotY": 90,
-        "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
-      },
-      "Nickname": "Container #5 (Board Marker)",
-      "Description": "Spaceport 5 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 0.85,
-        "g": 0.45,
-        "b": 0.1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CustomMesh": {
-        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container.obj",
-        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/container_5.png",
-        "NormalURL": "",
-        "ColliderURL": "",
-        "Convex": true,
-        "MaterialIndex": 1,
-        "TypeIndex": 0,
-        "CustomShader": {
-          "SpecularColor": {
-            "r": 1,
-            "g": 1,
-            "b": 1
-          },
-          "SpecularIntensity": 0.15,
-          "SpecularSharpness": 3,
-          "FresnelStrength": 0
-        },
-        "CastShadows": true
-      }
-    },
-    {
       "GUID": "1002f1",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 39,
-        "posY": 1.2,
-        "posZ": 7.5,
+        "posX": 36.8,
+        "posY": 2,
+        "posZ": -2,
         "rotX": 0,
         "rotY": 90,
         "rotZ": 0,
@@ -51185,7 +51185,7 @@
       "GUID": "1002f4",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 24,
+        "posX": 34,
         "posY": 1.02,
         "posZ": 0,
         "rotX": 0,

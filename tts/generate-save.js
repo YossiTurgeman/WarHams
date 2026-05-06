@@ -728,19 +728,19 @@ function makeContainer(num, role, px, py, pz) {
     };
     return cont;
 }
-// The 12 containers split into two functional sets:
-//   • UNLOADING ZONE set (6) — placed loose on the 6 slot outlines
-//     of the Unloading Zone board (see section 17b below). BAC cards
-//     arriving at a spaceport stack face-up under the matching
-//     container.
-//   • BOARD MARKER set (6) — kept off-board in a tight column on
-//     the right side of the table; players grab one and place it on
-//     the matching spaceport hex when a BAC arrives there.
+// The 12 containers form 6 stacked PAIRS on the Unloading Zone
+// board — one Unloading-Zone container at the bottom of each slot
+// (y=1.2) with the matching Board-Marker container dropped on top
+// (y=2.0). Gravity settles the top container cleanly onto the
+// bottom one, so the two sets are visually paired by colour AND
+// co-located. Players lift the top (Board Marker) one off and
+// place it on the matching spaceport hex when a BAC arrives there.
 //
-// Unloading Zone board lives at (UZ_BOARD_X, UZ_BOARD_Z). Slot grid
-// is 3 cols × 2 rows; world slot pitch matches the texture geometry
-// (see UZ board derivation in section 17b).
-const UZ_BOARD_X = 24;
+// Unloading Zone board lives at (UZ_BOARD_X, UZ_BOARD_Z) — moved to
+// sit directly south of the Conspire deck (which is at x=34, z=8).
+// Slot grid is 3 cols × 2 rows; world slot pitch matches the texture
+// geometry (see UZ board derivation in section 17b).
+const UZ_BOARD_X = 34;
 const UZ_BOARD_Z = 0;
 // Slot center pitches derived from the v59 board texture geometry
 // (1000×950 px, 250×350 slots, gaps 30/50, gridTop 110), using the
@@ -758,13 +758,11 @@ for (let i = 1; i <= 6; i++) {
     // Texture-TOP maps to world+Z (away from south camera).
     const px = UZ_BOARD_X + (col - 1) * UZ_COL_PITCH;
     const pz = UZ_BOARD_Z + (0.5 - row) * UZ_ROW_PITCH;
-    objects.push(makeContainer(i, "Unloading Zone", px, 1.5, pz));
-}
-// Board-marker column — out of the way on the far right, between
-// the Conspire deck (x=34, z=+8) and the resource bags (x=44).
-for (let i = 1; i <= 6; i++) {
-    const z = -7.5 + (i - 1) * 3;
-    objects.push(makeContainer(i, "Board Marker", 39, 1.2, z));
+    // Bottom: Unloading Zone container (sits in the slot).
+    objects.push(makeContainer(i, "Unloading Zone", px, 1.2, pz));
+    // Top: matching Board Marker container, dropped slightly higher
+    // so gravity settles it onto its UZ pair.
+    objects.push(makeContainer(i, "Board Marker",   px, 2.0, pz));
 }
 
 // ─── 17. ZONE LABELS (locked, thin, smaller) ────────────────────────
