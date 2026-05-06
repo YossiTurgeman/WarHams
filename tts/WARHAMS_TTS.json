@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778060461,
+  "EpochTime": 1778060963,
   "Date": "2026-05-06",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -11907,9 +11907,9 @@
       "GUID": "1000af",
       "Name": "Die_6",
       "Transform": {
-        "posX": 8,
+        "posX": -46,
         "posY": 2,
-        "posZ": -3,
+        "posZ": 12,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11952,9 +11952,9 @@
       "GUID": "1000b0",
       "Name": "Die_6",
       "Transform": {
-        "posX": 10,
+        "posX": -44,
         "posY": 2,
-        "posZ": -3,
+        "posZ": 12,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -11997,9 +11997,9 @@
       "GUID": "1000b1",
       "Name": "Die_6",
       "Transform": {
-        "posX": 12,
+        "posX": -42,
         "posY": 2,
-        "posZ": -3,
+        "posZ": 12,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,

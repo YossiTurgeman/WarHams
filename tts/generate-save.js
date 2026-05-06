@@ -249,14 +249,19 @@ function buildConspireDeck() {
 objects.push(buildConspireDeck());
 
 // ─── 4. RESOURCE DICE ────────────────────────────────────────────────
+// All three Phase 1 dice live one row above the number-token deck on
+// the LEFT edge (x=-44). The dice and the number tokens are used
+// together: the dice say which numbers produced this round; the
+// number tokens on the hexes say which hexes those numbers refer to.
+// Keeping them adjacent makes Phase 1 self-explanatory.
 [
-    { name: "Resource Die 1", color: { r: 1, g: 1, b: 1 }, x: 8 },
-    { name: "Resource Die 2", color: { r: 1, g: 1, b: 1 }, x: 10 },
-    { name: "Separatist Die", color: { r: 0.5, g: 0.5, b: 0.5 }, x: 12 },
+    { name: "Resource Die 1", color: { r: 1, g: 1, b: 1 }, x: -46 },
+    { name: "Resource Die 2", color: { r: 1, g: 1, b: 1 }, x: -44 },
+    { name: "Separatist Die", color: { r: 0.5, g: 0.5, b: 0.5 }, x: -42 },
 ].forEach(d => {
     objects.push(baseObj("Die_6", d.name,
         d.name.includes("Separatist") ? "Grey — triggers Separatist spawning" : "Resource production",
-        d.x, 2, -3, { color: d.color }));
+        d.x, 2, 12, { color: d.color }));
 });
 
 // ─── 5. COMBAT DICE (7 per player, in their corner) ─────────────────
