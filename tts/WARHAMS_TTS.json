@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778061624,
+  "EpochTime": 1778062696,
   "Date": "2026-05-06",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -51134,9 +51134,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 8,
+        "scaleX": 10,
         "scaleY": 0.05,
-        "scaleZ": 2.2
+        "scaleZ": 1.5
       },
       "Nickname": "PLANET BOUND AREA",
       "Description": "Black mat with 6 card slots. Always keep 6 face-up BAC cards from the Spaceport Deck here; refill immediately whenever a card is taken.",
@@ -51224,9 +51224,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1.1,
+        "scaleX": 1.25,
         "scaleY": 0.05,
-        "scaleZ": 1.6
+        "scaleZ": 0.875
       },
       "Nickname": "PB Slot 1",
       "Description": "Planet Bound Area slot 1 — lay 1 face-up BAC card here.",
@@ -51237,9 +51237,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.18,
-        "g": 0.18,
-        "b": 0.18
+        "r": 0.22,
+        "g": 0.22,
+        "b": 0.22
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -51269,9 +51269,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1.1,
+        "scaleX": 1.25,
         "scaleY": 0.05,
-        "scaleZ": 1.6
+        "scaleZ": 0.875
       },
       "Nickname": "PB Slot 2",
       "Description": "Planet Bound Area slot 2 — lay 1 face-up BAC card here.",
@@ -51282,9 +51282,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.18,
-        "g": 0.18,
-        "b": 0.18
+        "r": 0.22,
+        "g": 0.22,
+        "b": 0.22
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -51314,9 +51314,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1.1,
+        "scaleX": 1.25,
         "scaleY": 0.05,
-        "scaleZ": 1.6
+        "scaleZ": 0.875
       },
       "Nickname": "PB Slot 3",
       "Description": "Planet Bound Area slot 3 — lay 1 face-up BAC card here.",
@@ -51327,9 +51327,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.18,
-        "g": 0.18,
-        "b": 0.18
+        "r": 0.22,
+        "g": 0.22,
+        "b": 0.22
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -51359,9 +51359,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1.1,
+        "scaleX": 1.25,
         "scaleY": 0.05,
-        "scaleZ": 1.6
+        "scaleZ": 0.875
       },
       "Nickname": "PB Slot 4",
       "Description": "Planet Bound Area slot 4 — lay 1 face-up BAC card here.",
@@ -51372,9 +51372,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.18,
-        "g": 0.18,
-        "b": 0.18
+        "r": 0.22,
+        "g": 0.22,
+        "b": 0.22
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -51404,9 +51404,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1.1,
+        "scaleX": 1.25,
         "scaleY": 0.05,
-        "scaleZ": 1.6
+        "scaleZ": 0.875
       },
       "Nickname": "PB Slot 5",
       "Description": "Planet Bound Area slot 5 — lay 1 face-up BAC card here.",
@@ -51417,9 +51417,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.18,
-        "g": 0.18,
-        "b": 0.18
+        "r": 0.22,
+        "g": 0.22,
+        "b": 0.22
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -51449,9 +51449,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1.1,
+        "scaleX": 1.25,
         "scaleY": 0.05,
-        "scaleZ": 1.6
+        "scaleZ": 0.875
       },
       "Nickname": "PB Slot 6",
       "Description": "Planet Bound Area slot 6 — lay 1 face-up BAC card here.",
@@ -51462,9 +51462,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.18,
-        "g": 0.18,
-        "b": 0.18
+        "r": 0.22,
+        "g": 0.22,
+        "b": 0.22
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
