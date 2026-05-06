@@ -21,7 +21,7 @@ const path = require("path");
 const fs = require("fs");
 const { Jimp, loadFont } = require("jimp");
 
-const VERSION = "v58";
+const VERSION = "v59";
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
@@ -91,20 +91,21 @@ function tintNeon(layer, w, h) {
     img.composite(titleLayer, 0, 38);
 
     // ─── 3 × 2 slot grid ──────────────────────────────────────────
-    // Slot pixel size 250×320 — close to standard TTS card aspect
-    // (5:7). Three columns + two gaps fit centered horizontally;
-    // two rows + one gap leave room above for the title and below
-    // for "1"-"6" labels.
+    // Slot pixel size 250×350 — IDENTICAL to the Planet Bound board's
+    // slot pixel dimensions so each slot reads at the exact same
+    // in-world card footprint as that board's slots. Three columns +
+    // two gaps fit centered horizontally; two rows + one gap leave
+    // room above for the title and below for "1"-"6" labels.
     const SLOT_W = 250;
-    const SLOT_H = 320;
+    const SLOT_H = 350;
     const COLS = 3;
     const ROWS = 2;
     const COL_GAP = 30;
-    const ROW_GAP = 80;          // generous so the row labels read
+    const ROW_GAP = 50;          // tightened so the labels still fit
     const gridW = COLS * SLOT_W + (COLS - 1) * COL_GAP;
     const gridH = ROWS * SLOT_H + (ROWS - 1) * ROW_GAP;
     const gridLeft = Math.floor((W - gridW) / 2);
-    const gridTop = 120;          // below title
+    const gridTop = 110;          // below title
     // Stash slot rectangles for both stroke and label passes.
     const slotRects = [];
     for (let r = 0; r < ROWS; r++) {

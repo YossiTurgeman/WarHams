@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v58";
+const CARD_VERSION = "v59";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -742,8 +742,15 @@ function makeContainer(num, role, px, py, pz) {
 // (see UZ board derivation in section 17b).
 const UZ_BOARD_X = 24;
 const UZ_BOARD_Z = 0;
-const UZ_COL_PITCH = 2.8;        // world units between slot centers (X)
-const UZ_ROW_PITCH = 3.6;        // world units between slot centers (Z)
+// Slot center pitches derived from the v58 board texture geometry
+// (1000×950 px, 250×350 slots, gaps 30/50, gridTop 110), using the
+// empirical Custom_Tile X factor ~7.5×/scale-unit (PB deck position
+// iteration) and Z factor ~2×/scale-unit:
+//   W_world ≈ 1.67 × 7.5 = 12.5 ; Z_world ≈ 4.75 × 2 = 9.5
+//   col centers (px 220, 500, 780) → world x_off ≈ ±3.5
+//   row centers (px 285, 685)      → world z_off ≈ +1.9 / -2.1
+const UZ_COL_PITCH = 3.5;        // world units between slot centers (X)
+const UZ_ROW_PITCH = 4.0;        // world units between slot centers (Z)
 for (let i = 1; i <= 6; i++) {
     const col = (i - 1) % 3;     // 0,1,2
     const row = Math.floor((i - 1) / 3); // 0 (top) or 1 (bottom)
