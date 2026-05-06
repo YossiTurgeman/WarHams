@@ -28,7 +28,7 @@ const { Jimp, loadFont } = require("jimp");
 
 // Versioned path for cache-busting (TTS strips ?query strings).
 // Must match the version expected by generate-save.js.
-const VERSION = "v53";
+const VERSION = "v54";
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
@@ -171,11 +171,15 @@ function addCorrugatedSide(side) {
     // Floor (-Y), white.
     addQuad(v000, v100, v101, v001);
     // CEILING (+Y) — paint the digit. Vertices in addQuad order:
-    //   v010 = (x0, y1, z0)  → top-down view: bottom-left  → UV (0,0)
-    //   v011 = (x0, y1, z1)  → top-down view: top-left     → UV (0,1)
-    //   v111 = (x1, y1, z1)  → top-down view: top-right    → UV (1,1)
-    //   v110 = (x1, y1, z0)  → top-down view: bottom-right → UV (1,0)
-    addQuad(v010, v011, v111, v110, UV_BL, UV_TL, UV_TR, UV_BR);
+    //   v010 = (x0, y1, z0)  → top-down view: bottom-left  → UV (1,0)
+    //   v011 = (x0, y1, z1)  → top-down view: top-left     → UV (1,1)
+    //   v111 = (x1, y1, z1)  → top-down view: top-right    → UV (0,1)
+    //   v110 = (x1, y1, z0)  → top-down view: bottom-right → UV (0,0)
+    // U axis is INVERTED relative to world +X so the digit reads
+    // right-way-round when viewed from above (Unity flips V on PNG
+    // import; without this U-flip the digit appears as its mirror
+    // image, e.g. a '3' rendered as 'Ɛ').
+    addQuad(v010, v011, v111, v110, UV_BR, UV_TR, UV_TL, UV_BL);
     // Nose end (-X), flush, white.
     addQuad(v000, v001, v011, v010);
     // DOOR PANEL face (+X, recessed by DOOR_INSET) — paint the digit.
