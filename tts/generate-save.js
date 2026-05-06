@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v59";
+const CARD_VERSION = "v60";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -837,21 +837,20 @@ objects.push(uzBoard);
 // to mark personal access. Sits between the Blue (x=+42, z=-28) and
 // Red (x=-42, z=-28) player corners, on the south edge of the table.
 //
-// 16 slots in a 4-col × 4-row grid (only ~16 of the 20 BAC types are
-// usually unlocked in any one game). Texture is 1200×1700 px;
-// at the empirical Custom_Tile factor ~2× per scale-unit on both
-// axes the in-world board is ~12 × 17 units, with each 250×350-px
-// slot mapping to a 2.5 × 3.5 world card footprint (matching PB and
-// UZ slot sizes exactly):
-//   scaleX = 12 / 2 = 6.0
+// 20 slots in a 5-col × 4-row grid (one slot per BAC type).
+// Texture is 1500×1700 px; at the empirical Custom_Tile factor ~2×
+// per scale-unit on both axes the in-world board is ~15 × 17 units,
+// with each 250×350-px slot mapping to a 2.5 × 3.5 world card
+// footprint (matching PB and UZ slot sizes exactly):
+//   scaleX = 15 / 2 = 7.5
 //   scaleZ = 17 / 2 = 8.5
-// rotY:0 so the title and slot grid read upright from the south
-// (Blue/Red player) side of the table.
+// rotY:180 (per user request) — flips the board so the title and
+// slot grid face the opposite direction.
 const EQUIPMENT_BOARD_URL = `${SOLDIER_BASE}/equipment-display-board.png`;
 const eqBoard = baseObj("Custom_Tile", "Equipment Display",
-    "Shared reference board: 16 slots for face-up BAC cards. When you unlock a new BAC type for the first time, place its card face-up here and drop one of your Control Flags on top to mark permanent access. Multiple flags may share a slot.",
+    "Shared reference board: 20 slots for face-up BAC cards (one per BAC type). When you unlock a new BAC type for the first time, place its card face-up here and drop one of your Control Flags on top to mark permanent access. Multiple flags may share a slot.",
     0, 1.02, -22,
-    { rotY: 0, scaleX: 6.0, scaleY: 0.2, scaleZ: 8.5, color: { r: 1, g: 1, b: 1 }, grid: false });
+    { rotY: 180, scaleX: 7.5, scaleY: 0.2, scaleZ: 8.5, color: { r: 1, g: 1, b: 1 }, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
     ImageSecondaryURL: "",
