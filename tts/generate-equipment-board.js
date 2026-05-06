@@ -4,18 +4,18 @@
  *
  * Big shared reference board placed between the Blue and Red player
  * corners (south edge of the table). Holds up to 20 face-up BAC
- * cards in a 5-col × 4-row grid (one slot for every BAC type).
- * Players drop their Control Flags onto the matching slot when they
- * unlock that BAC type.
+ * cards in a 10-col × 2-row LANDSCAPE strip (one slot for every BAC
+ * type). Players drop their Control Flags onto the matching slot
+ * when they unlock that BAC type.
  *
  * Solid-black background, CYAN outer border, "EQUIPMENT DISPLAY"
  * title in cyan near the top, 20 card-shaped slot outlines (250×350
  * px — IDENTICAL to the Planet Bound and Unloading Zone slot pixel
  * dimensions so all three boards render cards at the same size).
  *
- * Texture: 1500×1700 px (aspect ≈ 0.88:1, slightly portrait). The
+ * Texture: 2900×900 px (aspect ≈ 3.22:1, wide landscape). The
  * matching Custom_Tile scale in generate-save.js is sized so the
- * in-world board is ~15 × 17 units and each slot maps to ~2.5 × 3.5
+ * in-world board is ~29 × 9 units and each slot maps to ~2.5 × 3.5
  * world units (matches PB and UZ card-slot footprint exactly).
  *
  * Usage:   node generate-equipment-board.js
@@ -26,15 +26,15 @@ const path = require("path");
 const fs = require("fs");
 const { Jimp, loadFont } = require("jimp");
 
-const VERSION = "v60";
+const VERSION = "v61";
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
 const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-print", "dist", "fonts");
 
 // ─── Canvas ─────────────────────────────────────────────────────────
-const W = 1500;
-const H = 1700;
+const W = 2900;
+const H = 900;
 const BLACK = 0x000000FF;
 // Bright pure cyan — high contrast against pure black, distinct from
 // the gold (PB) and neon-green (UZ) board palettes.
@@ -91,20 +91,20 @@ function tintCyan(layer, w, h) {
     tintCyan(titleLayer, W, 60);
     img.composite(titleLayer, 0, 50);
 
-    // ─── 5 × 4 slot grid ──────────────────────────────────────────
+    // ─── 10 × 2 slot grid ─────────────────────────────────────────
     // Slot pixel size 250×350 — IDENTICAL to PB and UZ slot pixels
     // so all three boards render cards at the same in-world size.
-    // 5 columns × 4 rows = 20 slots (one per BAC type).
+    // 10 columns × 2 rows = 20 slots (one per BAC type).
     const SLOT_W = 250;
     const SLOT_H = 350;
-    const COLS = 5;
-    const ROWS = 4;
+    const COLS = 10;
+    const ROWS = 2;
     const COL_GAP = 30;
     const ROW_GAP = 40;
     const gridW = COLS * SLOT_W + (COLS - 1) * COL_GAP;
     const gridH = ROWS * SLOT_H + (ROWS - 1) * ROW_GAP;
     const gridLeft = Math.floor((W - gridW) / 2);
-    const gridTop = 140;          // below the title
+    const gridTop = 130;          // below the title
     for (let r = 0; r < ROWS; r++) {
         for (let c = 0; c < COLS; c++) {
             const x1 = gridLeft + c * (SLOT_W + COL_GAP);

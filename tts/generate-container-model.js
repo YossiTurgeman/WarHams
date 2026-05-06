@@ -28,7 +28,7 @@ const { Jimp, loadFont } = require("jimp");
 
 // Versioned path for cache-busting (TTS strips ?query strings).
 // Must match the version expected by generate-save.js.
-const VERSION = "v60";
+const VERSION = "v61";
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 

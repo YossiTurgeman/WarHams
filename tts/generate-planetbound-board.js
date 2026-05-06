@@ -19,7 +19,7 @@ const path = require("path");
 const fs = require("fs");
 const { Jimp, loadFont } = require("jimp");
 
-const VERSION = "v60";
+const VERSION = "v61";
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
