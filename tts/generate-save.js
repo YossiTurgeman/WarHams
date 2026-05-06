@@ -53,6 +53,8 @@ const BARREL_DIFFUSE_URL = `${CARD_BASE}/barrel-texture.png?${CARD_VERSION}`;
 // doesn't actually work — TTS strips the ?query before caching).
 const BUNKER_MESH_URL = `${SOLDIER_BASE}/bunker.obj`;
 const BUNKER_DIFFUSE_URL = `${SOLDIER_BASE}/bunker-texture.png`;
+const CONTAINER_MESH_URL = `${SOLDIER_BASE}/container.obj`;
+const CONTAINER_DIFFUSE_URL = `${SOLDIER_BASE}/container-texture.png`;
 const RESOURCE_DIFFUSE_URL = `${CARD_BASE}/resource-texture.png?${CARD_VERSION}`;
 const LIGHTNING_MESH_URL = `${CARD_BASE}/lightning.obj?${CARD_VERSION}`;
 const WAVE_MESH_URL = `${CARD_BASE}/wave.obj?${CARD_VERSION}`;
@@ -668,9 +670,41 @@ numberDeck.ContainedObjects = numberCards;
 objects.push(numberDeck);
 
 // ─── 16. CARGO CONTAINERS (6) ───────────────────────────────────────
+// ISO-style cargo shipping containers — corrugated long sides, doors
+// on the +X end, steel corner posts and rails. Mesh from
+// generate-container-model.js. Each container uses a different
+// shipping-line colour so they're easy to tell apart on the table.
+const containerColors = [
+    { r: 0.85, g: 0.20, b: 0.18 },   // Maersk-ish red
+    { r: 0.10, g: 0.45, b: 0.75 },   // CMA-blue
+    { r: 0.95, g: 0.70, b: 0.10 },   // Hapag-yellow
+    { r: 0.20, g: 0.55, b: 0.30 },   // Evergreen
+    { r: 0.85, g: 0.45, b: 0.10 },   // Hamburg-orange
+    { r: 0.92, g: 0.92, b: 0.90 },   // bone white
+];
 for (let i = 1; i <= 6; i++) {
-    objects.push(baseObj("BlockSquare", `Container #${i}`, `Spaceport ${i} cargo container.`,
-        4 + (i - 1) * 2.5, 1.2, 5, { scaleX: 0.8, scaleY: 0.8, scaleZ: 0.8, color: { r: 0.35, g: 0.5, b: 0.35 } }));
+    const c = containerColors[i - 1];
+    const cont = baseObj("Custom_Model", `Container #${i}`,
+        `Spaceport ${i} cargo container.`,
+        4 + (i - 1) * 2.5, 1.2, 5,
+        { scaleX: 1.0, scaleY: 1.0, scaleZ: 1.0, color: c });
+    cont.CustomMesh = {
+        MeshURL: CONTAINER_MESH_URL,
+        DiffuseURL: CONTAINER_DIFFUSE_URL,
+        NormalURL: "",
+        ColliderURL: "",
+        Convex: true,
+        MaterialIndex: 1,    // metal-ish
+        TypeIndex: 0,        // generic prop
+        CustomShader: {
+            SpecularColor: { r: 1, g: 1, b: 1 },
+            SpecularIntensity: 0.15,
+            SpecularSharpness: 3,
+            FresnelStrength: 0,
+        },
+        CastShadows: true,
+    };
+    objects.push(cont);
 }
 
 // ─── 17. ZONE LABELS (locked, thin, smaller) ────────────────────────

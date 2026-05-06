@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778049678,
+  "EpochTime": 1778050824,
   "Date": "2026-05-06",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -50301,7 +50301,7 @@
     },
     {
       "GUID": "1002e6",
-      "Name": "BlockSquare",
+      "Name": "Custom_Model",
       "Transform": {
         "posX": 4,
         "posY": 1.2,
@@ -50309,9 +50309,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 0.8,
-        "scaleY": 0.8,
-        "scaleZ": 0.8
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
       },
       "Nickname": "Container #1",
       "Description": "Spaceport 1 cargo container.",
@@ -50322,9 +50322,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.35,
-        "g": 0.5,
-        "b": 0.35
+        "r": 0.85,
+        "g": 0.2,
+        "b": 0.18
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -50342,11 +50342,31 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container-texture.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
     },
     {
       "GUID": "1002e7",
-      "Name": "BlockSquare",
+      "Name": "Custom_Model",
       "Transform": {
         "posX": 6.5,
         "posY": 1.2,
@@ -50354,9 +50374,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 0.8,
-        "scaleY": 0.8,
-        "scaleZ": 0.8
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
       },
       "Nickname": "Container #2",
       "Description": "Spaceport 2 cargo container.",
@@ -50367,9 +50387,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.35,
-        "g": 0.5,
-        "b": 0.35
+        "r": 0.1,
+        "g": 0.45,
+        "b": 0.75
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -50387,11 +50407,31 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container-texture.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
     },
     {
       "GUID": "1002e8",
-      "Name": "BlockSquare",
+      "Name": "Custom_Model",
       "Transform": {
         "posX": 9,
         "posY": 1.2,
@@ -50399,9 +50439,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 0.8,
-        "scaleY": 0.8,
-        "scaleZ": 0.8
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
       },
       "Nickname": "Container #3",
       "Description": "Spaceport 3 cargo container.",
@@ -50412,9 +50452,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.35,
-        "g": 0.5,
-        "b": 0.35
+        "r": 0.95,
+        "g": 0.7,
+        "b": 0.1
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -50432,11 +50472,31 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container-texture.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
     },
     {
       "GUID": "1002e9",
-      "Name": "BlockSquare",
+      "Name": "Custom_Model",
       "Transform": {
         "posX": 11.5,
         "posY": 1.2,
@@ -50444,9 +50504,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 0.8,
-        "scaleY": 0.8,
-        "scaleZ": 0.8
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
       },
       "Nickname": "Container #4",
       "Description": "Spaceport 4 cargo container.",
@@ -50457,9 +50517,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.35,
-        "g": 0.5,
-        "b": 0.35
+        "r": 0.2,
+        "g": 0.55,
+        "b": 0.3
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -50477,11 +50537,31 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container-texture.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
     },
     {
       "GUID": "1002ea",
-      "Name": "BlockSquare",
+      "Name": "Custom_Model",
       "Transform": {
         "posX": 14,
         "posY": 1.2,
@@ -50489,9 +50569,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 0.8,
-        "scaleY": 0.8,
-        "scaleZ": 0.8
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
       },
       "Nickname": "Container #5",
       "Description": "Spaceport 5 cargo container.",
@@ -50502,9 +50582,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.35,
-        "g": 0.5,
-        "b": 0.35
+        "r": 0.85,
+        "g": 0.45,
+        "b": 0.1
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -50522,11 +50602,31 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container-texture.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
     },
     {
       "GUID": "1002eb",
-      "Name": "BlockSquare",
+      "Name": "Custom_Model",
       "Transform": {
         "posX": 16.5,
         "posY": 1.2,
@@ -50534,9 +50634,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 0.8,
-        "scaleY": 0.8,
-        "scaleZ": 0.8
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
       },
       "Nickname": "Container #6",
       "Description": "Spaceport 6 cargo container.",
@@ -50547,9 +50647,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.35,
-        "g": 0.5,
-        "b": 0.35
+        "r": 0.92,
+        "g": 0.92,
+        "b": 0.9
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -50567,7 +50667,27 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container-texture.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
     },
     {
       "GUID": "1002ec",
