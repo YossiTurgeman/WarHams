@@ -766,17 +766,9 @@ for (let i = 1; i <= 6; i++) {
 }
 
 // ─── 17. ZONE LABELS (locked, thin, smaller) ────────────────────────
-// UNLOADING ZONE label removed — replaced by the textured Custom_Tile
-// board in section 17c.
-const zones = [
-    { name: "EQUIPMENT DISPLAY", desc: "First-time equip: place BAC face-up + your flag. Flags permanent.",
-      x: 16, z: -3, sx: 4, sz: 1.5, color: { r: 0.15, g: 0.12, b: 0.08 } },
-];
-zones.forEach(z => {
-    const label = baseObj("BlockRectangle", z.name, z.desc,
-        z.x, 1.02, z.z, { scaleX: z.sx, scaleY: 0.05, scaleZ: z.sz, color: z.color, locked: true });
-    objects.push(label);
-});
+// Both UNLOADING ZONE and EQUIPMENT DISPLAY labels removed — they're
+// now full Custom_Tile boards (section 17c and 17d below). No
+// BlockRectangle zone labels remain.
 
 // ─── 17b. PLANET BOUND AREA BOARD (movable Custom_Tile) ─────────────
 // A single MOVABLE Custom_Tile painted with a black background, a
@@ -838,6 +830,36 @@ uzBoard.CustomImage = {
     CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
 };
 objects.push(uzBoard);
+
+// ─── 17d. EQUIPMENT DISPLAY BOARD (movable Custom_Tile) ─────────────
+// The big shared board where players place face-up BAC cards as they
+// unlock new equipment types, then drop their Control Flags on top
+// to mark personal access. Sits between the Blue (x=+42, z=-28) and
+// Red (x=-42, z=-28) player corners, on the south edge of the table.
+//
+// 16 slots in a 4-col × 4-row grid (only ~16 of the 20 BAC types are
+// usually unlocked in any one game). Texture is 1200×1700 px;
+// at the empirical Custom_Tile factor ~2× per scale-unit on both
+// axes the in-world board is ~12 × 17 units, with each 250×350-px
+// slot mapping to a 2.5 × 3.5 world card footprint (matching PB and
+// UZ slot sizes exactly):
+//   scaleX = 12 / 2 = 6.0
+//   scaleZ = 17 / 2 = 8.5
+// rotY:0 so the title and slot grid read upright from the south
+// (Blue/Red player) side of the table.
+const EQUIPMENT_BOARD_URL = `${SOLDIER_BASE}/equipment-display-board.png`;
+const eqBoard = baseObj("Custom_Tile", "Equipment Display",
+    "Shared reference board: 16 slots for face-up BAC cards. When you unlock a new BAC type for the first time, place its card face-up here and drop one of your Control Flags on top to mark permanent access. Multiple flags may share a slot.",
+    0, 1.02, -22,
+    { rotY: 0, scaleX: 6.0, scaleY: 0.2, scaleZ: 8.5, color: { r: 1, g: 1, b: 1 }, grid: false });
+eqBoard.CustomImage = {
+    ImageURL: EQUIPMENT_BOARD_URL,
+    ImageSecondaryURL: "",
+    ImageScalar: 1,
+    WidthScale: 0,
+    CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
+};
+objects.push(eqBoard);
 
 // ─── 18. REFERENCE BOOKS — Quick Ref + Full User Guide ──────────────
 // Custom_PDF objects render as physical book/folder shapes on the

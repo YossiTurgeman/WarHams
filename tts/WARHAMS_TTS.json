@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778071823,
+  "EpochTime": 1778072357,
   "Date": "2026-05-06",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -51081,51 +51081,6 @@
     },
     {
       "GUID": "1002f2",
-      "Name": "BlockRectangle",
-      "Transform": {
-        "posX": 16,
-        "posY": 1.02,
-        "posZ": -3,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 0,
-        "scaleX": 4,
-        "scaleY": 0.05,
-        "scaleZ": 1.5
-      },
-      "Nickname": "EQUIPMENT DISPLAY",
-      "Description": "First-time equip: place BAC face-up + your flag. Flags permanent.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 0.15,
-        "g": 0.12,
-        "b": 0.08
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "1002f3",
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 0,
@@ -51182,7 +51137,7 @@
       }
     },
     {
-      "GUID": "1002f4",
+      "GUID": "1002f3",
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 34,
@@ -51227,6 +51182,63 @@
       "XmlUI": "",
       "CustomImage": {
         "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/unloading-zone-board.png",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.1,
+          "Stackable": false,
+          "Stretch": true
+        }
+      }
+    },
+    {
+      "GUID": "1002f4",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 0,
+        "posY": 1.02,
+        "posZ": -22,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 6,
+        "scaleY": 0.2,
+        "scaleZ": 8.5
+      },
+      "Nickname": "Equipment Display",
+      "Description": "Shared reference board: 16 slots for face-up BAC cards. When you unlock a new BAC type for the first time, place its card face-up here and drop one of your Control Flags on top to mark permanent access. Multiple flags may share a slot.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v59/equipment-display-board.png",
         "ImageSecondaryURL": "",
         "ImageScalar": 1,
         "WidthScale": 0,
