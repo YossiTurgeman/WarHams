@@ -838,19 +838,22 @@ objects.push(uzBoard);
 // Red (x=-42, z=-28) player corners, on the south edge of the table.
 //
 // 20 slots in a 10-col × 2-row LANDSCAPE strip (one slot per BAC
-// type). Texture is 2900×900 px; at the empirical Custom_Tile factor
-// ~2× per scale-unit on both axes the in-world board is ~29 × 9
-// units, with each 250×350-px slot mapping to a 2.5 × 3.5 world
-// card footprint (matching PB and UZ slot sizes exactly):
-//   scaleX = 29 / 2 = 14.5
-//   scaleZ =  9 / 2 = 4.5
+// type). Texture is 2900×900 px. The first v61 attempt used
+// scaleX:14.5 / scaleZ:4.5 which mathematically should have given
+// a 29×9 world board with 2.5×3.5 slots — but the rendered slots
+// looked SMALLER than the v60 5×4 board's slots. Custom_Tile
+// rendering is apparently non-linear at large scaleX values, so
+// scale the whole board up ~1.45× to bring slot SIZE back to
+// roughly what v60 displayed:
+//   scaleX = 21 (was 14.5)
+//   scaleZ = 6.5 (was 4.5)
 // rotY:180 — flips the board so the title and slot grid face the
 // opposite direction.
 const EQUIPMENT_BOARD_URL = `${SOLDIER_BASE}/equipment-display-board.png`;
 const eqBoard = baseObj("Custom_Tile", "Equipment Display",
     "Shared reference board: 20 slots for face-up BAC cards (one per BAC type). When you unlock a new BAC type for the first time, place its card face-up here and drop one of your Control Flags on top to mark permanent access. Multiple flags may share a slot.",
     0, 1.02, -22,
-    { rotY: 180, scaleX: 14.5, scaleY: 0.2, scaleZ: 4.5, color: { r: 1, g: 1, b: 1 }, grid: false });
+    { rotY: 180, scaleX: 21, scaleY: 0.2, scaleZ: 6.5, color: { r: 1, g: 1, b: 1 }, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
     ImageSecondaryURL: "",
