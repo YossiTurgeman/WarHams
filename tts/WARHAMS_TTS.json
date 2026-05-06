@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778082164,
+  "EpochTime": 1778082414,
   "Date": "2026-05-06",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -51203,9 +51203,9 @@
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 7.25,
+        "scaleX": 2.42,
         "scaleY": 0.2,
-        "scaleZ": 2.25
+        "scaleZ": 0.75
       },
       "Nickname": "Equipment Display",
       "Description": "Shared reference board: 20 slots for face-up BAC cards (one per BAC type). When you unlock a new BAC type for the first time, place its card face-up here and drop one of your Control Flags on top to mark permanent access. Multiple flags may share a slot.",

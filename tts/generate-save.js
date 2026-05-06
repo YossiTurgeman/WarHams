@@ -840,20 +840,24 @@ objects.push(uzBoard);
 // 20 slots in a 10-col × 2-row LANDSCAPE strip (one slot per BAC
 // type). Texture is 2900×900 px.
 //
-// Empirical re-derivation: at the scaleX:14.5 / scaleZ:4.5 used
-// previously the BAC card in a slot only took ~30-40% of the slot
-// area, meaning the actual Custom_Tile factor at those scales is
-// ~4× (not the ~2× the documented spec implies). Halving the scale
-// brings slots down to roughly card-size in TTS:
-//   scaleX = 7.25 (was 14.5 — board ~29 world wide)
-//   scaleZ = 2.25 (was 4.5  — board ~9 world deep)
+// Empirical re-derivation (round 3): at scaleX:7.25 / scaleZ:2.25
+// the BAC card still filled only ~33% of the slot width — slots
+// were ~3× too big. Shrink scale by another 3× so each slot is
+// roughly card-sized (2.5 × 3.5 world, matching PB and UZ slots).
+//
+// The Custom_Tile X factor at landscape-aspect scaleX values is
+// MUCH bigger (~12×?) than the documented 2× — and varies with
+// texture aspect (PB and Equipment use wide-landscape textures and
+// behave very differently than UZ's near-square texture).
+//   scaleX = 2.42 (was 7.25)
+//   scaleZ = 0.75 (was 2.25)
 // rotY:180 — flips the board so the title and slot grid face the
 // opposite direction.
 const EQUIPMENT_BOARD_URL = `${SOLDIER_BASE}/equipment-display-board.png`;
 const eqBoard = baseObj("Custom_Tile", "Equipment Display",
     "Shared reference board: 20 slots for face-up BAC cards (one per BAC type). When you unlock a new BAC type for the first time, place its card face-up here and drop one of your Control Flags on top to mark permanent access. Multiple flags may share a slot.",
     0, 1.02, -22,
-    { rotY: 180, scaleX: 7.25, scaleY: 0.2, scaleZ: 2.25, color: { r: 1, g: 1, b: 1 }, grid: false });
+    { rotY: 180, scaleX: 2.42, scaleY: 0.2, scaleZ: 0.75, color: { r: 1, g: 1, b: 1 }, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
     ImageSecondaryURL: "",
