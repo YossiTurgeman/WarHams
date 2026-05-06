@@ -695,7 +695,9 @@ function makeContainer(num, role, px, py, pz) {
             ? `Marks the Unloading Zone slot for Spaceport ${num}. BAC cards arriving at Spaceport ${num} stack face-up under this container.`
             : `Spaceport ${num} board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.`,
         px, py, pz,
-        { scaleX: 1.0, scaleY: 1.0, scaleZ: 1.0, color: c });
+        // rotY: 90 — turn each container 90° so its long axis points
+        // along Z (toward/away from the camera) rather than along X.
+        { rotY: 90, scaleX: 1.0, scaleY: 1.0, scaleZ: 1.0, color: c });
     cont.CustomMesh = {
         MeshURL: CONTAINER_MESH_URL,
         DiffuseURL: CONTAINER_DIFFUSE_URL,
@@ -720,10 +722,16 @@ function makeContainer(num, role, px, py, pz) {
 // a BAC arrives at that spaceport. Container height is ~0.5 TTS units;
 // we drop the top one in slightly higher so gravity settles it cleanly
 // onto the bottom one.
+//
+// Layout: rotated 90° (long axis along Z), arranged in a 6-stack
+// column at x=39 — sandwiched between the card decks at x=34
+// (BAC z=-8, Conspire z=+8) and the resource bags at x=44
+// (z=-12,-6,0,6). The 6 stacks span z=-7.5..+7.5 in 3-unit steps
+// so the column visually bridges the two existing rows.
 for (let i = 1; i <= 6; i++) {
-    const x = 4 + (i - 1) * 2.5;
-    objects.push(makeContainer(i, "Unloading Zone", x, 1.2, 5));
-    objects.push(makeContainer(i, "Board Marker",   x, 2.0, 5));
+    const z = -7.5 + (i - 1) * 3;
+    objects.push(makeContainer(i, "Unloading Zone", 39, 1.2, z));
+    objects.push(makeContainer(i, "Board Marker",   39, 2.0, z));
 }
 
 // ─── 17. ZONE LABELS (locked, thin, smaller) ────────────────────────
