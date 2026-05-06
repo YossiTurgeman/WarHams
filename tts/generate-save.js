@@ -714,14 +714,16 @@ function makeContainer(num, role, px, py, pz) {
     };
     return cont;
 }
-// Set A — Unloading Zone row (sits above the UNLOADING ZONE label
-// at z=3; cards stack underneath each container).
-// Set B — matching reserve row just behind, at z=8, ready to be
-// placed on spaceport hexes during play.
+// Containers come in stacked pairs — the Board Marker sits ON TOP of
+// the matching Unloading Zone container so the two sets are visually
+// paired by colour AND co-located. Players lift the top one off when
+// a BAC arrives at that spaceport. Container height is ~0.5 TTS units;
+// we drop the top one in slightly higher so gravity settles it cleanly
+// onto the bottom one.
 for (let i = 1; i <= 6; i++) {
     const x = 4 + (i - 1) * 2.5;
     objects.push(makeContainer(i, "Unloading Zone", x, 1.2, 5));
-    objects.push(makeContainer(i, "Board Marker",   x, 1.2, 8));
+    objects.push(makeContainer(i, "Board Marker",   x, 2.0, 5));
 }
 
 // ─── 17. ZONE LABELS (locked, thin, smaller) ────────────────────────
