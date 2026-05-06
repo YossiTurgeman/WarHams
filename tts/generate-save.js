@@ -743,8 +743,6 @@ for (let i = 1; i <= 6; i++) {
 const zones = [
     { name: "UNLOADING ZONE", desc: "BAC cards land here on doubles. 6 slots for Spaceports 1-6.",
       x: 16, z: 3, sx: 5, sz: 1, color: { r: 0.2, g: 0.3, b: 0.2 } },
-    { name: "PLANET BOUND AREA", desc: "Black mat with 6 card slots. Always keep 6 face-up BAC cards from the Spaceport Deck here; refill immediately whenever a card is taken.",
-      x: 16, z: 7, sx: 10, sz: 1.5, color: { r: 0.04, g: 0.04, b: 0.04 } },
     { name: "EQUIPMENT DISPLAY", desc: "First-time equip: place BAC face-up + your flag. Flags permanent.",
       x: 16, z: -3, sx: 4, sz: 1.5, color: { r: 0.15, g: 0.12, b: 0.08 } },
 ];
@@ -754,22 +752,26 @@ zones.forEach(z => {
     objects.push(label);
 });
 
-// 6 card-shaped slot markers on the PLANET BOUND AREA mat. Each
-// slot is sized to match a standard TTS card (2.5 wide x 3.5 long);
-// BlockRectangle's base mesh is roughly 2 x 4 units so scaleX 1.25
-// gives 2.5 wide and scaleZ 0.875 gives 3.5 long. The mat (10 x 6
-// units = scale 10 x 1.5) is comfortably larger than the row.
-// We don't pre-deal cards — players draw and lay them during setup
-// and refill as they're taken.
-for (let i = 0; i < 6; i++) {
-    const slotX = 9.75 + i * 2.5;
-    const slot = baseObj("BlockRectangle", `PB Slot ${i + 1}`,
-        `Planet Bound Area slot ${i + 1} — lay 1 face-up BAC card here.`,
-        slotX, 1.06, 7,
-        { scaleX: 1.25, scaleY: 0.05, scaleZ: 0.875,
-          color: { r: 0.22, g: 0.22, b: 0.22 }, locked: true });
-    objects.push(slot);
-}
+// ─── 17b. PLANET BOUND AREA BOARD (movable Custom_Tile) ─────────────
+// A single MOVABLE Custom_Tile painted with a black background, a
+// gold outer border, "PLANET BOUND AREA" title, and 6 card-shaped
+// gold slot outlines (numbered 1-6). Players lay face-up BACs into
+// the slots during setup and refill them as cards are taken.
+// Texture aspect (3:1) matches the tile scale (18 x 6 TTS units) so
+// the slot outlines stay card-shaped.
+const PLANETBOUND_BOARD_URL = `${SOLDIER_BASE}/planetbound-board.png`;
+const pbBoard = baseObj("Custom_Tile", "Planet Bound Area",
+    "Movable board — always keep 6 face-up BAC cards in the marked slots. Refill from the Spaceport Deck whenever a card is taken.",
+    16, 1.02, 7,
+    { scaleX: 18, scaleY: 0.2, scaleZ: 6, color: { r: 1, g: 1, b: 1 }, grid: false });
+pbBoard.CustomImage = {
+    ImageURL: PLANETBOUND_BOARD_URL,
+    ImageSecondaryURL: "",
+    ImageScalar: 1,
+    WidthScale: 0,
+    CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
+};
+objects.push(pbBoard);
 
 // ─── 18. REFERENCE BOOKS — Quick Ref + Full User Guide ──────────────
 // Custom_PDF objects render as physical book/folder shapes on the
