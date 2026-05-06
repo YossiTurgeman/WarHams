@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778061135,
+  "EpochTime": 1778061624,
   "Date": "2026-05-06",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -118,7 +118,7 @@
         "scaleZ": 1
       },
       "Nickname": "Spaceport Deck",
-      "Description": "Basic Armament Cards — 94 cards remaining (6 dealt to Planet Bound Area).\nRefills Planet Bound Area slots as cards are taken.",
+      "Description": "Basic Armament Cards — 100 cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -148,6 +148,12 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "DeckIDs": [
+        10000,
+        10100,
+        10200,
+        10300,
+        10400,
+        10500,
         10600,
         10700,
         10800,
@@ -1147,6 +1153,354 @@
       },
       "SidewaysCard": false,
       "ContainedObjects": [
+        {
+          "GUID": "100001",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "S.A.P Chest",
+          "Description": "[Armor] Slot: Chest\nCost: 1 Oil, 1 Industry\nDP: 1\n\nThis soldier gets +1 to its defense die.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 10000,
+          "CustomDeck": {
+            "100": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_a_p_chest.png?v54",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v54",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "100002",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.1,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "S.A.P Chest",
+          "Description": "[Armor] Slot: Chest\nCost: 1 Oil, 1 Industry\nDP: 1\n\nThis soldier gets +1 to its defense die.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 10100,
+          "CustomDeck": {
+            "101": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_a_p_chest.png?v54",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v54",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "100003",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.2,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "S.A.P Chest",
+          "Description": "[Armor] Slot: Chest\nCost: 1 Oil, 1 Industry\nDP: 1\n\nThis soldier gets +1 to its defense die.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 10200,
+          "CustomDeck": {
+            "102": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_a_p_chest.png?v54",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v54",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "100004",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.30000000000000004,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "S.A.P Chest",
+          "Description": "[Armor] Slot: Chest\nCost: 1 Oil, 1 Industry\nDP: 1\n\nThis soldier gets +1 to its defense die.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 10300,
+          "CustomDeck": {
+            "103": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_a_p_chest.png?v54",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v54",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "100005",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.4,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "S.A.P Chest",
+          "Description": "[Armor] Slot: Chest\nCost: 1 Oil, 1 Industry\nDP: 1\n\nThis soldier gets +1 to its defense die.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 10400,
+          "CustomDeck": {
+            "104": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_a_p_chest.png?v54",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v54",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "100006",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.5,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "S.A.P Helmet",
+          "Description": "[Armor] Slot: Head\nCost: 1 Oil, 1 Industry\nDP: 1\n\nThis soldier gets +1 to its defense die.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 10500,
+          "CustomDeck": {
+            "105": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_a_p_helmet.png?v54",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v54",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
         {
           "GUID": "100007",
           "Name": "CardCustom",
@@ -6600,354 +6954,6 @@
           "SidewaysCard": false
         }
       ]
-    },
-    {
-      "GUID": "100001",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": 9.75,
-        "posY": 1.5,
-        "posZ": 7,
-        "rotX": 0,
-        "rotY": 180,
-        "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
-      },
-      "Nickname": "S.A.P Chest",
-      "Description": "[Armor] Slot: Chest\nCost: 1 Oil, 1 Industry\nDP: 1\n\nThis soldier gets +1 to its defense die.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": true,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CardID": 10000,
-      "CustomDeck": {
-        "100": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_a_p_chest.png?v54",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v54",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "SidewaysCard": false
-    },
-    {
-      "GUID": "100002",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": 12.25,
-        "posY": 1.5,
-        "posZ": 7,
-        "rotX": 0,
-        "rotY": 180,
-        "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
-      },
-      "Nickname": "S.A.P Chest",
-      "Description": "[Armor] Slot: Chest\nCost: 1 Oil, 1 Industry\nDP: 1\n\nThis soldier gets +1 to its defense die.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": true,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CardID": 10100,
-      "CustomDeck": {
-        "101": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_a_p_chest.png?v54",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v54",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "SidewaysCard": false
-    },
-    {
-      "GUID": "100003",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": 14.75,
-        "posY": 1.5,
-        "posZ": 7,
-        "rotX": 0,
-        "rotY": 180,
-        "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
-      },
-      "Nickname": "S.A.P Chest",
-      "Description": "[Armor] Slot: Chest\nCost: 1 Oil, 1 Industry\nDP: 1\n\nThis soldier gets +1 to its defense die.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": true,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CardID": 10200,
-      "CustomDeck": {
-        "102": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_a_p_chest.png?v54",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v54",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "SidewaysCard": false
-    },
-    {
-      "GUID": "100004",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": 17.25,
-        "posY": 1.5,
-        "posZ": 7,
-        "rotX": 0,
-        "rotY": 180,
-        "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
-      },
-      "Nickname": "S.A.P Chest",
-      "Description": "[Armor] Slot: Chest\nCost: 1 Oil, 1 Industry\nDP: 1\n\nThis soldier gets +1 to its defense die.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": true,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CardID": 10300,
-      "CustomDeck": {
-        "103": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_a_p_chest.png?v54",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v54",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "SidewaysCard": false
-    },
-    {
-      "GUID": "100005",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": 19.75,
-        "posY": 1.5,
-        "posZ": 7,
-        "rotX": 0,
-        "rotY": 180,
-        "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
-      },
-      "Nickname": "S.A.P Chest",
-      "Description": "[Armor] Slot: Chest\nCost: 1 Oil, 1 Industry\nDP: 1\n\nThis soldier gets +1 to its defense die.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": true,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CardID": 10400,
-      "CustomDeck": {
-        "104": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_a_p_chest.png?v54",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v54",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "SidewaysCard": false
-    },
-    {
-      "GUID": "100006",
-      "Name": "CardCustom",
-      "Transform": {
-        "posX": 22.25,
-        "posY": 1.5,
-        "posZ": 7,
-        "rotX": 0,
-        "rotY": 180,
-        "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
-      },
-      "Nickname": "S.A.P Helmet",
-      "Description": "[Armor] Slot: Head\nCost: 1 Oil, 1 Industry\nDP: 1\n\nThis soldier gets +1 to its defense die.",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 1,
-        "g": 1,
-        "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": true,
-      "Hands": true,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "CardID": 10500,
-      "CustomDeck": {
-        "105": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_a_p_helmet.png?v54",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v54",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        }
-      },
-      "SidewaysCard": false
     },
     {
       "GUID": "1000ae",
@@ -51128,12 +51134,12 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 7,
+        "scaleX": 8,
         "scaleY": 0.05,
-        "scaleZ": 2
+        "scaleZ": 2.2
       },
       "Nickname": "PLANET BOUND AREA",
-      "Description": "6 face-up BAC cards. Refill immediately whenever a card is taken (from the Spaceport Deck).",
+      "Description": "Black mat with 6 card slots. Always keep 6 face-up BAC cards from the Spaceport Deck here; refill immediately whenever a card is taken.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -51141,9 +51147,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.2,
-        "g": 0.15,
-        "b": 0.1
+        "r": 0.04,
+        "g": 0.04,
+        "b": 0.04
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -51210,6 +51216,276 @@
     },
     {
       "GUID": "1002f5",
+      "Name": "BlockRectangle",
+      "Transform": {
+        "posX": 9.75,
+        "posY": 1.06,
+        "posZ": 7,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1.1,
+        "scaleY": 0.05,
+        "scaleZ": 1.6
+      },
+      "Nickname": "PB Slot 1",
+      "Description": "Planet Bound Area slot 1 — lay 1 face-up BAC card here.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.18,
+        "g": 0.18,
+        "b": 0.18
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "1002f6",
+      "Name": "BlockRectangle",
+      "Transform": {
+        "posX": 12.25,
+        "posY": 1.06,
+        "posZ": 7,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1.1,
+        "scaleY": 0.05,
+        "scaleZ": 1.6
+      },
+      "Nickname": "PB Slot 2",
+      "Description": "Planet Bound Area slot 2 — lay 1 face-up BAC card here.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.18,
+        "g": 0.18,
+        "b": 0.18
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "1002f7",
+      "Name": "BlockRectangle",
+      "Transform": {
+        "posX": 14.75,
+        "posY": 1.06,
+        "posZ": 7,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1.1,
+        "scaleY": 0.05,
+        "scaleZ": 1.6
+      },
+      "Nickname": "PB Slot 3",
+      "Description": "Planet Bound Area slot 3 — lay 1 face-up BAC card here.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.18,
+        "g": 0.18,
+        "b": 0.18
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "1002f8",
+      "Name": "BlockRectangle",
+      "Transform": {
+        "posX": 17.25,
+        "posY": 1.06,
+        "posZ": 7,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1.1,
+        "scaleY": 0.05,
+        "scaleZ": 1.6
+      },
+      "Nickname": "PB Slot 4",
+      "Description": "Planet Bound Area slot 4 — lay 1 face-up BAC card here.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.18,
+        "g": 0.18,
+        "b": 0.18
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "1002f9",
+      "Name": "BlockRectangle",
+      "Transform": {
+        "posX": 19.75,
+        "posY": 1.06,
+        "posZ": 7,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1.1,
+        "scaleY": 0.05,
+        "scaleZ": 1.6
+      },
+      "Nickname": "PB Slot 5",
+      "Description": "Planet Bound Area slot 5 — lay 1 face-up BAC card here.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.18,
+        "g": 0.18,
+        "b": 0.18
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "1002fa",
+      "Name": "BlockRectangle",
+      "Transform": {
+        "posX": 22.25,
+        "posY": 1.06,
+        "posZ": 7,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1.1,
+        "scaleY": 0.05,
+        "scaleZ": 1.6
+      },
+      "Nickname": "PB Slot 6",
+      "Description": "Planet Bound Area slot 6 — lay 1 face-up BAC card here.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.18,
+        "g": 0.18,
+        "b": 0.18
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "1002fb",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -60,
@@ -51260,7 +51536,7 @@
       }
     },
     {
-      "GUID": "1002f6",
+      "GUID": "1002fc",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -60,

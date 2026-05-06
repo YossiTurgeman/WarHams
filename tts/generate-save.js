@@ -178,9 +178,9 @@ function cornerSpot(idx, tc, side) {
     };
 }
 
-// ─── 1. BAC DECK (100 cards) + Planet Bound Area display (6 face-up) ─
+// ─── 1. BAC DECK (100 cards) ─────────────────────────────────────────
 let nextDeckDefId = 100;  // global counter so BAC and Conspire don't collide
-function buildBACDeckAndPlanetBound() {
+function buildBACDeck() {
     const cards = [];
     const allCustomDecks = {};
     gameData.basic_armament_cards.forEach(bac => {
@@ -201,28 +201,8 @@ function buildBACDeckAndPlanetBound() {
             cards.push(card);
         }
     });
-
-    // Per rulebook setup step: deal 6 cards face-up in a row beside
-    // the Spaceport Deck — this is the Planet Bound Area. We pull the
-    // first 6 cards off the pool and re-position them face-up at
-    // x=10..22.5 (centered on the PLANET BOUND AREA zone label at
-    // x=16, z=7). Default card rotation = face-up; the deck below
-    // uses rotZ:180 to spawn face-down, so leaving rotZ unset here
-    // keeps these 6 face-up.
-    const planetBound = cards.splice(0, 6);
-    planetBound.forEach((card, i) => {
-        // Center the 6-card row on the PLANET BOUND AREA label at
-        // x=16 (cards 2.5 wide → row spans x=9.75..22.25).
-        card.Transform.posX = 9.75 + i * 2.5;
-        card.Transform.posY = 1.5;
-        card.Transform.posZ = 7;
-        card.Transform.rotX = 0;
-        card.Transform.rotY = 180;   // BAC text reads from south of table
-        card.Transform.rotZ = 0;     // face-up
-    });
-
     const deck = baseObj("Deck", "Spaceport Deck",
-        `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards - 6} cards remaining (6 dealt to Planet Bound Area).\nRefills Planet Bound Area slots as cards are taken.`,
+        `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
         34, 1.5, -8, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
@@ -230,9 +210,9 @@ function buildBACDeckAndPlanetBound() {
     deck.Hands = true;
     deck.SidewaysCard = false;
     deck.ContainedObjects = cards;
-    return [deck, ...planetBound];
+    return deck;
 }
-buildBACDeckAndPlanetBound().forEach(o => objects.push(o));
+objects.push(buildBACDeck());
 
 // ─── 3. CONSPIRE DECK (72 cards) ────────────────────────────────────
 function buildConspireDeck() {
@@ -763,8 +743,8 @@ for (let i = 1; i <= 6; i++) {
 const zones = [
     { name: "UNLOADING ZONE", desc: "BAC cards land here on doubles. 6 slots for Spaceports 1-6.",
       x: 16, z: 3, sx: 5, sz: 1, color: { r: 0.2, g: 0.3, b: 0.2 } },
-    { name: "PLANET BOUND AREA", desc: "6 face-up BAC cards. Refill immediately whenever a card is taken (from the Spaceport Deck).",
-      x: 16, z: 7, sx: 7, sz: 2, color: { r: 0.2, g: 0.15, b: 0.1 } },
+    { name: "PLANET BOUND AREA", desc: "Black mat with 6 card slots. Always keep 6 face-up BAC cards from the Spaceport Deck here; refill immediately whenever a card is taken.",
+      x: 16, z: 7, sx: 8, sz: 2.2, color: { r: 0.04, g: 0.04, b: 0.04 } },
     { name: "EQUIPMENT DISPLAY", desc: "First-time equip: place BAC face-up + your flag. Flags permanent.",
       x: 16, z: -3, sx: 4, sz: 1.5, color: { r: 0.15, g: 0.12, b: 0.08 } },
 ];
@@ -773,6 +753,21 @@ zones.forEach(z => {
         z.x, 1.02, z.z, { scaleX: z.sx, scaleY: 0.05, scaleZ: z.sz, color: z.color, locked: true });
     objects.push(label);
 });
+
+// 6 card-shaped slot markers on the PLANET BOUND AREA mat. Slightly
+// lighter dark-grey rectangles sized just under a TTS card footprint,
+// placed in a row to show players where to lay each face-up BAC.
+// We don't pre-deal the cards themselves — players draw and lay them
+// during setup and refill as they're taken.
+for (let i = 0; i < 6; i++) {
+    const slotX = 9.75 + i * 2.5;
+    const slot = baseObj("BlockRectangle", `PB Slot ${i + 1}`,
+        `Planet Bound Area slot ${i + 1} — lay 1 face-up BAC card here.`,
+        slotX, 1.06, 7,
+        { scaleX: 1.1, scaleY: 0.05, scaleZ: 1.6,
+          color: { r: 0.18, g: 0.18, b: 0.18 }, locked: true });
+    objects.push(slot);
+}
 
 // ─── 18. REFERENCE BOOKS — Quick Ref + Full User Guide ──────────────
 // Custom_PDF objects render as physical book/folder shapes on the
