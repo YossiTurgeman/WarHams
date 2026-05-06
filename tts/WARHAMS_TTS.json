@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778082746,
+  "EpochTime": 1778083088,
   "Date": "2026-05-06",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -109,7 +109,7 @@
       "Transform": {
         "posX": -9.5,
         "posY": 1.5,
-        "posZ": 28,
+        "posZ": 33.5,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 180,
@@ -51085,7 +51085,7 @@
       "Transform": {
         "posX": 0,
         "posY": 1.02,
-        "posZ": 28,
+        "posZ": 33.5,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
@@ -51199,7 +51199,7 @@
       "Transform": {
         "posX": 0,
         "posY": 1.02,
-        "posZ": -25,
+        "posZ": -31,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,

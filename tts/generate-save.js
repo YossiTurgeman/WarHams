@@ -210,7 +210,7 @@ function buildBACDeck() {
     //   x = -9.5  → small nudge right of -10.12 (slot pitch ≈ 2.5 world units)
     const deck = baseObj("Deck", "Spaceport Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
-        -9.5, 1.5, 28, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        -9.5, 1.5, 33.5, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -789,7 +789,10 @@ const PLANETBOUND_BOARD_URL = `${SOLDIER_BASE}/planetbound-board.png`;
 // the south-facing camera.
 const pbBoard = baseObj("Custom_Tile", "Planet Bound Area",
     "Movable board with 7 slots: leftmost slot is for the Spaceport Deck, the other 6 hold the face-up Planet Bound BAC cards. Always keep 6 face-up; refill immediately whenever one is taken.",
-    0, 1.02, 28,
+    // Position: board world depth ~5 (scaleZ:2.5 × Z factor 2). Top
+    // edge target = 2 units below the table's north edge (z=+38), so
+    // top of board at z=36, center at z=36 - 5/2 = 33.5.
+    0, 1.02, 33.5,
     { rotY: 180, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
 pbBoard.CustomImage = {
     ImageURL: PLANETBOUND_BOARD_URL,
@@ -854,7 +857,10 @@ objects.push(uzBoard);
 const EQUIPMENT_BOARD_URL = `${SOLDIER_BASE}/equipment-display-board.png`;
 const eqBoard = baseObj("Custom_Tile", "Equipment Display",
     "Shared reference board: 20 slots for face-up BAC cards (one per BAC type). When you unlock a new BAC type for the first time, place its card face-up here and drop one of your Control Flags on top to mark permanent access. Multiple flags may share a slot.",
-    0, 1.02, -25,
+    // Position: board world depth ~10 (scaleZ:5 × Z factor 2). Bottom
+    // edge target = 2 units above the table's south edge (z=-38), so
+    // bottom of board at z=-36, center at z=-36 + 10/2 = -31.
+    0, 1.02, -31,
     { rotY: 180, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
