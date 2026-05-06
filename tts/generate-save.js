@@ -669,24 +669,32 @@ numberDeck.SidewaysCard = false;
 numberDeck.ContainedObjects = numberCards;
 objects.push(numberDeck);
 
-// ─── 16. CARGO CONTAINERS (6) ───────────────────────────────────────
-// ISO-style cargo shipping containers — corrugated long sides, doors
-// on the +X end, steel corner posts and rails. Mesh from
-// generate-container-model.js. Each container uses a different
-// shipping-line colour so they're easy to tell apart on the table.
+// ─── 16. CARGO CONTAINERS (12 = 2 matching sets of 1-6) ─────────────
+// Per rulebook: 12 numbered containers, 2*(1-6). One set marks the
+// Unloading Zone slots (BAC cards stack underneath); the matching
+// second set is placed on the corresponding spaceport hex on the
+// board when BACs arrive there. Both sets share the same colour
+// per number so the pairing is obvious at a glance.
+//
+// ISO-style cargo shipping container mesh from
+// generate-container-model.js — corrugated long sides, doors on the
+// +X end, steel corner posts and rails. Each number gets its own
+// shipping-line colour.
 const containerColors = [
-    { r: 0.85, g: 0.20, b: 0.18 },   // Maersk-ish red
-    { r: 0.10, g: 0.45, b: 0.75 },   // CMA-blue
-    { r: 0.95, g: 0.70, b: 0.10 },   // Hapag-yellow
-    { r: 0.20, g: 0.55, b: 0.30 },   // Evergreen
-    { r: 0.85, g: 0.45, b: 0.10 },   // Hamburg-orange
-    { r: 0.92, g: 0.92, b: 0.90 },   // bone white
+    { r: 0.85, g: 0.20, b: 0.18 },   // 1 — Maersk-ish red
+    { r: 0.10, g: 0.45, b: 0.75 },   // 2 — CMA-blue
+    { r: 0.95, g: 0.70, b: 0.10 },   // 3 — Hapag-yellow
+    { r: 0.20, g: 0.55, b: 0.30 },   // 4 — Evergreen
+    { r: 0.85, g: 0.45, b: 0.10 },   // 5 — Hamburg-orange
+    { r: 0.92, g: 0.92, b: 0.90 },   // 6 — bone white
 ];
-for (let i = 1; i <= 6; i++) {
-    const c = containerColors[i - 1];
-    const cont = baseObj("Custom_Model", `Container #${i}`,
-        `Spaceport ${i} cargo container.`,
-        4 + (i - 1) * 2.5, 1.2, 5,
+function makeContainer(num, role, px, py, pz) {
+    const c = containerColors[num - 1];
+    const cont = baseObj("Custom_Model", `Container #${num} (${role})`,
+        role === "Unloading Zone"
+            ? `Marks the Unloading Zone slot for Spaceport ${num}. BAC cards arriving at Spaceport ${num} stack face-up under this container.`
+            : `Spaceport ${num} board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.`,
+        px, py, pz,
         { scaleX: 1.0, scaleY: 1.0, scaleZ: 1.0, color: c });
     cont.CustomMesh = {
         MeshURL: CONTAINER_MESH_URL,
@@ -704,7 +712,16 @@ for (let i = 1; i <= 6; i++) {
         },
         CastShadows: true,
     };
-    objects.push(cont);
+    return cont;
+}
+// Set A — Unloading Zone row (sits above the UNLOADING ZONE label
+// at z=3; cards stack underneath each container).
+// Set B — matching reserve row just behind, at z=8, ready to be
+// placed on spaceport hexes during play.
+for (let i = 1; i <= 6; i++) {
+    const x = 4 + (i - 1) * 2.5;
+    objects.push(makeContainer(i, "Unloading Zone", x, 1.2, 5));
+    objects.push(makeContainer(i, "Board Marker",   x, 1.2, 8));
 }
 
 // ─── 17. ZONE LABELS (locked, thin, smaller) ────────────────────────

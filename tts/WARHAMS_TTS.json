@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778050824,
+  "EpochTime": 1778056199,
   "Date": "2026-05-06",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -50313,8 +50313,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Container #1",
-      "Description": "Spaceport 1 cargo container.",
+      "Nickname": "Container #1 (Unloading Zone)",
+      "Description": "Marks the Unloading Zone slot for Spaceport 1. BAC cards arriving at Spaceport 1 stack face-up under this container.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -50368,6 +50368,71 @@
       "GUID": "1002e7",
       "Name": "Custom_Model",
       "Transform": {
+        "posX": 4,
+        "posY": 1.2,
+        "posZ": 8,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Container #1 (Board Marker)",
+      "Description": "Spaceport 1 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.85,
+        "g": 0.2,
+        "b": 0.18
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container-texture.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "1002e8",
+      "Name": "Custom_Model",
+      "Transform": {
         "posX": 6.5,
         "posY": 1.2,
         "posZ": 5,
@@ -50378,8 +50443,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Container #2",
-      "Description": "Spaceport 2 cargo container.",
+      "Nickname": "Container #2 (Unloading Zone)",
+      "Description": "Marks the Unloading Zone slot for Spaceport 2. BAC cards arriving at Spaceport 2 stack face-up under this container.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -50430,7 +50495,72 @@
       }
     },
     {
-      "GUID": "1002e8",
+      "GUID": "1002e9",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 6.5,
+        "posY": 1.2,
+        "posZ": 8,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Container #2 (Board Marker)",
+      "Description": "Spaceport 2 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.1,
+        "g": 0.45,
+        "b": 0.75
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container-texture.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "1002ea",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 9,
@@ -50443,8 +50573,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Container #3",
-      "Description": "Spaceport 3 cargo container.",
+      "Nickname": "Container #3 (Unloading Zone)",
+      "Description": "Marks the Unloading Zone slot for Spaceport 3. BAC cards arriving at Spaceport 3 stack face-up under this container.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -50495,7 +50625,72 @@
       }
     },
     {
-      "GUID": "1002e9",
+      "GUID": "1002eb",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 9,
+        "posY": 1.2,
+        "posZ": 8,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Container #3 (Board Marker)",
+      "Description": "Spaceport 3 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.95,
+        "g": 0.7,
+        "b": 0.1
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container-texture.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "1002ec",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 11.5,
@@ -50508,8 +50703,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Container #4",
-      "Description": "Spaceport 4 cargo container.",
+      "Nickname": "Container #4 (Unloading Zone)",
+      "Description": "Marks the Unloading Zone slot for Spaceport 4. BAC cards arriving at Spaceport 4 stack face-up under this container.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -50560,7 +50755,72 @@
       }
     },
     {
-      "GUID": "1002ea",
+      "GUID": "1002ed",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 11.5,
+        "posY": 1.2,
+        "posZ": 8,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Container #4 (Board Marker)",
+      "Description": "Spaceport 4 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.2,
+        "g": 0.55,
+        "b": 0.3
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container-texture.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "1002ee",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 14,
@@ -50573,8 +50833,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Container #5",
-      "Description": "Spaceport 5 cargo container.",
+      "Nickname": "Container #5 (Unloading Zone)",
+      "Description": "Marks the Unloading Zone slot for Spaceport 5. BAC cards arriving at Spaceport 5 stack face-up under this container.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -50625,7 +50885,72 @@
       }
     },
     {
-      "GUID": "1002eb",
+      "GUID": "1002ef",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 14,
+        "posY": 1.2,
+        "posZ": 8,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Container #5 (Board Marker)",
+      "Description": "Spaceport 5 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.85,
+        "g": 0.45,
+        "b": 0.1
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container-texture.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "1002f0",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 16.5,
@@ -50638,8 +50963,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Container #6",
-      "Description": "Spaceport 6 cargo container.",
+      "Nickname": "Container #6 (Unloading Zone)",
+      "Description": "Marks the Unloading Zone slot for Spaceport 6. BAC cards arriving at Spaceport 6 stack face-up under this container.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -50690,7 +51015,72 @@
       }
     },
     {
-      "GUID": "1002ec",
+      "GUID": "1002f1",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 16.5,
+        "posY": 1.2,
+        "posZ": 8,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Container #6 (Board Marker)",
+      "Description": "Spaceport 6 board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.92,
+        "g": 0.92,
+        "b": 0.9
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v52/container-texture.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.15,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "1002f2",
       "Name": "BlockRectangle",
       "Transform": {
         "posX": 16,
@@ -50735,7 +51125,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1002ed",
+      "GUID": "1002f3",
       "Name": "BlockRectangle",
       "Transform": {
         "posX": 16,
@@ -50780,7 +51170,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1002ee",
+      "GUID": "1002f4",
       "Name": "BlockRectangle",
       "Transform": {
         "posX": 16,
@@ -50825,7 +51215,7 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1002ef",
+      "GUID": "1002f5",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -60,
@@ -50876,7 +51266,7 @@
       }
     },
     {
-      "GUID": "1002f0",
+      "GUID": "1002f6",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -60,
