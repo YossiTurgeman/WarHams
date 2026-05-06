@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778066671,
+  "EpochTime": 1778066751,
   "Date": "2026-05-06",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -107,7 +107,7 @@
       "GUID": "100065",
       "Name": "Deck",
       "Transform": {
-        "posX": -11.37,
+        "posX": -9.5,
         "posY": 1.5,
         "posZ": 28,
         "rotX": 0,
