@@ -896,35 +896,43 @@ planetFrame.CustomImage = {
 };
 // objects.push(planetFrame);   // ← HIDDEN per user request
 
-// ─── 17e1. PLANET FRAME PIECES (5 interlocking puzzle wedges) ───────
-// Five movable Custom_Tile pieces forming a circular cardboard
-// border around the radius-4 hex cluster (R=3.5, centred at z=2.5).
-// Single shared wedge texture (planet-frame-piece.png, 4000×1000 px,
-// = 40×10 world) with a TAB on the LEFT radial edge and a NOTCH on
-// the RIGHT — adjacent pieces interlock jigsaw-style.
+// ─── 17e1. PLANET FRAME PIECES (6 interlocking trapezoid pieces) ────
+// Six movable Custom_Tile pieces forming the planet boundary —
+// trapezoidal cardboard segments matching the hex cluster's outer
+// hexagon (NOT a smooth circle). Atmosphere-blue per user request.
 //
-//   Frame inner radius : 28 world  (just outside hex extent ~27.75)
-//   Frame outer radius : 32 world  (frame width = 4)
-//   Tile centre offset from planet centre = (R_OUTER + R_INNER·cos36°) / 2
-//                                         ≈ 27.33 world
-//
-// rotY uses the same convention as our other boards (180° = wedge
-// faces the camera-correct outward direction for piece 0).
-const FRAME_PIECE_URL = `${SOLDIER_BASE}/planet-frame-piece.png`;
-const FRAME_TILE_OFFSET = (32 + 28 * Math.cos(36 * Math.PI / 180)) / 2; // ≈ 27.33
-const FRAME_PLANET_CX = 0;     // must match the hex cluster's PLANET_CX
-const FRAME_PLANET_CZ = 2.5;   // must match the hex cluster's PLANET_CZ
-for (let i = 0; i < 5; i++) {
-    const theta = i * 72 * Math.PI / 180;   // CW from north
-    const px = FRAME_PLANET_CX + FRAME_TILE_OFFSET * Math.sin(theta);
-    const pz = FRAME_PLANET_CZ + FRAME_TILE_OFFSET * Math.cos(theta);
+// Geometry (cluster: radius-4 flat-top hexes, R=3.5, centred at z=2.5):
+//   Cluster outer hexagon = pointy-top, circumradius 27.34 world,
+//     side length 27.34 (= circumradius), apothem 23.67.
+//   Frame trapezoid:
+//     – inner side (touching cluster) = 27.34 world
+//     – outer side                    = 32 world
+//     – radial width                  = 4 world
+//   Texture: planet-frame-segment.png (3600×500 px = 36×5 world)
+//     – atmosphere-blue trapezoid
+//     – LEFT slanted edge: jigsaw mushroom TAB extending OUT
+//     – RIGHT slanted edge: matching mushroom NOTCH cut INTO body
+//     – 5 large white letter badges (a..e) along the inner edge
+const FRAME_PIECE_URL = `${SOLDIER_BASE}/planet-frame-segment.png`;
+const FRAME_PLANET_CX = 0;      // must match hex cluster PLANET_CX
+const FRAME_PLANET_CZ = 2.5;    // must match hex cluster PLANET_CZ
+const APOTHEM   = 27.34 * Math.cos(Math.PI / 6);   // 23.67
+const TILE_OFF  = APOTHEM + 4 / 2;                 // 25.67 (centre of 4-wide frame)
+for (let i = 0; i < 6; i++) {
+    // Side i midpoint at math angle 60·i degrees (CCW from east).
+    const theta = (60 * i) * Math.PI / 180;
+    const px = FRAME_PLANET_CX + TILE_OFF * Math.cos(theta);
+    const pz = FRAME_PLANET_CZ + TILE_OFF * Math.sin(theta);
+    // rotY: rotate tile so its texture-top (outward) faces away from
+    // cluster centre. (Empirical guess; flip sign if pieces face wrong.)
+    const rotY = 90 - 60 * i;
     const piece = baseObj("Custom_Tile", `Planet Frame Piece ${i + 1}`,
-        "1 of 5 interlocking cardboard puzzle pieces forming the Planet Frame border around the 61 hex tiles.",
+        "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue cardboard, hex-aligned).",
         px, 1.00, pz,
-        { rotY: 180 + i * 72,
-          scaleX: 4000 * 3.17 / 1900,   // ≈ 6.67 (40 world wide)
+        { rotY,
+          scaleX: 3600 * 3.17 / 1900,   // ≈ 6.01 (36 world wide)
           scaleY: 0.2,
-          scaleZ: 1000 * 2.5 / 500,     // = 5.0 (10 world deep)
+          scaleZ:  500 * 2.5 / 500,     // = 2.5 (5 world deep)
           color: { r: 1, g: 1, b: 1 }, grid: false });
     piece.CustomImage = {
         ImageURL: FRAME_PIECE_URL,
