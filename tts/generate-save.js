@@ -896,6 +896,46 @@ planetFrame.CustomImage = {
 };
 // objects.push(planetFrame);   // ← HIDDEN per user request
 
+// ─── 17e1. PLANET FRAME PIECES (5 interlocking puzzle wedges) ───────
+// Five movable Custom_Tile pieces forming a circular cardboard
+// border around the radius-4 hex cluster (R=3.5, centred at z=2.5).
+// Single shared wedge texture (planet-frame-piece.png, 4000×1000 px,
+// = 40×10 world) with a TAB on the LEFT radial edge and a NOTCH on
+// the RIGHT — adjacent pieces interlock jigsaw-style.
+//
+//   Frame inner radius : 28 world  (just outside hex extent ~27.75)
+//   Frame outer radius : 32 world  (frame width = 4)
+//   Tile centre offset from planet centre = (R_OUTER + R_INNER·cos36°) / 2
+//                                         ≈ 27.33 world
+//
+// rotY uses the same convention as our other boards (180° = wedge
+// faces the camera-correct outward direction for piece 0).
+const FRAME_PIECE_URL = `${SOLDIER_BASE}/planet-frame-piece.png`;
+const FRAME_TILE_OFFSET = (32 + 28 * Math.cos(36 * Math.PI / 180)) / 2; // ≈ 27.33
+const FRAME_PLANET_CX = 0;     // must match the hex cluster's PLANET_CX
+const FRAME_PLANET_CZ = 2.5;   // must match the hex cluster's PLANET_CZ
+for (let i = 0; i < 5; i++) {
+    const theta = i * 72 * Math.PI / 180;   // CW from north
+    const px = FRAME_PLANET_CX + FRAME_TILE_OFFSET * Math.sin(theta);
+    const pz = FRAME_PLANET_CZ + FRAME_TILE_OFFSET * Math.cos(theta);
+    const piece = baseObj("Custom_Tile", `Planet Frame Piece ${i + 1}`,
+        "1 of 5 interlocking cardboard puzzle pieces forming the Planet Frame border around the 61 hex tiles.",
+        px, 1.00, pz,
+        { rotY: 180 + i * 72,
+          scaleX: 4000 * 3.17 / 1900,   // ≈ 6.67 (40 world wide)
+          scaleY: 0.2,
+          scaleZ: 1000 * 2.5 / 500,     // = 5.0 (10 world deep)
+          color: { r: 1, g: 1, b: 1 }, grid: false });
+    piece.CustomImage = {
+        ImageURL: FRAME_PIECE_URL,
+        ImageSecondaryURL: "",
+        ImageScalar: 1,
+        WidthScale: 0,
+        CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
+    };
+    objects.push(piece);
+}
+
 // ─── 17e. PLANET HEX TILES (61 hex tiles = the planet surface) ──────
 // Per rulebook §"Hex Tiles (61 total)":
 //   3 Oil Rig (black border)        3 Power Plant (yellow)
