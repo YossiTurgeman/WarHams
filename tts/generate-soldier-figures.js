@@ -132,7 +132,7 @@ async function buildTexture(color, squadLetter, soldierNum) {
 // Bumping VERSION forces TTS to fetch from a brand-new URL path
 // (TTS strips ?query strings, so the older cache-bust technique
 // no longer works for these assets).
-const VERSION = "v64";
+const VERSION = "v65";
 (async () => {
     const outDir = path.join(__dirname, VERSION);
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });

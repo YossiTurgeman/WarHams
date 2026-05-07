@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v64";
+const CARD_VERSION = "v65";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -870,6 +870,31 @@ eqBoard.CustomImage = {
     CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
 };
 objects.push(eqBoard);
+
+// ─── 17e0. PLANET FRAME (locked decorative ring around the hexes) ───
+// Per rulebook §"Planet Frame": "Circular board edge made of 5
+// interlocking cardboard puzzle pieces that snap together to form
+// the planet boundary. All 61 Hex tiles fill the entire interior."
+// Implemented as a single LOCKED Custom_Tile with a transparent
+// center; the 5 puzzle-piece divisions and connection-point letters
+// (a..l) are drawn into the texture by tts/generate-planet-frame.js.
+//
+// Sized to ring the radius-4 hex-of-hexes (outer extent ~12 world).
+// Texture 3000×3000 px at PB px/world ratio → scaleX = scaleZ = 5.0.
+const PLANET_FRAME_URL = `${SOLDIER_BASE}/planet-frame.png`;
+const planetFrame = baseObj("Custom_Tile", "Planet Frame",
+    "Circular boundary of the planet — 5 interlocking puzzle pieces (cardboard ring). 61 Hex Tiles fill the interior. Locked.",
+    0, 1.00, 0,
+    { rotY: 0, scaleX: 5.0, scaleY: 0.2, scaleZ: 5.0,
+      color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
+planetFrame.CustomImage = {
+    ImageURL: PLANET_FRAME_URL,
+    ImageSecondaryURL: "",
+    ImageScalar: 1,
+    WidthScale: 0,
+    CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
+};
+objects.push(planetFrame);
 
 // ─── 17e. PLANET HEX TILES (61 hex tiles = the planet surface) ──────
 // Per rulebook §"Hex Tiles (61 total)":

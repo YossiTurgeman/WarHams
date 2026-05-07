@@ -20,7 +20,7 @@ const fs = require("fs");
 const path = require("path");
 
 // Versioned output dir matches DAMAGE_PEG_BASE in generate-save.js.
-const VERSION = "v64";
+const VERSION = "v65";
 const OUT = path.join(__dirname, VERSION);
 if (!fs.existsSync(OUT)) fs.mkdirSync(OUT, { recursive: true });
 
