@@ -27,7 +27,7 @@ const { Jimp } = require("jimp");
 // as a brand-new URL (TTS strips ?query strings, so path-based busting
 // is the only reliable cache-buster). Must match SOLDIER_BASE in
 // generate-save.js.
-const VERSION = "v63";
+const VERSION = "v64";
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 

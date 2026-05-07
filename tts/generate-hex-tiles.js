@@ -26,7 +26,7 @@ const path = require("path");
 const fs = require("fs");
 const { Jimp, loadFont } = require("jimp");
 
-const VERSION = "v63";
+const VERSION = "v64";
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
@@ -57,12 +57,14 @@ const SPACEPORT_BG = rgba(60, 50, 80);
 const ICON_GOLD = rgba(220, 180, 70);
 
 // ─── Hex geometry ───────────────────────────────────────────────────
-// Pointy-top hex centered at (CX,CY) with circumradius HEX_R.
-// Vertex angles: 90, 150, 210, 270, 330, 30 deg (i.e. 90 + 60k).
+// FLAT-TOP hex centered at (CX,CY) with circumradius HEX_R, matching
+// TTS Custom_Tile Type=1 (which cuts a flat-top hexagon — flat edge
+// at top/bottom, point at left/right). Vertex angles: 0, 60, 120,
+// 180, 240, 300 deg (i.e. 60·k).
 function hexVertices(r) {
     const verts = [];
     for (let i = 0; i < 6; i++) {
-        const a = (Math.PI / 180) * (90 + 60 * i);
+        const a = (Math.PI / 180) * (60 * i);
         verts.push([CX + r * Math.cos(a), CY - r * Math.sin(a)]);
     }
     return verts;

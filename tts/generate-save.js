@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v63";
+const CARD_VERSION = "v64";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -910,20 +910,21 @@ for (let q = -4; q <= 4; q++)
         if (Math.abs(q + r) <= 4) HEX_COORDS.push([q, r]);
 if (HEX_COORDS.length !== 61) throw new Error("hex coord count: " + HEX_COORDS.length);
 
-// Pointy-top axial → world. Pitches chosen so neighboring hexes
-// touch edge-to-edge for the chosen TTS Custom_Tile scale.
+// FLAT-TOP axial → world. TTS Custom_Tile Type=1 cuts a flat-top
+// hex (flat edge at top/bottom, point at left/right). Pitches chosen
+// so neighboring hexes touch edge-to-edge for the chosen scale.
 // (User may iterate HEX_SCALE / pitches if hexes overlap or gap.)
 const HEX_SCALE   = 1.5;
 const HEX_R_WORLD = 1.5;
-const PITCH_X = Math.sqrt(3) * HEX_R_WORLD;
-const PITCH_Z = 1.5 * HEX_R_WORLD;
+const PITCH_X = 1.5 * HEX_R_WORLD;
+const PITCH_Z = Math.sqrt(3) * HEX_R_WORLD;
 const PLANET_CX = 0, PLANET_CZ = 0;
 
 for (let i = 0; i < 61; i++) {
     const [q, r] = HEX_COORDS[i];
     const tile = HEX_MANIFEST[i];
-    const x = PLANET_CX + PITCH_X * (q + r / 2);
-    const z = PLANET_CZ + PITCH_Z * r;
+    const x = PLANET_CX + PITCH_X * q;
+    const z = PLANET_CZ + PITCH_Z * (r + q / 2);
     const hex = baseObj("Custom_Tile", tile.label, `Hex tile — ${tile.kind}.`,
         x, 1.02, z,
         { rotY: 0, scaleX: HEX_SCALE, scaleY: 0.2, scaleZ: HEX_SCALE,
