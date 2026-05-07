@@ -923,12 +923,13 @@ for (let i = 0; i < 6; i++) {
     const theta = (60 * i) * Math.PI / 180;
     const px = FRAME_PLANET_CX + TILE_OFF * Math.cos(theta);
     const pz = FRAME_PLANET_CZ + TILE_OFF * Math.sin(theta);
-    // rotY: at rotY=0 the wide tile's long axis is along world +X.
-    // For piece 0 at east of cluster, we want long axis along world
-    // ±Z (tangential to the hex side). That requires rotY = 90.
-    // For piece i at math angle 60·i, tangential direction is at
-    // 60·i + 90 from east, so rotY = 90 + 60·i (CCW-positive Unity).
-    const rotY = 90 + 60 * i;
+    // rotY: empirically, TTS Custom_Tile at rotY=0 has its LONG axis
+    // along world +Z (north), even though scaleX is the larger of the
+    // two dimensions. (Texture maps texture-X → tile-Z direction.)
+    // For piece 0 at east, tangential = ±Z = rotY 0.
+    // Piece i at math angle 60·i needs long axis at 60·i CCW from
+    // +Z, so rotY = 60·i (CCW-positive Unity).
+    const rotY = 60 * i;
     const piece = baseObj("Custom_Tile", `Planet Frame Piece ${i + 1}`,
         "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue, hex-aligned).",
         px, 1.00, pz,
