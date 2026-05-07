@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778141056,
+  "EpochTime": 1778141372,
   "Date": "2026-05-07",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -51258,14 +51258,14 @@
         "posY": 1,
         "posZ": 2.5,
         "rotX": 0,
-        "rotY": 90,
+        "rotY": 0,
         "rotZ": 0,
-        "scaleX": 6.0063157894736845,
+        "scaleX": 5.005263157894737,
         "scaleY": 0.2,
-        "scaleZ": 2.5
+        "scaleZ": 2
       },
       "Nickname": "Planet Frame Piece 1",
-      "Description": "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue cardboard, hex-aligned).",
+      "Description": "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue, hex-aligned).",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -51295,7 +51295,7 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v65/planet-frame-segment.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v65/planet-frame-flat.png",
         "ImageSecondaryURL": "",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -51315,14 +51315,14 @@
         "posY": 1,
         "posZ": 24.737050807568878,
         "rotX": 0,
-        "rotY": 30,
+        "rotY": -60,
         "rotZ": 0,
-        "scaleX": 6.0063157894736845,
+        "scaleX": 5.005263157894737,
         "scaleY": 0.2,
-        "scaleZ": 2.5
+        "scaleZ": 2
       },
       "Nickname": "Planet Frame Piece 2",
-      "Description": "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue cardboard, hex-aligned).",
+      "Description": "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue, hex-aligned).",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -51352,7 +51352,7 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v65/planet-frame-segment.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v65/planet-frame-flat.png",
         "ImageSecondaryURL": "",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -51372,14 +51372,14 @@
         "posY": 1,
         "posZ": 24.73705080756888,
         "rotX": 0,
-        "rotY": -30,
+        "rotY": -120,
         "rotZ": 0,
-        "scaleX": 6.0063157894736845,
+        "scaleX": 5.005263157894737,
         "scaleY": 0.2,
-        "scaleZ": 2.5
+        "scaleZ": 2
       },
       "Nickname": "Planet Frame Piece 3",
-      "Description": "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue cardboard, hex-aligned).",
+      "Description": "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue, hex-aligned).",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -51409,7 +51409,7 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v65/planet-frame-segment.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v65/planet-frame-flat.png",
         "ImageSecondaryURL": "",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -51429,14 +51429,14 @@
         "posY": 1,
         "posZ": 2.500000000000003,
         "rotX": 0,
-        "rotY": -90,
+        "rotY": -180,
         "rotZ": 0,
-        "scaleX": 6.0063157894736845,
+        "scaleX": 5.005263157894737,
         "scaleY": 0.2,
-        "scaleZ": 2.5
+        "scaleZ": 2
       },
       "Nickname": "Planet Frame Piece 4",
-      "Description": "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue cardboard, hex-aligned).",
+      "Description": "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue, hex-aligned).",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -51466,7 +51466,7 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v65/planet-frame-segment.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v65/planet-frame-flat.png",
         "ImageSecondaryURL": "",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -51486,14 +51486,14 @@
         "posY": 1,
         "posZ": -19.737050807568874,
         "rotX": 0,
-        "rotY": -150,
+        "rotY": -240,
         "rotZ": 0,
-        "scaleX": 6.0063157894736845,
+        "scaleX": 5.005263157894737,
         "scaleY": 0.2,
-        "scaleZ": 2.5
+        "scaleZ": 2
       },
       "Nickname": "Planet Frame Piece 5",
-      "Description": "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue cardboard, hex-aligned).",
+      "Description": "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue, hex-aligned).",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -51523,7 +51523,7 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v65/planet-frame-segment.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v65/planet-frame-flat.png",
         "ImageSecondaryURL": "",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -51543,14 +51543,14 @@
         "posY": 1,
         "posZ": -19.737050807568878,
         "rotX": 0,
-        "rotY": -210,
+        "rotY": -300,
         "rotZ": 0,
-        "scaleX": 6.0063157894736845,
+        "scaleX": 5.005263157894737,
         "scaleY": 0.2,
-        "scaleZ": 2.5
+        "scaleZ": 2
       },
       "Nickname": "Planet Frame Piece 6",
-      "Description": "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue cardboard, hex-aligned).",
+      "Description": "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue, hex-aligned).",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -51580,7 +51580,7 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v65/planet-frame-segment.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v65/planet-frame-flat.png",
         "ImageSecondaryURL": "",
         "ImageScalar": 1,
         "WidthScale": 0,

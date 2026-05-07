@@ -913,7 +913,7 @@ planetFrame.CustomImage = {
 //     – LEFT slanted edge: jigsaw mushroom TAB extending OUT
 //     – RIGHT slanted edge: matching mushroom NOTCH cut INTO body
 //     – 5 large white letter badges (a..e) along the inner edge
-const FRAME_PIECE_URL = `${SOLDIER_BASE}/planet-frame-segment.png`;
+const FRAME_PIECE_URL = `${SOLDIER_BASE}/planet-frame-flat.png`;
 const FRAME_PLANET_CX = 0;      // must match hex cluster PLANET_CX
 const FRAME_PLANET_CZ = 2.5;    // must match hex cluster PLANET_CZ
 const APOTHEM   = 27.34 * Math.cos(Math.PI / 6);   // 23.67
@@ -923,16 +923,16 @@ for (let i = 0; i < 6; i++) {
     const theta = (60 * i) * Math.PI / 180;
     const px = FRAME_PLANET_CX + TILE_OFF * Math.cos(theta);
     const pz = FRAME_PLANET_CZ + TILE_OFF * Math.sin(theta);
-    // rotY: rotate tile so its texture-top (outward) faces away from
-    // cluster centre. (Empirical guess; flip sign if pieces face wrong.)
-    const rotY = 90 - 60 * i;
+    // rotY: previous attempt (90 − 60·i) rendered RADIAL (star pattern).
+    // Subtract 90° to make pieces TANGENTIAL (parallel to hex side).
+    const rotY = -60 * i;
     const piece = baseObj("Custom_Tile", `Planet Frame Piece ${i + 1}`,
-        "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue cardboard, hex-aligned).",
+        "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue, hex-aligned).",
         px, 1.00, pz,
         { rotY,
-          scaleX: 3600 * 3.17 / 1900,   // ≈ 6.01 (36 world wide)
+          scaleX: 3000 * 3.17 / 1900,   // = 5.0 (30 world wide)
           scaleY: 0.2,
-          scaleZ:  500 * 2.5 / 500,     // = 2.5 (5 world deep)
+          scaleZ:  400 * 2.5 / 500,     // = 2.0 (4 world deep)
           color: { r: 1, g: 1, b: 1 }, grid: false });
     piece.CustomImage = {
         ImageURL: FRAME_PIECE_URL,
