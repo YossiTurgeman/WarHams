@@ -943,11 +943,16 @@ if (HEX_COORDS.length !== 61) throw new Error("hex coord count: " + HEX_COORDS.l
 // Hex back face: every tile shows the same Earth image
 // (hex_back_earth.png) on its underside, so flipped tiles all look
 // like a planet from orbit (black space + blue/green Earth).
-const HEX_SCALE   = 4.5;   // 3× the original 1.5
-const HEX_R_WORLD = 4.5;
+// HEX_SCALE chosen so the cluster's z extent fits between the Planet
+// Bound board (south edge ≈ z=31) and the Equipment Display (north
+// edge ≈ z=-26) with ~1 unit ("inch") margin on each side.
+//   z extent = R * (4√3 + √3/2) = R * 7.794 each side
+//   55 / (2*7.794) = 3.53  →  pick 3.5 and offset center to z=2.5.
+const HEX_SCALE   = 3.5;
+const HEX_R_WORLD = 3.5;
 const PITCH_X = 1.5 * HEX_R_WORLD;
 const PITCH_Z = Math.sqrt(3) * HEX_R_WORLD;
-const PLANET_CX = 0, PLANET_CZ = 0;
+const PLANET_CX = 0, PLANET_CZ = 2.5;
 const HEX_BACK_URL = `${SOLDIER_BASE}/hex_back_earth.png`;
 
 for (let i = 0; i < 61; i++) {
