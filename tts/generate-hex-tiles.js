@@ -345,6 +345,53 @@ async function makeSpaceport(n) {
     await img.write(path.join(outDir, `hex_spaceport_${n}.png`));
 }
 
+// Earth back texture — used for the BACK face of every hex tile.
+// Black background with a stylized Earth (blue oceans, green
+// continent blobs).
+async function makeEarthBack() {
+    const img = new Jimp({ width: SIZE, height: SIZE, color: rgba(8, 8, 16) });
+    // Faint star field
+    for (let i = 0; i < 600; i++) {
+        const x = Math.random() * SIZE, y = Math.random() * SIZE;
+        const b = 120 + (Math.random() * 135) | 0;
+        setPx(img, x, y, rgba(b, b, b));
+    }
+    // Earth ocean disk
+    fillCircle(img, CX, CY, 200, rgba(20, 80, 160));
+    // Highlight (sun-lit limb on the right)
+    for (let y = -200; y <= 200; y++) {
+        for (let x = -200; x <= 200; x++) {
+            if (x * x + y * y > 200 * 200) continue;
+            const lit = (x + 200) / 400; // 0 left, 1 right
+            const r = 20 + 30 * lit;
+            const g = 80 + 60 * lit;
+            const b = 160 + 60 * lit;
+            setPx(img, CX + x, CY + y, rgba(r | 0, g | 0, b | 0));
+        }
+    }
+    // Continent blobs (green)
+    function blob(cx, cy, r) {
+        for (let i = 0; i < 12; i++) {
+            const a = (i / 12) * Math.PI * 2;
+            const rr = r * (0.6 + Math.random() * 0.5);
+            const x = cx + rr * Math.cos(a), y = cy + rr * Math.sin(a);
+            // only paint if inside earth disk
+            if ((x - CX) * (x - CX) + (y - CY) * (y - CY) > 198 * 198) continue;
+            fillCircle(img, x, y, 18 + Math.random() * 14, rgba(50, 130, 60));
+        }
+    }
+    blob(CX - 70, CY - 50, 50);   // "Africa-ish"
+    blob(CX + 40, CY - 80, 45);   // "Asia-ish"
+    blob(CX - 90, CY + 60, 40);   // "Americas-ish"
+    blob(CX + 70, CY + 70, 35);   // "Australia-ish"
+    // Polar caps
+    fillCircle(img, CX, CY - 180, 28, rgba(220, 230, 240));
+    fillCircle(img, CX, CY + 180, 22, rgba(220, 230, 240));
+    // Atmosphere glow (thin blue ring)
+    strokeCircle(img, CX, CY, 208, 6, rgba(120, 180, 255, 180));
+    await img.write(path.join(outDir, "hex_back_earth.png"));
+}
+
 (async () => {
     await makeTerrain();
     await makeOil();
@@ -354,5 +401,6 @@ async function makeSpaceport(n) {
     await makeCity();
     for (const n of [2, 4, 6]) await makeSeparatist(n);
     for (const n of [1, 2, 3, 4, 5, 6]) await makeSpaceport(n);
+    await makeEarthBack();
     console.log(`✅ Hex tile textures written to ${outDir}/hex_*.png (${VERSION})`);
 })();

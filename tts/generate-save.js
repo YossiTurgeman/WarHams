@@ -894,7 +894,7 @@ planetFrame.CustomImage = {
     WidthScale: 0,
     CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
 };
-objects.push(planetFrame);
+// objects.push(planetFrame);   // ← HIDDEN per user request
 
 // ─── 17e. PLANET HEX TILES (61 hex tiles = the planet surface) ──────
 // Per rulebook §"Hex Tiles (61 total)":
@@ -939,11 +939,16 @@ if (HEX_COORDS.length !== 61) throw new Error("hex coord count: " + HEX_COORDS.l
 // hex (flat edge at top/bottom, point at left/right). Pitches chosen
 // so neighboring hexes touch edge-to-edge for the chosen scale.
 // (User may iterate HEX_SCALE / pitches if hexes overlap or gap.)
-const HEX_SCALE   = 1.5;
-const HEX_R_WORLD = 1.5;
+//
+// Hex back face: every tile shows the same Earth image
+// (hex_back_earth.png) on its underside, so flipped tiles all look
+// like a planet from orbit (black space + blue/green Earth).
+const HEX_SCALE   = 4.5;   // 3× the original 1.5
+const HEX_R_WORLD = 4.5;
 const PITCH_X = 1.5 * HEX_R_WORLD;
 const PITCH_Z = Math.sqrt(3) * HEX_R_WORLD;
 const PLANET_CX = 0, PLANET_CZ = 0;
+const HEX_BACK_URL = `${SOLDIER_BASE}/hex_back_earth.png`;
 
 for (let i = 0; i < 61; i++) {
     const [q, r] = HEX_COORDS[i];
@@ -952,11 +957,11 @@ for (let i = 0; i < 61; i++) {
     const z = PLANET_CZ + PITCH_Z * (r + q / 2);
     const hex = baseObj("Custom_Tile", tile.label, `Hex tile — ${tile.kind}.`,
         x, 1.02, z,
-        { rotY: 0, scaleX: HEX_SCALE, scaleY: 0.2, scaleZ: HEX_SCALE,
+        { rotY: 180, scaleX: HEX_SCALE, scaleY: 0.2, scaleZ: HEX_SCALE,
           color: { r: 1, g: 1, b: 1 }, grid: false });
     hex.CustomImage = {
         ImageURL: tile.url,
-        ImageSecondaryURL: "",
+        ImageSecondaryURL: HEX_BACK_URL,
         ImageScalar: 1,
         WidthScale: 0,
         CustomTile: { Type: 1, Thickness: 0.1, Stackable: false, Stretch: true },
