@@ -1,26 +1,23 @@
 #!/usr/bin/env node
 /**
- * W.A.R H.A.M.S — Planet Frame Piece Texture Generator
+ * W.A.R H.A.M.S — Planet Frame Bar Texture Generator
  *
- * One shared texture (planet-frame-flat.png) used for ALL 6 Planet
- * Frame pieces.  Atmosphere-blue solid rectangle (no PNG alpha — TTS
- * Custom_Tile renders transparent pixels as opaque BLACK, so we
- * avoid alpha entirely and PAINT the puzzle look instead).
+ * One shared texture (planet-frame-flat.png) used for ALL 4 Planet
+ * Frame bars.  The 4 bars cross in an "X" pinwheel forming a diamond
+ * cavity around the 61-hex planet cluster.
  *
- *   Dimensions: 3000 × 400 px  (= 30 × 4 world @ 100 px/world,
- *               using PB px/world ratio for scale calibration)
+ * Each bar is a long blue capsule with:
+ *   - a bulbous, rounded HANDLE on the left  (wider than the body)
+ *   - a slightly tapered, rounded TAIL on the right
+ *   - 4 large white circle markers labelled a, b, c, d along the body
+ *     (a closest to handle, d closest to tail)
  *
- * Decorations (all opaque):
- *   - Solid atmosphere-blue body fill
- *   - Decorative jigsaw "cut" line painted on LEFT edge (mushroom
- *     tab outline) and RIGHT edge (matching notch outline)
- *   - 5 LARGE white letter badges (a–e) along the long INNER edge
- *     for movement-wrap markers
- *   - Dark border outline
+ * The TTS Custom_Tile is rectangular and TTS renders transparent
+ * pixels as opaque BLACK.  We embrace that: the corners outside the
+ * painted capsule shape are filled with deep "space black" so the
+ * tile reads as a free-floating bar against the table.
  *
- * Each piece is placed tangent to one side of the hex cluster's
- * outer hexagon (cluster has 6 sides, R=3.5 flat-top hexes radius-4
- * → outer-hex side = 27.34 world).
+ *   Texture:  7500 × 400 px  (= 75 × 4 world @ 100 px/world)
  *
  * Usage:   node generate-planet-frame-pieces.js
  * Outputs: tts/v<VERSION>/planet-frame-flat.png
@@ -30,25 +27,25 @@ const path = require("path");
 const fs = require("fs");
 const { Jimp, loadFont } = require("jimp");
 
-const VERSION = "v65";
+const VERSION = "v66";
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
 const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-print", "dist", "fonts");
 
 // ─── Canvas (100 px per world unit) ─────────────────────────────────
-const W = 3000;   // 30 world (slightly wider than hex side 27.34)
-const H = 400;    //  4 world (frame width)
+const W = 7500;   // 75 world long
+const H = 400;    //  4 world wide
 
 // ─── Color palette ──────────────────────────────────────────────────
 function rgba(r, g, b, a = 255) {
     return (((r & 0xff) << 24) | ((g & 0xff) << 16) | ((b & 0xff) << 8) | (a & 0xff)) >>> 0;
 }
-const ATMO        = rgba( 70, 130, 200);
-const ATMO_DARK   = rgba( 30,  60, 110);
-const ATMO_LIGHT  = rgba(140, 190, 230);
+const SPACE       = rgba(  6,  10,  20);   // background "space" (reads as near-black)
+const ATMO        = rgba( 70, 130, 200);   // bar body blue
+const ATMO_DARK   = rgba( 25,  55, 100);   // outline / shadow
+const ATMO_LIGHT  = rgba(140, 190, 230);   // highlight
 const WHITE       = rgba(245, 248, 252);
-const BLACK       = rgba( 18,  22,  30);
 
 // ─── Pixel helpers ──────────────────────────────────────────────────
 function setPx(img, x, y, color) {
@@ -76,66 +73,69 @@ function strokeCircle(img, cx, cy, r, t, color) {
         }
 }
 
-// ─── Build the piece ────────────────────────────────────────────────
+// ─── Build the bar ──────────────────────────────────────────────────
 async function build() {
-    const img = new Jimp({ width: W, height: H, color: ATMO });
+    // Background = "space"
+    const img = new Jimp({ width: W, height: H, color: SPACE });
 
-    // Inner-edge highlight band (lighter blue strip along bottom = inner edge).
-    fillRect(img, 0, H - 70, W, H, rgba(95, 155, 215));
-    // Outer-edge shadow (darker blue strip along top = outer edge).
-    fillRect(img, 0, 0, W, 30, ATMO_DARK);
-    // Border outline (dark)
-    const BORDER = 6;
-    fillRect(img, 0, 0, W, BORDER, ATMO_DARK);                 // top
-    fillRect(img, 0, H - BORDER, W, H - 1, ATMO_DARK);         // bottom
-    fillRect(img, 0, 0, BORDER, H, ATMO_DARK);                 // left
-    fillRect(img, W - BORDER, 0, W - 1, H, ATMO_DARK);         // right
+    const cy = H / 2;                          // 200
 
-    // ── Decorative jigsaw "TAB" painted on LEFT edge ────────────────
-    // Mushroom shape painted in slightly lighter blue (suggests a
-    // protruding tab without actually changing tile geometry).
-    const tabCx = 100;             // tab head centre x
-    const tabCy = H / 2;
-    const TAB_HEAD_R = 90;
-    const NECK_HALF = 50;
-    const NECK_LEN  = 70;
-    // Neck (light blue) + head (light blue) drawn ON the body.
-    fillRect(img, tabCx + NECK_LEN, tabCy - NECK_HALF, tabCx + NECK_LEN + 100, tabCy + NECK_HALF, ATMO_LIGHT);
-    fillCircle(img, tabCx, tabCy, TAB_HEAD_R, ATMO_LIGHT);
-    // Outline the tab shape with a dark line
-    strokeCircle(img, tabCx, tabCy, TAB_HEAD_R, 4, ATMO_DARK);
-    // Tab base outline
-    fillRect(img, tabCx + NECK_LEN - 2, tabCy - NECK_HALF, tabCx + NECK_LEN + 2, tabCy + NECK_HALF, ATMO_DARK);
+    // Geometry of the painted capsule
+    const HANDLE_CX     = 280;                 // centre of handle bulge
+    const HANDLE_R      = 190;                 // bulbous radius (wider than body)
+    const BODY_HALF_H   = 130;                 // half-thickness of straight body
+    const BODY_LEFT     = HANDLE_CX;           // body starts under handle centre
+    const TAIL_TAPER_PX = 1300;                // length over which the tail tapers
+    const BODY_RIGHT    = W - 100 - TAIL_TAPER_PX;  // body straight-section end
+    const TAIL_END      = W - 100;             // tip of tail
+    const TAIL_HALF_H   = 60;                  // half-thickness at tail tip
 
-    // ── Decorative jigsaw "NOTCH" painted on RIGHT edge ─────────────
-    const notchCx = W - 100;
-    const notchCy = H / 2;
-    // Notch shown as a darker inset (suggests material removed).
-    fillCircle(img, notchCx, notchCy, TAB_HEAD_R, ATMO_DARK);
-    fillRect(img, notchCx - NECK_LEN - 100, notchCy - NECK_HALF, notchCx - NECK_LEN, notchCy + NECK_HALF, ATMO_DARK);
-    // Inner of notch slightly lighter to read as recessed
-    fillCircle(img, notchCx, notchCy, TAB_HEAD_R - 8, rgba(50, 90, 140));
+    // 1) Body rectangle (blue)
+    fillRect(img, BODY_LEFT, cy - BODY_HALF_H, BODY_RIGHT, cy + BODY_HALF_H, ATMO);
 
-    // ── 5 LARGE letter badges along the INNER edge (bottom) ─────────
+    // 2) Handle bulge (blue circle, wider than body)
+    fillCircle(img, HANDLE_CX, cy, HANDLE_R, ATMO);
+
+    // 3) Tapered tail — linearly shrink half-height from BODY_HALF_H to TAIL_HALF_H
+    for (let x = BODY_RIGHT; x <= TAIL_END; x++) {
+        const t = (x - BODY_RIGHT) / (TAIL_END - BODY_RIGHT);
+        const halfH = BODY_HALF_H * (1 - t) + TAIL_HALF_H * t;
+        fillRect(img, x, cy - halfH, x, cy + halfH, ATMO);
+    }
+    // Rounded tail cap
+    fillCircle(img, TAIL_END, cy, TAIL_HALF_H, ATMO);
+
+    // 4) Highlight band along the upper edge of the body (subtle 3D look)
+    fillRect(img, BODY_LEFT, cy - BODY_HALF_H, BODY_RIGHT, cy - BODY_HALF_H + 25, ATMO_LIGHT);
+    // Shadow band along lower edge
+    fillRect(img, BODY_LEFT, cy + BODY_HALF_H - 25, BODY_RIGHT, cy + BODY_HALF_H, ATMO_DARK);
+
+    // 5) Dark outline strokes
+    //    - top & bottom of body
+    fillRect(img, BODY_LEFT, cy - BODY_HALF_H - 4, BODY_RIGHT, cy - BODY_HALF_H, ATMO_DARK);
+    fillRect(img, BODY_LEFT, cy + BODY_HALF_H, BODY_RIGHT, cy + BODY_HALF_H + 4, ATMO_DARK);
+    //    - handle outline
+    strokeCircle(img, HANDLE_CX, cy, HANDLE_R, 5, ATMO_DARK);
+    //    - tail tip outline
+    strokeCircle(img, TAIL_END, cy, TAIL_HALF_H, 4, ATMO_DARK);
+
+    // 6) 4 LARGE white markers (a, b, c, d) along the body
     const titleFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-64-black/open-sans-64-black.fnt"));
-    const letters = ["a", "b", "c", "d", "e"];
-    // Distribute across the central body region (inside the tab/notch)
-    const startX = 350;
-    const endX   = W - 350;
-    const span   = endX - startX;
+    const letters = ["a", "b", "c", "d"];
+    const FIRST_X  = HANDLE_CX + HANDLE_R + 250;     // first marker just past handle
+    const LAST_X   = BODY_RIGHT - 200;                // last marker just before tail taper
     for (let i = 0; i < letters.length; i++) {
-        const t = (i + 0.5) / letters.length;
-        const cx = startX + t * span;
-        const cy = H - 130;          // 130 px above inner edge
-        // Big white circle with thick dark outline
-        fillCircle(img, cx, cy, 75, WHITE);
-        strokeCircle(img, cx, cy, 75, 8, ATMO_DARK);
-        // Print the letter centred (letter ~36 px wide for 64 pt)
-        img.print({ font: titleFont, x: cx - 22, y: cy - 42, text: letters[i] });
+        const t  = letters.length === 1 ? 0.5 : i / (letters.length - 1);
+        const mx = FIRST_X + t * (LAST_X - FIRST_X);
+        const my = cy;
+        fillCircle(img, mx, my, 80, WHITE);
+        strokeCircle(img, mx, my, 80, 7, ATMO_DARK);
+        // Letter (open-sans-64-black is ~36 px wide / ~64 px tall).
+        img.print({ font: titleFont, x: mx - 18, y: my - 38, text: letters[i] });
     }
 
     await img.write(path.join(outDir, "planet-frame-flat.png"));
-    console.log(`✅ Planet Frame piece texture written to ${outDir}/planet-frame-flat.png (${VERSION})`);
+    console.log(`✅ Planet Frame bar texture written to ${outDir}/planet-frame-flat.png (${VERSION})`);
 }
 
 build();

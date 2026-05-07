@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v65";
+const CARD_VERSION = "v66";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -896,54 +896,48 @@ planetFrame.CustomImage = {
 };
 // objects.push(planetFrame);   // ← HIDDEN per user request
 
-// ─── 17e1. PLANET FRAME PIECES (6 interlocking trapezoid pieces) ────
-// Six movable Custom_Tile pieces forming the planet boundary —
-// trapezoidal cardboard segments matching the hex cluster's outer
-// hexagon (NOT a smooth circle). Atmosphere-blue per user request.
+// ─── 17e1. PLANET FRAME PIECES (5 interlocking puzzle pieces) ───────
+// Five identical Custom_Model puzzle pieces forming a ring around the
+// 61-hex planet cluster.  Each piece spans 72° (=360°/5).  Per user:
+//   - INNER edge sits flush against the hex cluster outer perimeter
+//   - OUTER edge is curved (smooth arc)
+//   - The two radial ends carry matching tab + notch puzzle connectors
+//     so adjacent pieces interlock around the full ring.
 //
-// Geometry (cluster: radius-4 flat-top hexes, R=3.5, centred at z=2.5):
-//   Cluster outer hexagon = pointy-top, circumradius 27.34 world,
-//     side length 27.34 (= circumradius), apothem 23.67.
-//   Frame trapezoid:
-//     – inner side (touching cluster) = 27.34 world
-//     – outer side                    = 32 world
-//     – radial width                  = 4 world
-//   Texture: planet-frame-segment.png (3600×500 px = 36×5 world)
-//     – atmosphere-blue trapezoid
-//     – LEFT slanted edge: jigsaw mushroom TAB extending OUT
-//     – RIGHT slanted edge: matching mushroom NOTCH cut INTO body
-//     – 5 large white letter badges (a..e) along the inner edge
-const FRAME_PIECE_URL = `${SOLDIER_BASE}/planet-frame-flat.png`;
-const FRAME_PLANET_CX = 0;      // must match hex cluster PLANET_CX
-const FRAME_PLANET_CZ = 2.5;    // must match hex cluster PLANET_CZ
-const APOTHEM   = 27.34 * Math.cos(Math.PI / 6);   // 23.67
-const TILE_OFF  = APOTHEM + 4 / 2;                 // 25.67 (centre of 4-wide frame)
-for (let i = 0; i < 6; i++) {
-    // Side i midpoint at math angle 60·i degrees (CCW from east).
-    const theta = (60 * i) * Math.PI / 180;
-    const px = FRAME_PLANET_CX + TILE_OFF * Math.cos(theta);
-    const pz = FRAME_PLANET_CZ + TILE_OFF * Math.sin(theta);
-    // rotY: empirically, TTS Custom_Tile at rotY=0 has its LONG axis
-    // along world +Z (north), even though scaleX is the larger of the
-    // two dimensions. (Texture maps texture-X → tile-Z direction.)
-    // For piece 0 at east, tangential = ±Z = rotY 0.
-    // Piece i at math angle 60·i needs long axis at 60·i CCW from
-    // +Z, so rotY = 60·i (CCW-positive Unity).
-    const rotY = 60 * i;
-    const piece = baseObj("Custom_Tile", `Planet Frame Piece ${i + 1}`,
-        "1 of 6 interlocking puzzle pieces forming the Planet Frame border (atmosphere-blue, hex-aligned).",
-        px, 1.00, pz,
-        { rotY,
-          scaleX: 3000 * 3.17 / 1900,   // = 5.0 (30 world wide)
-          scaleY: 0.2,
-          scaleZ:  400 * 2.5 / 500,     // = 2.0 (4 world deep)
-          color: { r: 1, g: 1, b: 1 }, grid: false });
-    piece.CustomImage = {
-        ImageURL: FRAME_PIECE_URL,
-        ImageSecondaryURL: "",
-        ImageScalar: 1,
-        WidthScale: 0,
-        CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
+// Mesh:  v66/planet-frame-piece.obj (built by generate-planet-frame-piece-obj.js)
+//        - inner radius 26, outer radius 31 (world units)
+//        - tab on +36° edge protrudes outward; notch on -36° edge cuts in
+//        - thickness 0.4 world (top + bottom faces + side walls)
+//
+// The 5 pieces are placed at world rotY = 72°·i (i = 0..4) so each
+// piece's tab lines up with the next piece's notch at every 72°
+// boundary.
+const FRAME_PIECE_MESH = `${SOLDIER_BASE}/planet-frame-piece.obj`;
+const FRAME_PLANET_CX = 0;       // must match hex cluster PLANET_CX
+const FRAME_PLANET_CZ = 2.5;     // must match hex cluster PLANET_CZ
+const FRAME_ATMO = { r: 70 / 255, g: 130 / 255, b: 200 / 255 };  // atmosphere blue
+for (let i = 0; i < 5; i++) {
+    const piece = baseObj("Custom_Model", `Planet Frame Piece ${i + 1}`,
+        "1 of 5 interlocking puzzle pieces forming the Planet Frame ring around the hex cluster.",
+        FRAME_PLANET_CX, 1.00, FRAME_PLANET_CZ,
+        { rotY: 72 * i,
+          scaleX: 1, scaleY: 1, scaleZ: 1,
+          color: FRAME_ATMO, grid: false });
+    piece.CustomMesh = {
+        MeshURL: FRAME_PIECE_MESH,
+        DiffuseURL: "",
+        NormalURL: "",
+        ColliderURL: "",
+        Convex: false,           // piece has a concave notch
+        MaterialIndex: 1,        // 1 = wood/cardboard
+        TypeIndex: 0,            // generic prop
+        CustomShader: {
+            SpecularColor: { r: 1, g: 1, b: 1 },
+            SpecularIntensity: 0.1,
+            SpecularSharpness: 2,
+            FresnelStrength: 0.05,
+        },
+        CastShadows: true,
     };
     objects.push(piece);
 }
