@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778417778,
+  "EpochTime": 1778417851,
   "Date": "2026-05-10",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -51311,15 +51311,15 @@
       "GUID": "1002f6",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -28.790000000000003,
+        "posX": -30.95,
         "posY": 1.02,
-        "posZ": -11.970765814495916,
+        "posZ": -13.217842395945507,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -51368,15 +51368,15 @@
       "GUID": "1002f7",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -28.790000000000003,
+        "posX": -30.95,
         "posY": 1.02,
-        "posZ": -5.735382907247958,
+        "posZ": -6.358921197972753,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Radar Dish",
       "Description": "Hex tile — radar.",
@@ -51425,15 +51425,15 @@
       "GUID": "1002f8",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -28.790000000000003,
+        "posX": -30.95,
         "posY": 1.02,
         "posZ": 0.5,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Separatist Base (2)",
       "Description": "Hex tile — separatist_2.",
@@ -51482,15 +51482,15 @@
       "GUID": "1002f9",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -28.790000000000003,
+        "posX": -30.95,
         "posY": 1.02,
-        "posZ": 6.735382907247958,
+        "posZ": 7.358921197972753,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -51539,15 +51539,15 @@
       "GUID": "1002fa",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -28.790000000000003,
+        "posX": -30.95,
         "posY": 1.02,
-        "posZ": 12.970765814495916,
+        "posZ": 14.217842395945507,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Spaceport Drop Zone (2)",
       "Description": "Hex tile — spaceport_2.",
@@ -51596,15 +51596,15 @@
       "GUID": "1002fb",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -23.390000000000004,
+        "posX": -25.01,
         "posY": 1.02,
-        "posZ": -15.088457268119896,
+        "posZ": -16.647302994931884,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Factory",
       "Description": "Hex tile — factory.",
@@ -51653,15 +51653,15 @@
       "GUID": "1002fc",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -23.390000000000004,
+        "posX": -25.01,
         "posY": 1.02,
-        "posZ": -8.853074360871936,
+        "posZ": -9.78838179695913,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Radar Dish",
       "Description": "Hex tile — radar.",
@@ -51710,15 +51710,15 @@
       "GUID": "1002fd",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -23.390000000000004,
+        "posX": -25.01,
         "posY": 1.02,
-        "posZ": -2.617691453623979,
+        "posZ": -2.9294605989863767,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Spaceport Drop Zone (1)",
       "Description": "Hex tile — spaceport_1.",
@@ -51767,15 +51767,15 @@
       "GUID": "1002fe",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -23.390000000000004,
+        "posX": -25.01,
         "posY": 1.02,
-        "posZ": 3.617691453623979,
+        "posZ": 3.9294605989863767,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Factory",
       "Description": "Hex tile — factory.",
@@ -51824,15 +51824,15 @@
       "GUID": "1002ff",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -23.390000000000004,
+        "posX": -25.01,
         "posY": 1.02,
-        "posZ": 9.853074360871936,
+        "posZ": 10.78838179695913,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -51881,15 +51881,15 @@
       "GUID": "100300",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -23.390000000000004,
+        "posX": -25.01,
         "posY": 1.02,
-        "posZ": 16.088457268119896,
+        "posZ": 17.647302994931884,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -51938,15 +51938,15 @@
       "GUID": "100301",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -17.990000000000002,
+        "posX": -19.07,
         "posY": 1.02,
-        "posZ": -18.206148721743872,
+        "posZ": -20.07676359391826,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -51995,15 +51995,15 @@
       "GUID": "100302",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -17.990000000000002,
+        "posX": -19.07,
         "posY": 1.02,
-        "posZ": -11.970765814495916,
+        "posZ": -13.217842395945507,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Radar Dish",
       "Description": "Hex tile — radar.",
@@ -52052,15 +52052,15 @@
       "GUID": "100303",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -17.990000000000002,
+        "posX": -19.07,
         "posY": 1.02,
-        "posZ": -5.735382907247958,
+        "posZ": -6.358921197972753,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -52109,15 +52109,15 @@
       "GUID": "100304",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -17.990000000000002,
+        "posX": -19.07,
         "posY": 1.02,
         "posZ": 0.5,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -52166,15 +52166,15 @@
       "GUID": "100305",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -17.990000000000002,
+        "posX": -19.07,
         "posY": 1.02,
-        "posZ": 6.735382907247958,
+        "posZ": 7.358921197972753,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -52223,15 +52223,15 @@
       "GUID": "100306",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -17.990000000000002,
+        "posX": -19.07,
         "posY": 1.02,
-        "posZ": 12.970765814495916,
+        "posZ": 14.217842395945507,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -52280,15 +52280,15 @@
       "GUID": "100307",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -17.990000000000002,
+        "posX": -19.07,
         "posY": 1.02,
-        "posZ": 19.206148721743872,
+        "posZ": 21.07676359391826,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Oil Rig",
       "Description": "Hex tile — oil.",
@@ -52337,15 +52337,15 @@
       "GUID": "100308",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -12.59,
+        "posX": -13.129999999999999,
         "posY": 1.02,
-        "posZ": -21.323840175367852,
+        "posZ": -23.506224192904636,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -52394,15 +52394,15 @@
       "GUID": "100309",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -12.59,
+        "posX": -13.129999999999999,
         "posY": 1.02,
-        "posZ": -15.088457268119896,
+        "posZ": -16.647302994931884,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Power Plant",
       "Description": "Hex tile — power.",
@@ -52451,15 +52451,15 @@
       "GUID": "10030a",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -12.59,
+        "posX": -13.129999999999999,
         "posY": 1.02,
-        "posZ": -8.853074360871936,
+        "posZ": -9.78838179695913,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -52508,15 +52508,15 @@
       "GUID": "10030b",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -12.59,
+        "posX": -13.129999999999999,
         "posY": 1.02,
-        "posZ": -2.617691453623979,
+        "posZ": -2.9294605989863767,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -52565,15 +52565,15 @@
       "GUID": "10030c",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -12.59,
+        "posX": -13.129999999999999,
         "posY": 1.02,
-        "posZ": 3.617691453623979,
+        "posZ": 3.9294605989863767,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -52622,15 +52622,15 @@
       "GUID": "10030d",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -12.59,
+        "posX": -13.129999999999999,
         "posY": 1.02,
-        "posZ": 9.853074360871936,
+        "posZ": 10.78838179695913,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -52679,15 +52679,15 @@
       "GUID": "10030e",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -12.59,
+        "posX": -13.129999999999999,
         "posY": 1.02,
-        "posZ": 16.088457268119896,
+        "posZ": 17.647302994931884,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -52736,15 +52736,15 @@
       "GUID": "10030f",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -12.59,
+        "posX": -13.129999999999999,
         "posY": 1.02,
-        "posZ": 22.323840175367852,
+        "posZ": 24.506224192904636,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -52795,13 +52795,13 @@
       "Transform": {
         "posX": -7.19,
         "posY": 1.02,
-        "posZ": -24.441531628991832,
+        "posZ": -26.935684791891013,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -52852,13 +52852,13 @@
       "Transform": {
         "posX": -7.19,
         "posY": 1.02,
-        "posZ": -18.206148721743872,
+        "posZ": -20.07676359391826,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -52909,13 +52909,13 @@
       "Transform": {
         "posX": -7.19,
         "posY": 1.02,
-        "posZ": -11.970765814495916,
+        "posZ": -13.217842395945507,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -52966,13 +52966,13 @@
       "Transform": {
         "posX": -7.19,
         "posY": 1.02,
-        "posZ": -5.735382907247958,
+        "posZ": -6.358921197972753,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -53027,9 +53027,9 @@
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Oil Rig",
       "Description": "Hex tile — oil.",
@@ -53080,13 +53080,13 @@
       "Transform": {
         "posX": -7.19,
         "posY": 1.02,
-        "posZ": 6.735382907247958,
+        "posZ": 7.358921197972753,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Spaceport Drop Zone (3)",
       "Description": "Hex tile — spaceport_3.",
@@ -53137,13 +53137,13 @@
       "Transform": {
         "posX": -7.19,
         "posY": 1.02,
-        "posZ": 12.970765814495916,
+        "posZ": 14.217842395945507,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -53194,13 +53194,13 @@
       "Transform": {
         "posX": -7.19,
         "posY": 1.02,
-        "posZ": 19.206148721743872,
+        "posZ": 21.07676359391826,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "City / Village",
       "Description": "Hex tile — city.",
@@ -53251,13 +53251,13 @@
       "Transform": {
         "posX": -7.19,
         "posY": 1.02,
-        "posZ": 25.441531628991832,
+        "posZ": 27.935684791891013,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Factory",
       "Description": "Hex tile — factory.",
@@ -53306,15 +53306,15 @@
       "GUID": "100319",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -1.79,
+        "posX": -1.2500000000000009,
         "posY": 1.02,
-        "posZ": -21.323840175367852,
+        "posZ": -23.506224192904636,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Power Plant",
       "Description": "Hex tile — power.",
@@ -53363,15 +53363,15 @@
       "GUID": "10031a",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -1.79,
+        "posX": -1.2500000000000009,
         "posY": 1.02,
-        "posZ": -15.088457268119896,
+        "posZ": -16.647302994931884,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "City / Village",
       "Description": "Hex tile — city.",
@@ -53420,15 +53420,15 @@
       "GUID": "10031b",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -1.79,
+        "posX": -1.2500000000000009,
         "posY": 1.02,
-        "posZ": -8.853074360871936,
+        "posZ": -9.78838179695913,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "City / Village",
       "Description": "Hex tile — city.",
@@ -53477,15 +53477,15 @@
       "GUID": "10031c",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -1.79,
+        "posX": -1.2500000000000009,
         "posY": 1.02,
-        "posZ": -2.617691453623979,
+        "posZ": -2.9294605989863767,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -53534,15 +53534,15 @@
       "GUID": "10031d",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -1.79,
+        "posX": -1.2500000000000009,
         "posY": 1.02,
-        "posZ": 3.617691453623979,
+        "posZ": 3.9294605989863767,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -53591,15 +53591,15 @@
       "GUID": "10031e",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -1.79,
+        "posX": -1.2500000000000009,
         "posY": 1.02,
-        "posZ": 9.853074360871936,
+        "posZ": 10.78838179695913,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Spaceport Drop Zone (6)",
       "Description": "Hex tile — spaceport_6.",
@@ -53648,15 +53648,15 @@
       "GUID": "10031f",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -1.79,
+        "posX": -1.2500000000000009,
         "posY": 1.02,
-        "posZ": 16.088457268119896,
+        "posZ": 17.647302994931884,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -53705,15 +53705,15 @@
       "GUID": "100320",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -1.79,
+        "posX": -1.2500000000000009,
         "posY": 1.02,
-        "posZ": 22.323840175367852,
+        "posZ": 24.506224192904636,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -53762,15 +53762,15 @@
       "GUID": "100321",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 3.6100000000000003,
+        "posX": 4.689999999999999,
         "posY": 1.02,
-        "posZ": -18.206148721743872,
+        "posZ": -20.07676359391826,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -53819,15 +53819,15 @@
       "GUID": "100322",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 3.6100000000000003,
+        "posX": 4.689999999999999,
         "posY": 1.02,
-        "posZ": -11.970765814495916,
+        "posZ": -13.217842395945507,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Separatist Base (6)",
       "Description": "Hex tile — separatist_6.",
@@ -53876,15 +53876,15 @@
       "GUID": "100323",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 3.6100000000000003,
+        "posX": 4.689999999999999,
         "posY": 1.02,
-        "posZ": -5.735382907247958,
+        "posZ": -6.358921197972753,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -53933,15 +53933,15 @@
       "GUID": "100324",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 3.6100000000000003,
+        "posX": 4.689999999999999,
         "posY": 1.02,
         "posZ": 0.5,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Separatist Base (4)",
       "Description": "Hex tile — separatist_4.",
@@ -53990,15 +53990,15 @@
       "GUID": "100325",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 3.6100000000000003,
+        "posX": 4.689999999999999,
         "posY": 1.02,
-        "posZ": 6.735382907247958,
+        "posZ": 7.358921197972753,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Power Plant",
       "Description": "Hex tile — power.",
@@ -54047,15 +54047,15 @@
       "GUID": "100326",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 3.6100000000000003,
+        "posX": 4.689999999999999,
         "posY": 1.02,
-        "posZ": 12.970765814495916,
+        "posZ": 14.217842395945507,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -54104,15 +54104,15 @@
       "GUID": "100327",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 3.6100000000000003,
+        "posX": 4.689999999999999,
         "posY": 1.02,
-        "posZ": 19.206148721743872,
+        "posZ": 21.07676359391826,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Oil Rig",
       "Description": "Hex tile — oil.",
@@ -54161,15 +54161,15 @@
       "GUID": "100328",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.010000000000002,
+        "posX": 10.629999999999999,
         "posY": 1.02,
-        "posZ": -15.088457268119896,
+        "posZ": -16.647302994931884,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -54218,15 +54218,15 @@
       "GUID": "100329",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.010000000000002,
+        "posX": 10.629999999999999,
         "posY": 1.02,
-        "posZ": -8.853074360871936,
+        "posZ": -9.78838179695913,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Spaceport Drop Zone (4)",
       "Description": "Hex tile — spaceport_4.",
@@ -54275,15 +54275,15 @@
       "GUID": "10032a",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.010000000000002,
+        "posX": 10.629999999999999,
         "posY": 1.02,
-        "posZ": -2.617691453623979,
+        "posZ": -2.9294605989863767,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -54332,15 +54332,15 @@
       "GUID": "10032b",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.010000000000002,
+        "posX": 10.629999999999999,
         "posY": 1.02,
-        "posZ": 3.617691453623979,
+        "posZ": 3.9294605989863767,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -54389,15 +54389,15 @@
       "GUID": "10032c",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.010000000000002,
+        "posX": 10.629999999999999,
         "posY": 1.02,
-        "posZ": 9.853074360871936,
+        "posZ": 10.78838179695913,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -54446,15 +54446,15 @@
       "GUID": "10032d",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.010000000000002,
+        "posX": 10.629999999999999,
         "posY": 1.02,
-        "posZ": 16.088457268119896,
+        "posZ": 17.647302994931884,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -54503,15 +54503,15 @@
       "GUID": "10032e",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 14.41,
+        "posX": 16.569999999999997,
         "posY": 1.02,
-        "posZ": -11.970765814495916,
+        "posZ": -13.217842395945507,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -54560,15 +54560,15 @@
       "GUID": "10032f",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 14.41,
+        "posX": 16.569999999999997,
         "posY": 1.02,
-        "posZ": -5.735382907247958,
+        "posZ": -6.358921197972753,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -54617,15 +54617,15 @@
       "GUID": "100330",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 14.41,
+        "posX": 16.569999999999997,
         "posY": 1.02,
         "posZ": 0.5,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Spaceport Drop Zone (5)",
       "Description": "Hex tile — spaceport_5.",
@@ -54674,15 +54674,15 @@
       "GUID": "100331",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 14.41,
+        "posX": 16.569999999999997,
         "posY": 1.02,
-        "posZ": 6.735382907247958,
+        "posZ": 7.358921197972753,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",
@@ -54731,15 +54731,15 @@
       "GUID": "100332",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 14.41,
+        "posX": 16.569999999999997,
         "posY": 1.02,
-        "posZ": 12.970765814495916,
+        "posZ": 14.217842395945507,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.6,
+        "scaleX": 3.96,
         "scaleY": 0.2,
-        "scaleZ": 3.6
+        "scaleZ": 3.96
       },
       "Nickname": "Terrain Hex",
       "Description": "Hex tile — terrain.",

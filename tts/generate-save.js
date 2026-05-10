@@ -966,8 +966,8 @@ if (HEX_COORDS.length !== 61) throw new Error("hex coord count: " + HEX_COORDS.l
 // edge ≈ z=-26) with ~1 unit ("inch") margin on each side.
 //   z extent = R * (4√3 + √3/2) = R * 7.794 each side
 //   55 / (2*7.794) = 3.53  →  pick 3.5 and offset center to z=2.5.
-const HEX_SCALE   = 3.6;
-const HEX_R_WORLD = 3.6;
+const HEX_SCALE   = 3.96;
+const HEX_R_WORLD = 3.96;
 const PITCH_X = 1.5 * HEX_R_WORLD;
 const PITCH_Z = Math.sqrt(3) * HEX_R_WORLD;
 const PLANET_CX = -7.19, PLANET_CZ = 0.5;

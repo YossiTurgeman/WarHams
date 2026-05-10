@@ -48,7 +48,7 @@ const W = WORLD_W * PX_PER_WORLD;   // 3000
 const H = WORLD_H * PX_PER_WORLD;   // 3000
 
 // Hex cluster geometry (must match generate-save.js Section 17e).
-const HEX_R_WORLD = 3.6;
+const HEX_R_WORLD = 3.96;
 const PITCH_X = 1.5 * HEX_R_WORLD;
 const PITCH_Z = Math.sqrt(3) * HEX_R_WORLD;
 
