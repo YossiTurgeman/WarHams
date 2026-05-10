@@ -158,8 +158,8 @@ const playerColors = [
 // boardRotY: orientation so board text reads correctly to that player
 // handRotY:  hand-trigger orientation
 const cornerLayout = [
-    // Red — bottom-left
-    { sx: -1, sz: -1, anchor: { x: -42, z: -28 }, boardRotY: 180, handRotY:   0 },
+    // Red — bottom-left (anchor x aligned with Green at x=-60)
+    { sx: -1, sz: -1, anchor: { x: -60, z: -28 }, boardRotY: 180, handRotY:   0 },
     // Blue — bottom-right (anchor x aligned with Equipment Display center, x=87)
     { sx:  1, sz: -1, anchor: { x:  87, z: -28 }, boardRotY: 180, handRotY:   0 },
     // Green — top-left (anchor x aligned above the user manual at x=-60)
