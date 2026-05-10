@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778420566,
+  "EpochTime": 1778420888,
   "Date": "2026-05-10",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -49313,7 +49313,7 @@
       ],
       "CustomDeck": {
         "272": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_1.png",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_1_rev125.png",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -49322,7 +49322,7 @@
           "Type": 0
         },
         "273": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_2.png",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_2_rev125.png",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -49331,7 +49331,7 @@
           "Type": 0
         },
         "274": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_3.png",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_3_rev125.png",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -49340,7 +49340,7 @@
           "Type": 0
         },
         "275": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_4.png",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_4_rev125.png",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -49349,7 +49349,7 @@
           "Type": 0
         },
         "276": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_5.png",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_5_rev125.png",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -49358,7 +49358,7 @@
           "Type": 0
         },
         "277": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_6.png",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_6_rev125.png",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -49416,7 +49416,7 @@
           "CardID": 27600,
           "CustomDeck": {
             "276": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_5.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_5_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -49474,7 +49474,7 @@
           "CardID": 27300,
           "CustomDeck": {
             "273": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_2.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_2_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -49532,7 +49532,7 @@
           "CardID": 27200,
           "CustomDeck": {
             "272": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_1.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_1_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -49590,7 +49590,7 @@
           "CardID": 27500,
           "CustomDeck": {
             "275": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_4.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_4_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -49648,7 +49648,7 @@
           "CardID": 27400,
           "CustomDeck": {
             "274": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_3.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_3_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -49706,7 +49706,7 @@
           "CardID": 27700,
           "CustomDeck": {
             "277": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_6.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_6_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -49764,7 +49764,7 @@
           "CardID": 27500,
           "CustomDeck": {
             "275": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_4.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_4_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -49822,7 +49822,7 @@
           "CardID": 27600,
           "CustomDeck": {
             "276": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_5.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_5_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -49880,7 +49880,7 @@
           "CardID": 27500,
           "CustomDeck": {
             "275": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_4.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_4_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -49938,7 +49938,7 @@
           "CardID": 27400,
           "CustomDeck": {
             "274": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_3.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_3_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -49996,7 +49996,7 @@
           "CardID": 27400,
           "CustomDeck": {
             "274": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_3.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_3_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -50054,7 +50054,7 @@
           "CardID": 27700,
           "CustomDeck": {
             "277": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_6.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_6_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -50112,7 +50112,7 @@
           "CardID": 27600,
           "CustomDeck": {
             "276": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_5.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_5_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -50170,7 +50170,7 @@
           "CardID": 27300,
           "CustomDeck": {
             "273": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_2.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_2_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -50228,7 +50228,7 @@
           "CardID": 27700,
           "CustomDeck": {
             "277": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_6.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_6_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -50286,7 +50286,7 @@
           "CardID": 27200,
           "CustomDeck": {
             "272": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_1.png",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_1_rev125.png",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/number_back.png",
               "NumWidth": 1,
               "NumHeight": 1,

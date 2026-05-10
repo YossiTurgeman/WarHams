@@ -22,7 +22,13 @@ const fs = require("fs");
 // bypasses TTS's URL-path cache (TTS strips ?query strings before
 // looking up cached assets, so path-based busting is the only thing
 // that reliably works). Must match SOLDIER_BASE in generate-save.js.
-const VERSION = "v65";
+const VERSION = "v72";
+// Bump TOKEN_REV any time the token texture content changes — the
+// generated file name carries the rev (number_<n>_rev<N>.png),
+// which forces TTS to fetch a brand-new asset (the directory-bump
+// + ?v query-string approach has been unreliable in practice).
+// Must be kept in sync with NUMBER_TOKEN_REV in generate-save.js.
+const TOKEN_REV = 125;
 const OUT = path.join(__dirname, VERSION);
 if (!fs.existsSync(OUT)) fs.mkdirSync(OUT, { recursive: true });
 
@@ -101,6 +107,14 @@ async function buildToken(n, font) {
     const barY2 = barY1 + barH;
     fillRect(img, barX1, barY1, barX2, barY2, INK);
 
+    // The texture's image +y maps to world -z (south) on TTS
+    // CardCustom faces, same as the planet board Custom_Tile (proven
+    // empirically with the wrap-label fix in v123). Without rotation,
+    // the digit's top would point south and read upside-down to a
+    // south-side player. Rotating 180° puts the digit top at world
+    // +z (north), so a south-side viewer reads the number naturally.
+    img.rotate({ deg: 180 });
+
     return img;
 }
 
@@ -109,7 +123,7 @@ async function buildToken(n, font) {
     const font = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-128-black/open-sans-128-black.fnt"));
     for (let n = 1; n <= 6; n++) {
         const img = await buildToken(n, font);
-        const out = path.join(OUT, `number_${n}.png`);
+        const out = path.join(OUT, `number_${n}_rev${TOKEN_REV}.png`);
         await img.write(out);
         console.log(`wrote ${out}`);
     }

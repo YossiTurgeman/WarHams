@@ -657,7 +657,12 @@ for (let n = 1; n <= 6; n++) {
     const did = nextDeckDefId++;
     numberDeckIdByValue[n] = did;
     numberDeckDefs[String(did)] = {
-        FaceURL: `${SOLDIER_BASE}/number_${n}.png`,
+        // Rev-suffixed filename: TTS strips ?v=… cache busters before
+        // looking up cached assets, so a brand-new filename per rev is
+        // the only reliable way to force a refetch when the texture
+        // content changes (e.g. orientation flip in v125). Must match
+        // TOKEN_REV in generate-number-tokens.js.
+        FaceURL: `${SOLDIER_BASE}/number_${n}_rev125.png`,
         BackURL: NUMBER_BACK_URL,
         NumWidth: 1, NumHeight: 1,
         BackIsHidden: true, UniqueBack: false, Type: 0,
