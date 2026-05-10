@@ -218,10 +218,14 @@ function strokeHex(img, cx, cy, r, t, color) {
     const LABEL_HALF_WORLD    = 0.65;         // half glyph height in inches
     const LABEL_RADIAL_OFFSET = (HEX_R_WORLD + LABEL_GAP_WORLD + LABEL_HALF_WORLD) * PX_PER_WORLD;
     // All labels are oriented so they read right-side up from the
-    // SOUTH side of the table (the default TTS viewer position).
-    // The texture's +y axis maps to world +z (north), so a glyph
-    // printed in its natural orientation has its "top" pointing
-    // north — exactly what a south-side player wants to read.
+    // SOUTH side of the table. Empirically (v122 → user reported
+    // "readable from the north"), the texture's +y maps to world
+    // -z (south), so a normally-printed glyph has its "top" pointing
+    // south — readable from the north. Render each letter onto a
+    // transparent stamp, rotate 180°, then composite, so the glyph
+    // top ends up pointing south and reads right-side up to a
+    // south-side viewer.
+    const STAMP = 100;
     for (const [key, letter] of labelMap.entries()) {
         const [q, r] = key.split(",").map(Number);
         const wx = q * PITCH_X;
@@ -232,12 +236,16 @@ function strokeHex(img, cx, cy, r, t, color) {
         const d  = Math.sqrt(dx * dx + dy * dy) || 1;
         const lx = hx + (dx / d) * LABEL_RADIAL_OFFSET;
         const ly = hz + (dy / d) * LABEL_RADIAL_OFFSET;
-        img.print({
+
+        const stamp = new Jimp({ width: STAMP, height: STAMP, color: 0x00000000 });
+        stamp.print({
             font: fontLabel,
-            x: Math.round(lx - 18),
-            y: Math.round(ly - 32),
+            x: STAMP / 2 - 18,
+            y: STAMP / 2 - 32,
             text: letter,
         });
+        stamp.rotate({ deg: 180 });
+        img.composite(stamp, Math.round(lx - STAMP / 2), Math.round(ly - STAMP / 2));
     }
 
     const outPath = path.join(outDir, "planet-board.png");
