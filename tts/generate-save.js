@@ -1068,16 +1068,18 @@ for (let i = 0; i < 61; i++) {
 // permutation, and reseats each tile at a shuffled position. Tiles
 // keep their identities (so a Mountain hex stays a Mountain hex);
 // only the locations swap.
+const RANDOMIZE_BUTTON_TEXTURE =
+    "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/randomize-button.png";
 const randomizeButton = baseObj("Custom_Tile", "Randomize Hexes",
     "Click the on-tile button to shuffle the 61 planet hexes among their current slot positions.",
     70, 1.02, 0,
-    { rotY: 0, scaleX: 4, scaleY: 0.2, scaleZ: 4,
+    { rotY: 0, scaleX: 2, scaleY: 0.2, scaleZ: 2,
       color: { r: 0.85, g: 0.20, b: 0.20 }, locked: true, grid: false });
 randomizeButton.CustomImage = {
-    // No texture — the tile body is a solid red square; the actual
-    // clickable label is drawn by createButton() below.
-    ImageURL: "",
-    ImageSecondaryURL: "",
+    // Tiny solid-red PNG so the tile body actually renders red instead
+    // of falling back to TTS's default white placeholder texture.
+    ImageURL: RANDOMIZE_BUTTON_TEXTURE,
+    ImageSecondaryURL: RANDOMIZE_BUTTON_TEXTURE,
     ImageScalar: 1,
     WidthScale: 0,
     CustomTile: { Type: 0 /* square */, Thickness: 0.1, Stackable: false, Stretch: true },
@@ -1088,11 +1090,11 @@ randomizeButton.LuaScript = [
     "        label = 'RANDOMIZE',",
     "        click_function = 'shuffleHexes',",
     "        function_owner = self,",
-    "        position = {0, 0.6, 0},",
-    "        rotation = {0, 180, 0},",
-    "        width = 1400,",
-    "        height = 500,",
-    "        font_size = 240,",
+    "        position = {0, 0.3, 0},",
+    "        rotation = {0, 0, 0},",
+    "        width = 1600,",
+    "        height = 600,",
+    "        font_size = 260,",
     "        color = {0.85, 0.20, 0.20},",
     "        font_color = {1, 1, 1},",
     "        tooltip = 'Shuffle every planet hex tile among the existing slot positions.',",
