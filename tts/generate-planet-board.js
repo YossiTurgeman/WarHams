@@ -33,7 +33,7 @@ const path = require("path");
 const fs = require("fs");
 const { Jimp } = require("jimp");
 
-const VERSION = "v69";
+const VERSION = "v70";
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
@@ -42,7 +42,7 @@ if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 // Cluster (49 × 54.5) now sits with ~5u of "atmosphere" margin to
 // the gold frame on the long axes.
 const WORLD_W = 60;
-const WORLD_H = 65;
+const WORLD_H = 68;
 const PX_PER_WORLD = 50;
 const W = WORLD_W * PX_PER_WORLD;   // 3000
 const H = WORLD_H * PX_PER_WORLD;   // 3000
