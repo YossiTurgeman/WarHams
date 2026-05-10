@@ -899,6 +899,44 @@ uzBoard.CustomImage = {
 };
 objects.push(uzBoard);
 
+// ─── 17c-bis. FIRST PLAYER TOKEN ────────────────────────────────────
+// Round gold token placed just south of the Unloading Zone board.
+// The active first player picks it up and parks it in front of them
+// each round so turn order is unambiguous. Lua-rendered button label
+// reads upright from the south camera, matching the UZ board.
+const FIRST_PLAYER_TOKEN_URL =
+    "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/first-player-token.png";
+const firstPlayerToken = baseObj("Custom_Tile", "1st Player Token",
+    "Marks the current first player. Pass to the next player at the start of each new round.",
+    UZ_BOARD_X, 1.02, UZ_BOARD_Z - 8,
+    { rotY: 180, scaleX: 1.6, scaleY: 0.2, scaleZ: 1.6,
+      color: { r: 0.95, g: 0.76, b: 0.18 }, grid: false });
+firstPlayerToken.CustomImage = {
+    ImageURL: FIRST_PLAYER_TOKEN_URL,
+    ImageSecondaryURL: FIRST_PLAYER_TOKEN_URL,
+    ImageScalar: 1,
+    WidthScale: 0,
+    CustomTile: { Type: 2 /* circle */, Thickness: 0.1, Stackable: false, Stretch: true },
+};
+firstPlayerToken.LuaScript = [
+    "function onLoad()",
+    "    self.createButton({",
+    "        label = '1st PLAYER',",
+    "        click_function = 'noop',",
+    "        function_owner = self,",
+    "        position = {0, 0.3, 0},",
+    "        rotation = {0, 180, 0},",
+    "        width = 0,",
+    "        height = 0,",
+    "        font_size = 180,",
+    "        font_color = {0.15, 0.10, 0.02},",
+    "        tooltip = 'Pass to the next first player each round.',",
+    "    })",
+    "end",
+    "function noop() end",
+].join("\n");
+objects.push(firstPlayerToken);
+
 // ─── 17d. EQUIPMENT DISPLAY BOARD (movable Custom_Tile) ─────────────
 // The big shared board where players place face-up BAC cards as they
 // unlock new equipment types, then drop their Control Flags on top
