@@ -162,8 +162,8 @@ const cornerLayout = [
     { sx: -1, sz: -1, anchor: { x: -42, z: -28 }, boardRotY: 180, handRotY:   0 },
     // Blue — bottom-right (anchor x aligned with Equipment Display center, x=87)
     { sx:  1, sz: -1, anchor: { x:  87, z: -28 }, boardRotY: 180, handRotY:   0 },
-    // Green — top-left
-    { sx: -1, sz:  1, anchor: { x: -42, z:  28 }, boardRotY:   0, handRotY: 180 },
+    // Green — top-left (anchor x aligned above the user manual at x=-60)
+    { sx: -1, sz:  1, anchor: { x: -60, z:  28 }, boardRotY:   0, handRotY: 180 },
     // Yellow — top-right (anchor x aligned with Equipment Display center, x=87)
     { sx:  1, sz:  1, anchor: { x:  87, z:  28 }, boardRotY:   0, handRotY: 180 },
 ];
