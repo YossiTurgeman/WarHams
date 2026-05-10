@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778418159,
+  "EpochTime": 1778418258,
   "Date": "2026-05-10",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -29981,9 +29981,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Red A1",
       "Description": "Red Squad A — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30069,9 +30069,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Red A2",
       "Description": "Red Squad A — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30157,9 +30157,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Red A3",
       "Description": "Red Squad A — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30245,9 +30245,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Red A4",
       "Description": "Red Squad A — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30333,9 +30333,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Red B1",
       "Description": "Red Squad B — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30421,9 +30421,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Red B2",
       "Description": "Red Squad B — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30509,9 +30509,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Red B3",
       "Description": "Red Squad B — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30597,9 +30597,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Red B4",
       "Description": "Red Squad B — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30730,9 +30730,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red D7",
           "Description": "Red Squad D — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30818,9 +30818,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red D6",
           "Description": "Red Squad D — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30906,9 +30906,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red D5",
           "Description": "Red Squad D — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -30994,9 +30994,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red D4",
           "Description": "Red Squad D — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31082,9 +31082,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red D3",
           "Description": "Red Squad D — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31170,9 +31170,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red D2",
           "Description": "Red Squad D — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31258,9 +31258,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red D1",
           "Description": "Red Squad D — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31346,9 +31346,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red C7",
           "Description": "Red Squad C — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31434,9 +31434,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red C6",
           "Description": "Red Squad C — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31522,9 +31522,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red C5",
           "Description": "Red Squad C — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31610,9 +31610,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red C4",
           "Description": "Red Squad C — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31698,9 +31698,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red C3",
           "Description": "Red Squad C — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31786,9 +31786,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red C2",
           "Description": "Red Squad C — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31874,9 +31874,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red C1",
           "Description": "Red Squad C — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -31962,9 +31962,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red B7",
           "Description": "Red Squad B — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32050,9 +32050,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red B6",
           "Description": "Red Squad B — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32138,9 +32138,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red B5",
           "Description": "Red Squad B — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32226,9 +32226,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red A7",
           "Description": "Red Squad A — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32314,9 +32314,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red A6",
           "Description": "Red Squad A — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32402,9 +32402,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Red A5",
           "Description": "Red Squad A — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32492,9 +32492,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Blue A1",
       "Description": "Blue Squad A — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32580,9 +32580,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Blue A2",
       "Description": "Blue Squad A — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32668,9 +32668,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Blue A3",
       "Description": "Blue Squad A — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32756,9 +32756,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Blue A4",
       "Description": "Blue Squad A — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32844,9 +32844,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Blue B1",
       "Description": "Blue Squad B — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -32932,9 +32932,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Blue B2",
       "Description": "Blue Squad B — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33020,9 +33020,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Blue B3",
       "Description": "Blue Squad B — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33108,9 +33108,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Blue B4",
       "Description": "Blue Squad B — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33241,9 +33241,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue D7",
           "Description": "Blue Squad D — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33329,9 +33329,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue D6",
           "Description": "Blue Squad D — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33417,9 +33417,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue D5",
           "Description": "Blue Squad D — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33505,9 +33505,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue D4",
           "Description": "Blue Squad D — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33593,9 +33593,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue D3",
           "Description": "Blue Squad D — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33681,9 +33681,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue D2",
           "Description": "Blue Squad D — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33769,9 +33769,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue D1",
           "Description": "Blue Squad D — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33857,9 +33857,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue C7",
           "Description": "Blue Squad C — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -33945,9 +33945,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue C6",
           "Description": "Blue Squad C — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34033,9 +34033,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue C5",
           "Description": "Blue Squad C — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34121,9 +34121,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue C4",
           "Description": "Blue Squad C — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34209,9 +34209,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue C3",
           "Description": "Blue Squad C — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34297,9 +34297,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue C2",
           "Description": "Blue Squad C — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34385,9 +34385,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue C1",
           "Description": "Blue Squad C — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34473,9 +34473,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue B7",
           "Description": "Blue Squad B — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34561,9 +34561,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue B6",
           "Description": "Blue Squad B — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34649,9 +34649,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue B5",
           "Description": "Blue Squad B — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34737,9 +34737,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue A7",
           "Description": "Blue Squad A — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34825,9 +34825,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue A6",
           "Description": "Blue Squad A — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -34913,9 +34913,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Blue A5",
           "Description": "Blue Squad A — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35003,9 +35003,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Green A1",
       "Description": "Green Squad A — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35091,9 +35091,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Green A2",
       "Description": "Green Squad A — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35179,9 +35179,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Green A3",
       "Description": "Green Squad A — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35267,9 +35267,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Green A4",
       "Description": "Green Squad A — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35355,9 +35355,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Green B1",
       "Description": "Green Squad B — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35443,9 +35443,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Green B2",
       "Description": "Green Squad B — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35531,9 +35531,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Green B3",
       "Description": "Green Squad B — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35619,9 +35619,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Green B4",
       "Description": "Green Squad B — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35752,9 +35752,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green D7",
           "Description": "Green Squad D — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35840,9 +35840,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green D6",
           "Description": "Green Squad D — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -35928,9 +35928,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green D5",
           "Description": "Green Squad D — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36016,9 +36016,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green D4",
           "Description": "Green Squad D — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36104,9 +36104,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green D3",
           "Description": "Green Squad D — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36192,9 +36192,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green D2",
           "Description": "Green Squad D — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36280,9 +36280,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green D1",
           "Description": "Green Squad D — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36368,9 +36368,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green C7",
           "Description": "Green Squad C — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36456,9 +36456,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green C6",
           "Description": "Green Squad C — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36544,9 +36544,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green C5",
           "Description": "Green Squad C — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36632,9 +36632,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green C4",
           "Description": "Green Squad C — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36720,9 +36720,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green C3",
           "Description": "Green Squad C — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36808,9 +36808,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green C2",
           "Description": "Green Squad C — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36896,9 +36896,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green C1",
           "Description": "Green Squad C — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -36984,9 +36984,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green B7",
           "Description": "Green Squad B — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -37072,9 +37072,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green B6",
           "Description": "Green Squad B — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -37160,9 +37160,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green B5",
           "Description": "Green Squad B — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -37248,9 +37248,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green A7",
           "Description": "Green Squad A — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -37336,9 +37336,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green A6",
           "Description": "Green Squad A — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -37424,9 +37424,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Green A5",
           "Description": "Green Squad A — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -37514,9 +37514,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Yellow A1",
       "Description": "Yellow Squad A — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -37602,9 +37602,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Yellow A2",
       "Description": "Yellow Squad A — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -37690,9 +37690,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Yellow A3",
       "Description": "Yellow Squad A — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -37778,9 +37778,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Yellow A4",
       "Description": "Yellow Squad A — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -37866,9 +37866,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Yellow B1",
       "Description": "Yellow Squad B — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -37954,9 +37954,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Yellow B2",
       "Description": "Yellow Squad B — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -38042,9 +38042,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Yellow B3",
       "Description": "Yellow Squad B — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -38130,9 +38130,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 2.5,
-        "scaleY": 2.5,
-        "scaleZ": 2.5
+        "scaleX": 1.836,
+        "scaleY": 1.836,
+        "scaleZ": 1.836
       },
       "Nickname": "Yellow B4",
       "Description": "Yellow Squad B — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -38263,9 +38263,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow D7",
           "Description": "Yellow Squad D — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -38351,9 +38351,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow D6",
           "Description": "Yellow Squad D — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -38439,9 +38439,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow D5",
           "Description": "Yellow Squad D — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -38527,9 +38527,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow D4",
           "Description": "Yellow Squad D — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -38615,9 +38615,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow D3",
           "Description": "Yellow Squad D — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -38703,9 +38703,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow D2",
           "Description": "Yellow Squad D — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -38791,9 +38791,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow D1",
           "Description": "Yellow Squad D — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -38879,9 +38879,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow C7",
           "Description": "Yellow Squad C — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -38967,9 +38967,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow C6",
           "Description": "Yellow Squad C — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -39055,9 +39055,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow C5",
           "Description": "Yellow Squad C — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -39143,9 +39143,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow C4",
           "Description": "Yellow Squad C — Soldier 4\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -39231,9 +39231,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow C3",
           "Description": "Yellow Squad C — Soldier 3\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -39319,9 +39319,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow C2",
           "Description": "Yellow Squad C — Soldier 2\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -39407,9 +39407,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow C1",
           "Description": "Yellow Squad C — Soldier 1\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -39495,9 +39495,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow B7",
           "Description": "Yellow Squad B — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -39583,9 +39583,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow B6",
           "Description": "Yellow Squad B — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -39671,9 +39671,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow B5",
           "Description": "Yellow Squad B — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -39759,9 +39759,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow A7",
           "Description": "Yellow Squad A — Soldier 7\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -39847,9 +39847,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow A6",
           "Description": "Yellow Squad A — Soldier 6\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
@@ -39935,9 +39935,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 2.5,
-            "scaleY": 2.5,
-            "scaleZ": 2.5
+            "scaleX": 1.836,
+            "scaleY": 1.836,
+            "scaleZ": 1.836
           },
           "Nickname": "Yellow A5",
           "Description": "Yellow Squad A — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",

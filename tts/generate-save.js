@@ -389,7 +389,8 @@ function makeSoldierStandee(pc, squadLetter, soldierNum, px, py, pz) {
         px, py, pz,
         // Scale the mesh up so the mini reads at hex scale (the OBJ is in
         // ~1 inch units; 2.5× gives a properly-tabletop-sized figurine)
-        { color: pc.color, scaleX: 2.5, scaleY: 2.5, scaleZ: 2.5 }
+        // v115: scaled down so Hams are 2× the Separatist size (sep = 0.918 → Hams = 1.836).
+        { color: pc.color, scaleX: 1.836, scaleY: 1.836, scaleZ: 1.836 }
     );
     obj.CustomMesh = {
         MeshURL: SOLDIER_MESH_URL,
