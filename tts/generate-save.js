@@ -605,7 +605,8 @@ function makeBunkerToken(stackIdx) {
         0, 0.4 * stackIdx, 0,
         // v127: 3× bigger per user request (was 1.4 → 4.2).
         // v129: halved per user request (4.2 → 2.1).
-        { scaleX: 2.1, scaleY: 2.1, scaleZ: 2.1, color: concrete });
+        // v130: set to 1.5 per user request (2.1 → 1.5).
+        { scaleX: 1.5, scaleY: 1.5, scaleZ: 1.5, color: concrete });
     tok.CustomMesh = {
         MeshURL: BUNKER_MESH_URL,
         DiffuseURL: BUNKER_DIFFUSE_URL,
