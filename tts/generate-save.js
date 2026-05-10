@@ -164,8 +164,9 @@ const cornerLayout = [
     { sx:  1, sz: -1, anchor: { x:  87, z: -28 }, boardRotY: 180, handRotY:   0 },
     // Green — top-left (anchor x aligned above the user manual at x=-60)
     { sx: -1, sz:  1, anchor: { x: -60, z:  28 }, boardRotY:   0, handRotY: 180 },
-    // Yellow — top-right (anchor x aligned with Equipment Display center, x=87)
-    { sx:  1, sz:  1, anchor: { x:  87, z:  28 }, boardRotY:   0, handRotY: 180 },
+    // Yellow — top-right (mirrors Green's distance from the planet board:
+    // Green dx = -60 - (-7.19) = -52.81, so Yellow x = -7.19 + 52.81 ≈ 45.62)
+    { sx:  1, sz:  1, anchor: { x:  45.62, z:  28 }, boardRotY:   0, handRotY: 180 },
 ];
 
 // Helper: spot inside a corner, expressed in TOWARD-CENTER (tc) and
