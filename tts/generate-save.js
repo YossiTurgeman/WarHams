@@ -202,15 +202,12 @@ function buildBACDeck() {
         }
     });
     // Spawn at the DECK slot on the Planet Bound Area board.
-    // Board center: (0, 1.02, 28). Empirical iteration:
-    //   x = +7.62 → deck landed in slot 5
-    //   x = -7.62 → deck landed in slot 1 (1 slot right of DECK)
-    //   x = -10.12 → close, deck just right of DECK slot center
-    //   x = -11.37 → too far left
-    //   x = -9.5  → small nudge right of -10.12 (slot pitch ≈ 2.5 world units)
+    // Empirical offset: x = PB_center_x − 9.5 lands the deck in the
+    // leftmost ("DECK") slot when PB has rotY:180. With v74 PB at
+    // (40, 1.02, 0), deck goes to (30.5, 1.5, 0).
     const deck = baseObj("Deck", "Spaceport Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
-        -9.5, 1.5, 36, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        30.5, 1.5, 0, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -789,10 +786,13 @@ const PLANETBOUND_BOARD_URL = `${SOLDIER_BASE}/planetbound-board.png`;
 // the south-facing camera.
 const pbBoard = baseObj("Custom_Tile", "Planet Bound Area",
     "Movable board with 7 slots: leftmost slot is for the Spaceport Deck, the other 6 hold the face-up Planet Bound BAC cards. Always keep 6 face-up; refill immediately whenever one is taken.",
-    // Position: board world depth ~5 (scaleZ:2.5 × Z factor 2). Pushed
-    // 2.5 units further north (z 33.5 → 36) so the new larger Planet
-    // Board (60×60, north edge z=32.5) clears it with 1u margin.
-    0, 1.02, 36,
+    // v74: relocated to the EAST side at x=40, between the Equipment
+    // Display (x=20) and the Unloading Zone (x=56). Same rotY:180 as
+    // ED and UZ so the title and slot labels read the same direction.
+    // Footprint ~19 wide × 5 deep world units (3.17 × ~6 on X, 2.5 × 2
+    // on Z). West edge ≈ x=30.5 (deck slot), east edge ≈ x=49.5 — fits
+    // cleanly between ED east edge (~24.84) and UZ west edge (~51).
+    40, 1.02, 0,
     { rotY: 180, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
 pbBoard.CustomImage = {
     ImageURL: PLANETBOUND_BOARD_URL,
@@ -857,16 +857,16 @@ objects.push(uzBoard);
 const EQUIPMENT_BOARD_URL = `${SOLDIER_BASE}/equipment-display-board.png`;
 const eqBoard = baseObj("Custom_Tile", "Equipment Display",
     "Shared reference board: 20 slots for face-up BAC cards (one per BAC type). When you unlock a new BAC type for the first time, place its card face-up here and drop one of your Control Flags on top to mark permanent access. Multiple flags may share a slot.",
-    // v73: relocated to the EAST-CENTRAL area between Yellow and Blue
-    // (where the Unloading Zone, Conspire Deck, containers and resource
-    // bags used to live — those have been pushed out to the table edge).
-    // Rotated 90° to the right (rotY 180 → 90), so the 20-slot strip
-    // is now portrait (2 cols × 10 rows running north-south) instead of
-    // landscape. Footprint after rotation: 10 wide × 9.68 long world
-    // units. Position 36 puts west edge at x=31 — 1u clear of the new
-    // Planet Board east edge at x=30.
-    36, 1.02, 0,
-    { rotY: 90, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
+    // v74: kept in the EAST-CENTRAL area between Yellow and Blue (where
+    // the items that used to live there were pushed out to the edge in
+    // v73), but orientation restored to landscape rotY:180 so the
+    // 20-slot strip reads upright. Footprint at rotY:180: ~9.68 wide ×
+    // 10 deep world units. Position x=20 keeps west edge at x≈15.16,
+    // east edge at x≈24.84, leaving room for the Planet Bound Area
+    // (centered at x=40) and Unloading Zone (centered at x=56) east of
+    // it. All three boards face the same direction (rotY:180).
+    20, 1.02, 0,
+    { rotY: 180, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
     ImageSecondaryURL: "",
@@ -904,7 +904,7 @@ const PLANET_BOARD_URL = `${SOLDIER_BASE}/planet-board.png`;
 const planetBoard = baseObj("Custom_Tile", "Planet Board",
     "The planet's surface — drop the 61 Hex Tiles into the printed slots. Locked.",
     0, 0.95, 2.5,
-    { rotY: 270, scaleX: 30.0, scaleY: 0.2, scaleZ: 30.0,
+    { rotY: 0, scaleX: 30.0, scaleY: 0.2, scaleZ: 30.0,
       color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
 planetBoard.CustomImage = {
     ImageURL: PLANET_BOARD_URL,
@@ -974,23 +974,14 @@ const PITCH_Z = Math.sqrt(3) * HEX_R_WORLD;
 const PLANET_CX = 0, PLANET_CZ = 2.5;
 const HEX_BACK_URL = `${SOLDIER_BASE}/hex_back_earth.png`;
 
-// v73: hex spawn coords rotated 90° clockwise (right) around the
-// board centre to match the rotated Planet Board (rotY=270). The
-// printed slot pattern in the texture rotates with the board, so the
-// hexes must spawn in the same rotated cluster pattern. Hex tile rotY
-// also bumped 180→90 so each tile rotates with the cluster (still
-// face-up; texture art rotates 90° on the tile face).
-//   Rotation: (x,z) → (z, -x)
-//   new_x = PLANET_CX + PITCH_Z * (r + q/2)
-//   new_z = PLANET_CZ - PITCH_X * q
 for (let i = 0; i < 61; i++) {
     const [q, r] = HEX_COORDS[i];
     const tile = HEX_MANIFEST[i];
-    const x = PLANET_CX + PITCH_Z * (r + q / 2);
-    const z = PLANET_CZ - PITCH_X * q;
+    const x = PLANET_CX + PITCH_X * q;
+    const z = PLANET_CZ + PITCH_Z * (r + q / 2);
     const hex = baseObj("Custom_Tile", tile.label, `Hex tile — ${tile.kind}.`,
         x, 1.02, z,
-        { rotY: 90, scaleX: HEX_SCALE, scaleY: 0.2, scaleZ: HEX_SCALE,
+        { rotY: 180, scaleX: HEX_SCALE, scaleY: 0.2, scaleZ: HEX_SCALE,
           color: { r: 1, g: 1, b: 1 }, grid: false });
     hex.CustomImage = {
         ImageURL: tile.url,
