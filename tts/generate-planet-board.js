@@ -54,10 +54,10 @@ const PITCH_Z = Math.sqrt(3) * HEX_R_WORLD;
 
 // Palette
 const SPACE_BG     = 0x0A0E1AFF;
-const ATMOS_RING   = 0x1B2840FF;
+const ATMOS_RING   = 0x1B2840FF;   // (no longer drawn — see v114)
 const SLOT_FILL    = 0x141A2BFF;
 const SLOT_OUTLINE = 0x6E84B8FF;
-const FRAME_GOLD   = 0xC9A24EFF;
+const FRAME_GOLD   = 0x44AAFFFF;   // v114: changed from gold → table-accent blue
 const FRAME_DARK   = 0x402F18FF;
 
 const FRAME_THICK    = 22;
@@ -141,18 +141,8 @@ function strokeHex(img, cx, cy, r, t, color) {
     const img = new Jimp({ width: W, height: H, color: SPACE_BG });
     const cx = W / 2, cy = H / 2;
 
-    // Subtle atmosphere ring (faint elliptical band just inside the
-    // outer frame).
-    const atmosOuter = (W / 2) * 0.92;
-    const atmosInner = atmosOuter - 32;
-    for (let dy = -atmosOuter; dy <= atmosOuter; dy++) {
-        for (let dx = -atmosOuter; dx <= atmosOuter; dx++) {
-            const d = Math.sqrt(dx * dx + dy * dy);
-            if (d > atmosInner && d < atmosOuter) {
-                pixel(img, cx + dx, cy + dy, ATMOS_RING);
-            }
-        }
-    }
+    // v114: atmosphere ring removed per user request (was the inner
+    // blue band; only the outer frame ring remains, recolored blue).
 
     // 61 hex slots at exact axial coords.
     const HEX_R_PX = HEX_R_WORLD * PX_PER_WORLD;   // 175
