@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v71";
+const CARD_VERSION = "v72";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -210,7 +210,7 @@ function buildBACDeck() {
     //   x = -9.5  → small nudge right of -10.12 (slot pitch ≈ 2.5 world units)
     const deck = baseObj("Deck", "Spaceport Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
-        -9.5, 1.5, 44, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        -9.5, 1.5, 36, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -244,7 +244,7 @@ function buildConspireDeck() {
     });
     const deck = baseObj("Deck", "Conspire Deck",
         `Conspire Cards — ${gameData.deck_counts.total_conspire_cards} cards\nForfeit Movement or Combat to draw 1.\nHover cards to see effects.`,
-        38, 1.5, 8, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
+        36, 1.5, 8, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -740,7 +740,7 @@ function makeContainer(num, role, px, py, pz) {
 // sit directly south of the Conspire deck (which is at x=34, z=8).
 // Slot grid is 3 cols × 2 rows; world slot pitch matches the texture
 // geometry (see UZ board derivation in section 17b).
-const UZ_BOARD_X = 38;
+const UZ_BOARD_X = 36;
 const UZ_BOARD_Z = 0;
 // Slot center pitches derived from the v59 board texture geometry
 // (1000×950 px, 250×350 slots, gaps 30/50, gridTop 110), using the
@@ -792,7 +792,7 @@ const pbBoard = baseObj("Custom_Tile", "Planet Bound Area",
     // Position: board world depth ~5 (scaleZ:2.5 × Z factor 2). Pushed
     // 2.5 units further north (z 33.5 → 36) so the new larger Planet
     // Board (60×60, north edge z=32.5) clears it with 1u margin.
-    0, 1.02, 44,
+    0, 1.02, 36,
     { rotY: 180, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
 pbBoard.CustomImage = {
     ImageURL: PLANETBOUND_BOARD_URL,
@@ -862,7 +862,7 @@ const eqBoard = baseObj("Custom_Tile", "Equipment Display",
     // Board (60×60, south edge z=-27.5) clears it with 1.5u margin.
     // North edge of ED moves from z=-26 to z=-29 — 1u south of the
     // Red/Blue player figurines at z=-28 (no overlap).
-    0, 1.02, -42,
+    0, 1.02, -34,
     { rotY: 180, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
@@ -901,7 +901,7 @@ const PLANET_BOARD_URL = `${SOLDIER_BASE}/planet-board.png`;
 const planetBoard = baseObj("Custom_Tile", "Planet Board",
     "The planet's surface — drop the 61 Hex Tiles into the printed slots. Locked.",
     0, 0.95, 2.5,
-    { rotY: 0, scaleX: 32.0, scaleY: 0.2, scaleZ: 38.0,
+    { rotY: 0, scaleX: 30.0, scaleY: 0.2, scaleZ: 30.0,
       color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
 planetBoard.CustomImage = {
     ImageURL: PLANET_BOARD_URL,
@@ -964,8 +964,8 @@ if (HEX_COORDS.length !== 61) throw new Error("hex coord count: " + HEX_COORDS.l
 // edge ≈ z=-26) with ~1 unit ("inch") margin on each side.
 //   z extent = R * (4√3 + √3/2) = R * 7.794 each side
 //   55 / (2*7.794) = 3.53  →  pick 3.5 and offset center to z=2.5.
-const HEX_SCALE   = 4.0;
-const HEX_R_WORLD = 4.0;
+const HEX_SCALE   = 3.0;
+const HEX_R_WORLD = 3.0;
 const PITCH_X = 1.5 * HEX_R_WORLD;
 const PITCH_Z = Math.sqrt(3) * HEX_R_WORLD;
 const PLANET_CX = 0, PLANET_CZ = 2.5;

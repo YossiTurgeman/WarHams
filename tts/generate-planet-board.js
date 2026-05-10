@@ -33,7 +33,7 @@ const path = require("path");
 const fs = require("fs");
 const { Jimp } = require("jimp");
 
-const VERSION = "v71";
+const VERSION = "v72";
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
@@ -41,14 +41,14 @@ if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 // surrounding boards (PB/ED/UZ) were pushed outward to free the room.
 // Cluster (49 × 54.5) now sits with ~5u of "atmosphere" margin to
 // the gold frame on the long axes.
-const WORLD_W = 64;
-const WORLD_H = 76;
+const WORLD_W = 60;
+const WORLD_H = 60;
 const PX_PER_WORLD = 50;
 const W = WORLD_W * PX_PER_WORLD;   // 3000
 const H = WORLD_H * PX_PER_WORLD;   // 3000
 
 // Hex cluster geometry (must match generate-save.js Section 17e).
-const HEX_R_WORLD = 4.0;
+const HEX_R_WORLD = 3.0;
 const PITCH_X = 1.5 * HEX_R_WORLD;
 const PITCH_Z = Math.sqrt(3) * HEX_R_WORLD;
 
@@ -143,14 +143,12 @@ function strokeHex(img, cx, cy, r, t, color) {
 
     // Subtle atmosphere ring (faint elliptical band just inside the
     // outer frame).
-    const ringRX = (W / 2) * 0.93;
-    const ringRY = (H / 2) * 0.93;
-    const ringT  = 28;
-    const innerNorm = 1 - ringT / Math.min(ringRX, ringRY);
-    for (let dy = -ringRY; dy <= ringRY; dy++) {
-        for (let dx = -ringRX; dx <= ringRX; dx++) {
-            const n = (dx * dx) / (ringRX * ringRX) + (dy * dy) / (ringRY * ringRY);
-            if (n < 1 && n > innerNorm) {
+    const atmosOuter = (W / 2) * 0.92;
+    const atmosInner = atmosOuter - 32;
+    for (let dy = -atmosOuter; dy <= atmosOuter; dy++) {
+        for (let dx = -atmosOuter; dx <= atmosOuter; dx++) {
+            const d = Math.sqrt(dx * dx + dy * dy);
+            if (d > atmosInner && d < atmosOuter) {
                 pixel(img, cx + dx, cy + dy, ATMOS_RING);
             }
         }
@@ -174,11 +172,21 @@ function strokeHex(img, cx, cy, r, t, color) {
     }
     if (slotCount !== 61) throw new Error("slot count: " + slotCount);
 
-    // Outer cardboard frame.
-    strokeRect(img, 0, 0, W - 1, H - 1, FRAME_THICK, FRAME_GOLD);
-    strokeRect(img, FRAME_THICK, FRAME_THICK,
-               W - 1 - FRAME_THICK, H - 1 - FRAME_THICK,
-               FRAME_INNER, FRAME_DARK);
+    // Circular planet boundary — board is square so the ring stays
+    // round on the tile (no aspect distortion).
+    const planetOuter = (W / 2) * 0.985;
+    const planetInner = planetOuter - FRAME_THICK;
+    const innerEdge   = planetInner - FRAME_INNER;
+    for (let dy = -planetOuter; dy <= planetOuter; dy++) {
+        for (let dx = -planetOuter; dx <= planetOuter; dx++) {
+            const d = Math.sqrt(dx * dx + dy * dy);
+            if (d > planetInner && d < planetOuter) {
+                pixel(img, cx + dx, cy + dy, FRAME_GOLD);
+            } else if (d > innerEdge && d <= planetInner) {
+                pixel(img, cx + dx, cy + dy, FRAME_DARK);
+            }
+        }
+    }
 
     const outPath = path.join(outDir, "planet-board.png");
     await img.write(outPath);
