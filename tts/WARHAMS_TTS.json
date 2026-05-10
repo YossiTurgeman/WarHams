@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778421428,
+  "EpochTime": 1778421543,
   "Date": "2026-05-10",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -11907,7 +11907,52 @@
       "GUID": "1000af",
       "Name": "Die_6",
       "Transform": {
-        "posX": -58,
+        "posX": -54,
+        "posY": 2,
+        "posZ": 12,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Separatist Die",
+      "Description": "Grey — triggers Separatist spawning",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "1000b0",
+      "Name": "Die_6",
+      "Transform": {
+        "posX": -52,
         "posY": 2,
         "posZ": 12,
         "rotX": 0,
@@ -11949,10 +11994,10 @@
       "XmlUI": ""
     },
     {
-      "GUID": "1000b0",
+      "GUID": "1000b1",
       "Name": "Die_6",
       "Transform": {
-        "posX": -56,
+        "posX": -50,
         "posY": 2,
         "posZ": 12,
         "rotX": 0,
@@ -11974,51 +12019,6 @@
         "r": 1,
         "g": 1,
         "b": 1
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "1000b1",
-      "Name": "Die_6",
-      "Transform": {
-        "posX": -54,
-        "posY": 2,
-        "posZ": 12,
-        "rotX": 0,
-        "rotY": 0,
-        "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
-      },
-      "Nickname": "Separatist Die",
-      "Description": "Grey — triggers Separatist spawning",
-      "GMNotes": "",
-      "AltLookAngle": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "ColorDiffuse": {
-        "r": 0.5,
-        "g": 0.5,
-        "b": 0.5
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,

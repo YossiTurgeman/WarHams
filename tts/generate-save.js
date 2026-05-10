@@ -262,10 +262,13 @@ objects.push(buildConspireDeck());
 // together: the dice say which numbers produced this round; the
 // number tokens on the hexes say which hexes those numbers refer to.
 // Keeping them adjacent makes Phase 1 self-explanatory.
+// v128: white resource dice moved to the EAST of the separatist die
+// (per user request — easier to read as a left-to-right "Sep + 2 white"
+// row matching how the rulebook lists Phase 1 production rolls).
 [
-    { name: "Resource Die 1", color: { r: 1, g: 1, b: 1 }, x: -58 },
-    { name: "Resource Die 2", color: { r: 1, g: 1, b: 1 }, x: -56 },
     { name: "Separatist Die", color: { r: 0.5, g: 0.5, b: 0.5 }, x: -54 },
+    { name: "Resource Die 1", color: { r: 1, g: 1, b: 1 }, x: -52 },
+    { name: "Resource Die 2", color: { r: 1, g: 1, b: 1 }, x: -50 },
 ].forEach(d => {
     objects.push(baseObj("Die_6", d.name,
         d.name.includes("Separatist") ? "Grey — triggers Separatist spawning" : "Resource production",
