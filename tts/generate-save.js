@@ -435,17 +435,34 @@ function makeSoldierStandee(pc, squadLetter, soldierNum, px, py, pz) {
     // object's scale automatically). Tags pair with the matching
     // slot tag set on each Custom_Model module so e.g. a "Head"
     // module won't snap onto the chest socket.
+    // v138: equipment-slot snap points spread OUTSIDE the body in
+    // their natural direction (head above, backpack behind, hands
+    // to the right, etc.) so each one is the closest snap to any
+    // reasonable drop direction. Tags still narrow the filter, but
+    // even if TTS picked closest-only it would now pick correctly.
+    // All coordinates are LOCAL OBJ-units (TTS applies object scale).
+    // Rotation fields explicit so TTS doesn't fall back to defaults.
+    const noRot = { x: 0, y: 0, z: 0 };
     obj.AttachedSnapPoints = [
-        // damage pegs (untagged — any small object snaps)
-        { Position: { x: -0.36, y: 0.125, z: 0.30 } },
-        { Position: { x:  0.00, y: 0.125, z: 0.42 } },
-        { Position: { x:  0.36, y: 0.125, z: 0.30 } },
-        // equipment-slot magnets
-        { Position: { x:  0.00, y: 0.95, z:  0.00 }, Tags: ["module-head"]     },
-        { Position: { x:  0.00, y: 0.60, z:  0.05 }, Tags: ["module-chest"]    },
-        { Position: { x:  0.20, y: 0.55, z:  0.10 }, Tags: ["module-hands"]    },
-        { Position: { x:  0.00, y: 0.25, z:  0.00 }, Tags: ["module-legs"]     },
-        { Position: { x:  0.00, y: 0.65, z: -0.12 }, Tags: ["module-backpack"] },
+        // 3 damage-peg snaps on the front rim of the base (untagged
+        // → accept any small object).
+        { Position: { x: -0.36, y: 0.125, z: 0.30 }, Rotation: noRot },
+        { Position: { x:  0.00, y: 0.125, z: 0.42 }, Rotation: noRot },
+        { Position: { x:  0.36, y: 0.125, z: 0.30 }, Rotation: noRot },
+        // Equipment-slot magnets — each pushed away from the body
+        // along the axis a real piece of gear would sit:
+        //   head     – directly above the helmet
+        //   chest    – forward of the torso (where a chest plate
+        //              would face)
+        //   hands    – out to the soldier's right (rifle held in
+        //              the right hand)
+        //   legs     – just in front of the knees
+        //   backpack – directly behind the torso
+        { Position: { x:  0.00, y: 1.20, z:  0.00 }, Rotation: noRot, Tags: ["module-head"]     },
+        { Position: { x:  0.00, y: 0.60, z:  0.30 }, Rotation: noRot, Tags: ["module-chest"]    },
+        { Position: { x:  0.45, y: 0.55, z:  0.00 }, Rotation: noRot, Tags: ["module-hands"]    },
+        { Position: { x:  0.00, y: 0.25, z:  0.30 }, Rotation: noRot, Tags: ["module-legs"]     },
+        { Position: { x:  0.00, y: 0.65, z: -0.30 }, Rotation: noRot, Tags: ["module-backpack"] },
     ];
     return obj;
 }
