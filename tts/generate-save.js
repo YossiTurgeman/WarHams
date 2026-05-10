@@ -423,10 +423,29 @@ function makeSoldierStandee(pc, squadLetter, soldierNum, px, py, pz) {
     // are in LOCAL OBJ-unit space (TTS applies the object's scale).
     // Y = BASE_H + DIVOT_RIM_H = 0.125 puts the peg's bottom flush
     // with the well rim, so it reads as inserted into the socket.
+    // Damage-peg snaps (3 divots on the front rim of the base).
+    // v137: also expose 5 tagged equipment-slot snap points so a
+    // dragged module sticks to the matching body part:
+    //   head     – top of helmet zone
+    //   chest    – mid torso, slightly forward
+    //   hands    – right hand, in front
+    //   legs     – mid-thigh, centered
+    //   backpack – upper back, behind torso
+    // Coordinates are in LOCAL OBJ-unit space (TTS applies the
+    // object's scale automatically). Tags pair with the matching
+    // slot tag set on each Custom_Model module so e.g. a "Head"
+    // module won't snap onto the chest socket.
     obj.AttachedSnapPoints = [
+        // damage pegs (untagged — any small object snaps)
         { Position: { x: -0.36, y: 0.125, z: 0.30 } },
         { Position: { x:  0.00, y: 0.125, z: 0.42 } },
         { Position: { x:  0.36, y: 0.125, z: 0.30 } },
+        // equipment-slot magnets
+        { Position: { x:  0.00, y: 0.95, z:  0.00 }, Tags: ["module-head"]     },
+        { Position: { x:  0.00, y: 0.60, z:  0.05 }, Tags: ["module-chest"]    },
+        { Position: { x:  0.20, y: 0.55, z:  0.10 }, Tags: ["module-hands"]    },
+        { Position: { x:  0.00, y: 0.25, z:  0.00 }, Tags: ["module-legs"]     },
+        { Position: { x:  0.00, y: 0.65, z: -0.12 }, Tags: ["module-backpack"] },
     ];
     return obj;
 }
@@ -1217,6 +1236,10 @@ EQUIPMENT_SLOTS.forEach((slot, rowIdx) => {
             const m = baseObj("Custom_Model", bacName, moduleDesc,
                 bagX, 1.5 + 0.4 * i, rowZ,
                 { scaleX: MODULE_SCALE, scaleY: MODULE_SCALE, scaleZ: MODULE_SCALE, color });
+            // v137: tag the module so it ONLY snaps to the matching
+            // body-part snap point on a soldier (head modules → head
+            // snap, etc.). Soldier snap points carry the same tag.
+            m.Tags = [`module-${slot.id}`];
             m.CustomMesh = {
                 MeshURL: meshURL,
                 DiffuseURL: MODULE_TEX_URL,

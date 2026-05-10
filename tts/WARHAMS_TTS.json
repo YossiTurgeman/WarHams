@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778423198,
+  "EpochTime": 1778423575,
   "Date": "2026-05-10",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -30056,6 +30056,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -30144,6 +30194,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -30232,6 +30332,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -30320,6 +30470,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -30408,6 +30608,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -30496,6 +30746,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -30584,6 +30884,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -30672,6 +31022,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -30805,6 +31205,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -30893,6 +31343,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -30981,6 +31481,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -31069,6 +31619,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -31157,6 +31757,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -31245,6 +31895,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -31333,6 +32033,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -31421,6 +32171,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -31509,6 +32309,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -31597,6 +32447,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -31685,6 +32585,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -31773,6 +32723,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -31861,6 +32861,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -31949,6 +32999,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -32037,6 +33137,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -32125,6 +33275,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -32213,6 +33413,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -32301,6 +33551,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -32389,6 +33689,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -32477,6 +33827,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         }
@@ -32567,6 +33967,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -32655,6 +34105,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -32743,6 +34243,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -32831,6 +34381,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -32919,6 +34519,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -33007,6 +34657,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -33095,6 +34795,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -33183,6 +34933,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -33316,6 +35116,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -33404,6 +35254,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -33492,6 +35392,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -33580,6 +35530,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -33668,6 +35668,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -33756,6 +35806,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -33844,6 +35944,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -33932,6 +36082,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -34020,6 +36220,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -34108,6 +36358,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -34196,6 +36496,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -34284,6 +36634,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -34372,6 +36772,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -34460,6 +36910,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -34548,6 +37048,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -34636,6 +37186,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -34724,6 +37324,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -34812,6 +37462,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -34900,6 +37600,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -34988,6 +37738,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         }
@@ -35078,6 +37878,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -35166,6 +38016,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -35254,6 +38154,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -35342,6 +38292,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -35430,6 +38430,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -35518,6 +38568,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -35606,6 +38706,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -35694,6 +38844,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -35827,6 +39027,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -35915,6 +39165,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -36003,6 +39303,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -36091,6 +39441,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -36179,6 +39579,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -36267,6 +39717,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -36355,6 +39855,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -36443,6 +39993,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -36531,6 +40131,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -36619,6 +40269,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -36707,6 +40407,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -36795,6 +40545,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -36883,6 +40683,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -36971,6 +40821,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -37059,6 +40959,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -37147,6 +41097,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -37235,6 +41235,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -37323,6 +41373,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -37411,6 +41511,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -37499,6 +41649,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         }
@@ -37589,6 +41789,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -37677,6 +41927,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -37765,6 +42065,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -37853,6 +42203,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -37941,6 +42341,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -38029,6 +42479,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -38117,6 +42617,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -38205,6 +42755,56 @@
             "y": 0.125,
             "z": 0.3
           }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.95,
+            "z": 0
+          },
+          "Tags": [
+            "module-head"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.6,
+            "z": 0.05
+          },
+          "Tags": [
+            "module-chest"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0.2,
+            "y": 0.55,
+            "z": 0.1
+          },
+          "Tags": [
+            "module-hands"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.25,
+            "z": 0
+          },
+          "Tags": [
+            "module-legs"
+          ]
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.65,
+            "z": -0.12
+          },
+          "Tags": [
+            "module-backpack"
+          ]
         }
       ]
     },
@@ -38338,6 +42938,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -38426,6 +43076,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -38514,6 +43214,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -38602,6 +43352,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -38690,6 +43490,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -38778,6 +43628,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -38866,6 +43766,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -38954,6 +43904,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -39042,6 +44042,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -39130,6 +44180,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -39218,6 +44318,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -39306,6 +44456,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -39394,6 +44594,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -39482,6 +44732,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -39570,6 +44870,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -39658,6 +45008,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -39746,6 +45146,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -39834,6 +45284,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -39922,6 +45422,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         },
@@ -40010,6 +45560,56 @@
                 "y": 0.125,
                 "z": 0.3
               }
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.95,
+                "z": 0
+              },
+              "Tags": [
+                "module-head"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.6,
+                "z": 0.05
+              },
+              "Tags": [
+                "module-chest"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0.2,
+                "y": 0.55,
+                "z": 0.1
+              },
+              "Tags": [
+                "module-hands"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+              },
+              "Tags": [
+                "module-legs"
+              ]
+            },
+            {
+              "Position": {
+                "x": 0,
+                "y": 0.65,
+                "z": -0.12
+              },
+              "Tags": [
+                "module-backpack"
+              ]
             }
           ]
         }
@@ -54975,6 +60575,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -55040,6 +60643,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -55105,6 +60711,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -55170,6 +60779,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -55235,6 +60847,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -55300,6 +60915,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -55412,6 +61030,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -55477,6 +61098,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -55542,6 +61166,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -55607,6 +61234,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -55672,6 +61302,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -55737,6 +61370,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -55849,6 +61485,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -55914,6 +61553,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -55979,6 +61621,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -56044,6 +61689,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -56109,6 +61757,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -56174,6 +61825,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -56286,6 +61940,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -56351,6 +62008,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -56416,6 +62076,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -56481,6 +62144,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -56546,6 +62212,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -56611,6 +62280,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -56723,6 +62395,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -56788,6 +62463,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -56853,6 +62531,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -56918,6 +62599,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -56983,6 +62667,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -57048,6 +62735,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -57160,6 +62850,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -57225,6 +62918,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -57290,6 +62986,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -57355,6 +63054,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -57420,6 +63122,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -57485,6 +63190,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -57597,6 +63305,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -57662,6 +63373,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -57727,6 +63441,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -57792,6 +63509,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -57857,6 +63577,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -57922,6 +63645,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -58034,6 +63760,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -58099,6 +63828,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -58164,6 +63896,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -58229,6 +63964,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -58294,6 +64032,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -58359,6 +64100,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -58471,6 +64215,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -58536,6 +64283,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -58601,6 +64351,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -58666,6 +64419,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -58731,6 +64487,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -58796,6 +64555,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -58908,6 +64670,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -58973,6 +64738,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -59038,6 +64806,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -59103,6 +64874,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -59168,6 +64942,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -59233,6 +65010,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -59345,6 +65125,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -59410,6 +65193,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -59475,6 +65261,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -59540,6 +65329,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -59605,6 +65397,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -59670,6 +65465,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -59782,6 +65580,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -59847,6 +65648,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -59912,6 +65716,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -59977,6 +65784,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -60042,6 +65852,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -60107,6 +65920,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -60219,6 +66035,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -60284,6 +66103,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -60349,6 +66171,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -60414,6 +66239,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -60479,6 +66307,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -60544,6 +66375,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -60656,6 +66490,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -60721,6 +66558,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -60786,6 +66626,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -60851,6 +66694,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -60916,6 +66762,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -60981,6 +66830,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -61093,6 +66945,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -61158,6 +67013,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -61223,6 +67081,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -61288,6 +67149,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -61353,6 +67217,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -61418,6 +67285,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -61530,6 +67400,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -61595,6 +67468,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -61660,6 +67536,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -61725,6 +67604,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -61790,6 +67672,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -61855,6 +67740,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -61967,6 +67855,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -62032,6 +67923,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -62097,6 +67991,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -62162,6 +68059,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -62227,6 +68127,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -62292,6 +68195,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -62404,6 +68310,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -62469,6 +68378,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -62534,6 +68446,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -62599,6 +68514,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -62664,6 +68582,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -62729,6 +68650,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -62841,6 +68765,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -62906,6 +68833,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -62971,6 +68901,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -63036,6 +68969,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -63101,6 +69037,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -63166,6 +69105,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -63278,6 +69220,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -63343,6 +69288,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -63408,6 +69356,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -63473,6 +69424,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -63538,6 +69492,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
@@ -63603,6 +69560,9 @@
           "LuaScript": "",
           "LuaScriptState": "",
           "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
