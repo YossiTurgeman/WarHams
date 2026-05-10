@@ -60,7 +60,7 @@ const LIGHTNING_MESH_URL = `${CARD_BASE}/lightning.obj?${CARD_VERSION}`;
 const WAVE_MESH_URL = `${CARD_BASE}/wave.obj?${CARD_VERSION}`;
 const HAMMER_MESH_URL = `${CARD_BASE}/hammer.obj?${CARD_VERSION}`;
 const RECRUIT_MESH_URL = `${CARD_BASE}/recruit.obj?${CARD_VERSION}`;
-const TABLE_SURFACE_URL = `${CARD_BASE}/table_surface.png?${CARD_VERSION}`;
+const TABLE_SURFACE_URL = `${CARD_BASE}/table_surface.png?${CARD_VERSION}-tbl2`;
 
 // GUID generator — 6 hex chars
 let guidCounter = 0x100000;

@@ -61,9 +61,17 @@ async function main() {
     for (let x = PAD; x <= W - PAD; x += STEP) drawVLine(img, x, PAD, H - 2 * PAD, GRID);
     for (let y = PAD; y <= H - PAD; y += STEP) drawHLine(img, PAD, y, W - 2 * PAD, GRID);
 
-    // Major grid lines (every 256 px) in accent
-    for (let x = PAD; x <= W - PAD; x += STEP * 4) {
-        for (let t = -1; t <= 1; t++) drawVLine(img, x + t, PAD, H - 2 * PAD, ACCENT);
+    // Major grid lines (every 256 px) in accent.
+    // Per user request: skip the first 2 and the last 1 of the vertical
+    // accent lines (they were redundant with the outer trim and the
+    // adjacent cluster of items at the table edges).
+    {
+        const xs = [];
+        for (let x = PAD; x <= W - PAD; x += STEP * 4) xs.push(x);
+        const xsKept = xs.slice(2, -1); // drop first 2 and last 1
+        for (const x of xsKept) {
+            for (let t = -1; t <= 1; t++) drawVLine(img, x + t, PAD, H - 2 * PAD, ACCENT);
+        }
     }
     for (let y = PAD; y <= H - PAD; y += STEP * 4) {
         for (let t = -1; t <= 1; t++) drawHLine(img, PAD, y + t, W - 2 * PAD, ACCENT);

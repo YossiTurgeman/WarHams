@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778415583,
+  "EpochTime": 1778415787,
   "Date": "2026-05-10",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -91,7 +91,7 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/table_surface.png?v72",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/table_surface.png?v72-tbl2",
         "ImageSecondaryURL": "",
         "ImageScalar": 1,
         "WidthScale": 0,
