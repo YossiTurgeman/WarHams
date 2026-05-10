@@ -1047,6 +1047,9 @@ for (let i = 0; i < 61; i++) {
         x, 1.02, z,
         { rotY: 180, scaleX: HEX_SCALE, scaleY: 0.2, scaleZ: HEX_SCALE,
           color: { r: 1, g: 1, b: 1 }, grid: false });
+    // v140: tag every planet hex so the Randomize button can find
+    // them and shuffle their positions.
+    hex.Tags = ["planet-hex"];
     hex.CustomImage = {
         ImageURL: tile.url,
         ImageSecondaryURL: HEX_BACK_URL,
@@ -1056,6 +1059,79 @@ for (let i = 0; i < 61; i++) {
     };
     objects.push(hex);
 }
+
+// ─── 17f. RANDOMIZE HEXES BUTTON ────────────────────────────────────
+// v140: a clickable on-table button placed just east of the resource
+// token bag column (which sits at x=62, spanning z=-12..+12). Click
+// shuffles every tile tagged "planet-hex" — the script collects all
+// matching tiles and their world positions, generates a random
+// permutation, and reseats each tile at a shuffled position. Tiles
+// keep their identities (so a Mountain hex stays a Mountain hex);
+// only the locations swap.
+const randomizeButton = baseObj("Custom_Tile", "Randomize Hexes",
+    "Click the on-tile button to shuffle the 61 planet hexes among their current slot positions.",
+    70, 1.02, 0,
+    { rotY: 0, scaleX: 4, scaleY: 0.2, scaleZ: 4,
+      color: { r: 0.85, g: 0.20, b: 0.20 }, locked: true, grid: false });
+randomizeButton.CustomImage = {
+    // No texture — the tile body is a solid red square; the actual
+    // clickable label is drawn by createButton() below.
+    ImageURL: "",
+    ImageSecondaryURL: "",
+    ImageScalar: 1,
+    WidthScale: 0,
+    CustomTile: { Type: 0 /* square */, Thickness: 0.1, Stackable: false, Stretch: true },
+};
+randomizeButton.LuaScript = [
+    "function onLoad()",
+    "    self.createButton({",
+    "        label = 'RANDOMIZE',",
+    "        click_function = 'shuffleHexes',",
+    "        function_owner = self,",
+    "        position = {0, 0.6, 0},",
+    "        rotation = {0, 180, 0},",
+    "        width = 1400,",
+    "        height = 500,",
+    "        font_size = 240,",
+    "        color = {0.85, 0.20, 0.20},",
+    "        font_color = {1, 1, 1},",
+    "        tooltip = 'Shuffle every planet hex tile among the existing slot positions.',",
+    "    })",
+    "end",
+    "",
+    "function shuffleHexes(_, _color)",
+    "    local hexes = {}",
+    "    for _, obj in ipairs(getAllObjects()) do",
+    "        if obj.hasTag('planet-hex') then",
+    "            table.insert(hexes, obj)",
+    "        end",
+    "    end",
+    "    if #hexes < 2 then",
+    "        broadcastToAll('No planet hexes found to shuffle.', {1, 0.5, 0.5})",
+    "        return",
+    "    end",
+    "    -- Snapshot each tile's world position + Y rotation so we can",
+    "    -- redistribute the IDENTITIES across the same set of slots.",
+    "    local slots = {}",
+    "    for _, h in ipairs(hexes) do",
+    "        local p = h.getPosition()",
+    "        local r = h.getRotation()",
+    "        table.insert(slots, {pos = p, rot = r})",
+    "    end",
+    "    -- Fisher-Yates shuffle on the slots list.",
+    "    for i = #slots, 2, -1 do",
+    "        local j = math.random(i)",
+    "        slots[i], slots[j] = slots[j], slots[i]",
+    "    end",
+    "    -- Reseat each hex into its shuffled slot.",
+    "    for i, h in ipairs(hexes) do",
+    "        h.setPositionSmooth(slots[i].pos, false, true)",
+    "        h.setRotationSmooth(slots[i].rot, false, true)",
+    "    end",
+    "    broadcastToAll('Randomized ' .. #hexes .. ' planet hex tiles.', {0.6, 1, 0.6})",
+    "end",
+].join("\n");
+objects.push(randomizeButton);
 
 // ─── 18. REFERENCE BOOKS — Quick Ref + Full User Guide ──────────────
 // Custom_PDF objects render as physical book/folder shapes on the
