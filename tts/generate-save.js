@@ -796,7 +796,7 @@ const pbBoard = baseObj("Custom_Tile", "Planet Bound Area",
     // v76: rotated 90° to the right (rotY 180 → 90) per user request.
     // Footprint at rotY:90 ~5 (X) × 19 (Z). Position x=53 → x ∈ [50.5, 55.5],
     // long axis north-south (z ∈ [-9.5, +9.5]).
-    96.5, 1.02, 0,
+    33.31, 1.02, 16.34,
     { rotY: 270, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
 pbBoard.CustomImage = {
     ImageURL: PLANETBOUND_BOARD_URL,
