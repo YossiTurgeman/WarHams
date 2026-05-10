@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778421781,
+  "EpochTime": 1778422069,
   "Date": "2026-05-10",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -54885,6 +54885,4801 @@
         "PDFPage": 0,
         "PDFPageOffset": 0
       }
+    },
+    {
+      "GUID": "100345",
+      "Name": "Bag",
+      "Transform": {
+        "posX": -68,
+        "posY": 1.5,
+        "posZ": -16,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Head Modules (16)",
+      "Description": "Magnetic Head modules. Draw one when a soldier equips a Head-slot BAC.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.43,
+        "g": 0.56,
+        "b": 0.76
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "100335",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.5,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100336",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.55,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100337",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.6,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100338",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.65,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100339",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.7,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10033a",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.75,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10033b",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.8,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10033c",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.85,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10033d",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.9,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10033e",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.95,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10033f",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100340",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.05,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100341",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.1,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100342",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.15,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100343",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.2,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100344",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.25,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Head Module",
+          "Description": "Head equipment module — magnetize to a H.A.M.S head slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.43,
+            "g": 0.56,
+            "b": 0.76
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_head_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "100356",
+      "Name": "Bag",
+      "Transform": {
+        "posX": -68,
+        "posY": 1.5,
+        "posZ": -8,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Chest Modules (16)",
+      "Description": "Magnetic Chest modules. Draw one when a soldier equips a Chest-slot BAC.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.51,
+        "g": 0.42,
+        "b": 0.31
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "100346",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.5,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100347",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.55,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100348",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.6,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100349",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.65,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10034a",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.7,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10034b",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.75,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10034c",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.8,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10034d",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.85,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10034e",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.9,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10034f",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.95,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100350",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100351",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.05,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100352",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.1,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100353",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.15,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100354",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.2,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100355",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.25,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Chest Module",
+          "Description": "Chest equipment module — magnetize to a H.A.M.S chest slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.51,
+            "g": 0.42,
+            "b": 0.31
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_chest_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "100367",
+      "Name": "Bag",
+      "Transform": {
+        "posX": -68,
+        "posY": 1.5,
+        "posZ": 0,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Hands Modules (16)",
+      "Description": "Magnetic Hands modules. Draw one when a soldier equips a Hands-slot BAC.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.67,
+        "g": 0.43,
+        "b": 0.26
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "100357",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.5,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100358",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.55,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100359",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.6,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10035a",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.65,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10035b",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.7,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10035c",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.75,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10035d",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.8,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10035e",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.85,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10035f",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.9,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100360",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.95,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100361",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100362",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.05,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100363",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.1,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100364",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.15,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100365",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.2,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100366",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.25,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Hands Module",
+          "Description": "Hands equipment module — magnetize to a H.A.M.S hands slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.67,
+            "g": 0.43,
+            "b": 0.26
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_hands_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "100378",
+      "Name": "Bag",
+      "Transform": {
+        "posX": -68,
+        "posY": 1.5,
+        "posZ": 8,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Legs Modules (16)",
+      "Description": "Magnetic Legs modules. Draw one when a soldier equips a Legs-slot BAC.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.31,
+        "g": 0.43,
+        "b": 0.29
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "100368",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.5,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100369",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.55,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10036a",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.6,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10036b",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.65,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10036c",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.7,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10036d",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.75,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10036e",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.8,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10036f",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.85,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100370",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.9,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100371",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.95,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100372",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100373",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.05,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100374",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.1,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100375",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.15,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100376",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.2,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100377",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.25,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Legs Module",
+          "Description": "Legs equipment module — magnetize to a H.A.M.S legs slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.31,
+            "g": 0.43,
+            "b": 0.29
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_legs_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "100389",
+      "Name": "Bag",
+      "Transform": {
+        "posX": -68,
+        "posY": 1.5,
+        "posZ": 16,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Backpack Modules (16)",
+      "Description": "Magnetic Backpack modules. Draw one when a soldier equips a Backpack-slot BAC.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.33,
+        "g": 0.33,
+        "b": 0.38
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ContainedObjects": [
+        {
+          "GUID": "100379",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.5,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10037a",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.55,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10037b",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.6,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10037c",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.65,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10037d",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.7,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10037e",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.75,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "10037f",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.8,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100380",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.85,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100381",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.9,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100382",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 1.95,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100383",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100384",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.05,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100385",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.1,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100386",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.15,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100387",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.2,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        },
+        {
+          "GUID": "100388",
+          "Name": "Custom_Token",
+          "Transform": {
+            "posX": -68,
+            "posY": 2.25,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 0.45,
+            "scaleY": 1,
+            "scaleZ": 0.45
+          },
+          "Nickname": "Backpack Module",
+          "Description": "Backpack equipment module — magnetize to a H.A.M.S backpack slot when a matching BAC is installed.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.33,
+            "g": 0.33,
+            "b": 0.38
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CustomImage": {
+            "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module_backpack_rev132.png",
+            "ImageSecondaryURL": "",
+            "ImageScalar": 1,
+            "WidthScale": 0,
+            "CustomToken": {
+              "Thickness": 0.1,
+              "MergeDistancePixels": 5,
+              "StackPrecedence": 0,
+              "Stackable": true
+            }
+          }
+        }
+      ]
     }
   ],
   "SnapPoints": []
