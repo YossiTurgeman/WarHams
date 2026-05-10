@@ -900,7 +900,7 @@ objects.push(eqBoard);
 const PLANET_BOARD_URL = `${SOLDIER_BASE}/planet-board.png`;
 const planetBoard = baseObj("Custom_Tile", "Planet Board",
     "The planet's surface — drop the 61 Hex Tiles into the printed slots. Locked.",
-    -25.19, 0.95, 2.5,
+    -23.19, 0.95, 2.5,
     { rotY: 0, scaleX: 30.0, scaleY: 0.2, scaleZ: 30.0,
       color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
 planetBoard.CustomImage = {
@@ -968,7 +968,7 @@ const HEX_SCALE   = 3.0;
 const HEX_R_WORLD = 3.0;
 const PITCH_X = 1.5 * HEX_R_WORLD;
 const PITCH_Z = Math.sqrt(3) * HEX_R_WORLD;
-const PLANET_CX = -25.19, PLANET_CZ = 2.5;
+const PLANET_CX = -23.19, PLANET_CZ = 2.5;
 const HEX_BACK_URL = `${SOLDIER_BASE}/hex_back_earth.png`;
 
 for (let i = 0; i < 61; i++) {
