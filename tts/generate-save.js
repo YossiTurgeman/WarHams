@@ -1118,59 +1118,77 @@ const BACS_BY_SLOT = {
     ],
 };
 
+// v134: one bag PER BAC (20 bags total) instead of 5 slot-grouped
+// bags. Each bag holds MODULES_PER_BAC identical 3D pieces of the
+// same BAC, so a player can pull as many copies as their squad
+// needs. The 20 bags are laid out in a 5-row × 4-column grid west
+// of the User Guide, with rows organized by slot for quick visual
+// scanning (top row = Head, then Chest, Hands, Legs, Backpack).
 const EQUIPMENT_SLOTS = [
-    { id: "head",     label: "Head",     bagColor: { r: 0.43, g: 0.56, b: 0.76 } },
-    { id: "chest",    label: "Chest",    bagColor: { r: 0.51, g: 0.42, b: 0.31 } },
-    { id: "hands",    label: "Hands",    bagColor: { r: 0.67, g: 0.43, b: 0.26 } },
-    { id: "legs",     label: "Legs",     bagColor: { r: 0.31, g: 0.43, b: 0.29 } },
-    { id: "backpack", label: "Backpack", bagColor: { r: 0.33, g: 0.33, b: 0.38 } },
+    { id: "head",     label: "Head"     },
+    { id: "chest",    label: "Chest"    },
+    { id: "hands",    label: "Hands"    },
+    { id: "legs",     label: "Legs"     },
+    { id: "backpack", label: "Backpack" },
 ];
-const MODULE_BAG_X      = -68;          // 8 in west of the rule books at x=-60
-const MODULE_BAG_Z0     = -16;          // top of the column
-const MODULE_BAG_DZ     = 8;            // spacing between bags
-const MODULE_SCALE      = 4.0;          // OBJ is built at ~0.1-unit scale; 4× lands on ~0.4 in for a soldier base
+const MODULES_PER_BAC   = 6;           // copies of each module in its bag
+const MODULE_SCALE      = 4.0;         // OBJ built at ~0.1-unit; 4× ≈ 0.4 in
+// Grid: 4 columns west of the user manual (which sits at x=-60).
+// Columns x = -66, -72, -78, -84 (6 in apart, getting further west).
+// Rows by slot at z = -16, -8, 0, 8, 16 (8 in apart).
+const MODULE_GRID_X0    = -66;
+const MODULE_GRID_DX    = -6;
+const MODULE_GRID_Z0    = -16;
+const MODULE_GRID_DZ    = 8;
 
-EQUIPMENT_SLOTS.forEach((slot, slotIdx) => {
-    const bagZ      = MODULE_BAG_Z0 + slotIdx * MODULE_BAG_DZ;
-    const meshURL   = moduleMeshURL(slot.id);
-    const slotBacs  = BACS_BY_SLOT[slot.label] || [];
-    const moduleObjs = slotBacs.map((bac, i) => {
+EQUIPMENT_SLOTS.forEach((slot, rowIdx) => {
+    const rowZ     = MODULE_GRID_Z0 + rowIdx * MODULE_GRID_DZ;
+    const meshURL  = moduleMeshURL(slot.id);
+    const slotBacs = BACS_BY_SLOT[slot.label] || [];
+    slotBacs.forEach((bac, colIdx) => {
+        const bagX  = MODULE_GRID_X0 + colIdx * MODULE_GRID_DX;
         const color = CATEGORY_COLORS[bac.category] || { r: 0.7, g: 0.7, b: 0.7 };
-        // Nickname shows the BAC abbreviation + slot for instant
-        // table-side identification (e.g. "S.A.P Chest", "H.C.A.R").
-        const nick  = bac.abbr.toLowerCase().includes(slot.label.toLowerCase())
-            ? bac.abbr                         // already includes slot (e.g. "S.A.P Chest")
-            : `${bac.abbr} ${slot.label}`;     // append slot (e.g. "H.C.A.R Hands")
-        const m = baseObj("Custom_Model", nick,
-            `${bac.abbr} — ${bac.category} module for the ${slot.label} slot.\n` +
-            `Snap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.`,
-            MODULE_BAG_X, 1.5 + 0.4 * i, bagZ,
-            { scaleX: MODULE_SCALE, scaleY: MODULE_SCALE, scaleZ: MODULE_SCALE, color });
-        m.CustomMesh = {
-            MeshURL: meshURL,
-            DiffuseURL: MODULE_TEX_URL,
-            NormalURL: "",
-            ColliderURL: "",
-            Convex: true,
-            MaterialIndex: 1,    // 1 = wood/stone-ish; less plasticky than 0
-            TypeIndex: 0,
-            CustomShader: {
-                SpecularColor: { r: 1, g: 1, b: 1 },
-                SpecularIntensity: 0.2,
-                SpecularSharpness: 3,
-                FresnelStrength: 0.1,
-            },
-            CastShadows: true,
-        };
-        return m;
+        // Bag nickname matches the BAC abbreviation (with slot
+        // appended only when the abbreviation doesn't already
+        // include it — e.g. "S.A.P Chest" stays as-is, "H.C.A.R"
+        // becomes "H.C.A.R Hands").
+        const bacName = bac.abbr.toLowerCase().includes(slot.label.toLowerCase())
+            ? bac.abbr
+            : `${bac.abbr} ${slot.label}`;
+
+        const moduleObjs = [];
+        for (let i = 0; i < MODULES_PER_BAC; i++) {
+            const m = baseObj("Custom_Model", bacName,
+                `${bac.abbr} — ${bac.category} module for the ${slot.label} slot.\n` +
+                `Snap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.`,
+                bagX, 1.5 + 0.4 * i, rowZ,
+                { scaleX: MODULE_SCALE, scaleY: MODULE_SCALE, scaleZ: MODULE_SCALE, color });
+            m.CustomMesh = {
+                MeshURL: meshURL,
+                DiffuseURL: MODULE_TEX_URL,
+                NormalURL: "",
+                ColliderURL: "",
+                Convex: true,
+                MaterialIndex: 1,    // 1 = wood/stone-ish; less plasticky than 0
+                TypeIndex: 0,
+                CustomShader: {
+                    SpecularColor: { r: 1, g: 1, b: 1 },
+                    SpecularIntensity: 0.2,
+                    SpecularSharpness: 3,
+                    FresnelStrength: 0.1,
+                },
+                CastShadows: true,
+            };
+            moduleObjs.push(m);
+        }
+        const bag = baseObj("Bag", `${bacName} (×${MODULES_PER_BAC})`,
+            `${bac.abbr} ${slot.label} module bag — ${bac.category}. ` +
+            `Holds ${MODULES_PER_BAC} identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's ${slot.label.toLowerCase()} magnet.`,
+            bagX, 1.5, rowZ,
+            { color });
+        bag.ContainedObjects = moduleObjs;
+        objects.push(bag);
     });
-    const bag = baseObj("Bag", `${slot.label} Modules (${slotBacs.length})`,
-        `Magnetic ${slot.label} modules — one per BAC that fits this slot. ` +
-        `Draw the matching module when a soldier equips a ${slot.label}-slot BAC and snap it onto the mini's ${slot.label.toLowerCase()} magnet.`,
-        MODULE_BAG_X, 1.5, bagZ,
-        { color: slot.bagColor });
-    bag.ContainedObjects = moduleObjs;
-    objects.push(bag);
 });
 
 // ═════════════════════════════════════════════════════════════════════
