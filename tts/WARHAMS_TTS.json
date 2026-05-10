@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778414820,
+  "EpochTime": 1778414912,
   "Date": "2026-05-10",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -12357,7 +12357,7 @@
       "GUID": "1000b9",
       "Name": "Die_6",
       "Transform": {
-        "posX": 35,
+        "posX": 80,
         "posY": 2,
         "posZ": -28,
         "rotX": 0,
@@ -12402,7 +12402,7 @@
       "GUID": "1000ba",
       "Name": "Die_6",
       "Transform": {
-        "posX": 37.3,
+        "posX": 82.3,
         "posY": 2,
         "posZ": -28,
         "rotX": 0,
@@ -12447,7 +12447,7 @@
       "GUID": "1000bb",
       "Name": "Die_6",
       "Transform": {
-        "posX": 39.6,
+        "posX": 84.6,
         "posY": 2,
         "posZ": -28,
         "rotX": 0,
@@ -12492,7 +12492,7 @@
       "GUID": "1000bc",
       "Name": "Die_6",
       "Transform": {
-        "posX": 41.9,
+        "posX": 86.9,
         "posY": 2,
         "posZ": -28,
         "rotX": 0,
@@ -12537,7 +12537,7 @@
       "GUID": "1000bd",
       "Name": "Die_6",
       "Transform": {
-        "posX": 44.2,
+        "posX": 89.2,
         "posY": 2,
         "posZ": -28,
         "rotX": 0,
@@ -12582,7 +12582,7 @@
       "GUID": "1000be",
       "Name": "Die_6",
       "Transform": {
-        "posX": 46.5,
+        "posX": 91.5,
         "posY": 2,
         "posZ": -28,
         "rotX": 0,
@@ -12627,7 +12627,7 @@
       "GUID": "1000bf",
       "Name": "Die_6",
       "Transform": {
-        "posX": 48.8,
+        "posX": 93.8,
         "posY": 2,
         "posZ": -28,
         "rotX": 0,
@@ -29834,7 +29834,7 @@
       "GUID": "1001ce",
       "Name": "HandTrigger",
       "Transform": {
-        "posX": 42,
+        "posX": 87,
         "posY": 4.84,
         "posZ": -36,
         "rotX": 0,
@@ -32486,7 +32486,7 @@
       "GUID": "1001ee",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 36.75,
+        "posX": 81.75,
         "posY": 1.4,
         "posZ": -20,
         "rotX": 0,
@@ -32574,7 +32574,7 @@
       "GUID": "1001ef",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 40.25,
+        "posX": 85.25,
         "posY": 1.4,
         "posZ": -20,
         "rotX": 0,
@@ -32662,7 +32662,7 @@
       "GUID": "1001f0",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 43.75,
+        "posX": 88.75,
         "posY": 1.4,
         "posZ": -20,
         "rotX": 0,
@@ -32750,7 +32750,7 @@
       "GUID": "1001f1",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 47.25,
+        "posX": 92.25,
         "posY": 1.4,
         "posZ": -20,
         "rotX": 0,
@@ -32838,7 +32838,7 @@
       "GUID": "1001f2",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 36.75,
+        "posX": 81.75,
         "posY": 1.4,
         "posZ": -23.5,
         "rotX": 0,
@@ -32926,7 +32926,7 @@
       "GUID": "1001f3",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 40.25,
+        "posX": 85.25,
         "posY": 1.4,
         "posZ": -23.5,
         "rotX": 0,
@@ -33014,7 +33014,7 @@
       "GUID": "1001f4",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 43.75,
+        "posX": 88.75,
         "posY": 1.4,
         "posZ": -23.5,
         "rotX": 0,
@@ -33102,7 +33102,7 @@
       "GUID": "1001f5",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 47.25,
+        "posX": 92.25,
         "posY": 1.4,
         "posZ": -23.5,
         "rotX": 0,
@@ -33190,7 +33190,7 @@
       "GUID": "10020a",
       "Name": "Bag",
       "Transform": {
-        "posX": 35,
+        "posX": 80,
         "posY": 1.5,
         "posZ": -33,
         "rotX": 0,
@@ -43298,7 +43298,7 @@
       "GUID": "100291",
       "Name": "Bag",
       "Transform": {
-        "posX": 42,
+        "posX": 87,
         "posY": 1.5,
         "posZ": -33,
         "rotX": 0,
