@@ -204,14 +204,12 @@ function buildBACDeck() {
         }
     });
     // Spawn at the DECK slot on the Planet Bound Area board.
-    // Spawn at the DECK slot on the Planet Bound Area board.
-    // At rotY:180 the empirical offset was (-9.5, 0). v76 rotated PB to
-    // rotY:90 (90° CW), so the offset rotates the same way: (-9.5, 0)
-    // → (0, +9.5). With PB at (53, 1.02, 0), deck goes to (53, 1.5, 9.5)
-    // and shares PB's rotY:90.
+    // v77 PB is at rotY:270 with center (53, 1.02, 0). Empirically, the
+    // DECK slot is at z=+9.5 (north end of PB's long axis); z=-9.5 lands
+    // on slot 6. Deck shares PB's rotY:270.
     const deck = baseObj("Deck", "Spaceport Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
-        53, 1.5, -9.5, { rotY: 270, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        53, 1.5, 9.5, { rotY: 270, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
