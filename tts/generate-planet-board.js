@@ -213,7 +213,7 @@ function strokeHex(img, cx, cy, r, t, color) {
     // far enough that the printed glyph sits ENTIRELY OUTSIDE the
     // hex slot (so a tile dropped in the slot doesn't cover it),
     // but still inside the blue ring.
-    const LABEL_RADIAL_OFFSET = HEX_R_PX * 1.30;
+    const LABEL_RADIAL_OFFSET = HEX_R_PX * 1.60;
     for (const [key, letter] of labelMap.entries()) {
         const [q, r] = key.split(",").map(Number);
         const wx = q * PITCH_X;
