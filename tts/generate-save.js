@@ -1084,37 +1084,80 @@ const CATEGORY_COLORS = {
 
 // All 20 BACs from design/game-data.json, grouped by slot. Keep the
 // list inline so this generator stays self-contained (no JSON read
-// at build time).
+// at build time). The `name` (full BAC name) and `text` (rules text)
+// fields are surfaced in each module's TTS tooltip so players can
+// hover a piece on the table and immediately see what the equipped
+// BAC actually does.
 const BACS_BY_SLOT = {
     Head: [
-        { abbr: "S.A.P Helmet", category: "Armor" },
-        { abbr: "S.H.A.D",      category: "Tech" },
-        { abbr: "P.A.E.H",      category: "Tech" },
-        { abbr: "C.A.P Head",   category: "Armor" },
+        { abbr: "S.A.P Helmet", category: "Armor",
+          name: "Standard Armor Plating Helmet",
+          text: "This soldier gets +1 to its defense die." },
+        { abbr: "S.H.A.D",      category: "Tech",
+          name: "Sensory Helmet, Advisory Drone",
+          text: "If attacked, before combat starts, attacking player must reveal his conspire cards to you." },
+        { abbr: "P.A.E.H",      category: "Tech",
+          name: "Personal Accuracy Enhancement Helmet",
+          text: "This soldier gets +1 to its attack die while also equipped with H.C.A.R." },
+        { abbr: "C.A.P Head",   category: "Armor",
+          name: "Custom Armor Plating Helmet",
+          text: "This soldier gets +2 to its defense die." },
     ],
     Chest: [
-        { abbr: "S.A.P Chest",  category: "Armor" },
-        { abbr: "B.E.A.R",      category: "Support" },
-        { abbr: "P.L.A.S.T.E.R",category: "Support" },
-        { abbr: "C.A.P Chest",  category: "Armor" },
+        { abbr: "S.A.P Chest",  category: "Armor",
+          name: "Standard Armor Plating Chest Piece",
+          text: "This soldier gets +1 to its defense die." },
+        { abbr: "B.E.A.R",      category: "Support",
+          name: "Battlefield Extraction Airlift Rover",
+          text: "During resource gathering, after picking your resource, pick 1 extra resource token from the same hex." },
+        { abbr: "P.L.A.S.T.E.R",category: "Support",
+          name: "Personal Lasting Aid Surgical Treatment Enhancement Robot",
+          text: "Remove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap." },
+        { abbr: "C.A.P Chest",  category: "Armor",
+          name: "Custom Armor Plating Chest",
+          text: "This soldier gets +2 to its defense die." },
     ],
     Hands: [
-        { abbr: "H.C.A.R",      category: "Weapons" },
-        { abbr: "B.A.S.R",      category: "Heavy Weapons" },
-        { abbr: "R.S.G",        category: "Weapons" },
-        { abbr: "P.C.S.M.G",    category: "Weapons" },
+        { abbr: "H.C.A.R",      category: "Weapons",
+          name: "Heavy Caliber Assault Rifle",
+          text: "Add +1 to this soldier's attack die." },
+        { abbr: "B.A.S.R",      category: "Heavy Weapons",
+          name: "Bolt Action Sniper Rifle",
+          text: "Pre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die." },
+        { abbr: "R.S.G",        category: "Weapons",
+          name: "Repeating Shotgun",
+          text: "If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1." },
+        { abbr: "P.C.S.M.G",    category: "Weapons",
+          name: "Projectile Correcting Sub Machine Gun",
+          text: "If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result." },
     ],
     Legs: [
-        { abbr: "S.A.P Legs",   category: "Armor" },
-        { abbr: "J.J",          category: "Tech" },
-        { abbr: "N.I.N.J.A",    category: "Tech" },
-        { abbr: "C.A.P Legs",   category: "Armor" },
+        { abbr: "S.A.P Legs",   category: "Armor",
+          name: "Standard Armor Plating Legs",
+          text: "This soldier gets +1 to its defense die." },
+        { abbr: "J.J",          category: "Tech",
+          name: "Jump Jets",
+          text: "This soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate." },
+        { abbr: "N.I.N.J.A",    category: "Tech",
+          name: "Nir Ion Nullifier Jammer Aid",
+          text: "Add +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap." },
+        { abbr: "C.A.P Legs",   category: "Armor",
+          name: "Custom Armor Plating Legs",
+          text: "This soldier gets +2 to its defense die." },
     ],
     Backpack: [
-        { abbr: "S.L.I.M.E",    category: "Heavy Weapons" },
-        { abbr: "D.U.D.S",      category: "Support" },
-        { abbr: "L.P.M",        category: "Support" },
-        { abbr: "T.I.L.T.S",    category: "Tech" },
+        { abbr: "S.L.I.M.E",    category: "Heavy Weapons",
+          name: "Squad Light Interoperable Mortar Encampment",
+          text: "Choose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor)." },
+        { abbr: "D.U.D.S",      category: "Support",
+          name: "Deployable Unital Defense System",
+          text: "Place a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot." },
+        { abbr: "L.P.M",        category: "Support",
+          name: "Laser Pointer Marker",
+          text: "Other soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes." },
+        { abbr: "T.I.L.T.S",    category: "Tech",
+          name: "Tactical Ion Team Link Shield",
+          text: "Pay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S." },
     ],
 };
 
@@ -1156,11 +1199,18 @@ EQUIPMENT_SLOTS.forEach((slot, rowIdx) => {
             ? bac.abbr
             : `${bac.abbr} ${slot.label}`;
 
+        // Tooltip pulls the BAC's full name + rules text straight
+        // from BACS_BY_SLOT so a player can hover any module on the
+        // table and read the equipped card's effect without flipping
+        // back to the BAC card itself.
+        const moduleDesc =
+            `${bac.name || bac.abbr}\n` +
+            `[${bac.category}] Slot: ${slot.label}\n\n` +
+            `${bac.text || ""}`;
+
         const moduleObjs = [];
         for (let i = 0; i < MODULES_PER_BAC; i++) {
-            const m = baseObj("Custom_Model", bacName,
-                `${bac.abbr} — ${bac.category} module for the ${slot.label} slot.\n` +
-                `Snap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.`,
+            const m = baseObj("Custom_Model", bacName, moduleDesc,
                 bagX, 1.5 + 0.4 * i, rowZ,
                 { scaleX: MODULE_SCALE, scaleY: MODULE_SCALE, scaleZ: MODULE_SCALE, color });
             m.CustomMesh = {
@@ -1182,7 +1232,7 @@ EQUIPMENT_SLOTS.forEach((slot, rowIdx) => {
             moduleObjs.push(m);
         }
         const bag = baseObj("Bag", `${bacName} (×${MODULES_PER_BAC})`,
-            `${bac.abbr} ${slot.label} module bag — ${bac.category}. ` +
+            `${moduleDesc}\n\n` +
             `Holds ${MODULES_PER_BAC} identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's ${slot.label.toLowerCase()} magnet.`,
             bagX, 1.5, rowZ,
             { color });

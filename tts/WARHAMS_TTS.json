@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778422793,
+  "EpochTime": 1778423052,
   "Date": "2026-05-10",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -54901,7 +54901,7 @@
         "scaleZ": 1
       },
       "Nickname": "S.A.P Helmet Head (×6)",
-      "Description": "S.A.P Helmet Head module bag — Armor. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's head magnet.",
+      "Description": "Standard Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +1 to its defense die.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's head magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -54946,7 +54946,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Helmet Head",
-          "Description": "S.A.P Helmet — Armor module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -55011,7 +55011,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Helmet Head",
-          "Description": "S.A.P Helmet — Armor module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -55076,7 +55076,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Helmet Head",
-          "Description": "S.A.P Helmet — Armor module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -55141,7 +55141,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Helmet Head",
-          "Description": "S.A.P Helmet — Armor module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -55206,7 +55206,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Helmet Head",
-          "Description": "S.A.P Helmet — Armor module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -55271,7 +55271,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Helmet Head",
-          "Description": "S.A.P Helmet — Armor module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -55338,7 +55338,7 @@
         "scaleZ": 1
       },
       "Nickname": "S.H.A.D Head (×6)",
-      "Description": "S.H.A.D Head module bag — Tech. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's head magnet.",
+      "Description": "Sensory Helmet, Advisory Drone\n[Tech] Slot: Head\n\nIf attacked, before combat starts, attacking player must reveal his conspire cards to you.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's head magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -55383,7 +55383,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.H.A.D Head",
-          "Description": "S.H.A.D — Tech module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Sensory Helmet, Advisory Drone\n[Tech] Slot: Head\n\nIf attacked, before combat starts, attacking player must reveal his conspire cards to you.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -55448,7 +55448,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.H.A.D Head",
-          "Description": "S.H.A.D — Tech module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Sensory Helmet, Advisory Drone\n[Tech] Slot: Head\n\nIf attacked, before combat starts, attacking player must reveal his conspire cards to you.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -55513,7 +55513,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.H.A.D Head",
-          "Description": "S.H.A.D — Tech module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Sensory Helmet, Advisory Drone\n[Tech] Slot: Head\n\nIf attacked, before combat starts, attacking player must reveal his conspire cards to you.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -55578,7 +55578,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.H.A.D Head",
-          "Description": "S.H.A.D — Tech module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Sensory Helmet, Advisory Drone\n[Tech] Slot: Head\n\nIf attacked, before combat starts, attacking player must reveal his conspire cards to you.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -55643,7 +55643,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.H.A.D Head",
-          "Description": "S.H.A.D — Tech module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Sensory Helmet, Advisory Drone\n[Tech] Slot: Head\n\nIf attacked, before combat starts, attacking player must reveal his conspire cards to you.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -55708,7 +55708,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.H.A.D Head",
-          "Description": "S.H.A.D — Tech module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Sensory Helmet, Advisory Drone\n[Tech] Slot: Head\n\nIf attacked, before combat starts, attacking player must reveal his conspire cards to you.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -55775,7 +55775,7 @@
         "scaleZ": 1
       },
       "Nickname": "P.A.E.H Head (×6)",
-      "Description": "P.A.E.H Head module bag — Tech. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's head magnet.",
+      "Description": "Personal Accuracy Enhancement Helmet\n[Tech] Slot: Head\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's head magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -55820,7 +55820,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.A.E.H Head",
-          "Description": "P.A.E.H — Tech module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Personal Accuracy Enhancement Helmet\n[Tech] Slot: Head\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -55885,7 +55885,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.A.E.H Head",
-          "Description": "P.A.E.H — Tech module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Personal Accuracy Enhancement Helmet\n[Tech] Slot: Head\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -55950,7 +55950,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.A.E.H Head",
-          "Description": "P.A.E.H — Tech module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Personal Accuracy Enhancement Helmet\n[Tech] Slot: Head\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -56015,7 +56015,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.A.E.H Head",
-          "Description": "P.A.E.H — Tech module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Personal Accuracy Enhancement Helmet\n[Tech] Slot: Head\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -56080,7 +56080,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.A.E.H Head",
-          "Description": "P.A.E.H — Tech module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Personal Accuracy Enhancement Helmet\n[Tech] Slot: Head\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -56145,7 +56145,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.A.E.H Head",
-          "Description": "P.A.E.H — Tech module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Personal Accuracy Enhancement Helmet\n[Tech] Slot: Head\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -56212,7 +56212,7 @@
         "scaleZ": 1
       },
       "Nickname": "C.A.P Head (×6)",
-      "Description": "C.A.P Head Head module bag — Armor. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's head magnet.",
+      "Description": "Custom Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +2 to its defense die.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's head magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -56257,7 +56257,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Head",
-          "Description": "C.A.P Head — Armor module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -56322,7 +56322,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Head",
-          "Description": "C.A.P Head — Armor module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -56387,7 +56387,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Head",
-          "Description": "C.A.P Head — Armor module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -56452,7 +56452,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Head",
-          "Description": "C.A.P Head — Armor module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -56517,7 +56517,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Head",
-          "Description": "C.A.P Head — Armor module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -56582,7 +56582,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Head",
-          "Description": "C.A.P Head — Armor module for the Head slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -56649,7 +56649,7 @@
         "scaleZ": 1
       },
       "Nickname": "S.A.P Chest (×6)",
-      "Description": "S.A.P Chest Chest module bag — Armor. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's chest magnet.",
+      "Description": "Standard Armor Plating Chest Piece\n[Armor] Slot: Chest\n\nThis soldier gets +1 to its defense die.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's chest magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -56694,7 +56694,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Chest",
-          "Description": "S.A.P Chest — Armor module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Chest Piece\n[Armor] Slot: Chest\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -56759,7 +56759,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Chest",
-          "Description": "S.A.P Chest — Armor module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Chest Piece\n[Armor] Slot: Chest\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -56824,7 +56824,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Chest",
-          "Description": "S.A.P Chest — Armor module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Chest Piece\n[Armor] Slot: Chest\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -56889,7 +56889,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Chest",
-          "Description": "S.A.P Chest — Armor module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Chest Piece\n[Armor] Slot: Chest\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -56954,7 +56954,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Chest",
-          "Description": "S.A.P Chest — Armor module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Chest Piece\n[Armor] Slot: Chest\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57019,7 +57019,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Chest",
-          "Description": "S.A.P Chest — Armor module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Chest Piece\n[Armor] Slot: Chest\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57086,7 +57086,7 @@
         "scaleZ": 1
       },
       "Nickname": "B.E.A.R Chest (×6)",
-      "Description": "B.E.A.R Chest module bag — Support. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's chest magnet.",
+      "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's chest magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -57131,7 +57131,7 @@
             "scaleZ": 4
           },
           "Nickname": "B.E.A.R Chest",
-          "Description": "B.E.A.R — Support module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57196,7 +57196,7 @@
             "scaleZ": 4
           },
           "Nickname": "B.E.A.R Chest",
-          "Description": "B.E.A.R — Support module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57261,7 +57261,7 @@
             "scaleZ": 4
           },
           "Nickname": "B.E.A.R Chest",
-          "Description": "B.E.A.R — Support module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57326,7 +57326,7 @@
             "scaleZ": 4
           },
           "Nickname": "B.E.A.R Chest",
-          "Description": "B.E.A.R — Support module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57391,7 +57391,7 @@
             "scaleZ": 4
           },
           "Nickname": "B.E.A.R Chest",
-          "Description": "B.E.A.R — Support module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57456,7 +57456,7 @@
             "scaleZ": 4
           },
           "Nickname": "B.E.A.R Chest",
-          "Description": "B.E.A.R — Support module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57523,7 +57523,7 @@
         "scaleZ": 1
       },
       "Nickname": "P.L.A.S.T.E.R Chest (×6)",
-      "Description": "P.L.A.S.T.E.R Chest module bag — Support. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's chest magnet.",
+      "Description": "Personal Lasting Aid Surgical Treatment Enhancement Robot\n[Support] Slot: Chest\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's chest magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -57568,7 +57568,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.L.A.S.T.E.R Chest",
-          "Description": "P.L.A.S.T.E.R — Support module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Personal Lasting Aid Surgical Treatment Enhancement Robot\n[Support] Slot: Chest\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57633,7 +57633,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.L.A.S.T.E.R Chest",
-          "Description": "P.L.A.S.T.E.R — Support module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Personal Lasting Aid Surgical Treatment Enhancement Robot\n[Support] Slot: Chest\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57698,7 +57698,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.L.A.S.T.E.R Chest",
-          "Description": "P.L.A.S.T.E.R — Support module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Personal Lasting Aid Surgical Treatment Enhancement Robot\n[Support] Slot: Chest\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57763,7 +57763,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.L.A.S.T.E.R Chest",
-          "Description": "P.L.A.S.T.E.R — Support module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Personal Lasting Aid Surgical Treatment Enhancement Robot\n[Support] Slot: Chest\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57828,7 +57828,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.L.A.S.T.E.R Chest",
-          "Description": "P.L.A.S.T.E.R — Support module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Personal Lasting Aid Surgical Treatment Enhancement Robot\n[Support] Slot: Chest\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57893,7 +57893,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.L.A.S.T.E.R Chest",
-          "Description": "P.L.A.S.T.E.R — Support module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Personal Lasting Aid Surgical Treatment Enhancement Robot\n[Support] Slot: Chest\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57960,7 +57960,7 @@
         "scaleZ": 1
       },
       "Nickname": "C.A.P Chest (×6)",
-      "Description": "C.A.P Chest Chest module bag — Armor. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's chest magnet.",
+      "Description": "Custom Armor Plating Chest\n[Armor] Slot: Chest\n\nThis soldier gets +2 to its defense die.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's chest magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -58005,7 +58005,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Chest",
-          "Description": "C.A.P Chest — Armor module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Chest\n[Armor] Slot: Chest\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -58070,7 +58070,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Chest",
-          "Description": "C.A.P Chest — Armor module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Chest\n[Armor] Slot: Chest\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -58135,7 +58135,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Chest",
-          "Description": "C.A.P Chest — Armor module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Chest\n[Armor] Slot: Chest\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -58200,7 +58200,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Chest",
-          "Description": "C.A.P Chest — Armor module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Chest\n[Armor] Slot: Chest\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -58265,7 +58265,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Chest",
-          "Description": "C.A.P Chest — Armor module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Chest\n[Armor] Slot: Chest\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -58330,7 +58330,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Chest",
-          "Description": "C.A.P Chest — Armor module for the Chest slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Chest\n[Armor] Slot: Chest\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -58397,7 +58397,7 @@
         "scaleZ": 1
       },
       "Nickname": "H.C.A.R Hands (×6)",
-      "Description": "H.C.A.R Hands module bag — Weapons. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
+      "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -58442,7 +58442,7 @@
             "scaleZ": 4
           },
           "Nickname": "H.C.A.R Hands",
-          "Description": "H.C.A.R — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -58507,7 +58507,7 @@
             "scaleZ": 4
           },
           "Nickname": "H.C.A.R Hands",
-          "Description": "H.C.A.R — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -58572,7 +58572,7 @@
             "scaleZ": 4
           },
           "Nickname": "H.C.A.R Hands",
-          "Description": "H.C.A.R — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -58637,7 +58637,7 @@
             "scaleZ": 4
           },
           "Nickname": "H.C.A.R Hands",
-          "Description": "H.C.A.R — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -58702,7 +58702,7 @@
             "scaleZ": 4
           },
           "Nickname": "H.C.A.R Hands",
-          "Description": "H.C.A.R — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -58767,7 +58767,7 @@
             "scaleZ": 4
           },
           "Nickname": "H.C.A.R Hands",
-          "Description": "H.C.A.R — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -58834,7 +58834,7 @@
         "scaleZ": 1
       },
       "Nickname": "B.A.S.R Hands (×6)",
-      "Description": "B.A.S.R Hands module bag — Heavy Weapons. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
+      "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -58879,7 +58879,7 @@
             "scaleZ": 4
           },
           "Nickname": "B.A.S.R Hands",
-          "Description": "B.A.S.R — Heavy Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -58944,7 +58944,7 @@
             "scaleZ": 4
           },
           "Nickname": "B.A.S.R Hands",
-          "Description": "B.A.S.R — Heavy Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59009,7 +59009,7 @@
             "scaleZ": 4
           },
           "Nickname": "B.A.S.R Hands",
-          "Description": "B.A.S.R — Heavy Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59074,7 +59074,7 @@
             "scaleZ": 4
           },
           "Nickname": "B.A.S.R Hands",
-          "Description": "B.A.S.R — Heavy Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59139,7 +59139,7 @@
             "scaleZ": 4
           },
           "Nickname": "B.A.S.R Hands",
-          "Description": "B.A.S.R — Heavy Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59204,7 +59204,7 @@
             "scaleZ": 4
           },
           "Nickname": "B.A.S.R Hands",
-          "Description": "B.A.S.R — Heavy Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59271,7 +59271,7 @@
         "scaleZ": 1
       },
       "Nickname": "R.S.G Hands (×6)",
-      "Description": "R.S.G Hands module bag — Weapons. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
+      "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -59316,7 +59316,7 @@
             "scaleZ": 4
           },
           "Nickname": "R.S.G Hands",
-          "Description": "R.S.G — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59381,7 +59381,7 @@
             "scaleZ": 4
           },
           "Nickname": "R.S.G Hands",
-          "Description": "R.S.G — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59446,7 +59446,7 @@
             "scaleZ": 4
           },
           "Nickname": "R.S.G Hands",
-          "Description": "R.S.G — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59511,7 +59511,7 @@
             "scaleZ": 4
           },
           "Nickname": "R.S.G Hands",
-          "Description": "R.S.G — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59576,7 +59576,7 @@
             "scaleZ": 4
           },
           "Nickname": "R.S.G Hands",
-          "Description": "R.S.G — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59641,7 +59641,7 @@
             "scaleZ": 4
           },
           "Nickname": "R.S.G Hands",
-          "Description": "R.S.G — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59708,7 +59708,7 @@
         "scaleZ": 1
       },
       "Nickname": "P.C.S.M.G Hands (×6)",
-      "Description": "P.C.S.M.G Hands module bag — Weapons. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
+      "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -59753,7 +59753,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.C.S.M.G Hands",
-          "Description": "P.C.S.M.G — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59818,7 +59818,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.C.S.M.G Hands",
-          "Description": "P.C.S.M.G — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59883,7 +59883,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.C.S.M.G Hands",
-          "Description": "P.C.S.M.G — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59948,7 +59948,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.C.S.M.G Hands",
-          "Description": "P.C.S.M.G — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60013,7 +60013,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.C.S.M.G Hands",
-          "Description": "P.C.S.M.G — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60078,7 +60078,7 @@
             "scaleZ": 4
           },
           "Nickname": "P.C.S.M.G Hands",
-          "Description": "P.C.S.M.G — Weapons module for the Hands slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60145,7 +60145,7 @@
         "scaleZ": 1
       },
       "Nickname": "S.A.P Legs (×6)",
-      "Description": "S.A.P Legs Legs module bag — Armor. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's legs magnet.",
+      "Description": "Standard Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +1 to its defense die.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's legs magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -60190,7 +60190,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Legs",
-          "Description": "S.A.P Legs — Armor module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60255,7 +60255,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Legs",
-          "Description": "S.A.P Legs — Armor module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60320,7 +60320,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Legs",
-          "Description": "S.A.P Legs — Armor module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60385,7 +60385,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Legs",
-          "Description": "S.A.P Legs — Armor module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60450,7 +60450,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Legs",
-          "Description": "S.A.P Legs — Armor module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60515,7 +60515,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.A.P Legs",
-          "Description": "S.A.P Legs — Armor module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Standard Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +1 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60582,7 +60582,7 @@
         "scaleZ": 1
       },
       "Nickname": "J.J Legs (×6)",
-      "Description": "J.J Legs module bag — Tech. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's legs magnet.",
+      "Description": "Jump Jets\n[Tech] Slot: Legs\n\nThis soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's legs magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -60627,7 +60627,7 @@
             "scaleZ": 4
           },
           "Nickname": "J.J Legs",
-          "Description": "J.J — Tech module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Jump Jets\n[Tech] Slot: Legs\n\nThis soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60692,7 +60692,7 @@
             "scaleZ": 4
           },
           "Nickname": "J.J Legs",
-          "Description": "J.J — Tech module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Jump Jets\n[Tech] Slot: Legs\n\nThis soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60757,7 +60757,7 @@
             "scaleZ": 4
           },
           "Nickname": "J.J Legs",
-          "Description": "J.J — Tech module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Jump Jets\n[Tech] Slot: Legs\n\nThis soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60822,7 +60822,7 @@
             "scaleZ": 4
           },
           "Nickname": "J.J Legs",
-          "Description": "J.J — Tech module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Jump Jets\n[Tech] Slot: Legs\n\nThis soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60887,7 +60887,7 @@
             "scaleZ": 4
           },
           "Nickname": "J.J Legs",
-          "Description": "J.J — Tech module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Jump Jets\n[Tech] Slot: Legs\n\nThis soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60952,7 +60952,7 @@
             "scaleZ": 4
           },
           "Nickname": "J.J Legs",
-          "Description": "J.J — Tech module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Jump Jets\n[Tech] Slot: Legs\n\nThis soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -61019,7 +61019,7 @@
         "scaleZ": 1
       },
       "Nickname": "N.I.N.J.A Legs (×6)",
-      "Description": "N.I.N.J.A Legs module bag — Tech. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's legs magnet.",
+      "Description": "Nir Ion Nullifier Jammer Aid\n[Tech] Slot: Legs\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's legs magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -61064,7 +61064,7 @@
             "scaleZ": 4
           },
           "Nickname": "N.I.N.J.A Legs",
-          "Description": "N.I.N.J.A — Tech module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Nir Ion Nullifier Jammer Aid\n[Tech] Slot: Legs\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -61129,7 +61129,7 @@
             "scaleZ": 4
           },
           "Nickname": "N.I.N.J.A Legs",
-          "Description": "N.I.N.J.A — Tech module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Nir Ion Nullifier Jammer Aid\n[Tech] Slot: Legs\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -61194,7 +61194,7 @@
             "scaleZ": 4
           },
           "Nickname": "N.I.N.J.A Legs",
-          "Description": "N.I.N.J.A — Tech module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Nir Ion Nullifier Jammer Aid\n[Tech] Slot: Legs\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -61259,7 +61259,7 @@
             "scaleZ": 4
           },
           "Nickname": "N.I.N.J.A Legs",
-          "Description": "N.I.N.J.A — Tech module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Nir Ion Nullifier Jammer Aid\n[Tech] Slot: Legs\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -61324,7 +61324,7 @@
             "scaleZ": 4
           },
           "Nickname": "N.I.N.J.A Legs",
-          "Description": "N.I.N.J.A — Tech module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Nir Ion Nullifier Jammer Aid\n[Tech] Slot: Legs\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -61389,7 +61389,7 @@
             "scaleZ": 4
           },
           "Nickname": "N.I.N.J.A Legs",
-          "Description": "N.I.N.J.A — Tech module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Nir Ion Nullifier Jammer Aid\n[Tech] Slot: Legs\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -61456,7 +61456,7 @@
         "scaleZ": 1
       },
       "Nickname": "C.A.P Legs (×6)",
-      "Description": "C.A.P Legs Legs module bag — Armor. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's legs magnet.",
+      "Description": "Custom Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +2 to its defense die.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's legs magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -61501,7 +61501,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Legs",
-          "Description": "C.A.P Legs — Armor module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -61566,7 +61566,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Legs",
-          "Description": "C.A.P Legs — Armor module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -61631,7 +61631,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Legs",
-          "Description": "C.A.P Legs — Armor module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -61696,7 +61696,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Legs",
-          "Description": "C.A.P Legs — Armor module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -61761,7 +61761,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Legs",
-          "Description": "C.A.P Legs — Armor module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -61826,7 +61826,7 @@
             "scaleZ": 4
           },
           "Nickname": "C.A.P Legs",
-          "Description": "C.A.P Legs — Armor module for the Legs slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Custom Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +2 to its defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -61893,7 +61893,7 @@
         "scaleZ": 1
       },
       "Nickname": "S.L.I.M.E Backpack (×6)",
-      "Description": "S.L.I.M.E Backpack module bag — Heavy Weapons. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's backpack magnet.",
+      "Description": "Squad Light Interoperable Mortar Encampment\n[Heavy Weapons] Slot: Backpack\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's backpack magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -61938,7 +61938,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.L.I.M.E Backpack",
-          "Description": "S.L.I.M.E — Heavy Weapons module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Squad Light Interoperable Mortar Encampment\n[Heavy Weapons] Slot: Backpack\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -62003,7 +62003,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.L.I.M.E Backpack",
-          "Description": "S.L.I.M.E — Heavy Weapons module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Squad Light Interoperable Mortar Encampment\n[Heavy Weapons] Slot: Backpack\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -62068,7 +62068,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.L.I.M.E Backpack",
-          "Description": "S.L.I.M.E — Heavy Weapons module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Squad Light Interoperable Mortar Encampment\n[Heavy Weapons] Slot: Backpack\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -62133,7 +62133,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.L.I.M.E Backpack",
-          "Description": "S.L.I.M.E — Heavy Weapons module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Squad Light Interoperable Mortar Encampment\n[Heavy Weapons] Slot: Backpack\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -62198,7 +62198,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.L.I.M.E Backpack",
-          "Description": "S.L.I.M.E — Heavy Weapons module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Squad Light Interoperable Mortar Encampment\n[Heavy Weapons] Slot: Backpack\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -62263,7 +62263,7 @@
             "scaleZ": 4
           },
           "Nickname": "S.L.I.M.E Backpack",
-          "Description": "S.L.I.M.E — Heavy Weapons module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Squad Light Interoperable Mortar Encampment\n[Heavy Weapons] Slot: Backpack\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -62330,7 +62330,7 @@
         "scaleZ": 1
       },
       "Nickname": "D.U.D.S Backpack (×6)",
-      "Description": "D.U.D.S Backpack module bag — Support. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's backpack magnet.",
+      "Description": "Deployable Unital Defense System\n[Support] Slot: Backpack\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's backpack magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -62375,7 +62375,7 @@
             "scaleZ": 4
           },
           "Nickname": "D.U.D.S Backpack",
-          "Description": "D.U.D.S — Support module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Deployable Unital Defense System\n[Support] Slot: Backpack\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -62440,7 +62440,7 @@
             "scaleZ": 4
           },
           "Nickname": "D.U.D.S Backpack",
-          "Description": "D.U.D.S — Support module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Deployable Unital Defense System\n[Support] Slot: Backpack\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -62505,7 +62505,7 @@
             "scaleZ": 4
           },
           "Nickname": "D.U.D.S Backpack",
-          "Description": "D.U.D.S — Support module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Deployable Unital Defense System\n[Support] Slot: Backpack\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -62570,7 +62570,7 @@
             "scaleZ": 4
           },
           "Nickname": "D.U.D.S Backpack",
-          "Description": "D.U.D.S — Support module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Deployable Unital Defense System\n[Support] Slot: Backpack\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -62635,7 +62635,7 @@
             "scaleZ": 4
           },
           "Nickname": "D.U.D.S Backpack",
-          "Description": "D.U.D.S — Support module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Deployable Unital Defense System\n[Support] Slot: Backpack\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -62700,7 +62700,7 @@
             "scaleZ": 4
           },
           "Nickname": "D.U.D.S Backpack",
-          "Description": "D.U.D.S — Support module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Deployable Unital Defense System\n[Support] Slot: Backpack\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -62767,7 +62767,7 @@
         "scaleZ": 1
       },
       "Nickname": "L.P.M Backpack (×6)",
-      "Description": "L.P.M Backpack module bag — Support. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's backpack magnet.",
+      "Description": "Laser Pointer Marker\n[Support] Slot: Backpack\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's backpack magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -62812,7 +62812,7 @@
             "scaleZ": 4
           },
           "Nickname": "L.P.M Backpack",
-          "Description": "L.P.M — Support module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Laser Pointer Marker\n[Support] Slot: Backpack\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -62877,7 +62877,7 @@
             "scaleZ": 4
           },
           "Nickname": "L.P.M Backpack",
-          "Description": "L.P.M — Support module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Laser Pointer Marker\n[Support] Slot: Backpack\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -62942,7 +62942,7 @@
             "scaleZ": 4
           },
           "Nickname": "L.P.M Backpack",
-          "Description": "L.P.M — Support module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Laser Pointer Marker\n[Support] Slot: Backpack\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -63007,7 +63007,7 @@
             "scaleZ": 4
           },
           "Nickname": "L.P.M Backpack",
-          "Description": "L.P.M — Support module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Laser Pointer Marker\n[Support] Slot: Backpack\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -63072,7 +63072,7 @@
             "scaleZ": 4
           },
           "Nickname": "L.P.M Backpack",
-          "Description": "L.P.M — Support module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Laser Pointer Marker\n[Support] Slot: Backpack\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -63137,7 +63137,7 @@
             "scaleZ": 4
           },
           "Nickname": "L.P.M Backpack",
-          "Description": "L.P.M — Support module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Laser Pointer Marker\n[Support] Slot: Backpack\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -63204,7 +63204,7 @@
         "scaleZ": 1
       },
       "Nickname": "T.I.L.T.S Backpack (×6)",
-      "Description": "T.I.L.T.S Backpack module bag — Tech. Holds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's backpack magnet.",
+      "Description": "Tactical Ion Team Link Shield\n[Tech] Slot: Backpack\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's backpack magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -63249,7 +63249,7 @@
             "scaleZ": 4
           },
           "Nickname": "T.I.L.T.S Backpack",
-          "Description": "T.I.L.T.S — Tech module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Tactical Ion Team Link Shield\n[Tech] Slot: Backpack\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -63314,7 +63314,7 @@
             "scaleZ": 4
           },
           "Nickname": "T.I.L.T.S Backpack",
-          "Description": "T.I.L.T.S — Tech module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Tactical Ion Team Link Shield\n[Tech] Slot: Backpack\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -63379,7 +63379,7 @@
             "scaleZ": 4
           },
           "Nickname": "T.I.L.T.S Backpack",
-          "Description": "T.I.L.T.S — Tech module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Tactical Ion Team Link Shield\n[Tech] Slot: Backpack\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -63444,7 +63444,7 @@
             "scaleZ": 4
           },
           "Nickname": "T.I.L.T.S Backpack",
-          "Description": "T.I.L.T.S — Tech module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Tactical Ion Team Link Shield\n[Tech] Slot: Backpack\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -63509,7 +63509,7 @@
             "scaleZ": 4
           },
           "Nickname": "T.I.L.T.S Backpack",
-          "Description": "T.I.L.T.S — Tech module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Tactical Ion Team Link Shield\n[Tech] Slot: Backpack\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -63574,7 +63574,7 @@
             "scaleZ": 4
           },
           "Nickname": "T.I.L.T.S Backpack",
-          "Description": "T.I.L.T.S — Tech module for the Backpack slot.\nSnap onto the matching magnet point on a H.A.M.S mini when this BAC is installed.",
+          "Description": "Tactical Ion Team Link Shield\n[Tech] Slot: Backpack\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
