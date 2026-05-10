@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778435815,
+  "EpochTime": 1778435898,
   "Date": "2026-05-10",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -51234,7 +51234,7 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "function onLoad()\n    self.createButton({\n        label = '1st PLAYER',\n        click_function = 'noop',\n        function_owner = self,\n        position = {0, 0.3, 0},\n        rotation = {0, 180, 0},\n        width = 0,\n        height = 0,\n        font_size = 180,\n        font_color = {0.15, 0.10, 0.02},\n        tooltip = 'Pass to the next first player each round.',\n    })\nend\nfunction noop() end",
+      "LuaScript": "function onLoad()\n    self.createButton({\n        label = '1st PLAYER',\n        click_function = 'noop',\n        function_owner = self,\n        position = {0, 0.3, 0},\n        -- Parent tile is rotY=180; button rotation is added to\n        -- that, so {0,0,0} here yields combined 180 -> the label\n        -- reads upright from the south-facing camera.\n        rotation = {0, 0, 0},\n        width = 0,\n        height = 0,\n        font_size = 180,\n        font_color = {0.15, 0.10, 0.02},\n        tooltip = 'Pass to the next first player each round.',\n    })\nend\nfunction noop() end",
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomImage": {
