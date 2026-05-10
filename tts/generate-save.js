@@ -245,7 +245,7 @@ function buildConspireDeck() {
     });
     const deck = baseObj("Deck", "Conspire Deck",
         `Conspire Cards — ${gameData.deck_counts.total_conspire_cards} cards\nForfeit Movement or Combat to draw 1.\nHover cards to see effects.`,
-        106, 1.5, 10, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
+        59, 1.5, 10, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -341,7 +341,7 @@ resourceDefs.forEach((res, i) => {
     // the BAC deck (z=-20) and the Conspire deck (z=+20).
     const bag = baseObj("Bag", `${res.name} Tokens (50)`,
         `Stack of ${res.name} tokens (${res.label}). Each spawns upright on its base.`,
-        114, 1.5, -10 + i * 6, { color: res.color });
+        62, 1.5, -12 + i * 6, { color: res.color });
     bag.ContainedObjects = tokens;
     objects.push(bag);
 });
