@@ -864,7 +864,7 @@ const eqBoard = baseObj("Custom_Tile", "Equipment Display",
     // v75: shifted east to clear the planet board (east edge at x=30).
     // v76: rotated 90° to the right (rotY 180 → 90) per user request.
     // Footprint at rotY:90 ~10 (X) × 9.68 (Z). Position x=37 → x ∈ [32, 42].
-    87, 1.02, 0,
+    35.81, 1.02, 0,
     { rotY: 270, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
