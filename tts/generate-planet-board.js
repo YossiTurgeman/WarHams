@@ -36,6 +36,12 @@ const { Jimp, loadFont } = require("jimp");
 const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-print", "dist", "fonts", "open-sans");
 
 const VERSION = "v72";
+// Bump BOARD_REV any time the texture content changes — the
+// generated file name carries the rev (planet-board-rev<N>.png),
+// which forces TTS to fetch a brand-new asset (the ?v query-string
+// cache buster proved unreliable in practice — see v122/v123).
+// Must be kept in sync with PLANET_BOARD_URL in generate-save.js.
+const BOARD_REV = 124;
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
@@ -248,7 +254,7 @@ function strokeHex(img, cx, cy, r, t, color) {
         img.composite(stamp, Math.round(lx - STAMP / 2), Math.round(ly - STAMP / 2));
     }
 
-    const outPath = path.join(outDir, "planet-board.png");
+    const outPath = path.join(outDir, `planet-board-rev${BOARD_REV}.png`);
     await img.write(outPath);
     console.log(`Wrote ${outPath} (${W}x${H}, ${slotCount} hex slots, ${labelMap.size} wrap labels)`);
 })();
