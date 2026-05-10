@@ -209,11 +209,14 @@ function strokeHex(img, cx, cy, r, t, color) {
 
     const fontLabel = await loadFont(path.join(FONT_DIR, "open-sans-64-white", "open-sans-64-white.fnt"));
     const LABEL_BOX = 80;
-    // Push label outward from board center toward the planet rim,
-    // far enough that the printed glyph sits ENTIRELY OUTSIDE the
-    // hex slot (so a tile dropped in the slot doesn't cover it),
-    // but still inside the blue ring.
-    const LABEL_RADIAL_OFFSET = HEX_R_PX * 1.60;
+    // 1 texture world unit = 1 TTS inch (board scale 36 × default
+    // 2-inch Custom_Tile = 72 in-game inches, matches WORLD_W = 72).
+    // User requested labels sit ~2 inches outside each hex.
+    // Hex center → vertex = HEX_R_WORLD = 3.96 in. So label center
+    // is HEX_R + 2 + half-glyph (≈0.65 in) away from the hex center.
+    const LABEL_GAP_WORLD     = 2.0;          // inches outside hex edge
+    const LABEL_HALF_WORLD    = 0.65;         // half glyph height in inches
+    const LABEL_RADIAL_OFFSET = (HEX_R_WORLD + LABEL_GAP_WORLD + LABEL_HALF_WORLD) * PX_PER_WORLD;
     for (const [key, letter] of labelMap.entries()) {
         const [q, r] = key.split(",").map(Number);
         const wx = q * PITCH_X;
