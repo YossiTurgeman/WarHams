@@ -41,14 +41,14 @@ if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 // surrounding boards (PB/ED/UZ) were pushed outward to free the room.
 // Cluster (49 × 54.5) now sits with ~5u of "atmosphere" margin to
 // the gold frame on the long axes.
-const WORLD_W = 60;
-const WORLD_H = 60;
+const WORLD_W = 72;
+const WORLD_H = 72;
 const PX_PER_WORLD = 50;
 const W = WORLD_W * PX_PER_WORLD;   // 3000
 const H = WORLD_H * PX_PER_WORLD;   // 3000
 
 // Hex cluster geometry (must match generate-save.js Section 17e).
-const HEX_R_WORLD = 3.0;
+const HEX_R_WORLD = 3.6;
 const PITCH_X = 1.5 * HEX_R_WORLD;
 const PITCH_Z = Math.sqrt(3) * HEX_R_WORLD;
 
