@@ -435,35 +435,47 @@ function makeSoldierStandee(pc, squadLetter, soldierNum, px, py, pz) {
     // object's scale automatically). Tags pair with the matching
     // slot tag set on each Custom_Model module so e.g. a "Head"
     // module won't snap onto the chest socket.
-    // v138: equipment-slot snap points spread OUTSIDE the body in
-    // their natural direction (head above, backpack behind, hands
-    // to the right, etc.) so each one is the closest snap to any
-    // reasonable drop direction. Tags still narrow the filter, but
-    // even if TTS picked closest-only it would now pick correctly.
-    // All coordinates are LOCAL OBJ-units (TTS applies object scale).
-    // Rotation fields explicit so TTS doesn't fall back to defaults.
-    const noRot = { x: 0, y: 0, z: 0 };
+    // Damage-peg snaps on the front rim of the base — these are
+    // untagged so any small object snaps. Kept as JSON
+    // AttachedSnapPoints because they've worked for damage pegs
+    // since v50 and don't depend on tag filtering.
     obj.AttachedSnapPoints = [
-        // 3 damage-peg snaps on the front rim of the base (untagged
-        // → accept any small object).
-        { Position: { x: -0.36, y: 0.125, z: 0.30 }, Rotation: noRot },
-        { Position: { x:  0.00, y: 0.125, z: 0.42 }, Rotation: noRot },
-        { Position: { x:  0.36, y: 0.125, z: 0.30 }, Rotation: noRot },
-        // Equipment-slot magnets — each pushed away from the body
-        // along the axis a real piece of gear would sit:
-        //   head     – directly above the helmet
-        //   chest    – forward of the torso (where a chest plate
-        //              would face)
-        //   hands    – out to the soldier's right (rifle held in
-        //              the right hand)
-        //   legs     – just in front of the knees
-        //   backpack – directly behind the torso
-        { Position: { x:  0.00, y: 1.20, z:  0.00 }, Rotation: noRot, Tags: ["module-head"]     },
-        { Position: { x:  0.00, y: 0.60, z:  0.30 }, Rotation: noRot, Tags: ["module-chest"]    },
-        { Position: { x:  0.45, y: 0.55, z:  0.00 }, Rotation: noRot, Tags: ["module-hands"]    },
-        { Position: { x:  0.00, y: 0.25, z:  0.30 }, Rotation: noRot, Tags: ["module-legs"]     },
-        { Position: { x:  0.00, y: 0.65, z: -0.30 }, Rotation: noRot, Tags: ["module-backpack"] },
+        { Position: { x: -0.36, y: 0.125, z: 0.30 } },
+        { Position: { x:  0.00, y: 0.125, z: 0.42 } },
+        { Position: { x:  0.36, y: 0.125, z: 0.30 } },
     ];
+
+    // v139: equipment-slot snap points are added at runtime via
+    // setSnapPoints() because the JSON `Tags` field on
+    // AttachedSnapPoints isn't documented in the TTS save-format
+    // spec and was being silently dropped (proven empirically — v137
+    // and v138 had no visible behaviour change). The Lua API
+    // explicitly accepts `tags`, and a dragged module with matching
+    // object tag will ONLY consider snap points that share at least
+    // one tag.
+    //
+    // Snap points are pushed OUTSIDE the body along the natural axis
+    // each piece of gear sits, so even if tag filtering somehow
+    // failed, the geometric closest from a natural drop direction
+    // would still be the right body part.
+    //
+    // setSnapPoints is idempotent — running it on every load is
+    // cheap and guarantees the snap layout stays in sync with this
+    // generator after any save/load round-trip.
+    obj.LuaScript = [
+        'function onLoad()',
+        '    self.setSnapPoints({',
+        '        {position = {-0.36, 0.125,  0.30}},',
+        '        {position = { 0.00, 0.125,  0.42}},',
+        '        {position = { 0.36, 0.125,  0.30}},',
+        '        {position = { 0.00, 1.20,   0.00}, tags = {"module-head"}},',
+        '        {position = { 0.00, 0.60,   0.30}, tags = {"module-chest"}},',
+        '        {position = { 0.45, 0.55,   0.00}, tags = {"module-hands"}},',
+        '        {position = { 0.00, 0.25,   0.30}, tags = {"module-legs"}},',
+        '        {position = { 0.00, 0.65,  -0.30}, tags = {"module-backpack"}},',
+        '    })',
+        'end',
+    ].join('\n');
     return obj;
 }
 playerColors.forEach((pc, idx) => {
