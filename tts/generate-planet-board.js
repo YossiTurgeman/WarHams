@@ -217,26 +217,31 @@ function strokeHex(img, cx, cy, r, t, color) {
     const LABEL_GAP_WORLD     = 2.0;          // inches outside hex edge
     const LABEL_HALF_WORLD    = 0.65;         // half glyph height in inches
     const LABEL_RADIAL_OFFSET = (HEX_R_WORLD + LABEL_GAP_WORLD + LABEL_HALF_WORLD) * PX_PER_WORLD;
+    // The Custom_Tile renders the texture mirrored relative to the
+    // viewer (table-top down view), so glyphs printed straight onto
+    // the image come out upside-down in TTS. Render each letter onto
+    // a small transparent stamp, rotate 180°, then composite.
+    const STAMP = 100;
     for (const [key, letter] of labelMap.entries()) {
         const [q, r] = key.split(",").map(Number);
         const wx = q * PITCH_X;
         const wz = (r + q / 2) * PITCH_Z;
         const hx = cx + wx * PX_PER_WORLD;
         const hz = cy + wz * PX_PER_WORLD;
-        // Direction from board center to hex center → push label
-        // a bit further outward, toward the planet rim.
         const dx = hx - cx, dy = hz - cy;
         const d  = Math.sqrt(dx * dx + dy * dy) || 1;
         const lx = hx + (dx / d) * LABEL_RADIAL_OFFSET;
         const ly = hz + (dy / d) * LABEL_RADIAL_OFFSET;
-        // open-sans-64 glyphs are ~36 px wide / ~64 px tall — center
-        // the printed letter on (lx, ly) by simple offsets.
-        img.print({
+
+        const stamp = new Jimp({ width: STAMP, height: STAMP, color: 0x00000000 });
+        stamp.print({
             font: fontLabel,
-            x: Math.round(lx - 18),
-            y: Math.round(ly - 32),
+            x: STAMP / 2 - 18,
+            y: STAMP / 2 - 32,
             text: letter,
         });
+        stamp.rotate({ deg: 180 });
+        img.composite(stamp, Math.round(lx - STAMP / 2), Math.round(ly - STAMP / 2));
     }
 
     const outPath = path.join(outDir, "planet-board.png");
