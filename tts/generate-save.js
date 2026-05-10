@@ -263,7 +263,7 @@ objects.push(buildConspireDeck());
 [
     { name: "Resource Die 1", color: { r: 1, g: 1, b: 1 }, x: -46 },
     { name: "Resource Die 2", color: { r: 1, g: 1, b: 1 }, x: -44 },
-    { name: "Separatist Die", color: { r: 0.5, g: 0.5, b: 0.5 }, x: -42 },
+    { name: "Separatist Die", color: { r: 0.5, g: 0.5, b: 0.5 }, x: -57 },
 ].forEach(d => {
     objects.push(baseObj("Die_6", d.name,
         d.name.includes("Separatist") ? "Grey — triggers Separatist spawning" : "Resource production",
@@ -504,7 +504,7 @@ function makeSeparatistPawn(stackIdx) {
 const sepSoldiers = [];
 for (let i = 0; i < 24; i++) sepSoldiers.push(makeSeparatistPawn(i));
 const sepBag = baseObj("Bag", "Separatist Soldiers (24)", "24 grey Separatists. Spawn at bases.",
-    -44, 1.5, -6, { color: { r: 0.5, g: 0.5, b: 0.5 } });
+    -57, 1.5, -6, { color: { r: 0.5, g: 0.5, b: 0.5 } });
 sepBag.ContainedObjects = sepSoldiers;
 objects.push(sepBag);
 
@@ -585,7 +585,7 @@ dmgToken.CustomMesh = {
     CastShadows: true,
 };
 const dmgBag = baseObj("Infinite_Bag", "Damage Pegs", "Infinite blood-drop damage pegs. Each soldier base has 3 divots; 4th wound = death.",
-    -44, 1.5, -12, { color: { r: 0.9, g: 0.1, b: 0.1 } });
+    -57, 1.5, -12, { color: { r: 0.9, g: 0.1, b: 0.1 } });
 dmgBag.ContainedObjects = [dmgToken];
 objects.push(dmgBag);
 
@@ -619,7 +619,7 @@ function makeBunkerToken(stackIdx) {
 const bunkerTokens = [];
 for (let i = 0; i < 12; i++) bunkerTokens.push(makeBunkerToken(i));
 const bunkerBag = baseObj("Bag", "Bunker Tokens (12)", "Neutral WW2 concrete bunkers via D.U.D.S.",
-    -44, 1.5, 0, { color: { r: 0.55, g: 0.55, b: 0.50 } });
+    -57, 1.5, 0, { color: { r: 0.55, g: 0.55, b: 0.50 } });
 bunkerBag.ContainedObjects = bunkerTokens;
 objects.push(bunkerBag);
 
@@ -672,7 +672,7 @@ const numberCards = shuffledNumbers.map((num, i) => {
 });
 const numberDeck = baseObj("Deck", "Number Tokens (16)",
     "Catan-style chits placed on resource hexes during setup. Press R to shuffle, deal 1 per resource hex (one hex gets 2).",
-    -44, 1.5, 6, { rotZ: 180 });
+    -57, 1.5, 6, { rotZ: 180 });
 numberDeck.DeckIDs = numberCards.map(c => c.CardID);
 numberDeck.CustomDeck = numberDeckDefs;
 numberDeck.HideWhenFaceDown = true;
