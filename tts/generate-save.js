@@ -244,7 +244,7 @@ function buildConspireDeck() {
     });
     const deck = baseObj("Deck", "Conspire Deck",
         `Conspire Cards — ${gameData.deck_counts.total_conspire_cards} cards\nForfeit Movement or Combat to draw 1.\nHover cards to see effects.`,
-        36, 1.5, 8, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
+        56, 1.5, 8, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -340,7 +340,7 @@ resourceDefs.forEach((res, i) => {
     // the BAC deck (z=-20) and the Conspire deck (z=+20).
     const bag = baseObj("Bag", `${res.name} Tokens (50)`,
         `Stack of ${res.name} tokens (${res.label}). Each spawns upright on its base.`,
-        44, 1.5, -12 + i * 6, { color: res.color });
+        64, 1.5, -12 + i * 6, { color: res.color });
     bag.ContainedObjects = tokens;
     objects.push(bag);
 });
@@ -740,7 +740,7 @@ function makeContainer(num, role, px, py, pz) {
 // sit directly south of the Conspire deck (which is at x=34, z=8).
 // Slot grid is 3 cols × 2 rows; world slot pitch matches the texture
 // geometry (see UZ board derivation in section 17b).
-const UZ_BOARD_X = 36;
+const UZ_BOARD_X = 56;
 const UZ_BOARD_Z = 0;
 // Slot center pitches derived from the v59 board texture geometry
 // (1000×950 px, 250×350 slots, gaps 30/50, gridTop 110), using the
@@ -857,13 +857,16 @@ objects.push(uzBoard);
 const EQUIPMENT_BOARD_URL = `${SOLDIER_BASE}/equipment-display-board.png`;
 const eqBoard = baseObj("Custom_Tile", "Equipment Display",
     "Shared reference board: 20 slots for face-up BAC cards (one per BAC type). When you unlock a new BAC type for the first time, place its card face-up here and drop one of your Control Flags on top to mark permanent access. Multiple flags may share a slot.",
-    // Position: board world depth ~10 (scaleZ:5 × Z factor 2). Pushed
-    // 3 units further south (z -31 → -34) so the new larger Planet
-    // Board (60×60, south edge z=-27.5) clears it with 1.5u margin.
-    // North edge of ED moves from z=-26 to z=-29 — 1u south of the
-    // Red/Blue player figurines at z=-28 (no overlap).
-    0, 1.02, -34,
-    { rotY: 180, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
+    // v73: relocated to the EAST-CENTRAL area between Yellow and Blue
+    // (where the Unloading Zone, Conspire Deck, containers and resource
+    // bags used to live — those have been pushed out to the table edge).
+    // Rotated 90° to the right (rotY 180 → 90), so the 20-slot strip
+    // is now portrait (2 cols × 10 rows running north-south) instead of
+    // landscape. Footprint after rotation: 10 wide × 9.68 long world
+    // units. Position 36 puts west edge at x=31 — 1u clear of the new
+    // Planet Board east edge at x=30.
+    36, 1.02, 0,
+    { rotY: 90, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
     ImageSecondaryURL: "",
@@ -901,7 +904,7 @@ const PLANET_BOARD_URL = `${SOLDIER_BASE}/planet-board.png`;
 const planetBoard = baseObj("Custom_Tile", "Planet Board",
     "The planet's surface — drop the 61 Hex Tiles into the printed slots. Locked.",
     0, 0.95, 2.5,
-    { rotY: 0, scaleX: 30.0, scaleY: 0.2, scaleZ: 30.0,
+    { rotY: 270, scaleX: 30.0, scaleY: 0.2, scaleZ: 30.0,
       color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
 planetBoard.CustomImage = {
     ImageURL: PLANET_BOARD_URL,
@@ -971,14 +974,23 @@ const PITCH_Z = Math.sqrt(3) * HEX_R_WORLD;
 const PLANET_CX = 0, PLANET_CZ = 2.5;
 const HEX_BACK_URL = `${SOLDIER_BASE}/hex_back_earth.png`;
 
+// v73: hex spawn coords rotated 90° clockwise (right) around the
+// board centre to match the rotated Planet Board (rotY=270). The
+// printed slot pattern in the texture rotates with the board, so the
+// hexes must spawn in the same rotated cluster pattern. Hex tile rotY
+// also bumped 180→90 so each tile rotates with the cluster (still
+// face-up; texture art rotates 90° on the tile face).
+//   Rotation: (x,z) → (z, -x)
+//   new_x = PLANET_CX + PITCH_Z * (r + q/2)
+//   new_z = PLANET_CZ - PITCH_X * q
 for (let i = 0; i < 61; i++) {
     const [q, r] = HEX_COORDS[i];
     const tile = HEX_MANIFEST[i];
-    const x = PLANET_CX + PITCH_X * q;
-    const z = PLANET_CZ + PITCH_Z * (r + q / 2);
+    const x = PLANET_CX + PITCH_Z * (r + q / 2);
+    const z = PLANET_CZ - PITCH_X * q;
     const hex = baseObj("Custom_Tile", tile.label, `Hex tile — ${tile.kind}.`,
         x, 1.02, z,
-        { rotY: 180, scaleX: HEX_SCALE, scaleY: 0.2, scaleZ: HEX_SCALE,
+        { rotY: 90, scaleX: HEX_SCALE, scaleY: 0.2, scaleZ: HEX_SCALE,
           color: { r: 1, g: 1, b: 1 }, grid: false });
     hex.CustomImage = {
         ImageURL: tile.url,
