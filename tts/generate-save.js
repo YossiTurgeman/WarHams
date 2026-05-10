@@ -211,7 +211,7 @@ function buildBACDeck() {
     // and shares PB's rotY:90.
     const deck = baseObj("Deck", "Spaceport Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
-        53, 1.5, 9.5, { rotY: 90, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        53, 1.5, -9.5, { rotY: 270, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -797,7 +797,7 @@ const pbBoard = baseObj("Custom_Tile", "Planet Bound Area",
     // Footprint at rotY:90 ~5 (X) × 19 (Z). Position x=53 → x ∈ [50.5, 55.5],
     // long axis north-south (z ∈ [-9.5, +9.5]).
     53, 1.02, 0,
-    { rotY: 90, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
+    { rotY: 270, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
 pbBoard.CustomImage = {
     ImageURL: PLANETBOUND_BOARD_URL,
     ImageSecondaryURL: "",
@@ -865,7 +865,7 @@ const eqBoard = baseObj("Custom_Tile", "Equipment Display",
     // v76: rotated 90° to the right (rotY 180 → 90) per user request.
     // Footprint at rotY:90 ~10 (X) × 9.68 (Z). Position x=37 → x ∈ [32, 42].
     37, 1.02, 0,
-    { rotY: 90, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
+    { rotY: 270, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
     ImageSecondaryURL: "",
