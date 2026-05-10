@@ -21,7 +21,7 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
-const CARD_VERSION = "v68";
+const CARD_VERSION = "v69";
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -210,7 +210,7 @@ function buildBACDeck() {
     //   x = -9.5  → small nudge right of -10.12 (slot pitch ≈ 2.5 world units)
     const deck = baseObj("Deck", "Spaceport Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
-        -9.5, 1.5, 33.5, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        -9.5, 1.5, 38.5, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -244,7 +244,7 @@ function buildConspireDeck() {
     });
     const deck = baseObj("Deck", "Conspire Deck",
         `Conspire Cards — ${gameData.deck_counts.total_conspire_cards} cards\nForfeit Movement or Combat to draw 1.\nHover cards to see effects.`,
-        34, 1.5, 8, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
+        36, 1.5, 8, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -740,7 +740,7 @@ function makeContainer(num, role, px, py, pz) {
 // sit directly south of the Conspire deck (which is at x=34, z=8).
 // Slot grid is 3 cols × 2 rows; world slot pitch matches the texture
 // geometry (see UZ board derivation in section 17b).
-const UZ_BOARD_X = 34;
+const UZ_BOARD_X = 36;
 const UZ_BOARD_Z = 0;
 // Slot center pitches derived from the v59 board texture geometry
 // (1000×950 px, 250×350 slots, gaps 30/50, gridTop 110), using the
@@ -789,10 +789,10 @@ const PLANETBOUND_BOARD_URL = `${SOLDIER_BASE}/planetbound-board.png`;
 // the south-facing camera.
 const pbBoard = baseObj("Custom_Tile", "Planet Bound Area",
     "Movable board with 7 slots: leftmost slot is for the Spaceport Deck, the other 6 hold the face-up Planet Bound BAC cards. Always keep 6 face-up; refill immediately whenever one is taken.",
-    // Position: board world depth ~5 (scaleZ:2.5 × Z factor 2). Top
-    // edge target = 2 units below the table's north edge (z=+38), so
-    // top of board at z=36, center at z=36 - 5/2 = 33.5.
-    0, 1.02, 33.5,
+    // Position: board world depth ~5 (scaleZ:2.5 × Z factor 2). Pushed
+    // 2.5 units further north (z 33.5 → 36) so the new larger Planet
+    // Board (60×60, north edge z=32.5) clears it with 1u margin.
+    0, 1.02, 38.5,
     { rotY: 180, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
 pbBoard.CustomImage = {
     ImageURL: PLANETBOUND_BOARD_URL,
@@ -857,10 +857,12 @@ objects.push(uzBoard);
 const EQUIPMENT_BOARD_URL = `${SOLDIER_BASE}/equipment-display-board.png`;
 const eqBoard = baseObj("Custom_Tile", "Equipment Display",
     "Shared reference board: 20 slots for face-up BAC cards (one per BAC type). When you unlock a new BAC type for the first time, place its card face-up here and drop one of your Control Flags on top to mark permanent access. Multiple flags may share a slot.",
-    // Position: board world depth ~10 (scaleZ:5 × Z factor 2). Bottom
-    // edge target = 2 units above the table's south edge (z=-38), so
-    // bottom of board at z=-36, center at z=-36 + 10/2 = -31.
-    0, 1.02, -31,
+    // Position: board world depth ~10 (scaleZ:5 × Z factor 2). Pushed
+    // 3 units further south (z -31 → -34) so the new larger Planet
+    // Board (60×60, south edge z=-27.5) clears it with 1.5u margin.
+    // North edge of ED moves from z=-26 to z=-29 — 1u south of the
+    // Red/Blue player figurines at z=-28 (no overlap).
+    0, 1.02, -36,
     { rotY: 180, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
@@ -872,30 +874,34 @@ eqBoard.CustomImage = {
 objects.push(eqBoard);
 
 // ─── 17e0. PLANET BOARD (single locked board with 61 hex slots) ─────
-// Replaces the previous 5-piece "Planet Frame" with a single
-// rectangular board sized to JUST fit between the surrounding boards
-// (Planet Bound at z=33.5/scaleZ=2.5 → south edge z=31; Equipment
-// Display at z=-31/scaleZ=5.0 → north edge z=-26; Unloading Zone at
-// x=34/scaleX=5.0 → west edge x=29). Custom_Tile Type=0 base size
-// is 2 world units per scale unit (see generate-planetbound-board.js
-// header: "scaleX 9, scaleZ 3 → 18 x 6 TTS units").
+// Single rectangular board with all 61 hex slot outlines printed onto
+// its top surface. Players drop hex tiles INTO the printed slots.
 //
-//   Board world size:  50 wide × 55 long  (scaleX=25, scaleZ=27.5)
+// v69: ENLARGED to give the cluster comfortable margin (~5u of
+// "atmosphere" frame around the outermost hex). Surrounding boards
+// were pushed outward to free the room:
+//   Planet Bound   z 33.5 → 36   (south edge stays at z=33.5)
+//   Equipment Disp z -31  → -34  (north edge moves z -26 → -29)
+//   Unloading Zone x 34   → 36   (west edge moves x 29 → 31)
+//
+// Custom_Tile Type=0 base = 2 world units per scale unit.
+//
+//   Board world size:  60 × 60 square  (scaleX = scaleZ = 30)
 //   Centered at:       (0, 0.95, 2.5)  — same xz as the hex cluster
 //                      so the printed hex slots line up exactly with
-//                      the spawned hex tiles overhead. y=0.95 sits
-//                      just below the hexes at y=1.02 so the tiles
-//                      visibly rest IN the slots.
-//   Margins (no overlay): 1 unit to PB, 1 unit to ED, 4 units to UZ
+//                      the spawned hex tiles overhead.
+//   Board edges:       x ∈ [-30, 30],  z ∈ [-27.5, 32.5]
+//   Margins:           1.0u to PB north, 1.5u to ED south, 1.0u to UZ
+//   Cluster→frame gap: ~5.5u left/right, ~2.7u top/bottom
 //
-// Texture: tts/v68/planet-board.png (2500×2750 @ 50 px/world unit,
+// Texture: tts/v69/planet-board.png (3000×3000 @ 50 px/world unit,
 // generated by tts/generate-planet-board.js — 61 flat-top hex slot
 // outlines at the exact axial coords used below).
 const PLANET_BOARD_URL = `${SOLDIER_BASE}/planet-board.png`;
 const planetBoard = baseObj("Custom_Tile", "Planet Board",
     "The planet's surface — drop the 61 Hex Tiles into the printed slots. Locked.",
     0, 0.95, 2.5,
-    { rotY: 0, scaleX: 25.0, scaleY: 0.2, scaleZ: 27.5,
+    { rotY: 0, scaleX: 30.0, scaleY: 0.2, scaleZ: 32.5,
       color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
 planetBoard.CustomImage = {
     ImageURL: PLANET_BOARD_URL,
@@ -1039,7 +1045,7 @@ const saveFile = {
     GameComplexity: "",
     Tags: ["Strategy", "Sci-Fi", "Wargame"],
     Gravity: 0.5,
-    PlayArea: 0.5,
+    PlayArea: 1.0,
     Table: "Table_None",
     Sky: "Sky_Museum",
     Note: [

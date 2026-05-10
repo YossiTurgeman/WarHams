@@ -33,16 +33,19 @@ const path = require("path");
 const fs = require("fs");
 const { Jimp } = require("jimp");
 
-const VERSION = "v68";
+const VERSION = "v69";
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
-// World <-> pixel mapping
-const WORLD_W = 50;
-const WORLD_H = 55;
+// World <-> pixel mapping. v69: enlarged to 60×60 world units after
+// surrounding boards (PB/ED/UZ) were pushed outward to free the room.
+// Cluster (49 × 54.5) now sits with ~5u of "atmosphere" margin to
+// the gold frame on the long axes.
+const WORLD_W = 60;
+const WORLD_H = 65;
 const PX_PER_WORLD = 50;
-const W = WORLD_W * PX_PER_WORLD;   // 2500
-const H = WORLD_H * PX_PER_WORLD;   // 2750
+const W = WORLD_W * PX_PER_WORLD;   // 3000
+const H = WORLD_H * PX_PER_WORLD;   // 3000
 
 // Hex cluster geometry (must match generate-save.js Section 17e).
 const HEX_R_WORLD = 3.5;
