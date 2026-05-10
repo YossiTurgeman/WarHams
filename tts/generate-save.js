@@ -211,7 +211,7 @@ function buildBACDeck() {
     // on slot 6. Deck shares PB's rotY:270.
     const deck = baseObj("Deck", "Spaceport Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
-        44.31, 1.5, 11, { rotY: 270, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        44.31, 1.5, 9.5, { rotY: 270, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
