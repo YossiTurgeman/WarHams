@@ -1175,7 +1175,11 @@ const EQUIPMENT_SLOTS = [
     { id: "backpack", label: "Backpack" },
 ];
 const MODULES_PER_BAC   = 6;           // copies of each module in its bag
-const MODULE_SCALE      = 4.0;         // OBJ built at ~0.1-unit; 4× ≈ 0.4 in
+// v136: scale down to match the soldier minis (which run at scale
+// 0.918 ≈ 0.92 in tall). At MODULE_SCALE = 1.0 a helmet is ≈0.2 in
+// across and a rifle ≈0.3 in long — about 1/4 of soldier height,
+// which reads as "wearable gear" rather than a prop you'd trip over.
+const MODULE_SCALE      = 1.0;
 // Grid: 4 columns west of the user manual (which sits at x=-60).
 // Columns x = -66, -72, -78, -84 (6 in apart, getting further west).
 // Rows by slot at z = -16, -8, 0, 8, 16 (8 in apart).

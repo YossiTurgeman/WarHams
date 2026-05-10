@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778423052,
+  "EpochTime": 1778423198,
   "Date": "2026-05-10",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -54941,9 +54941,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Helmet Head",
           "Description": "Standard Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +1 to its defense die.",
@@ -55006,9 +55006,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Helmet Head",
           "Description": "Standard Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +1 to its defense die.",
@@ -55071,9 +55071,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Helmet Head",
           "Description": "Standard Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +1 to its defense die.",
@@ -55136,9 +55136,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Helmet Head",
           "Description": "Standard Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +1 to its defense die.",
@@ -55201,9 +55201,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Helmet Head",
           "Description": "Standard Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +1 to its defense die.",
@@ -55266,9 +55266,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Helmet Head",
           "Description": "Standard Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +1 to its defense die.",
@@ -55378,9 +55378,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.H.A.D Head",
           "Description": "Sensory Helmet, Advisory Drone\n[Tech] Slot: Head\n\nIf attacked, before combat starts, attacking player must reveal his conspire cards to you.",
@@ -55443,9 +55443,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.H.A.D Head",
           "Description": "Sensory Helmet, Advisory Drone\n[Tech] Slot: Head\n\nIf attacked, before combat starts, attacking player must reveal his conspire cards to you.",
@@ -55508,9 +55508,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.H.A.D Head",
           "Description": "Sensory Helmet, Advisory Drone\n[Tech] Slot: Head\n\nIf attacked, before combat starts, attacking player must reveal his conspire cards to you.",
@@ -55573,9 +55573,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.H.A.D Head",
           "Description": "Sensory Helmet, Advisory Drone\n[Tech] Slot: Head\n\nIf attacked, before combat starts, attacking player must reveal his conspire cards to you.",
@@ -55638,9 +55638,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.H.A.D Head",
           "Description": "Sensory Helmet, Advisory Drone\n[Tech] Slot: Head\n\nIf attacked, before combat starts, attacking player must reveal his conspire cards to you.",
@@ -55703,9 +55703,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.H.A.D Head",
           "Description": "Sensory Helmet, Advisory Drone\n[Tech] Slot: Head\n\nIf attacked, before combat starts, attacking player must reveal his conspire cards to you.",
@@ -55815,9 +55815,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.A.E.H Head",
           "Description": "Personal Accuracy Enhancement Helmet\n[Tech] Slot: Head\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
@@ -55880,9 +55880,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.A.E.H Head",
           "Description": "Personal Accuracy Enhancement Helmet\n[Tech] Slot: Head\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
@@ -55945,9 +55945,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.A.E.H Head",
           "Description": "Personal Accuracy Enhancement Helmet\n[Tech] Slot: Head\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
@@ -56010,9 +56010,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.A.E.H Head",
           "Description": "Personal Accuracy Enhancement Helmet\n[Tech] Slot: Head\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
@@ -56075,9 +56075,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.A.E.H Head",
           "Description": "Personal Accuracy Enhancement Helmet\n[Tech] Slot: Head\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
@@ -56140,9 +56140,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.A.E.H Head",
           "Description": "Personal Accuracy Enhancement Helmet\n[Tech] Slot: Head\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
@@ -56252,9 +56252,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Head",
           "Description": "Custom Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +2 to its defense die.",
@@ -56317,9 +56317,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Head",
           "Description": "Custom Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +2 to its defense die.",
@@ -56382,9 +56382,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Head",
           "Description": "Custom Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +2 to its defense die.",
@@ -56447,9 +56447,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Head",
           "Description": "Custom Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +2 to its defense die.",
@@ -56512,9 +56512,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Head",
           "Description": "Custom Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +2 to its defense die.",
@@ -56577,9 +56577,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Head",
           "Description": "Custom Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +2 to its defense die.",
@@ -56689,9 +56689,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Chest",
           "Description": "Standard Armor Plating Chest Piece\n[Armor] Slot: Chest\n\nThis soldier gets +1 to its defense die.",
@@ -56754,9 +56754,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Chest",
           "Description": "Standard Armor Plating Chest Piece\n[Armor] Slot: Chest\n\nThis soldier gets +1 to its defense die.",
@@ -56819,9 +56819,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Chest",
           "Description": "Standard Armor Plating Chest Piece\n[Armor] Slot: Chest\n\nThis soldier gets +1 to its defense die.",
@@ -56884,9 +56884,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Chest",
           "Description": "Standard Armor Plating Chest Piece\n[Armor] Slot: Chest\n\nThis soldier gets +1 to its defense die.",
@@ -56949,9 +56949,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Chest",
           "Description": "Standard Armor Plating Chest Piece\n[Armor] Slot: Chest\n\nThis soldier gets +1 to its defense die.",
@@ -57014,9 +57014,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Chest",
           "Description": "Standard Armor Plating Chest Piece\n[Armor] Slot: Chest\n\nThis soldier gets +1 to its defense die.",
@@ -57126,9 +57126,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "B.E.A.R Chest",
           "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
@@ -57191,9 +57191,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "B.E.A.R Chest",
           "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
@@ -57256,9 +57256,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "B.E.A.R Chest",
           "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
@@ -57321,9 +57321,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "B.E.A.R Chest",
           "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
@@ -57386,9 +57386,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "B.E.A.R Chest",
           "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
@@ -57451,9 +57451,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "B.E.A.R Chest",
           "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
@@ -57563,9 +57563,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.L.A.S.T.E.R Chest",
           "Description": "Personal Lasting Aid Surgical Treatment Enhancement Robot\n[Support] Slot: Chest\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
@@ -57628,9 +57628,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.L.A.S.T.E.R Chest",
           "Description": "Personal Lasting Aid Surgical Treatment Enhancement Robot\n[Support] Slot: Chest\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
@@ -57693,9 +57693,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.L.A.S.T.E.R Chest",
           "Description": "Personal Lasting Aid Surgical Treatment Enhancement Robot\n[Support] Slot: Chest\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
@@ -57758,9 +57758,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.L.A.S.T.E.R Chest",
           "Description": "Personal Lasting Aid Surgical Treatment Enhancement Robot\n[Support] Slot: Chest\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
@@ -57823,9 +57823,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.L.A.S.T.E.R Chest",
           "Description": "Personal Lasting Aid Surgical Treatment Enhancement Robot\n[Support] Slot: Chest\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
@@ -57888,9 +57888,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.L.A.S.T.E.R Chest",
           "Description": "Personal Lasting Aid Surgical Treatment Enhancement Robot\n[Support] Slot: Chest\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
@@ -58000,9 +58000,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Chest",
           "Description": "Custom Armor Plating Chest\n[Armor] Slot: Chest\n\nThis soldier gets +2 to its defense die.",
@@ -58065,9 +58065,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Chest",
           "Description": "Custom Armor Plating Chest\n[Armor] Slot: Chest\n\nThis soldier gets +2 to its defense die.",
@@ -58130,9 +58130,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Chest",
           "Description": "Custom Armor Plating Chest\n[Armor] Slot: Chest\n\nThis soldier gets +2 to its defense die.",
@@ -58195,9 +58195,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Chest",
           "Description": "Custom Armor Plating Chest\n[Armor] Slot: Chest\n\nThis soldier gets +2 to its defense die.",
@@ -58260,9 +58260,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Chest",
           "Description": "Custom Armor Plating Chest\n[Armor] Slot: Chest\n\nThis soldier gets +2 to its defense die.",
@@ -58325,9 +58325,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Chest",
           "Description": "Custom Armor Plating Chest\n[Armor] Slot: Chest\n\nThis soldier gets +2 to its defense die.",
@@ -58437,9 +58437,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "H.C.A.R Hands",
           "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
@@ -58502,9 +58502,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "H.C.A.R Hands",
           "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
@@ -58567,9 +58567,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "H.C.A.R Hands",
           "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
@@ -58632,9 +58632,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "H.C.A.R Hands",
           "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
@@ -58697,9 +58697,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "H.C.A.R Hands",
           "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
@@ -58762,9 +58762,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "H.C.A.R Hands",
           "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
@@ -58874,9 +58874,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "B.A.S.R Hands",
           "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
@@ -58939,9 +58939,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "B.A.S.R Hands",
           "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
@@ -59004,9 +59004,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "B.A.S.R Hands",
           "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
@@ -59069,9 +59069,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "B.A.S.R Hands",
           "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
@@ -59134,9 +59134,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "B.A.S.R Hands",
           "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
@@ -59199,9 +59199,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "B.A.S.R Hands",
           "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
@@ -59311,9 +59311,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "R.S.G Hands",
           "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
@@ -59376,9 +59376,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "R.S.G Hands",
           "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
@@ -59441,9 +59441,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "R.S.G Hands",
           "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
@@ -59506,9 +59506,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "R.S.G Hands",
           "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
@@ -59571,9 +59571,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "R.S.G Hands",
           "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
@@ -59636,9 +59636,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "R.S.G Hands",
           "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
@@ -59748,9 +59748,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G Hands",
           "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
@@ -59813,9 +59813,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G Hands",
           "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
@@ -59878,9 +59878,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G Hands",
           "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
@@ -59943,9 +59943,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G Hands",
           "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
@@ -60008,9 +60008,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G Hands",
           "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
@@ -60073,9 +60073,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G Hands",
           "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
@@ -60185,9 +60185,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Legs",
           "Description": "Standard Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +1 to its defense die.",
@@ -60250,9 +60250,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Legs",
           "Description": "Standard Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +1 to its defense die.",
@@ -60315,9 +60315,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Legs",
           "Description": "Standard Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +1 to its defense die.",
@@ -60380,9 +60380,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Legs",
           "Description": "Standard Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +1 to its defense die.",
@@ -60445,9 +60445,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Legs",
           "Description": "Standard Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +1 to its defense die.",
@@ -60510,9 +60510,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.A.P Legs",
           "Description": "Standard Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +1 to its defense die.",
@@ -60622,9 +60622,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "J.J Legs",
           "Description": "Jump Jets\n[Tech] Slot: Legs\n\nThis soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate.",
@@ -60687,9 +60687,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "J.J Legs",
           "Description": "Jump Jets\n[Tech] Slot: Legs\n\nThis soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate.",
@@ -60752,9 +60752,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "J.J Legs",
           "Description": "Jump Jets\n[Tech] Slot: Legs\n\nThis soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate.",
@@ -60817,9 +60817,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "J.J Legs",
           "Description": "Jump Jets\n[Tech] Slot: Legs\n\nThis soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate.",
@@ -60882,9 +60882,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "J.J Legs",
           "Description": "Jump Jets\n[Tech] Slot: Legs\n\nThis soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate.",
@@ -60947,9 +60947,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "J.J Legs",
           "Description": "Jump Jets\n[Tech] Slot: Legs\n\nThis soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate.",
@@ -61059,9 +61059,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "N.I.N.J.A Legs",
           "Description": "Nir Ion Nullifier Jammer Aid\n[Tech] Slot: Legs\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
@@ -61124,9 +61124,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "N.I.N.J.A Legs",
           "Description": "Nir Ion Nullifier Jammer Aid\n[Tech] Slot: Legs\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
@@ -61189,9 +61189,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "N.I.N.J.A Legs",
           "Description": "Nir Ion Nullifier Jammer Aid\n[Tech] Slot: Legs\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
@@ -61254,9 +61254,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "N.I.N.J.A Legs",
           "Description": "Nir Ion Nullifier Jammer Aid\n[Tech] Slot: Legs\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
@@ -61319,9 +61319,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "N.I.N.J.A Legs",
           "Description": "Nir Ion Nullifier Jammer Aid\n[Tech] Slot: Legs\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
@@ -61384,9 +61384,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "N.I.N.J.A Legs",
           "Description": "Nir Ion Nullifier Jammer Aid\n[Tech] Slot: Legs\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
@@ -61496,9 +61496,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Legs",
           "Description": "Custom Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +2 to its defense die.",
@@ -61561,9 +61561,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Legs",
           "Description": "Custom Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +2 to its defense die.",
@@ -61626,9 +61626,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Legs",
           "Description": "Custom Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +2 to its defense die.",
@@ -61691,9 +61691,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Legs",
           "Description": "Custom Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +2 to its defense die.",
@@ -61756,9 +61756,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Legs",
           "Description": "Custom Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +2 to its defense die.",
@@ -61821,9 +61821,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "C.A.P Legs",
           "Description": "Custom Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +2 to its defense die.",
@@ -61933,9 +61933,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.L.I.M.E Backpack",
           "Description": "Squad Light Interoperable Mortar Encampment\n[Heavy Weapons] Slot: Backpack\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
@@ -61998,9 +61998,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.L.I.M.E Backpack",
           "Description": "Squad Light Interoperable Mortar Encampment\n[Heavy Weapons] Slot: Backpack\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
@@ -62063,9 +62063,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.L.I.M.E Backpack",
           "Description": "Squad Light Interoperable Mortar Encampment\n[Heavy Weapons] Slot: Backpack\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
@@ -62128,9 +62128,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.L.I.M.E Backpack",
           "Description": "Squad Light Interoperable Mortar Encampment\n[Heavy Weapons] Slot: Backpack\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
@@ -62193,9 +62193,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.L.I.M.E Backpack",
           "Description": "Squad Light Interoperable Mortar Encampment\n[Heavy Weapons] Slot: Backpack\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
@@ -62258,9 +62258,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "S.L.I.M.E Backpack",
           "Description": "Squad Light Interoperable Mortar Encampment\n[Heavy Weapons] Slot: Backpack\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
@@ -62370,9 +62370,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "D.U.D.S Backpack",
           "Description": "Deployable Unital Defense System\n[Support] Slot: Backpack\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
@@ -62435,9 +62435,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "D.U.D.S Backpack",
           "Description": "Deployable Unital Defense System\n[Support] Slot: Backpack\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
@@ -62500,9 +62500,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "D.U.D.S Backpack",
           "Description": "Deployable Unital Defense System\n[Support] Slot: Backpack\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
@@ -62565,9 +62565,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "D.U.D.S Backpack",
           "Description": "Deployable Unital Defense System\n[Support] Slot: Backpack\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
@@ -62630,9 +62630,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "D.U.D.S Backpack",
           "Description": "Deployable Unital Defense System\n[Support] Slot: Backpack\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
@@ -62695,9 +62695,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "D.U.D.S Backpack",
           "Description": "Deployable Unital Defense System\n[Support] Slot: Backpack\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
@@ -62807,9 +62807,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "L.P.M Backpack",
           "Description": "Laser Pointer Marker\n[Support] Slot: Backpack\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
@@ -62872,9 +62872,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "L.P.M Backpack",
           "Description": "Laser Pointer Marker\n[Support] Slot: Backpack\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
@@ -62937,9 +62937,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "L.P.M Backpack",
           "Description": "Laser Pointer Marker\n[Support] Slot: Backpack\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
@@ -63002,9 +63002,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "L.P.M Backpack",
           "Description": "Laser Pointer Marker\n[Support] Slot: Backpack\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
@@ -63067,9 +63067,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "L.P.M Backpack",
           "Description": "Laser Pointer Marker\n[Support] Slot: Backpack\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
@@ -63132,9 +63132,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "L.P.M Backpack",
           "Description": "Laser Pointer Marker\n[Support] Slot: Backpack\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
@@ -63244,9 +63244,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "T.I.L.T.S Backpack",
           "Description": "Tactical Ion Team Link Shield\n[Tech] Slot: Backpack\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
@@ -63309,9 +63309,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "T.I.L.T.S Backpack",
           "Description": "Tactical Ion Team Link Shield\n[Tech] Slot: Backpack\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
@@ -63374,9 +63374,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "T.I.L.T.S Backpack",
           "Description": "Tactical Ion Team Link Shield\n[Tech] Slot: Backpack\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
@@ -63439,9 +63439,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "T.I.L.T.S Backpack",
           "Description": "Tactical Ion Team Link Shield\n[Tech] Slot: Backpack\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
@@ -63504,9 +63504,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "T.I.L.T.S Backpack",
           "Description": "Tactical Ion Team Link Shield\n[Tech] Slot: Backpack\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
@@ -63569,9 +63569,9 @@
             "rotX": 0,
             "rotY": 0,
             "rotZ": 0,
-            "scaleX": 4,
-            "scaleY": 4,
-            "scaleZ": 4
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
           },
           "Nickname": "T.I.L.T.S Backpack",
           "Description": "Tactical Ion Team Link Shield\n[Tech] Slot: Backpack\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
