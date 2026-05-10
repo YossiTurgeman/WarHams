@@ -31,7 +31,9 @@
 
 const path = require("path");
 const fs = require("fs");
-const { Jimp } = require("jimp");
+const { Jimp, loadFont } = require("jimp");
+
+const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-print", "dist", "fonts", "open-sans");
 
 const VERSION = "v72";
 const outDir = path.join(__dirname, VERSION);
@@ -178,7 +180,61 @@ function strokeHex(img, cx, cy, r, t, color) {
         }
     }
 
+    // v117: wrap-around connection labels.
+    // The planet wraps around — opposite edge hexes are adjacent
+    // (rulebook §Setup / §Board Wrapping). We label each of the 24
+    // perimeter hexes with a letter a–l; antipodal pairs share the
+    // same letter so players can read where they emerge on the far
+    // side of the planet.
+    const edgePairs = [
+        [[ 4,  0], [-4,  0]], // a
+        [[ 4, -1], [-4,  1]], // b
+        [[ 4, -2], [-4,  2]], // c
+        [[ 4, -3], [-4,  3]], // d
+        [[ 4, -4], [-4,  4]], // e
+        [[ 3, -4], [-3,  4]], // f
+        [[ 2, -4], [-2,  4]], // g
+        [[ 1, -4], [-1,  4]], // h
+        [[ 0, -4], [ 0,  4]], // i
+        [[-1, -3], [ 1,  3]], // j
+        [[-2, -2], [ 2,  2]], // k
+        [[-3, -1], [ 3,  1]], // l
+    ];
+    const labelMap = new Map();
+    edgePairs.forEach(([a, b], idx) => {
+        const letter = String.fromCharCode("a".charCodeAt(0) + idx);
+        labelMap.set(`${a[0]},${a[1]}`, letter);
+        labelMap.set(`${b[0]},${b[1]}`, letter);
+    });
+
+    const fontLabel = await loadFont(path.join(FONT_DIR, "open-sans-64-white", "open-sans-64-white.fnt"));
+    const LABEL_BOX = 80;
+    // Push label outward from board center toward the planet rim,
+    // far enough to clear the hex outline but inside the gold ring.
+    const LABEL_RADIAL_OFFSET = HEX_R_PX * 0.85;
+    for (const [key, letter] of labelMap.entries()) {
+        const [q, r] = key.split(",").map(Number);
+        const wx = q * PITCH_X;
+        const wz = (r + q / 2) * PITCH_Z;
+        const hx = cx + wx * PX_PER_WORLD;
+        const hz = cy + wz * PX_PER_WORLD;
+        // Direction from board center to hex center → push label
+        // a bit further outward, toward the planet rim.
+        const dx = hx - cx, dy = hz - cy;
+        const d  = Math.sqrt(dx * dx + dy * dy) || 1;
+        const lx = hx + (dx / d) * LABEL_RADIAL_OFFSET;
+        const ly = hz + (dy / d) * LABEL_RADIAL_OFFSET;
+        // open-sans-64 glyphs are ~36 px wide / ~64 px tall — center
+        // the printed letter on (lx, ly) by simple offsets.
+        img.print({
+            font: fontLabel,
+            x: Math.round(lx - 18),
+            y: Math.round(ly - 32),
+            text: letter,
+        });
+    }
+
     const outPath = path.join(outDir, "planet-board.png");
     await img.write(outPath);
-    console.log(`Wrote ${outPath} (${W}x${H}, ${slotCount} hex slots)`);
+    console.log(`Wrote ${outPath} (${W}x${H}, ${slotCount} hex slots, ${labelMap.size} wrap labels)`);
 })();
