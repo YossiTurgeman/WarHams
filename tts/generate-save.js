@@ -909,7 +909,7 @@ objects.push(eqBoard);
 // Texture file is renamed each rev (planet-board-rev<N>.png) because
 // TTS aggressively caches image URLs and ignores ?v=… query strings,
 // so a brand-new filename is the only reliable way to force a refetch.
-const PLANET_BOARD_URL = `${SOLDIER_BASE}/planet-board-rev124.png`;
+const PLANET_BOARD_URL = `${SOLDIER_BASE}/planet-board-rev126.png`;
 const planetBoard = baseObj("Custom_Tile", "Planet Board",
     "The planet's surface — drop the 61 Hex Tiles into the printed slots. Locked.",
     -7.19, 0.95, 0.5,

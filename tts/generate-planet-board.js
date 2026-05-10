@@ -41,7 +41,7 @@ const VERSION = "v72";
 // which forces TTS to fetch a brand-new asset (the ?v query-string
 // cache buster proved unreliable in practice — see v122/v123).
 // Must be kept in sync with PLANET_BOARD_URL in generate-save.js.
-const BOARD_REV = 124;
+const BOARD_REV = 126;
 const outDir = path.join(__dirname, VERSION);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
@@ -208,30 +208,38 @@ function strokeHex(img, cx, cy, r, t, color) {
     ];
     const labelMap = new Map();
     edgePairs.forEach(([a, b], idx) => {
-        const letter = String.fromCharCode("a".charCodeAt(0) + idx);
+        // v126: capital letters (A–L) per user request.
+        const letter = String.fromCharCode("A".charCodeAt(0) + idx);
         labelMap.set(`${a[0]},${a[1]}`, letter);
         labelMap.set(`${b[0]},${b[1]}`, letter);
     });
 
-    const fontLabel = await loadFont(path.join(FONT_DIR, "open-sans-64-white", "open-sans-64-white.fnt"));
-    const LABEL_BOX = 80;
-    // 1 texture world unit = 1 TTS inch (board scale 36 × default
-    // 2-inch Custom_Tile = 72 in-game inches, matches WORLD_W = 72).
-    // User requested labels sit ~2 inches outside each hex.
-    // Hex center → vertex = HEX_R_WORLD = 3.96 in. So label center
-    // is HEX_R + 2 + half-glyph (≈0.65 in) away from the hex center.
-    const LABEL_GAP_WORLD     = 2.0;          // inches outside hex edge
-    const LABEL_HALF_WORLD    = 0.65;         // half glyph height in inches
+    // v126: capital letters at ~1.5× the v123 size. The v123 labels
+    // used the open-sans-64 font (~64 px tall). 1.5× = 96 px tall.
+    // Bundled fonts only come in 8/16/32/64/128 sizes, so we render
+    // each glyph at 128 then resize the stamp to 0.75× to land
+    // exactly on the requested 96 px (= 1.92 in tall).
+    const fontLabel = await loadFont(path.join(FONT_DIR, "open-sans-128-white", "open-sans-128-white.fnt"));
+    const LABEL_FONT_PX  = 128;
+    const LABEL_SCALE    = 0.75;                 // 128 × 0.75 = 96 px = 1.5× v123
+    // Approx glyph metrics for upper-case letters in open-sans 128:
+    // ~80 px wide × ~95 px tall. Scaled by 0.75: ~60 × ~71. We pad
+    // the stamp generously so rotate doesn't crop anything.
+    const STAMP_RAW      = 160;                  // before scale
+    const STAMP_SCALED   = Math.round(STAMP_RAW * LABEL_SCALE);
+    const LABEL_HALF_PX  = Math.round(95 * LABEL_SCALE / 2);   // ~36 px ≈ 0.72 in
+    // 1 texture world unit = 1 TTS inch. Place the label center so
+    // the glyph clears the hex and stays inside the rim. The
+    // worst-case edge hex (4,-4) is ~27.4 in from board center, so
+    // gap can't exceed ~6.0 in radially before the glyph collides
+    // with the planet rim. 1.5 in gap leaves comfortable margin.
+    const LABEL_GAP_WORLD     = 1.5;
+    const LABEL_HALF_WORLD    = LABEL_HALF_PX / PX_PER_WORLD;
     const LABEL_RADIAL_OFFSET = (HEX_R_WORLD + LABEL_GAP_WORLD + LABEL_HALF_WORLD) * PX_PER_WORLD;
-    // All labels are oriented so they read right-side up from the
-    // SOUTH side of the table. Empirically (v122 → user reported
-    // "readable from the north"), the texture's +y maps to world
-    // -z (south), so a normally-printed glyph has its "top" pointing
-    // south — readable from the north. Render each letter onto a
-    // transparent stamp, rotate 180°, then composite, so the glyph
-    // top ends up pointing south and reads right-side up to a
-    // south-side viewer.
-    const STAMP = 100;
+    // The texture's image +y maps to world -z (south) on this
+    // Custom_Tile (proven empirically in v123). Print → rotate 180°
+    // → resize → composite, so glyph tops end up pointing world +z
+    // (north) and read right-side up to a south-side player.
     for (const [key, letter] of labelMap.entries()) {
         const [q, r] = key.split(",").map(Number);
         const wx = q * PITCH_X;
@@ -243,15 +251,19 @@ function strokeHex(img, cx, cy, r, t, color) {
         const lx = hx + (dx / d) * LABEL_RADIAL_OFFSET;
         const ly = hz + (dy / d) * LABEL_RADIAL_OFFSET;
 
-        const stamp = new Jimp({ width: STAMP, height: STAMP, color: 0x00000000 });
+        const stamp = new Jimp({ width: STAMP_RAW, height: STAMP_RAW, color: 0x00000000 });
+        // Use horizontal alignment center so narrow glyphs (I, J)
+        // and wide glyphs (M, W) all sit on the same vertical axis.
         stamp.print({
             font: fontLabel,
-            x: STAMP / 2 - 18,
-            y: STAMP / 2 - 32,
-            text: letter,
+            x: 0,
+            y: STAMP_RAW / 2 - LABEL_FONT_PX / 2,
+            text: { text: letter, alignmentX: 2 /* CENTER */ },
+            maxWidth: STAMP_RAW,
         });
         stamp.rotate({ deg: 180 });
-        img.composite(stamp, Math.round(lx - STAMP / 2), Math.round(ly - STAMP / 2));
+        stamp.resize({ w: STAMP_SCALED, h: STAMP_SCALED });
+        img.composite(stamp, Math.round(lx - STAMP_SCALED / 2), Math.round(ly - STAMP_SCALED / 2));
     }
 
     const outPath = path.join(outDir, `planet-board-rev${BOARD_REV}.png`);
