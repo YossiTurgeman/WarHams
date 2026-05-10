@@ -108,11 +108,13 @@ const objects = [];
 
 // ─── 0. CUSTOM TABLE SURFACE (4× area of stock Table_RPG) ───────────
 // We use Table_None and place a giant locked Custom_Tile at y≈0.95 so the
-// usable play area is ~108 × 76 (±54 X, ±38 Z), 4× the area of Table_RPG.
+// usable play area is ~160 × 76 (±80 X, ±38 Z). Widened from ±54 in v75
+// to fit the ED → PB → UZ row east of the planet board with proper gaps,
+// plus the Conspire deck and resource bags east of the Unloading Zone.
 const tableTile = baseObj("Custom_Tile", "Play Surface",
-    "W.A.R.H.A.M.S play surface — 4× standard table area.",
+    "W.A.R.H.A.M.S play surface — extra-wide table area.",
     0, 0.9, 0,
-    { scaleX: 54, scaleY: 1, scaleZ: 38, color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
+    { scaleX: 80, scaleY: 1, scaleZ: 38, color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
 tableTile.CustomImage = {
     ImageURL: TABLE_SURFACE_URL,
     ImageSecondaryURL: "",
@@ -203,11 +205,11 @@ function buildBACDeck() {
     });
     // Spawn at the DECK slot on the Planet Bound Area board.
     // Empirical offset: x = PB_center_x − 9.5 lands the deck in the
-    // leftmost ("DECK") slot when PB has rotY:180. With v74 PB at
-    // (40, 1.02, 0), deck goes to (30.5, 1.5, 0).
+    // leftmost ("DECK") slot when PB has rotY:180. With v75 PB at
+    // (53, 1.02, 0), deck goes to (43.5, 1.5, 0).
     const deck = baseObj("Deck", "Spaceport Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
-        30.5, 1.5, 0, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        43.5, 1.5, 0, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -241,7 +243,7 @@ function buildConspireDeck() {
     });
     const deck = baseObj("Deck", "Conspire Deck",
         `Conspire Cards — ${gameData.deck_counts.total_conspire_cards} cards\nForfeit Movement or Combat to draw 1.\nHover cards to see effects.`,
-        56, 1.5, 8, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
+        68, 1.5, 8, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -337,7 +339,7 @@ resourceDefs.forEach((res, i) => {
     // the BAC deck (z=-20) and the Conspire deck (z=+20).
     const bag = baseObj("Bag", `${res.name} Tokens (50)`,
         `Stack of ${res.name} tokens (${res.label}). Each spawns upright on its base.`,
-        64, 1.5, -12 + i * 6, { color: res.color });
+        76, 1.5, -12 + i * 6, { color: res.color });
     bag.ContainedObjects = tokens;
     objects.push(bag);
 });
@@ -737,7 +739,9 @@ function makeContainer(num, role, px, py, pz) {
 // sit directly south of the Conspire deck (which is at x=34, z=8).
 // Slot grid is 3 cols × 2 rows; world slot pitch matches the texture
 // geometry (see UZ board derivation in section 17b).
-const UZ_BOARD_X = 56;
+// v75: moved further east (56 → 68) so the Planet Bound Area can fit
+// between the Equipment Display (x=37) and the Unloading Zone.
+const UZ_BOARD_X = 68;
 const UZ_BOARD_Z = 0;
 // Slot center pitches derived from the v59 board texture geometry
 // (1000×950 px, 250×350 slots, gaps 30/50, gridTop 110), using the
@@ -786,13 +790,12 @@ const PLANETBOUND_BOARD_URL = `${SOLDIER_BASE}/planetbound-board.png`;
 // the south-facing camera.
 const pbBoard = baseObj("Custom_Tile", "Planet Bound Area",
     "Movable board with 7 slots: leftmost slot is for the Spaceport Deck, the other 6 hold the face-up Planet Bound BAC cards. Always keep 6 face-up; refill immediately whenever one is taken.",
-    // v74: relocated to the EAST side at x=40, between the Equipment
-    // Display (x=20) and the Unloading Zone (x=56). Same rotY:180 as
-    // ED and UZ so the title and slot labels read the same direction.
-    // Footprint ~19 wide × 5 deep world units (3.17 × ~6 on X, 2.5 × 2
-    // on Z). West edge ≈ x=30.5 (deck slot), east edge ≈ x=49.5 — fits
-    // cleanly between ED east edge (~24.84) and UZ west edge (~51).
-    40, 1.02, 0,
+    // v75: positioned between ED (x=37) and UZ (x=68). Same rotY:180 as
+    // ED and UZ so all three boards face the same direction.
+    // Footprint ~19 wide × 5 deep world units. West edge ≈ x=43.5 (deck
+    // slot, ~1.7u east of ED's east edge), east edge ≈ x=62.5 (~0.5u
+    // west of UZ's west edge).
+    53, 1.02, 0,
     { rotY: 180, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
 pbBoard.CustomImage = {
     ImageURL: PLANETBOUND_BOARD_URL,
@@ -857,15 +860,10 @@ objects.push(uzBoard);
 const EQUIPMENT_BOARD_URL = `${SOLDIER_BASE}/equipment-display-board.png`;
 const eqBoard = baseObj("Custom_Tile", "Equipment Display",
     "Shared reference board: 20 slots for face-up BAC cards (one per BAC type). When you unlock a new BAC type for the first time, place its card face-up here and drop one of your Control Flags on top to mark permanent access. Multiple flags may share a slot.",
-    // v74: kept in the EAST-CENTRAL area between Yellow and Blue (where
-    // the items that used to live there were pushed out to the edge in
-    // v73), but orientation restored to landscape rotY:180 so the
-    // 20-slot strip reads upright. Footprint at rotY:180: ~9.68 wide ×
-    // 10 deep world units. Position x=20 keeps west edge at x≈15.16,
-    // east edge at x≈24.84, leaving room for the Planet Bound Area
-    // (centered at x=40) and Unloading Zone (centered at x=56) east of
-    // it. All three boards face the same direction (rotY:180).
-    20, 1.02, 0,
+    // v75: shifted east to clear the planet board (east edge at x=30).
+    // Footprint at rotY:180 ~9.68 × 10. Position x=37 puts west edge at
+    // x≈32.16 (1u clear of planet board) and east edge at x≈41.84.
+    37, 1.02, 0,
     { rotY: 180, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
