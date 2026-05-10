@@ -261,8 +261,8 @@ objects.push(buildConspireDeck());
 // number tokens on the hexes say which hexes those numbers refer to.
 // Keeping them adjacent makes Phase 1 self-explanatory.
 [
-    { name: "Resource Die 1", color: { r: 1, g: 1, b: 1 }, x: -46 },
-    { name: "Resource Die 2", color: { r: 1, g: 1, b: 1 }, x: -44 },
+    { name: "Resource Die 1", color: { r: 1, g: 1, b: 1 }, x: -58 },
+    { name: "Resource Die 2", color: { r: 1, g: 1, b: 1 }, x: -56 },
     { name: "Separatist Die", color: { r: 0.5, g: 0.5, b: 0.5 }, x: -54 },
 ].forEach(d => {
     objects.push(baseObj("Die_6", d.name,
