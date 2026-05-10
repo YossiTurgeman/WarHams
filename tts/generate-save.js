@@ -114,7 +114,7 @@ const objects = [];
 const tableTile = baseObj("Custom_Tile", "Play Surface",
     "W.A.R.H.A.M.S play surface — extra-wide table area.",
     0, 0.9, 0,
-    { scaleX: 80, scaleY: 1, scaleZ: 38, color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
+    { scaleX: 90, scaleY: 1, scaleZ: 38, color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
 tableTile.CustomImage = {
     ImageURL: TABLE_SURFACE_URL,
     ImageSecondaryURL: "",
@@ -209,7 +209,7 @@ function buildBACDeck() {
     // on slot 6. Deck shares PB's rotY:270.
     const deck = baseObj("Deck", "Spaceport Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
-        56, 1.5, 9.5, { rotY: 270, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        66, 1.5, 9.5, { rotY: 270, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -243,7 +243,7 @@ function buildConspireDeck() {
     });
     const deck = baseObj("Deck", "Conspire Deck",
         `Conspire Cards — ${gameData.deck_counts.total_conspire_cards} cards\nForfeit Movement or Combat to draw 1.\nHover cards to see effects.`,
-        71, 1.5, 8, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
+        81, 1.5, 8, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -339,7 +339,7 @@ resourceDefs.forEach((res, i) => {
     // the BAC deck (z=-20) and the Conspire deck (z=+20).
     const bag = baseObj("Bag", `${res.name} Tokens (50)`,
         `Stack of ${res.name} tokens (${res.label}). Each spawns upright on its base.`,
-        79, 1.5, -12 + i * 6, { color: res.color });
+        89, 1.5, -12 + i * 6, { color: res.color });
     bag.ContainedObjects = tokens;
     objects.push(bag);
 });
@@ -741,7 +741,7 @@ function makeContainer(num, role, px, py, pz) {
 // geometry (see UZ board derivation in section 17b).
 // v75: moved further east (56 → 68) so the Planet Bound Area can fit
 // between the Equipment Display (x=37) and the Unloading Zone.
-const UZ_BOARD_X = 71;
+const UZ_BOARD_X = 81;
 const UZ_BOARD_Z = 0;
 // Slot center pitches derived from the v59 board texture geometry
 // (1000×950 px, 250×350 slots, gaps 30/50, gridTop 110), using the
@@ -794,7 +794,7 @@ const pbBoard = baseObj("Custom_Tile", "Planet Bound Area",
     // v76: rotated 90° to the right (rotY 180 → 90) per user request.
     // Footprint at rotY:90 ~5 (X) × 19 (Z). Position x=53 → x ∈ [50.5, 55.5],
     // long axis north-south (z ∈ [-9.5, +9.5]).
-    56, 1.02, 0,
+    66, 1.02, 0,
     { rotY: 270, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
 pbBoard.CustomImage = {
     ImageURL: PLANETBOUND_BOARD_URL,
@@ -862,7 +862,7 @@ const eqBoard = baseObj("Custom_Tile", "Equipment Display",
     // v75: shifted east to clear the planet board (east edge at x=30).
     // v76: rotated 90° to the right (rotY 180 → 90) per user request.
     // Footprint at rotY:90 ~10 (X) × 9.68 (Z). Position x=37 → x ∈ [32, 42].
-    40, 1.02, 0,
+    50, 1.02, 0,
     { rotY: 270, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
