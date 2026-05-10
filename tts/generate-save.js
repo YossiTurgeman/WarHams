@@ -286,6 +286,53 @@ playerColors.forEach((pc, idx) => {
     }
 });
 
+// ─── 5b. DICE TRAYS (one per player, under their dice row) ──────────
+// A flat rounded Custom_Tile parked directly under each player's
+// 7-die row at cornerSpot(idx, 0, 0). Tinted with the player's
+// colour via ColorDiffuse over a neutral grey felt texture so each
+// tray is visually owned. Locked so it stays in place when dice are
+// rolled onto it. Rotated to match the player's board orientation
+// so the 'DICE TRAY' label reads upright from that player's seat.
+const DICE_TRAY_TEXTURE =
+    "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/dice-tray.png";
+playerColors.forEach((pc, idx) => {
+    const cl = cornerLayout[idx];
+    const p = cornerSpot(idx, 0, 0);
+    const tray = baseObj("Custom_Tile", `${pc.label} Dice Tray`,
+        `${pc.label} player's dice tray. Roll your 7 combat dice here so they don't drift across the table.`,
+        p.x, 1.02, p.z,
+        { rotY: cl.boardRotY, scaleX: 6.5, scaleY: 0.2, scaleZ: 1.6,
+          color: pc.color, locked: true, grid: false });
+    tray.CustomImage = {
+        ImageURL: DICE_TRAY_TEXTURE,
+        ImageSecondaryURL: DICE_TRAY_TEXTURE,
+        ImageScalar: 1,
+        WidthScale: 0,
+        CustomTile: { Type: 3 /* rounded square */, Thickness: 0.1, Stackable: false, Stretch: true },
+    };
+    tray.LuaScript = [
+        "function onLoad()",
+        "    self.createButton({",
+        "        label = 'DICE TRAY',",
+        "        click_function = 'noop',",
+        "        function_owner = self,",
+        "        position = {0, 0.3, 0},",
+        "        -- Parent tile rotY equals this player's boardRotY, so",
+        "        -- a button rotation of {0,0,0} keeps the label upright",
+        "        -- to that player's own seat.",
+        "        rotation = {0, 0, 0},",
+        "        width = 0,",
+        "        height = 0,",
+        "        font_size = 140,",
+        "        font_color = {1, 1, 1},",
+        "        tooltip = 'Roll your dice into the tray.',",
+        "    })",
+        "end",
+        "function noop() end",
+    ].join("\n");
+    objects.push(tray);
+});
+
 // ─── 6. RESOURCE TOKEN BAGS ─────────────────────────────────────────
 // Per rulebook: each resource has a prescribed depiction.
 //   Oil → Oil Drum, Electricity → Lightning Bolt, Intelligence → Transmitting
