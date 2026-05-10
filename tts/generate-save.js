@@ -743,7 +743,7 @@ function makeContainer(num, role, px, py, pz) {
 // geometry (see UZ board derivation in section 17b).
 // v75: moved further east (56 → 68) so the Planet Bound Area can fit
 // between the Equipment Display (x=37) and the Unloading Zone.
-const UZ_BOARD_X = 106;
+const UZ_BOARD_X = 52.81;
 const UZ_BOARD_Z = 0;
 // Slot center pitches derived from the v59 board texture geometry
 // (1000×950 px, 250×350 slots, gaps 30/50, gridTop 110), using the
