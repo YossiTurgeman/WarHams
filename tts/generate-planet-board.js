@@ -41,14 +41,15 @@ if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 // surrounding boards (PB/ED/UZ) were pushed outward to free the room.
 // Cluster (49 × 54.5) now sits with ~5u of "atmosphere" margin to
 // the gold frame on the long axes.
-const WORLD_W = 60;
-const WORLD_H = 60;
+const WORLD_W = 90;   // v95: enlarged from 60 → 90 so the planet board
+const WORLD_H = 60;   // spans 3 of the table's major grid cells horizontally.
 const PX_PER_WORLD = 50;
-const W = WORLD_W * PX_PER_WORLD;   // 3000
+const W = WORLD_W * PX_PER_WORLD;   // 4500
 const H = WORLD_H * PX_PER_WORLD;   // 3000
 
 // Hex cluster geometry (must match generate-save.js Section 17e).
-const HEX_R_WORLD = 3.0;
+// v95: hexes scaled 1.5× (3.0 → 4.5) to fill the enlarged board.
+const HEX_R_WORLD = 4.5;
 const PITCH_X = 1.5 * HEX_R_WORLD;
 const PITCH_Z = Math.sqrt(3) * HEX_R_WORLD;
 
