@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1778415383,
+  "EpochTime": 1778415456,
   "Date": "2026-05-10",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -11997,7 +11997,7 @@
       "GUID": "1000b1",
       "Name": "Die_6",
       "Transform": {
-        "posX": -57,
+        "posX": -54,
         "posY": 2,
         "posZ": 12,
         "rotX": 0,
@@ -40019,7 +40019,7 @@
       "GUID": "10025d",
       "Name": "Bag",
       "Transform": {
-        "posX": -57,
+        "posX": -54,
         "posY": 1.5,
         "posZ": -6,
         "rotX": 0,
@@ -48314,7 +48314,7 @@
       "GUID": "1002c7",
       "Name": "Infinite_Bag",
       "Transform": {
-        "posX": -57,
+        "posX": -54,
         "posY": 1.5,
         "posZ": -12,
         "rotX": 0,
@@ -48426,7 +48426,7 @@
       "GUID": "1002d4",
       "Name": "Bag",
       "Transform": {
-        "posX": -57,
+        "posX": -54,
         "posY": 1.5,
         "posZ": 0,
         "rotX": 0,
@@ -49253,7 +49253,7 @@
       "GUID": "1002e5",
       "Name": "Deck",
       "Transform": {
-        "posX": -57,
+        "posX": -54,
         "posY": 1.5,
         "posZ": 6,
         "rotX": 0,
