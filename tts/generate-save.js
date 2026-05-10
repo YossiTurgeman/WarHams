@@ -600,7 +600,8 @@ function makeBunkerToken(stackIdx) {
     const tok = baseObj("Custom_Model", "Bunker",
         "+1 defense, 1/hex max, destroyable.",
         0, 0.4 * stackIdx, 0,
-        { scaleX: 1.4, scaleY: 1.4, scaleZ: 1.4, color: concrete });
+        // v127: 3× bigger per user request (was 1.4 → now 4.2).
+        { scaleX: 4.2, scaleY: 4.2, scaleZ: 4.2, color: concrete });
     tok.CustomMesh = {
         MeshURL: BUNKER_MESH_URL,
         DiffuseURL: BUNKER_DIFFUSE_URL,
