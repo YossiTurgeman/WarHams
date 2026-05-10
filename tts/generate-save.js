@@ -204,12 +204,14 @@ function buildBACDeck() {
         }
     });
     // Spawn at the DECK slot on the Planet Bound Area board.
-    // Empirical offset: x = PB_center_x − 9.5 lands the deck in the
-    // leftmost ("DECK") slot when PB has rotY:180. With v75 PB at
-    // (53, 1.02, 0), deck goes to (43.5, 1.5, 0).
+    // Spawn at the DECK slot on the Planet Bound Area board.
+    // At rotY:180 the empirical offset was (-9.5, 0). v76 rotated PB to
+    // rotY:90 (90° CW), so the offset rotates the same way: (-9.5, 0)
+    // → (0, +9.5). With PB at (53, 1.02, 0), deck goes to (53, 1.5, 9.5)
+    // and shares PB's rotY:90.
     const deck = baseObj("Deck", "Spaceport Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
-        43.5, 1.5, 0, { rotY: 180, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        53, 1.5, 9.5, { rotY: 90, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -790,13 +792,12 @@ const PLANETBOUND_BOARD_URL = `${SOLDIER_BASE}/planetbound-board.png`;
 // the south-facing camera.
 const pbBoard = baseObj("Custom_Tile", "Planet Bound Area",
     "Movable board with 7 slots: leftmost slot is for the Spaceport Deck, the other 6 hold the face-up Planet Bound BAC cards. Always keep 6 face-up; refill immediately whenever one is taken.",
-    // v75: positioned between ED (x=37) and UZ (x=68). Same rotY:180 as
-    // ED and UZ so all three boards face the same direction.
-    // Footprint ~19 wide × 5 deep world units. West edge ≈ x=43.5 (deck
-    // slot, ~1.7u east of ED's east edge), east edge ≈ x=62.5 (~0.5u
-    // west of UZ's west edge).
+    // v75: positioned between ED (x=37) and UZ (x=68).
+    // v76: rotated 90° to the right (rotY 180 → 90) per user request.
+    // Footprint at rotY:90 ~5 (X) × 19 (Z). Position x=53 → x ∈ [50.5, 55.5],
+    // long axis north-south (z ∈ [-9.5, +9.5]).
     53, 1.02, 0,
-    { rotY: 180, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
+    { rotY: 90, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
 pbBoard.CustomImage = {
     ImageURL: PLANETBOUND_BOARD_URL,
     ImageSecondaryURL: "",
@@ -861,10 +862,10 @@ const EQUIPMENT_BOARD_URL = `${SOLDIER_BASE}/equipment-display-board.png`;
 const eqBoard = baseObj("Custom_Tile", "Equipment Display",
     "Shared reference board: 20 slots for face-up BAC cards (one per BAC type). When you unlock a new BAC type for the first time, place its card face-up here and drop one of your Control Flags on top to mark permanent access. Multiple flags may share a slot.",
     // v75: shifted east to clear the planet board (east edge at x=30).
-    // Footprint at rotY:180 ~9.68 × 10. Position x=37 puts west edge at
-    // x≈32.16 (1u clear of planet board) and east edge at x≈41.84.
+    // v76: rotated 90° to the right (rotY 180 → 90) per user request.
+    // Footprint at rotY:90 ~10 (X) × 9.68 (Z). Position x=37 → x ∈ [32, 42].
     37, 1.02, 0,
-    { rotY: 180, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
+    { rotY: 90, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
     ImageSecondaryURL: "",
