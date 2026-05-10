@@ -982,40 +982,41 @@ for (let q = -4; q <= 4; q++)
         if (Math.abs(q + r) <= 4) HEX_COORDS.push([q, r]);
 if (HEX_COORDS.length !== 61) throw new Error("hex coord count: " + HEX_COORDS.length);
 
+// FLAT-TOP axial → world. TTS Custom_Tile Type=1 cuts a flat-top
+// hex (flat edge at top/bottom, point at left/right). Pitches chosen
+// so neighboring hexes touch edge-to-edge for the chosen scale.
+// (User may iterate HEX_SCALE / pitches if hexes overlap or gap.)
+//
 // Hex back face: every tile shows the same Earth image
 // (hex_back_earth.png) on its underside, so flipped tiles all look
 // like a planet from orbit (black space + blue/green Earth).
+// HEX_SCALE chosen so the cluster's z extent fits between the Planet
+// Bound board (south edge ≈ z=31) and the Equipment Display (north
+// edge ≈ z=-26) with ~1 unit ("inch") margin on each side.
+//   z extent = R * (4√3 + √3/2) = R * 7.794 each side
+//   55 / (2*7.794) = 3.53  →  pick 3.5 and offset center to z=2.5.
 const HEX_SCALE   = 3.5;
+const HEX_R_WORLD = 3.5;
+const PITCH_X = 1.5 * HEX_R_WORLD;
+const PITCH_Z = Math.sqrt(3) * HEX_R_WORLD;
+const PLANET_CX = 0, PLANET_CZ = 2.5;
 const HEX_BACK_URL = `${SOLDIER_BASE}/hex_back_earth.png`;
 
-// Setup state: all 61 hex tiles stacked face-down in a column next
-// to the User Guide (rulebook PDF) at (-60, 2, -8). Players draw
-// from the top of this stack to build the planet during setup.
-//
-// Stack location: x=-54 (one row inboard of the books), z=-8
-// (aligned with the rulebook). Each tile placed face-down (rotZ:180,
-// rotY:180 keeps the back-face image upright when viewed from above).
-// Tiles are dropped in from a small y-stagger and Stackable:true so
-// TTS physics consolidates them into a single tappable stack.
-const HEX_STACK_X = -54;
-const HEX_STACK_Z = -8;
-const HEX_STACK_Y0 = 2.0;
-const HEX_STACK_DY = 0.25;
-
 for (let i = 0; i < 61; i++) {
+    const [q, r] = HEX_COORDS[i];
     const tile = HEX_MANIFEST[i];
-    const y = HEX_STACK_Y0 + i * HEX_STACK_DY;
-    const hex = baseObj("Custom_Tile", tile.label, `Hex tile — ${tile.kind}. Drawn from the setup stack.`,
-        HEX_STACK_X, y, HEX_STACK_Z,
-        { rotX: 0, rotY: 180, rotZ: 180,
-          scaleX: HEX_SCALE, scaleY: 0.2, scaleZ: HEX_SCALE,
+    const x = PLANET_CX + PITCH_X * q;
+    const z = PLANET_CZ + PITCH_Z * (r + q / 2);
+    const hex = baseObj("Custom_Tile", tile.label, `Hex tile — ${tile.kind}.`,
+        x, 1.02, z,
+        { rotY: 180, scaleX: HEX_SCALE, scaleY: 0.2, scaleZ: HEX_SCALE,
           color: { r: 1, g: 1, b: 1 }, grid: false });
     hex.CustomImage = {
         ImageURL: tile.url,
         ImageSecondaryURL: HEX_BACK_URL,
         ImageScalar: 1,
         WidthScale: 0,
-        CustomTile: { Type: 1, Thickness: 0.1, Stackable: true, Stretch: true },
+        CustomTile: { Type: 1, Thickness: 0.1, Stackable: false, Stretch: true },
     };
     objects.push(hex);
 }
