@@ -731,6 +731,10 @@ const numberCards = shuffledNumbers.map((num, i) => {
     card.CustomDeck = { [String(numberDeckIdByValue[num])]: numberDeckDefs[String(numberDeckIdByValue[num])] };
     card.SidewaysCard = false;
     card.HideWhenFaceDown = true;
+    // v147: tag every number-token card so the dedicated RANDOMIZE
+    // NUMBERS button (in section 17g below) can find them on the
+    // table after they have been dealt onto the resource hexes.
+    card.Tags = ["number-token"];
     return card;
 });
 const numberDeck = baseObj("Deck", "Number Tokens (16)",
@@ -1101,121 +1105,152 @@ for (let i = 0; i < 61; i++) {
     objects.push(hex);
 }
 
-// ─── 17f. RANDOMIZE HEXES BUTTON ────────────────────────────────────
-// v140: a clickable on-table button placed just east of the resource
-// token bag column (which sits at x=62, spanning z=-12..+12). Click
-// shuffles every tile tagged "planet-hex" — the script collects all
-// matching tiles and their world positions, generates a random
-// permutation, and reseats each tile at a shuffled position. Tiles
-// keep their identities (so a Mountain hex stays a Mountain hex);
-// only the locations swap.
+// ─── 17f. RANDOMIZE + LOCK CONTROL TILES ────────────────────────────
+// v140 introduced an on-table tile that shuffles every object tagged
+// "planet-hex". v147 generalises it: makeShuffleControl(...) builds
+// any number of identical 2x2 red tiles, each carrying a RANDOMIZE
+// button (south half) and a LOCK/UNLOCK toggle (north half) wired to
+// shuffle a chosen tag set in place. Currently used for two control
+// tiles:
+//   - planet hexes  (placed east of the resource bags at x=70)
+//   - number tokens (placed east of the number-token deck at x=-50)
 const RANDOMIZE_BUTTON_TEXTURE =
     "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/randomize-button.png";
-const randomizeButton = baseObj("Custom_Tile", "Randomize Hexes",
-    "Click the on-tile button to shuffle the 61 planet hexes among their current slot positions.",
-    70, 1.02, 0,
-    { rotY: 0, scaleX: 2, scaleY: 0.2, scaleZ: 2,
-      color: { r: 0.85, g: 0.20, b: 0.20 }, locked: true, grid: false });
-randomizeButton.CustomImage = {
-    // Tiny solid-red PNG so the tile body actually renders red instead
-    // of falling back to TTS's default white placeholder texture.
-    ImageURL: RANDOMIZE_BUTTON_TEXTURE,
-    ImageSecondaryURL: RANDOMIZE_BUTTON_TEXTURE,
-    ImageScalar: 1,
-    WidthScale: 0,
-    CustomTile: { Type: 0 /* square */, Thickness: 0.1, Stackable: false, Stretch: true },
-};
-randomizeButton.LuaScript = [
-    "isLocked = false",
-    "",
-    "function onLoad(saved)",
-    "    if saved and saved ~= '' then",
-    "        local ok, s = pcall(JSON.decode, saved)",
-    "        if ok and type(s) == 'table' and s.locked then isLocked = true end",
-    "    end",
-    "    -- RANDOMIZE button (front / south half of the tile).",
-    "    self.createButton({",
-    "        label = 'RANDOMIZE',",
-    "        click_function = 'shuffleHexes',",
-    "        function_owner = self,",
-    "        position = {0, 0.3, -0.4},",
-    "        rotation = {0, 180, 0},",
-    "        width = 1500,",
-    "        height = 500,",
-    "        font_size = 220,",
-    "        color = {0.85, 0.20, 0.20},",
-    "        font_color = {1, 1, 1},",
-    "        tooltip = 'Shuffle every planet hex tile among the existing slot positions.',",
-    "    })",
-    "    -- LOCK / UNLOCK toggle (back / north half of the tile).",
-    "    self.createButton({",
-    "        label = isLocked and 'UNLOCK' or 'LOCK',",
-    "        click_function = 'toggleLock',",
-    "        function_owner = self,",
-    "        position = {0, 0.3, 0.4},",
-    "        rotation = {0, 180, 0},",
-    "        width = 1500,",
-    "        height = 400,",
-    "        font_size = 200,",
-    "        color = isLocked and {0.55, 0.55, 0.55} or {0.95, 0.82, 0.18},",
-    "        font_color = {0, 0, 0},",
-    "        tooltip = 'Lock the RANDOMIZE button so it cannot be clicked.',",
-    "    })",
-    "end",
-    "",
-    "function onSave()",
-    "    return JSON.encode({ locked = isLocked })",
-    "end",
-    "",
-    "function toggleLock(_, _color)",
-    "    isLocked = not isLocked",
-    "    self.editButton({",
-    "        index = 1,",
-    "        label = isLocked and 'UNLOCK' or 'LOCK',",
-    "        color = isLocked and {0.55, 0.55, 0.55} or {0.95, 0.82, 0.18},",
-    "    })",
-    "    broadcastToAll(",
-    "        isLocked and 'Randomize is LOCKED.' or 'Randomize is UNLOCKED.',",
-    "        isLocked and {1, 0.5, 0.5} or {0.6, 1, 0.6})",
-    "end",
-    "",
-    "function shuffleHexes(_, _color)",
-    "    if isLocked then",
-    "        broadcastToAll('Randomize is locked. Click LOCK to unlock first.', {1, 0.5, 0.5})",
-    "        return",
-    "    end",
-    "    local hexes = {}",
-    "    for _, obj in ipairs(getAllObjects()) do",
-    "        if obj.hasTag('planet-hex') then",
-    "            table.insert(hexes, obj)",
-    "        end",
-    "    end",
-    "    if #hexes < 2 then",
-    "        broadcastToAll('No planet hexes found to shuffle.', {1, 0.5, 0.5})",
-    "        return",
-    "    end",
-    "    -- Snapshot each tile's world position + Y rotation so we can",
-    "    -- redistribute the IDENTITIES across the same set of slots.",
-    "    local slots = {}",
-    "    for _, h in ipairs(hexes) do",
-    "        local p = h.getPosition()",
-    "        local r = h.getRotation()",
-    "        table.insert(slots, {pos = p, rot = r})",
-    "    end",
-    "    -- Fisher-Yates shuffle on the slots list.",
-    "    for i = #slots, 2, -1 do",
-    "        local j = math.random(i)",
-    "        slots[i], slots[j] = slots[j], slots[i]",
-    "    end",
-    "    -- Reseat each hex into its shuffled slot.",
-    "    for i, h in ipairs(hexes) do",
-    "        h.setPositionSmooth(slots[i].pos, false, true)",
-    "        h.setRotationSmooth(slots[i].rot, false, true)",
-    "    end",
-    "    broadcastToAll('Randomized ' .. #hexes .. ' planet hex tiles.', {0.6, 1, 0.6})",
-    "end",
-].join("\n");
-objects.push(randomizeButton);
+function makeShuffleControl({ name, desc, x, z, tag, broadcastNoun }) {
+    const tile = baseObj("Custom_Tile", name, desc, x, 1.02, z,
+        { rotY: 0, scaleX: 2, scaleY: 0.2, scaleZ: 2,
+          color: { r: 0.85, g: 0.20, b: 0.20 }, locked: true, grid: false });
+    tile.CustomImage = {
+        // Tiny solid-red PNG so the tile body actually renders red
+        // instead of falling back to TTS's default white placeholder.
+        ImageURL: RANDOMIZE_BUTTON_TEXTURE,
+        ImageSecondaryURL: RANDOMIZE_BUTTON_TEXTURE,
+        ImageScalar: 1,
+        WidthScale: 0,
+        CustomTile: { Type: 0 /* square */, Thickness: 0.1, Stackable: false, Stretch: true },
+    };
+    // Lua-quote the strings to defend against accidental injection.
+    const qTag = `'${String(tag).replace(/'/g, "\\'")}'`;
+    const qNoun = `'${String(broadcastNoun).replace(/'/g, "\\'")}'`;
+    tile.LuaScript = [
+        `TARGET_TAG     = ${qTag}`,
+        `BROADCAST_NOUN = ${qNoun}`,
+        "isLocked = false",
+        "",
+        "function onLoad(saved)",
+        "    if saved and saved ~= '' then",
+        "        local ok, s = pcall(JSON.decode, saved)",
+        "        if ok and type(s) == 'table' and s.locked then isLocked = true end",
+        "    end",
+        "    -- RANDOMIZE button (front / south half of the tile).",
+        "    self.createButton({",
+        "        label = 'RANDOMIZE',",
+        "        click_function = 'shuffleTargets',",
+        "        function_owner = self,",
+        "        position = {0, 0.3, -0.4},",
+        "        rotation = {0, 180, 0},",
+        "        width = 1500,",
+        "        height = 500,",
+        "        font_size = 220,",
+        "        color = {0.85, 0.20, 0.20},",
+        "        font_color = {1, 1, 1},",
+        "        tooltip = 'Shuffle every ' .. BROADCAST_NOUN .. ' among its current slot positions.',",
+        "    })",
+        "    -- LOCK / UNLOCK toggle (back / north half of the tile).",
+        "    self.createButton({",
+        "        label = isLocked and 'UNLOCK' or 'LOCK',",
+        "        click_function = 'toggleLock',",
+        "        function_owner = self,",
+        "        position = {0, 0.3, 0.4},",
+        "        rotation = {0, 180, 0},",
+        "        width = 1500,",
+        "        height = 400,",
+        "        font_size = 200,",
+        "        color = isLocked and {0.55, 0.55, 0.55} or {0.95, 0.82, 0.18},",
+        "        font_color = {0, 0, 0},",
+        "        tooltip = 'Lock the RANDOMIZE button so it cannot be clicked.',",
+        "    })",
+        "end",
+        "",
+        "function onSave()",
+        "    return JSON.encode({ locked = isLocked })",
+        "end",
+        "",
+        "function toggleLock(_, _color)",
+        "    isLocked = not isLocked",
+        "    self.editButton({",
+        "        index = 1,",
+        "        label = isLocked and 'UNLOCK' or 'LOCK',",
+        "        color = isLocked and {0.55, 0.55, 0.55} or {0.95, 0.82, 0.18},",
+        "    })",
+        "    broadcastToAll(",
+        "        isLocked and ('Randomize ' .. BROADCAST_NOUN .. ' is LOCKED.')",
+        "                  or ('Randomize ' .. BROADCAST_NOUN .. ' is UNLOCKED.'),",
+        "        isLocked and {1, 0.5, 0.5} or {0.6, 1, 0.6})",
+        "end",
+        "",
+        "function shuffleTargets(_, _color)",
+        "    if isLocked then",
+        "        broadcastToAll('Randomize ' .. BROADCAST_NOUN .. ' is locked. Click LOCK to unlock first.', {1, 0.5, 0.5})",
+        "        return",
+        "    end",
+        "    local targets = {}",
+        "    for _, obj in ipairs(getAllObjects()) do",
+        "        if obj.hasTag(TARGET_TAG) then",
+        "            table.insert(targets, obj)",
+        "        end",
+        "    end",
+        "    if #targets < 2 then",
+        "        broadcastToAll('No ' .. BROADCAST_NOUN .. ' found to shuffle.', {1, 0.5, 0.5})",
+        "        return",
+        "    end",
+        "    -- Snapshot each target's world position + rotation so we",
+        "    -- can redistribute the IDENTITIES across the same set of",
+        "    -- slots.",
+        "    local slots = {}",
+        "    for _, h in ipairs(targets) do",
+        "        local p = h.getPosition()",
+        "        local r = h.getRotation()",
+        "        table.insert(slots, {pos = p, rot = r})",
+        "    end",
+        "    -- Fisher-Yates shuffle on the slots list.",
+        "    for i = #slots, 2, -1 do",
+        "        local j = math.random(i)",
+        "        slots[i], slots[j] = slots[j], slots[i]",
+        "    end",
+        "    -- Reseat each target into its shuffled slot.",
+        "    for i, h in ipairs(targets) do",
+        "        h.setPositionSmooth(slots[i].pos, false, true)",
+        "        h.setRotationSmooth(slots[i].rot, false, true)",
+        "    end",
+        "    broadcastToAll('Randomized ' .. #targets .. ' ' .. BROADCAST_NOUN .. '.', {0.6, 1, 0.6})",
+        "end",
+    ].join("\n");
+    return tile;
+}
+
+// Planet-hex randomiser — east of the resource token bag column.
+objects.push(makeShuffleControl({
+    name: "Randomize Hexes",
+    desc: "Click the on-tile button to shuffle the 61 planet hexes among their current slot positions.",
+    x: 70, z: 0,
+    tag: "planet-hex",
+    broadcastNoun: "planet hex tiles",
+}));
+
+// Number-token randomiser — placed just east of the Number Tokens
+// deck at (-54, 1.5, 6) so it lives next to the tokens themselves.
+// Once tokens have been dealt onto the resource hexes during setup,
+// clicking RANDOMIZE here re-permutes which number sits on which
+// hex. Tokens still face down/up exactly as players left them; only
+// their slot assignments swap.
+objects.push(makeShuffleControl({
+    name: "Randomize Number Tokens",
+    desc: "Click the on-tile button to shuffle every dealt number token among the resource-hex positions it currently occupies.",
+    x: -50, z: 6,
+    tag: "number-token",
+    broadcastNoun: "number tokens",
+}));
 
 // ─── 18. REFERENCE BOOKS — Quick Ref + Full User Guide ──────────────
 // Custom_PDF objects render as physical book/folder shapes on the
