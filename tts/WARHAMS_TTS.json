@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1780484063,
+  "EpochTime": 1780491763,
   "Date": "2026-06-03",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -11905,7 +11905,7 @@
     },
     {
       "GUID": "1000af",
-      "Name": "Die_6",
+      "Name": "Custom_Dice",
       "Transform": {
         "posX": -54,
         "posY": 2,
@@ -11918,7 +11918,7 @@
         "scaleZ": 1
       },
       "Nickname": "Separatist Die",
-      "Description": "Grey — triggers Separatist spawning",
+      "Description": "Grey d6 — RED pips on 2, 4, 6 trigger Separatist spawning at the matching base. Black pips on 1, 3, 5 do not spawn.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -11926,9 +11926,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.5,
-        "g": 0.5,
-        "b": 0.5
+        "r": 1,
+        "g": 1,
+        "b": 1
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -11946,7 +11946,66 @@
       "Hands": false,
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/separatist_die_rev1.png",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomDice": {
+          "Type": 1
+        }
+      },
+      "RotationValues": [
+        {
+          "Value": 1,
+          "Rotation": {
+            "x": -90,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "Value": 2,
+          "Rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "Value": 3,
+          "Rotation": {
+            "x": 0,
+            "y": 0,
+            "z": -90
+          }
+        },
+        {
+          "Value": 4,
+          "Rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          }
+        },
+        {
+          "Value": 5,
+          "Rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 180
+          }
+        },
+        {
+          "Value": 6,
+          "Rotation": {
+            "x": 90,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
     },
     {
       "GUID": "1000b0",
