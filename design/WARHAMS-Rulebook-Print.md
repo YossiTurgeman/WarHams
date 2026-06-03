@@ -276,6 +276,12 @@ A player may choose to move some Squads and Conspire with others — the choice 
 
 > **Tip:** Conspiring is your primary path to powerful one-time effects, resource conversion, and combat tricks. Don't neglect it — a well-timed Conspire Card can turn the tide of battle.
 
+#### Claim Hexes (end of Phase 2)
+
+After **all** of your Squads have finished moving, for **every hex containing one or more of your soldiers and no enemy soldiers**, place one of your **Control Flags** on that hex. If an **opposing flag** is already there, **return it to that opponent's supply** and replace it with yours. If **your own** flag is already there, leave it. Flags on hexes you do **not** currently occupy **remain in place** until an opponent later claims them by this same rule — the planet stays painted in your colour even after your Squad moves on.
+
+Hexes containing both your soldiers AND an enemy's are **contested** — no flag is placed (or changed) at this step. Wait until Phase 3 Combat resolves who occupies the hex; the Claim Hexes step at the end of Phase 3 will then settle the flag.
+
 ---
 
 ### Phase 3: Combat
@@ -293,6 +299,12 @@ To declare combat:
 **Alternative: Conspire** — Instead of declaring combat with a Squad, the active player may forfeit that Squad's attack to **Conspire** (draw 3 Conspire Cards, keep 1). The choice is made per Squad — some Squads may fight while others Conspire.
 
 > **Note:** Only the active player may initiate combat during this phase. Defending players respond as part of combat resolution but do not initiate attacks of their own.
+
+#### Claim Hexes (end of Phase 3)
+
+After **all** combats are resolved, re-run the Claim Hexes step exactly as in Phase 2: for every hex containing one or more of your soldiers and no enemy soldiers, place your Control Flag (return any opposing flag to its owner's supply). This catches the hexes that combat just cleared — for example, a hex you successfully attacked and pushed the defender off, or a contested hex where your soldiers survived and the opponent's didn't.
+
+If a base was conquered this phase (all 7 base defenders killed), the conquering player places their flag on the base hex as part of this step.
 
 ---
 
@@ -1044,7 +1056,13 @@ Militia are temporary local fighters summoned by the **Deal with Local Militia**
 
 ### Claiming a Hex
 
-Move a Squad to any hex → place your colored **Control Flag** on it. This applies to **resource-producing hexes**, **Spaceport Drop Zones**, **Separatist Bases** (once conquered), and **Terrain hexes**. The hex remains under your control until an opponent moves a Squad onto it and claims it.
+Claim is resolved automatically at the **end of Phase 2 (Movement)** and again at the **end of Phase 3 (Combat)** — see the **Claim Hexes** sub-steps in each phase. The rule in both places:
+
+> For every hex containing one or more of your soldiers and **no enemy soldiers**, place one of your **Control Flags** on that hex. If an opposing flag is already there, **return it to that opponent's supply** and replace it with yours. If your own flag is already there, leave it.
+
+This applies to **resource-producing hexes**, **Spaceport Drop Zones**, **Separatist Bases** (once conquered — all 7 defenders killed), and **Terrain hexes**.
+
+Once placed, a flag stays even after your Squad leaves — the hex remains under your control until an opponent's Squad enters it and re-claims it via the same Phase 2 or Phase 3 step. **Contested hexes** (both your and an enemy's soldiers on the same hex) skip flag placement until Phase 3 Combat resolves the occupant.
 
 ### End-of-Round Bonus
 
