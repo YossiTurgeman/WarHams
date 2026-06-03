@@ -479,15 +479,20 @@ function makeSoldierStandee(pc, squadLetter, soldierNum, px, py, pz) {
     return obj;
 }
 playerColors.forEach((pc, idx) => {
-    // Pre-deploy A1–A4 and B1–B4 as standees on the table near the
-    // player's corner. The remaining 20 soldiers (A5–A7, B5–B7, all of
-    // C, all of D) go into the bag in REVERSE order so A5 is pulled
-    // first when reinforcements arrive.
-    const PRE_DEPLOY = new Set(["A1", "A2", "A3", "A4", "B1", "B2", "B3", "B4"]);
+    // v153: Rulebook §Setup Step 8 — each player begins with
+    // 2 Squads of 5 soldiers (A1–A5 and B1–B5), 10 total. The
+    // remaining 18 soldiers (A6–A7, B6–B7, all of C, all of D)
+    // go into the bag in REVERSE order so A6 is pulled first when
+    // reinforcements arrive.
+    const PRE_DEPLOY = new Set([
+        "A1", "A2", "A3", "A4", "A5",
+        "B1", "B2", "B3", "B4", "B5",
+    ]);
 
-    // 2-row × 4-column grid: squad A nearer center, squad B nearer corner
-    const colSides = [-5.25, -1.75, 1.75, 5.25];   // 3.5u spacing, 4 columns
-    const rowTcs   = { A: 8, B: 4.5 };              // squad A toward center, B toward corner
+    // 2-row × 5-column grid: squad A nearer center, squad B nearer corner.
+    // 5 columns at 3.5u pitch span 14u total per row.
+    const colSides = [-7, -3.5, 0, 3.5, 7];
+    const rowTcs   = { A: 8, B: 4.5 };  // squad A toward center, B toward corner
 
     for (const letter of SQUAD_LETTERS) {           // A, B, C, D
         for (let n = 1; n <= 7; n++) {
@@ -498,7 +503,7 @@ playerColors.forEach((pc, idx) => {
         }
     }
 
-    // Remaining soldiers go into the bag — added in reverse so A5
+    // Remaining soldiers go into the bag — added in reverse so A6
     // (next reinforcement) sits on top of the LIFO stack.
     const soldiers = [];
     let stackPos = 0;
@@ -513,10 +518,10 @@ playerColors.forEach((pc, idx) => {
         }
     }
     const sp = cornerSpot(idx, -5, -7);
-    const bag = baseObj("Bag", `${pc.label} Soldiers (20)`,
-        `${pc.label} reinforcements — A5-A7, B5-B7, full C and D Squads. ` +
-        `Pre-deployed on the table: A1-A4 + B1-B4. Pull from this bag as ` +
-        `you recruit. Next out is A5.`,
+    const bag = baseObj("Bag", `${pc.label} Soldiers (18)`,
+        `${pc.label} reinforcements — A6-A7, B6-B7, full C and D Squads. ` +
+        `Pre-deployed on the table: A1-A5 + B1-B5 (2 starting Squads of 5). ` +
+        `Pull from this bag as you recruit. Next out is A6.`,
         sp.x, 1.5, sp.z, { color: pc.color });
     bag.ContainedObjects = soldiers;
     objects.push(bag);

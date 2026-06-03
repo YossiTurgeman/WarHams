@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1780479502,
+  "EpochTime": 1780484063,
   "Date": "2026-06-03",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -29975,7 +29975,7 @@
       "GUID": "1001d1",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -54.75,
+        "posX": -53,
         "posY": 1.4,
         "posZ": -20,
         "rotX": 0,
@@ -30063,7 +30063,7 @@
       "GUID": "1001d2",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -58.25,
+        "posX": -56.5,
         "posY": 1.4,
         "posZ": -20,
         "rotX": 0,
@@ -30151,7 +30151,7 @@
       "GUID": "1001d3",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -61.75,
+        "posX": -60,
         "posY": 1.4,
         "posZ": -20,
         "rotX": 0,
@@ -30239,7 +30239,7 @@
       "GUID": "1001d4",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -65.25,
+        "posX": -63.5,
         "posY": 1.4,
         "posZ": -20,
         "rotX": 0,
@@ -30327,7 +30327,95 @@
       "GUID": "1001d5",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -54.75,
+        "posX": -67,
+        "posY": 1.4,
+        "posZ": -20,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 0.918,
+        "scaleY": 0.918,
+        "scaleZ": 0.918
+      },
+      "Nickname": "Red A5",
+      "Description": "Red Squad A — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.86,
+        "g": 0.21,
+        "b": 0.21
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_red_A5.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.05,
+          "SpecularSharpness": 2,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      },
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": -0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0.42
+          }
+        },
+        {
+          "Position": {
+            "x": 0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "1001d6",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -53,
         "posY": 1.4,
         "posZ": -23.5,
         "rotX": 0,
@@ -30412,10 +30500,10 @@
       ]
     },
     {
-      "GUID": "1001d6",
+      "GUID": "1001d7",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -58.25,
+        "posX": -56.5,
         "posY": 1.4,
         "posZ": -23.5,
         "rotX": 0,
@@ -30500,10 +30588,10 @@
       ]
     },
     {
-      "GUID": "1001d7",
+      "GUID": "1001d8",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -61.75,
+        "posX": -60,
         "posY": 1.4,
         "posZ": -23.5,
         "rotX": 0,
@@ -30588,10 +30676,10 @@
       ]
     },
     {
-      "GUID": "1001d8",
+      "GUID": "1001d9",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -65.25,
+        "posX": -63.5,
         "posY": 1.4,
         "posZ": -23.5,
         "rotX": 0,
@@ -30676,6 +30764,94 @@
       ]
     },
     {
+      "GUID": "1001da",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -67,
+        "posY": 1.4,
+        "posZ": -23.5,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 0.918,
+        "scaleY": 0.918,
+        "scaleZ": 0.918
+      },
+      "Nickname": "Red B5",
+      "Description": "Red Squad B — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.86,
+        "g": 0.21,
+        "b": 0.21
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_red_B5.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.05,
+          "SpecularSharpness": 2,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      },
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": -0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0.42
+          }
+        },
+        {
+          "Position": {
+            "x": 0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        }
+      ]
+    },
+    {
       "GUID": "1001ed",
       "Name": "Bag",
       "Transform": {
@@ -30689,8 +30865,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Red Soldiers (20)",
-      "Description": "Red reinforcements — A5-A7, B5-B7, full C and D Squads. Pre-deployed on the table: A1-A4 + B1-B4. Pull from this bag as you recruit. Next out is A5.",
+      "Nickname": "Red Soldiers (18)",
+      "Description": "Red reinforcements — A6-A7, B6-B7, full C and D Squads. Pre-deployed on the table: A1-A5 + B1-B5 (2 starting Squads of 5). Pull from this bag as you recruit. Next out is A6.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -30721,7 +30897,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1001d9",
+          "GUID": "1001db",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -30809,7 +30985,7 @@
           ]
         },
         {
-          "GUID": "1001da",
+          "GUID": "1001dc",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -30897,7 +31073,7 @@
           ]
         },
         {
-          "GUID": "1001db",
+          "GUID": "1001dd",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -30985,7 +31161,7 @@
           ]
         },
         {
-          "GUID": "1001dc",
+          "GUID": "1001de",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31073,7 +31249,7 @@
           ]
         },
         {
-          "GUID": "1001dd",
+          "GUID": "1001df",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31161,7 +31337,7 @@
           ]
         },
         {
-          "GUID": "1001de",
+          "GUID": "1001e0",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31249,7 +31425,7 @@
           ]
         },
         {
-          "GUID": "1001df",
+          "GUID": "1001e1",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31337,7 +31513,7 @@
           ]
         },
         {
-          "GUID": "1001e0",
+          "GUID": "1001e2",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31425,7 +31601,7 @@
           ]
         },
         {
-          "GUID": "1001e1",
+          "GUID": "1001e3",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31513,7 +31689,7 @@
           ]
         },
         {
-          "GUID": "1001e2",
+          "GUID": "1001e4",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31601,7 +31777,7 @@
           ]
         },
         {
-          "GUID": "1001e3",
+          "GUID": "1001e5",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31689,7 +31865,7 @@
           ]
         },
         {
-          "GUID": "1001e4",
+          "GUID": "1001e6",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31777,7 +31953,7 @@
           ]
         },
         {
-          "GUID": "1001e5",
+          "GUID": "1001e7",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31865,7 +32041,7 @@
           ]
         },
         {
-          "GUID": "1001e6",
+          "GUID": "1001e8",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -31953,7 +32129,7 @@
           ]
         },
         {
-          "GUID": "1001e7",
+          "GUID": "1001e9",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32041,7 +32217,7 @@
           ]
         },
         {
-          "GUID": "1001e8",
+          "GUID": "1001ea",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -32129,99 +32305,11 @@
           ]
         },
         {
-          "GUID": "1001e9",
+          "GUID": "1001eb",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 8,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.918,
-            "scaleY": 0.918,
-            "scaleZ": 0.918
-          },
-          "Nickname": "Red B5",
-          "Description": "Red Squad B — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_red_B5.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.05,
-              "SpecularSharpness": 2,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          },
-          "AttachedSnapPoints": [
-            {
-              "Position": {
-                "x": -0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            },
-            {
-              "Position": {
-                "x": 0,
-                "y": 0.125,
-                "z": 0.42
-              }
-            },
-            {
-              "Position": {
-                "x": 0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            }
-          ]
-        },
-        {
-          "GUID": "1001ea",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 8.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -32305,11 +32393,11 @@
           ]
         },
         {
-          "GUID": "1001eb",
+          "GUID": "1001ec",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 9,
+            "posY": 8.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -32391,94 +32479,6 @@
               }
             }
           ]
-        },
-        {
-          "GUID": "1001ec",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 9.5,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.918,
-            "scaleY": 0.918,
-            "scaleZ": 0.918
-          },
-          "Nickname": "Red A5",
-          "Description": "Red Squad A — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_red_A5.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.05,
-              "SpecularSharpness": 2,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          },
-          "AttachedSnapPoints": [
-            {
-              "Position": {
-                "x": -0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            },
-            {
-              "Position": {
-                "x": 0,
-                "y": 0.125,
-                "z": 0.42
-              }
-            },
-            {
-              "Position": {
-                "x": 0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            }
-          ]
         }
       ]
     },
@@ -32486,7 +32486,7 @@
       "GUID": "1001ee",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 40.37,
+        "posX": 38.62,
         "posY": 1.4,
         "posZ": -20,
         "rotX": 0,
@@ -32574,7 +32574,7 @@
       "GUID": "1001ef",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 43.87,
+        "posX": 42.12,
         "posY": 1.4,
         "posZ": -20,
         "rotX": 0,
@@ -32662,7 +32662,7 @@
       "GUID": "1001f0",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 47.37,
+        "posX": 45.62,
         "posY": 1.4,
         "posZ": -20,
         "rotX": 0,
@@ -32750,7 +32750,7 @@
       "GUID": "1001f1",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 50.87,
+        "posX": 49.12,
         "posY": 1.4,
         "posZ": -20,
         "rotX": 0,
@@ -32838,7 +32838,95 @@
       "GUID": "1001f2",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 40.37,
+        "posX": 52.62,
+        "posY": 1.4,
+        "posZ": -20,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 0.918,
+        "scaleY": 0.918,
+        "scaleZ": 0.918
+      },
+      "Nickname": "Blue A5",
+      "Description": "Blue Squad A — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.22,
+        "g": 0.38,
+        "b": 0.86
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_blue_A5.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.05,
+          "SpecularSharpness": 2,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      },
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": -0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0.42
+          }
+        },
+        {
+          "Position": {
+            "x": 0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "1001f3",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 38.62,
         "posY": 1.4,
         "posZ": -23.5,
         "rotX": 0,
@@ -32923,10 +33011,10 @@
       ]
     },
     {
-      "GUID": "1001f3",
+      "GUID": "1001f4",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 43.87,
+        "posX": 42.12,
         "posY": 1.4,
         "posZ": -23.5,
         "rotX": 0,
@@ -33011,10 +33099,10 @@
       ]
     },
     {
-      "GUID": "1001f4",
+      "GUID": "1001f5",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 47.37,
+        "posX": 45.62,
         "posY": 1.4,
         "posZ": -23.5,
         "rotX": 0,
@@ -33099,10 +33187,10 @@
       ]
     },
     {
-      "GUID": "1001f5",
+      "GUID": "1001f6",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 50.87,
+        "posX": 49.12,
         "posY": 1.4,
         "posZ": -23.5,
         "rotX": 0,
@@ -33187,6 +33275,94 @@
       ]
     },
     {
+      "GUID": "1001f7",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 52.62,
+        "posY": 1.4,
+        "posZ": -23.5,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 0.918,
+        "scaleY": 0.918,
+        "scaleZ": 0.918
+      },
+      "Nickname": "Blue B5",
+      "Description": "Blue Squad B — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.22,
+        "g": 0.38,
+        "b": 0.86
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_blue_B5.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.05,
+          "SpecularSharpness": 2,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      },
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": -0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0.42
+          }
+        },
+        {
+          "Position": {
+            "x": 0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        }
+      ]
+    },
+    {
       "GUID": "10020a",
       "Name": "Bag",
       "Transform": {
@@ -33200,8 +33376,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Blue Soldiers (20)",
-      "Description": "Blue reinforcements — A5-A7, B5-B7, full C and D Squads. Pre-deployed on the table: A1-A4 + B1-B4. Pull from this bag as you recruit. Next out is A5.",
+      "Nickname": "Blue Soldiers (18)",
+      "Description": "Blue reinforcements — A6-A7, B6-B7, full C and D Squads. Pre-deployed on the table: A1-A5 + B1-B5 (2 starting Squads of 5). Pull from this bag as you recruit. Next out is A6.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -33232,7 +33408,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1001f6",
+          "GUID": "1001f8",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -33320,7 +33496,7 @@
           ]
         },
         {
-          "GUID": "1001f7",
+          "GUID": "1001f9",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -33408,7 +33584,7 @@
           ]
         },
         {
-          "GUID": "1001f8",
+          "GUID": "1001fa",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -33496,7 +33672,7 @@
           ]
         },
         {
-          "GUID": "1001f9",
+          "GUID": "1001fb",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -33584,7 +33760,7 @@
           ]
         },
         {
-          "GUID": "1001fa",
+          "GUID": "1001fc",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -33672,7 +33848,7 @@
           ]
         },
         {
-          "GUID": "1001fb",
+          "GUID": "1001fd",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -33760,7 +33936,7 @@
           ]
         },
         {
-          "GUID": "1001fc",
+          "GUID": "1001fe",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -33848,7 +34024,7 @@
           ]
         },
         {
-          "GUID": "1001fd",
+          "GUID": "1001ff",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -33936,7 +34112,7 @@
           ]
         },
         {
-          "GUID": "1001fe",
+          "GUID": "100200",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -34024,7 +34200,7 @@
           ]
         },
         {
-          "GUID": "1001ff",
+          "GUID": "100201",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -34112,7 +34288,7 @@
           ]
         },
         {
-          "GUID": "100200",
+          "GUID": "100202",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -34200,7 +34376,7 @@
           ]
         },
         {
-          "GUID": "100201",
+          "GUID": "100203",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -34288,7 +34464,7 @@
           ]
         },
         {
-          "GUID": "100202",
+          "GUID": "100204",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -34376,7 +34552,7 @@
           ]
         },
         {
-          "GUID": "100203",
+          "GUID": "100205",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -34464,7 +34640,7 @@
           ]
         },
         {
-          "GUID": "100204",
+          "GUID": "100206",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -34552,7 +34728,7 @@
           ]
         },
         {
-          "GUID": "100205",
+          "GUID": "100207",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -34640,99 +34816,11 @@
           ]
         },
         {
-          "GUID": "100206",
+          "GUID": "100208",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 8,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.918,
-            "scaleY": 0.918,
-            "scaleZ": 0.918
-          },
-          "Nickname": "Blue B5",
-          "Description": "Blue Squad B — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_blue_B5.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.05,
-              "SpecularSharpness": 2,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          },
-          "AttachedSnapPoints": [
-            {
-              "Position": {
-                "x": -0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            },
-            {
-              "Position": {
-                "x": 0,
-                "y": 0.125,
-                "z": 0.42
-              }
-            },
-            {
-              "Position": {
-                "x": 0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            }
-          ]
-        },
-        {
-          "GUID": "100207",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 8.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -34816,11 +34904,11 @@
           ]
         },
         {
-          "GUID": "100208",
+          "GUID": "100209",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 9,
+            "posY": 8.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -34902,94 +34990,6 @@
               }
             }
           ]
-        },
-        {
-          "GUID": "100209",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 9.5,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.918,
-            "scaleY": 0.918,
-            "scaleZ": 0.918
-          },
-          "Nickname": "Blue A5",
-          "Description": "Blue Squad A — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_blue_A5.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.05,
-              "SpecularSharpness": 2,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          },
-          "AttachedSnapPoints": [
-            {
-              "Position": {
-                "x": -0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            },
-            {
-              "Position": {
-                "x": 0,
-                "y": 0.125,
-                "z": 0.42
-              }
-            },
-            {
-              "Position": {
-                "x": 0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            }
-          ]
         }
       ]
     },
@@ -34997,7 +34997,7 @@
       "GUID": "10020b",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -54.75,
+        "posX": -53,
         "posY": 1.4,
         "posZ": 20,
         "rotX": 0,
@@ -35085,7 +35085,7 @@
       "GUID": "10020c",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -58.25,
+        "posX": -56.5,
         "posY": 1.4,
         "posZ": 20,
         "rotX": 0,
@@ -35173,7 +35173,7 @@
       "GUID": "10020d",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -61.75,
+        "posX": -60,
         "posY": 1.4,
         "posZ": 20,
         "rotX": 0,
@@ -35261,7 +35261,7 @@
       "GUID": "10020e",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -65.25,
+        "posX": -63.5,
         "posY": 1.4,
         "posZ": 20,
         "rotX": 0,
@@ -35349,7 +35349,95 @@
       "GUID": "10020f",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -54.75,
+        "posX": -67,
+        "posY": 1.4,
+        "posZ": 20,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 0.918,
+        "scaleY": 0.918,
+        "scaleZ": 0.918
+      },
+      "Nickname": "Green A5",
+      "Description": "Green Squad A — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.18,
+        "g": 0.72,
+        "b": 0.28
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_green_A5.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.05,
+          "SpecularSharpness": 2,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      },
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": -0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0.42
+          }
+        },
+        {
+          "Position": {
+            "x": 0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "100210",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -53,
         "posY": 1.4,
         "posZ": 23.5,
         "rotX": 0,
@@ -35434,10 +35522,10 @@
       ]
     },
     {
-      "GUID": "100210",
+      "GUID": "100211",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -58.25,
+        "posX": -56.5,
         "posY": 1.4,
         "posZ": 23.5,
         "rotX": 0,
@@ -35522,10 +35610,10 @@
       ]
     },
     {
-      "GUID": "100211",
+      "GUID": "100212",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -61.75,
+        "posX": -60,
         "posY": 1.4,
         "posZ": 23.5,
         "rotX": 0,
@@ -35610,10 +35698,10 @@
       ]
     },
     {
-      "GUID": "100212",
+      "GUID": "100213",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -65.25,
+        "posX": -63.5,
         "posY": 1.4,
         "posZ": 23.5,
         "rotX": 0,
@@ -35698,6 +35786,94 @@
       ]
     },
     {
+      "GUID": "100214",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -67,
+        "posY": 1.4,
+        "posZ": 23.5,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 0.918,
+        "scaleY": 0.918,
+        "scaleZ": 0.918
+      },
+      "Nickname": "Green B5",
+      "Description": "Green Squad B — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.18,
+        "g": 0.72,
+        "b": 0.28
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_green_B5.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.05,
+          "SpecularSharpness": 2,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      },
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": -0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0.42
+          }
+        },
+        {
+          "Position": {
+            "x": 0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        }
+      ]
+    },
+    {
       "GUID": "100227",
       "Name": "Bag",
       "Transform": {
@@ -35711,8 +35887,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Green Soldiers (20)",
-      "Description": "Green reinforcements — A5-A7, B5-B7, full C and D Squads. Pre-deployed on the table: A1-A4 + B1-B4. Pull from this bag as you recruit. Next out is A5.",
+      "Nickname": "Green Soldiers (18)",
+      "Description": "Green reinforcements — A6-A7, B6-B7, full C and D Squads. Pre-deployed on the table: A1-A5 + B1-B5 (2 starting Squads of 5). Pull from this bag as you recruit. Next out is A6.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -35743,7 +35919,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100213",
+          "GUID": "100215",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -35831,7 +36007,7 @@
           ]
         },
         {
-          "GUID": "100214",
+          "GUID": "100216",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -35919,7 +36095,7 @@
           ]
         },
         {
-          "GUID": "100215",
+          "GUID": "100217",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -36007,7 +36183,7 @@
           ]
         },
         {
-          "GUID": "100216",
+          "GUID": "100218",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -36095,7 +36271,7 @@
           ]
         },
         {
-          "GUID": "100217",
+          "GUID": "100219",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -36183,7 +36359,7 @@
           ]
         },
         {
-          "GUID": "100218",
+          "GUID": "10021a",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -36271,7 +36447,7 @@
           ]
         },
         {
-          "GUID": "100219",
+          "GUID": "10021b",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -36359,7 +36535,7 @@
           ]
         },
         {
-          "GUID": "10021a",
+          "GUID": "10021c",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -36447,7 +36623,7 @@
           ]
         },
         {
-          "GUID": "10021b",
+          "GUID": "10021d",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -36535,7 +36711,7 @@
           ]
         },
         {
-          "GUID": "10021c",
+          "GUID": "10021e",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -36623,7 +36799,7 @@
           ]
         },
         {
-          "GUID": "10021d",
+          "GUID": "10021f",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -36711,7 +36887,7 @@
           ]
         },
         {
-          "GUID": "10021e",
+          "GUID": "100220",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -36799,7 +36975,7 @@
           ]
         },
         {
-          "GUID": "10021f",
+          "GUID": "100221",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -36887,7 +37063,7 @@
           ]
         },
         {
-          "GUID": "100220",
+          "GUID": "100222",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -36975,7 +37151,7 @@
           ]
         },
         {
-          "GUID": "100221",
+          "GUID": "100223",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -37063,7 +37239,7 @@
           ]
         },
         {
-          "GUID": "100222",
+          "GUID": "100224",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -37151,99 +37327,11 @@
           ]
         },
         {
-          "GUID": "100223",
+          "GUID": "100225",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 8,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.918,
-            "scaleY": 0.918,
-            "scaleZ": 0.918
-          },
-          "Nickname": "Green B5",
-          "Description": "Green Squad B — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_green_B5.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.05,
-              "SpecularSharpness": 2,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          },
-          "AttachedSnapPoints": [
-            {
-              "Position": {
-                "x": -0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            },
-            {
-              "Position": {
-                "x": 0,
-                "y": 0.125,
-                "z": 0.42
-              }
-            },
-            {
-              "Position": {
-                "x": 0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            }
-          ]
-        },
-        {
-          "GUID": "100224",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 8.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -37327,11 +37415,11 @@
           ]
         },
         {
-          "GUID": "100225",
+          "GUID": "100226",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 9,
+            "posY": 8.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -37413,94 +37501,6 @@
               }
             }
           ]
-        },
-        {
-          "GUID": "100226",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 9.5,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.918,
-            "scaleY": 0.918,
-            "scaleZ": 0.918
-          },
-          "Nickname": "Green A5",
-          "Description": "Green Squad A — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_green_A5.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.05,
-              "SpecularSharpness": 2,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          },
-          "AttachedSnapPoints": [
-            {
-              "Position": {
-                "x": -0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            },
-            {
-              "Position": {
-                "x": 0,
-                "y": 0.125,
-                "z": 0.42
-              }
-            },
-            {
-              "Position": {
-                "x": 0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            }
-          ]
         }
       ]
     },
@@ -37508,7 +37508,7 @@
       "GUID": "100228",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 40.37,
+        "posX": 38.62,
         "posY": 1.4,
         "posZ": 20,
         "rotX": 0,
@@ -37596,7 +37596,7 @@
       "GUID": "100229",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 43.87,
+        "posX": 42.12,
         "posY": 1.4,
         "posZ": 20,
         "rotX": 0,
@@ -37684,7 +37684,7 @@
       "GUID": "10022a",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 47.37,
+        "posX": 45.62,
         "posY": 1.4,
         "posZ": 20,
         "rotX": 0,
@@ -37772,7 +37772,7 @@
       "GUID": "10022b",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 50.87,
+        "posX": 49.12,
         "posY": 1.4,
         "posZ": 20,
         "rotX": 0,
@@ -37860,7 +37860,95 @@
       "GUID": "10022c",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 40.37,
+        "posX": 52.62,
+        "posY": 1.4,
+        "posZ": 20,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 0.918,
+        "scaleY": 0.918,
+        "scaleZ": 0.918
+      },
+      "Nickname": "Yellow A5",
+      "Description": "Yellow Squad A — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.9,
+        "g": 0.82,
+        "b": 0.15
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_yellow_A5.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.05,
+          "SpecularSharpness": 2,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      },
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": -0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0.42
+          }
+        },
+        {
+          "Position": {
+            "x": 0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "10022d",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 38.62,
         "posY": 1.4,
         "posZ": 23.5,
         "rotX": 0,
@@ -37945,10 +38033,10 @@
       ]
     },
     {
-      "GUID": "10022d",
+      "GUID": "10022e",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 43.87,
+        "posX": 42.12,
         "posY": 1.4,
         "posZ": 23.5,
         "rotX": 0,
@@ -38033,10 +38121,10 @@
       ]
     },
     {
-      "GUID": "10022e",
+      "GUID": "10022f",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 47.37,
+        "posX": 45.62,
         "posY": 1.4,
         "posZ": 23.5,
         "rotX": 0,
@@ -38121,10 +38209,10 @@
       ]
     },
     {
-      "GUID": "10022f",
+      "GUID": "100230",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 50.87,
+        "posX": 49.12,
         "posY": 1.4,
         "posZ": 23.5,
         "rotX": 0,
@@ -38209,6 +38297,94 @@
       ]
     },
     {
+      "GUID": "100231",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 52.62,
+        "posY": 1.4,
+        "posZ": 23.5,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 0.918,
+        "scaleY": 0.918,
+        "scaleZ": 0.918
+      },
+      "Nickname": "Yellow B5",
+      "Description": "Yellow Squad B — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.9,
+        "g": 0.82,
+        "b": 0.15
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_yellow_B5.png",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.05,
+          "SpecularSharpness": 2,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      },
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": -0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.125,
+            "z": 0.42
+          }
+        },
+        {
+          "Position": {
+            "x": 0.36,
+            "y": 0.125,
+            "z": 0.3
+          }
+        }
+      ]
+    },
+    {
       "GUID": "100244",
       "Name": "Bag",
       "Transform": {
@@ -38222,8 +38398,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Yellow Soldiers (20)",
-      "Description": "Yellow reinforcements — A5-A7, B5-B7, full C and D Squads. Pre-deployed on the table: A1-A4 + B1-B4. Pull from this bag as you recruit. Next out is A5.",
+      "Nickname": "Yellow Soldiers (18)",
+      "Description": "Yellow reinforcements — A6-A7, B6-B7, full C and D Squads. Pre-deployed on the table: A1-A5 + B1-B5 (2 starting Squads of 5). Pull from this bag as you recruit. Next out is A6.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -38254,7 +38430,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100230",
+          "GUID": "100232",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -38342,7 +38518,7 @@
           ]
         },
         {
-          "GUID": "100231",
+          "GUID": "100233",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -38430,7 +38606,7 @@
           ]
         },
         {
-          "GUID": "100232",
+          "GUID": "100234",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -38518,7 +38694,7 @@
           ]
         },
         {
-          "GUID": "100233",
+          "GUID": "100235",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -38606,7 +38782,7 @@
           ]
         },
         {
-          "GUID": "100234",
+          "GUID": "100236",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -38694,7 +38870,7 @@
           ]
         },
         {
-          "GUID": "100235",
+          "GUID": "100237",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -38782,7 +38958,7 @@
           ]
         },
         {
-          "GUID": "100236",
+          "GUID": "100238",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -38870,7 +39046,7 @@
           ]
         },
         {
-          "GUID": "100237",
+          "GUID": "100239",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -38958,7 +39134,7 @@
           ]
         },
         {
-          "GUID": "100238",
+          "GUID": "10023a",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -39046,7 +39222,7 @@
           ]
         },
         {
-          "GUID": "100239",
+          "GUID": "10023b",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -39134,7 +39310,7 @@
           ]
         },
         {
-          "GUID": "10023a",
+          "GUID": "10023c",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -39222,7 +39398,7 @@
           ]
         },
         {
-          "GUID": "10023b",
+          "GUID": "10023d",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -39310,7 +39486,7 @@
           ]
         },
         {
-          "GUID": "10023c",
+          "GUID": "10023e",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -39398,7 +39574,7 @@
           ]
         },
         {
-          "GUID": "10023d",
+          "GUID": "10023f",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -39486,7 +39662,7 @@
           ]
         },
         {
-          "GUID": "10023e",
+          "GUID": "100240",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -39574,7 +39750,7 @@
           ]
         },
         {
-          "GUID": "10023f",
+          "GUID": "100241",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
@@ -39662,99 +39838,11 @@
           ]
         },
         {
-          "GUID": "100240",
+          "GUID": "100242",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
             "posY": 8,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.918,
-            "scaleY": 0.918,
-            "scaleZ": 0.918
-          },
-          "Nickname": "Yellow B5",
-          "Description": "Yellow Squad B — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.9,
-            "g": 0.82,
-            "b": 0.15
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_yellow_B5.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.05,
-              "SpecularSharpness": 2,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          },
-          "AttachedSnapPoints": [
-            {
-              "Position": {
-                "x": -0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            },
-            {
-              "Position": {
-                "x": 0,
-                "y": 0.125,
-                "z": 0.42
-              }
-            },
-            {
-              "Position": {
-                "x": 0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            }
-          ]
-        },
-        {
-          "GUID": "100241",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 8.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -39838,11 +39926,11 @@
           ]
         },
         {
-          "GUID": "100242",
+          "GUID": "100243",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0,
-            "posY": 9,
+            "posY": 8.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -39884,94 +39972,6 @@
           "CustomMesh": {
             "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
             "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_yellow_A6.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 0,
-            "TypeIndex": 1,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.05,
-              "SpecularSharpness": 2,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          },
-          "AttachedSnapPoints": [
-            {
-              "Position": {
-                "x": -0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            },
-            {
-              "Position": {
-                "x": 0,
-                "y": 0.125,
-                "z": 0.42
-              }
-            },
-            {
-              "Position": {
-                "x": 0.36,
-                "y": 0.125,
-                "z": 0.3
-              }
-            }
-          ]
-        },
-        {
-          "GUID": "100243",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 9.5,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 0.918,
-            "scaleY": 0.918,
-            "scaleZ": 0.918
-          },
-          "Nickname": "Yellow A5",
-          "Description": "Yellow Squad A — Soldier 5\n40mm magnetized base — printed ID and 3 blood-drop divots.\nMagnet points: Head, Chest, Hands, Legs, Backpack.\n4th damage peg = death.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.9,
-            "g": 0.82,
-            "b": 0.15
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "function onLoad()\n    self.setSnapPoints({\n        {position = {-0.36, 0.125,  0.30}},\n        {position = { 0.00, 0.125,  0.42}},\n        {position = { 0.36, 0.125,  0.30}},\n        {position = { 0.00, 1.20,   0.00}, tags = {\"module-head\"}},\n        {position = { 0.00, 0.60,   0.30}, tags = {\"module-chest\"}},\n        {position = { 0.45, 0.55,   0.00}, tags = {\"module-hands\"}},\n        {position = { 0.00, 0.25,   0.30}, tags = {\"module-legs\"}},\n        {position = { 0.00, 0.65,  -0.30}, tags = {\"module-backpack\"}},\n    })\nend",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hams-soldier.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/soldier_yellow_A5.png",
             "NormalURL": "",
             "ColliderURL": "",
             "Convex": true,
