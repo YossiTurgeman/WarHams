@@ -368,7 +368,7 @@ The active player may trade resource tokens freely with any other player. Both p
 
 ### Phase 7: Move Separatists
 
-All Separatist movement is resolved in four quick steps. **The active player moves all Separatists** on the board this phase (consuming, wandering, and seeking) — there is no per-player territory split, which keeps the phase quick and unambiguous. **All Separatists** are processed, including any spawned during this turn's Phase 1 (or just now by Instigate Uprising) — spawning only places them on a base; the movement happens here.
+All Separatist movement is resolved in four quick steps. **The active player moves all Separatists** on the board this phase (consume, move, combat) — there is no per-player territory split, which keeps the phase quick and unambiguous. **All Separatists** are processed, including any spawned during this turn's Phase 1 (or just now by Instigate Uprising) — spawning only places them on a base; the movement happens here.
 
 **Step 1 — Instigate Uprising**
 Any player who controls a conquered Separatist Base may pay **3 Local Favor** to spawn **3 Separatists** at any ONE unconquered base. **They stay on that base** — they will move in Step 3 below along with every other Separatist on the board. Once per round per conquered base you control (see **Separatists — Instigate Uprising** for full details).
@@ -377,25 +377,20 @@ Any player who controls a conquered Separatist Base may pay **3 Local Favor** to
 Every Separatist sitting on a hex with resource tokens removes **1 token** (return it to the supply). Resolve all Separatists simultaneously.
 
 **Step 3 — Move**
+Every Separatist moves **up to 3 hexes** this turn, resolved one at a time by the active player using a single priority rule:
 
-- **Seekers**: Any Separatist within **3 hexes** of a resource hex with tokens moves toward the **nearest** one (up to 3 hexes). Split Seekers evenly among available targets.
-- **Wanderers**: All remaining Separatists wander. The active player rolls **1d6 once** — all Wanderers move **up to 3 hexes** in that direction.
+1. **Look within 3 hexes** of the Separatist's current hex for any **resource-producing hex (Oil / Power / Factory / Radar / City) that currently has 1 or more resource tokens on it.**
+2. **If one or more such hexes exist:** move the Separatist toward the hex with the **most tokens**. If multiple hexes are tied for most tokens, the **active player chooses** the destination.
+3. **If no producing hex within 3 hexes has any tokens:** move the Separatist toward the **nearest resource-producing hex** (any of the 15 production tiles, even if empty). The Separatist still moves only up to 3 hexes per turn; if the target is farther, it continues advancing on later turns. If multiple producing hexes are tied for nearest, the **active player chooses**.
 
-| Roll | Direction |
-|------|-----------|
-| 1    | North     |
-| 2    | Northeast |
-| 3    | Southeast |
-| 4    | South     |
-| 5    | Southwest |
-| 6    | Northwest |
+A Separatist already standing on its chosen target moves **0** (stays put). Movement is measured in hex-distance — each step into an adjacent hex counts as 1.
 
 Move all Separatists before resolving any combat.
 
 **Step 4 — Resolve Combats**
 After all movement is complete, resolve combat on every hex where Separatists and player soldiers now share a space. The defending player fights normally; the player to their **left** rolls all Separatist dice (with the standard −1 penalty). Resolve each contested hex in clockwise order starting from the active player.
 
-> **Tip:** Leave resources on strategic hexes to lure Seekers toward opponents. Clear resources near your territory so nearby Separatists become Wanderers instead — their direction is random and less predictable than a straight line to your stockpile.
+> **Tip:** A producing hex with many tokens acts as a Separatist magnet — every Separatist within 3 hexes will converge on it. Clear high-token hexes near your soldiers to spread Separatists thin; let tokens pile up on hexes near opponents to draw the swarm there instead.
 
 ---
 
@@ -985,10 +980,10 @@ When a number matching a **Separatist Base's printed number** is rolled during P
 
 ### Behavior (Phase 7)
 
-**The active player moves all Separatists** during this phase — every consume, wander, and seek step is resolved by the active player, regardless of whose territory the Separatists are in.
+**The active player moves all Separatists** during this phase — consume, move, and combat steps are all resolved by the active player, regardless of whose territory the Separatists are in.
 
 1. **Consume** — Every Separatist on a hex with tokens removes 1 token (all at once).
-2. **Move** — Active player rolls **1d6 once** for wander direction. **Seekers** (within 3 hexes of a resource hex with tokens) move toward the nearest one. **Wanderers** (all others) move up to 3 hexes in the rolled direction. Move all before resolving combat.
+2. **Move** — Every Separatist moves up to **3 hexes** toward the **producing hex with the most tokens within 3 hexes**; ties broken by the active player. If no producing hex within 3 hexes has tokens, head for the **nearest producing hex** (ties broken by the active player), still capped at 3 hexes per turn.
 3. **Combat** — Resolve each hex where Separatists and soldiers share space. Player to the **left** of the defender rolls Separatist dice.
 
 ### Fighting Separatists
@@ -1010,7 +1005,7 @@ When a number matching a **Separatist Base's printed number** is rolled during P
 
 #### Instigate Uprising (Conquered Base Ability)
 
-During **Phase 7 Step 1**, the controller of a conquered base may pay **3 Local Favor** to spawn **3 Separatists** at any ONE other **unconquered** Separatist Base. **The spawned Separatists stay on that base** — they will move in **Step 3** of this same Phase 7, alongside every other Separatist on the board (Seekers/Wanderers, see Phase 7 rules).
+During **Phase 7 Step 1**, the controller of a conquered base may pay **3 Local Favor** to spawn **3 Separatists** at any ONE other **unconquered** Separatist Base. **The spawned Separatists stay on that base** — they will move in **Step 3** of this same Phase 7, alongside every other Separatist on the board (see Phase 7 movement rules).
 
 | Rule | Detail |
 |------|--------|
