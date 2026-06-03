@@ -234,7 +234,7 @@ The active player rolls **2d6 + 1 Separatist Die** (a grey d6). All three dice p
 >
 > **Example (Doubles):** You roll 3, 3, and the Separatist Die shows 5. Every hex with a "3" token receives 1 resource token (not 2 — duplicates don't double production), and every hex with a "5" token receives 1 resource token. The doubled 3s also trigger a BAC delivery (see Doubles below).
 
-**Separatist Spawning** — Only the **Separatist Die** (grey) triggers spawning. If the Separatist Die matches a **Separatist Base's printed number** (2, 4, or 6), spawn **3 Separatist miniatures** at that base. **The active player** immediately moves them to different nearest resource hexes (see **Separatists** section for full details). The other two dice never trigger spawns.
+**Separatist Spawning** — Only the **Separatist Die** (grey) triggers spawning. If the Separatist Die matches a **Separatist Base's printed number** (2, 4, or 6), spawn **3 Separatist miniatures** at that base. **They stay on the base** — all Separatist movement, consumption, and combat is resolved later in **Phase 7** by the active player (see **Separatists** section for full details). The other two dice never trigger spawns.
 
 **Doubles** — If two of the three dice show the same number (e.g., 3, 3, 5):
 
@@ -384,10 +384,10 @@ The active player may trade resource tokens freely with any other player. Both p
 
 ### Phase 7: Move Separatists
 
-All Separatist movement is resolved in four quick steps. **The active player moves all Separatists** on the board this phase (spawning, consuming, wandering, and seeking) — there is no per-player territory split, which keeps the phase quick and unambiguous.
+All Separatist movement is resolved in four quick steps. **The active player moves all Separatists** on the board this phase (consuming, wandering, and seeking) — there is no per-player territory split, which keeps the phase quick and unambiguous. **All Separatists** are processed, including any spawned during this turn's Phase 1 (or just now by Instigate Uprising) — spawning only places them on a base; the movement happens here.
 
 **Step 1 — Instigate Uprising**
-Any player who controls a conquered Separatist Base may pay **3 Local Favor** to spawn **3 Separatists** at any ONE unconquered base. They scatter per normal spawning rules. Once per round per conquered base you control (see **Separatists — Instigate Uprising** for full details).
+Any player who controls a conquered Separatist Base may pay **3 Local Favor** to spawn **3 Separatists** at any ONE unconquered base. **They stay on that base** — they will move in Step 3 below along with every other Separatist on the board. Once per round per conquered base you control (see **Separatists — Instigate Uprising** for full details).
 
 **Step 2 — Consume**
 Every Separatist sitting on a hex with resource tokens removes **1 token** (return it to the supply). Resolve all Separatists simultaneously.
@@ -980,7 +980,7 @@ Separatists are rogue fighting forces loyal to no corporation — remnants of fa
 
 ### Spawning
 
-When a number matching a **Separatist Base's printed number** is rolled during Phase 1, spawn **3 grey Separatist miniatures** on that base. The three bases are numbered **2, 4, and 6** (printed on the tile). **The active player** then immediately moves each to a **different nearest resource-producing hex** with available resources. If insufficient Separatist miniatures remain in the supply, spawn as many as possible. Excess spawns are lost.
+When a number matching a **Separatist Base's printed number** is rolled during Phase 1, spawn **3 grey Separatist miniatures** on that base. The three bases are numbered **2, 4, and 6** (printed on the tile). **Spawned Separatists stay on the base.** All Separatist movement, consumption, and combat is resolved later in **Phase 7** (see **Behavior** below). If insufficient Separatist miniatures remain in the supply, spawn as many as possible. Excess spawns are lost.
 
 ### Behavior (Phase 7)
 
@@ -1009,7 +1009,7 @@ When a number matching a **Separatist Base's printed number** is rolled during P
 
 #### Instigate Uprising (Conquered Base Ability)
 
-During **Phase 7**, the controller of a conquered base may pay **3 Local Favor** to spawn **3 Separatists** at any ONE other **unconquered** Separatist Base. The spawned Separatists immediately scatter per normal spawning rules (each moves to a different nearest resource-producing hex).
+During **Phase 7 Step 1**, the controller of a conquered base may pay **3 Local Favor** to spawn **3 Separatists** at any ONE other **unconquered** Separatist Base. **The spawned Separatists stay on that base** — they will move in **Step 3** of this same Phase 7, alongside every other Separatist on the board (Seekers/Wanderers, see Phase 7 rules).
 
 | Rule | Detail |
 |------|--------|
@@ -1017,7 +1017,7 @@ During **Phase 7**, the controller of a conquered base may pay **3 Local Favor**
 | **Cost** | 3 Local Favor |
 | **Target** | Any unconquered Separatist Base |
 | **Limit** | Once per round, per conquered base you control |
-| **Effect** | Spawn 3 Separatists at target base, then scatter normally |
+| **Effect** | Spawn 3 Separatists at target base; they move later in Step 3 of this same Phase 7 |
 
 > **Tip:** Instigate Uprising lets you weaponize conquered bases — direct Separatist pressure toward opponents' resource hexes while you profit from stability.
 
