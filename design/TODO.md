@@ -287,3 +287,5 @@
 - [ ] **Add a large locked dice tray east of the Blue and Yellow player areas.** Provide a dedicated enclosed area where players can throw dice, and lock the tray so it cannot move.
 - [ ] **Increase dice sizes.** Make the player-colored dice twice their current size, then make the 3 main resource dice twice as large as the resized player dice.
 - [ ] **Consider compensation for heavy battle losses.** Explore and balance a comeback benefit for a player who loses soldiers in battle and/or suffers more than 3 wounds, without making intentional losses exploitable.
+- [ ] **Add 2 combat-location markers.** Make each marker the same size as the First Player marker and use them to mark the board locations where combat is happening.
+- [ ] **Add a dedicated combat zone.** Provide an area where the squads currently fighting can be brought together and placed facing each other while combat is resolved.
