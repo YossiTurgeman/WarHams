@@ -293,3 +293,4 @@
 - [ ] **Revise the Spaceport Domination victory condition.** In "How to Win," change the requirement to controlling and holding the required Spaceport Landing Zones for 1 whole turn.
 - [ ] **Revise the third victory condition.** Count DP earned from cards and DP earned from battle victories toward this victory condition; define and balance both sources clearly.
 - [ ] **Delay victory until one whole round after an end-game trigger.** Triggering a win condition should start the final round rather than ending the game immediately; determine the winner after every player has had the appropriate final turn.
+- [ ] **Consider a planet-control victory path.** Explore a fourth victory condition for controlling most of the planet, or combine planet control with the revised third victory condition; define a measurable threshold and balance it against the other paths to victory.
