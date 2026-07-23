@@ -282,3 +282,5 @@
 - [ ] **Make setup pieces truly immovable after locking.** Once setup locks the planet tiles and number tokens, they must actually be locked and unable to move.
 - [ ] **Consolidate all Separatist rules in the rulebook.** Unite the rules currently spread across different sections into one authoritative place, using cross-references elsewhere as needed.
 - [ ] **Verify Separatist targeting behavior.** Decide and document whether Separatists seek BAC containers as well as resources, or resources only; keep the rulebook, game data, and TTS behavior consistent.
+- [ ] **Clarify the base range of an unequipped soldier.** Explicitly state a soldier's initial attack range when they have no equipment.
+- [ ] **Consolidate the rule that fighting is optional.** Remove repeated instances from the rulebook and rephrase the single authoritative statement that remains.
