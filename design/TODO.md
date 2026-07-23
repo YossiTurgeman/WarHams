@@ -286,3 +286,4 @@
 - [ ] **Consolidate the rule that fighting is optional.** Remove repeated instances from the rulebook and rephrase the single authoritative statement that remains.
 - [ ] **Add a large locked dice tray east of the Blue and Yellow player areas.** Provide a dedicated enclosed area where players can throw dice, and lock the tray so it cannot move.
 - [ ] **Increase dice sizes.** Make the player-colored dice twice their current size, then make the 3 main resource dice twice as large as the resized player dice.
+- [ ] **Consider compensation for heavy battle losses.** Explore and balance a comeback benefit for a player who loses soldiers in battle and/or suffers more than 3 wounds, without making intentional losses exploitable.
