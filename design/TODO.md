@@ -273,3 +273,12 @@
 - [x] **#41 — `CARD_VERSION` bumped v32 → v33** ✅ — cache-busts updated TTS art + JSON
 
 > **v33 Status:** ✅ COMPLETE. Squad boards removed from rulebook, game-data, graphics brief, and TTS save. Soldier state lives entirely on the mini: ID printed on the 40mm magnetized base (TTS nicknames mirror this), damage tracked via blood-drop pegs in 3 divots, equipment as 5 magnetized add-ons. Rulebook PDF and TTS save regenerated.
+
+## Task 8: TTS Playtest Follow-ups
+
+- [ ] **Add a button that deals each player their 3 starting BAC cards.**
+- [ ] **Change the tree terrain color.** Its current green is too similar to the Green player's color; use a clearly distinguishable terrain color.
+- [ ] **Change each player's starting soldier formations.** Arrange both groups of 5 soldiers like the five pips on a die (a plus formation), instead of lines.
+- [ ] **Make setup pieces truly immovable after locking.** Once setup locks the planet tiles and number tokens, they must actually be locked and unable to move.
+- [ ] **Consolidate all Separatist rules in the rulebook.** Unite the rules currently spread across different sections into one authoritative place, using cross-references elsewhere as needed.
+- [ ] **Verify Separatist targeting behavior.** Decide and document whether Separatists seek BAC containers as well as resources, or resources only; keep the rulebook, game data, and TTS behavior consistent.
