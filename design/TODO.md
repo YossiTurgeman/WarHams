@@ -313,3 +313,4 @@
 - [ ] **Consider revising the R.S.G range modifier.** Change the Repeating Shotgun to grant +2 attack when the attacker and target are on the same hex, and impose -1 attack whenever they are not on the same hex; review the balance and update all card and rule references if adopted.
 - [ ] **Add Combat Resolution Step 0: Pre-Combat.** Insert a formal step before dice are rolled in which all pre-combat cards are played and resolved; define player order, response opportunities, and how simultaneous effects are ordered.
 - [ ] **Reword Phase 7, Step 2: Consume.** Replace "Every Separatist sitting on a hex..." with: "Remove 1 token from every hex containing Separatists." Ensure the rest of the step consistently applies consumption once per occupied hex rather than once per Separatist.
+- [ ] **Clarify Phase 7, Step 3: Move resource behavior.** State that Separatists occupying a hex where resource tokens are still available remain on that hex and do not move.
