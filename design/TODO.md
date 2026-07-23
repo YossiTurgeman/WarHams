@@ -291,3 +291,5 @@
 - [ ] **Add a dedicated combat zone.** Provide an area where the squads currently fighting can be brought together and placed facing each other while combat is resolved.
 - [ ] **Reward battle victories.** Design and balance a victory-point reward for winning battles to encourage players to initiate combat, while preventing easy point farming or collusion.
 - [ ] **Revise the Spaceport Domination victory condition.** In "How to Win," change the requirement to controlling and holding the required Spaceport Landing Zones for 1 whole turn.
+- [ ] **Revise the third victory condition.** Count DP earned from cards and DP earned from battle victories toward this victory condition; define and balance both sources clearly.
+- [ ] **Delay victory until one whole round after an end-game trigger.** Triggering a win condition should start the final round rather than ending the game immediately; determine the winner after every player has had the appropriate final turn.
