@@ -299,3 +299,4 @@
 - [ ] **Clarify Phase 5: Purchase & Equip.** State that unlocking a BAC also equips the first copy, and revise step 3 to say: "Pay the card's cost for each additional soldier you wish to equip."
 - [ ] **Rotate spawned Unloading Zone containers.** Containers spawned on the Unloading Zone should face south instead of west.
 - [ ] **Fix card resource-text overflow.** Ensure resource wording has enough room within every card's layout and does not spill past its line or text area; specifically check "A Rough Night" and audit all BAC and Conspire cards for the same issue.
+- [ ] **Streamline Phase 7: Move Separatists.** Remove confusing wording inherited from previous rule versions and rewrite the section as one concise, current procedure with no obsolete qualifications or repetition.
