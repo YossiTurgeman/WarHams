@@ -300,3 +300,4 @@
 - [ ] **Rotate spawned Unloading Zone containers.** Containers spawned on the Unloading Zone should face south instead of west.
 - [ ] **Fix card resource-text overflow.** Ensure resource wording has enough room within every card's layout and does not spill past its line or text area; specifically check "A Rough Night" and audit all BAC and Conspire cards for the same issue.
 - [ ] **Streamline Phase 7: Move Separatists.** Remove confusing wording inherited from previous rule versions and rewrite the section as one concise, current procedure with no obsolete qualifications or repetition.
+- [ ] **Clarify Phase 7, Step 3: Move.** State that Separatists move directly to the chosen hex even when friendly or enemy forces are in the way. Add flavor text explaining that the locals use native knowledge and their own hidden routes to get around intervening forces.
