@@ -305,3 +305,4 @@
 - [ ] **Add Control Flags during Game Setup, Step 9: Squad Placement.** When players place their starting Squads, also place each player's Control Flag on their Landing Zone to show that it begins under their control.
 - [ ] **Fix Control Flag token height.** Raise the token so its base rests on top of the hex instead of intersecting or passing through the hex surface.
 - [ ] **Consider healing as an alternative to Conspiring.** Explore allowing a Squad to choose a healing action instead of taking an available Conspire action; define eligibility, healing amount, timing, location requirements, and balance against drawing a Conspire card.
+- [ ] **Consider removing counterattack Combat Fatigue.** Re-evaluate whether the cumulative dice penalty is necessary, including the risk of long counterattack chains and whether a simpler limit or no restriction would play better.
