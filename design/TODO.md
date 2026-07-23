@@ -297,3 +297,4 @@
 - [ ] **Consider squad-based resource collection.** Change collection to: "Gain 1 resource from every resource hex controlled by a Squad. If a soldier in that Squad has B.E.A.R equipped, you may collect 1 additional resource from that hex." Review timing, multiple Squads/B.E.A.R modules, contested hexes, and balance before adopting the rule.
 - [ ] **Improve BAC resource-cost clarity.** On each BAC card, surround every required resource type with a background matching that resource's established color, while preserving readable contrast.
 - [ ] **Clarify Phase 5: Purchase & Equip.** State that unlocking a BAC also equips the first copy, and revise step 3 to say: "Pay the card's cost for each additional soldier you wish to equip."
+- [ ] **Rotate spawned Unloading Zone containers.** Containers spawned on the Unloading Zone should face south instead of west.
