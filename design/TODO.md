@@ -289,3 +289,4 @@
 - [ ] **Consider compensation for heavy battle losses.** Explore and balance a comeback benefit for a player who loses soldiers in battle and/or suffers more than 3 wounds, without making intentional losses exploitable.
 - [ ] **Add 2 combat-location markers.** Make each marker the same size as the First Player marker and use them to mark the board locations where combat is happening.
 - [ ] **Add a dedicated combat zone.** Provide an area where the squads currently fighting can be brought together and placed facing each other while combat is resolved.
+- [ ] **Reward battle victories.** Design and balance a victory-point reward for winning battles to encourage players to initiate combat, while preventing easy point farming or collusion.
