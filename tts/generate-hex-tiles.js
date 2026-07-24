@@ -50,7 +50,7 @@ const BLUE     = rgba(50, 110, 200);
 const GREEN    = rgba(60, 150, 70);
 const GREY     = rgba(140, 140, 145);
 const PURPLE   = rgba(135, 70, 180);
-const TERRAIN_BG = rgba(155, 135, 100);  // warm earth; distinct from Green player
+const TERRAIN_BG = rgba(120, 145, 95);   // original grass/olive background
 const RESOURCE_BG = rgba(70, 70, 75);    // dark slate for resource tiles
 const SEP_BG    = rgba(85, 80, 85);
 const SPACEPORT_BG = rgba(60, 50, 80);
@@ -239,10 +239,11 @@ function drawRecruit(img) {
 }
 
 function drawTerrain(img) {
-    // Warm autumn terrain stays visually separate from Green player pieces.
-    fillCircle(img, CX - 80, CY + 60, 36, rgba(125, 105, 80));
-    fillCircle(img, CX + 60, CY - 40, 28, rgba(125, 105, 80));
-    fillCircle(img, CX + 80, CY + 80, 24, rgba(125, 105, 80));
+    // Keep the original green terrain while making the tree distinct
+    // from Green player pieces with warm autumn foliage.
+    fillCircle(img, CX - 80, CY + 60, 36, rgba(95, 120, 70));
+    fillCircle(img, CX + 60, CY - 40, 28, rgba(95, 120, 70));
+    fillCircle(img, CX + 80, CY + 80, 24, rgba(95, 120, 70));
     // Autumn tree
     fillRect(img, CX - 8, CY + 5, CX + 8, CY + 60, rgba(90, 60, 30));
     fillCircle(img, CX, CY - 10, 50, rgba(180, 90, 42));
@@ -289,10 +290,10 @@ async function printNumber(img, n) {
 // ─── Per-tile factories ─────────────────────────────────────────────
 async function makeTerrain() {
     const img = new Jimp({ width: SIZE, height: SIZE, color: TRANSPARENT });
-    drawHexBorder(img, rgba(105, 85, 60), TERRAIN_BG);
+    drawHexBorder(img, rgba(70, 95, 50), TERRAIN_BG);
     drawTerrain(img);
     // Unique filename bypasses TTS's path-based image cache.
-    await img.write(path.join(outDir, "hex_terrain_autumn.png"));
+    await img.write(path.join(outDir, "hex_terrain_orange_tree.png"));
 }
 
 async function makeOil() {

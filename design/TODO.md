@@ -277,7 +277,7 @@
 ## Task 8: TTS Playtest Follow-ups
 
 - [x] **Add a button that deals each player their 3 starting BAC cards.** — Added a one-use TTS button that shuffles the Spaceport Deck and deals 3 BACs to every seated Red, Blue, Green, and Yellow player.
-- [x] **Change the tree terrain color.** — Recolored terrain to warm earth tones with orange autumn foliage, clearly separating it from the Green player's pieces.
+- [x] **Change the tree terrain color.** — Kept the original green terrain background and recolored only the tree with orange autumn foliage, clearly separating it from the Green player's pieces.
 - [ ] **Change each player's starting soldier formations.** Arrange both groups of 5 soldiers like the five pips on a die (a plus formation), instead of lines.
 - [ ] **Make setup pieces truly immovable after locking.** Once setup locks the planet tiles and number tokens, they must actually be locked and unable to move.
 - [ ] **Consolidate all Separatist rules in the rulebook.** Unite the rules currently spread across different sections into one authoritative place, using cross-references elsewhere as needed.
