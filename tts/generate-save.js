@@ -536,10 +536,10 @@ playerColors.forEach((pc, idx) => {
     };
     const PLUS_OFFSETS = [
         { tc:  0,   side:  0 },   // 1: center
-        { tc:  2.2, side:  0 },   // 2: toward table center
-        { tc:  0,   side:  2.2 }, // 3: right
-        { tc: -2.2, side:  0 },   // 4: toward table edge
-        { tc:  0,   side: -2.2 }, // 5: left
+        { tc:  1.5, side:  0 },   // 2: toward table center
+        { tc:  0,   side:  1.5 }, // 3: right
+        { tc: -1.5, side:  0 },   // 4: toward table edge
+        { tc:  0,   side: -1.5 }, // 5: left
     ];
 
     for (const letter of SQUAD_LETTERS) {           // A, B, C, D

@@ -278,7 +278,7 @@
 
 - [x] **Add a button that deals each player their 3 starting BAC cards.** — Added a one-use TTS button that shuffles the Spaceport Deck and deals 3 BACs to every seated Red, Blue, Green, and Yellow player.
 - [x] **Change the tree terrain color.** — Kept the original green terrain background and recolored only the tree with orange autumn foliage, clearly separating it from the Green player's pieces.
-- [x] **Change each player's starting soldier formations.** — Arranged both starting Squads for every player as separate five-soldier plus formations instead of lines.
+- [x] **Change each player's starting soldier formations.** — Arranged both starting Squads for every player as separate compact five-soldier plus formations instead of lines.
 - [ ] **Make setup pieces truly immovable after locking.** Once setup locks the planet tiles and number tokens, they must actually be locked and unable to move.
 - [ ] **Consolidate all Separatist rules in the rulebook.** Unite the rules currently spread across different sections into one authoritative place, using cross-references elsewhere as needed.
 - [ ] **Verify Separatist targeting behavior.** Decide and document whether Separatists seek BAC containers as well as resources, or resources only; keep the rulebook, game data, and TTS behavior consistent.
