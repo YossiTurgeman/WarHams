@@ -217,6 +217,7 @@ function buildBACDeck() {
     deck.HideWhenFaceDown = true;
     deck.Hands = true;
     deck.SidewaysCard = false;
+    deck.Tags = ["bac-deck"];
     deck.ContainedObjects = cards;
     return deck;
 }
@@ -1469,6 +1470,93 @@ objects.push(makeShuffleControl({
     // 'resource-hex'. One hex ends up with a stacked pair.
     dealOntoTag: "resource-hex",
 }));
+
+// Starting-hand control — shuffles the BAC deck, then deals three cards
+// to every seated player using one of the four supported player colors.
+// Persistent one-use state prevents an accidental second starting deal.
+const dealBacsButton = baseObj("Custom_Tile", "Deal Starting BACs",
+    "Shuffle the Spaceport Deck and deal 3 starting BAC cards to every seated Red, Blue, Green, and Yellow player.",
+    48.5, 1.02, 12.5,
+    { rotY: 0, scaleX: 2.2, scaleY: 0.2, scaleZ: 1.4,
+      color: { r: 0.20, g: 0.42, b: 0.82 }, locked: true, grid: false });
+dealBacsButton.CustomImage = {
+    ImageURL: RANDOMIZE_BUTTON_TEXTURE,
+    ImageSecondaryURL: RANDOMIZE_BUTTON_TEXTURE,
+    ImageScalar: 1,
+    WidthScale: 0,
+    CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
+};
+dealBacsButton.LuaScript = [
+    "BAC_DECK_TAG = 'bac-deck'",
+    "SUPPORTED_COLORS = {'Red', 'Blue', 'Green', 'Yellow'}",
+    "hasDealt = false",
+    "",
+    "function onLoad(saved)",
+    "    if saved and saved ~= '' then",
+    "        local ok, state = pcall(JSON.decode, saved)",
+    "        if ok and type(state) == 'table' and state.hasDealt then hasDealt = true end",
+    "    end",
+    "    self.createButton({",
+    "        label = hasDealt and 'DEALT' or 'DEAL 3 BACs',",
+    "        click_function = 'dealStartingBacs',",
+    "        function_owner = self,",
+    "        position = {0, 0.3, 0},",
+    "        rotation = {0, 180, 0},",
+    "        width = 1700,",
+    "        height = 700,",
+    "        font_size = 230,",
+    "        color = hasDealt and {0.45, 0.45, 0.45} or {0.20, 0.42, 0.82},",
+    "        font_color = {1, 1, 1},",
+    "        tooltip = 'Shuffle and deal 3 starting BACs to every seated player.',",
+    "    })",
+    "end",
+    "",
+    "function onSave()",
+    "    return JSON.encode({hasDealt = hasDealt})",
+    "end",
+    "",
+    "function findBacDeck()",
+    "    for _, obj in ipairs(getAllObjects()) do",
+    "        if obj.type == 'Deck' and obj.hasTag(BAC_DECK_TAG) then return obj end",
+    "    end",
+    "    return nil",
+    "end",
+    "",
+    "function dealStartingBacs(_, _playerColor)",
+    "    if hasDealt then",
+    "        broadcastToAll('Starting BACs have already been dealt.', {1, 0.75, 0.25})",
+    "        return",
+    "    end",
+    "",
+    "    local seated = {}",
+    "    for _, color in ipairs(SUPPORTED_COLORS) do",
+    "        if Player[color].seated then table.insert(seated, color) end",
+    "    end",
+    "    if #seated == 0 then",
+    "        broadcastToAll('No Red, Blue, Green, or Yellow players are seated.', {1, 0.5, 0.5})",
+    "        return",
+    "    end",
+    "",
+    "    local deck = findBacDeck()",
+    "    if deck == nil then",
+    "        broadcastToAll('Spaceport Deck not found.', {1, 0.5, 0.5})",
+    "        return",
+    "    end",
+    "    if deck.getQuantity() < (#seated * 3) then",
+    "        broadcastToAll('Not enough BAC cards to deal 3 per seated player.', {1, 0.5, 0.5})",
+    "        return",
+    "    end",
+    "",
+    "    hasDealt = true",
+    "    self.editButton({index = 0, label = 'DEALT', color = {0.45, 0.45, 0.45}})",
+    "    deck.shuffle()",
+    "    Wait.frames(function()",
+    "        for _, color in ipairs(seated) do deck.deal(3, color) end",
+    "        broadcastToAll('Dealt 3 starting BACs to each seated player.', {0.55, 1, 0.55})",
+    "    end, 1)",
+    "end",
+].join("\n");
+objects.push(dealBacsButton);
 
 // ─── 18. REFERENCE BOOKS — Quick Ref + Full User Guide ──────────────
 // Custom_PDF objects render as physical book/folder shapes on the

@@ -1,7 +1,7 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1780491763,
-  "Date": "2026-06-03",
+  "EpochTime": 1784905958,
+  "Date": "2026-07-24",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
   "GameType": "",
@@ -1152,6 +1152,9 @@
         }
       },
       "SidewaysCard": false,
+      "Tags": [
+        "bac-deck"
+      ],
       "ContainedObjects": [
         {
           "GUID": "100001",
@@ -55265,6 +55268,63 @@
     },
     {
       "GUID": "100336",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 48.5,
+        "posY": 1.02,
+        "posZ": 12.5,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 2.2,
+        "scaleY": 0.2,
+        "scaleZ": 1.4
+      },
+      "Nickname": "Deal Starting BACs",
+      "Description": "Shuffle the Spaceport Deck and deal 3 starting BAC cards to every seated Red, Blue, Green, and Yellow player.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.2,
+        "g": 0.42,
+        "b": 0.82
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "BAC_DECK_TAG = 'bac-deck'\nSUPPORTED_COLORS = {'Red', 'Blue', 'Green', 'Yellow'}\nhasDealt = false\n\nfunction onLoad(saved)\n    if saved and saved ~= '' then\n        local ok, state = pcall(JSON.decode, saved)\n        if ok and type(state) == 'table' and state.hasDealt then hasDealt = true end\n    end\n    self.createButton({\n        label = hasDealt and 'DEALT' or 'DEAL 3 BACs',\n        click_function = 'dealStartingBacs',\n        function_owner = self,\n        position = {0, 0.3, 0},\n        rotation = {0, 180, 0},\n        width = 1700,\n        height = 700,\n        font_size = 230,\n        color = hasDealt and {0.45, 0.45, 0.45} or {0.20, 0.42, 0.82},\n        font_color = {1, 1, 1},\n        tooltip = 'Shuffle and deal 3 starting BACs to every seated player.',\n    })\nend\n\nfunction onSave()\n    return JSON.encode({hasDealt = hasDealt})\nend\n\nfunction findBacDeck()\n    for _, obj in ipairs(getAllObjects()) do\n        if obj.type == 'Deck' and obj.hasTag(BAC_DECK_TAG) then return obj end\n    end\n    return nil\nend\n\nfunction dealStartingBacs(_, _playerColor)\n    if hasDealt then\n        broadcastToAll('Starting BACs have already been dealt.', {1, 0.75, 0.25})\n        return\n    end\n\n    local seated = {}\n    for _, color in ipairs(SUPPORTED_COLORS) do\n        if Player[color].seated then table.insert(seated, color) end\n    end\n    if #seated == 0 then\n        broadcastToAll('No Red, Blue, Green, or Yellow players are seated.', {1, 0.5, 0.5})\n        return\n    end\n\n    local deck = findBacDeck()\n    if deck == nil then\n        broadcastToAll('Spaceport Deck not found.', {1, 0.5, 0.5})\n        return\n    end\n    if deck.getQuantity() < (#seated * 3) then\n        broadcastToAll('Not enough BAC cards to deal 3 per seated player.', {1, 0.5, 0.5})\n        return\n    end\n\n    hasDealt = true\n    self.editButton({index = 0, label = 'DEALT', color = {0.45, 0.45, 0.45}})\n    deck.shuffle()\n    Wait.frames(function()\n        for _, color in ipairs(seated) do deck.deal(3, color) end\n        broadcastToAll('Dealt 3 starting BACs to each seated player.', {0.55, 1, 0.55})\n    end, 1)\nend",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/randomize-button.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/randomize-button.png",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.1,
+          "Stackable": false,
+          "Stretch": true
+        }
+      }
+    },
+    {
+      "GUID": "100337",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -60,
@@ -55315,7 +55375,7 @@
       }
     },
     {
-      "GUID": "100337",
+      "GUID": "100338",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -60,
@@ -55366,7 +55426,7 @@
       }
     },
     {
-      "GUID": "10033e",
+      "GUID": "10033f",
       "Name": "Bag",
       "Transform": {
         "posX": -66,
@@ -55411,79 +55471,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100338",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -66,
-            "posY": 1.5,
-            "posZ": -16,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "S.A.P Helmet Head",
-          "Description": "Standard Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +1 to its defense die.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.55,
-            "g": 0.55,
-            "b": 0.55
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-head"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "100339",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -55551,7 +55543,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -55619,7 +55611,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -55687,7 +55679,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -55755,6 +55747,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
+            "posY": 3.1,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "S.A.P Helmet Head",
+          "Description": "Standard Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +1 to its defense die.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.55
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "10033e",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -66,
             "posY": 3.5,
             "posZ": -16,
             "rotX": 0,
@@ -55821,7 +55881,7 @@
       ]
     },
     {
-      "GUID": "100345",
+      "GUID": "100346",
       "Name": "Bag",
       "Transform": {
         "posX": -72,
@@ -55866,79 +55926,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "10033f",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -72,
-            "posY": 1.5,
-            "posZ": -16,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "S.H.A.D Head",
-          "Description": "Sensory Helmet, Advisory Drone\n[Tech] Slot: Head\n\nIf attacked, before combat starts, attacking player must reveal his conspire cards to you.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.32,
-            "g": 0.55,
-            "b": 0.85
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-head"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "100340",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -56006,7 +55998,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -56074,7 +56066,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -56142,7 +56134,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -56210,6 +56202,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
+            "posY": 3.1,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "S.H.A.D Head",
+          "Description": "Sensory Helmet, Advisory Drone\n[Tech] Slot: Head\n\nIf attacked, before combat starts, attacking player must reveal his conspire cards to you.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.32,
+            "g": 0.55,
+            "b": 0.85
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "100345",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -72,
             "posY": 3.5,
             "posZ": -16,
             "rotX": 0,
@@ -56276,7 +56336,7 @@
       ]
     },
     {
-      "GUID": "10034c",
+      "GUID": "10034d",
       "Name": "Bag",
       "Transform": {
         "posX": -78,
@@ -56321,79 +56381,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100346",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -78,
-            "posY": 1.5,
-            "posZ": -16,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "P.A.E.H Head",
-          "Description": "Personal Accuracy Enhancement Helmet\n[Tech] Slot: Head\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.32,
-            "g": 0.55,
-            "b": 0.85
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-head"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "100347",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -56461,7 +56453,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -56529,7 +56521,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -56597,7 +56589,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -56665,6 +56657,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
+            "posY": 3.1,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "P.A.E.H Head",
+          "Description": "Personal Accuracy Enhancement Helmet\n[Tech] Slot: Head\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.32,
+            "g": 0.55,
+            "b": 0.85
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "10034c",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -78,
             "posY": 3.5,
             "posZ": -16,
             "rotX": 0,
@@ -56731,7 +56791,7 @@
       ]
     },
     {
-      "GUID": "100353",
+      "GUID": "100354",
       "Name": "Bag",
       "Transform": {
         "posX": -84,
@@ -56776,79 +56836,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "10034d",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -84,
-            "posY": 1.5,
-            "posZ": -16,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "C.A.P Head",
-          "Description": "Custom Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +2 to its defense die.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.55,
-            "g": 0.55,
-            "b": 0.55
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-head"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "10034e",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -56916,7 +56908,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -56984,7 +56976,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -57052,7 +57044,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": -16,
             "rotX": 0,
             "rotY": 0,
@@ -57120,6 +57112,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
+            "posY": 3.1,
+            "posZ": -16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "C.A.P Head",
+          "Description": "Custom Armor Plating Helmet\n[Armor] Slot: Head\n\nThis soldier gets +2 to its defense die.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.55
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-head"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-head-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "100353",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -84,
             "posY": 3.5,
             "posZ": -16,
             "rotX": 0,
@@ -57186,7 +57246,7 @@
       ]
     },
     {
-      "GUID": "10035a",
+      "GUID": "10035b",
       "Name": "Bag",
       "Transform": {
         "posX": -66,
@@ -57231,79 +57291,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100354",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -66,
-            "posY": 1.5,
-            "posZ": -8,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "S.A.P Chest",
-          "Description": "Standard Armor Plating Chest Piece\n[Armor] Slot: Chest\n\nThis soldier gets +1 to its defense die.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.55,
-            "g": 0.55,
-            "b": 0.55
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-chest"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "100355",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -57371,7 +57363,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -57439,7 +57431,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -57507,7 +57499,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -57575,6 +57567,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
+            "posY": 3.1,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "S.A.P Chest",
+          "Description": "Standard Armor Plating Chest Piece\n[Armor] Slot: Chest\n\nThis soldier gets +1 to its defense die.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.55
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "10035a",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -66,
             "posY": 3.5,
             "posZ": -8,
             "rotX": 0,
@@ -57641,7 +57701,7 @@
       ]
     },
     {
-      "GUID": "100361",
+      "GUID": "100362",
       "Name": "Bag",
       "Transform": {
         "posX": -72,
@@ -57686,79 +57746,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "10035b",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -72,
-            "posY": 1.5,
-            "posZ": -8,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "B.E.A.R Chest",
-          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.3,
-            "g": 0.62,
-            "b": 0.36
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-chest"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "10035c",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -57826,7 +57818,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -57894,7 +57886,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -57962,7 +57954,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -58030,6 +58022,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
+            "posY": 3.1,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "B.E.A.R Chest",
+          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.3,
+            "g": 0.62,
+            "b": 0.36
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "100361",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -72,
             "posY": 3.5,
             "posZ": -8,
             "rotX": 0,
@@ -58096,7 +58156,7 @@
       ]
     },
     {
-      "GUID": "100368",
+      "GUID": "100369",
       "Name": "Bag",
       "Transform": {
         "posX": -78,
@@ -58141,79 +58201,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100362",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -78,
-            "posY": 1.5,
-            "posZ": -8,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "P.L.A.S.T.E.R Chest",
-          "Description": "Personal Lasting Aid Surgical Treatment Enhancement Robot\n[Support] Slot: Chest\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.3,
-            "g": 0.62,
-            "b": 0.36
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-chest"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "100363",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -58281,7 +58273,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -58349,7 +58341,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -58417,7 +58409,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -58485,6 +58477,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
+            "posY": 3.1,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "P.L.A.S.T.E.R Chest",
+          "Description": "Personal Lasting Aid Surgical Treatment Enhancement Robot\n[Support] Slot: Chest\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.3,
+            "g": 0.62,
+            "b": 0.36
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "100368",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -78,
             "posY": 3.5,
             "posZ": -8,
             "rotX": 0,
@@ -58551,7 +58611,7 @@
       ]
     },
     {
-      "GUID": "10036f",
+      "GUID": "100370",
       "Name": "Bag",
       "Transform": {
         "posX": -84,
@@ -58596,79 +58656,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100369",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -84,
-            "posY": 1.5,
-            "posZ": -8,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "C.A.P Chest",
-          "Description": "Custom Armor Plating Chest\n[Armor] Slot: Chest\n\nThis soldier gets +2 to its defense die.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.55,
-            "g": 0.55,
-            "b": 0.55
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-chest"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "10036a",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -58736,7 +58728,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -58804,7 +58796,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -58872,7 +58864,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": -8,
             "rotX": 0,
             "rotY": 0,
@@ -58940,6 +58932,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
+            "posY": 3.1,
+            "posZ": -8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "C.A.P Chest",
+          "Description": "Custom Armor Plating Chest\n[Armor] Slot: Chest\n\nThis soldier gets +2 to its defense die.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.55
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-chest"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-chest-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "10036f",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -84,
             "posY": 3.5,
             "posZ": -8,
             "rotX": 0,
@@ -59006,7 +59066,7 @@
       ]
     },
     {
-      "GUID": "100376",
+      "GUID": "100377",
       "Name": "Bag",
       "Transform": {
         "posX": -66,
@@ -59051,79 +59111,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100370",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -66,
-            "posY": 1.5,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "H.C.A.R Hands",
-          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.78,
-            "g": 0.45,
-            "b": 0.16
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-hands"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "100371",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -59191,7 +59183,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -59259,7 +59251,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -59327,7 +59319,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -59395,6 +59387,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
+            "posY": 3.1,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "H.C.A.R Hands",
+          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.78,
+            "g": 0.45,
+            "b": 0.16
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "100376",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -66,
             "posY": 3.5,
             "posZ": 0,
             "rotX": 0,
@@ -59461,7 +59521,7 @@
       ]
     },
     {
-      "GUID": "10037d",
+      "GUID": "10037e",
       "Name": "Bag",
       "Transform": {
         "posX": -72,
@@ -59506,79 +59566,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100377",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -72,
-            "posY": 1.5,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "B.A.S.R Hands",
-          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.7,
-            "g": 0.18,
-            "b": 0.16
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-hands"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "100378",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -59646,7 +59638,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -59714,7 +59706,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -59782,7 +59774,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -59850,6 +59842,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
+            "posY": 3.1,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "B.A.S.R Hands",
+          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.7,
+            "g": 0.18,
+            "b": 0.16
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "10037d",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -72,
             "posY": 3.5,
             "posZ": 0,
             "rotX": 0,
@@ -59916,7 +59976,7 @@
       ]
     },
     {
-      "GUID": "100384",
+      "GUID": "100385",
       "Name": "Bag",
       "Transform": {
         "posX": -78,
@@ -59961,79 +60021,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "10037e",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -78,
-            "posY": 1.5,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "R.S.G Hands",
-          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.78,
-            "g": 0.45,
-            "b": 0.16
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-hands"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "10037f",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -60101,7 +60093,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -60169,7 +60161,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -60237,7 +60229,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -60305,6 +60297,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
+            "posY": 3.1,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "R.S.G Hands",
+          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.78,
+            "g": 0.45,
+            "b": 0.16
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "100384",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -78,
             "posY": 3.5,
             "posZ": 0,
             "rotX": 0,
@@ -60371,7 +60431,7 @@
       ]
     },
     {
-      "GUID": "10038b",
+      "GUID": "10038c",
       "Name": "Bag",
       "Transform": {
         "posX": -84,
@@ -60416,79 +60476,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100385",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -84,
-            "posY": 1.5,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "P.C.S.M.G Hands",
-          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.78,
-            "g": 0.45,
-            "b": 0.16
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-hands"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "100386",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -60556,7 +60548,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -60624,7 +60616,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -60692,7 +60684,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -60760,6 +60752,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
+            "posY": 3.1,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "P.C.S.M.G Hands",
+          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.78,
+            "g": 0.45,
+            "b": 0.16
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-hands"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-hands-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "10038b",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -84,
             "posY": 3.5,
             "posZ": 0,
             "rotX": 0,
@@ -60826,7 +60886,7 @@
       ]
     },
     {
-      "GUID": "100392",
+      "GUID": "100393",
       "Name": "Bag",
       "Transform": {
         "posX": -66,
@@ -60871,79 +60931,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "10038c",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -66,
-            "posY": 1.5,
-            "posZ": 8,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "S.A.P Legs",
-          "Description": "Standard Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +1 to its defense die.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.55,
-            "g": 0.55,
-            "b": 0.55
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-legs"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "10038d",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -61011,7 +61003,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -61079,7 +61071,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -61147,7 +61139,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -61215,6 +61207,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
+            "posY": 3.1,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "S.A.P Legs",
+          "Description": "Standard Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +1 to its defense die.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.55
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "100392",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -66,
             "posY": 3.5,
             "posZ": 8,
             "rotX": 0,
@@ -61281,7 +61341,7 @@
       ]
     },
     {
-      "GUID": "100399",
+      "GUID": "10039a",
       "Name": "Bag",
       "Transform": {
         "posX": -72,
@@ -61326,79 +61386,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "100393",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -72,
-            "posY": 1.5,
-            "posZ": 8,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "J.J Legs",
-          "Description": "Jump Jets\n[Tech] Slot: Legs\n\nThis soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.32,
-            "g": 0.55,
-            "b": 0.85
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-legs"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "100394",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -61466,7 +61458,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -61534,7 +61526,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -61602,7 +61594,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -61670,6 +61662,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
+            "posY": 3.1,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "J.J Legs",
+          "Description": "Jump Jets\n[Tech] Slot: Legs\n\nThis soldier can move 2 hexes instead of 1. May override squad coherency — fights alone while disconnected (own dice only, no Squad-level BAC effects). Rejoin by moving within 2 hexes of a squadmate.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.32,
+            "g": 0.55,
+            "b": 0.85
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "100399",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -72,
             "posY": 3.5,
             "posZ": 8,
             "rotX": 0,
@@ -61736,7 +61796,7 @@
       ]
     },
     {
-      "GUID": "1003a0",
+      "GUID": "1003a1",
       "Name": "Bag",
       "Transform": {
         "posX": -78,
@@ -61781,79 +61841,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "10039a",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -78,
-            "posY": 1.5,
-            "posZ": 8,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "N.I.N.J.A Legs",
-          "Description": "Nir Ion Nullifier Jammer Aid\n[Tech] Slot: Legs\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.32,
-            "g": 0.55,
-            "b": 0.85
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-legs"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "10039b",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -61921,7 +61913,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -61989,7 +61981,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -62057,7 +62049,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -62125,6 +62117,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
+            "posY": 3.1,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "N.I.N.J.A Legs",
+          "Description": "Nir Ion Nullifier Jammer Aid\n[Tech] Slot: Legs\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.32,
+            "g": 0.55,
+            "b": 0.85
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "1003a0",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -78,
             "posY": 3.5,
             "posZ": 8,
             "rotX": 0,
@@ -62191,7 +62251,7 @@
       ]
     },
     {
-      "GUID": "1003a7",
+      "GUID": "1003a8",
       "Name": "Bag",
       "Transform": {
         "posX": -84,
@@ -62236,79 +62296,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1003a1",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -84,
-            "posY": 1.5,
-            "posZ": 8,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "C.A.P Legs",
-          "Description": "Custom Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +2 to its defense die.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.55,
-            "g": 0.55,
-            "b": 0.55
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-legs"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "1003a2",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -62376,7 +62368,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -62444,7 +62436,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -62512,7 +62504,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": 8,
             "rotX": 0,
             "rotY": 0,
@@ -62580,6 +62572,74 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
+            "posY": 3.1,
+            "posZ": 8,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "C.A.P Legs",
+          "Description": "Custom Armor Plating Legs\n[Armor] Slot: Legs\n\nThis soldier gets +2 to its defense die.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.55,
+            "g": 0.55,
+            "b": 0.55
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-legs"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-legs-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "1003a7",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -84,
             "posY": 3.5,
             "posZ": 8,
             "rotX": 0,
@@ -62646,7 +62706,7 @@
       ]
     },
     {
-      "GUID": "1003ae",
+      "GUID": "1003af",
       "Name": "Bag",
       "Transform": {
         "posX": -66,
@@ -62691,79 +62751,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1003a8",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -66,
-            "posY": 1.5,
-            "posZ": 16,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "S.L.I.M.E Backpack",
-          "Description": "Squad Light Interoperable Mortar Encampment\n[Heavy Weapons] Slot: Backpack\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.7,
-            "g": 0.18,
-            "b": 0.16
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-backpack"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "1003a9",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": 16,
             "rotX": 0,
             "rotY": 0,
@@ -62831,7 +62823,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": 16,
             "rotX": 0,
             "rotY": 0,
@@ -62899,7 +62891,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": 16,
             "rotX": 0,
             "rotY": 0,
@@ -62967,7 +62959,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": 16,
             "rotX": 0,
             "rotY": 0,
@@ -63032,6 +63024,74 @@
         },
         {
           "GUID": "1003ad",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -66,
+            "posY": 3.1,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "S.L.I.M.E Backpack",
+          "Description": "Squad Light Interoperable Mortar Encampment\n[Heavy Weapons] Slot: Backpack\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.7,
+            "g": 0.18,
+            "b": 0.16
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "1003ae",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -66,
@@ -63101,7 +63161,7 @@
       ]
     },
     {
-      "GUID": "1003b5",
+      "GUID": "1003b6",
       "Name": "Bag",
       "Transform": {
         "posX": -72,
@@ -63146,79 +63206,11 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1003af",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -72,
-            "posY": 1.5,
-            "posZ": 16,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "D.U.D.S Backpack",
-          "Description": "Deployable Unital Defense System\n[Support] Slot: Backpack\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.3,
-            "g": 0.62,
-            "b": 0.36
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "Tags": [
-            "module-backpack"
-          ],
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 1,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.2,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0.1
-            },
-            "CastShadows": true
-          }
-        },
-        {
           "GUID": "1003b0",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 1.9,
+            "posY": 1.5,
             "posZ": 16,
             "rotX": 0,
             "rotY": 0,
@@ -63286,7 +63278,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 2.3,
+            "posY": 1.9,
             "posZ": 16,
             "rotX": 0,
             "rotY": 0,
@@ -63354,7 +63346,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 2.7,
+            "posY": 2.3,
             "posZ": 16,
             "rotX": 0,
             "rotY": 0,
@@ -63422,7 +63414,7 @@
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
-            "posY": 3.1,
+            "posY": 2.7,
             "posZ": 16,
             "rotX": 0,
             "rotY": 0,
@@ -63487,6 +63479,74 @@
         },
         {
           "GUID": "1003b4",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -72,
+            "posY": 3.1,
+            "posZ": 16,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "D.U.D.S Backpack",
+          "Description": "Deployable Unital Defense System\n[Support] Slot: Backpack\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 0.3,
+            "g": 0.62,
+            "b": 0.36
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "Tags": [
+            "module-backpack"
+          ],
+          "CustomMesh": {
+            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-backpack-rev133.obj",
+            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/module-texture-rev133.png",
+            "NormalURL": "",
+            "ColliderURL": "",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "SpecularIntensity": 0.2,
+              "SpecularSharpness": 3,
+              "FresnelStrength": 0.1
+            },
+            "CastShadows": true
+          }
+        },
+        {
+          "GUID": "1003b5",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -72,
@@ -63556,7 +63616,7 @@
       ]
     },
     {
-      "GUID": "1003bc",
+      "GUID": "1003bd",
       "Name": "Bag",
       "Transform": {
         "posX": -78,
@@ -63601,7 +63661,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1003b6",
+          "GUID": "1003b7",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
@@ -63669,7 +63729,7 @@
           }
         },
         {
-          "GUID": "1003b7",
+          "GUID": "1003b8",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
@@ -63737,7 +63797,7 @@
           }
         },
         {
-          "GUID": "1003b8",
+          "GUID": "1003b9",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
@@ -63805,7 +63865,7 @@
           }
         },
         {
-          "GUID": "1003b9",
+          "GUID": "1003ba",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
@@ -63873,7 +63933,7 @@
           }
         },
         {
-          "GUID": "1003ba",
+          "GUID": "1003bb",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
@@ -63941,7 +64001,7 @@
           }
         },
         {
-          "GUID": "1003bb",
+          "GUID": "1003bc",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -78,
@@ -64011,7 +64071,7 @@
       ]
     },
     {
-      "GUID": "1003c3",
+      "GUID": "1003c4",
       "Name": "Bag",
       "Transform": {
         "posX": -84,
@@ -64056,7 +64116,7 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "1003bd",
+          "GUID": "1003be",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
@@ -64124,7 +64184,7 @@
           }
         },
         {
-          "GUID": "1003be",
+          "GUID": "1003bf",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
@@ -64192,7 +64252,7 @@
           }
         },
         {
-          "GUID": "1003bf",
+          "GUID": "1003c0",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
@@ -64260,7 +64320,7 @@
           }
         },
         {
-          "GUID": "1003c0",
+          "GUID": "1003c1",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
@@ -64328,7 +64388,7 @@
           }
         },
         {
-          "GUID": "1003c1",
+          "GUID": "1003c2",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
@@ -64396,7 +64456,7 @@
           }
         },
         {
-          "GUID": "1003c2",
+          "GUID": "1003c3",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -84,
