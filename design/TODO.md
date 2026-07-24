@@ -281,7 +281,7 @@
 - [x] **Change each player's starting soldier formations.** — Arranged both starting Squads for every player as separate compact five-soldier plus formations instead of lines.
 - [x] **Make setup pieces truly immovable after locking.** — LOCK now applies TTS object locking to every targeted planet tile or number token; UNLOCK releases the pieces again, and the state persists across saves.
 - [x] **Consolidate all Separatist rules in the rulebook.** — Made the dedicated Separatists section authoritative for spawning, Phase 7 behavior, combat, and base conquest; replaced duplicate procedures elsewhere with timing summaries and cross-references.
-- [ ] **Verify Separatist targeting behavior.** Decide and document whether Separatists seek BAC containers as well as resources, or resources only; keep the rulebook, game data, and TTS behavior consistent.
+- [x] **Verify Separatist targeting behavior.** — Confirmed that Separatists target resource-producing hexes only. BAC cards and cargo containers do not attract them; aligned the rulebook, game data, and TTS manual-play notes.
 - [ ] **Clarify the base range of an unequipped soldier.** Explicitly state a soldier's initial attack range when they have no equipment.
 - [ ] **Consolidate the rule that fighting is optional.** Remove repeated instances from the rulebook and rephrase the single authoritative statement that remains.
 - [ ] **Add a large locked dice tray east of the Blue and Yellow player areas.** Provide a dedicated enclosed area where players can throw dice, and lock the tray so it cannot move.

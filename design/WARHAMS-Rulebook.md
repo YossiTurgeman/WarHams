@@ -994,6 +994,8 @@ Resolve Separatists one at a time. Each may move up to **3 hexes**, following th
 2. If one or more qualify, choose the hex containing the **most resource tokens**. The active player breaks ties.
 3. If none qualify, choose the **nearest resource-producing hex**, even if it is empty. The active player breaks ties. Move up to 3 hexes toward it; continue on a later turn if it is farther away.
 
+**BAC cards and cargo containers are not resources and are never movement targets.** A Spaceport Drop Zone does not attract Separatists merely because it contains a cargo container or BAC delivery.
+
 A Separatist already on its chosen target moves 0 hexes. Each adjacent step counts as 1 hex. Finish moving every Separatist before beginning Step 4.
 
 > **Tip:** A producing hex with many tokens attracts every Separatist that selects it under this priority. Clearing valuable piles near your forces can redirect the swarm.

@@ -69,6 +69,6 @@ This mod is designed for **manual play** — no automation. Players handle:
 - Resolving combat (dice assignment, damage, death)
 - Drawing/playing cards from hand
 - Tracking DP (use the notecard or TTS's built-in counters)
-- Moving Separatists (Phase 7)
+- Moving Separatists (Phase 7) toward resource-producing hexes; BAC cards and cargo containers are not targets
 
 Refer to the rulebook (`design/WARHAMS-Rulebook.pdf`) for complete rules.
