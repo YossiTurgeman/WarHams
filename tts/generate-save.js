@@ -1093,7 +1093,7 @@ for (let i = 0; i < 3; i++) HEX_MANIFEST.push({ kind: "radar",   url: HEX_TEX("r
 for (let i = 0; i < 3; i++) HEX_MANIFEST.push({ kind: "city",    url: HEX_TEX("city"),    label: "City / Village" });
 for (const n of [2, 4, 6])         HEX_MANIFEST.push({ kind: `separatist_${n}`, url: HEX_TEX(`separatist_${n}`), label: `Separatist Base (${n})` });
 for (const n of [1, 2, 3, 4, 5, 6]) HEX_MANIFEST.push({ kind: `spaceport_${n}`,  url: HEX_TEX(`spaceport_${n}`),  label: `Spaceport Drop Zone (${n})` });
-for (let i = 0; i < 37; i++) HEX_MANIFEST.push({ kind: "terrain", url: HEX_TEX("terrain"), label: "Terrain Hex" });
+for (let i = 0; i < 37; i++) HEX_MANIFEST.push({ kind: "terrain", url: HEX_TEX("terrain_autumn"), label: "Terrain Hex" });
 if (HEX_MANIFEST.length !== 61) throw new Error("hex manifest count: " + HEX_MANIFEST.length);
 
 // Deterministic Fisher-Yates so the planet layout is reproducible.

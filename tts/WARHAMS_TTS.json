@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1784905958,
+  "EpochTime": 1784906190,
   "Date": "2026-07-24",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -51525,7 +51525,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -51706,7 +51706,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -52069,7 +52069,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -52129,7 +52129,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -52189,7 +52189,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -52310,7 +52310,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -52370,7 +52370,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -52430,7 +52430,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -52490,7 +52490,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -52611,7 +52611,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -52732,7 +52732,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -52792,7 +52792,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -52852,7 +52852,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -52912,7 +52912,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -52972,7 +52972,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -53032,7 +53032,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -53092,7 +53092,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -53152,7 +53152,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -53212,7 +53212,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -53272,7 +53272,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -53453,7 +53453,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -53818,7 +53818,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -53878,7 +53878,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -53998,7 +53998,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -54058,7 +54058,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -54118,7 +54118,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -54238,7 +54238,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -54419,7 +54419,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -54540,7 +54540,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -54660,7 +54660,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -54720,7 +54720,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -54780,7 +54780,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -54840,7 +54840,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -54900,7 +54900,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -54960,7 +54960,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -55080,7 +55080,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -55140,7 +55140,7 @@
         "planet-hex"
       ],
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_terrain_autumn.png",
         "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/hex_back_earth.png",
         "ImageScalar": 1,
         "WidthScale": 0,
