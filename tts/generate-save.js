@@ -526,16 +526,29 @@ playerColors.forEach((pc, idx) => {
         "B1", "B2", "B3", "B4", "B5",
     ]);
 
-    // 2-row × 5-column grid: squad A nearer center, squad B nearer corner.
-    // 5 columns at 3.5u pitch span 14u total per row.
-    const colSides = [-7, -3.5, 0, 3.5, 7];
-    const rowTcs   = { A: 8, B: 4.5 };  // squad A toward center, B toward corner
+    // Two separate five-pip / plus formations. Squads sit side-by-side
+    // toward the center, with soldier 1 in the middle and soldiers 2-5
+    // on the four cardinal points. The cornerSpot helper mirrors the
+    // layout consistently for all four player corners.
+    const STARTING_SQUAD_CENTERS = {
+        A: { tc: 7, side: -4 },
+        B: { tc: 7, side:  4 },
+    };
+    const PLUS_OFFSETS = [
+        { tc:  0,   side:  0 },   // 1: center
+        { tc:  2.2, side:  0 },   // 2: toward table center
+        { tc:  0,   side:  2.2 }, // 3: right
+        { tc: -2.2, side:  0 },   // 4: toward table edge
+        { tc:  0,   side: -2.2 }, // 5: left
+    ];
 
     for (const letter of SQUAD_LETTERS) {           // A, B, C, D
         for (let n = 1; n <= 7; n++) {
             const id = `${letter}${n}`;
             if (!PRE_DEPLOY.has(id)) continue;
-            const sp = cornerSpot(idx, rowTcs[letter], colSides[n - 1]);
+            const center = STARTING_SQUAD_CENTERS[letter];
+            const offset = PLUS_OFFSETS[n - 1];
+            const sp = cornerSpot(idx, center.tc + offset.tc, center.side + offset.side);
             objects.push(makeSoldierStandee(pc, letter, n, sp.x, 1.4, sp.z));
         }
     }
