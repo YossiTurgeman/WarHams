@@ -280,7 +280,7 @@
 - [x] **Change the tree terrain color.** — Kept the original green terrain background and recolored only the tree with orange autumn foliage, clearly separating it from the Green player's pieces.
 - [x] **Change each player's starting soldier formations.** — Arranged both starting Squads for every player as separate compact five-soldier plus formations instead of lines.
 - [x] **Make setup pieces truly immovable after locking.** — LOCK now applies TTS object locking to every targeted planet tile or number token; UNLOCK releases the pieces again, and the state persists across saves.
-- [ ] **Consolidate all Separatist rules in the rulebook.** Unite the rules currently spread across different sections into one authoritative place, using cross-references elsewhere as needed.
+- [x] **Consolidate all Separatist rules in the rulebook.** — Made the dedicated Separatists section authoritative for spawning, Phase 7 behavior, combat, and base conquest; replaced duplicate procedures elsewhere with timing summaries and cross-references.
 - [ ] **Verify Separatist targeting behavior.** Decide and document whether Separatists seek BAC containers as well as resources, or resources only; keep the rulebook, game data, and TTS behavior consistent.
 - [ ] **Clarify the base range of an unequipped soldier.** Explicitly state a soldier's initial attack range when they have no equipment.
 - [ ] **Consolidate the rule that fighting is optional.** Remove repeated instances from the rulebook and rephrase the single authoritative statement that remains.
