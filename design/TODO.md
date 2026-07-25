@@ -283,7 +283,7 @@
 - [x] **Consolidate all Separatist rules in the rulebook.** — Made **Phase 7: Separatists** the single authoritative location for components, spawning, behavior, combat, and base conquest, eliminating the need to jump to a separate section.
 - [x] **Verify Separatist targeting behavior.** — Confirmed that Separatists target resource-producing hexes only. BAC cards and cargo containers do not attract them; aligned the rulebook, game data, and TTS manual-play notes.
 - [x] **Clarify the base range of an unequipped soldier.** — Empty Hands has range 1 (same or adjacent hex) and rolls 1d6 normally. A Hands-slot weapon has range 2 unless its rule states otherwise.
-- [ ] **Consolidate the rule that fighting is optional.** Remove repeated instances from the rulebook and rephrase the single authoritative statement that remains.
+- [x] **Consolidate the rule that fighting is optional.** — Phase 3 now states the choice once, per Squad: declare combat, Conspire instead, or do nothing. Separatist combat during Phase 7 remains mandatory.
 - [ ] **Add a large locked dice tray east of the Blue and Yellow player areas.** Provide a dedicated enclosed area where players can throw dice, and lock the tray so it cannot move.
 - [ ] **Increase dice sizes.** Make the player-colored dice twice their current size, then make the 3 main resource dice twice as large as the resized player dice.
 - [ ] **Consider compensation for heavy battle losses.** Explore and balance a comeback benefit for a player who loses soldiers in battle and/or suffers more than 3 wounds, without making intentional losses exploitable.

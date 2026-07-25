@@ -264,7 +264,7 @@ Hexes containing both your soldiers AND an enemy's are **contested** — no flag
 
 ### Phase 3: Combat
 
-If any enemy units — whether belonging to other players or Separatist forces — are within the **combat range** of at least one active soldier, the active player **may** declare combat. Declaring combat during Phase 3 is optional; Separatist combats triggered during Phase 7 are mandatory (see **Phase 7: Separatists — Combat Rules**). Only soldiers with an enemy in their combat range are **engaged** and participate.
+Combat is optional for each of the active player's Squads during Phase 3. A Squad with an enemy unit — whether belonging to another player or Separatist forces — within the **combat range** of at least one active soldier may **declare combat**, **Conspire instead** (draw 3 Conspire Cards and keep 1), or **do nothing**. Separatist combats triggered during Phase 7 are mandatory (see **Phase 7: Separatists — Combat Rules**). Only soldiers with an enemy in their combat range are **engaged** and participate.
 
 To declare combat:
 
@@ -273,8 +273,6 @@ To declare combat:
 3. Resolve combat according to the full **Combat** section below.
 
 **Multiple Combats** — If the active player has multiple Squads engaged with different enemy forces, each may declare a separate combat. Resolve combats one at a time, in the order chosen by the active player.
-
-**Alternative: Conspire** — Instead of declaring combat with a Squad, the active player may forfeit that Squad's attack to **Conspire** (draw 3 Conspire Cards, keep 1). The choice is made per Squad — some Squads may fight while others Conspire.
 
 > **Note:** Only the active player may initiate combat during this phase. Defending players respond as part of combat resolution but do not initiate attacks of their own.
 
