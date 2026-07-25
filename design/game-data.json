@@ -187,7 +187,7 @@
     {
       "abbr": "H.C.A.R", "name": "Heavy Caliber Assault Rifle", "category": "Weapons", "slot": "Hands",
       "cost": { "Industry": 1, "Oil": 1 }, "dp": 2, "copies": 5,
-      "text": "Add +1 to this soldier's attack die."
+      "text": "Range: 2 hexes. Add +1 to this soldier's attack die."
     },
     {
       "abbr": "P.A.E.H", "name": "Personal Accuracy Enhancement Helmet", "category": "Tech", "slot": "Head",
@@ -197,7 +197,7 @@
     {
       "abbr": "B.A.S.R", "name": "Bolt Action Sniper Rifle", "category": "Heavy Weapons", "slot": "Hands",
       "cost": { "Oil": 1, "Intelligence": 1, "Industry": 1 }, "dp": 4, "copies": 5,
-      "text": "Pre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die."
+      "text": "Range: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die."
     },
     {
       "abbr": "S.L.I.M.E", "name": "Squad Light Interoperable Mortar Encampment", "category": "Heavy Weapons", "slot": "Backpack",
@@ -233,12 +233,12 @@
     {
       "abbr": "R.S.G", "name": "Repeating Shotgun", "category": "Weapons", "slot": "Hands",
       "cost": { "Oil": 1, "Local Favor": 1 }, "dp": 2, "copies": 5,
-      "text": "If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1."
+      "text": "Range: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1."
     },
     {
       "abbr": "P.C.S.M.G", "name": "Projectile Correcting Sub Machine Gun", "category": "Weapons", "slot": "Hands",
       "cost": { "Electricity": 1, "Industry": 1, "Intelligence": 1 }, "dp": 3, "copies": 5,
-      "text": "If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result."
+      "text": "Range: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result."
     },
     {
       "abbr": "C.A.P Chest", "name": "Custom Armor Plating Chest", "category": "Armor", "slot": "Chest",

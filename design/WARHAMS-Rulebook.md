@@ -923,10 +923,10 @@ Modules with active abilities fall into two timing categories:
 | | C.A.P Chest | Custom Armor Plating Chest | Chest | 1 S.A.P Chest + 1 LF, 1 Ind, 1 Oil | 4 | This soldier gets +2 to its defense die |
 | | C.A.P Head | Custom Armor Plating Helmet | Head | 1 S.A.P Head + 1 LF, 1 Int, 1 Oil | 4 | This soldier gets +2 to its defense die |
 | | C.A.P Legs | Custom Armor Plating Legs | Legs | 1 S.A.P Legs + 1 LF, 1 Elec, 1 Oil | 4 | This soldier gets +2 to its defense die |
-| **🔫 Weapons** | H.C.A.R | Heavy Caliber Assault Rifle | Hands | 1 Ind, 1 Oil | 2 | +1 attack die |
-| | R.S.G | Repeating Shotgun | Hands | 1 Oil, 1 LF | 2 | Within 1 hex: +2 attack. Beyond 1 hex: −1 attack |
-| | P.C.S.M.G | Projectile Correcting Sub Machine Gun | Hands | 1 Elec, 1 Ind, 1 Int | 3 | Within 1 hex: roll 3d6 pick highest |
-| **💣 Heavy** | B.A.S.R | Bolt Action Sniper Rifle | Hands | 1 Oil, 1 Int, 1 Ind | 4 | Pre-combat: 2d6 pick higher, target 1 soldier up to 2 hexes. Sniper skips combat. Both get −1 defense |
+| **🔫 Weapons** | H.C.A.R | Heavy Caliber Assault Rifle | Hands | 1 Ind, 1 Oil | 2 | **Range 2.** +1 attack die |
+| | R.S.G | Repeating Shotgun | Hands | 1 Oil, 1 LF | 2 | **Range 2.** Within 1 hex: +2 attack. Beyond 1 hex: −1 attack |
+| | P.C.S.M.G | Projectile Correcting Sub Machine Gun | Hands | 1 Elec, 1 Ind, 1 Int | 3 | **Range 2.** Within 1 hex: roll 3d6 pick highest |
+| **💣 Heavy** | B.A.S.R | Bolt Action Sniper Rifle | Hands | 1 Oil, 1 Int, 1 Ind | 4 | **Range 2.** Pre-combat: 2d6 pick higher, target 1 soldier in range. Sniper skips combat. Both get −1 defense |
 | | S.L.I.M.E | Squad Light Interoperable Mortar Encampment | Backpack | 1 Ind, 2 Oil, 2 LF | 5 | 2-soldier crew. 4d6 normal matchups, target squad up to 3 hexes. Crew skips combat. −1 defense. Civilian Damage Rule |
 | **🔧 Support** | P.L.A.S.T.E.R | Personal Lasting Aid Surgical Treatment Enhancement Robot | Chest | 1 Elec, 1 LF | 2 | Heal up to 2 damage on any soldier same hex. **Tap**. Recharge: 1 Elec |
 | | B.E.A.R | Battlefield Extraction Airlift Rover | Chest | 1 Oil, 1 Ind, 1 Elec | 3 | +1 extra resource from same hex during Phase 4 |

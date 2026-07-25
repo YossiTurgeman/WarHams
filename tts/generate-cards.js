@@ -7,7 +7,7 @@
  * Output: tts/cards/bac_*.png, tts/cards/conspire_*.png
  */
 
-const { Jimp, loadFont } = require("jimp");
+const { Jimp, loadFont, measureTextHeight } = require("jimp");
 const path = require("path");
 const fs = require("fs");
 
@@ -98,8 +98,9 @@ async function main() {
 
         // Cost
         const costStr = typeof bac.cost === "string" ? bac.cost : Object.entries(bac.cost).map(([k, v]) => `${v} ${k}`).join(", ");
-        img.print({ font: fontBody, x: pad, y, text: `Cost: ${costStr}`, maxWidth: textW });
-        y += 90;
+        const costText = `Cost: ${costStr}`;
+        img.print({ font: fontBody, x: pad, y, text: costText, maxWidth: textW });
+        y += Math.max(90, measureTextHeight(fontBody, costText, textW) + 30);
 
         // Divider
         fillRect(img, pad, y, textW, 4, { r: 0xDD, g: 0xBB, b: 0x55 });

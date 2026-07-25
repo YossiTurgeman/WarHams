@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1784961086,
+  "EpochTime": 1784999393,
   "Date": "2026-07-25",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -2621,7 +2621,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nAdd +1 to this soldier's attack die.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -2679,7 +2679,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nAdd +1 to this soldier's attack die.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -2737,7 +2737,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nAdd +1 to this soldier's attack die.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -2795,7 +2795,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nAdd +1 to this soldier's attack die.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -2853,7 +2853,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nAdd +1 to this soldier's attack die.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3201,7 +3201,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.A.S.R",
-          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3259,7 +3259,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.A.S.R",
-          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3317,7 +3317,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.A.S.R",
-          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3375,7 +3375,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.A.S.R",
-          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3433,7 +3433,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.A.S.R",
-          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5231,7 +5231,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5289,7 +5289,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5347,7 +5347,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5405,7 +5405,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5463,7 +5463,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5521,7 +5521,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5579,7 +5579,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5637,7 +5637,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5695,7 +5695,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5753,7 +5753,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59080,7 +59080,7 @@
         "scaleZ": 1
       },
       "Nickname": "H.C.A.R Hands (×6)",
-      "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
+      "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nRange: 2 hexes. Add +1 to this soldier's attack die.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -59125,7 +59125,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R Hands",
-          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
+          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59193,7 +59193,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R Hands",
-          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
+          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59261,7 +59261,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R Hands",
-          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
+          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59329,7 +59329,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R Hands",
-          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
+          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59397,7 +59397,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R Hands",
-          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
+          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59465,7 +59465,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R Hands",
-          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nAdd +1 to this soldier's attack die.",
+          "Description": "Heavy Caliber Assault Rifle\n[Weapons] Slot: Hands\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59535,7 +59535,7 @@
         "scaleZ": 1
       },
       "Nickname": "B.A.S.R Hands (×6)",
-      "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
+      "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -59580,7 +59580,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.A.S.R Hands",
-          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59648,7 +59648,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.A.S.R Hands",
-          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59716,7 +59716,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.A.S.R Hands",
-          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59784,7 +59784,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.A.S.R Hands",
-          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59852,7 +59852,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.A.S.R Hands",
-          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59920,7 +59920,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.A.S.R Hands",
-          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nPre-combat: roll 2d6 (pick higher), target 1 soldier up to 2 hexes away. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Description": "Bolt Action Sniper Rifle\n[Heavy Weapons] Slot: Hands\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -59990,7 +59990,7 @@
         "scaleZ": 1
       },
       "Nickname": "R.S.G Hands (×6)",
-      "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
+      "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -60035,7 +60035,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G Hands",
-          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60103,7 +60103,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G Hands",
-          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60171,7 +60171,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G Hands",
-          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60239,7 +60239,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G Hands",
-          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60307,7 +60307,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G Hands",
-          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60375,7 +60375,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G Hands",
-          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "Repeating Shotgun\n[Weapons] Slot: Hands\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60445,7 +60445,7 @@
         "scaleZ": 1
       },
       "Nickname": "P.C.S.M.G Hands (×6)",
-      "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
+      "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's hands magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -60490,7 +60490,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G Hands",
-          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60558,7 +60558,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G Hands",
-          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60626,7 +60626,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G Hands",
-          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60694,7 +60694,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G Hands",
-          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60762,7 +60762,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G Hands",
-          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -60830,7 +60830,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G Hands",
-          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nIf target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "Projectile Correcting Sub Machine Gun\n[Weapons] Slot: Hands\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
