@@ -110,7 +110,7 @@
   "turn_phases": [
     { "phase": 1, "name": "Resource Production", "description": "Roll 2d6 + 1 Separatist Die (grey). All 3 dice produce resources. At a matching unconquered base, the Separatist Die spawns 3 Separatists; at a matching conquered base, its controller immediately gains 1 Local Favor. Doubles = BAC from Planet Bound Area to matching spaceport. Triples = active player chooses spaceport placement + may move 1 Planet Bound BAC." },
     { "phase": 2, "name": "Movement", "description": "Move squads 1 hex (2 with Jump Jets). Each soldier moves independently but must stay within 2 hexes of at least one squadmate (squad coherency). Skip movement to Conspire instead." },
-    { "phase": 3, "name": "Combat", "description": "Initiate combat with enemies within 1-2 hexes. See combat system." },
+    { "phase": 3, "name": "Combat", "description": "Initiate combat with enemies up to 2 hexes away. Unequipped soldiers have this full base range and roll 1d6 normally. See combat system." },
     { "phase": 4, "name": "Resource Gathering", "description": "Active player collects resources from same/adjacent hex. If combat occurred, defending player(s) also collect. Winner picks first, then loser. If no combat, only active player collects. BEAR card allows +1 pickup." },
     { "phase": 5, "name": "Purchase & Equip", "description": "Buy upgrades with resources. Each squad can hold X armaments where X = number of soldiers." },
     { "phase": 6, "name": "Trade", "description": "Trade resources with other players (two-sided only, no gifting). Bank trade: 3:1 ratio (return 3 of one type, take 1 of any other). At end of turn, discard Conspire cards down to 7 if over limit." },
@@ -119,7 +119,7 @@
   "combat_system": {
     "attack_defense_rolls": "Each player rolls 1d6 per engaged soldier (within 2 hexes of enemy). Soldiers outside range sit out. Attacker assigns dice to defender's soldiers. Defender aligns defense dice.",
     "more_soldiers_advantage": "Extra dice are rolled but only best are chosen, giving advantage",
-    "engagement_range": "Only soldiers within 2 hexes of at least one enemy soldier in the target squad participate. S.L.I.M.E (mortar, 3 hex range) counts as engaged from beyond normal range. B.A.S.R (sniper, 2 hex) fires in pre-combat at normal engagement range; range extendable to 4 hexes via L.P.M.",
+    "engagement_range": "Every soldier has a base combat range of 2 hexes and rolls 1d6 even with no equipment. Only soldiers within 2 hexes of at least one enemy soldier in the target squad participate unless equipment explicitly changes their range. S.L.I.M.E (mortar, 3 hex range) counts as engaged from beyond normal range. B.A.S.R (sniper, 2 hex) fires in pre-combat at normal engagement range; range extendable to 4 hexes via L.P.M.",
     "bonuses": "Add equipment bonuses after initial roll",
     "card_play": "Defender plays combat cards first, then attacker",
     "damage_resolution": "Difference in dice = damage pegs inserted into divots on the defending soldier's base. Each base has 3 blood-drop divots; soldier takes 3 damage max, 4th = death.",

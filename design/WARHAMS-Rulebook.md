@@ -498,6 +498,8 @@ Combat is the heart of W.A.R H.A.M.S. When corporations clash over hexes, resour
 
 During **Phase 3** of the active player's turn, they may declare an attack with any of their Squads against an enemy Squad (or Separatist group). This is separate from mandatory Separatist combat during Phase 7 (see **Phase 7: Separatists — Combat Rules**).
 
+> **Base Range — No Equipment Required:** Every H.A.M.S has a base combat range of **2 hexes**, even with nothing equipped in its Hands slot or any other slot. This includes enemies on the **same hex**, an **adjacent hex**, or **2 hexes away**. An unequipped soldier may attack and defend normally, rolls **1d6**, and counts as engaged within that range. Equipment changes this only when its rule explicitly modifies range or dice.
+
 - Each Squad may declare **one attack** per turn.
 - To initiate combat, at least **one** of the attacking Squad's soldiers must be within **2 hexes** of at least **one** soldier in the target Squad.
 - **Engaged soldiers only:** Only soldiers within **2 hexes** of at least one enemy soldier in the target Squad participate in combat and roll dice. Soldiers outside this range **sit out** — they do not roll attack or defense dice.

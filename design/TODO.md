@@ -282,7 +282,7 @@
 - [x] **Make setup pieces truly immovable after locking.** — LOCK now applies TTS object locking to every targeted planet tile or number token; UNLOCK releases the pieces again, and the state persists across saves.
 - [x] **Consolidate all Separatist rules in the rulebook.** — Made **Phase 7: Separatists** the single authoritative location for components, spawning, behavior, combat, and base conquest, eliminating the need to jump to a separate section.
 - [x] **Verify Separatist targeting behavior.** — Confirmed that Separatists target resource-producing hexes only. BAC cards and cargo containers do not attract them; aligned the rulebook, game data, and TTS manual-play notes.
-- [ ] **Clarify the base range of an unequipped soldier.** Explicitly state a soldier's initial attack range when they have no equipment.
+- [x] **Clarify the base range of an unequipped soldier.** — Every H.A.M.S has a 2-hex base combat range and rolls 1d6 normally even with no equipment; equipment changes this only when explicitly stated.
 - [ ] **Consolidate the rule that fighting is optional.** Remove repeated instances from the rulebook and rephrase the single authoritative statement that remains.
 - [ ] **Add a large locked dice tray east of the Blue and Yellow player areas.** Provide a dedicated enclosed area where players can throw dice, and lock the tray so it cannot move.
 - [ ] **Increase dice sizes.** Make the player-colored dice twice their current size, then make the 3 main resource dice twice as large as the resized player dice.
