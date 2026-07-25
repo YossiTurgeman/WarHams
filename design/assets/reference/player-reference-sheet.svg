@@ -55,7 +55,7 @@
     <circle cx="38" cy="156" r="9" fill="#e8b830" opacity="0.9"/>
     <text x="38" y="160" text-anchor="middle" font-size="11" font-weight="800" fill="#0f1118">3</text>
     <text x="54" y="160" font-weight="700" fill="#f0d060">Combat</text>
-    <text x="116" y="160" fill="#a0a8c0">— Attack enemies up to 2 hexes away.</text>
+    <text x="116" y="160" fill="#a0a8c0">— Range 1 empty-handed; normally 2 with a weapon.</text>
 
     <!-- Phase 4 -->
     <circle cx="38" cy="180" r="9" fill="#e8b830" opacity="0.9"/>

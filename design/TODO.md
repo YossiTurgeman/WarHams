@@ -35,7 +35,7 @@
 - [x] **#3 — BAC delivery destination contradicts itself** ✅ FIXED
   - BACs always go to the **Unloading Zone** (stacked under matching container). Container marker placed on board spaceport hex. Collection: squad on spaceport takes all BACs from that slot, removes container. Updated: Setup Step 10, Phase 1 doubles/triples, Phase 5 collection.
 - [x] **#4 — Combat with spread-out squads is undefined** ✅ FIXED
-  - Only **engaged soldiers** (within 2 hexes of at least one enemy soldier in target squad) participate and roll dice. Extended-range weapons (B.A.S.R, S.L.I.M.E) count as engaged from their weapon range. Updated: Phase 3, Initiating Combat, Step 1 dice rolls, quick references, game-data.json.
+  - Only **engaged soldiers** with at least one enemy soldier in their current combat range participate and roll dice. Empty Hands has range 1; Hands-slot weapons normally have range 2; special weapons use their stated range. Updated: Phase 3, Initiating Combat, Step 1 dice rolls, quick references, game-data.json.
 - [x] **#5 — Miniature count: 14 vs 28 per player** ✅ FIXED
   - game-data.json updated to **28 per player × 4 = 112 total**. Start with 10 (2×5), grow to 28 (4×7). Rulebook was already correct.
 - [x] **#6 — Conspire timing contradicts itself** ✅ FIXED
@@ -282,7 +282,7 @@
 - [x] **Make setup pieces truly immovable after locking.** — LOCK now applies TTS object locking to every targeted planet tile or number token; UNLOCK releases the pieces again, and the state persists across saves.
 - [x] **Consolidate all Separatist rules in the rulebook.** — Made **Phase 7: Separatists** the single authoritative location for components, spawning, behavior, combat, and base conquest, eliminating the need to jump to a separate section.
 - [x] **Verify Separatist targeting behavior.** — Confirmed that Separatists target resource-producing hexes only. BAC cards and cargo containers do not attract them; aligned the rulebook, game data, and TTS manual-play notes.
-- [x] **Clarify the base range of an unequipped soldier.** — Every H.A.M.S has a 2-hex base combat range and rolls 1d6 normally even with no equipment; equipment changes this only when explicitly stated.
+- [x] **Clarify the base range of an unequipped soldier.** — Empty Hands has range 1 (same or adjacent hex) and rolls 1d6 normally. A Hands-slot weapon has range 2 unless its rule states otherwise.
 - [ ] **Consolidate the rule that fighting is optional.** Remove repeated instances from the rulebook and rephrase the single authoritative statement that remains.
 - [ ] **Add a large locked dice tray east of the Blue and Yellow player areas.** Provide a dedicated enclosed area where players can throw dice, and lock the tray so it cannot move.
 - [ ] **Increase dice sizes.** Make the player-colored dice twice their current size, then make the 3 main resource dice twice as large as the resized player dice.

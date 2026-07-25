@@ -264,7 +264,7 @@ Hexes containing both your soldiers AND an enemy's are **contested** — no flag
 
 ### Phase 3: Combat
 
-If any enemy units — whether belonging to other players or Separatist forces — are within **2 hexes** of the active player's soldiers, the active player **may** declare combat. Declaring combat during Phase 3 is optional; Separatist combats triggered during Phase 7 are mandatory (see **Phase 7: Separatists — Combat Rules**). Only **engaged** soldiers (within 2 hexes of the target) participate and roll dice.
+If any enemy units — whether belonging to other players or Separatist forces — are within the **combat range** of at least one active soldier, the active player **may** declare combat. Declaring combat during Phase 3 is optional; Separatist combats triggered during Phase 7 are mandatory (see **Phase 7: Separatists — Combat Rules**). Only soldiers with an enemy in their combat range are **engaged** and participate.
 
 To declare combat:
 
@@ -477,7 +477,7 @@ Then a new round begins with the first player.
 |-------|-----------------------|----------------------------------------------------------------------|
 | 1     | Resource Production   | Roll 3d6, spawn resources on matching hexes. Doubles/triples = BAC drops at spaceports |
 | 2     | Movement              | Move each soldier up to 1 hex (2 with J.J). Alternatively, Conspire instead of moving a Squad |
-| 3     | Combat                | Declare attacks against enemies within 2 hexes. Only engaged soldiers (within 2 hexes of target) roll dice |
+| 3     | Combat                | Declare attacks against enemies in range. Empty Hands: 1 hex; standard Hands weapon: 2 hexes. Only engaged soldiers roll |
 | 4     | Salvage & Resource Gathering | Salvage modules from current hex first, then collect resource tokens. Priority: winner → loser → active player (if no combat) |
 | 5     | Purchase & Equip      | Spend resource tokens to buy and equip BACs, recruit soldiers, or create new Squads |
 | 6     | Trade                 | Trade resource tokens freely with other players by mutual agreement   |
@@ -498,11 +498,11 @@ Combat is the heart of W.A.R H.A.M.S. When corporations clash over hexes, resour
 
 During **Phase 3** of the active player's turn, they may declare an attack with any of their Squads against an enemy Squad (or Separatist group). This is separate from mandatory Separatist combat during Phase 7 (see **Phase 7: Separatists — Combat Rules**).
 
-> **Base Range — No Equipment Required:** Every H.A.M.S has a base combat range of **2 hexes**, even with nothing equipped in its Hands slot or any other slot. This includes enemies on the **same hex**, an **adjacent hex**, or **2 hexes away**. An unequipped soldier may attack and defend normally, rolls **1d6**, and counts as engaged within that range. Equipment changes this only when its rule explicitly modifies range or dice.
+> **Starting Range — Empty Hands:** A H.A.M.S with no weapon equipped in its Hands slot has a combat range of **1 hex**: it can fight enemies on the **same hex** or an **adjacent hex**. It attacks and defends normally and rolls **1d6**. Equipping a Hands-slot weapon increases its range to **2 hexes** unless that weapon explicitly states another range. Equipment in other slots does not increase the empty-Hands range.
 
 - Each Squad may declare **one attack** per turn.
-- To initiate combat, at least **one** of the attacking Squad's soldiers must be within **2 hexes** of at least **one** soldier in the target Squad.
-- **Engaged soldiers only:** Only soldiers within **2 hexes** of at least one enemy soldier in the target Squad participate in combat and roll dice. Soldiers outside this range **sit out** — they do not roll attack or defense dice.
+- To initiate combat, at least **one** soldier in the attacking Squad must have at least one soldier in the target Squad within their combat range.
+- **Engaged soldiers only:** A soldier participates and rolls dice only when at least one enemy soldier in the target Squad is within that soldier's combat range. Soldiers without an enemy in range **sit out** — they do not roll attack or defense dice.
 - **S.L.I.M.E** (mortar) has extended range and may fire from beyond 2 hexes (up to 3 hexes). Mortar crew count as engaged even if outside normal range. **B.A.S.R** (Bolt Action Sniper Rifle) fires at up to 2 hexes in a **pre-combat step** — within normal engagement range, but its range can be extended via **L.P.M** (Laser Pointer Module) (up to 4 hexes). See **Special Weapon Rules** below.
 - Only the **active player** may initiate combat. Defenders respond during combat resolution but do not choose to attack on another player's turn.
 
@@ -518,7 +518,7 @@ Once combat is declared, resolve it by following Steps 1 through 6 in order.
 
 Both players roll simultaneously.
 
-- **Attacker** rolls **1d6 for each engaged H.A.M.S** in the attacking Squad (only soldiers within 2 hexes of the enemy, plus any with extended-range weapons).
+- **Attacker** rolls **1d6 for each engaged H.A.M.S** in the attacking Squad, using each soldier's current combat range.
 - **Defender** rolls **1d6 for each engaged H.A.M.S** in the defending Squad.
 
 **Dice Advantage Rule**
@@ -1138,7 +1138,7 @@ DP come from **equipped BAC cards** — each BAC's DP value counts toward your t
 |:-:|-------|------------|
 | 1 | Resource Production | Roll 3d6, place resource tokens on matching hexes |
 | 2 | Movement | Move each soldier up to 1 hex (or Conspire instead). Squad coherency: stay within 2 hexes of a squadmate |
-| 3 | Combat | Declare attacks against enemies within 2 hexes (only engaged soldiers roll) |
+| 3 | Combat | Attack enemies in range: 1 hex with empty Hands, normally 2 with a Hands weapon. Only engaged soldiers roll |
 | 4 | Resource Gathering | Collect tokens from occupied/adjacent hexes. Priority: winner → loser → active player (if no combat) |
 | 5 | Purchase & Equip | Buy and equip BACs, recruit soldiers, create Squads |
 | 6 | Trade | Trade resource tokens freely with other players |
