@@ -5,9 +5,9 @@
  * Produces a single 2048×2048 PNG containing all 6 faces of the
  * Separatist Die (grey d6). Pip colours encode the rulebook:
  *
- *   • Faces 1, 3, 5  → BLACK pips (no Separatist spawn)
+ *   • Faces 1, 3, 5  → BLACK pips (no Separatist Base result)
  *   • Faces 2, 4, 6  → RED   pips (matches a base's printed number,
- *                              triggers Separatist spawn per Phase 1)
+ *                              triggers its Phase 1 base result)
  *
  * Used as a TTS Custom_Dice (Type 1 = D6) — generate-save.js wires
  * the texture in via CustomImage.ImageURL.

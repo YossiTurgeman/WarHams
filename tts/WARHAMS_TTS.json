@@ -1,7 +1,7 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1784906760,
-  "Date": "2026-07-24",
+  "EpochTime": 1784961086,
+  "Date": "2026-07-25",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
   "GameType": "",
@@ -11921,7 +11921,7 @@
         "scaleZ": 1
       },
       "Nickname": "Separatist Die",
-      "Description": "Grey d6 — RED pips on 2, 4, 6 trigger Separatist spawning at the matching base. Black pips on 1, 3, 5 do not spawn.",
+      "Description": "Grey d6 — RED pips on 2, 4, 6 trigger the matching Separatist Base: spawn 3 at an unconquered base, or its controller gains 1 Local Favor if conquered. The roller does not matter.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,

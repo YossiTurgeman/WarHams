@@ -91,7 +91,7 @@ Resources are the lifeblood of your campaign. Each type is produced by its corre
 ### 🎲 Dice
 
 - **13 six-sided dice (d6)** — used for combat, resource production, and event resolution.
-- **1 Separatist Die (d6)** — a distinct-colored d6 (grey) used as one of the 3 resource dice during Phase 1. Only this die triggers Separatist spawning.
+- **1 Separatist Die (d6)** — a distinct-colored d6 (grey) used as one of the 3 resource dice during Phase 1. Only this die triggers Separatist Base results: spawning at unconquered bases or Local Favor from conquered bases.
 
 ### 🧍 Miniatures
 
@@ -212,7 +212,7 @@ The active player rolls **2d6 + 1 Separatist Die** (a grey d6). All three dice p
 >
 > **Example (Doubles):** You roll 3, 3, and the Separatist Die shows 5. Every hex with a "3" token receives 1 resource token (not 2 — duplicates don't double production), and every hex with a "5" token receives 1 resource token. The doubled 3s also trigger a BAC delivery (see Doubles below).
 
-**Separatist Spawning** — After producing resources, resolve natural spawning using **Phase 7: Separatists — Natural Spawning**. Only the grey Separatist Die can trigger a spawn. Newly spawned forces remain at their base until Phase 7.
+**Separatist Base Result** — After producing resources, resolve the grey Separatist Die using **Phase 7: Separatists — Base Results**. A matching unconquered base spawns Separatists; a matching conquered base instead gives 1 Local Favor directly to its controller. The player who rolled the die does not matter. Newly spawned forces remain at their base until Phase 7.
 
 **Doubles** — If two of the three dice show the same number (e.g., 3, 3, 5):
 
@@ -390,9 +390,14 @@ Separatists are rogue fighting forces loyal to no corporation — remnants of fa
 - The three Separatist Bases have **2, 4, and 6 printed on their tiles**. They never receive Number Tokens.
 - Whenever a rule would spawn more Separatists than remain in the supply, spawn as many as possible. Any excess spawn is lost.
 
-#### Natural Spawning (Phase 1)
+#### Separatist Base Results (Phase 1)
 
-During Phase 1, only the **grey Separatist Die** can trigger natural spawning. If it shows the printed number of an **unconquered** Separatist Base, spawn **3 Separatists** on that base. The other two resource dice never trigger spawning.
+During Phase 1, compare the **grey Separatist Die** with the printed number on each Separatist Base:
+
+- **Unconquered matching base:** Spawn **3 Separatists** on that base.
+- **Conquered matching base:** Its controlling player immediately gains **1 Local Favor** from the supply instead. This happens regardless of which player rolled the die and does not require all three bases to be conquered.
+
+The other two resource dice never trigger either result.
 
 Spawned Separatists remain on the base. Do not consume resources, move them, or resolve their combat until Phase 7. A conquered base no longer spawns naturally.
 
@@ -445,7 +450,7 @@ Resolve mandatory combat on every hex shared by Separatists and player soldiers.
 - Surviving defenders become roaming Separatists and follow the Phase 7 procedure.
 - Conquered bases **stop spawning naturally** (their printed number no longer triggers spawns).
 - The controller gains the **Instigate Uprising** ability described in Step 1.
-- Once **all 3 bases** have been conquered, each conquered base produces 1 Local Favor whenever its printed number is rolled.
+- Whenever the Separatist Die matches a conquered base's printed number, that base's controller immediately gains **1 Local Favor**, regardless of who rolled the die.
 
 > ⚠️ **Warning:** Don't attack a base unless you can handle all 7 defenders! Survivors scatter toward resource hexes.
 
