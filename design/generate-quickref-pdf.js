@@ -43,7 +43,7 @@ line("3. Combat — within 2 hexes");
 line("4. Resource Gathering");
 line("5. Purchase & Equip");
 line("6. Trade (bank 3:1)");
-line("7. Move Separatists");
+line("7. Separatists");
 
 section("COMBAT SEQUENCE");
 line("Pre → 1. Roll → 2. Assign → 3. Equipment Bonus");

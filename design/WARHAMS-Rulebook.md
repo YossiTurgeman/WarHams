@@ -212,7 +212,7 @@ The active player rolls **2d6 + 1 Separatist Die** (a grey d6). All three dice p
 >
 > **Example (Doubles):** You roll 3, 3, and the Separatist Die shows 5. Every hex with a "3" token receives 1 resource token (not 2 — duplicates don't double production), and every hex with a "5" token receives 1 resource token. The doubled 3s also trigger a BAC delivery (see Doubles below).
 
-**Separatist Spawning** — After producing resources, resolve natural spawning using **Separatists — Spawning**. Only the grey Separatist Die can trigger a spawn. Newly spawned forces remain at their base until Phase 7.
+**Separatist Spawning** — After producing resources, resolve natural spawning using **Phase 7: Separatists — Natural Spawning**. Only the grey Separatist Die can trigger a spawn. Newly spawned forces remain at their base until Phase 7.
 
 **Doubles** — If two of the three dice show the same number (e.g., 3, 3, 5):
 
@@ -264,7 +264,7 @@ Hexes containing both your soldiers AND an enemy's are **contested** — no flag
 
 ### Phase 3: Combat
 
-If any enemy units — whether belonging to other players or Separatist forces — are within **2 hexes** of the active player's soldiers, the active player **may** declare combat. Declaring combat during Phase 3 is optional; Separatist combats triggered during Phase 7 are mandatory (see **Separatists — Combat Rules**). Only **engaged** soldiers (within 2 hexes of the target) participate and roll dice.
+If any enemy units — whether belonging to other players or Separatist forces — are within **2 hexes** of the active player's soldiers, the active player **may** declare combat. Declaring combat during Phase 3 is optional; Separatist combats triggered during Phase 7 are mandatory (see **Phase 7: Separatists — Combat Rules**). Only **engaged** soldiers (within 2 hexes of the target) participate and roll dice.
 
 To declare combat:
 
@@ -378,11 +378,76 @@ The active player may trade resource tokens freely with any other player. Both p
 
 ---
 
-### Phase 7: Move Separatists
+<div style="page-break-before: always;"></div>
 
-Resolve the complete four-step procedure in **Separatists — Phase 7 Procedure**. That section is the sole authority for Separatist behavior; this phase has no separate movement rules.
+### Phase 7: Separatists
 
-The active player processes **all Separatists** on the board, including forces spawned during Phase 1 or by an uprising this phase: **Instigate Uprising → Consume → Move → Resolve Combats**.
+Separatists are rogue fighting forces loyal to no corporation — remnants of failed colonial garrisons, opportunistic raiders, and alien sympathizers who resist all outside control. This phase contains all rules for their components, spawning, behavior, combat, and bases.
+
+#### Components & Bases
+
+- The game has **24 grey Separatist miniatures**, shared by roaming forces, base defenders, and militia.
+- The three Separatist Bases have **2, 4, and 6 printed on their tiles**. They never receive Number Tokens.
+- Whenever a rule would spawn more Separatists than remain in the supply, spawn as many as possible. Any excess spawn is lost.
+
+#### Natural Spawning (Phase 1)
+
+During Phase 1, only the **grey Separatist Die** can trigger natural spawning. If it shows the printed number of an **unconquered** Separatist Base, spawn **3 Separatists** on that base. The other two resource dice never trigger spawning.
+
+Spawned Separatists remain on the base. Do not consume resources, move them, or resolve their combat until Phase 7. A conquered base no longer spawns naturally.
+
+#### Phase 7 Procedure
+
+The active player resolves all four steps below for **every Separatist on the board**, regardless of territory. This includes Separatists spawned during the current turn's Phase 1 and those spawned by Instigate Uprising.
+
+**Step 1 — Instigate Uprising**
+
+Each player who controls a conquered Separatist Base may pay **3 Local Favor** to spawn **3 Separatists** at any one unconquered base. This ability may be used **once per round per conquered base** that player controls. Spawned forces stay at the target base until Step 3.
+
+**Step 2 — Consume**
+
+Every Separatist occupying a hex with one or more resource tokens removes **1 token** from that hex. Return removed tokens to the supply and resolve all consumption simultaneously.
+
+**Step 3 — Move**
+
+Resolve Separatists one at a time. Each may move up to **3 hexes**, following this priority:
+
+1. Look within 3 hexes for any **resource-producing hex** (Oil Rig, Power Plant, Factory, Radar Dish, or City/Village) containing at least 1 resource token.
+2. If one or more qualify, choose the hex containing the **most resource tokens**. The active player breaks ties.
+3. If none qualify, choose the **nearest resource-producing hex**, even if it is empty. The active player breaks ties. Move up to 3 hexes toward it; continue on a later turn if it is farther away.
+
+**BAC cards and cargo containers are not resources and are never movement targets.** A Spaceport Drop Zone does not attract Separatists merely because it contains a cargo container or BAC delivery.
+
+A Separatist already on its chosen target moves 0 hexes. Each adjacent step counts as 1 hex. Finish moving every Separatist before beginning Step 4.
+
+> **Tip:** A producing hex with many tokens attracts every Separatist that selects it under this priority. Clearing valuable piles near your forces can redirect the swarm.
+
+**Step 4 — Resolve Combats**
+
+Resolve mandatory combat on every hex shared by Separatists and player soldiers. The defending player fights normally; the player to the defender's **left** rolls the Separatist dice. Resolve contested hexes clockwise, starting from the active player.
+
+#### Combat Rules
+
+| Rule | Detail |
+|------|--------|
+| **Rolled By** | The player to the **left** of the player fighting the Separatists rolls every Separatist die |
+| **Roaming Penalty** | Roaming Separatists apply **−1 to all dice**, to a minimum result of 1 |
+| **Base Defenders** | Base defenders roll a full d6 and do **not** apply the roaming −1 penalty |
+| **Hit Points** | Each Separatist has 1 life; any hit kills it immediately |
+| **Player Attacks** | A player may voluntarily attack a Separatist group during Phase 3 under the normal engagement rules |
+| **Mandatory Combat** | Combat is mandatory after Separatists enter a player's hex during Phase 7 |
+| **Blocking** | A player must defeat Separatists before moving through their hex or collecting resources there |
+
+#### Conquering Bases
+
+- The first attack against an unconquered base triggers **7 base defenders**. They are dug in and roll full d6 without the roaming penalty.
+- Defeat all 7 defenders to conquer the base, then place your Control Flag on its hex.
+- Surviving defenders become roaming Separatists and follow the Phase 7 procedure.
+- Conquered bases **stop spawning naturally** (their printed number no longer triggers spawns).
+- The controller gains the **Instigate Uprising** ability described in Step 1.
+- Once **all 3 bases** have been conquered, each conquered base produces 1 Local Favor whenever its printed number is rolled.
+
+> ⚠️ **Warning:** Don't attack a base unless you can handle all 7 defenders! Survivors scatter toward resource hexes.
 
 ---
 
@@ -411,7 +476,7 @@ Then a new round begins with the first player.
 | 4     | Salvage & Resource Gathering | Salvage modules from current hex first, then collect resource tokens. Priority: winner → loser → active player (if no combat) |
 | 5     | Purchase & Equip      | Spend resource tokens to buy and equip BACs, recruit soldiers, or create new Squads |
 | 6     | Trade                 | Trade resource tokens freely with other players by mutual agreement   |
-| 7     | Move Separatists      | Follow the authoritative Separatist procedure: uprising → consume → move → combat |
+| 7     | Separatists           | Uprising → consume → move → combat |
 
 ---
 ---
@@ -426,7 +491,7 @@ Combat is the heart of W.A.R H.A.M.S. When corporations clash over hexes, resour
 
 ### Initiating Combat
 
-During **Phase 3** of the active player's turn, they may declare an attack with any of their Squads against an enemy Squad (or Separatist group). This is separate from mandatory Separatist combat during Phase 7 (see **Separatists — Combat Rules**).
+During **Phase 3** of the active player's turn, they may declare an attack with any of their Squads against an enemy Squad (or Separatist group). This is separate from mandatory Separatist combat during Phase 7 (see **Phase 7: Separatists — Combat Rules**).
 
 - Each Squad may declare **one attack** per turn.
 - To initiate combat, at least **one** of the attacking Squad's soldiers must be within **2 hexes** of at least **one** soldier in the target Squad.
@@ -679,7 +744,7 @@ When using area-of-effect weaponry — specifically **S.L.I.M.E** (mortar) or ot
 
 ### 🏴 Separatist Combat
 
-Separatist battles use the normal combat sequence with the exceptions listed in **Separatists — Combat Rules**. That dedicated section is authoritative for who rolls their dice, penalties, hit points, mandatory combats, and base defenders.
+Separatist battles use the normal combat sequence with the exceptions listed in **Phase 7: Separatists — Combat Rules**, which is authoritative for who rolls their dice, penalties, hit points, mandatory combats, and base defenders.
 
 ---
 
@@ -956,79 +1021,6 @@ When the Conspire Deck is empty, shuffle the discard pile to form a new deck.
 
 ---
 
-## 🏴 SEPARATISTS
-
-Separatists are rogue fighting forces loyal to no corporation — remnants of failed colonial garrisons, opportunistic raiders, and alien sympathizers who resist all outside control.
-
-> **Authoritative Rules:** This section contains the complete Separatist procedure. Phase descriptions, combat notes, and quick references elsewhere only show timing and must defer to this section.
-
-### Components & Bases
-
-- The game has **24 grey Separatist miniatures**, shared by roaming forces, base defenders, and militia.
-- The three Separatist Bases have **2, 4, and 6 printed on their tiles**. They never receive Number Tokens.
-- Whenever a rule would spawn more Separatists than remain in the supply, spawn as many as possible. Any excess spawn is lost.
-
-### Spawning
-
-During Phase 1, only the **grey Separatist Die** can trigger natural spawning. If it shows the printed number of an **unconquered** Separatist Base, spawn **3 Separatists** on that base. The other two resource dice never trigger spawning.
-
-Spawned Separatists remain on the base. Do not consume resources, move them, or resolve their combat until Phase 7. A conquered base no longer spawns naturally.
-
-### Phase 7 Procedure
-
-The active player resolves all four steps below for **every Separatist on the board**, regardless of territory. This includes Separatists spawned during the current turn's Phase 1 and those spawned by Instigate Uprising.
-
-#### Step 1 — Instigate Uprising
-
-Each player who controls a conquered Separatist Base may pay **3 Local Favor** to spawn **3 Separatists** at any one unconquered base. This ability may be used **once per round per conquered base** that player controls. Spawned forces stay at the target base until Step 3.
-
-#### Step 2 — Consume
-
-Every Separatist occupying a hex with one or more resource tokens removes **1 token** from that hex. Return removed tokens to the supply and resolve all consumption simultaneously.
-
-#### Step 3 — Move
-
-Resolve Separatists one at a time. Each may move up to **3 hexes**, following this priority:
-
-1. Look within 3 hexes for any **resource-producing hex** (Oil Rig, Power Plant, Factory, Radar Dish, or City/Village) containing at least 1 resource token.
-2. If one or more qualify, choose the hex containing the **most resource tokens**. The active player breaks ties.
-3. If none qualify, choose the **nearest resource-producing hex**, even if it is empty. The active player breaks ties. Move up to 3 hexes toward it; continue on a later turn if it is farther away.
-
-**BAC cards and cargo containers are not resources and are never movement targets.** A Spaceport Drop Zone does not attract Separatists merely because it contains a cargo container or BAC delivery.
-
-A Separatist already on its chosen target moves 0 hexes. Each adjacent step counts as 1 hex. Finish moving every Separatist before beginning Step 4.
-
-> **Tip:** A producing hex with many tokens attracts every Separatist that selects it under this priority. Clearing valuable piles near your forces can redirect the swarm.
-
-#### Step 4 — Resolve Combats
-
-Resolve mandatory combat on every hex shared by Separatists and player soldiers. The defending player fights normally; the player to the defender's **left** rolls the Separatist dice. Resolve contested hexes clockwise, starting from the active player.
-
-### Combat Rules
-
-| Rule | Detail |
-|------|--------|
-| **Rolled By** | The player to the **left** of the player fighting the Separatists rolls every Separatist die |
-| **Roaming Penalty** | Roaming Separatists apply **−1 to all dice**, to a minimum result of 1 |
-| **Base Defenders** | Base defenders roll a full d6 and do **not** apply the roaming −1 penalty |
-| **Hit Points** | Each Separatist has 1 life; any hit kills it immediately |
-| **Player Attacks** | A player may voluntarily attack a Separatist group during Phase 3 under the normal engagement rules |
-| **Mandatory Combat** | Combat is mandatory after Separatists enter a player's hex during Phase 7 |
-| **Blocking** | A player must defeat Separatists before moving through their hex or collecting resources there |
-
-### Conquering Bases
-
-- The first attack against an unconquered base triggers **7 base defenders**. They are dug in and roll full d6 without the roaming penalty.
-- Defeat all 7 defenders to conquer the base, then place your Control Flag on its hex.
-- Surviving defenders become roaming Separatists and follow the Phase 7 procedure.
-- Conquered bases **stop spawning naturally** (their printed number no longer triggers spawns).
-- The controller gains the **Instigate Uprising** ability described in Phase 7, Step 1.
-- Once **all 3 bases** have been conquered, each conquered base produces 1 Local Favor whenever its printed number is rolled.
-
-> ⚠️ **Warning:** Don't attack a base unless you can handle all 7 defenders! Survivors scatter toward resource hexes.
-
----
-
 ## 🤝 MILITIA
 
 Militia are temporary local fighters summoned by the **Deal with Local Militia** Conspire Card. They are not a permanent force — they attack once and disperse.
@@ -1143,7 +1135,7 @@ DP come from **equipped BAC cards** — each BAC's DP value counts toward your t
 | 4 | Resource Gathering | Collect tokens from occupied/adjacent hexes. Priority: winner → loser → active player (if no combat) |
 | 5 | Purchase & Equip | Buy and equip BACs, recruit soldiers, create Squads |
 | 6 | Trade | Trade resource tokens freely with other players |
-| 7 | Move Separatists | Uprising → consume → move toward producing hexes → resolve combats |
+| 7 | Separatists | Uprising → consume → move toward producing hexes → resolve combats |
 
 ### Key Costs
 
