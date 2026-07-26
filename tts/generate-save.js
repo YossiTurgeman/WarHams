@@ -1859,9 +1859,9 @@ for (const [name, x, z, scaleX, scaleZ] of [
 }
 
 // ─── 24. COMBAT-LOCATION MARKERS ──────────────────────────────────────
-// Two movable markers matching the First Player marker's diameter. Their
+// Three movable markers matching the First Player marker's diameter. Their
 // staging positions flank that token; players move them to active combats.
-for (const [index, x] of [[1, UZ_BOARD_X - 4], [2, UZ_BOARD_X + 4]]) {
+for (const [index, x] of [[1, UZ_BOARD_X - 6], [2, UZ_BOARD_X], [3, UZ_BOARD_X + 6]]) {
     const marker = baseObj("Custom_Tile", `Combat Marker ${index}`,
         "Place on the board location where a declared combat is being resolved. Return it here afterward.",
         x, 1.02, UZ_BOARD_Z - 8,

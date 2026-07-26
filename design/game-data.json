@@ -410,7 +410,7 @@
     "resource_tokens": "many (5 types)",
     "control_flags": "25 per player, 4 colors (100 total). Used for hex control and Equipment Display tracking. Flags on Equipment Display are permanent — never removed once placed, even if all soldiers carrying that module die. Marks unlocked BAC types for re-equipping",
     "damage_pegs": "Pool of small red blood-drop pegs that snap into the divots on soldier bases. Each base holds up to 3 pegs (4th wound = death).",
-    "combat_markers": "2 red circular markers, each the same size as the First Player marker. Used to identify board locations where declared combats are being resolved.",
+    "combat_markers": "3 red circular markers, each the same size as the First Player marker. Used to identify board locations where declared combats are being resolved.",
     "bunker_tokens": "several — neutral fortifications: +1 all defense dice on hex, 1 per hex max, any unit benefits, destroyed by attacker winning combat"
   }
 }
