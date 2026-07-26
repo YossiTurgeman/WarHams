@@ -128,7 +128,7 @@ Resources are the lifeblood of your campaign. Each type is produced by its corre
 | **Equipment Display**  | Shared area near the board where one copy of each BAC card is placed face-up as a reference. When a player equips a BAC type, place one of your **Control Flags** on that card to show your access. Multiple players' flags can be on the same card. **Flags stay permanently** — once placed, your flag is never removed, even if all your soldiers carrying that module die. It marks that you've unlocked that BAC type and can re-equip it |
 | **Damage Pegs**        | Small red blood-drop pegs that snap into the divots on a soldier's base. Each base holds up to 3 pegs (4th wound = death). |
 | **Bunker Tokens**      | Neutral fortifications placed by D.U.D.S: +1 all defense dice on hex. 1 per hex max. Any unit benefits. Destroyed by attacker winning combat on the hex |
-| **Combat Markers**     | **3 red circular markers**, each the same size as the First Player marker. Place one at the board location of each declared combat and return it after that combat is resolved. |
+| **Combat Markers**     | **2 red circular markers**, each the same size as the First Player marker. Place one at the board location of each declared combat and return it after that combat is resolved. |
 | **Combat Boards**      | **2 numbered staging boards** (North and South), each with H.A.M.S positions 1–7 and matching die positions 1–7. Used to place opposing engaged soldiers and their assigned dice face-to-face while resolving combat. |
 | **Round & Player Trackers** | **1 shared Round Tracker** and **1 color-coded tracker per player**. Player trackers record current Dominance Points (DP) and whether that player has completed their turn this round. |
 | **Planet Frame**       | Circular board edge made of **5 interlocking cardboard puzzle pieces** that snap together to form the planet boundary. All 61 Hex tiles fill the entire interior. |
@@ -303,7 +303,7 @@ To declare combat:
 
 > **Combat Boards are staging aids only.** Moving a miniature to a Combat Board does not change its board position, range, control, or coherency. Resolve deaths, retreats, advances, and salvage using the soldier's original hex; place any dropped salvage there.
 
-**Multiple Combats** — If the active player has multiple Squads engaged with different enemy forces, each may declare a separate combat. Resolve combats one at a time, in the order chosen by the active player. The three markers can identify the next three declared locations; reuse a returned marker if more combats remain.
+**Multiple Combats** — If the active player has multiple Squads engaged with different enemy forces, each may declare a separate combat. Resolve combats one at a time, in the order chosen by the active player. The two markers can identify the next two declared locations; reuse a returned marker if more combats remain.
 
 > **Note:** Only the active player may initiate combat during this phase. Defending players respond as part of combat resolution but do not initiate attacks of their own.
 
