@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785052963,
+  "EpochTime": 1785053124,
   "Date": "2026-07-26",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -51207,7 +51207,7 @@
         "scaleZ": 2.5
       },
       "Nickname": "Planet Bound Area",
-      "Description": "Movable board with 7 slots: leftmost slot is for the Spaceport Deck, the other 6 hold the face-up Planet Bound BAC cards. Always keep 6 face-up; refill immediately whenever one is taken.",
+      "Description": "Locked board with 7 slots: leftmost slot is for the Spaceport Deck, the other 6 hold the face-up Planet Bound BAC cards. Always keep 6 face-up; refill immediately whenever one is taken.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -51221,7 +51221,7 @@
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": false,
       "Snap": true,
       "IgnoreFoW": false,
@@ -51264,7 +51264,7 @@
         "scaleZ": 4.75
       },
       "Nickname": "Unloading Zone",
-      "Description": "Movable board with 6 slots (Spaceports 1-6). Place each numbered cargo container on its matching slot. BAC cards arriving at a spaceport stack face-up under that slot's container.",
+      "Description": "Locked board with 6 slots (Spaceports 1-6). Place each numbered cargo container on its matching slot. BAC cards arriving at a spaceport stack face-up under that slot's container.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -51278,7 +51278,7 @@
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": false,
       "Snap": true,
       "IgnoreFoW": false,
@@ -51392,7 +51392,7 @@
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
-      "Locked": false,
+      "Locked": true,
       "Grid": false,
       "Snap": true,
       "IgnoreFoW": false,

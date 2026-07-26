@@ -904,8 +904,8 @@ for (let i = 1; i <= 6; i++) {
 // now full Custom_Tile boards (section 17c and 17d below). No
 // BlockRectangle zone labels remain.
 
-// ─── 17b. PLANET BOUND AREA BOARD (movable Custom_Tile) ─────────────
-// A single MOVABLE Custom_Tile painted with a black background, a
+// ─── 17b. PLANET BOUND AREA BOARD (locked Custom_Tile) ──────────────
+// A single locked Custom_Tile painted with a black background, a
 // gold outer border, "PLANET BOUND AREA" title, and 6 card-shaped
 // gold slot outlines (numbered 1-6). Players lay face-up BACs into
 // the slots during setup and refill them as cards are taken.
@@ -922,13 +922,14 @@ const PLANETBOUND_BOARD_URL = `${SOLDIER_BASE}/planetbound-board.png`;
 // rotY:180 so the title and 'DECK'/'1'-'6' labels read upright from
 // the south-facing camera.
 const pbBoard = baseObj("Custom_Tile", "Planet Bound Area",
-    "Movable board with 7 slots: leftmost slot is for the Spaceport Deck, the other 6 hold the face-up Planet Bound BAC cards. Always keep 6 face-up; refill immediately whenever one is taken.",
+    "Locked board with 7 slots: leftmost slot is for the Spaceport Deck, the other 6 hold the face-up Planet Bound BAC cards. Always keep 6 face-up; refill immediately whenever one is taken.",
     // Positioned between the Equipment Display (x=44) and UZ (x=62).
     // Rotated 90° to the right (rotY 180 → 90) per user request.
     // Footprint at rotY:90 ~5 (X) × 19 (Z). Position x=53 → x ∈ [50.5, 55.5],
     // long axis north-south (z ∈ [-9.5, +9.5]).
     53, 1.02, 0,
-    { rotY: 270, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
+    { rotY: 270, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5,
+      color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
 pbBoard.CustomImage = {
     ImageURL: PLANETBOUND_BOARD_URL,
     ImageSecondaryURL: "",
@@ -938,7 +939,7 @@ pbBoard.CustomImage = {
 };
 objects.push(pbBoard);
 
-// ─── 17c. UNLOADING ZONE BOARD (movable Custom_Tile) ────────────────
+// ─── 17c. UNLOADING ZONE BOARD (locked Custom_Tile) ─────────────────
 // Rectangular companion to the Planet Bound Area board: black with a
 // neon-green border, "UNLOADING ZONE" title, and 6 card-shaped slots
 // in a 3-col × 2-row grid (Spaceports 1-6, top-left → bottom-right).
@@ -957,9 +958,10 @@ objects.push(pbBoard);
 // south-facing camera.
 const UNLOADING_BOARD_URL = `${SOLDIER_BASE}/unloading-zone-board.png`;
 const uzBoard = baseObj("Custom_Tile", "Unloading Zone",
-    "Movable board with 6 slots (Spaceports 1-6). Place each numbered cargo container on its matching slot. BAC cards arriving at a spaceport stack face-up under that slot's container.",
+    "Locked board with 6 slots (Spaceports 1-6). Place each numbered cargo container on its matching slot. BAC cards arriving at a spaceport stack face-up under that slot's container.",
     UZ_BOARD_X, 1.02, UZ_BOARD_Z,
-    { rotY: 180, scaleX: 5.0, scaleY: 0.2, scaleZ: 4.75, color: { r: 1, g: 1, b: 1 }, grid: false });
+    { rotY: 180, scaleX: 5.0, scaleY: 0.2, scaleZ: 4.75,
+      color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
 uzBoard.CustomImage = {
     ImageURL: UNLOADING_BOARD_URL,
     ImageSecondaryURL: "",
@@ -1014,7 +1016,7 @@ firstPlayerToken.LuaScript = [
 ].join("\n");
 objects.push(firstPlayerToken);
 
-// ─── 17d. EQUIPMENT DISPLAY BOARD (movable Custom_Tile) ─────────────
+// ─── 17d. EQUIPMENT DISPLAY BOARD (locked Custom_Tile) ──────────────
 // The big shared board where players place face-up BAC cards as they
 // unlock new equipment types, then drop their Control Flags on top
 // to mark personal access. Sits east of the controls/resource column and
@@ -1040,7 +1042,8 @@ const eqBoard = baseObj("Custom_Tile", "Equipment Display",
     // Shifted east to leave room for the controls/resource column on its
     // west side. Footprint at rotY:270 is ~10 (X) × 9.68 (Z).
     44, 1.02, 0,
-    { rotY: 270, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
+    { rotY: 270, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00,
+      color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
     ImageSecondaryURL: "",
