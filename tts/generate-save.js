@@ -978,6 +978,8 @@ const FIRST_PLAYER_TOKEN_URL =
     "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/first-player-token.png";
 const COMBAT_MARKER_URL =
     "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/combat-marker.png";
+const COMBAT_ZONE_BOARD_URL =
+    "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/combat-zone-board.png";
 const firstPlayerToken = baseObj("Custom_Tile", "1st Player Token",
     "Marks the current first player. Pass to the next player at the start of each new round.",
     UZ_BOARD_X, 1.02, UZ_BOARD_Z - 12,
@@ -1858,7 +1860,35 @@ for (const [name, x, z, scaleX, scaleZ] of [
           color: diceTrayWallColor, locked: true, grid: false }));
 }
 
-// ─── 24. COMBAT-LOCATION MARKERS ──────────────────────────────────────
+// ─── 24. NORTH & SOUTH COMBAT BOARDS ──────────────────────────────────
+// Locked staging boards flank the dice tray. Rotating the south board 180°
+// mirrors its layout: H.A.M.S remain behind their corresponding dice and
+// both fighting lines face toward the tray.
+const combatSlotXs = Array.from({ length: 7 }, (_, i) => -0.7167 + i * 0.2389);
+for (const { label, z, rotY } of [
+    { label: "North", z: 12, rotY: 0 },
+    { label: "South", z: -12, rotY: 180 },
+]) {
+    const board = baseObj("Custom_Tile", `${label} Combat Board`,
+        `${label} combat staging area. Place engaged H.A.M.S in slots 1-7 and each assigned die in the matching numbered slot.`,
+        DICE_TRAY.x, 1.02, z,
+        { rotY, scaleX: 15, scaleY: 0.2, scaleZ: 4.5,
+          color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
+    board.CustomImage = {
+        ImageURL: COMBAT_ZONE_BOARD_URL,
+        ImageSecondaryURL: "",
+        ImageScalar: 1,
+        WidthScale: 0,
+        CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
+    };
+    board.AttachedSnapPoints = combatSlotXs.flatMap(x => [
+        { Position: { x, y: 0.15, z: 0.5185 } },  // H.A.M.S row
+        { Position: { x, y: 0.15, z: -0.2926 } }, // matching die row
+    ]);
+    objects.push(board);
+}
+
+// ─── 25. COMBAT-LOCATION MARKERS ──────────────────────────────────────
 // Three movable markers matching the First Player marker's diameter. Their
 // staging positions flank that token; players move them to active combats.
 for (const [index, x] of [[1, UZ_BOARD_X - 4], [2, UZ_BOARD_X], [3, UZ_BOARD_X + 4]]) {

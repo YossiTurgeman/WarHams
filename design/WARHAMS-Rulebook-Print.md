@@ -129,6 +129,7 @@ Resources are the lifeblood of your campaign. Each type is produced by its corre
 | **Damage Pegs**        | Small red blood-drop pegs that snap into the divots on a soldier's base. Each base holds up to 3 pegs (4th wound = death). |
 | **Bunker Tokens**      | Neutral fortifications placed by D.U.D.S: +1 all defense dice on hex. 1 per hex max. Any unit benefits. Destroyed by attacker winning combat on the hex |
 | **Combat Markers**     | **3 red circular markers**, each the same size as the First Player marker. Place one at the board location of each declared combat and return it after that combat is resolved. |
+| **Combat Boards**      | **2 numbered staging boards** (North and South), each with H.A.M.S positions 1–7 and matching die positions 1–7. Used to place opposing engaged soldiers and their assigned dice face-to-face while resolving combat. |
 | **Planet Frame**       | Circular board edge made of **5 interlocking cardboard puzzle pieces** that snap together to form the planet boundary. All 61 Hex tiles fill the entire interior. |
 
 ---
@@ -294,7 +295,10 @@ To declare combat:
 1. The active player states **which of their Squads** is attacking.
 2. The active player designates **which enemy Squad** (or Separatist group) is the target.
 3. Place a **Combat Marker** at that combat's board location.
-4. Resolve combat according to the full **Combat** section below, then return the marker to its staging area.
+4. Before moving any miniatures, note each engaged soldier's original hex. Place the attacker's engaged H.A.M.S in positions **1–7 on the South Combat Board** and the defender's engaged H.A.M.S in positions **1–7 on the North Combat Board**. Put each assigned combat die in front of its soldier in the matching numbered die position.
+5. Resolve combat according to the full **Combat** section below. Then return surviving H.A.M.S to their original hexes and return the marker to its staging area.
+
+> **Combat Boards are staging aids only.** Moving a miniature to a Combat Board does not change its board position, range, control, or coherency. Resolve deaths, retreats, advances, and salvage using the soldier's original hex; place any dropped salvage there.
 
 **Multiple Combats** — If the active player has multiple Squads engaged with different enemy forces, each may declare a separate combat. Resolve combats one at a time, in the order chosen by the active player. The three markers can identify the next three declared locations; reuse a returned marker if more combats remain.
 

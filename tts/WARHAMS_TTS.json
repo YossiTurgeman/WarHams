@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785051984,
+  "EpochTime": 1785052301,
   "Date": "2026-07-26",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -64754,6 +64754,320 @@
       "GUID": "1003ca",
       "Name": "Custom_Tile",
       "Transform": {
+        "posX": 83,
+        "posY": 1.02,
+        "posZ": 12,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 15,
+        "scaleY": 0.2,
+        "scaleZ": 4.5
+      },
+      "Nickname": "North Combat Board",
+      "Description": "North combat staging area. Place engaged H.A.M.S in slots 1-7 and each assigned die in the matching numbered slot.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/combat-zone-board.png",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.1,
+          "Stackable": false,
+          "Stretch": true
+        }
+      },
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": -0.7167,
+            "y": 0.15,
+            "z": 0.5185
+          }
+        },
+        {
+          "Position": {
+            "x": -0.7167,
+            "y": 0.15,
+            "z": -0.2926
+          }
+        },
+        {
+          "Position": {
+            "x": -0.4778,
+            "y": 0.15,
+            "z": 0.5185
+          }
+        },
+        {
+          "Position": {
+            "x": -0.4778,
+            "y": 0.15,
+            "z": -0.2926
+          }
+        },
+        {
+          "Position": {
+            "x": -0.2389,
+            "y": 0.15,
+            "z": 0.5185
+          }
+        },
+        {
+          "Position": {
+            "x": -0.2389,
+            "y": 0.15,
+            "z": -0.2926
+          }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.15,
+            "z": 0.5185
+          }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.15,
+            "z": -0.2926
+          }
+        },
+        {
+          "Position": {
+            "x": 0.2389,
+            "y": 0.15,
+            "z": 0.5185
+          }
+        },
+        {
+          "Position": {
+            "x": 0.2389,
+            "y": 0.15,
+            "z": -0.2926
+          }
+        },
+        {
+          "Position": {
+            "x": 0.4778000000000001,
+            "y": 0.15,
+            "z": 0.5185
+          }
+        },
+        {
+          "Position": {
+            "x": 0.4778000000000001,
+            "y": 0.15,
+            "z": -0.2926
+          }
+        },
+        {
+          "Position": {
+            "x": 0.7167,
+            "y": 0.15,
+            "z": 0.5185
+          }
+        },
+        {
+          "Position": {
+            "x": 0.7167,
+            "y": 0.15,
+            "z": -0.2926
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "1003cb",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 83,
+        "posY": 1.02,
+        "posZ": -12,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 0,
+        "scaleX": 15,
+        "scaleY": 0.2,
+        "scaleZ": 4.5
+      },
+      "Nickname": "South Combat Board",
+      "Description": "South combat staging area. Place engaged H.A.M.S in slots 1-7 and each assigned die in the matching numbered slot.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/combat-zone-board.png",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.1,
+          "Stackable": false,
+          "Stretch": true
+        }
+      },
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": -0.7167,
+            "y": 0.15,
+            "z": 0.5185
+          }
+        },
+        {
+          "Position": {
+            "x": -0.7167,
+            "y": 0.15,
+            "z": -0.2926
+          }
+        },
+        {
+          "Position": {
+            "x": -0.4778,
+            "y": 0.15,
+            "z": 0.5185
+          }
+        },
+        {
+          "Position": {
+            "x": -0.4778,
+            "y": 0.15,
+            "z": -0.2926
+          }
+        },
+        {
+          "Position": {
+            "x": -0.2389,
+            "y": 0.15,
+            "z": 0.5185
+          }
+        },
+        {
+          "Position": {
+            "x": -0.2389,
+            "y": 0.15,
+            "z": -0.2926
+          }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.15,
+            "z": 0.5185
+          }
+        },
+        {
+          "Position": {
+            "x": 0,
+            "y": 0.15,
+            "z": -0.2926
+          }
+        },
+        {
+          "Position": {
+            "x": 0.2389,
+            "y": 0.15,
+            "z": 0.5185
+          }
+        },
+        {
+          "Position": {
+            "x": 0.2389,
+            "y": 0.15,
+            "z": -0.2926
+          }
+        },
+        {
+          "Position": {
+            "x": 0.4778000000000001,
+            "y": 0.15,
+            "z": 0.5185
+          }
+        },
+        {
+          "Position": {
+            "x": 0.4778000000000001,
+            "y": 0.15,
+            "z": -0.2926
+          }
+        },
+        {
+          "Position": {
+            "x": 0.7167,
+            "y": 0.15,
+            "z": 0.5185
+          }
+        },
+        {
+          "Position": {
+            "x": 0.7167,
+            "y": 0.15,
+            "z": -0.2926
+          }
+        }
+      ]
+    },
+    {
+      "GUID": "1003cc",
+      "Name": "Custom_Tile",
+      "Transform": {
         "posX": 58,
         "posY": 1.02,
         "posZ": -8,
@@ -64808,7 +65122,7 @@
       }
     },
     {
-      "GUID": "1003cb",
+      "GUID": "1003cd",
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 62,
@@ -64865,7 +65179,7 @@
       }
     },
     {
-      "GUID": "1003cc",
+      "GUID": "1003ce",
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 66,
