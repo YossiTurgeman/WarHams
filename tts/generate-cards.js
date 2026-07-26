@@ -15,8 +15,8 @@ const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-pri
 
 const CARD_W = 1024;
 const CARD_H = 1420;
-const BAC_ART_REVISION = 2;
-const CONSPIRE_ART_REVISION = 2;
+const BAC_ART_REVISION = 3;
+const CONSPIRE_ART_REVISION = 4;
 
 const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "design", "game-data.json"), "utf8"));
 const outDir = path.join(__dirname, "cards");
@@ -92,6 +92,111 @@ function fittingFont(text, maxWidth, maxHeight, fonts) {
     return font;
 }
 
+function resourceTextTokens(text) {
+    const tokens = [];
+    const pattern = /\b(?:(\d+)\s+)?(Local Favor|Electricity|Intelligence|Industry|Oil)\b/g;
+    let cursor = 0;
+
+    function addPlain(value) {
+        for (const part of value.split(/(\s+)/)) {
+            if (!part) continue;
+            if (/\s/.test(part)) {
+                const newlines = (part.match(/\n/g) || []).length;
+                if (newlines > 0) {
+                    for (let i = 0; i < newlines; i++) tokens.push({ type: "newline" });
+                } else {
+                    tokens.push({ type: "space" });
+                }
+            } else {
+                tokens.push({ type: "text", text: part });
+            }
+        }
+    }
+
+    for (const match of text.matchAll(pattern)) {
+        addPlain(text.slice(cursor, match.index));
+        tokens.push({
+            type: "resource",
+            text: match[0],
+            resource: match[2],
+        });
+        cursor = match.index + match[0].length;
+    }
+    addPlain(text.slice(cursor));
+    return tokens;
+}
+
+function layoutResourceText(text, font, maxWidth) {
+    const lineHeight = measureTextHeight(font, "Ag", maxWidth);
+    const chipPad = Math.max(4, Math.round(lineHeight * 0.18));
+    const spaceWidth = measureText(font, " ");
+    const items = [];
+    let x = 0;
+    let y = 0;
+    let pendingSpace = false;
+
+    function nextLine() {
+        x = 0;
+        y += lineHeight + Math.max(2, Math.round(lineHeight * 0.08));
+        pendingSpace = false;
+    }
+
+    for (const token of resourceTextTokens(text)) {
+        if (token.type === "space") {
+            pendingSpace = true;
+            continue;
+        }
+        if (token.type === "newline") {
+            nextLine();
+            continue;
+        }
+
+        const width = token.type === "resource"
+            ? measureText(font, token.text) + chipPad * 2
+            : measureText(font, token.text);
+        const gap = pendingSpace && x > 0 ? spaceWidth : 0;
+        if (x > 0 && x + gap + width > maxWidth) nextLine();
+        else x += gap;
+
+        items.push({ ...token, x, y, width, lineHeight, chipPad });
+        x += width;
+        pendingSpace = false;
+    }
+
+    return { items, height: y + lineHeight };
+}
+
+function fittingResourceText(text, maxWidth, maxHeight, fontPairs) {
+    for (const pair of fontPairs) {
+        const layout = layoutResourceText(text, pair.white, maxWidth);
+        if (layout.height <= maxHeight) return { ...pair, layout };
+    }
+    throw new Error(`Resource-rich card text does not fit its ${maxWidth}x${maxHeight} area: ${text}`);
+}
+
+function drawResourceText(img, fit, x, y) {
+    for (const item of fit.layout.items) {
+        const px = x + item.x;
+        const py = y + item.y;
+        if (item.type === "resource") {
+            const style = RESOURCE_CHIP_STYLES[item.resource];
+            const keyline = Math.max(1, Math.round(item.lineHeight * 0.04));
+            fillRect(img, px, py, item.width, item.lineHeight,
+                { r: 0x08, g: 0x08, b: 0x08 });
+            fillRect(img, px + keyline, py + keyline,
+                item.width - keyline * 2, item.lineHeight - keyline * 2,
+                style.background);
+            const font = style.darkText ? fit.black : fit.white;
+            img.print({ font, x: px + item.chipPad, y: py,
+                text: item.text, maxWidth: item.width - item.chipPad * 2,
+                maxHeight: item.lineHeight });
+        } else {
+            img.print({ font: fit.white, x: px, y: py, text: item.text,
+                maxWidth: item.width + 1, maxHeight: item.lineHeight });
+        }
+    }
+}
+
 function drawBorder(img, thickness, color) {
     const c = rgbaToInt(color.r, color.g, color.b, 255);
     for (let t = 0; t < thickness; t++) {
@@ -127,8 +232,15 @@ async function main() {
     const fontBody  = await loadFont(path.join(FONT_DIR, "open-sans-64-white", "open-sans-64-white.fnt"));
     const fontBodyBlack = await loadFont(path.join(FONT_DIR, "open-sans-64-black", "open-sans-64-black.fnt"));
     const fontSmall = await loadFont(path.join(FONT_DIR, "open-sans-32-white", "open-sans-32-white.fnt"));
+    const fontSmallBlack = await loadFont(path.join(FONT_DIR, "open-sans-32-black", "open-sans-32-black.fnt"));
     const fontTiny = await loadFont(path.join(FONT_DIR, "open-sans-16-white", "open-sans-16-white.fnt"));
+    const fontTinyBlack = await loadFont(path.join(FONT_DIR, "open-sans-16-black", "open-sans-16-black.fnt"));
     const bodyFonts = [fontBody, fontSmall, fontTiny];
+    const bodyFontPairs = [
+        { white: fontBody, black: fontBodyBlack },
+        { white: fontSmall, black: fontSmallBlack },
+        { white: fontTiny, black: fontTinyBlack },
+    ];
 
     const bacBg     = { r: 0x66, g: 0x44, b: 0x00 };
     const bacHeader = { r: 0xCC, g: 0x99, b: 0x33 };
@@ -179,19 +291,17 @@ async function main() {
         let bodyBottom = CARD_H - 35;
         if (bac.special) {
             const specialText = `Special: ${bac.special}`;
-            const specialFont = fittingFont(specialText, textW, 150, bodyFonts);
-            const specialHeight = measureTextHeight(specialFont, specialText, textW);
+            const specialFit = fittingResourceText(specialText, textW, 150, bodyFontPairs);
+            const specialHeight = specialFit.layout.height;
             const specY = CARD_H - specialHeight - 30;
             fillRect(img, pad, specY - 10, textW, 4, { r: 0xDD, g: 0xBB, b: 0x55 });
-            img.print({ font: specialFont, x: pad, y: specY + 8, text: specialText,
-                maxWidth: textW, maxHeight: specialHeight });
+            drawResourceText(img, specialFit, pad, specY + 8);
             bodyBottom = specY - 25;
         }
 
         const bodyHeight = Math.max(1, bodyBottom - y);
-        const bodyFont = fittingFont(bac.text, textW, bodyHeight, bodyFonts);
-        img.print({ font: bodyFont, x: pad, y, text: bac.text,
-            maxWidth: textW, maxHeight: bodyHeight });
+        const bodyFit = fittingResourceText(bac.text, textW, bodyHeight, bodyFontPairs);
+        drawResourceText(img, bodyFit, pad, y);
 
         await img.write(path.join(outDir, `bac_${slug}_rev${BAC_ART_REVISION}.png`));
         process.stdout.write(".");
@@ -235,10 +345,13 @@ async function main() {
         y += Math.max(80, measureTextHeight(fontBody, timingText, textW) + 18);
 
         // Cost
-        const costStr = typeof cc.cost === "string" ? cc.cost : Object.entries(cc.cost).map(([k, v]) => `${v} ${k}`).join(", ");
-        const costText = `Cost: ${costStr}`;
-        img.print({ font: fontBody, x: pad, y, text: costText, maxWidth: textW });
-        y += Math.max(90, measureTextHeight(fontBody, costText, textW) + 28);
+        if (typeof cc.cost === "string") {
+            const costText = `Cost: ${cc.cost}`;
+            img.print({ font: fontBody, x: pad, y, text: costText, maxWidth: textW });
+            y += Math.max(90, measureTextHeight(fontBody, costText, textW) + 28);
+        } else {
+            y = drawCostChips(img, cc.cost, pad, y, textW, fontBody, fontBodyBlack) + 28;
+        }
 
         // Divider
         fillRect(img, pad, y, textW, 4, { r: 0x88, g: 0x66, b: 0xDD });
@@ -248,19 +361,17 @@ async function main() {
         let bodyBottom = CARD_H - 35;
         if (cc.condition) {
             const conditionText = `Req: ${cc.condition}`;
-            const conditionFont = fittingFont(conditionText, textW, 130, bodyFonts);
-            const conditionHeight = measureTextHeight(conditionFont, conditionText, textW);
+            const conditionFit = fittingResourceText(conditionText, textW, 130, bodyFontPairs);
+            const conditionHeight = conditionFit.layout.height;
             const condY = CARD_H - conditionHeight - 30;
             fillRect(img, pad, condY - 10, textW, 4, { r: 0x88, g: 0x66, b: 0xDD });
-            img.print({ font: conditionFont, x: pad, y: condY + 8, text: conditionText,
-                maxWidth: textW, maxHeight: conditionHeight });
+            drawResourceText(img, conditionFit, pad, condY + 8);
             bodyBottom = condY - 25;
         }
 
         const bodyHeight = Math.max(1, bodyBottom - y);
-        const bodyFont = fittingFont(cc.text, textW, bodyHeight, bodyFonts);
-        img.print({ font: bodyFont, x: pad, y, text: cc.text,
-            maxWidth: textW, maxHeight: bodyHeight });
+        const bodyFit = fittingResourceText(cc.text, textW, bodyHeight, bodyFontPairs);
+        drawResourceText(img, bodyFit, pad, y);
 
         await img.write(path.join(outDir, `conspire_${slug}_rev${revision}.png`));
         process.stdout.write(".");

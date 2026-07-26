@@ -287,27 +287,27 @@
     },
     {
       "name": "Abandoned Satellite Control Station", "copies": 3, "timing": "Tactical",
-      "cost": "Free", "art_revision": 3,
+      "cost": "Free",
       "text": "Exchange 1 Electricity for 3 Intelligence."
     },
     {
       "name": "Build a Wind Farm", "copies": 3, "timing": "Tactical",
-      "cost": "Free", "art_revision": 3,
+      "cost": "Free",
       "text": "Exchange 1 Industry for 3 Electricity."
     },
     {
       "name": "Raid an Oil Cache", "copies": 3, "timing": "Tactical",
-      "cost": "Free", "art_revision": 3,
+      "cost": "Free",
       "text": "Exchange 1 Intelligence for 3 Oil."
     },
     {
       "name": "Factory Takeover", "copies": 3, "timing": "Tactical",
-      "cost": "Free", "art_revision": 3,
+      "cost": "Free",
       "text": "Exchange 1 Local Favor for 3 Industry."
     },
     {
       "name": "Build a Follower Camp", "copies": 3, "timing": "Tactical",
-      "cost": "Free", "art_revision": 3,
+      "cost": "Free",
       "text": "Exchange 1 Industry for 3 Local Favor."
     },
     {
