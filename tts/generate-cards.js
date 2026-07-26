@@ -79,6 +79,7 @@ async function main() {
     console.log("Generating BAC card images...");
     for (const bac of gameData.basic_armament_cards) {
         const slug = bac.abbr.replace(/[^a-zA-Z0-9]/g, "_").toLowerCase();
+        const revision = bac.art_revision ? `_rev${bac.art_revision}` : "";
         const img = new Jimp({ width: CARD_W, height: CARD_H, color: rgbaToInt(bacBg.r, bacBg.g, bacBg.b, 255) });
 
         fillRect(img, 0, 0, CARD_W, 290, bacHeader);
@@ -116,7 +117,7 @@ async function main() {
             img.print({ font: fontBody, x: pad, y: specY + 10, text: `Special: ${bac.special}`, maxWidth: textW, maxHeight: 150 });
         }
 
-        await img.write(path.join(outDir, `bac_${slug}.png`));
+        await img.write(path.join(outDir, `bac_${slug}${revision}.png`));
         process.stdout.write(".");
     }
     console.log(` ${gameData.basic_armament_cards.length} BAC faces done.`);

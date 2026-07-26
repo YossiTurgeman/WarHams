@@ -32,7 +32,9 @@ const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
 
 function bacFaceURL(abbr) {
     const slug = abbr.replace(/[^a-zA-Z0-9]/g, "_").toLowerCase();
-    return `${CARD_BASE}/bac_${slug}.png?${CARD_VERSION}`;
+    const bac = gameData.basic_armament_cards.find(card => card.abbr === abbr);
+    const revision = bac?.art_revision ? `_rev${bac.art_revision}` : "";
+    return `${CARD_BASE}/bac_${slug}${revision}.png?${CARD_VERSION}`;
 }
 function conspireFaceURL(name) {
     const slug = name.replace(/[^a-zA-Z0-9]/g, "_").toLowerCase();
@@ -1697,7 +1699,7 @@ const BACS_BY_SLOT = {
           text: "This soldier gets +1 to its defense die." },
         { abbr: "B.E.A.R",      category: "Support",
           name: "Battlefield Extraction Airlift Rover",
-          text: "During resource gathering, after picking your resource, pick 1 extra resource token from the same hex." },
+          text: "During your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack." },
         { abbr: "P.L.A.S.T.E.R",category: "Support",
           name: "Personal Lasting Aid Surgical Treatment Enhancement Robot",
           text: "Remove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap." },

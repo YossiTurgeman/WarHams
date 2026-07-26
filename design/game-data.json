@@ -111,7 +111,7 @@
     { "phase": 1, "name": "Resource Production", "description": "Roll 2d6 + 1 Separatist Die (grey). All 3 dice produce resources. At a matching unconquered base, the Separatist Die spawns 3 Separatists; at a matching conquered base, its controller immediately gains 1 Local Favor. Doubles = BAC from Planet Bound Area to matching spaceport. Triples = active player chooses spaceport placement + may move 1 Planet Bound BAC." },
     { "phase": 2, "name": "Movement", "description": "Move squads 1 hex (2 with Jump Jets). Each soldier moves independently but must stay within 2 hexes of at least one squadmate (squad coherency). Skip movement to Conspire instead." },
     { "phase": 3, "name": "Combat", "description": "Initiate combat when an enemy is within a soldier's combat range. Empty Hands has range 1 (same or adjacent hex); a Hands-slot weapon has range 2 unless stated otherwise. See combat system." },
-    { "phase": 4, "name": "Resource Gathering", "description": "Active player collects resources from same/adjacent hex. If combat occurred, defending player(s) also collect. Winner picks first, then loser. If no combat, only active player collects. BEAR card allows +1 pickup." },
+    { "phase": 4, "name": "Salvage & Resource Gathering", "description": "The active player collects salvage, then 1 available token from each distinct resource-producing hex occupied by their Squads. Each hex provides resources once per turn. A BEAR-equipped soldier allows 1 additional token from that soldier's hex; multiple BEAR modules on one hex do not stack. Separatists block collection on their hex." },
     { "phase": 5, "name": "Purchase & Equip", "description": "Buy upgrades with resources. Each squad can hold X armaments where X = number of soldiers." },
     { "phase": 6, "name": "Trade", "description": "Trade resources with other players (two-sided only, no gifting). Bank trade: 3:1 ratio (return 3 of one type, take 1 of any other). At end of turn, discard Conspire cards down to 7 if over limit." },
     { "phase": 7, "name": "Separatists", "description": "The active player resolves all Separatists. Instigate Uprising first (conquered base owners may pay 3 Local Favor to spawn 3 Separatists at an unconquered base, once per base per round). Then every occupied hex loses 1 resource token. Each Separatist moves up to 3 hexes toward the resource-producing hex within 3 hexes that contains the most resource tokens; the active player breaks ties. If none qualifies, move toward the nearest resource-producing hex, even if empty. BAC cards and cargo containers are never targets. Move all Separatists before resolving combats; the player to the defender's left rolls Separatist dice." }
@@ -207,8 +207,8 @@
     },
     {
       "abbr": "B.E.A.R", "name": "Battlefield Extraction Airlift Rover", "category": "Support", "slot": "Chest",
-      "cost": { "Oil": 1, "Industry": 1, "Electricity": 1 }, "dp": 3, "copies": 5,
-      "text": "During resource gathering, after picking your resource, pick 1 extra resource token from the same hex."
+      "cost": { "Oil": 1, "Industry": 1, "Electricity": 1 }, "dp": 3, "copies": 5, "art_revision": 2,
+      "text": "During your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack."
     },
     {
       "abbr": "P.L.A.S.T.E.R", "name": "Personal Lasting Aid Surgical Treatment Enhancement Robot", "category": "Support", "slot": "Chest",

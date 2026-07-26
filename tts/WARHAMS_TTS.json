@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785054383,
+  "EpochTime": 1785054783,
   "Date": "2026-07-26",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -656,7 +656,7 @@
           "Type": 0
         },
         "145": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev2.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -665,7 +665,7 @@
           "Type": 0
         },
         "146": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev2.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -674,7 +674,7 @@
           "Type": 0
         },
         "147": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev2.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -683,7 +683,7 @@
           "Type": 0
         },
         "148": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev2.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -692,7 +692,7 @@
           "Type": 0
         },
         "149": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev2.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -3781,7 +3781,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.E.A.R",
-          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
+          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3813,7 +3813,7 @@
           "CardID": 14500,
           "CustomDeck": {
             "145": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev2.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3839,7 +3839,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.E.A.R",
-          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
+          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3871,7 +3871,7 @@
           "CardID": 14600,
           "CustomDeck": {
             "146": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev2.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3897,7 +3897,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.E.A.R",
-          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
+          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3929,7 +3929,7 @@
           "CardID": 14700,
           "CustomDeck": {
             "147": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev2.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3955,7 +3955,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.E.A.R",
-          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
+          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3987,7 +3987,7 @@
           "CardID": 14800,
           "CustomDeck": {
             "148": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev2.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4013,7 +4013,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.E.A.R",
-          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
+          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4045,7 +4045,7 @@
           "CardID": 14900,
           "CustomDeck": {
             "149": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev2.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -57715,7 +57715,7 @@
         "scaleZ": 1
       },
       "Nickname": "B.E.A.R Chest (×6)",
-      "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's chest magnet.",
+      "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.\n\nHolds 6 identical pieces; draw one when a soldier equips this BAC and snap it onto the mini's chest magnet.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -57760,7 +57760,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.E.A.R Chest",
-          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
+          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57828,7 +57828,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.E.A.R Chest",
-          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
+          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57896,7 +57896,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.E.A.R Chest",
-          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
+          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -57964,7 +57964,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.E.A.R Chest",
-          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
+          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -58032,7 +58032,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.E.A.R Chest",
-          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
+          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -58100,7 +58100,7 @@
             "scaleZ": 1
           },
           "Nickname": "B.E.A.R Chest",
-          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring resource gathering, after picking your resource, pick 1 extra resource token from the same hex.",
+          "Description": "Battlefield Extraction Airlift Rover\n[Support] Slot: Chest\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,

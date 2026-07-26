@@ -40,7 +40,7 @@ section("TURN PHASES (in order)");
 line("1. Resource Production — Roll 2d6 + Separatist Die");
 line("2. Movement — 1 hex (2 with Jet Jump)");
 line("3. Combat — range 1 empty-handed; normally 2 armed");
-line("4. Resource Gathering");
+line("4. Salvage & Resources — 1 token per occupied resource hex");
 line("5. Purchase & Equip");
 line("6. Trade (bank 3:1)");
 line("7. Separatists");

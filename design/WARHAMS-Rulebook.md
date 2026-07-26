@@ -203,7 +203,7 @@ Set up a **resource supply area** beside the board. Sort all Resource Tokens by 
 
 ## 🔄 TURN STRUCTURE
 
-Starting from the first player and proceeding clockwise, each player completes **all seven phases** of their turn before play passes to the next player. No other player may act during your turn unless a Conspire Card, combat, or Phase 4 resource gathering (for combat participants) specifically requires it.
+Starting from the first player and proceeding clockwise, each player completes **all seven phases** of their turn before play passes to the next player. No other player may act during your turn unless a Conspire Card or combat specifically requires it.
 
 The shared **Round Tracker** begins at Round 1. Each player's tracker begins at **TURN READY** and **0 DP**. Adjust your DP counter whenever a rule or card awards or removes DP. After completing Phase 7, mark your tracker **TURN DONE**.
 
@@ -295,33 +295,21 @@ If a base was conquered this phase (all 7 base defenders killed), the conquering
 
 ### Phase 4: Salvage & Resource Gathering
 
-After all combats are resolved, the active player collects resources from the board. If combat occurred this turn, any **defending player** involved in that combat also collects resources during this phase.
-
-**Priority Order:**
-
-- If combat occurred: the **combat winner** picks first, then the **loser**. If neither side was clearly victorious (equal damage dealt), the **active player** picks first.
-- If no combat occurred: only the **active player** collects.
-- If multiple combats occurred, resolve collection per combat in the order chosen by the active player. A player involved in multiple combats still only collects once, using their best priority.
-
-> **Quick Priority Reminder:** ① Combat winner → ② Combat loser → ③ Active player (if no combat or tie). One collection per player.
+After all combats are resolved, only the **active player** resolves salvage and resource gathering for their Squads.
 
 **Step 1 — Salvage Collection (if any):**
 
-Before collecting resources, any player whose soldier occupies a hex containing **salvage modules** (left behind after a death — see **Death in W.A.R H.A.M.S, Step 4**) may pick them up. Salvaged modules can be equipped for **free** — simply attach the module to the soldier's miniature. Salvage collection follows the same priority order listed above.
-
-A player may choose to **forfeit** their salvage pickup and instead collect **1 resource token** from the same hex during this step. This counts as their collection for the turn — they do not collect again in Step 2.
+Before collecting resources, the active player's soldiers may pick up **salvage modules** on the hexes they occupy (left behind after a death — see **Death in W.A.R H.A.M.S, Step 4**). Salvaged modules can be equipped for **free** — simply attach the module to the soldier's miniature.
 
 **Step 2 — Resource Collection:**
 
-- Each soldier may pick up **1 resource token** from the hex they currently occupy.
-- A soldier equipped with **B.E.A.R** (Battlefield Extraction Airlift Rover) may pick up **1 additional** resource token of any type from the same hex.
-- Continue in priority order until all accessible resources have been claimed or no player wishes to collect further.
+- For every distinct **resource-producing hex** occupied by at least one soldier from one of your Squads, collect **1 resource token** from that hex, if available.
+- Each hex provides resources only **once per turn**, regardless of how many of your soldiers or Squads occupy it.
+- If a soldier occupying that hex has **B.E.A.R** (Battlefield Extraction Airlift Rover), you may collect **1 additional resource token** from the same hex. Multiple B.E.A.R modules on one hex do not stack.
 
 > **Important:** Resources **cannot** be collected from a hex occupied by Separatist units. Defeat them first.
 
 Collected resource tokens go directly into the player's personal supply.
-
-> **Note:** Only the active player and players who participated in combat this turn may collect. Players not involved in combat wait for their own turn.
 
 ---
 
@@ -485,7 +473,7 @@ Advance the Round Tracker by 1 and reset every player tracker to **TURN READY**.
 | 1     | Resource Production   | Roll 3d6, spawn resources on matching hexes. Doubles/triples = BAC drops at spaceports |
 | 2     | Movement              | Move each soldier up to 1 hex (2 with J.J). Alternatively, Conspire instead of moving a Squad |
 | 3     | Combat                | Declare attacks against enemies in range. Empty Hands: 1 hex; standard Hands weapon: 2 hexes. Only engaged soldiers roll |
-| 4     | Salvage & Resource Gathering | Salvage modules from current hex first, then collect resource tokens. Priority: winner → loser → active player (if no combat) |
+| 4     | Salvage & Resource Gathering | Collect salvage, then 1 token from each distinct resource hex occupied by your Squads; B.E.A.R grants +1 on its hex |
 | 5     | Purchase & Equip      | Spend resource tokens to buy and equip BACs, recruit soldiers, or create new Squads |
 | 6     | Trade                 | Trade resource tokens freely with other players by mutual agreement   |
 | 7     | Separatists           | Uprising → consume → move → combat |
@@ -936,7 +924,7 @@ Modules with active abilities fall into two timing categories:
 | **💣 Heavy** | B.A.S.R | Bolt Action Sniper Rifle | Hands | 1 Oil, 1 Int, 1 Ind | 4 | **Range 2.** Pre-combat: 2d6 pick higher, target 1 soldier in range. Sniper skips combat. Both get −1 defense |
 | | S.L.I.M.E | Squad Light Interoperable Mortar Encampment | Backpack | 1 Ind, 2 Oil, 2 LF | 5 | 2-soldier crew. 4d6 normal matchups, target squad up to 3 hexes. Crew skips combat. −1 defense. Civilian Damage Rule |
 | **🔧 Support** | P.L.A.S.T.E.R | Personal Lasting Aid Surgical Treatment Enhancement Robot | Chest | 1 Elec, 1 LF | 2 | Heal up to 2 damage on any soldier same hex. **Tap**. Recharge: 1 Elec |
-| | B.E.A.R | Battlefield Extraction Airlift Rover | Chest | 1 Oil, 1 Ind, 1 Elec | 3 | +1 extra resource from same hex during Phase 4 |
+| | B.E.A.R | Battlefield Extraction Airlift Rover | Chest | 1 Oil, 1 Ind, 1 Elec | 3 | Its occupied resource hex provides +1 token during Phase 4; does not stack |
 | | L.P.M | Laser Pointer Marker | Backpack | 1 Elec, 1 LF, 1 Int | 4 | B.A.S.R/S.L.I.M.E target enemies near L.P.M carrier. Max 4 hex |
 | | D.U.D.S | Deployable Unital Defense System | Backpack | 1 LF, 1 Oil, 1 Ind | 2 | Place bunker: +1 all defense dice. One-use, frees slot. 2 DP deploy + 2 DP to hex controller |
 | **⚡ Tech** | J.J | Jump Jets | Legs | 1 Ind, 1 Int | 2 | Move 2 hexes. May override coherency (fights alone) |
@@ -1146,7 +1134,7 @@ DP come from **equipped BAC cards** — each BAC's DP value counts toward your t
 | 1 | Resource Production | Roll 3d6, place resource tokens on matching hexes |
 | 2 | Movement | Move each soldier up to 1 hex (or Conspire instead). Squad coherency: stay within 2 hexes of a squadmate |
 | 3 | Combat | Attack enemies in range: 1 hex with empty Hands, normally 2 with a Hands weapon. Only engaged soldiers roll |
-| 4 | Resource Gathering | Collect tokens from occupied/adjacent hexes. Priority: winner → loser → active player (if no combat) |
+| 4 | Salvage & Resource Gathering | Collect salvage, then 1 token per distinct resource hex occupied by your Squads; B.E.A.R grants +1 on its hex |
 | 5 | Purchase & Equip | Buy and equip BACs, recruit soldiers, create Squads |
 | 6 | Trade | Trade resource tokens freely with other players |
 | 7 | Separatists | Uprising → consume → move toward producing hexes → resolve combats |
