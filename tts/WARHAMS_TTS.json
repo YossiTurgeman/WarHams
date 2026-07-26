@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785045118,
+  "EpochTime": 1785045195,
   "Date": "2026-07-26",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -64593,9 +64593,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.95,
-        "g": 0.75,
-        "b": 0.05
+        "r": 0.48,
+        "g": 0.18,
+        "b": 0.72
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -64638,9 +64638,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.95,
-        "g": 0.75,
-        "b": 0.05
+        "r": 0.48,
+        "g": 0.18,
+        "b": 0.72
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -64683,9 +64683,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.95,
-        "g": 0.75,
-        "b": 0.05
+        "r": 0.48,
+        "g": 0.18,
+        "b": 0.72
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -64728,9 +64728,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.95,
-        "g": 0.75,
-        "b": 0.05
+        "r": 0.48,
+        "g": 0.18,
+        "b": 0.72
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,

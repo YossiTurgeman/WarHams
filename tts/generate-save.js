@@ -1831,7 +1831,7 @@ EQUIPMENT_SLOTS.forEach((slot, rowIdx) => {
 // Its long east-west edge faces south. Interior is roughly 29 × 11 units.
 const DICE_TRAY = { x: 74, z: 0, width: 30, length: 12, wall: 0.5 };
 const diceTrayColor = { r: 0.02, g: 0.02, b: 0.02 };
-const diceTrayWallColor = { r: 0.95, g: 0.75, b: 0.05 };
+const diceTrayWallColor = { r: 0.48, g: 0.18, b: 0.72 };
 const diceTrayDesc = "Large shared dice-throwing tray for the Blue and Yellow players. Permanently locked.";
 
 objects.push(baseObj("BlockSquare", "Blue & Yellow Dice Tray", diceTrayDesc,
