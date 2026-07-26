@@ -1863,16 +1863,22 @@ for (const [name, x, z, scaleX, scaleZ] of [
 // ─── 24. NORTH & SOUTH COMBAT BOARDS ──────────────────────────────────
 // Locked staging boards flank the dice tray. Rotating the south board 180°
 // mirrors its layout: H.A.M.S remain behind their corresponding dice and
-// both fighting lines face toward the tray.
-const combatSlotXs = Array.from({ length: 7 }, (_, i) => -0.7167 + i * 0.2389);
+// both fighting lines face toward the tray. Custom_Tile width includes the
+// texture's 3.333:1 aspect ratio, so scaleX 4.5 × 2 × 3.333 = 30 units;
+// scaleZ 6 × 2 = 12 units. This matches the dice tray's 30 × 12 footprint.
+const COMBAT_BOARD_ASPECT = 1800 / 540;
+const combatSlotXs = Array.from(
+    { length: 7 },
+    (_, i) => (-0.7167 + i * 0.2389) * COMBAT_BOARD_ASPECT,
+);
 for (const { label, z, rotY } of [
-    { label: "North", z: 12, rotY: 0 },
-    { label: "South", z: -12, rotY: 180 },
+    { label: "North", z: 13, rotY: 0 },
+    { label: "South", z: -13, rotY: 180 },
 ]) {
     const board = baseObj("Custom_Tile", `${label} Combat Board`,
         `${label} combat staging area. Place engaged H.A.M.S in slots 1-7 and each assigned die in the matching numbered slot.`,
         DICE_TRAY.x, 1.02, z,
-        { rotY, scaleX: 15, scaleY: 0.2, scaleZ: 4.5,
+        { rotY, scaleX: 4.5, scaleY: 0.2, scaleZ: 6,
           color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
     board.CustomImage = {
         ImageURL: COMBAT_ZONE_BOARD_URL,
