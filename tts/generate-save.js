@@ -258,14 +258,8 @@ function buildConspireDeck() {
 objects.push(buildConspireDeck());
 
 // ─── 4. RESOURCE DICE ────────────────────────────────────────────────
-// All three Phase 1 dice live one row above the number-token deck on
-// the LEFT edge (x=-44). The dice and the number tokens are used
-// together: the dice say which numbers produced this round; the
-// number tokens on the hexes say which hexes those numbers refer to.
-// Keeping them adjacent makes Phase 1 self-explanatory.
-// v128: white resource dice moved to the EAST of the separatist die
-// (per user request — easier to read as a left-to-right "Sep + 2 white"
-// row matching how the rulebook lists Phase 1 production rolls).
+// All three Phase 1 dice begin in a spaced row inside the shared dice tray:
+// Separatist die on the west, followed by the two white Resource dice.
 //
 // v154: Separatist Die is now a Custom_Dice with PAINTED pips —
 //   faces 2, 4, 6 (the base-printed numbers that trigger a Separatist
@@ -289,15 +283,15 @@ const PLAYER_DIE_SCALE = 2;
 const MAIN_DIE_SCALE = PLAYER_DIE_SCALE * 2;
 
 [
-    { name: "Separatist Die", color: { r: 0.5, g: 0.5, b: 0.5 }, x: -57, custom: true },
-    { name: "Resource Die 1", color: { r: 1, g: 1, b: 1 }, x: -52 },
-    { name: "Resource Die 2", color: { r: 1, g: 1, b: 1 }, x: -47 },
+    { name: "Separatist Die", color: { r: 0.5, g: 0.5, b: 0.5 }, x: 74, custom: true },
+    { name: "Resource Die 1", color: { r: 1, g: 1, b: 1 }, x: 83 },
+    { name: "Resource Die 2", color: { r: 1, g: 1, b: 1 }, x: 92 },
 ].forEach(d => {
     if (d.custom) {
         // Custom_Dice — painted texture (red pips for base-result numbers).
         const die = baseObj("Custom_Dice", d.name,
             "Grey d6 — RED pips on 2, 4, 6 trigger the matching Separatist Base: spawn 3 at an unconquered base, or its controller gains 1 Local Favor if conquered. The roller does not matter.",
-            d.x, 3, 12, {
+            d.x, 3, 0, {
                 scaleX: MAIN_DIE_SCALE, scaleY: MAIN_DIE_SCALE, scaleZ: MAIN_DIE_SCALE,
                 color: { r: 1, g: 1, b: 1 },
             });
@@ -313,7 +307,7 @@ const MAIN_DIE_SCALE = PLAYER_DIE_SCALE * 2;
     } else {
         objects.push(baseObj("Die_6", d.name,
             "Resource production",
-            d.x, 3, 12, {
+            d.x, 3, 0, {
                 scaleX: MAIN_DIE_SCALE, scaleY: MAIN_DIE_SCALE, scaleZ: MAIN_DIE_SCALE,
                 color: d.color,
             }));
@@ -1514,7 +1508,7 @@ objects.push(makeShuffleControl({
 // Persistent one-use state prevents an accidental second starting deal.
 const dealBacsButton = baseObj("Custom_Tile", "Deal Starting BACs",
     "Shuffle the Spaceport Deck and deal 3 starting BAC cards to every seated Red, Blue, Green, and Yellow player.",
-    56, 1.02, 12.5,
+    53, 1.02, 14,
     { rotY: 0, scaleX: 2.2, scaleY: 0.2, scaleZ: 1.4,
       color: { r: 0.20, g: 0.42, b: 0.82 }, locked: true, grid: false });
 dealBacsButton.CustomImage = {
