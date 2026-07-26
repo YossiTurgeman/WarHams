@@ -188,7 +188,7 @@ When BAC cards arrive at spaceports during the game (via doubles/triples):
 1. Place the BAC card **face-up** in the Unloading Zone under the container matching that spaceport's printed number. If BACs already exist in that slot, **stack** them face-up under the same container.
 2. Place the matching container from the second set on the corresponding **spaceport hex on the board** to mark the delivery (if not already there).
 
-**Collecting BACs:** During Phase 5, a Squad occupying a spaceport hex with a container marker may collect **all** BAC cards from the matching Unloading Zone slot into their hand. Remove the container from the board hex and reset the Unloading Zone slot.
+**Collecting BACs:** During a Logistics action, a Squad occupying a spaceport hex with a container marker may collect **all** BAC cards from the matching Unloading Zone slot into their hand. Remove the container from the board hex and reset the Unloading Zone slot.
 
 **Step 11 — Stock the Supply**
 Set up a **resource supply area** beside the board. Sort all Resource Tokens by type into clearly separated piles so any player can easily access them.
@@ -203,9 +203,9 @@ Set up a **resource supply area** beside the board. Sort all Resource Tokens by 
 
 ## 🔄 TURN STRUCTURE
 
-Starting from the first player and proceeding clockwise, each player completes **all seven phases** of their turn before play passes to the next player. No other player may act during your turn unless a Conspire Card or combat specifically requires it.
+Starting from the first player and proceeding clockwise, each player completes **all four phases** of their turn before play passes to the next player. No other player may act during your turn unless a Conspire Card or combat specifically requires it.
 
-The shared **Round Tracker** begins at Round 1. Each player's tracker begins at **TURN READY** and **0 DP**. Adjust your DP counter whenever a rule or card awards or removes DP. After completing Phase 7, mark your tracker **TURN DONE**.
+The shared **Round Tracker** begins at Round 1. Each player's tracker begins at **TURN READY** and **0 DP**. Adjust your DP counter whenever a rule or card awards or removes DP. After completing Phase 4, mark your tracker **TURN DONE**.
 
 ---
 
@@ -217,7 +217,7 @@ The active player rolls **2d6 + 1 Separatist Die** (a grey d6). All three dice p
 >
 > **Example (Doubles):** You roll 3, 3, and the Separatist Die shows 5. Every hex with a "3" token receives 1 resource token (not 2 — duplicates don't double production), and every hex with a "5" token receives 1 resource token. The doubled 3s also trigger a BAC delivery (see Doubles below).
 
-**Separatist Base Result** — After producing resources, resolve the grey Separatist Die using **Phase 7: Separatists — Base Results**. A matching unconquered base spawns Separatists; a matching conquered base instead gives 1 Local Favor directly to its controller. The player who rolled the die does not matter. Newly spawned forces remain at their base until Phase 7.
+**Separatist Base Result** — After producing resources, resolve the grey Separatist Die using **Phase 4: Separatists — Base Results**. A matching unconquered base spawns Separatists; a matching conquered base instead gives 1 Local Favor directly to its controller. The player who rolled the die does not matter. Newly spawned forces remain at their base until Phase 4.
 
 **Doubles** — If two of the three dice show the same number (e.g., 3, 3, 5):
 
@@ -233,43 +233,33 @@ The active player rolls **2d6 + 1 Separatist Die** (a grey d6). All three dice p
 
 ---
 
-### Phase 2: Movement
+### Phase 2: Activation Phase
 
-The active player may move each of their Squads. Each individual H.A.M.S in a Squad may move up to **1 hex** in any direction. A soldier equipped with **Jump Jets (J.J)** may move up to **2 hexes** instead.
+During the Activation Phase, the active player activates all of their Squads **one by one**. Each Squad takes **2 actions**, resolving each action completely before taking its second action or activating the next Squad. After all of the active player's Squads have activated, play proceeds to Phase 3. Any action type may be chosen twice (for example, **Move → Move** to move twice, or **Conspire → Conspire** to draw twice).
+
+#### Action: Move
+
+The activating player may move each H.A.M.S in the activating Squad up to **1 hex** in any direction. A soldier equipped with **Jump Jets (J.J)** may move up to **2 hexes** instead.
 
 Soldiers within a Squad move **independently** — they are not required to stay grouped. Spreading out allows a Squad to cover more hexes for resource gathering, but isolated soldiers are vulnerable to attack. However, every soldier must remain **within 2 hexes of at least one other squadmate** at all times (squad coherency).
 
-> **Exception — Jump Jets (J.J):** A soldier equipped with J.J may move **beyond** squad coherency range, explicitly overriding the 2-hex rule. While disconnected (beyond 2 hexes of all squadmates), the soldier **fights alone** — rolling only their own dice with no squad support. They **cannot benefit from Squad-level BAC effects** (e.g., S.L.I.M.E (Squad Light Interoperable Mortar Encampment) crew, L.P.M (Laser Pointer Marker) spotting). The soldier may rejoin their Squad by moving back within 2 hexes of a squadmate on a later turn.
+> **Exception — Jump Jets (J.J):** A soldier equipped with J.J may move **beyond** squad coherency range, explicitly overriding the 2-hex rule. While disconnected (beyond 2 hexes of all squadmates), the soldier **fights alone** — rolling only their own dice with no squad support. They **cannot benefit from Squad-level BAC effects** (e.g., S.L.I.M.E (Squad Light Interoperable Mortar Encampment) crew, L.P.M (Laser Pointer Marker) spotting). The soldier may rejoin their Squad by moving back within 2 hexes of a squadmate on a later Move action.
 
 > **Example:** A 5-soldier Squad on hex A could split: 2 soldiers stay on hex A, 1 moves to hex B, and 2 move to hex C. All five remain part of the same Squad — A is 2 hexes away from C, maintaining coherency.
 
-**Moving Through Separatists** — A soldier may not move through a hex occupied by Separatist forces without engaging them in combat first (see Phase 3).
+**Moving Through Separatists** — A soldier may not move through a hex occupied by Separatist forces without engaging them in combat first (see **Action: Combat**).
 
 **Board Wrapping** — The planet is round. Hexes at the edges of the board connect to corresponding hexes on the opposite edge via marked connection points (labeled a, b, c, etc.). Movement and range calculations wrap accordingly.
 
-#### Alternative: Conspire
+#### Claim Hexes (after each Move action)
 
-Instead of moving a Squad, the active player may forfeit that Squad's movement to **Conspire** (see the full **Conspiring** section for details):
+Immediately after the Move action, for **every hex containing one or more of the activating Squad's soldiers and no enemy soldiers**, place one of your **Control Flags** on that hex. If an **opposing flag** is already there, **return it to that opponent's supply** and replace it with yours. If **your own** flag is already there, leave it. Flags on hexes you do **not** currently occupy **remain in place** until an opponent later claims them by this same rule — the planet stays painted in your colour even after your Squad moves on.
 
-1. Draw **3 cards** from the Conspire Deck.
-2. Keep **1** card and discard the other 2 face-down to the Conspire discard pile.
-3. If a drawn card states otherwise (e.g., "keep 2"), follow that card's instructions instead.
+Hexes containing both your soldiers AND an enemy's are **contested** — no flag is placed or changed. Wait until a Combat action resolves who occupies the hex; Claim Hexes after that Combat action will then settle the flag.
 
-A player may choose to move some Squads and Conspire with others — the choice is made **per Squad**. A Squad may also forfeit its **Combat** in Phase 3 to Conspire instead (see Phase 3).
+#### Action: Combat
 
-> **Tip:** Conspiring is your primary path to powerful one-time effects, resource conversion, and combat tricks. Don't neglect it — a well-timed Conspire Card can turn the tide of battle.
-
-#### Claim Hexes (end of Phase 2)
-
-After **all** of your Squads have finished moving, for **every hex containing one or more of your soldiers and no enemy soldiers**, place one of your **Control Flags** on that hex. If an **opposing flag** is already there, **return it to that opponent's supply** and replace it with yours. If **your own** flag is already there, leave it. Flags on hexes you do **not** currently occupy **remain in place** until an opponent later claims them by this same rule — the planet stays painted in your colour even after your Squad moves on.
-
-Hexes containing both your soldiers AND an enemy's are **contested** — no flag is placed (or changed) at this step. Wait until Phase 3 Combat resolves who occupies the hex; the Claim Hexes step at the end of Phase 3 will then settle the flag.
-
----
-
-### Phase 3: Combat
-
-Combat is optional for each of the active player's Squads during Phase 3. A Squad with an enemy unit — whether belonging to another player or Separatist forces — within the **combat range** of at least one active soldier may **declare combat**, **Conspire instead** (draw 3 Conspire Cards and keep 1), or **do nothing**. Separatist combats triggered during Phase 7 are mandatory (see **Phase 7: Separatists — Combat Rules**). Only soldiers with an enemy in their combat range are **engaged** and participate.
+Combat is optional. A Squad with an enemy unit — whether belonging to another player or Separatist forces — within the **combat range** of at least one active soldier may declare one combat. Only soldiers with an enemy in their combat range are **engaged** and participate. Separatist combats triggered during Phase 4 are mandatory (see **Phase 4: Separatists — Combat Rules**).
 
 To declare combat:
 
@@ -281,41 +271,19 @@ To declare combat:
 
 > **Combat Boards are staging aids only.** Moving a miniature to a Combat Board does not change its board position, range, control, or coherency. Resolve deaths, retreats, advances, and salvage using the soldier's original hex; place any dropped salvage there.
 
-**Multiple Combats** — If the active player has multiple Squads engaged with different enemy forces, each may declare a separate combat. Resolve combats one at a time, in the order chosen by the active player. The two markers can identify the next two declared locations; reuse a returned marker if more combats remain.
+**Multiple Combats** — If the active player has multiple Squads engaged with different enemy forces, each may declare a separate Combat action. Resolve combats one at a time, in the order chosen by the active player. The two markers can identify the next two declared locations; reuse a returned marker if more combats remain.
 
-> **Note:** Only the active player may initiate combat during this phase. Defending players respond as part of combat resolution but do not initiate attacks of their own.
+> **Note:** Only the active player may initiate a Combat action. Defending players respond as part of combat resolution but do not initiate attacks of their own.
 
-#### Claim Hexes (end of Phase 3)
+#### Claim Hexes (after each Combat action)
 
-After **all** combats are resolved, re-run the Claim Hexes step exactly as in Phase 2: for every hex containing one or more of your soldiers and no enemy soldiers, place your Control Flag (return any opposing flag to its owner's supply). This catches the hexes that combat just cleared — for example, a hex you successfully attacked and pushed the defender off, or a contested hex where your soldiers survived and the opponent's didn't.
+Immediately after the Combat action is resolved, for every hex containing one or more of the activating Squad's soldiers and no enemy soldiers, place your Control Flag (return any opposing flag to its owner's supply). This catches hexes that combat just cleared — for example, a hex you successfully attacked and pushed the defender off, or a contested hex where your soldiers survived and the opponent's didn't.
 
-If a base was conquered this phase (all 7 base defenders killed), the conquering player places their flag on the base hex as part of this step.
+If a base was conquered during this action (all 7 base defenders killed), the conquering player places their flag on the base hex as part of this step.
 
----
+#### Action: Logistics
 
-### Phase 4: Salvage & Resource Gathering
-
-After all combats are resolved, only the **active player** resolves salvage and resource gathering for their Squads.
-
-**Step 1 — Salvage Collection (if any):**
-
-Before collecting resources, the active player's soldiers may pick up **salvage modules** on the hexes they occupy (left behind after a death — see **Death in W.A.R H.A.M.S, Step 4**). Salvaged modules can be equipped for **free** — simply attach the module to the soldier's miniature.
-
-**Step 2 — Resource Collection:**
-
-- For every distinct **resource-producing hex** occupied by at least one soldier from one of your Squads, collect **1 resource token** from that hex, if available.
-- Each hex provides resources only **once per turn**, regardless of how many of your soldiers or Squads occupy it.
-- If a soldier occupying that hex has **B.E.A.R** (Battlefield Extraction Airlift Rover), you may collect **1 additional resource token** from the same hex. Multiple B.E.A.R modules on one hex do not stack.
-
-> **Important:** Resources **cannot** be collected from a hex occupied by Separatist units. Defeat them first.
-
-Collected resource tokens go directly into the player's personal supply.
-
----
-
-### Phase 5: Purchase & Equip
-
-The active player may unlock and equip BAC types, acquire new BAC cards, recruit soldiers, and create new Squads. All actions in this phase may be performed in any order and any number of times (resources permitting).
+During a Logistics action, the active player may unlock and equip BAC types, acquire new BAC cards, recruit soldiers, create new Squads, activate field modules, recharge tapped modules, and trade. **All Logistics actions may be performed in any order and any number of times during a single Logistics action, resources permitting.**
 
 **Equipping a BAC:**
 
@@ -332,7 +300,7 @@ Equipping has no location requirement — you may equip any of your soldiers reg
 
 **Re-equipping an unlocked BAC type:**
 
-If your Control Flag is already on a BAC card in the Equipment Display, you may equip additional soldiers with that type at any time during Phase 5 — no card needed, just pay the resource cost **per soldier** and attach the module.
+If your Control Flag is already on a BAC card in the Equipment Display, you may equip additional soldiers with that type during a Logistics action — no card needed, just pay the resource cost **per soldier** and attach the module.
 
 **Limit:** Only **8 copies** of each equipment module exist in the game. If all 8 are currently in use, no more soldiers can equip that type until a module is freed (destroyed modules return to the box and can be purchased again).
 
@@ -360,8 +328,8 @@ Pay the soldier recruitment cost **× the number of soldiers** in the new Squad 
 
 ---
 
-### Phase 6: Trade
 
+**Trading:**
 The active player may trade resource tokens freely with any other player. Both parties must agree to the terms of the trade. There is no limit to the number of trades per turn.
 
 - Only **resource tokens** may be traded. BAC cards, Conspire Cards, and equipment cannot be traded.
@@ -373,9 +341,44 @@ The active player may trade resource tokens freely with any other player. Both p
 
 ---
 
+#### Action: Conspire
+
+Spend one of the activating Squad's actions to draw **3 cards** from the Conspire Deck, keep **1**, and discard the other 2 face-down to the Conspire discard pile. If a drawn card states otherwise (for example, "keep 2"), follow that card's instructions. See the full **Conspiring** section for hand limits, card timing, and deck exhaustion.
+
+A Squad may Conspire **twice** by spending both of its actions, drawing twice.
+
+#### Action: Rest
+
+Roll **1d3**: roll 1d6 and divide the result by 2, rounding up (**1–2 = 1, 3–4 = 2, 5–6 = 3**). Remove that many damage pegs total from soldiers in the activating Squad. The player chooses which soldiers to heal and how to distribute the removed pegs.
+
+Damage persists between turns. Rest is the basic way to recover without using cards.
+
+---
+
+### Phase 3: Salvage & Resource Gathering
+
+After all Squad activations are complete, only the **active player** resolves salvage and resource gathering for their Squads.
+
+**Step 1 — Salvage Collection (if any):**
+
+Before collecting resources, the active player's soldiers may pick up **salvage modules** on the hexes they occupy (left behind after a death — see **Death in W.A.R H.A.M.S, Step 4**). Salvaged modules can be equipped for **free** — simply attach the module to the soldier's miniature.
+
+**Step 2 — Resource Collection:**
+
+- For every distinct **resource-producing hex** occupied by at least one soldier from one of your Squads, collect **1 resource token** from that hex, if available.
+- Each hex provides resources only **once per turn**, regardless of how many of your soldiers or Squads occupy it.
+- If a soldier occupying that hex has **B.E.A.R** (Battlefield Extraction Airlift Rover), you may collect **1 additional resource token** from the same hex. Multiple B.E.A.R modules on one hex do not stack.
+
+> **Important:** Resources **cannot** be collected from a hex occupied by Separatist units. Defeat them first.
+
+Collected resource tokens go directly into the player's personal supply.
+
+---
+
+
 <div style="page-break-before: always;"></div>
 
-### Phase 7: Separatists
+### Phase 4: Separatists
 
 Separatists are rogue fighting forces loyal to no corporation — remnants of failed colonial garrisons, opportunistic raiders, and alien sympathizers who resist all outside control. This phase contains all rules for their components, spawning, behavior, combat, and bases.
 
@@ -394,9 +397,9 @@ During Phase 1, compare the **grey Separatist Die** with the printed number on e
 
 The other two resource dice never trigger either result.
 
-Spawned Separatists remain on the base. Do not consume resources, move them, or resolve their combat until Phase 7. A conquered base no longer spawns naturally.
+Spawned Separatists remain on the base. Do not consume resources, move them, or resolve their combat until Phase 4. A conquered base no longer spawns naturally.
 
-#### Phase 7 Procedure
+#### Phase 4 Procedure
 
 The active player resolves all four steps below for **every Separatist on the board**, regardless of territory. This includes Separatists spawned during the current turn's Phase 1 and those spawned by Instigate Uprising.
 
@@ -434,15 +437,15 @@ Resolve mandatory combat on every hex shared by Separatists and player soldiers.
 | **Roaming Penalty** | Roaming Separatists apply **−1 to all dice**, to a minimum result of 1 |
 | **Base Defenders** | Base defenders roll a full d6 and do **not** apply the roaming −1 penalty |
 | **Hit Points** | Each Separatist has 1 life; any hit kills it immediately |
-| **Player Attacks** | A player may voluntarily attack a Separatist group during Phase 3 under the normal engagement rules |
-| **Mandatory Combat** | Combat is mandatory after Separatists enter a player's hex during Phase 7 |
+| **Player Attacks** | A player may voluntarily attack a Separatist group during a Combat action under the normal engagement rules |
+| **Mandatory Combat** | Combat is mandatory after Separatists enter a player's hex during Phase 4 |
 | **Blocking** | A player must defeat Separatists before moving through their hex or collecting resources there |
 
 #### Conquering Bases
 
 - The first attack against an unconquered base triggers **7 base defenders**. They are dug in and roll full d6 without the roaming penalty.
 - Defeat all 7 defenders to conquer the base, then place your Control Flag on its hex.
-- Surviving defenders become roaming Separatists and follow the Phase 7 procedure.
+- Surviving defenders become roaming Separatists and follow the Phase 4 procedure.
 - Conquered bases **stop spawning naturally** (their printed number no longer triggers spawns).
 - The controller gains the **Instigate Uprising** ability described in Step 1.
 - Whenever the Separatist Die matches a conquered base's printed number, that base's controller immediately gains **1 Local Favor**, regardless of who rolled the die.
@@ -451,13 +454,14 @@ Resolve mandatory combat on every hex shared by Separatists and player soldiers.
 
 ---
 
+
 ### End of Turn
 
-Once all seven phases are complete, play passes **clockwise** to the next player, who begins their turn at Phase 1.
+Once all four phases are complete, play passes **clockwise** to the next player, who begins their turn at Phase 1.
 
 ### End of Round
 
-A **round** is one full cycle of all players' turns (each player completes Phases 1–7 once). After the **last player** in turn order finishes their turn, resolve the following before the next round begins:
+A **round** is one full cycle of all players' turns (each player completes Phases 1–4 once). After the **last player** in turn order finishes their turn, resolve the following before the next round begins:
 
 - Any **uncollected resource tokens** remaining on hexes you control (marked with your Control Flag) are added to your personal supply.
 - Any **spaceport hexes** you control that have a **container marker** on them: collect all BAC cards from the matching **Unloading Zone** slot into your hand. Remove the container from the board hex and reset the slot.
@@ -468,18 +472,16 @@ Advance the Round Tracker by 1 and reset every player tracker to **TURN READY**.
 
 ### Turn Summary — Quick Reference
 
-| Phase | Name                  | Summary                                                              |
-|-------|-----------------------|----------------------------------------------------------------------|
-| 1     | Resource Production   | Roll 3d6, spawn resources on matching hexes. Doubles/triples = BAC drops at spaceports |
-| 2     | Movement              | Move each soldier up to 1 hex (2 with J.J). Alternatively, Conspire instead of moving a Squad |
-| 3     | Combat                | Declare attacks against enemies in range. Empty Hands: 1 hex; standard Hands weapon: 2 hexes. Only engaged soldiers roll |
-| 4     | Salvage & Resource Gathering | Collect salvage, then 1 token from each distinct resource hex occupied by your Squads; B.E.A.R grants +1 on its hex |
-| 5     | Purchase & Equip      | Spend resource tokens to buy and equip BACs, recruit soldiers, or create new Squads |
-| 6     | Trade                 | Trade resource tokens freely with other players by mutual agreement   |
-| 7     | Separatists           | Uprising → consume → move → combat |
+| Phase | Name | Summary |
+|-------|------|---------|
+| 1 | Resource Production | Roll 3d6, spawn resources on matching hexes. Doubles/triples = BAC drops at spaceports |
+| 2 | Activation Phase | Each Squad takes 2 actions: Move, Combat, Logistics, Conspire, or Rest. Any may be repeated |
+| 3 | Salvage & Resource Gathering | Collect salvage, then 1 token from each distinct resource hex occupied by your Squads; B.E.A.R grants +1 on its hex |
+| 4 | Separatists | Uprising → consume → move → combat |
 
 ---
 ---
+
 
 ## ⚔️ COMBAT SYSTEM
 
@@ -491,11 +493,11 @@ Combat is the heart of W.A.R H.A.M.S. When corporations clash over hexes, resour
 
 ### Initiating Combat
 
-During **Phase 3** of the active player's turn, they may declare an attack with any of their Squads against an enemy Squad (or Separatist group). This is separate from mandatory Separatist combat during Phase 7 (see **Phase 7: Separatists — Combat Rules**).
+During a **Combat action** in the Activation Phase, they may declare an attack with any of their Squads against an enemy Squad (or Separatist group). This is separate from mandatory Separatist combat during Phase 4 (see **Phase 4: Separatists — Combat Rules**).
 
 > **Starting Range — Empty Hands:** A H.A.M.S with no weapon equipped in its Hands slot has a combat range of **1 hex**: it can fight enemies on the **same hex** or an **adjacent hex**. It attacks and defends normally and rolls **1d6**. Equipping a Hands-slot weapon increases its range to **2 hexes** unless that weapon explicitly states another range. Equipment in other slots does not increase the empty-Hands range.
 
-- Each Squad may declare **one attack** per turn.
+- Each Squad may declare **one Combat action** per turn.
 - To initiate combat, at least **one** soldier in the attacking Squad must have at least one soldier in the target Squad within their combat range.
 - **Engaged soldiers only:** A soldier participates and rolls dice only when at least one enemy soldier in the target Squad is within that soldier's combat range. Soldiers without an enemy in range **sit out** — they do not roll attack or defense dice.
 - **S.L.I.M.E** (mortar) has extended range and may fire from beyond 2 hexes (up to 3 hexes). Mortar crew count as engaged even if outside normal range. **B.A.S.R** (Bolt Action Sniper Rifle) fires at up to 2 hexes in a **pre-combat step** — within normal engagement range, but its range can be extended via **L.P.M** (Laser Pointer Module) (up to 4 hexes). See **Special Weapon Rules** below.
@@ -725,11 +727,11 @@ Detach the equipment module from the struck slot and **return it to the box** (i
 
 #### 4. Salvage
 
-Modules left on the hex may be picked up by **any** soldier occupying that hex during **Phase 4: Salvage & Resource Gathering, Step 1 (Salvage Collection)**. Salvage collection happens **before** regular resource gathering. Salvaged modules can be equipped for **free** (the cost was already paid) — simply attach the module to the soldier's mini. Check the **Equipment Display** to confirm the module's identity and effect.
+Modules left on the hex may be picked up by **any** soldier occupying that hex during **Phase 3: Salvage & Resource Gathering, Step 1 (Salvage Collection)**. Salvage collection happens **before** regular resource gathering. Salvaged modules can be equipped for **free** (the cost was already paid) — simply attach the module to the soldier's mini. Check the **Equipment Display** to confirm the module's identity and effect.
 
 #### 5. Coherency Check
 
-After a death, check if any surviving squadmates are now **beyond 2 hexes** from all other squadmates. If so, those soldiers are **disconnected** — they fight alone (own dice only, no Squad-level BAC effects), identical to the J.J disconnection rules. Disconnected soldiers suffer a **−1 penalty to all dice rolls** (minimum 1) and **must** use their next Movement phase to move back within 2 hexes of a squadmate. Until they rejoin, they cannot benefit from effects like S.L.I.M.E crew, L.P.M spotting, or other Squad-level abilities.
+After a death, check if any surviving squadmates are now **beyond 2 hexes** from all other squadmates. If so, those soldiers are **disconnected** — they fight alone (own dice only, no Squad-level BAC effects), identical to the J.J disconnection rules. Disconnected soldiers suffer a **−1 penalty to all dice rolls** (minimum 1) and **must** use their next Move action to move back within 2 hexes of a squadmate. Until they rejoin, they cannot benefit from effects like S.L.I.M.E crew, L.P.M spotting, or other Squad-level abilities.
 
 ---
 
@@ -746,7 +748,7 @@ When using area-of-effect weaponry — specifically **S.L.I.M.E** (mortar) or ot
 
 ### 🏴 Separatist Combat
 
-Separatist battles use the normal combat sequence with the exceptions listed in **Phase 7: Separatists — Combat Rules**, which is authoritative for who rolls their dice, penalties, hit points, mandatory combats, and base defenders.
+Separatist battles use the normal combat sequence with the exceptions listed in **Phase 4: Separatists — Combat Rules**, which is authoritative for who rolls their dice, penalties, hit points, mandatory combats, and base defenders.
 
 ---
 
@@ -899,9 +901,9 @@ Modules with active abilities fall into two timing categories:
 | Category | When to Activate | Examples |
 |----------|-----------------|----------|
 | **Combat Modules** | During **combat resolution** at Step 3 (equipment bonuses) | N.I.N.J.A (Nir Ion Nullifier Jammer Aid; +3 defense die) |
-| **Field Modules** | During **Phase 5** (Purchase & Equip) on your turn | P.L.A.S.T.E.R (Personal Lasting Aid Surgical Treatment Enhancement Robot; heal damage), D.U.D.S (place bunker) |
+| **Field Modules** | During a **Logistics action** on your turn | P.L.A.S.T.E.R (Personal Lasting Aid Surgical Treatment Enhancement Robot; heal damage), D.U.D.S (place bunker) |
 
-- **Untapping** (recharging) a Tapped module is also done during **Phase 5**. The soldier must be at the required location (City or Spaceport) and you must pay the listed recharge cost.
+- **Untapping** (recharging) a Tapped module is also done during a **Logistics action**. The soldier must be at the required location (City or Spaceport) and you must pay the listed recharge cost.
 - Passive bonuses (e.g., H.C.A.R +1 attack, S.A.P +1 defense) are **always active** and require no activation — they apply automatically during combat.
 
 ---
@@ -924,7 +926,7 @@ Modules with active abilities fall into two timing categories:
 | **💣 Heavy** | B.A.S.R | Bolt Action Sniper Rifle | Hands | 1 Oil, 1 Int, 1 Ind | 4 | **Range 2.** Pre-combat: 2d6 pick higher, target 1 soldier in range. Sniper skips combat. Both get −1 defense |
 | | S.L.I.M.E | Squad Light Interoperable Mortar Encampment | Backpack | 1 Ind, 2 Oil, 2 LF | 5 | 2-soldier crew. 4d6 normal matchups, target squad up to 3 hexes. Crew skips combat. −1 defense. Civilian Damage Rule |
 | **🔧 Support** | P.L.A.S.T.E.R | Personal Lasting Aid Surgical Treatment Enhancement Robot | Chest | 1 Elec, 1 LF | 2 | Heal up to 2 damage on any soldier same hex. **Tap**. Recharge: 1 Elec |
-| | B.E.A.R | Battlefield Extraction Airlift Rover | Chest | 1 Oil, 1 Ind, 1 Elec | 3 | Its occupied resource hex provides +1 token during Phase 4; does not stack |
+| | B.E.A.R | Battlefield Extraction Airlift Rover | Chest | 1 Oil, 1 Ind, 1 Elec | 3 | Its occupied resource hex provides +1 token during Phase 3; does not stack |
 | | L.P.M | Laser Pointer Marker | Backpack | 1 Elec, 1 LF, 1 Int | 4 | B.A.S.R/S.L.I.M.E target enemies near L.P.M carrier. Max 4 hex |
 | | D.U.D.S | Deployable Unital Defense System | Backpack | 1 LF, 1 Oil, 1 Ind | 2 | Place bunker: +1 all defense dice. One-use, frees slot. 2 DP deploy + 2 DP to hex controller |
 | **⚡ Tech** | J.J | Jump Jets | Legs | 1 Ind, 1 Int | 2 | Move 2 hexes. May override coherency (fights alone) |
@@ -937,7 +939,7 @@ Modules with active abilities fall into two timing categories:
 
 ## 🕵️ CONSPIRING
 
-A player may forfeit a Squad's **Movement** (Phase 2) OR **Combat** (Phase 3) to **Conspire**. The choice is made per Squad — some Squads may move and fight normally while others Conspire.
+A player may spend one of a Squad's **2 actions** to **Conspire**.
 
 ### Drawing Conspire Cards
 
@@ -945,7 +947,7 @@ A player may forfeit a Squad's **Movement** (Phase 2) OR **Combat** (Phase 3) to
 2. Keep **1** card, discard the other 2 face-down.
 3. If a drawn card states otherwise (e.g., "keep 2"), follow that card's instructions.
 
-A single Squad may Conspire in **both** Phase 2 and Phase 3 of the same turn (forfeiting both movement and combat), drawing twice.
+A single Squad may Conspire **twice** in the same turn (spending both actions), drawing twice.
 
 **Hand Limit:** A player may hold a maximum of **7 Conspire Cards**. At the end of your turn, if you have more than 7, discard down to 7 (your choice which to discard).
 
@@ -1045,13 +1047,13 @@ Militia are temporary local fighters summoned by the **Deal with Local Militia**
 
 ### Claiming a Hex
 
-Claim is resolved automatically at the **end of Phase 2 (Movement)** and again at the **end of Phase 3 (Combat)** — see the **Claim Hexes** sub-steps in each phase. The rule in both places:
+Claim is resolved automatically immediately after each **Move action** and each **Combat action** — see the **Claim Hexes** sub-steps in each phase. The rule in both places:
 
 > For every hex containing one or more of your soldiers and **no enemy soldiers**, place one of your **Control Flags** on that hex. If an opposing flag is already there, **return it to that opponent's supply** and replace it with yours. If your own flag is already there, leave it.
 
 This applies to **resource-producing hexes**, **Spaceport Drop Zones**, **Separatist Bases** (once conquered — all 7 defenders killed), and **Terrain hexes**.
 
-Once placed, a flag stays even after your Squad leaves — the hex remains under your control until an opponent's Squad enters it and re-claims it via the same Phase 2 or Phase 3 step. **Contested hexes** (both your and an enemy's soldiers on the same hex) skip flag placement until Phase 3 Combat resolves the occupant.
+Once placed, a flag stays even after your Squad leaves — the hex remains under your control until an opponent's Squad enters it and re-claims it via the same Move or Combat action. **Contested hexes** (both your and an enemy's soldiers on the same hex) skip flag placement until a Combat action resolves the occupant.
 
 ### End-of-Round Bonus
 
@@ -1059,7 +1061,7 @@ Once placed, a flag stays even after your Squad leaves — the hex remains under
 
 At the **end of each round** (after all players have completed their turns), any uncollected resource tokens on your controlled hexes are added to your supply. Additionally, any spaceport hexes you control with container markers grant you the BAC cards from the matching Unloading Zone slot. See the **End of Round** step in the Turn Structure for full details.
 
-Territory collection is resolved **simultaneously for all players** once the final player's turn (including Phase 7) is complete.
+Territory collection is resolved **simultaneously for all players** once the final player's turn (including Phase 4) is complete.
 
 ---
 
@@ -1130,14 +1132,11 @@ DP come from **equipped BAC cards** — each BAC's DP value counts toward your t
 ### Turn Phase Summary
 
 | # | Phase | Key Action |
-|:-:|-------|------------|
+|---|-------|------------|
 | 1 | Resource Production | Roll 3d6, place resource tokens on matching hexes |
-| 2 | Movement | Move each soldier up to 1 hex (or Conspire instead). Squad coherency: stay within 2 hexes of a squadmate |
-| 3 | Combat | Attack enemies in range: 1 hex with empty Hands, normally 2 with a Hands weapon. Only engaged soldiers roll |
-| 4 | Salvage & Resource Gathering | Collect salvage, then 1 token per distinct resource hex occupied by your Squads; B.E.A.R grants +1 on its hex |
-| 5 | Purchase & Equip | Buy and equip BACs, recruit soldiers, create Squads |
-| 6 | Trade | Trade resource tokens freely with other players |
-| 7 | Separatists | Uprising → consume → move toward producing hexes → resolve combats |
+| 2 | Activation Phase | Each Squad takes 2 actions: Move, Combat, Logistics, Conspire, or Rest |
+| 3 | Salvage & Resource Gathering | Collect salvage, then 1 token per distinct resource hex occupied by your Squads |
+| 4 | Separatists | Uprising → consume → move toward producing hexes → resolve combats |
 
 ### Key Costs
 
@@ -1146,7 +1145,7 @@ DP come from **equipped BAC cards** — each BAC's DP value counts toward your t
 | Recruit 1 Soldier | 1 Local Favor + 1 Oil + 1 Industry + 1 Electricity | City |
 | Create New Squad (min 5) | 5× soldier cost | City |
 | Draw from Spaceport Deck | 3 same-type resource tokens | Spaceport or City |
-| Conspire | Forfeit 1 Squad's Movement (Phase 2) or Combat (Phase 3) | Anywhere |
+| Conspire | Costs 1 of the Squad's 2 actions | Anywhere |
 | Untap P.L.A.S.T.E.R | 1 Electricity | City or Spaceport |
 | Untap N.I.N.J.A | 2 Electricity | City or Spaceport |
 
