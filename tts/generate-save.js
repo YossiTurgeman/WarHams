@@ -377,11 +377,11 @@ function makeResourceToken(res) {
 resourceDefs.forEach((res, i) => {
     const tokens = [];
     for (let n = 0; n < 50; n++) tokens.push(makeResourceToken(res));
-    // Resource bags lined up along the right edge of the table, between
-    // the BAC deck (z=-20) and the Conspire deck (z=+20).
+    // Resource bags form a row north of the shared dice tray, keeping its
+    // wide east-west throwing area unobstructed.
     const bag = baseObj("Bag", `${res.name} Tokens (50)`,
         `Stack of ${res.name} tokens (${res.label}). Each spawns upright on its base.`,
-        62, 1.5, -12 + i * 6, { color: res.color });
+        60 + i * 4, 1.5, 10, { color: res.color });
     bag.ContainedObjects = tokens;
     objects.push(bag);
 });
@@ -1474,7 +1474,7 @@ function makeShuffleControl({ name, desc, x, z, tag, broadcastNoun, dealOntoTag 
 objects.push(makeShuffleControl({
     name: "Randomize Hexes",
     desc: "Click the on-tile button to shuffle the 61 planet hexes among their current slot positions.",
-    x: 72, z: 18,
+    x: 74, z: 18,
     tag: "planet-hex",
     broadcastNoun: "planet hex tiles",
 }));
@@ -1828,10 +1828,10 @@ EQUIPMENT_SLOTS.forEach((slot, rowIdx) => {
 // ─── 23. SHARED DICE TRAY ─────────────────────────────────────────────
 // Large enclosed throwing area on the far-east edge, shared by the Blue
 // and Yellow players. The floor and all four walls are permanently locked.
-// Interior is roughly 11 × 29 units after accounting for wall thickness.
-const DICE_TRAY = { x: 72, z: 0, width: 12, length: 30, wall: 0.5 };
-const diceTrayColor = { r: 0.10, g: 0.14, b: 0.20 };
-const diceTrayWallColor = { r: 0.24, g: 0.30, b: 0.38 };
+// Its long east-west edge faces south. Interior is roughly 29 × 11 units.
+const DICE_TRAY = { x: 74, z: 0, width: 30, length: 12, wall: 0.5 };
+const diceTrayColor = { r: 0.02, g: 0.02, b: 0.02 };
+const diceTrayWallColor = { r: 0.95, g: 0.75, b: 0.05 };
 const diceTrayDesc = "Large shared dice-throwing tray for the Blue and Yellow players. Permanently locked.";
 
 objects.push(baseObj("BlockSquare", "Blue & Yellow Dice Tray", diceTrayDesc,
