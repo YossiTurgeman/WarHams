@@ -109,7 +109,7 @@ const objects = [];
 // ─── 0. CUSTOM TABLE SURFACE (4× area of stock Table_RPG) ───────────
 // We use Table_None and place a giant locked Custom_Tile at y≈0.95 so the
 // usable play area is ~160 × 76 (±80 X, ±38 Z). Widened from ±54 in v75
-// to fit the ED → controls/resources → PB → UZ → dice-tray row east of
+// to fit the controls/resources → ED → PB → UZ → dice-tray row east of
 // the planet board with proper gaps.
 const tableTile = baseObj("Custom_Tile", "Play Surface",
     "W.A.R.H.A.M.S play surface — extra-wide table area.",
@@ -206,12 +206,12 @@ function buildBACDeck() {
         }
     });
     // Spawn at the DECK slot on the Planet Bound Area board.
-    // PB is at rotY:270 with center (50, 1.02, 0). Empirically, the
+    // PB is at rotY:270 with center (53, 1.02, 0). Empirically, the
     // DECK slot is at z=+9.5 (north end of PB's long axis); z=-9.5 lands
     // on slot 6. Deck shares PB's rotY:270.
     const deck = baseObj("Deck", "Spaceport Deck",
         `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
-        50, 1.5, 9.5, { rotY: 270, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        53, 1.5, 9.5, { rotY: 270, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -246,7 +246,7 @@ function buildConspireDeck() {
     });
     const deck = baseObj("Deck", "Conspire Deck",
         `Conspire Cards — ${gameData.deck_counts.total_conspire_cards} cards\nForfeit Movement or Combat to draw 1.\nHover cards to see effects.`,
-        60, 1.5, 10, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
+        62, 1.5, 10, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -377,11 +377,11 @@ function makeResourceToken(res) {
 resourceDefs.forEach((res, i) => {
     const tokens = [];
     for (let n = 0; n < 50; n++) tokens.push(makeResourceToken(res));
-    // Resource bags form a north-south column immediately east of the
+    // Resource bags form a north-south column immediately west of the
     // Equipment Display, below the Randomize Hexes button.
     const bag = baseObj("Bag", `${res.name} Tokens (50)`,
         `Stack of ${res.name} tokens (${res.label}). Each spawns upright on its base.`,
-        44, 1.5, 9 - i * 6, { color: res.color });
+        33, 1.5, 9 - i * 6, { color: res.color });
     bag.ContainedObjects = tokens;
     objects.push(bag);
 });
@@ -867,9 +867,9 @@ function makeContainer(num, role, px, py, pz) {
 // south of the Conspire deck.
 // Slot grid is 3 cols × 2 rows; world slot pitch matches the texture
 // geometry (see UZ board derivation in section 17b).
-// Shifted east to leave room for the controls/resource column and the
-// Planet Bound Area between the Equipment Display and Unloading Zone.
-const UZ_BOARD_X = 60;
+// Shifted east so the Planet Bound Area fits between the Equipment Display
+// and Unloading Zone after making room for the west-side resource column.
+const UZ_BOARD_X = 62;
 const UZ_BOARD_Z = 0;
 // Slot center pitches derived from the v59 board texture geometry
 // (1000×950 px, 250×350 slots, gaps 30/50, gridTop 110), using the
@@ -918,11 +918,11 @@ const PLANETBOUND_BOARD_URL = `${SOLDIER_BASE}/planetbound-board.png`;
 // the south-facing camera.
 const pbBoard = baseObj("Custom_Tile", "Planet Bound Area",
     "Movable board with 7 slots: leftmost slot is for the Spaceport Deck, the other 6 hold the face-up Planet Bound BAC cards. Always keep 6 face-up; refill immediately whenever one is taken.",
-    // Positioned between the resource column (x=44) and UZ (x=60).
+    // Positioned between the Equipment Display (x=44) and UZ (x=62).
     // Rotated 90° to the right (rotY 180 → 90) per user request.
-    // Footprint at rotY:90 ~5 (X) × 19 (Z). Position x=50 → x ∈ [47.5, 52.5],
+    // Footprint at rotY:90 ~5 (X) × 19 (Z). Position x=53 → x ∈ [50.5, 55.5],
     // long axis north-south (z ∈ [-9.5, +9.5]).
-    50, 1.02, 0,
+    53, 1.02, 0,
     { rotY: 270, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5, color: { r: 1, g: 1, b: 1 }, grid: false });
 pbBoard.CustomImage = {
     ImageURL: PLANETBOUND_BOARD_URL,
@@ -1008,8 +1008,8 @@ objects.push(firstPlayerToken);
 // ─── 17d. EQUIPMENT DISPLAY BOARD (movable Custom_Tile) ─────────────
 // The big shared board where players place face-up BAC cards as they
 // unlock new equipment types, then drop their Control Flags on top
-// to mark personal access. Sits between the Blue (x=+42, z=-28) and
-// Red (x=-42, z=-28) player corners, on the south edge of the table.
+// to mark personal access. Sits east of the controls/resource column and
+// west of the Planet Bound Area.
 //
 // 20 slots in a 10-col × 2-row LANDSCAPE strip (one slot per BAC
 // type). Texture is 2900×900 px.
@@ -1028,10 +1028,9 @@ objects.push(firstPlayerToken);
 const EQUIPMENT_BOARD_URL = `${SOLDIER_BASE}/equipment-display-board.png`;
 const eqBoard = baseObj("Custom_Tile", "Equipment Display",
     "Shared reference board: 20 slots for face-up BAC cards (one per BAC type). When you unlock a new BAC type for the first time, place its card face-up here and drop one of your Control Flags on top to mark permanent access. Multiple flags may share a slot.",
-    // v75: shifted east to clear the planet board (east edge at x=30).
-    // v76: rotated 90° to the right (rotY 180 → 90) per user request.
-    // Footprint at rotY:90 ~10 (X) × 9.68 (Z). Position x=37 → x ∈ [32, 42].
-    35.81, 1.02, 0,
+    // Shifted east to leave room for the controls/resource column on its
+    // west side. Footprint at rotY:270 is ~10 (X) × 9.68 (Z).
+    44, 1.02, 0,
     { rotY: 270, scaleX: 4.84, scaleY: 0.2, scaleZ: 5.00, color: { r: 1, g: 1, b: 1 }, grid: false });
 eqBoard.CustomImage = {
     ImageURL: EQUIPMENT_BOARD_URL,
@@ -1470,12 +1469,12 @@ function makeShuffleControl({ name, desc, x, z, tag, broadcastNoun, dealOntoTag 
     return tile;
 }
 
-// Planet-hex randomiser — top of the controls/resource column in front
-// of the Equipment Display.
+// Planet-hex randomiser — top of the controls/resource column immediately
+// west of the Equipment Display.
 objects.push(makeShuffleControl({
     name: "Randomize Hexes",
     desc: "Click the on-tile button to shuffle the 61 planet hexes among their current slot positions.",
-    x: 44, z: 15,
+    x: 33, z: 15,
     tag: "planet-hex",
     broadcastNoun: "planet hex tiles",
 }));
@@ -1504,7 +1503,7 @@ objects.push(makeShuffleControl({
 // Persistent one-use state prevents an accidental second starting deal.
 const dealBacsButton = baseObj("Custom_Tile", "Deal Starting BACs",
     "Shuffle the Spaceport Deck and deal 3 starting BAC cards to every seated Red, Blue, Green, and Yellow player.",
-    53, 1.02, 12.5,
+    56, 1.02, 12.5,
     { rotY: 0, scaleX: 2.2, scaleY: 0.2, scaleZ: 1.4,
       color: { r: 0.20, g: 0.42, b: 0.82 }, locked: true, grid: false });
 dealBacsButton.CustomImage = {
@@ -1830,7 +1829,7 @@ EQUIPMENT_SLOTS.forEach((slot, rowIdx) => {
 // Large enclosed throwing area on the far-east edge, shared by the Blue
 // and Yellow players. The floor and all four walls are permanently locked.
 // Its long east-west edge faces south. Interior is roughly 29 × 11 units.
-const DICE_TRAY = { x: 81, z: 0, width: 30, length: 12, wall: 0.5 };
+const DICE_TRAY = { x: 83, z: 0, width: 30, length: 12, wall: 0.5 };
 const diceTrayColor = { r: 0.02, g: 0.02, b: 0.02 };
 const diceTrayWallColor = { r: 0.48, g: 0.18, b: 0.72 };
 const diceTrayDesc = "Large shared dice-throwing tray for the Blue and Yellow players. Permanently locked.";
