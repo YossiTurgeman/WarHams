@@ -207,7 +207,7 @@
     },
     {
       "abbr": "B.E.A.R", "name": "Battlefield Extraction Airlift Rover", "category": "Support", "slot": "Chest",
-      "cost": { "Oil": 1, "Industry": 1, "Electricity": 1 }, "dp": 3, "copies": 5, "art_revision": 2,
+      "cost": { "Oil": 1, "Industry": 1, "Electricity": 1 }, "dp": 3, "copies": 5,
       "text": "During your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack."
     },
     {

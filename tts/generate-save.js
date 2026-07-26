@@ -22,6 +22,8 @@ const gameData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'design',
 // Card images — hosted on GitHub, unique face per card type
 // Cache-bust param forces TTS to re-download after image updates
 const CARD_VERSION = "v72";
+const BAC_ART_REVISION = 2;
+const CONSPIRE_ART_REVISION = 2;
 const CARD_BASE = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards";
 // Soldier assets live in a VERSIONED path so TTS treats them as
 // brand-new URLs every bump — bypasses TTS's asset cache, which
@@ -32,13 +34,11 @@ const CONSPIRE_BACK = `${CARD_BASE}/conspire_back.png?${CARD_VERSION}`;
 
 function bacFaceURL(abbr) {
     const slug = abbr.replace(/[^a-zA-Z0-9]/g, "_").toLowerCase();
-    const bac = gameData.basic_armament_cards.find(card => card.abbr === abbr);
-    const revision = bac?.art_revision ? `_rev${bac.art_revision}` : "";
-    return `${CARD_BASE}/bac_${slug}${revision}.png?${CARD_VERSION}`;
+    return `${CARD_BASE}/bac_${slug}_rev${BAC_ART_REVISION}.png?${CARD_VERSION}`;
 }
 function conspireFaceURL(name) {
     const slug = name.replace(/[^a-zA-Z0-9]/g, "_").toLowerCase();
-    return `${CARD_BASE}/conspire_${slug}.png?${CARD_VERSION}`;
+    return `${CARD_BASE}/conspire_${slug}_rev${CONSPIRE_ART_REVISION}.png?${CARD_VERSION}`;
 }
 // Squad boards removed in v33 — soldier ID and damage now live on the mini's
 // 40mm magnetized base (printed squad letter + number, 3 blood-drop divots
