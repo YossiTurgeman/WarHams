@@ -836,6 +836,7 @@ const containerColors = [
     { r: 0.85, g: 0.45, b: 0.10 },   // 5 — Hamburg-orange
     { r: 0.92, g: 0.92, b: 0.90 },   // 6 — bone white
 ];
+const CONTAINER_SOUTH_ROT_Y = 270;
 function makeContainer(num, role, px, py, pz) {
     const c = containerColors[num - 1];
     const cont = baseObj("Custom_Model", `Container #${num} (${role})`,
@@ -843,9 +844,10 @@ function makeContainer(num, role, px, py, pz) {
             ? `Marks the Unloading Zone slot for Spaceport ${num}. BAC cards arriving at Spaceport ${num} stack face-up under this container.`
             : `Spaceport ${num} board marker. Place on the matching spaceport hex when a BAC arrives there; remove when a Squad collects the BACs.`,
         px, py, pz,
-        // rotY: 90 — turn each container 90° so its long axis points
-        // along Z (toward/away from the camera) rather than along X.
-        { rotY: 90, scaleX: 1.0, scaleY: 1.0, scaleZ: 1.0, color: c });
+        // Keep the long axis aligned north-south while placing the mesh's
+        // +X door end toward world -Z, the south edge of the table.
+        { rotY: CONTAINER_SOUTH_ROT_Y,
+          scaleX: 1.0, scaleY: 1.0, scaleZ: 1.0, color: c });
     cont.CustomMesh = {
         MeshURL: CONTAINER_MESH_URL,
         DiffuseURL: containerDiffuseURL(num),
