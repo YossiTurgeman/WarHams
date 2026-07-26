@@ -978,7 +978,7 @@ const FIRST_PLAYER_TOKEN_URL =
     "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/first-player-token.png";
 const firstPlayerToken = baseObj("Custom_Tile", "1st Player Token",
     "Marks the current first player. Pass to the next player at the start of each new round.",
-    UZ_BOARD_X, 1.02, UZ_BOARD_Z - 8,
+    UZ_BOARD_X, 1.02, UZ_BOARD_Z - 12,
     { rotY: 180, scaleX: 1.6, scaleY: 0.2, scaleZ: 1.6,
       color: { r: 0.95, g: 0.76, b: 0.18 }, grid: false });
 firstPlayerToken.CustomImage = {
@@ -1883,7 +1883,7 @@ for (const [index, x] of [[1, UZ_BOARD_X - 4], [2, UZ_BOARD_X + 4]]) {
         "        width = 0,",
         "        height = 0,",
         "        font_size = 150,",
-        "        font_color = {0.12, 0.02, 0.02},",
+        "        font_color = {1, 1, 1},",
         "        tooltip = 'Place at the location of an active combat.',",
         "    })",
         "end",

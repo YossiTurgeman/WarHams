@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785051315,
+  "EpochTime": 1785051489,
   "Date": "2026-07-26",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -51312,7 +51312,7 @@
       "Transform": {
         "posX": 62,
         "posY": 1.02,
-        "posZ": -8,
+        "posZ": -12,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
@@ -64791,7 +64791,7 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "function onLoad()\n    self.createButton({\n        label = 'COMBAT 1',\n        click_function = 'noop',\n        function_owner = self,\n        position = {0, 0.3, 0},\n        rotation = {0, 0, 0},\n        width = 0,\n        height = 0,\n        font_size = 150,\n        font_color = {0.12, 0.02, 0.02},\n        tooltip = 'Place at the location of an active combat.',\n    })\nend\nfunction noop() end",
+      "LuaScript": "function onLoad()\n    self.createButton({\n        label = 'COMBAT 1',\n        click_function = 'noop',\n        function_owner = self,\n        position = {0, 0.3, 0},\n        rotation = {0, 0, 0},\n        width = 0,\n        height = 0,\n        font_size = 150,\n        font_color = {1, 1, 1},\n        tooltip = 'Place at the location of an active combat.',\n    })\nend\nfunction noop() end",
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomImage": {
@@ -64848,7 +64848,7 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "function onLoad()\n    self.createButton({\n        label = 'COMBAT 2',\n        click_function = 'noop',\n        function_owner = self,\n        position = {0, 0.3, 0},\n        rotation = {0, 0, 0},\n        width = 0,\n        height = 0,\n        font_size = 150,\n        font_color = {0.12, 0.02, 0.02},\n        tooltip = 'Place at the location of an active combat.',\n    })\nend\nfunction noop() end",
+      "LuaScript": "function onLoad()\n    self.createButton({\n        label = 'COMBAT 2',\n        click_function = 'noop',\n        function_owner = self,\n        position = {0, 0.3, 0},\n        rotation = {0, 0, 0},\n        width = 0,\n        height = 0,\n        font_size = 150,\n        font_color = {1, 1, 1},\n        tooltip = 'Place at the location of an active combat.',\n    })\nend\nfunction noop() end",
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomImage": {
