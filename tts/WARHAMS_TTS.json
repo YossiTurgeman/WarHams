@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785049426,
+  "EpochTime": 1785049510,
   "Date": "2026-07-26",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -11910,15 +11910,15 @@
       "GUID": "1000af",
       "Name": "Custom_Dice",
       "Transform": {
-        "posX": -54,
-        "posY": 2,
+        "posX": -57,
+        "posY": 3,
         "posZ": 12,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 4,
+        "scaleY": 4,
+        "scaleZ": 4
       },
       "Nickname": "Separatist Die",
       "Description": "Grey d6 — RED pips on 2, 4, 6 trigger the matching Separatist Base: spawn 3 at an unconquered base, or its controller gains 1 Local Favor if conquered. The roller does not matter.",
@@ -12015,14 +12015,14 @@
       "Name": "Die_6",
       "Transform": {
         "posX": -52,
-        "posY": 2,
+        "posY": 3,
         "posZ": 12,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 4,
+        "scaleY": 4,
+        "scaleZ": 4
       },
       "Nickname": "Resource Die 1",
       "Description": "Resource production",
@@ -12059,15 +12059,15 @@
       "GUID": "1000b1",
       "Name": "Die_6",
       "Transform": {
-        "posX": -50,
-        "posY": 2,
+        "posX": -47,
+        "posY": 3,
         "posZ": 12,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 4,
+        "scaleY": 4,
+        "scaleZ": 4
       },
       "Nickname": "Resource Die 2",
       "Description": "Resource production",
@@ -12110,9 +12110,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Red D1",
       "Description": "Combat die for Red",
@@ -12155,9 +12155,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Red D2",
       "Description": "Combat die for Red",
@@ -12200,9 +12200,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Red D3",
       "Description": "Combat die for Red",
@@ -12245,9 +12245,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Red D4",
       "Description": "Combat die for Red",
@@ -12290,9 +12290,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Red D5",
       "Description": "Combat die for Red",
@@ -12335,9 +12335,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Red D6",
       "Description": "Combat die for Red",
@@ -12380,9 +12380,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Red D7",
       "Description": "Combat die for Red",
@@ -12425,9 +12425,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Blue D1",
       "Description": "Combat die for Blue",
@@ -12470,9 +12470,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Blue D2",
       "Description": "Combat die for Blue",
@@ -12515,9 +12515,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Blue D3",
       "Description": "Combat die for Blue",
@@ -12560,9 +12560,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Blue D4",
       "Description": "Combat die for Blue",
@@ -12605,9 +12605,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Blue D5",
       "Description": "Combat die for Blue",
@@ -12650,9 +12650,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Blue D6",
       "Description": "Combat die for Blue",
@@ -12695,9 +12695,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Blue D7",
       "Description": "Combat die for Blue",
@@ -12740,9 +12740,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Green D1",
       "Description": "Combat die for Green",
@@ -12785,9 +12785,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Green D2",
       "Description": "Combat die for Green",
@@ -12830,9 +12830,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Green D3",
       "Description": "Combat die for Green",
@@ -12875,9 +12875,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Green D4",
       "Description": "Combat die for Green",
@@ -12920,9 +12920,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Green D5",
       "Description": "Combat die for Green",
@@ -12965,9 +12965,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Green D6",
       "Description": "Combat die for Green",
@@ -13010,9 +13010,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Green D7",
       "Description": "Combat die for Green",
@@ -13055,9 +13055,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Yellow D1",
       "Description": "Combat die for Yellow",
@@ -13100,9 +13100,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Yellow D2",
       "Description": "Combat die for Yellow",
@@ -13145,9 +13145,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Yellow D3",
       "Description": "Combat die for Yellow",
@@ -13190,9 +13190,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Yellow D4",
       "Description": "Combat die for Yellow",
@@ -13235,9 +13235,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Yellow D5",
       "Description": "Combat die for Yellow",
@@ -13280,9 +13280,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Yellow D6",
       "Description": "Combat die for Yellow",
@@ -13325,9 +13325,9 @@
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
-        "scaleX": 1,
-        "scaleY": 1,
-        "scaleZ": 1
+        "scaleX": 2,
+        "scaleY": 2,
+        "scaleZ": 2
       },
       "Nickname": "Yellow D7",
       "Description": "Combat die for Yellow",

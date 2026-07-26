@@ -285,7 +285,7 @@
 - [x] **Clarify the base range of an unequipped soldier.** — Empty Hands has range 1 (same or adjacent hex) and rolls 1d6 normally. A Hands-slot weapon has range 2 unless its rule states otherwise.
 - [x] **Consolidate the rule that fighting is optional.** — Phase 3 now states the choice once, per Squad: declare combat, Conspire instead, or do nothing. Separatist combat during Phase 7 remains mandatory.
 - [x] **Add a large locked dice tray east of the Blue and Yellow player areas.** — Added a shared 30 × 12 enclosed throwing tray on the far-east edge, oriented with its long side facing south. It has a black floor, purple walls, and five permanently locked pieces. The Hex Randomizer and resource bags form a column west of the Equipment Display; the display and remaining east-side components were shifted right to keep every area clear.
-- [ ] **Increase dice sizes.** Make the player-colored dice twice their current size, then make the 3 main resource dice twice as large as the resized player dice.
+- [x] **Increase dice sizes.** — Doubled all player-colored combat dice to scale 2. The Separatist die and two Resource dice are twice that size at scale 4, with wider spacing to prevent overlap.
 - [ ] **Consider compensation for heavy battle losses.** Explore and balance a comeback benefit for a player who loses soldiers in battle and/or suffers more than 3 wounds, without making intentional losses exploitable.
 - [ ] **Add 2 combat-location markers.** Make each marker the same size as the First Player marker and use them to mark the board locations where combat is happening.
 - [ ] **Add a dedicated combat zone.** Provide an area where the squads currently fighting can be brought together and placed facing each other while combat is resolved.

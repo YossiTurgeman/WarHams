@@ -285,17 +285,22 @@ const D6_ROTATION_VALUES = [
     { Value: 5, Rotation: { x:   0, y: 0, z:  180 } },
     { Value: 6, Rotation: { x:  90, y: 0, z:    0 } },
 ];
+const PLAYER_DIE_SCALE = 2;
+const MAIN_DIE_SCALE = PLAYER_DIE_SCALE * 2;
 
 [
-    { name: "Separatist Die", color: { r: 0.5, g: 0.5, b: 0.5 }, x: -54, custom: true },
+    { name: "Separatist Die", color: { r: 0.5, g: 0.5, b: 0.5 }, x: -57, custom: true },
     { name: "Resource Die 1", color: { r: 1, g: 1, b: 1 }, x: -52 },
-    { name: "Resource Die 2", color: { r: 1, g: 1, b: 1 }, x: -50 },
+    { name: "Resource Die 2", color: { r: 1, g: 1, b: 1 }, x: -47 },
 ].forEach(d => {
     if (d.custom) {
         // Custom_Dice — painted texture (red pips for base-result numbers).
         const die = baseObj("Custom_Dice", d.name,
             "Grey d6 — RED pips on 2, 4, 6 trigger the matching Separatist Base: spawn 3 at an unconquered base, or its controller gains 1 Local Favor if conquered. The roller does not matter.",
-            d.x, 2, 12, { color: { r: 1, g: 1, b: 1 } });
+            d.x, 3, 12, {
+                scaleX: MAIN_DIE_SCALE, scaleY: MAIN_DIE_SCALE, scaleZ: MAIN_DIE_SCALE,
+                color: { r: 1, g: 1, b: 1 },
+            });
         die.CustomImage = {
             ImageURL: SEP_DIE_TEXTURE,
             ImageSecondaryURL: "",
@@ -308,7 +313,10 @@ const D6_ROTATION_VALUES = [
     } else {
         objects.push(baseObj("Die_6", d.name,
             "Resource production",
-            d.x, 2, 12, { color: d.color }));
+            d.x, 3, 12, {
+                scaleX: MAIN_DIE_SCALE, scaleY: MAIN_DIE_SCALE, scaleZ: MAIN_DIE_SCALE,
+                color: d.color,
+            }));
     }
 });
 
@@ -319,7 +327,10 @@ playerColors.forEach((pc, idx) => {
         const side = -7 + i * 2.3;   // -7 .. +6.8
         const p = cornerSpot(idx, 0, side);
         objects.push(baseObj("Die_6", `${pc.label} D${i+1}`, `Combat die for ${pc.label}`,
-            p.x, 2, p.z, { color: pc.color }));
+            p.x, 2, p.z, {
+                scaleX: PLAYER_DIE_SCALE, scaleY: PLAYER_DIE_SCALE, scaleZ: PLAYER_DIE_SCALE,
+                color: pc.color,
+            }));
     }
 });
 
