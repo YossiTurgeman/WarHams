@@ -976,6 +976,8 @@ objects.push(uzBoard);
 // reads upright from the south camera, matching the UZ board.
 const FIRST_PLAYER_TOKEN_URL =
     "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/first-player-token.png";
+const COMBAT_MARKER_URL =
+    "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/combat-marker.png";
 const firstPlayerToken = baseObj("Custom_Tile", "1st Player Token",
     "Marks the current first player. Pass to the next player at the start of each new round.",
     UZ_BOARD_X, 1.02, UZ_BOARD_Z - 12,
@@ -1864,10 +1866,10 @@ for (const [index, x] of [[1, UZ_BOARD_X - 4], [2, UZ_BOARD_X + 4]]) {
         "Place on the board location where a declared combat is being resolved. Return it here afterward.",
         x, 1.02, UZ_BOARD_Z - 8,
         { rotY: 180, scaleX: 1.6, scaleY: 0.2, scaleZ: 1.6,
-          color: { r: 0.82, g: 0.16, b: 0.12 }, grid: false });
+          color: { r: 1, g: 1, b: 1 }, grid: false });
     marker.CustomImage = {
-        ImageURL: FIRST_PLAYER_TOKEN_URL,
-        ImageSecondaryURL: FIRST_PLAYER_TOKEN_URL,
+        ImageURL: COMBAT_MARKER_URL,
+        ImageSecondaryURL: COMBAT_MARKER_URL,
         ImageScalar: 1,
         WidthScale: 0,
         CustomTile: { Type: 2 /* circle */, Thickness: 0.1, Stackable: false, Stretch: true },
