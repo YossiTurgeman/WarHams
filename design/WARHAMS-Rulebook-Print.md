@@ -1,4 +1,4 @@
----
+﻿---
 pdf_options:
   format: A4
   margin: 20mm
@@ -318,7 +318,7 @@ There are two ways to equip a BAC — **unlocking** a new type, or **re-equippin
 3. Pay the card's resource cost for **each soldier** you wish to equip.
 4. Attach the matching **equipment module** (magnetized part) to each equipped soldier's miniature in the correct slot (Head, Chest, Legs, Backpack, or Hands).
 
-Equipping has no location requirement — you may equip any of your soldiers regardless of where they are on the board. Soldiers recruited this phase may also be equipped immediately.
+Equipping has no location requirement — you may equip any of your soldiers regardless of where they are on the board. Soldiers recruited this action may also be equipped immediately.
 
 **Re-equipping an unlocked BAC type:**
 
