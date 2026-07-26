@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785059144,
+  "EpochTime": 1785061318,
   "Date": "2026-07-26",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -7186,7 +7186,7 @@
           "Type": 0
         },
         "212": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_abandoned_satellite_control_station_rev2.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_abandoned_satellite_control_station_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -7195,7 +7195,7 @@
           "Type": 0
         },
         "213": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_abandoned_satellite_control_station_rev2.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_abandoned_satellite_control_station_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -7204,7 +7204,7 @@
           "Type": 0
         },
         "214": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_abandoned_satellite_control_station_rev2.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_abandoned_satellite_control_station_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -7213,7 +7213,7 @@
           "Type": 0
         },
         "215": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_wind_farm_rev2.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_wind_farm_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -7222,7 +7222,7 @@
           "Type": 0
         },
         "216": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_wind_farm_rev2.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_wind_farm_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -7231,7 +7231,7 @@
           "Type": 0
         },
         "217": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_wind_farm_rev2.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_wind_farm_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -7240,7 +7240,7 @@
           "Type": 0
         },
         "218": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_raid_an_oil_cache_rev2.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_raid_an_oil_cache_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -7249,7 +7249,7 @@
           "Type": 0
         },
         "219": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_raid_an_oil_cache_rev2.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_raid_an_oil_cache_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -7258,7 +7258,7 @@
           "Type": 0
         },
         "220": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_raid_an_oil_cache_rev2.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_raid_an_oil_cache_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -7267,7 +7267,7 @@
           "Type": 0
         },
         "221": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_factory_takeover_rev2.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_factory_takeover_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -7276,7 +7276,7 @@
           "Type": 0
         },
         "222": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_factory_takeover_rev2.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_factory_takeover_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -7285,7 +7285,7 @@
           "Type": 0
         },
         "223": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_factory_takeover_rev2.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_factory_takeover_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -7294,7 +7294,7 @@
           "Type": 0
         },
         "224": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_follower_camp_rev2.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_follower_camp_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -7303,7 +7303,7 @@
           "Type": 0
         },
         "225": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_follower_camp_rev2.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_follower_camp_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -7312,7 +7312,7 @@
           "Type": 0
         },
         "226": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_follower_camp_rev2.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_follower_camp_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -8439,7 +8439,7 @@
             "scaleZ": 1
           },
           "Nickname": "Abandoned Satellite Control Station",
-          "Description": "[Tactical]\nCost: 1 Electricity\n\nExchange 1 Electricity for 3 Intelligence.",
+          "Description": "[Tactical]\nCost: Free\n\nExchange 1 Electricity for 3 Intelligence.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -8471,7 +8471,7 @@
           "CardID": 21200,
           "CustomDeck": {
             "212": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_abandoned_satellite_control_station_rev2.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_abandoned_satellite_control_station_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -8497,7 +8497,7 @@
             "scaleZ": 1
           },
           "Nickname": "Abandoned Satellite Control Station",
-          "Description": "[Tactical]\nCost: 1 Electricity\n\nExchange 1 Electricity for 3 Intelligence.",
+          "Description": "[Tactical]\nCost: Free\n\nExchange 1 Electricity for 3 Intelligence.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -8529,7 +8529,7 @@
           "CardID": 21300,
           "CustomDeck": {
             "213": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_abandoned_satellite_control_station_rev2.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_abandoned_satellite_control_station_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -8555,7 +8555,7 @@
             "scaleZ": 1
           },
           "Nickname": "Abandoned Satellite Control Station",
-          "Description": "[Tactical]\nCost: 1 Electricity\n\nExchange 1 Electricity for 3 Intelligence.",
+          "Description": "[Tactical]\nCost: Free\n\nExchange 1 Electricity for 3 Intelligence.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -8587,7 +8587,7 @@
           "CardID": 21400,
           "CustomDeck": {
             "214": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_abandoned_satellite_control_station_rev2.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_abandoned_satellite_control_station_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -8613,7 +8613,7 @@
             "scaleZ": 1
           },
           "Nickname": "Build a Wind Farm",
-          "Description": "[Tactical]\nCost: 1 Industry\n\nExchange 1 Industry for 3 Electricity.",
+          "Description": "[Tactical]\nCost: Free\n\nExchange 1 Industry for 3 Electricity.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -8645,7 +8645,7 @@
           "CardID": 21500,
           "CustomDeck": {
             "215": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_wind_farm_rev2.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_wind_farm_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -8671,7 +8671,7 @@
             "scaleZ": 1
           },
           "Nickname": "Build a Wind Farm",
-          "Description": "[Tactical]\nCost: 1 Industry\n\nExchange 1 Industry for 3 Electricity.",
+          "Description": "[Tactical]\nCost: Free\n\nExchange 1 Industry for 3 Electricity.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -8703,7 +8703,7 @@
           "CardID": 21600,
           "CustomDeck": {
             "216": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_wind_farm_rev2.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_wind_farm_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -8729,7 +8729,7 @@
             "scaleZ": 1
           },
           "Nickname": "Build a Wind Farm",
-          "Description": "[Tactical]\nCost: 1 Industry\n\nExchange 1 Industry for 3 Electricity.",
+          "Description": "[Tactical]\nCost: Free\n\nExchange 1 Industry for 3 Electricity.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -8761,7 +8761,7 @@
           "CardID": 21700,
           "CustomDeck": {
             "217": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_wind_farm_rev2.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_wind_farm_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -8787,7 +8787,7 @@
             "scaleZ": 1
           },
           "Nickname": "Raid an Oil Cache",
-          "Description": "[Tactical]\nCost: 1 Intelligence\n\nExchange 1 Intelligence for 3 Oil.",
+          "Description": "[Tactical]\nCost: Free\n\nExchange 1 Intelligence for 3 Oil.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -8819,7 +8819,7 @@
           "CardID": 21800,
           "CustomDeck": {
             "218": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_raid_an_oil_cache_rev2.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_raid_an_oil_cache_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -8845,7 +8845,7 @@
             "scaleZ": 1
           },
           "Nickname": "Raid an Oil Cache",
-          "Description": "[Tactical]\nCost: 1 Intelligence\n\nExchange 1 Intelligence for 3 Oil.",
+          "Description": "[Tactical]\nCost: Free\n\nExchange 1 Intelligence for 3 Oil.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -8877,7 +8877,7 @@
           "CardID": 21900,
           "CustomDeck": {
             "219": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_raid_an_oil_cache_rev2.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_raid_an_oil_cache_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -8903,7 +8903,7 @@
             "scaleZ": 1
           },
           "Nickname": "Raid an Oil Cache",
-          "Description": "[Tactical]\nCost: 1 Intelligence\n\nExchange 1 Intelligence for 3 Oil.",
+          "Description": "[Tactical]\nCost: Free\n\nExchange 1 Intelligence for 3 Oil.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -8935,7 +8935,7 @@
           "CardID": 22000,
           "CustomDeck": {
             "220": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_raid_an_oil_cache_rev2.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_raid_an_oil_cache_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -8961,7 +8961,7 @@
             "scaleZ": 1
           },
           "Nickname": "Factory Takeover",
-          "Description": "[Tactical]\nCost: 1 Local Favor\n\nExchange 1 Local Favor for 3 Industry.",
+          "Description": "[Tactical]\nCost: Free\n\nExchange 1 Local Favor for 3 Industry.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -8993,7 +8993,7 @@
           "CardID": 22100,
           "CustomDeck": {
             "221": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_factory_takeover_rev2.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_factory_takeover_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -9019,7 +9019,7 @@
             "scaleZ": 1
           },
           "Nickname": "Factory Takeover",
-          "Description": "[Tactical]\nCost: 1 Local Favor\n\nExchange 1 Local Favor for 3 Industry.",
+          "Description": "[Tactical]\nCost: Free\n\nExchange 1 Local Favor for 3 Industry.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -9051,7 +9051,7 @@
           "CardID": 22200,
           "CustomDeck": {
             "222": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_factory_takeover_rev2.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_factory_takeover_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -9077,7 +9077,7 @@
             "scaleZ": 1
           },
           "Nickname": "Factory Takeover",
-          "Description": "[Tactical]\nCost: 1 Local Favor\n\nExchange 1 Local Favor for 3 Industry.",
+          "Description": "[Tactical]\nCost: Free\n\nExchange 1 Local Favor for 3 Industry.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -9109,7 +9109,7 @@
           "CardID": 22300,
           "CustomDeck": {
             "223": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_factory_takeover_rev2.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_factory_takeover_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -9135,7 +9135,7 @@
             "scaleZ": 1
           },
           "Nickname": "Build a Follower Camp",
-          "Description": "[Tactical]\nCost: 1 Industry\n\nExchange 1 Industry for 3 Local Favor.",
+          "Description": "[Tactical]\nCost: Free\n\nExchange 1 Industry for 3 Local Favor.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -9167,7 +9167,7 @@
           "CardID": 22400,
           "CustomDeck": {
             "224": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_follower_camp_rev2.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_follower_camp_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -9193,7 +9193,7 @@
             "scaleZ": 1
           },
           "Nickname": "Build a Follower Camp",
-          "Description": "[Tactical]\nCost: 1 Industry\n\nExchange 1 Industry for 3 Local Favor.",
+          "Description": "[Tactical]\nCost: Free\n\nExchange 1 Industry for 3 Local Favor.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -9225,7 +9225,7 @@
           "CardID": 22500,
           "CustomDeck": {
             "225": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_follower_camp_rev2.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_follower_camp_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -9251,7 +9251,7 @@
             "scaleZ": 1
           },
           "Nickname": "Build a Follower Camp",
-          "Description": "[Tactical]\nCost: 1 Industry\n\nExchange 1 Industry for 3 Local Favor.",
+          "Description": "[Tactical]\nCost: Free\n\nExchange 1 Industry for 3 Local Favor.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -9283,7 +9283,7 @@
           "CardID": 22600,
           "CustomDeck": {
             "226": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_follower_camp_rev2.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_build_a_follower_camp_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/conspire_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,

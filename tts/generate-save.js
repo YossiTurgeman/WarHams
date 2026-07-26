@@ -38,7 +38,9 @@ function bacFaceURL(abbr) {
 }
 function conspireFaceURL(name) {
     const slug = name.replace(/[^a-zA-Z0-9]/g, "_").toLowerCase();
-    return `${CARD_BASE}/conspire_${slug}_rev${CONSPIRE_ART_REVISION}.png?${CARD_VERSION}`;
+    const card = gameData.conspire_cards.find(conspire => conspire.name === name);
+    const revision = card?.art_revision || CONSPIRE_ART_REVISION;
+    return `${CARD_BASE}/conspire_${slug}_rev${revision}.png?${CARD_VERSION}`;
 }
 // Squad boards removed in v33 — soldier ID and damage now live on the mini's
 // 40mm magnetized base (printed squad letter + number, 3 blood-drop divots

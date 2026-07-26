@@ -216,6 +216,7 @@ async function main() {
     console.log("Generating Conspire card images...");
     for (const cc of gameData.conspire_cards) {
         const slug = cc.name.replace(/[^a-zA-Z0-9]/g, "_").toLowerCase();
+        const revision = cc.art_revision || CONSPIRE_ART_REVISION;
         const img = new Jimp({ width: CARD_W, height: CARD_H, color: rgbaToInt(conBg.r, conBg.g, conBg.b, 255) });
 
         fillRect(img, 0, 0, CARD_W, 420, conHeader);
@@ -261,7 +262,7 @@ async function main() {
         img.print({ font: bodyFont, x: pad, y, text: cc.text,
             maxWidth: textW, maxHeight: bodyHeight });
 
-        await img.write(path.join(outDir, `conspire_${slug}_rev${CONSPIRE_ART_REVISION}.png`));
+        await img.write(path.join(outDir, `conspire_${slug}_rev${revision}.png`));
         process.stdout.write(".");
     }
     console.log(` ${gameData.conspire_cards.length} Conspire faces done.`);

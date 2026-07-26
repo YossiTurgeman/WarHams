@@ -972,15 +972,15 @@ When the Conspire Deck is empty, shuffle the discard pile to form a new deck.
 
 ### 📋 Full Conspire Card List (24 Types × 3 Copies = 72 Cards)
 
-#### 💰 Resource Exchange (1 Cost → 3 Gain)
+#### 💰 Resource Exchange (Free to Play; Exchange 1 → Gain 3)
 
 | Name | Cost | Effect | Copies |
 |------|------|--------|:------:|
-| Abandoned Satellite Control Station | 1 Electricity | Exchange for 3 Intelligence | 3 |
-| Build a Wind Farm | 1 Industry | Exchange for 3 Electricity | 3 |
-| Raid an Oil Cache | 1 Intelligence | Exchange for 3 Oil | 3 |
-| Factory Takeover | 1 Local Favor | Exchange for 3 Industry | 3 |
-| Build a Follower Camp | 1 Industry | Exchange for 3 Local Favor | 3 |
+| Abandoned Satellite Control Station | Free | Exchange 1 Electricity for 3 Intelligence | 3 |
+| Build a Wind Farm | Free | Exchange 1 Industry for 3 Electricity | 3 |
+| Raid an Oil Cache | Free | Exchange 1 Intelligence for 3 Oil | 3 |
+| Factory Takeover | Free | Exchange 1 Local Favor for 3 Industry | 3 |
+| Build a Follower Camp | Free | Exchange 1 Industry for 3 Local Favor | 3 |
 
 #### 🎁 Free Resource (Gain 1, Chance for Bonus)
 
