@@ -284,7 +284,7 @@
 - [x] **Verify Separatist targeting behavior.** — Confirmed that Separatists target resource-producing hexes only. BAC cards and cargo containers do not attract them; aligned the rulebook, game data, and TTS manual-play notes.
 - [x] **Clarify the base range of an unequipped soldier.** — Empty Hands has range 1 (same or adjacent hex) and rolls 1d6 normally. A Hands-slot weapon has range 2 unless its rule states otherwise.
 - [x] **Consolidate the rule that fighting is optional.** — Phase 3 now states the choice once, per Squad: declare combat, Conspire instead, or do nothing. Separatist combat during Phase 7 remains mandatory.
-- [ ] **Add a large locked dice tray east of the Blue and Yellow player areas.** Provide a dedicated enclosed area where players can throw dice, and lock the tray so it cannot move.
+- [x] **Add a large locked dice tray east of the Blue and Yellow player areas.** — Added a shared 12 × 30 enclosed throwing tray on the far-east edge. Its floor and four walls are permanently locked; the Hex Randomizer was moved north to keep the tray clear.
 - [ ] **Increase dice sizes.** Make the player-colored dice twice their current size, then make the 3 main resource dice twice as large as the resized player dice.
 - [ ] **Consider compensation for heavy battle losses.** Explore and balance a comeback benefit for a player who loses soldiers in battle and/or suffers more than 3 wounds, without making intentional losses exploitable.
 - [ ] **Add 2 combat-location markers.** Make each marker the same size as the First Player marker and use them to mark the board locations where combat is happening.

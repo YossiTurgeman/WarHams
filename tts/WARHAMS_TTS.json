@@ -1,7 +1,7 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1784999673,
-  "Date": "2026-07-25",
+  "EpochTime": 1785044408,
+  "Date": "2026-07-26",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
   "GameType": "",
@@ -55156,9 +55156,9 @@
       "GUID": "100334",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 70,
+        "posX": 72,
         "posY": 1.02,
-        "posZ": 0,
+        "posZ": 18,
         "rotX": 0,
         "rotY": 0,
         "rotZ": 0,
@@ -64524,6 +64524,231 @@
           }
         }
       ]
+    },
+    {
+      "GUID": "1003c5",
+      "Name": "BlockSquare",
+      "Transform": {
+        "posX": 72,
+        "posY": 1.05,
+        "posZ": 0,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 12,
+        "scaleY": 0.2,
+        "scaleZ": 30
+      },
+      "Nickname": "Blue & Yellow Dice Tray",
+      "Description": "Large shared dice-throwing tray for the Blue and Yellow players. Permanently locked.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.1,
+        "g": 0.14,
+        "b": 0.2
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "1003c6",
+      "Name": "BlockSquare",
+      "Transform": {
+        "posX": 66,
+        "posY": 2,
+        "posZ": 0,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 0.5,
+        "scaleY": 2,
+        "scaleZ": 30
+      },
+      "Nickname": "Dice Tray West Wall",
+      "Description": "Large shared dice-throwing tray for the Blue and Yellow players. Permanently locked.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.24,
+        "g": 0.3,
+        "b": 0.38
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "1003c7",
+      "Name": "BlockSquare",
+      "Transform": {
+        "posX": 78,
+        "posY": 2,
+        "posZ": 0,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 0.5,
+        "scaleY": 2,
+        "scaleZ": 30
+      },
+      "Nickname": "Dice Tray East Wall",
+      "Description": "Large shared dice-throwing tray for the Blue and Yellow players. Permanently locked.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.24,
+        "g": 0.3,
+        "b": 0.38
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "1003c8",
+      "Name": "BlockSquare",
+      "Transform": {
+        "posX": 72,
+        "posY": 2,
+        "posZ": -15,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 12,
+        "scaleY": 2,
+        "scaleZ": 0.5
+      },
+      "Nickname": "Dice Tray South Wall",
+      "Description": "Large shared dice-throwing tray for the Blue and Yellow players. Permanently locked.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.24,
+        "g": 0.3,
+        "b": 0.38
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "1003c9",
+      "Name": "BlockSquare",
+      "Transform": {
+        "posX": 72,
+        "posY": 2,
+        "posZ": 15,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 12,
+        "scaleY": 2,
+        "scaleZ": 0.5
+      },
+      "Nickname": "Dice Tray North Wall",
+      "Description": "Large shared dice-throwing tray for the Blue and Yellow players. Permanently locked.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.24,
+        "g": 0.3,
+        "b": 0.38
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
     }
   ],
   "SnapPoints": []

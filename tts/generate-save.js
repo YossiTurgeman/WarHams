@@ -1470,11 +1470,11 @@ function makeShuffleControl({ name, desc, x, z, tag, broadcastNoun, dealOntoTag 
     return tile;
 }
 
-// Planet-hex randomiser — east of the resource token bag column.
+// Planet-hex randomiser — north of the shared dice tray.
 objects.push(makeShuffleControl({
     name: "Randomize Hexes",
     desc: "Click the on-tile button to shuffle the 61 planet hexes among their current slot positions.",
-    x: 70, z: 0,
+    x: 72, z: 18,
     tag: "planet-hex",
     broadcastNoun: "planet hex tiles",
 }));
@@ -1824,6 +1824,32 @@ EQUIPMENT_SLOTS.forEach((slot, rowIdx) => {
         objects.push(bag);
     });
 });
+
+// ─── 23. SHARED DICE TRAY ─────────────────────────────────────────────
+// Large enclosed throwing area on the far-east edge, shared by the Blue
+// and Yellow players. The floor and all four walls are permanently locked.
+// Interior is roughly 11 × 29 units after accounting for wall thickness.
+const DICE_TRAY = { x: 72, z: 0, width: 12, length: 30, wall: 0.5 };
+const diceTrayColor = { r: 0.10, g: 0.14, b: 0.20 };
+const diceTrayWallColor = { r: 0.24, g: 0.30, b: 0.38 };
+const diceTrayDesc = "Large shared dice-throwing tray for the Blue and Yellow players. Permanently locked.";
+
+objects.push(baseObj("BlockSquare", "Blue & Yellow Dice Tray", diceTrayDesc,
+    DICE_TRAY.x, 1.05, DICE_TRAY.z,
+    { scaleX: DICE_TRAY.width, scaleY: 0.2, scaleZ: DICE_TRAY.length,
+      color: diceTrayColor, locked: true, grid: false }));
+
+for (const [name, x, z, scaleX, scaleZ] of [
+    ["West Wall", DICE_TRAY.x - DICE_TRAY.width / 2, DICE_TRAY.z, DICE_TRAY.wall, DICE_TRAY.length],
+    ["East Wall", DICE_TRAY.x + DICE_TRAY.width / 2, DICE_TRAY.z, DICE_TRAY.wall, DICE_TRAY.length],
+    ["South Wall", DICE_TRAY.x, DICE_TRAY.z - DICE_TRAY.length / 2, DICE_TRAY.width, DICE_TRAY.wall],
+    ["North Wall", DICE_TRAY.x, DICE_TRAY.z + DICE_TRAY.length / 2, DICE_TRAY.width, DICE_TRAY.wall],
+]) {
+    objects.push(baseObj("BlockSquare", `Dice Tray ${name}`, diceTrayDesc,
+        x, 2.0, z,
+        { scaleX, scaleY: 2.0, scaleZ,
+          color: diceTrayWallColor, locked: true, grid: false }));
+}
 
 // ═════════════════════════════════════════════════════════════════════
 //  BUILD SAVE FILE
