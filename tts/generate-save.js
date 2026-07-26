@@ -2004,7 +2004,6 @@ roundTracker.LuaScript = [
     "    self.createButton({label = tostring(currentRound), click_function = 'noop', function_owner = self, position = {0, 0.7, 0.02}, rotation = {0, 0, 0}, scale = BUTTON_SCALE, width = 0, height = 0, font_size = 650, font_color = {1, 1, 1}})",
     "    self.createButton({label = '-', click_function = 'previousRound', function_owner = self, position = {-0.23, 0.7, 0.02}, rotation = {0, 0, 0}, scale = BUTTON_SCALE, width = 700, height = 650, font_size = 450, color = {0.18, 0.18, 0.18}, font_color = {1, 1, 1}, tooltip = 'Go back one round (minimum Round 1).'})",
     "    self.createButton({label = '+', click_function = 'nextRound', function_owner = self, position = {0.23, 0.7, 0.02}, rotation = {0, 0, 0}, scale = BUTTON_SCALE, width = 700, height = 650, font_size = 450, color = {0.48, 0.18, 0.72}, font_color = {1, 1, 1}, tooltip = 'Advance one round and reset all player turn indicators to READY.'})",
-    "    self.createButton({label = 'RESET TURNS', click_function = 'resetTurns', function_owner = self, position = {0, 0.7, -0.35}, rotation = {0, 0, 0}, scale = BUTTON_SCALE, width = 3500, height = 600, font_size = 300, color = {0.30, 0.30, 0.30}, font_color = {1, 1, 1}, tooltip = 'Reset all player turn indicators without changing the round.'})",
     "end",
     "",
     "function onSave() return JSON.encode({currentRound = currentRound}) end",
