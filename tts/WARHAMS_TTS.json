@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785053124,
+  "EpochTime": 1785053803,
   "Date": "2026-07-26",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -65234,6 +65234,243 @@
           "Stretch": true
         }
       }
+    },
+    {
+      "GUID": "1003cf",
+      "Name": "BlockSquare",
+      "Transform": {
+        "posX": -73,
+        "posY": 1.2,
+        "posZ": -28,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 0,
+        "scaleX": 6,
+        "scaleY": 0.3,
+        "scaleZ": 4
+      },
+      "Nickname": "Red DP & Turn Tracker",
+      "Description": "Red player's Dominance Point total and completed-turn indicator. Press DONE after completing Phase 7; advancing the Round Tracker resets it to READY.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.86,
+        "g": 0.21,
+        "b": 0.21
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "PLAYER_LABEL = 'RED'\nFONT_COLOR = {1, 1, 1}\ndp = 0\nturnDone = false\n\nfunction onLoad(saved)\n    if saved and saved ~= '' then\n        local ok, state = pcall(JSON.decode, saved)\n        if ok and type(state) == 'table' then\n            dp = math.max(0, tonumber(state.dp) or 0)\n            turnDone = state.turnDone == true\n        end\n    end\n    self.createButton({label = PLAYER_LABEL .. '  DP', click_function = 'noop', function_owner = self, position = {0, 0.7, 0.72}, rotation = {0, 0, 0}, width = 0, height = 0, font_size = 190, font_color = FONT_COLOR})\n    self.createButton({label = tostring(dp), click_function = 'noop', function_owner = self, position = {0, 0.7, 0.08}, rotation = {0, 0, 0}, width = 0, height = 0, font_size = 300, font_color = FONT_COLOR})\n    self.createButton({label = '-', click_function = 'decreaseDP', function_owner = self, position = {-0.32, 0.7, 0.08}, rotation = {0, 0, 0}, width = 300, height = 300, font_size = 220, color = {0.18, 0.18, 0.18}, font_color = {1, 1, 1}, tooltip = 'Remove 1 Dominance Point (minimum 0).'})\n    self.createButton({label = '+', click_function = 'increaseDP', function_owner = self, position = {0.32, 0.7, 0.08}, rotation = {0, 0, 0}, width = 300, height = 300, font_size = 220, color = {0.18, 0.18, 0.18}, font_color = {1, 1, 1}, tooltip = 'Add 1 Dominance Point.'})\n    self.createButton({label = turnDone and 'TURN DONE' or 'TURN READY', click_function = 'toggleTurn', function_owner = self, position = {0, 0.7, -0.67}, rotation = {0, 0, 0}, width = 1250, height = 320, font_size = 160, color = turnDone and {0.22, 0.22, 0.22} or {0.18, 0.62, 0.25}, font_color = {1, 1, 1}, tooltip = 'Mark whether this player has completed their turn in the current round.'})\nend\n\nfunction onSave() return JSON.encode({dp = dp, turnDone = turnDone}) end\nfunction noop() end\nfunction refreshDP() self.editButton({index = 1, label = tostring(dp)}) end\nfunction increaseDP() dp = dp + 1; refreshDP() end\nfunction decreaseDP() dp = math.max(0, dp - 1); refreshDP() end\nfunction refreshTurn()\n    self.editButton({index = 4, label = turnDone and 'TURN DONE' or 'TURN READY', color = turnDone and {0.22, 0.22, 0.22} or {0.18, 0.62, 0.25}})\nend\nfunction toggleTurn() turnDone = not turnDone; refreshTurn() end\nfunction resetTurn() turnDone = false; refreshTurn() end",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "Tags": [
+        "player-dp-turn-tracker"
+      ]
+    },
+    {
+      "GUID": "1003d0",
+      "Name": "BlockSquare",
+      "Transform": {
+        "posX": 58.5,
+        "posY": 1.2,
+        "posZ": -28,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 0,
+        "scaleX": 6,
+        "scaleY": 0.3,
+        "scaleZ": 4
+      },
+      "Nickname": "Blue DP & Turn Tracker",
+      "Description": "Blue player's Dominance Point total and completed-turn indicator. Press DONE after completing Phase 7; advancing the Round Tracker resets it to READY.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.22,
+        "g": 0.38,
+        "b": 0.86
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "PLAYER_LABEL = 'BLUE'\nFONT_COLOR = {1, 1, 1}\ndp = 0\nturnDone = false\n\nfunction onLoad(saved)\n    if saved and saved ~= '' then\n        local ok, state = pcall(JSON.decode, saved)\n        if ok and type(state) == 'table' then\n            dp = math.max(0, tonumber(state.dp) or 0)\n            turnDone = state.turnDone == true\n        end\n    end\n    self.createButton({label = PLAYER_LABEL .. '  DP', click_function = 'noop', function_owner = self, position = {0, 0.7, 0.72}, rotation = {0, 0, 0}, width = 0, height = 0, font_size = 190, font_color = FONT_COLOR})\n    self.createButton({label = tostring(dp), click_function = 'noop', function_owner = self, position = {0, 0.7, 0.08}, rotation = {0, 0, 0}, width = 0, height = 0, font_size = 300, font_color = FONT_COLOR})\n    self.createButton({label = '-', click_function = 'decreaseDP', function_owner = self, position = {-0.32, 0.7, 0.08}, rotation = {0, 0, 0}, width = 300, height = 300, font_size = 220, color = {0.18, 0.18, 0.18}, font_color = {1, 1, 1}, tooltip = 'Remove 1 Dominance Point (minimum 0).'})\n    self.createButton({label = '+', click_function = 'increaseDP', function_owner = self, position = {0.32, 0.7, 0.08}, rotation = {0, 0, 0}, width = 300, height = 300, font_size = 220, color = {0.18, 0.18, 0.18}, font_color = {1, 1, 1}, tooltip = 'Add 1 Dominance Point.'})\n    self.createButton({label = turnDone and 'TURN DONE' or 'TURN READY', click_function = 'toggleTurn', function_owner = self, position = {0, 0.7, -0.67}, rotation = {0, 0, 0}, width = 1250, height = 320, font_size = 160, color = turnDone and {0.22, 0.22, 0.22} or {0.18, 0.62, 0.25}, font_color = {1, 1, 1}, tooltip = 'Mark whether this player has completed their turn in the current round.'})\nend\n\nfunction onSave() return JSON.encode({dp = dp, turnDone = turnDone}) end\nfunction noop() end\nfunction refreshDP() self.editButton({index = 1, label = tostring(dp)}) end\nfunction increaseDP() dp = dp + 1; refreshDP() end\nfunction decreaseDP() dp = math.max(0, dp - 1); refreshDP() end\nfunction refreshTurn()\n    self.editButton({index = 4, label = turnDone and 'TURN DONE' or 'TURN READY', color = turnDone and {0.22, 0.22, 0.22} or {0.18, 0.62, 0.25}})\nend\nfunction toggleTurn() turnDone = not turnDone; refreshTurn() end\nfunction resetTurn() turnDone = false; refreshTurn() end",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "Tags": [
+        "player-dp-turn-tracker"
+      ]
+    },
+    {
+      "GUID": "1003d1",
+      "Name": "BlockSquare",
+      "Transform": {
+        "posX": -73,
+        "posY": 1.2,
+        "posZ": 28,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 6,
+        "scaleY": 0.3,
+        "scaleZ": 4
+      },
+      "Nickname": "Green DP & Turn Tracker",
+      "Description": "Green player's Dominance Point total and completed-turn indicator. Press DONE after completing Phase 7; advancing the Round Tracker resets it to READY.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.18,
+        "g": 0.72,
+        "b": 0.28
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "PLAYER_LABEL = 'GREEN'\nFONT_COLOR = {1, 1, 1}\ndp = 0\nturnDone = false\n\nfunction onLoad(saved)\n    if saved and saved ~= '' then\n        local ok, state = pcall(JSON.decode, saved)\n        if ok and type(state) == 'table' then\n            dp = math.max(0, tonumber(state.dp) or 0)\n            turnDone = state.turnDone == true\n        end\n    end\n    self.createButton({label = PLAYER_LABEL .. '  DP', click_function = 'noop', function_owner = self, position = {0, 0.7, 0.72}, rotation = {0, 0, 0}, width = 0, height = 0, font_size = 190, font_color = FONT_COLOR})\n    self.createButton({label = tostring(dp), click_function = 'noop', function_owner = self, position = {0, 0.7, 0.08}, rotation = {0, 0, 0}, width = 0, height = 0, font_size = 300, font_color = FONT_COLOR})\n    self.createButton({label = '-', click_function = 'decreaseDP', function_owner = self, position = {-0.32, 0.7, 0.08}, rotation = {0, 0, 0}, width = 300, height = 300, font_size = 220, color = {0.18, 0.18, 0.18}, font_color = {1, 1, 1}, tooltip = 'Remove 1 Dominance Point (minimum 0).'})\n    self.createButton({label = '+', click_function = 'increaseDP', function_owner = self, position = {0.32, 0.7, 0.08}, rotation = {0, 0, 0}, width = 300, height = 300, font_size = 220, color = {0.18, 0.18, 0.18}, font_color = {1, 1, 1}, tooltip = 'Add 1 Dominance Point.'})\n    self.createButton({label = turnDone and 'TURN DONE' or 'TURN READY', click_function = 'toggleTurn', function_owner = self, position = {0, 0.7, -0.67}, rotation = {0, 0, 0}, width = 1250, height = 320, font_size = 160, color = turnDone and {0.22, 0.22, 0.22} or {0.18, 0.62, 0.25}, font_color = {1, 1, 1}, tooltip = 'Mark whether this player has completed their turn in the current round.'})\nend\n\nfunction onSave() return JSON.encode({dp = dp, turnDone = turnDone}) end\nfunction noop() end\nfunction refreshDP() self.editButton({index = 1, label = tostring(dp)}) end\nfunction increaseDP() dp = dp + 1; refreshDP() end\nfunction decreaseDP() dp = math.max(0, dp - 1); refreshDP() end\nfunction refreshTurn()\n    self.editButton({index = 4, label = turnDone and 'TURN DONE' or 'TURN READY', color = turnDone and {0.22, 0.22, 0.22} or {0.18, 0.62, 0.25}})\nend\nfunction toggleTurn() turnDone = not turnDone; refreshTurn() end\nfunction resetTurn() turnDone = false; refreshTurn() end",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "Tags": [
+        "player-dp-turn-tracker"
+      ]
+    },
+    {
+      "GUID": "1003d2",
+      "Name": "BlockSquare",
+      "Transform": {
+        "posX": 58.5,
+        "posY": 1.2,
+        "posZ": 28,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 6,
+        "scaleY": 0.3,
+        "scaleZ": 4
+      },
+      "Nickname": "Yellow DP & Turn Tracker",
+      "Description": "Yellow player's Dominance Point total and completed-turn indicator. Press DONE after completing Phase 7; advancing the Round Tracker resets it to READY.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.9,
+        "g": 0.82,
+        "b": 0.15
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "PLAYER_LABEL = 'YELLOW'\nFONT_COLOR = {0.05, 0.05, 0.05}\ndp = 0\nturnDone = false\n\nfunction onLoad(saved)\n    if saved and saved ~= '' then\n        local ok, state = pcall(JSON.decode, saved)\n        if ok and type(state) == 'table' then\n            dp = math.max(0, tonumber(state.dp) or 0)\n            turnDone = state.turnDone == true\n        end\n    end\n    self.createButton({label = PLAYER_LABEL .. '  DP', click_function = 'noop', function_owner = self, position = {0, 0.7, 0.72}, rotation = {0, 0, 0}, width = 0, height = 0, font_size = 190, font_color = FONT_COLOR})\n    self.createButton({label = tostring(dp), click_function = 'noop', function_owner = self, position = {0, 0.7, 0.08}, rotation = {0, 0, 0}, width = 0, height = 0, font_size = 300, font_color = FONT_COLOR})\n    self.createButton({label = '-', click_function = 'decreaseDP', function_owner = self, position = {-0.32, 0.7, 0.08}, rotation = {0, 0, 0}, width = 300, height = 300, font_size = 220, color = {0.18, 0.18, 0.18}, font_color = {1, 1, 1}, tooltip = 'Remove 1 Dominance Point (minimum 0).'})\n    self.createButton({label = '+', click_function = 'increaseDP', function_owner = self, position = {0.32, 0.7, 0.08}, rotation = {0, 0, 0}, width = 300, height = 300, font_size = 220, color = {0.18, 0.18, 0.18}, font_color = {1, 1, 1}, tooltip = 'Add 1 Dominance Point.'})\n    self.createButton({label = turnDone and 'TURN DONE' or 'TURN READY', click_function = 'toggleTurn', function_owner = self, position = {0, 0.7, -0.67}, rotation = {0, 0, 0}, width = 1250, height = 320, font_size = 160, color = turnDone and {0.22, 0.22, 0.22} or {0.18, 0.62, 0.25}, font_color = {1, 1, 1}, tooltip = 'Mark whether this player has completed their turn in the current round.'})\nend\n\nfunction onSave() return JSON.encode({dp = dp, turnDone = turnDone}) end\nfunction noop() end\nfunction refreshDP() self.editButton({index = 1, label = tostring(dp)}) end\nfunction increaseDP() dp = dp + 1; refreshDP() end\nfunction decreaseDP() dp = math.max(0, dp - 1); refreshDP() end\nfunction refreshTurn()\n    self.editButton({index = 4, label = turnDone and 'TURN DONE' or 'TURN READY', color = turnDone and {0.22, 0.22, 0.22} or {0.18, 0.62, 0.25}})\nend\nfunction toggleTurn() turnDone = not turnDone; refreshTurn() end\nfunction resetTurn() turnDone = false; refreshTurn() end",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "Tags": [
+        "player-dp-turn-tracker"
+      ]
+    },
+    {
+      "GUID": "1003d3",
+      "Name": "BlockSquare",
+      "Transform": {
+        "posX": 62,
+        "posY": 1.2,
+        "posZ": -17,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 0,
+        "scaleX": 6,
+        "scaleY": 0.3,
+        "scaleZ": 3.2
+      },
+      "Nickname": "Round Tracker",
+      "Description": "Shared round counter. NEXT advances one round and resets every player tracker to TURN READY.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.16,
+        "g": 0.08,
+        "b": 0.24
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "currentRound = 1\n\nfunction onLoad(saved)\n    if saved and saved ~= '' then\n        local ok, state = pcall(JSON.decode, saved)\n        if ok and type(state) == 'table' then currentRound = math.max(1, tonumber(state.currentRound) or 1) end\n    end\n    self.createButton({label = 'ROUND', click_function = 'noop', function_owner = self, position = {0, 0.7, 0.60}, rotation = {0, 0, 0}, width = 0, height = 0, font_size = 190, font_color = {1, 1, 1}})\n    self.createButton({label = tostring(currentRound), click_function = 'noop', function_owner = self, position = {0, 0.7, 0.02}, rotation = {0, 0, 0}, width = 0, height = 0, font_size = 300, font_color = {1, 1, 1}})\n    self.createButton({label = '-', click_function = 'previousRound', function_owner = self, position = {-0.33, 0.7, 0.02}, rotation = {0, 0, 0}, width = 300, height = 300, font_size = 220, color = {0.18, 0.18, 0.18}, font_color = {1, 1, 1}, tooltip = 'Go back one round (minimum Round 1).'})\n    self.createButton({label = 'NEXT', click_function = 'nextRound', function_owner = self, position = {0.30, 0.7, 0.02}, rotation = {0, 0, 0}, width = 520, height = 300, font_size = 150, color = {0.48, 0.18, 0.72}, font_color = {1, 1, 1}, tooltip = 'Advance one round and reset all player turn indicators to READY.'})\n    self.createButton({label = 'RESET TURNS', click_function = 'resetTurns', function_owner = self, position = {0, 0.7, -0.62}, rotation = {0, 0, 0}, width = 1150, height = 280, font_size = 130, color = {0.30, 0.30, 0.30}, font_color = {1, 1, 1}, tooltip = 'Reset all player turn indicators without changing the round.'})\nend\n\nfunction onSave() return JSON.encode({currentRound = currentRound}) end\nfunction noop() end\nfunction refreshRound() self.editButton({index = 1, label = tostring(currentRound)}) end\nfunction resetTurns()\n    for _, obj in ipairs(getAllObjects()) do\n        if obj.hasTag('player-dp-turn-tracker') then obj.call('resetTurn') end\n    end\nend\nfunction nextRound() currentRound = currentRound + 1; refreshRound(); resetTurns() end\nfunction previousRound() currentRound = math.max(1, currentRound - 1); refreshRound() end",
+      "LuaScriptState": "",
+      "XmlUI": ""
     }
   ],
   "SnapPoints": []

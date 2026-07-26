@@ -412,6 +412,7 @@
     "damage_pegs": "Pool of small red blood-drop pegs that snap into the divots on soldier bases. Each base holds up to 3 pegs (4th wound = death).",
     "combat_markers": "3 red circular markers, each the same size as the First Player marker. Used to identify board locations where declared combats are being resolved.",
     "combat_boards": "2 numbered staging boards (North and South), each with H.A.M.S positions 1-7 and corresponding die positions 1-7. Used to face opposing engaged soldiers and their assigned dice toward each other during combat.",
+    "trackers": "1 shared round counter plus 1 color-coded tracker per player for Dominance Points and completed-turn status. Advancing the round resets every player tracker to ready.",
     "bunker_tokens": "several — neutral fortifications: +1 all defense dice on hex, 1 per hex max, any unit benefits, destroyed by attacker winning combat"
   }
 }

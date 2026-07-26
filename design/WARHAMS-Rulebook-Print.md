@@ -130,6 +130,7 @@ Resources are the lifeblood of your campaign. Each type is produced by its corre
 | **Bunker Tokens**      | Neutral fortifications placed by D.U.D.S: +1 all defense dice on hex. 1 per hex max. Any unit benefits. Destroyed by attacker winning combat on the hex |
 | **Combat Markers**     | **3 red circular markers**, each the same size as the First Player marker. Place one at the board location of each declared combat and return it after that combat is resolved. |
 | **Combat Boards**      | **2 numbered staging boards** (North and South), each with H.A.M.S positions 1–7 and matching die positions 1–7. Used to place opposing engaged soldiers and their assigned dice face-to-face while resolving combat. |
+| **Round & Player Trackers** | **1 shared Round Tracker** and **1 color-coded tracker per player**. Player trackers record current Dominance Points (DP) and whether that player has completed their turn this round. |
 | **Planet Frame**       | Circular board edge made of **5 interlocking cardboard puzzle pieces** that snap together to form the planet boundary. All 61 Hex tiles fill the entire interior. |
 
 ---
@@ -225,6 +226,8 @@ Set up a **resource supply area** beside the board. Sort all Resource Tokens by 
 ## 🔄 TURN STRUCTURE
 
 Starting from the first player and proceeding clockwise, each player completes **all seven phases** of their turn before play passes to the next player. No other player may act during your turn unless a Conspire Card, combat, or Phase 4 resource gathering (for combat participants) specifically requires it.
+
+The shared **Round Tracker** begins at Round 1. Each player's tracker begins at **TURN READY** and **0 DP**. Adjust your DP counter whenever a rule or card awards or removes DP. After completing Phase 7, mark your tracker **TURN DONE**.
 
 ---
 
@@ -487,7 +490,7 @@ A **round** is one full cycle of all players' turns (each player completes Phase
 - Any **uncollected resource tokens** remaining on hexes you control (marked with your Control Flag) are added to your personal supply.
 - Any **spaceport hexes** you control that have a **container marker** on them: collect all BAC cards from the matching **Unloading Zone** slot into your hand. Remove the container from the board hex and reset the slot.
 
-Then a new round begins with the first player.
+Advance the Round Tracker by 1 and reset every player tracker to **TURN READY**. Then a new round begins with the first player.
 
 ---
 
