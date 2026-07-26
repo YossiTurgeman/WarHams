@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785049608,
+  "EpochTime": 1785051315,
   "Date": "2026-07-26",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -64749,6 +64749,120 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": ""
+    },
+    {
+      "GUID": "1003ca",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 58,
+        "posY": 1.02,
+        "posZ": -8,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 0,
+        "scaleX": 1.6,
+        "scaleY": 0.2,
+        "scaleZ": 1.6
+      },
+      "Nickname": "Combat Marker 1",
+      "Description": "Place on the board location where a declared combat is being resolved. Return it here afterward.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.82,
+        "g": 0.16,
+        "b": 0.12
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "function onLoad()\n    self.createButton({\n        label = 'COMBAT 1',\n        click_function = 'noop',\n        function_owner = self,\n        position = {0, 0.3, 0},\n        rotation = {0, 0, 0},\n        width = 0,\n        height = 0,\n        font_size = 150,\n        font_color = {0.12, 0.02, 0.02},\n        tooltip = 'Place at the location of an active combat.',\n    })\nend\nfunction noop() end",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/first-player-token.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/first-player-token.png",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": false,
+          "Stretch": true
+        }
+      }
+    },
+    {
+      "GUID": "1003cb",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 66,
+        "posY": 1.02,
+        "posZ": -8,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 0,
+        "scaleX": 1.6,
+        "scaleY": 0.2,
+        "scaleZ": 1.6
+      },
+      "Nickname": "Combat Marker 2",
+      "Description": "Place on the board location where a declared combat is being resolved. Return it here afterward.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.82,
+        "g": 0.16,
+        "b": 0.12
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "function onLoad()\n    self.createButton({\n        label = 'COMBAT 2',\n        click_function = 'noop',\n        function_owner = self,\n        position = {0, 0.3, 0},\n        rotation = {0, 0, 0},\n        width = 0,\n        height = 0,\n        font_size = 150,\n        font_color = {0.12, 0.02, 0.02},\n        tooltip = 'Place at the location of an active combat.',\n    })\nend\nfunction noop() end",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/first-player-token.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/first-player-token.png",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": false,
+          "Stretch": true
+        }
+      }
     }
   ],
   "SnapPoints": []

@@ -128,6 +128,7 @@ Resources are the lifeblood of your campaign. Each type is produced by its corre
 | **Equipment Display**  | Shared area near the board where one copy of each BAC card is placed face-up as a reference. When a player equips a BAC type, place one of your **Control Flags** on that card to show your access. Multiple players' flags can be on the same card. **Flags stay permanently** — once placed, your flag is never removed, even if all your soldiers carrying that module die. It marks that you've unlocked that BAC type and can re-equip it |
 | **Damage Pegs**        | Small red blood-drop pegs that snap into the divots on a soldier's base. Each base holds up to 3 pegs (4th wound = death). |
 | **Bunker Tokens**      | Neutral fortifications placed by D.U.D.S: +1 all defense dice on hex. 1 per hex max. Any unit benefits. Destroyed by attacker winning combat on the hex |
+| **Combat Markers**     | **2 red circular markers**, each the same size as the First Player marker. Place one at the board location of each declared combat and return it after that combat is resolved. |
 | **Planet Frame**       | Circular board edge made of **5 interlocking cardboard puzzle pieces** that snap together to form the planet boundary. All 61 Hex tiles fill the entire interior. |
 
 ---
@@ -292,9 +293,10 @@ To declare combat:
 
 1. The active player states **which of their Squads** is attacking.
 2. The active player designates **which enemy Squad** (or Separatist group) is the target.
-3. Resolve combat according to the full **Combat** section below.
+3. Place a **Combat Marker** at that combat's board location.
+4. Resolve combat according to the full **Combat** section below, then return the marker to its staging area.
 
-**Multiple Combats** — If the active player has multiple Squads engaged with different enemy forces, each may declare a separate combat. Resolve combats one at a time, in the order chosen by the active player.
+**Multiple Combats** — If the active player has multiple Squads engaged with different enemy forces, each may declare a separate combat. Resolve combats one at a time, in the order chosen by the active player. The two markers can identify the next two declared locations; reuse a returned marker if more combats remain.
 
 > **Note:** Only the active player may initiate combat during this phase. Defending players respond as part of combat resolution but do not initiate attacks of their own.
 

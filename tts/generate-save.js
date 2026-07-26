@@ -1856,6 +1856,42 @@ for (const [name, x, z, scaleX, scaleZ] of [
           color: diceTrayWallColor, locked: true, grid: false }));
 }
 
+// ─── 24. COMBAT-LOCATION MARKERS ──────────────────────────────────────
+// Two movable markers matching the First Player marker's diameter. Their
+// staging positions flank that token; players move them to active combats.
+for (const [index, x] of [[1, UZ_BOARD_X - 4], [2, UZ_BOARD_X + 4]]) {
+    const marker = baseObj("Custom_Tile", `Combat Marker ${index}`,
+        "Place on the board location where a declared combat is being resolved. Return it here afterward.",
+        x, 1.02, UZ_BOARD_Z - 8,
+        { rotY: 180, scaleX: 1.6, scaleY: 0.2, scaleZ: 1.6,
+          color: { r: 0.82, g: 0.16, b: 0.12 }, grid: false });
+    marker.CustomImage = {
+        ImageURL: FIRST_PLAYER_TOKEN_URL,
+        ImageSecondaryURL: FIRST_PLAYER_TOKEN_URL,
+        ImageScalar: 1,
+        WidthScale: 0,
+        CustomTile: { Type: 2 /* circle */, Thickness: 0.1, Stackable: false, Stretch: true },
+    };
+    marker.LuaScript = [
+        "function onLoad()",
+        "    self.createButton({",
+        `        label = 'COMBAT ${index}',`,
+        "        click_function = 'noop',",
+        "        function_owner = self,",
+        "        position = {0, 0.3, 0},",
+        "        rotation = {0, 0, 0},",
+        "        width = 0,",
+        "        height = 0,",
+        "        font_size = 150,",
+        "        font_color = {0.12, 0.02, 0.02},",
+        "        tooltip = 'Place at the location of an active combat.',",
+        "    })",
+        "end",
+        "function noop() end",
+    ].join("\n");
+    objects.push(marker);
+}
+
 // ═════════════════════════════════════════════════════════════════════
 //  BUILD SAVE FILE
 // ═════════════════════════════════════════════════════════════════════
