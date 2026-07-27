@@ -1087,18 +1087,22 @@ Territory collection is resolved **simultaneously for all players** once the fin
 
 ## 🏆 HOW TO WIN
 
-Three paths lead to victory. The first player to achieve **any** condition wins immediately — even during another player's turn.
+Three paths lead to victory. Victory 1 and 2 require a **hold check** — you declare at the end of your turn and win at the start of your next turn if you still qualify. Victory 3 triggers immediately when you reach 50 DP.
 
 ---
 
 ### 🚀 Victory 1: Spaceport Domination
 
-**Control the required number of Spaceport Landing Zones:**
+**Control the required number of Spaceport Landing Zones and hold them for 1 full round.**
 
 | Players | Spaceports Needed |
 |:---:|:---:|
 | 2 | **5 of 6** |
 | 3–4 | **4 of 6** |
+
+A Spaceport is under your **full control** when your Control Hex Frame is on it and **no enemy soldiers occupy the hex**. A Spaceport with enemy soldiers on it is **contested** and does not count toward the threshold.
+
+When you meet the threshold at the end of your turn, **declare Spaceport Domination**. If you still fully control the required number at the **start of your next turn**, you win. Every opponent gets one full turn to contest your Spaceports before the victory is confirmed.
 
 Your corporate HQ dispatches a full battalion. With the majority of orbital access locked down, rival corporations can no longer resupply — they flee off-world in panic. You win command of the planet.
 
@@ -1192,7 +1196,7 @@ The local population rallies behind your banner and crowns you their sovereign.
 
 | Path | Condition |
 |------|-----------|
-| 🚀 Spaceport Domination | Control 4 of the 6 Spaceport Landing Zones |
+| 🚀 Spaceport Domination | Control 4 of 6 Spaceports (2-player: 5 of 6) + hold 1 full round |
 | 💪 Military Supremacy | Field 4 full Squads of 7 H.A.M.S (28 soldiers) |
 | 👑 Dominance | Accumulate 50 DP from equipped BACs + Battle Victory DP |
 

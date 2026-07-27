@@ -11,7 +11,7 @@
       "id": "spaceports",
       "name": "Spaceport Domination",
       "description": "Control majority of spaceports — HQ sends a full battalion, rivals can't resupply and flee off-world",
-      "requirement": "2 players: control 5 of 6 spaceports. 3-4 players: control 4 of 6 spaceports"
+      "requirement": "2 players: fully control 5 of 6 spaceports. 3-4 players: fully control 4 of 6 spaceports. Declare at end of turn; win at start of next turn if still fully controlled. A spaceport is fully controlled when your flag is on it and no enemy soldiers occupy the hex (contested spaceports don't count)."
     },
     {
       "id": "military",
