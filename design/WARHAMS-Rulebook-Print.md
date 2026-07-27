@@ -529,7 +529,7 @@ During a **Combat action** in the Activation Phase, they may declare an attack w
 
 ### Combat Resolution — Step by Step
 
-Once combat is declared, resolve it by following Steps 1 through 6 in order.
+Once combat is declared, resolve it by following Steps 1 through 7 in order.
 
 ---
 
@@ -696,6 +696,19 @@ When a Counterattack is triggered:
 
 ---
 
+#### Step 7: Defender Withdrawal
+
+After all counterattacks are resolved and damage is applied, the **defender** may choose to **withdraw** any or all of their surviving engaged soldiers. Each withdrawing soldier moves **1 hex** away from the attacker's position, following normal movement rules (squad coherency, board wrapping, cannot move through Separatist-occupied hexes).
+
+- Withdrawal is **free** and does not cost an action.
+- The defender chooses which soldiers withdraw and which stay.
+- A soldier with no valid hex to withdraw to (surrounded, edge-locked, or blocked by Separatists) **stays put**.
+- Only the defender may withdraw. The attacker does not advance.
+
+> **Tip:** Withdrawal lets you break contact after a bad exchange, but it cedes the hex to the attacker for claiming.
+
+---
+
 ### ☠️ Death in W.A.R H.A.M.S
 
 When a H.A.M.S accumulates 4 or more damage pegs, the soldier is killed. Resolve immediately:
@@ -820,6 +833,7 @@ Bunker tokens are placed by the **D.U.D.S** (Deployable Unital Defense System) e
 | **Step 4** | Play Conspire Cards (Defender first, then Attacker) | Both |
 | **Step 5** | Resolve damage (attack − defense = damage pegs) | — |
 | **Step 6** | Check for Counterattacks (defense beat attack by 3+) | Defender |
+| **Step 7** | Defender may withdraw surviving soldiers 1 hex (free) | Defender |
 
 **Key Thresholds:**
 
@@ -1156,6 +1170,7 @@ DP come from **equipped BAC cards** — each BAC's DP value counts toward your t
 | 4 | Play **Combat** Conspire Cards (**defender first**, then attacker) |
 | 5 | Attack > Defense = **HIT** (difference = damage). **4 damage** = death → roll d6 for slot → salvage |
 | 6 | Defense beats attack by **3+** = **Counterattack** (chains naturally until a roll fails to trigger) |
+| 7 | **Defender Withdrawal**: defender may move surviving soldiers 1 hex away (free) |
 
 ### Victory Conditions
 
