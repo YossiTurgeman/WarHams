@@ -517,12 +517,12 @@ Combat is the heart of W.A.R H.A.M.S. When corporations clash over hexes, resour
 
 During a **Combat action** in the Activation Phase, they may declare an attack with any of their Squads against an enemy Squad (or Separatist group). This is separate from mandatory Separatist combat during Phase 4 (see **Phase 4: Separatists — Combat Rules**).
 
-> **Starting Range — Empty Hands:** A H.A.M.S with no weapon equipped in its Hands slot has a combat range of **1 hex**: it can fight enemies on the **same hex** or an **adjacent hex**. It attacks and defends normally and rolls **1d6**. Equipping a Hands-slot weapon increases its range to **2 hexes** unless that weapon explicitly states another range. Equipment in other slots does not increase the empty-Hands range.
+> **Starting Range — Empty Hands:** A H.A.M.S with no weapon equipped in its Hands slot has a combat range of **1 hex**: it can fight enemies on the **same hex** or an **adjacent hex**. It attacks and defends normally and rolls **1d6**. Equipping a Hands-slot weapon does **not** increase range beyond 1 hex unless that weapon explicitly states a longer range (e.g., B.A.S.R, S.L.I.M.E). Equipment in other slots does not increase the empty-Hands range.
 
 - Each Squad may declare **one Combat action** per turn.
 - To initiate combat, at least **one** soldier in the attacking Squad must have at least one soldier in the target Squad within their combat range.
 - **Engaged soldiers only:** A soldier participates and rolls dice only when at least one enemy soldier in the target Squad is within that soldier's combat range. Soldiers without an enemy in range **sit out** — they do not roll attack or defense dice.
-- **S.L.I.M.E** (mortar) has extended range and may fire from beyond 2 hexes (up to 3 hexes). Mortar crew count as engaged even if outside normal range. **B.A.S.R** (sniper) fires at up to 2 hexes in a **pre-combat step** — within normal engagement range, but its range can be extended via **L.P.M** (Laser Pointer Module) (up to 4 hexes). See **Special Weapon Rules** below.
+- **S.L.I.M.E** (mortar) has extended range and may fire from beyond 1 hex (up to 3 hexes). Mortar crew count as engaged even if outside normal range. **B.A.S.R** (sniper) fires at up to 2 hexes in a **pre-combat step** — within normal engagement range, but its range can be extended via **L.P.M** (Laser Pointer Module) (up to 4 hexes). See **Special Weapon Rules** below.
 - Only the **active player** may initiate combat. Defenders respond during combat resolution but do not choose to attack on another player's turn.
 
 ---
@@ -935,7 +935,7 @@ Modules with active abilities fall into two timing categories:
 | C.A.P Legs | Custom Armor Plating Legs | Legs | 1 S.A.P Legs + 1 Local Favor, 1 Electricity, 1 Oil | 4 | +2 defense die |
 | J.J | Jump Jets | Legs | 1 Industry, 1 Intelligence | 2 | Move 2 hexes instead of 1. May override squad coherency (fights alone while disconnected, no Squad-level BAC effects) |
 | S.H.A.D | Sensory Helmet, Advisory Drone | Head | 2 Intelligence, 1 Electricity | 4 | Attacker must reveal Conspire cards before combat |
-| H.C.A.R | Heavy Caliber Assault Rifle | Hands | 1 Industry, 1 Electricity | 2 | **Range 2.** +1 attack die |
+| H.C.A.R | Heavy Caliber Assault Rifle | Hands | 1 Industry, 1 Electricity | 2 | **Range 1.** +1 attack die |
 | P.A.E.H | Personal Accuracy Enhancement Helmet | Head | 1 Local Favor, 1 Electricity, 1 Intelligence | 4 | +1 attack die if soldier also carries H.C.A.R |
 | B.A.S.R | Bolt Action Sniper Rifle | Hands | 1 Electricity, 1 Intelligence, 1 Industry | 4 | **Range 2.** Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Sniper skips normal combat. −1 defense |
 | S.L.I.M.E | Squad Light Interoperable Mortar Encampment | Backpack | 1 Industry, 2 Oil, 2 Local Favor | 5 | Requires 2 soldiers. Roll 4 dice, target squad up to 3 hexes. Crew skips combat. Defenders −1 defense. While defending: −1 to defense die |
@@ -944,8 +944,8 @@ Modules with active abilities fall into two timing categories:
 | N.I.N.J.A | Nir Ion Nullifier Jammer Aid | Legs | 1 Intelligence, 1 Electricity | 2 | +3 to one defense die. **Tap**. Recharge for 2 Electricity |
 | D.U.D.S | Deployable Unital Defense System | Backpack | 1 Local Favor, 1 Oil, 1 Electricity | 4 | Place bunker token: +1 all defense dice on this hex. **Flip** (one-use) |
 | L.P.M | Laser Pointer Marker | Backpack | 1 Electricity, 1 Local Favor, 1 Intelligence | 3 | B.A.S.R/S.L.I.M.E can target enemies adjacent to L.P.M carrier. Max 4 hex range |
-| R.S.G | Repeating Shotgun | Hands | 1 Electricity, 1 Local Favor | 2 | **Range 2.** Same hex as target: +2 attack. Not same hex: -1 attack |
-| P.C.S.M.G | Projectile Correcting Sub Machine Gun | Hands | 1 Electricity, 1 Industry, 1 Intelligence | 3 | **Range 2.** Within 1 hex: roll 2d6 for attack instead of 1d6, pick the higher result |
+| R.S.G | Repeating Shotgun | Hands | 1 Electricity, 1 Local Favor | 2 | **Range 1.** Same hex as target: +2 attack. Not same hex: -1 attack |
+| P.C.S.M.G | Projectile Correcting Sub Machine Gun | Hands | 1 Electricity, 1 Industry, 1 Intelligence | 3 | **Range 1.** Same hex: roll 2d6 for attack instead of 1d6, pick the higher result |
 | T.I.L.T.S | Tactical Ion Team Link Shield | Backpack | 1 Electricity, 1 Industry, 2 Intelligence | 5 | Pay once for X soldiers. Swap attacker's dice between T.I.L.T.S soldiers. No other backpack allowed |
 
 ---

@@ -170,7 +170,7 @@
   "combat_system": {
     "attack_defense_rolls": "Each player rolls 1d6 per engaged soldier with an enemy in that soldier's combat range. Soldiers outside their range sit out. Attacker assigns dice to defender's soldiers. Defender aligns defense dice.",
     "more_soldiers_advantage": "Extra dice are rolled but only best are chosen, giving advantage",
-    "engagement_range": "A soldier with no Hands-slot weapon has combat range 1: same hex or adjacent hex. It still rolls 1d6 normally. Equipping a Hands-slot weapon gives range 2 unless that weapon states another range; other equipment slots do not increase empty-Hands range. Only soldiers with at least one enemy soldier in the target squad within their current range participate. S.L.I.M.E has range 3. B.A.S.R has range 2 and fires in pre-combat; L.P.M can extend eligible weapons to range 4.",
+    "engagement_range": "A soldier with no Hands-slot weapon has combat range 1: same hex or adjacent hex. It still rolls 1d6 normally. Equipping a Hands-slot weapon keeps range 1 unless that weapon states a longer range; other equipment slots do not increase empty-Hands range. Only soldiers with at least one enemy soldier in the target squad within their current range participate. S.L.I.M.E has range 3. B.A.S.R has range 2 and fires in pre-combat; L.P.M can extend eligible weapons to range 4.",
     "bonuses": "Add equipment bonuses after initial roll",
     "card_play": "Defender plays combat cards first, then attacker",
     "damage_resolution": "Difference in dice = damage pegs inserted into divots on the defending soldier's base. Each base has 3 blood-drop divots; soldier takes 3 damage max, 4th = death.",
@@ -287,7 +287,7 @@
       },
       "dp": 2,
       "copies": 5,
-      "text": "Range: 2 hexes. Add +1 to this soldier's attack die."
+      "text": "Range: 1 hex. Add +1 to this soldier's attack die."
     },
     {
       "abbr": "P.A.E.H",
@@ -412,7 +412,7 @@
       },
       "dp": 2,
       "copies": 5,
-      "text": "Range: 2 hexes. If target is on the same hex, add +2 to attack die. Otherwise add -1."
+      "text": "Range: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1."
     },
     {
       "abbr": "P.C.S.M.G",
@@ -426,7 +426,7 @@
       },
       "dp": 3,
       "copies": 5,
-      "text": "Range: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result."
+      "text": "Range: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result."
     },
     {
       "abbr": "C.A.P Chest",
