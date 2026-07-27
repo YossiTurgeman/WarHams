@@ -1,4 +1,4 @@
-﻿# ⚔️ W.A.R H.A.M.S — The Battle for Planet X
+# ⚔️ W.A.R H.A.M.S — The Battle for Planet X
 
 ### *Official Rulebook*
 
@@ -667,14 +667,14 @@ When a Counterattack is triggered:
 
 1. The counterattacking defender becomes the **Attacker** in a new **mini-combat round**.
 2. All normal combat rules apply (Steps 1–6), using only the counterattacking soldier(s) and the original attacker's soldiers they were matched against.
-3. **Counterattacks can chain** — but each successive counterattack suffers a cumulative **−1 Combat Fatigue penalty** to all dice rolls. The 1st counterattack has no penalty, the 2nd has −1, the 3rd has −2, etc. This makes extended chains increasingly unlikely to trigger.
+3. **Counterattacks can chain - a counterattacker who wins by 3+ triggers another counterattack. Chains continue naturally until a roll fails to trigger another counter (defense does not beat attack by 3+).
 
 > **Worked Example — Counterattack:**
 >
 > Continuing from the earlier combat: The Attacker assigned a **1** against Soldier C's defense of **6**.
 > Difference: 6 − 1 = **5** (≥ 3) — **Counterattack triggered!**
 >
-> **Mini-Combat Round (Chain 1 — no fatigue penalty):**
+> **Mini-Combat Round (Chain 1):**
 > Soldier C is now the Attacker. Both sides roll 1d6:
 >
 > | Matchup | Attack Die | Defense Die | Result |
@@ -684,14 +684,12 @@ When a Counterattack is triggered:
 > The original attacker's defense die (5) beat the attack die (2) by **3** — exactly the threshold.
 > **Another Counterattack triggers!**
 >
-> **Mini-Combat Round (Chain 2 — Combat Fatigue: −1 to all dice):**
-> The original attacker strikes back. Both roll 1d6, but subtract 1 from each roll (minimum 1):
+> **Mini-Combat Round (Chain 2):**
+> The original attacker strikes back. Both roll 1d6 with no penalty:
 >
-> | Matchup | Raw Roll | Fatigue | Final Die | Result |
-> |---|:---:|:---:|:---:|---|
-> | Original Attacker (attack) | 4 | −1 | **3** | |
-> | Soldier C (defense) | 3 | −1 | **2** | |
-> | **Result** | | | 3 vs 2 | **HIT** (1 damage) |
+> | Matchup | Attack Die | Defense Die | Result |
+> |---|:---:|:---:|---|
+> | Original Attacker vs Soldier C | 4 | 3 | **HIT** (1 damage) |
 >
 > Difference is only 1 — no further counterattack. The chain ends.
 
@@ -827,7 +825,7 @@ Bunker tokens are placed by the **D.U.D.S** (Deployable Unital Defense System) e
 | Threshold | Value |
 |---|---|
 | Damage pegs to kill a H.A.M.S | **4** (dies on the 4th peg) |
-| Counterattack trigger | Defense beats attack by **3 or more** (chains get −1 cumulative fatigue) |
+| Counterattack trigger | Defense beats attack by **3 or more** (chains naturally until a roll fails to trigger) |
 | Separatist lives | **1** (dies on any hit) |
 | Separatist dice penalty | **−1 to all rolls** (roaming only; base defenders roll full d6) |
 
@@ -1159,7 +1157,7 @@ DP come from **equipped BAC cards** — each BAC's DP value counts toward your t
 | 3 | Apply **equipment bonuses** (+attack, +defense) |
 | 4 | Play **Combat** Conspire Cards (**defender first**, then attacker) |
 | 5 | Attack > Defense = **HIT** (difference = damage). **4 damage** = death → roll d6 for slot → salvage |
-| 6 | Defense beats attack by **3+** = **Counterattack** (chains: −1 cumulative fatigue) |
+| 6 | Defense beats attack by **3+** = **Counterattack** (chains naturally until a roll fails to trigger) |
 
 ### Victory Conditions
 

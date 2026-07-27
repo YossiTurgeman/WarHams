@@ -174,7 +174,7 @@
     "bonuses": "Add equipment bonuses after initial roll",
     "card_play": "Defender plays combat cards first, then attacker",
     "damage_resolution": "Difference in dice = damage pegs inserted into divots on the defending soldier's base. Each base has 3 blood-drop divots; soldier takes 3 damage max, 4th = death.",
-    "counterattack": "Defending blocks with +3 or more difference trigger counterattack (defender becomes attacker). Counterattacks can chain but each successive chain suffers cumulative -1 Combat Fatigue penalty to all dice rolls (1st counter: no penalty, 2nd: -1, 3rd: -2, etc.)",
+    "counterattack": "Defending blocks with +3 or more difference trigger counterattack (defender becomes attacker). Counterattacks can chain - a counterattacker who wins by 3+ triggers another counterattack. Chains continue naturally until a roll fails to trigger another counter.)",
     "module_activation": {
       "combat_modules": "Activate during combat resolution at Step 3 (equipment bonuses). E.g., N.I.N.J.A.",
       "field_modules": "Activate during a Logistics action.",

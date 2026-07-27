@@ -1,4 +1,4 @@
-﻿---
+---
 pdf_options:
   format: A4
   margin: 20mm
@@ -685,14 +685,14 @@ When a Counterattack is triggered:
 
 1. The counterattacking defender becomes the **Attacker** in a new **mini-combat round**.
 2. All normal combat rules apply (Steps 1–6), using only the counterattacking soldier(s) and the original attacker's soldiers they were matched against.
-3. **Counterattacks can chain** — but each successive counterattack suffers a cumulative **−1 Combat Fatigue penalty** to all dice rolls. The 1st counterattack has no penalty, the 2nd has −1, the 3rd has −2, etc. This makes extended chains increasingly unlikely to trigger.
+3. **Counterattacks can chain - a counterattacker who wins by 3+ triggers another counterattack. Chains continue naturally until a roll fails to trigger another counter (defense does not beat attack by 3+).
 
 > **Worked Example:**
 >
 > Soldier X (defender) was matched: Attack 2 vs Defense 6.
 > The defense die exceeds the attack die by **4** (6 − 2 = 4). This triggers a **Counterattack**.
 > Soldier X now becomes the attacker in a mini-combat round. Both sides roll 1d6, assign dice, apply bonuses, play cards, and resolve damage as normal.
-> If the original attacker's defense triggers *another* counterattack, both sides apply **−1 Combat Fatigue** to all rolls in that round. A third chain would apply −2, and so on.
+> If the original attacker's defense triggers another counterattack, the chain continues with no penalty. Chains end naturally when a roll fails to trigger another counter.
 
 ---
 
@@ -826,7 +826,7 @@ Bunker tokens are placed by the **D.U.D.S** (Deployable Unital Defense System) e
 | Threshold | Value |
 |---|---|
 | Damage pegs to kill a H.A.M.S | **4** (dies on the 4th peg) |
-| Counterattack trigger | Defense beats attack by **3 or more** (chains get −1 cumulative fatigue) |
+| Counterattack trigger | Defense beats attack by **3 or more** (chains naturally until a roll fails to trigger) |
 | Separatist lives | **1** (dies on any hit) |
 | Separatist dice penalty | **−1 to all rolls** |
 
@@ -1155,7 +1155,7 @@ DP come from **equipped BAC cards** — each BAC's DP value counts toward your t
 | 3 | Apply **equipment bonuses** (+attack, +defense) |
 | 4 | Play **Combat** Conspire Cards (**defender first**, then attacker) |
 | 5 | Attack > Defense = **HIT** (difference = damage). **4 damage** = death → roll d6 for slot → salvage |
-| 6 | Defense beats attack by **3+** = **Counterattack** (chains: −1 cumulative fatigue) |
+| 6 | Defense beats attack by **3+** = **Counterattack** (chains naturally until a roll fails to trigger) |
 
 ### Victory Conditions
 
