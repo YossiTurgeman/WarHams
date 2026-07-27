@@ -434,8 +434,7 @@ Resolve mandatory combat on every hex shared by Separatists and player soldiers.
 | Rule | Detail |
 |------|--------|
 | **Rolled By** | The player to the **left** of the player fighting the Separatists rolls every Separatist die |
-| **Roaming Penalty** | Roaming Separatists apply **−1 to all dice**, to a minimum result of 1 |
-| **Base Defenders** | Base defenders roll a full d6 and do **not** apply the roaming −1 penalty |
+| **Separatist Penalty** | All Separatists (roaming and base defenders) apply **−1 to defense dice only**, to a minimum result of 1. Attack dice are unmodified |
 | **Hit Points** | Each Separatist has 1 life; any hit kills it immediately |
 | **Player Attacks** | A player may voluntarily attack a Separatist group during a Combat action under the normal engagement rules |
 | **Mandatory Combat** | Combat is mandatory after Separatists enter a player's hex during Phase 4 |
@@ -443,7 +442,7 @@ Resolve mandatory combat on every hex shared by Separatists and player soldiers.
 
 #### Conquering Bases
 
-- The first attack against an unconquered base triggers **7 base defenders**. They are dug in and roll full d6 without the roaming penalty.
+- The first attack against an unconquered base triggers **7 base defenders**. They are dug in but apply the Separatist defense penalty like all Separatists.
 - Defeat all 7 defenders to conquer the base, then place your Control Flag on its hex.
 - Surviving defenders become roaming Separatists and follow the Phase 4 procedure.
 - Conquered bases **stop spawning naturally** (their printed number no longer triggers spawns).
@@ -841,7 +840,7 @@ Bunker tokens are placed by the **D.U.D.S** (Deployable Unital Defense System) e
 | Damage pegs to kill a H.A.M.S | **4** (dies on the 4th peg) |
 | Counterattack trigger | Defense beats attack by **3 or more** (chains naturally until a roll fails to trigger) |
 | Separatist lives | **1** (dies on any hit) |
-| Separatist dice penalty | **−1 to all rolls** (roaming only; base defenders roll full d6) |
+| Separatist dice penalty | **−1 to defense dice only** (all Separatists, including base defenders; min result 1) |
 
 ---
 ---
