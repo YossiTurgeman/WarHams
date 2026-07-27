@@ -23,7 +23,7 @@
       "id": "dominance",
       "name": "Dominance Victory",
       "description": "Local population sides with you — you become sovereign",
-      "requirement": "Accumulate 50 Dominance Points from equipped BACs and Battle Victory DP"
+      "requirement": "Accumulate 50 Dominance Points from equipped BACs (add card DP each time you learn a new BAC or equip a new instance) and Battle Victory DP"
     }
   ],
   "board": {

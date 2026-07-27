@@ -295,12 +295,13 @@ There are two ways to equip a BAC — **unlocking** a new type, or **re-equippin
 2. Place one of your **Control Flags** on that card in the Equipment Display — this marks that you have **permanently unlocked** this BAC type.
 3. Pay the card's resource cost for **each soldier** you wish to equip.
 4. Attach the matching **equipment module** (magnetized part) to each equipped soldier's miniature in the correct slot (Head, Chest, Legs, Backpack, or Hands).
+5. **Add the card's DP value to your DP counter for each soldier equipped** (check the DP value printed on the BAC card).
 
 Equipping has no location requirement — you may equip any of your soldiers regardless of where they are on the board. Soldiers recruited this action may also be equipped immediately.
 
 **Re-equipping an unlocked BAC type:**
 
-If your Control Flag is already on a BAC card in the Equipment Display, you may equip additional soldiers with that type during a Logistics action — no card needed, just pay the resource cost **per soldier** and attach the module.
+If your Control Flag is already on a BAC card in the Equipment Display, you may equip additional soldiers with that type during a Logistics action — no card needed, just pay the resource cost **per soldier**, attach the module, and **add the card's DP value to your DP counter for each soldier equipped**.
 
 **Limit:** Only **8 copies** of each equipment module exist in the game. If all 8 are currently in use, no more soldiers can equip that type until a module is freed (destroyed modules return to the box and can be purchased again).
 
@@ -1131,7 +1132,7 @@ DP come from two sources:
 
 The local population rallies behind your banner and crowns you their sovereign.
 
-> **Tracking DP:** Count the DP values of all equipment modules currently attached to your living soldiers (check the Equipment Display for each module's DP value). If a soldier dies and their module is destroyed or salvaged by another player, that DP is lost. Battle Victory DP is never lost once earned.
+> **Tracking DP:** Every time you learn a new BAC (unlock it) or create a new instance (equip another soldier with an already-unlocked BAC), add the card's DP value to your counter for each soldier equipped. If a soldier dies and their module is destroyed or salvaged by another player, subtract that module's DP from your total. Battle Victory DP is never lost once earned.
 
 ---
 ---
