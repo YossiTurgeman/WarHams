@@ -412,7 +412,7 @@
       },
       "dp": 2,
       "copies": 5,
-      "text": "Range: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1."
+      "text": "Range: 2 hexes. If target is on the same hex, add +2 to attack die. Otherwise add -1."
     },
     {
       "abbr": "P.C.S.M.G",

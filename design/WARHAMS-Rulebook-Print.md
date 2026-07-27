@@ -944,7 +944,7 @@ Modules with active abilities fall into two timing categories:
 | N.I.N.J.A | Nir Ion Nullifier Jammer Aid | Legs | 1 Intelligence, 1 Electricity | 2 | +3 to one defense die. **Tap**. Recharge for 2 Electricity |
 | D.U.D.S | Deployable Unital Defense System | Backpack | 1 Local Favor, 1 Oil, 1 Electricity | 4 | Place bunker token: +1 all defense dice on this hex. **Flip** (one-use) |
 | L.P.M | Laser Pointer Marker | Backpack | 1 Electricity, 1 Local Favor, 1 Intelligence | 3 | B.A.S.R/S.L.I.M.E can target enemies adjacent to L.P.M carrier. Max 4 hex range |
-| R.S.G | Repeating Shotgun | Hands | 1 Electricity, 1 Local Favor | 2 | **Range 2.** Within 1 hex: +2 attack. Beyond 1 hex: −1 attack |
+| R.S.G | Repeating Shotgun | Hands | 1 Electricity, 1 Local Favor | 2 | **Range 2.** Same hex as target: +2 attack. Not same hex: -1 attack |
 | P.C.S.M.G | Projectile Correcting Sub Machine Gun | Hands | 1 Electricity, 1 Industry, 1 Intelligence | 3 | **Range 2.** Within 1 hex: roll 2d6 for attack instead of 1d6, pick the higher result |
 | T.I.L.T.S | Tactical Ion Team Link Shield | Backpack | 1 Electricity, 1 Industry, 2 Intelligence | 5 | Pay once for X soldiers. Swap attacker's dice between T.I.L.T.S soldiers. No other backpack allowed |
 
