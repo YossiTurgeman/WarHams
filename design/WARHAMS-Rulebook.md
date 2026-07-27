@@ -703,6 +703,14 @@ After all counterattacks are resolved and damage is applied, the **defender** ma
 - A soldier with no valid hex to withdraw to (surrounded, edge-locked, or blocked by Separatists) **stays put**.
 - Only the defender may withdraw. The attacker does not advance.
 
+#### Step 8: Battle Victory DP
+
+After withdrawal, compare **total wounds inflicted** by each side (damage pegs placed on enemy soldiers, including kills). The side that inflicted **more wounds than they received** earns **Battle Victory DP** equal to the difference, up to a maximum of **3 DP**.
+
+- If both sides inflicted the same number of wounds, neither side earns DP.
+- Both **attacker and defender** are eligible — winning a defense earns DP too.
+- Add the DP to your **DP counter** immediately. Battle Victory DP counts toward **Victory 3: Dominance** and does not go away if soldiers are later lost.
+
 > **Tip:** Withdrawal lets you break contact after a bad exchange, but it cedes the hex to the attacker for claiming.
 
 <div style="page-break-before: always;"></div>
@@ -832,6 +840,7 @@ Bunker tokens are placed by the **D.U.D.S** (Deployable Unital Defense System) e
 | **Step 5** | Resolve damage (attack − defense = damage pegs) | — |
 | **Step 6** | Check for Counterattacks (defense beat attack by 2+) | Defender |
 | **Step 7** | Defender may withdraw surviving soldiers 1 hex (free) | Defender |
+| **Step 8** | Award Battle Victory DP (wounds difference, max 3) | — |
 
 **Key Thresholds:**
 
@@ -1111,9 +1120,14 @@ Your overwhelming military presence renders further conflict pointless. Rival HQ
 
 **Accumulate 50 Dominance Points (DP).**
 
-DP come from **equipped BAC cards** — each BAC's DP value counts toward your total as long as the card remains equipped and the soldier carrying it is alive. The local population rallies behind your banner and crowns you their sovereign.
+DP come from two sources:
 
-> **Tracking DP:** Count the DP values of all equipment modules currently attached to your living soldiers (check the Equipment Display for each module's DP value). If a soldier dies and their module is destroyed or salvaged by another player, that DP is lost.
+1. **Equipped BAC cards** — each BAC's DP value counts toward your total as long as the card remains equipped and the soldier carrying it is alive.
+2. **Battle Victory DP** — after each combat, the side that inflicted more wounds than they received earns DP equal to the difference, up to 3 DP per battle (see Combat Step 8). This DP is permanent.
+
+The local population rallies behind your banner and crowns you their sovereign.
+
+> **Tracking DP:** Count the DP values of all equipment modules currently attached to your living soldiers (check the Equipment Display for each module's DP value). If a soldier dies and their module is destroyed or salvaged by another player, that DP is lost. Battle Victory DP is never lost once earned.
 
 ---
 ---
@@ -1172,6 +1186,7 @@ DP come from **equipped BAC cards** — each BAC's DP value counts toward your t
 | 5 | Attack > Defense = **HIT** (difference = damage). **4 damage** = death → roll d6 for slot → salvage |
 | 6 | Defense beats attack by **2+** = **Counterattack** (chains naturally until a roll fails to trigger) |
 | 7 | **Defender Withdrawal**: defender may move surviving soldiers 1 hex away (free) |
+| 8 | **Battle Victory DP**: side that inflicted more wounds earns DP = difference, up to 3 |
 
 ### Victory Conditions
 
@@ -1179,7 +1194,7 @@ DP come from **equipped BAC cards** — each BAC's DP value counts toward your t
 |------|-----------|
 | 🚀 Spaceport Domination | Control 4 of the 6 Spaceport Landing Zones |
 | 💪 Military Supremacy | Field 4 full Squads of 7 H.A.M.S (28 soldiers) |
-| 👑 Dominance | Accumulate 50 Dominance Points from equipped BACs |
+| 👑 Dominance | Accumulate 50 DP from equipped BACs + Battle Victory DP |
 
 ---
 

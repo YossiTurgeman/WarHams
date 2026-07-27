@@ -23,7 +23,7 @@
       "id": "dominance",
       "name": "Dominance Victory",
       "description": "Local population sides with you — you become sovereign",
-      "requirement": "Accumulate 50 Dominance Points from equipped BACs"
+      "requirement": "Accumulate 50 Dominance Points from equipped BACs and Battle Victory DP"
     }
   ],
   "board": {
@@ -176,6 +176,7 @@
     "damage_resolution": "Difference in dice = damage pegs inserted into divots on the defending soldier's base. Each base has 3 blood-drop divots; soldier takes 3 damage max, 4th = death.",
     "counterattack": "Defending blocks with +2 or more difference trigger counterattack (defender becomes attacker). Counterattacks can chain - a counterattacker who wins by 2+ triggers another counterattack. Chains continue naturally until a roll fails to trigger another counter.",
     "defender_withdrawal": "After all counterattacks and damage are resolved, the defender may withdraw any or all surviving engaged soldiers 1 hex away from the attacker for free. Follows normal movement rules (coherency, board wrapping, no moving through Separatists). Soldiers with no valid hex stay put. Only the defender withdraws; the attacker does not advance.",
+    "battle_victory_dp": "After withdrawal, compare total wounds inflicted by each side (damage pegs placed on enemy soldiers, including kills). The side that inflicted more wounds than they received earns Battle Victory DP equal to the difference, up to a maximum of 3 DP. If both sides inflicted equal wounds, neither earns DP. Both attacker and defender are eligible. Battle Victory DP is permanent and counts toward the Dominance victory.",
     "module_activation": {
       "combat_modules": "Activate during combat resolution at Step 3 (equipment bonuses). E.g., N.I.N.J.A.",
       "field_modules": "Activate during a Logistics action.",
