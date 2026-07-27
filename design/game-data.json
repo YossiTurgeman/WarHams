@@ -174,7 +174,7 @@
     "bonuses": "Add equipment bonuses after initial roll",
     "card_play": "Defender plays combat cards first, then attacker",
     "damage_resolution": "Difference in dice = damage pegs inserted into divots on the defending soldier's base. Each base has 3 blood-drop divots; soldier takes 3 damage max, 4th = death.",
-    "counterattack": "Defending blocks with +3 or more difference trigger counterattack (defender becomes attacker). Counterattacks can chain - a counterattacker who wins by 3+ triggers another counterattack. Chains continue naturally until a roll fails to trigger another counter.)",
+    "counterattack": "Defending blocks with +2 or more difference trigger counterattack (defender becomes attacker). Counterattacks can chain - a counterattacker who wins by 2+ triggers another counterattack. Chains continue naturally until a roll fails to trigger another counter.",
     "defender_withdrawal": "After all counterattacks and damage are resolved, the defender may withdraw any or all surviving engaged soldiers 1 hex away from the attacker for free. Follows normal movement rules (coherency, board wrapping, no moving through Separatists). Soldiers with no valid hex stay put. Only the defender withdraws; the attacker does not advance.",
     "module_activation": {
       "combat_modules": "Activate during combat resolution at Step 3 (equipment bonuses). E.g., N.I.N.J.A.",

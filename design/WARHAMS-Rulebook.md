@@ -654,24 +654,24 @@ A H.A.M.S can sustain a maximum of **3 damage pegs**. When a soldier would recei
 
 After all damage is resolved, check **every** defender's matchup for a potential Counterattack.
 
-**Counterattack Trigger:** Any defending soldier whose defense die beat the attack die by **3 or more** earns a **Counterattack**.
+**Counterattack Trigger:** Any defending soldier whose defense die beat the attack die by **2 or more** earns a **Counterattack**.
 
 | Defender | Attack Die | Defense Die | Difference | Result |
 |---|:---:|:---:|:---:|---|
 | Soldier A | 6 | 5 | −1 (attacker won) | No counterattack |
-| Soldier B | 4 | 4 | +0 for defender | No counterattack (difference < 3) |
+| Soldier B | 4 | 4 | +0 for defender | No counterattack (difference < 2) |
 | Soldier C | 1 | 6 | +5 for defender | **COUNTERATTACK** triggered |
 
 When a Counterattack is triggered:
 
 1. The counterattacking defender becomes the **Attacker** in a new **mini-combat round**.
 2. All normal combat rules apply (Steps 1–6), using only the counterattacking soldier(s) and the original attacker's soldiers they were matched against.
-3. **Counterattacks can chain - a counterattacker who wins by 3+ triggers another counterattack. Chains continue naturally until a roll fails to trigger another counter (defense does not beat attack by 3+).
+3. **Counterattacks can chain - a counterattacker who wins by 2+ triggers another counterattack. Chains continue naturally until a roll fails to trigger another counter (defense does not beat attack by 2+).
 
 > **Worked Example — Counterattack:**
 >
 > Continuing from the earlier combat: The Attacker assigned a **1** against Soldier C's defense of **6**.
-> Difference: 6 − 1 = **5** (≥ 3) — **Counterattack triggered!**
+> Difference: 6 − 1 = **5** (≥ 2) — **Counterattack triggered!**
 >
 > **Mini-Combat Round (Chain 1):**
 > Soldier C is now the Attacker. Both sides roll 1d6:
@@ -680,7 +680,7 @@ When a Counterattack is triggered:
 > |---|:---:|:---:|---|
 > | Soldier C vs Original Attacker | 2 | 5 | **BLOCKED** (defense wins by 3) |
 >
-> The original attacker's defense die (5) beat the attack die (2) by **3** — exactly the threshold.
+> The original attacker's defense die (5) beat the attack die (2) by **3** — above the threshold of 2.
 > **Another Counterattack triggers!**
 >
 > **Mini-Combat Round (Chain 2):**
@@ -830,7 +830,7 @@ Bunker tokens are placed by the **D.U.D.S** (Deployable Unital Defense System) e
 | **Step 3** | Apply equipment bonuses (+attack, +defense) | Both |
 | **Step 4** | Play Conspire Cards (Defender first, then Attacker) | Both |
 | **Step 5** | Resolve damage (attack − defense = damage pegs) | — |
-| **Step 6** | Check for Counterattacks (defense beat attack by 3+) | Defender |
+| **Step 6** | Check for Counterattacks (defense beat attack by 2+) | Defender |
 | **Step 7** | Defender may withdraw surviving soldiers 1 hex (free) | Defender |
 
 **Key Thresholds:**
@@ -838,7 +838,7 @@ Bunker tokens are placed by the **D.U.D.S** (Deployable Unital Defense System) e
 | Threshold | Value |
 |---|---|
 | Damage pegs to kill a H.A.M.S | **4** (dies on the 4th peg) |
-| Counterattack trigger | Defense beats attack by **3 or more** (chains naturally until a roll fails to trigger) |
+| Counterattack trigger | Defense beats attack by **2 or more** (chains naturally until a roll fails to trigger) |
 | Separatist lives | **1** (dies on any hit) |
 | Separatist dice penalty | **−1 to defense dice only** (all Separatists, including base defenders; min result 1) |
 
@@ -1170,7 +1170,7 @@ DP come from **equipped BAC cards** — each BAC's DP value counts toward your t
 | 3 | Apply **equipment bonuses** (+attack, +defense) |
 | 4 | Play **Combat** Conspire Cards (**defender first**, then attacker) |
 | 5 | Attack > Defense = **HIT** (difference = damage). **4 damage** = death → roll d6 for slot → salvage |
-| 6 | Defense beats attack by **3+** = **Counterattack** (chains naturally until a roll fails to trigger) |
+| 6 | Defense beats attack by **2+** = **Counterattack** (chains naturally until a roll fails to trigger) |
 | 7 | **Defender Withdrawal**: defender may move surviving soldiers 1 hex away (free) |
 
 ### Victory Conditions
