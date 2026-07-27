@@ -11,19 +11,25 @@
       "id": "spaceports",
       "name": "Spaceport Domination",
       "description": "Control majority of spaceports — HQ sends a full battalion, rivals can't resupply and flee off-world",
-      "requirement": "2 players: fully control 5 of 6 spaceports. 3-4 players: fully control 4 of 6 spaceports. Declare at end of turn; win at start of next turn if still fully controlled. A spaceport is fully controlled when your flag is on it and no enemy soldiers occupy the hex (contested spaceports don't count)."
+      "requirement": "2 players: fully control 5 of 6 spaceports. 3-4 players: fully control 4 of 6 spaceports. A spaceport is fully controlled when your flag is on it and no enemy soldiers occupy the hex (contested spaceports don't count)."
     },
     {
       "id": "military",
       "name": "Military Supremacy",
-      "description": "Have 4 full squads of 7 soldiers and hold for 1 round — competition's HQs pull them back",
-      "requirement": "4 squads with 7 soldiers each (28 total). Declare at end of turn; win at start of next turn if still at 28+. Tie: highest DP wins; if DP tied, continue playing"
+      "description": "Have 4 full squads of 7 soldiers — competition's HQs pull them back",
+      "requirement": "4 squads with 7 soldiers each (28 total)"
     },
     {
       "id": "dominance",
       "name": "Dominance Victory",
       "description": "Local population sides with you — you become sovereign",
       "requirement": "Accumulate 50 Dominance Points from equipped BACs (add card DP each time you learn a new BAC or equip a new instance) and Battle Victory DP"
+    },
+    {
+      "id": "final_round",
+      "name": "Final Round Resolution",
+      "description": "When any victory condition is met, the current round becomes the Final Round — all remaining players take their turn, then the winner is determined",
+      "requirement": "At end of Final Round: one player meets a condition = they win; multiple meet conditions = highest DP wins; no one meets a condition = highest DP wins; DP tied = play additional rounds"
     }
   ],
   "board": {

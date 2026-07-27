@@ -1088,13 +1088,13 @@ Territory collection is resolved **simultaneously for all players** once the fin
 
 ## 🏆 HOW TO WIN
 
-Three paths lead to victory. Victory 1 and 2 require a **hold check** — you declare at the end of your turn and win at the start of your next turn if you still qualify. Victory 3 triggers immediately when you reach 50 DP.
+Three paths lead to victory. When **any** player meets a victory condition, the **Final Round** is triggered — the current round becomes the last round. All players who have not yet taken their turn this round still take it. At the **end of the Final Round**, the winner is determined (see Final Round Resolution below).
 
 ---
 
 ### 🚀 Victory 1: Spaceport Domination
 
-**Control the required number of Spaceport Landing Zones and hold them for 1 full round.**
+**Fully control the required number of Spaceport Landing Zones:**
 
 | Players | Spaceports Needed |
 |:---:|:---:|
@@ -1103,19 +1103,13 @@ Three paths lead to victory. Victory 1 and 2 require a **hold check** — you de
 
 A Spaceport is under your **full control** when your Control Hex Frame is on it and **no enemy soldiers occupy the hex**. A Spaceport with enemy soldiers on it is **contested** and does not count toward the threshold.
 
-When you meet the threshold at the end of your turn, **declare Spaceport Domination**. If you still fully control the required number at the **start of your next turn**, you win. Every opponent gets one full turn to contest your Spaceports before the victory is confirmed.
-
 Your corporate HQ dispatches a full battalion. With the majority of orbital access locked down, rival corporations can no longer resupply — they flee off-world in panic. You win command of the planet.
 
 ---
 
 ### 💪 Victory 2: Military Supremacy
 
-**Field 4 full Squads of 7 H.A.M.S each (28 soldiers total) and hold them for 1 full round.**
-
-When you reach 28 soldiers, **declare Military Supremacy** at the end of your turn. If you still have 28 or more soldiers at the **start of your next turn**, you win. Every opponent gets one full turn to try to knock your numbers down before the victory is confirmed.
-
-**Tie:** If two or more players both hold 28+ soldiers when checks resolve, the player with the **highest Dominance Points (DP)** wins. If DP is also tied, continue playing until the tie is broken.
+**Field 4 full Squads of 7 H.A.M.S each (28 soldiers total).**
 
 Your overwhelming military presence renders further conflict pointless. Rival HQs withdraw. You are promoted to conquer bigger, richer planets.
 
@@ -1133,6 +1127,18 @@ DP come from two sources:
 The local population rallies behind your banner and crowns you their sovereign.
 
 > **Tracking DP:** Every time you learn a new BAC (unlock it) or create a new instance (equip another soldier with an already-unlocked BAC), add the card's DP value to your counter for each soldier equipped. If a soldier dies and their module is destroyed or salvaged by another player, subtract that module's DP from your total. Battle Victory DP is never lost once earned.
+
+---
+
+### Final Round Resolution
+
+When a player meets any victory condition during their turn, the current round becomes the **Final Round**. All players who have not yet taken their turn this round still take it. At the **end of the Final Round**:
+
+1. Check which players meet any victory condition.
+2. If **one player** meets a condition, they win.
+3. If **multiple players** meet conditions, the player with the **highest DP** wins.
+4. If **no player** meets a condition (e.g., it was contested during the Final Round), the player with the **highest DP** wins.
+5. If DP is tied, play additional rounds until the tie is broken.
 
 ---
 ---
@@ -1197,9 +1203,10 @@ The local population rallies behind your banner and crowns you their sovereign.
 
 | Path | Condition |
 |------|-----------|
-| 🚀 Spaceport Domination | Control 4 of 6 Spaceports (2-player: 5 of 6) + hold 1 full round |
+| 🚀 Spaceport Domination | Fully control 4 of 6 Spaceports (2-player: 5 of 6) |
 | 💪 Military Supremacy | Field 4 full Squads of 7 H.A.M.S (28 soldiers) |
 | 👑 Dominance | Accumulate 50 DP from equipped BACs + Battle Victory DP |
+| 🏁 Final Round | Any condition met → finish the round → highest DP breaks ties |
 
 ---
 
