@@ -2100,7 +2100,7 @@ const outPath = path.join(__dirname, 'WARHAMS_TTS.json');
 fs.writeFileSync(outPath, JSON.stringify(saveFile, null, 2));
 
 // Also copy to TTS Saves folder
-const ttsPath = path.join('/mnt/c/Users/User/OneDrive/Documents/My Games/Tabletop Simulator/Saves', 'WARHAMS_TTS.json');
+const ttsPath = 'C:\\Users\\User\\OneDrive\\Documents\\My Games\\Tabletop Simulator\\Saves\\WARHAMS_TTS.json';
 try {
     fs.copyFileSync(outPath, ttsPath);
     console.log(`Copied to TTS Saves: ${ttsPath}`);
