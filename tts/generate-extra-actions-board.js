@@ -2,8 +2,8 @@
 /**
  * W.A.R H.A.M.S -- Extra Actions Reference Board Generator
  *
- * A visible reference board listing every Squad Action with key rules.
- * Single-column layout, footer in its own panel. No empty space.
+ * Two-column layout with bigger 14px body text for readability.
+ * Footer DP rules in their own panel. No empty space.
  *
  * Usage:   node generate-extra-actions-board.js
  * Outputs: tts/v72/extra-actions-board.png
@@ -19,9 +19,9 @@ if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
 const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-print", "dist", "fonts");
 
-// Canvas — single narrow column, tight fit
-const W = 700;
-const H = 1270;
+// Canvas — two columns, tight fit
+const W = 1400;
+const H = 870;
 const BLACK = 0x0A0A12FF;
 const AMBER = 0xFFB000FF;
 const AMBER_R = 0xFF, AMBER_G = 0xB0, AMBER_B = 0x00;
@@ -144,6 +144,12 @@ const actions = [
     },
 ];
 
+// Footer data
+const footerLines = [
+    "Territory DP: +1 when you claim a hex (not Landing Zones). -1 if you lose it, new owner +1.",
+    "Battle DP: Net wounds inflicted (up to +3). DP are a tie-breaker. 50 DP triggers Final Round.",
+];
+
 (async () => {
     const img = new Jimp({ width: W, height: H, color: BLACK });
 
@@ -153,59 +159,70 @@ const actions = [
 
     // Title
     const titleFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-32-white/open-sans-32-white.fnt"));
-    await printCentered(img, titleFont, "SQUAD ACTIONS -- QUICK REFERENCE", 30, { r: AMBER_R, g: AMBER_G, b: AMBER_B });
+    await printCentered(img, titleFont, "SQUAD ACTIONS -- QUICK REFERENCE", 28, { r: AMBER_R, g: AMBER_G, b: AMBER_B });
 
     // Subtitle
     const subFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-16-white/open-sans-16-white.fnt"));
-    await printCentered(img, subFont, "Each Squad takes 2 actions per turn. Any action may be chosen twice.", 70, { r: 0xAA, g: 0xAA, b: 0xBB });
+    await printCentered(img, subFont, "Each Squad takes 2 actions per turn. Any action may be chosen twice.", 68, { r: 0xAA, g: 0xAA, b: 0xBB });
 
-    // Fonts for body
-    const bodyFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-12-black/open-sans-12-black.fnt"));
+    // Fonts — 14px body for readability
+    const bodyFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-14-black/open-sans-14-black.fnt"));
     const nameFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-16-white/open-sans-16-white.fnt"));
 
-    // Single column layout
-    const panelX = 20;
-    const panelW = W - 40;  // full width minus margins
-    const startY = 105;
-    const lineH = 22;
-    const sectionGap = 20;
+    const lineH = 26;
+    const sectionGap = 18;
+    const headerH = 42;
+    const panelPad = 12;
 
-    let y = startY;
+    // Two columns
+    const colW = 670;
+    const col1X = 20;
+    const col2X = 710;
+    const startY = 100;
 
-    // Draw each action section as a panel
-    for (const act of actions) {
-        const panelH = 45 + act.lines.length * lineH + 12;
-        fillRect(img, panelX, y, panelX + panelW, y + panelH, 0x141422FF);
-        strokeRect(img, panelX, y, panelX + panelW, y + panelH, 2, 0xFFB00044);
+    // Left: MOVE, COMBAT, CONSPIRE
+    // Right: LOGISTICS EQUIP, LOGISTICS RECRUIT, REST
+    const colLayout = [
+        { x: col1X, items: [actions[0], actions[1], actions[4]] },     // Move, Combat, Conspire
+        { x: col2X, items: [actions[2], actions[3], actions[5]] },     // Logistics Equip, Logistics Recruit, Rest
+    ];
 
-        await printText(img, nameFont, act.icon + "  " + act.name, panelX + 15, y + 10, { r: AMBER_R, g: AMBER_G, b: AMBER_B });
-        y += 42;
+    let colBottoms = [startY, startY];
 
-        for (const line of act.lines) {
-            await printText(img, bodyFont, line, panelX + 20, y, { r: 0xDD, g: 0xDD, b: 0xEE });
-            y += lineH;
+    for (let col = 0; col < 2; col++) {
+        const { x, items } = colLayout[col];
+        let y = startY;
+
+        for (const act of items) {
+            const panelH = headerH + act.lines.length * lineH + panelPad;
+            fillRect(img, x, y, x + colW, y + panelH, 0x141422FF);
+            strokeRect(img, x, y, x + colW, y + panelH, 2, 0xFFB00044);
+
+            await printText(img, nameFont, act.icon + "  " + act.name, x + 15, y + 10, { r: AMBER_R, g: AMBER_G, b: AMBER_B });
+            let ty = y + headerH;
+
+            for (const line of act.lines) {
+                await printText(img, bodyFont, line, x + 20, ty, { r: 0xDD, g: 0xDD, b: 0xEE });
+                ty += lineH;
+            }
+
+            y = ty + sectionGap;
         }
 
-        y += sectionGap;
+        colBottoms[col] = y - sectionGap;
     }
 
-    // Footer panel — DP rules in their own window
-    const footerLines = [
-        "Territory DP: +1 when you claim a hex (not Landing Zones).",
-        "  -1 if you lose it, new owner +1.",
-        "Battle DP: Net wounds inflicted (up to +3).",
-        "DP are a tie-breaker. 50 DP triggers Final Round.",
-    ];
-    const footerH = 45 + footerLines.length * lineH + 12;
-    fillRect(img, panelX, y, panelX + panelW, y + footerH, 0x141422FF);
-    strokeRect(img, panelX, y, panelX + panelW, y + footerH, 2, 0xFFB00044);
+    // Footer panel — full width, below both columns
+    const footY = Math.max(colBottoms[0], colBottoms[1]) + sectionGap;
+    const footH = headerH + footerLines.length * lineH + panelPad;
+    fillRect(img, col1X, footY, col2X + colW, footY + footH, 0x141422FF);
+    strokeRect(img, col1X, footY, col2X + colW, footY + footH, 2, 0xFFB00044);
 
-    await printText(img, nameFont, "DP RULES", panelX + 15, y + 10, { r: AMBER_R, g: AMBER_G, b: AMBER_B });
-    y += 42;
-
+    await printText(img, nameFont, "DP RULES", col1X + 15, footY + 10, { r: AMBER_R, g: AMBER_G, b: AMBER_B });
+    let fy = footY + headerH;
     for (const line of footerLines) {
-        await printText(img, bodyFont, line, panelX + 20, y, { r: 0xDD, g: 0xDD, b: 0xEE });
-        y += lineH;
+        await printText(img, bodyFont, line, col1X + 20, fy, { r: 0xDD, g: 0xDD, b: 0xEE });
+        fy += lineH;
     }
 
     const out = path.join(outDir, "extra-actions-board.png");

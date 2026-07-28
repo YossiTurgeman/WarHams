@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785236003,
+  "EpochTime": 1785236314,
   "Date": "2026-07-28",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -55333,9 +55333,9 @@
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 3.5,
+        "scaleX": 7,
         "scaleY": 0.2,
-        "scaleZ": 6.35
+        "scaleZ": 4.35
       },
       "Nickname": "Squad Actions Quick Reference",
       "Description": "Visible reference board: all Squad Actions (Move, Combat, Logistics, Conspire, Rest) with costs, timing, and key restrictions. Plus DP rules.",
@@ -55368,7 +55368,7 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/extra-actions-board.png?r2",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/extra-actions-board.png?r3",
         "ImageSecondaryURL": "",
         "ImageScalar": 1,
         "WidthScale": 0,
