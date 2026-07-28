@@ -25,6 +25,13 @@ const SEG = 16;            // cylinder segments
 const BASE_R = 0.45;
 const BASE_H = 0.08;
 
+// Small peg under the base — extends below y=0 so TTS rests the flag
+// on the peg tip, lifting the visible base above the hex tile surface
+// and preventing the base from clipping into the hex.
+const PEG_R = 0.12;
+const PEG_BOTTOM = -0.06;
+const PEG_TOP = 0;
+
 const POLE_R = 0.05;
 const POLE_BOTTOM = BASE_H;
 const POLE_TOP = 1.55;
@@ -124,6 +131,7 @@ function addFlagPanel() {
 }
 
 // Build geometry
+addCylinder(0, 0, PEG_R, PEG_BOTTOM, PEG_TOP);           // peg (below surface)
 addCylinder(0, 0, BASE_R, 0, BASE_H);                 // base disc
 addCylinder(0, 0, POLE_R, POLE_BOTTOM, POLE_TOP);     // pole
 addFlagPanel();                                        // flag

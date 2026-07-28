@@ -48,7 +48,8 @@ function conspireFaceURL(name) {
 function flagURL(colorName) {
     return `${CARD_BASE}/flag_${colorName}.png?${CARD_VERSION}`;
 }
-const FLAG_MESH_URL = `${CARD_BASE}/flag.obj?${CARD_VERSION}`;
+const FLAG_MESH_REV = 2; // bump when flag.obj changes (peg added to fix hex clipping)
+const FLAG_MESH_URL = `${CARD_BASE}/flag.obj?r${FLAG_MESH_REV}`;
 const FLAG_DIFFUSE_URL = `${CARD_BASE}/flag-texture.png?${CARD_VERSION}`;
 const BARREL_MESH_URL = `${CARD_BASE}/barrel.obj?${CARD_VERSION}`;
 const BARREL_DIFFUSE_URL = `${CARD_BASE}/barrel-texture.png?${CARD_VERSION}`;
