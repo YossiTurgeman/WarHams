@@ -1625,25 +1625,35 @@ dealBacsButton.LuaScript = [
 ].join("\n");
 objects.push(dealBacsButton);
 
-// ─── 18. REFERENCE BOOKS — Quick Ref + Full User Guide ──────────────
-// Custom_PDF objects render as physical book/folder shapes on the
-// table. Right-click → Open shows a scrollable PDF reader. The
-// previous Notecard implementation was a tiny flat note that didn't
-// look like a book and stayed on the play surface.
-//
-// Both books float locked just past the western play-surface edge
-// (x=-54), elevated above the table so they read as a "shelf"
-// beside the board. The Quick Reference sits on top, the full
-// User Guide just behind it.
-const QUICKREF_PDF_URL = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/design/WARHAMS-QuickRef.pdf";
+// ─── 18. EXTRA ACTIONS REFERENCE BOARD + FULL USER GUIDE ────────────
+// A visible Custom_Tile board listing every Squad Action with its key
+// rules replaces the old Quick Reference PDF book. The full rulebook
+// remains as a Custom_PDF that players right-click to Open.
 const RULEBOOK_PDF_URL = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/design/WARHAMS-Rulebook.pdf";
+const EXTRA_ACTIONS_BOARD_URL = `${SOLDIER_BASE}/extra-actions-board.png`;
+
+// Extra Actions reference board — locked Custom_Tile on the western
+// edge of the table, visible to all players without clicking.
+// Texture is 1600x1200 (4:3). Custom_Tile Type=0 renders ~2 world
+// units per scale unit, so scaleX=8, scaleZ=6 gives a ~16x12 board.
+const extraActionsBoard = baseObj("Custom_Tile", "Squad Actions Quick Reference",
+    "Visible reference board: all Squad Actions (Move, Combat, Logistics, Conspire, Rest) with costs, timing, and key restrictions. Plus DP rules.",
+    -60, 1.02, 8,
+    { rotY: 90, scaleX: 8, scaleY: 0.2, scaleZ: 6,
+      color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
+extraActionsBoard.CustomImage = {
+    ImageURL: EXTRA_ACTIONS_BOARD_URL,
+    ImageSecondaryURL: "",
+    ImageScalar: 1,
+    WidthScale: 0,
+    CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
+};
+objects.push(extraActionsBoard);
+
+// Full rulebook — Custom_PDF, right-click to Open.
 function makeReferenceBook(nickname, desc, pdfUrl, px, py, pz, color) {
     const book = baseObj("Custom_PDF", nickname, desc,
         px, py, pz,
-        // Default Custom_PDF orientation lies the book flat with the
-        // cover up; players right-click → Open to read the pages.
-        // rotY: 90 turns the book 90° clockwise (viewed from above)
-        // so the long edge of the cover faces toward the camera.
         { rotY: 90, scaleX: 2, scaleY: 2, scaleZ: 2, color, locked: true, grid: false });
     book.CustomPDF = {
         PDFUrl: pdfUrl,
@@ -1654,13 +1664,7 @@ function makeReferenceBook(nickname, desc, pdfUrl, px, py, pz, color) {
     return book;
 }
 objects.push(makeReferenceBook(
-    "Quick Reference", "Single-page summary: turn phases, combat sequence, equipment slots, victory conditions.",
-    QUICKREF_PDF_URL,
-    -60, 2.0, 8,
-    { r: 0.85, g: 0.90, b: 0.95 }
-));
-objects.push(makeReferenceBook(
-    "User Guide (Full Rulebook)", "Complete W.A.R H.A.M.S rulebook. Right-click → Open to read.",
+    "User Guide (Full Rulebook)", "Complete W.A.R H.A.M.S rulebook. Right-click to Open to read.",
     RULEBOOK_PDF_URL,
     -60, 2.0, -8,
     { r: 0.95, g: 0.90, b: 0.75 }

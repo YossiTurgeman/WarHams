@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785225346,
+  "EpochTime": 1785226939,
   "Date": "2026-07-28",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -55325,20 +55325,20 @@
     },
     {
       "GUID": "100337",
-      "Name": "Custom_PDF",
+      "Name": "Custom_Tile",
       "Transform": {
         "posX": -60,
-        "posY": 2,
+        "posY": 1.02,
         "posZ": 8,
         "rotX": 0,
         "rotY": 90,
         "rotZ": 0,
-        "scaleX": 2,
-        "scaleY": 2,
-        "scaleZ": 2
+        "scaleX": 8,
+        "scaleY": 0.2,
+        "scaleZ": 6
       },
-      "Nickname": "Quick Reference",
-      "Description": "Single-page summary: turn phases, combat sequence, equipment slots, victory conditions.",
+      "Nickname": "Squad Actions Quick Reference",
+      "Description": "Visible reference board: all Squad Actions (Move, Combat, Logistics, Conspire, Rest) with costs, timing, and key restrictions. Plus DP rules.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -55346,9 +55346,9 @@
         "z": 0
       },
       "ColorDiffuse": {
-        "r": 0.85,
-        "g": 0.9,
-        "b": 0.95
+        "r": 1,
+        "g": 1,
+        "b": 1
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -55367,11 +55367,17 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": "",
-      "CustomPDF": {
-        "PDFUrl": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/design/WARHAMS-QuickRef.pdf",
-        "PDFPassword": "",
-        "PDFPage": 0,
-        "PDFPageOffset": 0
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/extra-actions-board.png",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.1,
+          "Stackable": false,
+          "Stretch": true
+        }
       }
     },
     {
@@ -55389,7 +55395,7 @@
         "scaleZ": 2
       },
       "Nickname": "User Guide (Full Rulebook)",
-      "Description": "Complete W.A.R H.A.M.S rulebook. Right-click → Open to read.",
+      "Description": "Complete W.A.R H.A.M.S rulebook. Right-click to Open to read.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
