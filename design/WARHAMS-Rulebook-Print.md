@@ -1084,6 +1084,8 @@ This applies to **resource-producing hexes**, **Spaceport Drop Zones**, **Separa
 
 Once placed, a flag stays even after your Squad leaves — the hex remains under your control until an opponent's Squad enters it and re-claims it via the same Move or Combat action. **Contested hexes** (both your and an enemy's soldiers on the same hex) skip flag placement until a Combat action resolves the occupant.
 
+**Territory DP:** Each hex you claim (excluding your Landing Zones) is worth **+1 DP** — add it to your DP counter immediately when you place your flag. If an opponent later takes that hex from you, **subtract 1 DP** from your total and the opponent **adds 1 DP** to theirs. Your Landing Zones (where your starting Squads deployed) are free territory and give 0 DP.
+
 ### End-of-Round Bonus
 
 At the **end of each round** (after all players have completed their turns), any uncollected resource tokens on your controlled hexes are added to your supply. Additionally, any spaceport hexes you control with container markers grant you the BAC cards from the matching Unloading Zone slot. See the **End of Round** step in the Turn Structure for full details.
@@ -1125,14 +1127,15 @@ Your overwhelming military presence renders further conflict pointless. Rival HQ
 
 **Accumulate 50 Dominance Points (DP).**
 
-DP come from two sources:
+DP come from three sources:
 
 1. **Equipped BAC cards** — each BAC's DP value counts toward your total as long as the card remains equipped and the soldier carrying it is alive.
 2. **Battle Victory DP** — after each combat, the side that inflicted more wounds than they received earns DP equal to the difference, up to 3 DP per battle (see Combat Step 8). This DP is permanent.
+3. **Territory DP** — each hex you claim (excluding your Landing Zones) is worth +1 DP. If an opponent takes that hex from you, you lose 1 DP and they gain 1 DP (see Claiming a Hex).
 
 The local population rallies behind your banner and crowns you their sovereign.
 
-> **Tracking DP:** Every time you learn a new BAC (unlock it) or create a new instance (equip another soldier with an already-unlocked BAC), add the card's DP value to your counter for each soldier equipped. If a soldier dies and their module is destroyed or salvaged by another player, subtract that module's DP from your total. Battle Victory DP is never lost once earned.
+> **Tracking DP:** Every time you learn a new BAC (unlock it) or create a new instance (equip another soldier with an already-unlocked BAC), add the card's DP value to your counter for each soldier equipped. If a soldier dies and their module is destroyed or salvaged by another player, subtract that module's DP from your total. Add 1 DP for each hex you claim (excluding Landing Zones); subtract 1 DP when an opponent takes a hex from you. Battle Victory DP is never lost once earned.
 
 ---
 
@@ -1213,7 +1216,7 @@ When a player meets any victory condition during their turn, the current round b
 |------|-----------|
 | 🚀 Spaceport Domination | Fully control 4 of 6 Spaceports (2-player: 5 of 6) |
 | 💪 Military Supremacy | Field 4 full Squads of 7 H.A.M.S (28 soldiers) |
-| 👑 Dominance | Accumulate 50 DP from equipped BACs + Battle Victory DP |
+| 👑 Dominance | Accumulate 50 DP from equipped BACs + Battle Victory DP + Territory DP |
 | 🏁 Final Round | Any condition met → finish the round → highest DP breaks ties |
 
 ---
