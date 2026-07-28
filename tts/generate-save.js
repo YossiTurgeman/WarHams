@@ -1634,12 +1634,12 @@ const EXTRA_ACTIONS_BOARD_URL = `${SOLDIER_BASE}/extra-actions-board.png`;
 
 // Extra Actions reference board — locked Custom_Tile on the western
 // edge of the table, visible to all players without clicking.
-// Texture is 1600x1200 (4:3). Custom_Tile Type=0 renders ~2 world
-// units per scale unit, so scaleX=8, scaleZ=6 gives a ~16x12 board.
+// Texture is 700x1270 (tall narrow single-column). Custom_Tile Type=0
+// renders ~2 world units per scale unit.
 const extraActionsBoard = baseObj("Custom_Tile", "Squad Actions Quick Reference",
     "Visible reference board: all Squad Actions (Move, Combat, Logistics, Conspire, Rest) with costs, timing, and key restrictions. Plus DP rules.",
     -60, 1.02, 8,
-    { rotY: 180, scaleX: 6.5, scaleY: 0.2, scaleZ: 4,
+    { rotY: 180, scaleX: 3.5, scaleY: 0.2, scaleZ: 6.35,
       color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
 extraActionsBoard.CustomImage = {
     ImageURL: EXTRA_ACTIONS_BOARD_URL,

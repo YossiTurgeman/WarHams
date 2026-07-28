@@ -3,7 +3,7 @@
  * W.A.R H.A.M.S -- Extra Actions Reference Board Generator
  *
  * A visible reference board listing every Squad Action with key rules.
- * Replaces the old Quick Reference PDF book on the TTS table.
+ * Single-column layout, footer in its own panel. No empty space.
  *
  * Usage:   node generate-extra-actions-board.js
  * Outputs: tts/v72/extra-actions-board.png
@@ -19,9 +19,9 @@ if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
 const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-print", "dist", "fonts");
 
-// Canvas — tight fit, no empty space
-const W = 1300;
-const H = 780;
+// Canvas — single narrow column, tight fit
+const W = 700;
+const H = 1270;
 const BLACK = 0x0A0A12FF;
 const AMBER = 0xFFB000FF;
 const AMBER_R = 0xFF, AMBER_G = 0xB0, AMBER_B = 0x00;
@@ -153,64 +153,60 @@ const actions = [
 
     // Title
     const titleFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-32-white/open-sans-32-white.fnt"));
-    await printCentered(img, titleFont, "SQUAD ACTIONS -- QUICK REFERENCE", 35, { r: AMBER_R, g: AMBER_G, b: AMBER_B });
+    await printCentered(img, titleFont, "SQUAD ACTIONS -- QUICK REFERENCE", 30, { r: AMBER_R, g: AMBER_G, b: AMBER_B });
 
     // Subtitle
     const subFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-16-white/open-sans-16-white.fnt"));
-    await printCentered(img, subFont, "Each Squad takes 2 actions per turn. Any action may be chosen twice.", 78, { r: 0xAA, g: 0xAA, b: 0xBB });
+    await printCentered(img, subFont, "Each Squad takes 2 actions per turn. Any action may be chosen twice.", 70, { r: 0xAA, g: 0xAA, b: 0xBB });
 
-    // Action sections -- 2 balanced columns
+    // Fonts for body
     const bodyFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-12-black/open-sans-12-black.fnt"));
     const nameFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-16-white/open-sans-16-white.fnt"));
 
-    const colW = 620;
-    const col1X = 30;
-    const col2X = 670;
-    const startY = 115;
+    // Single column layout
+    const panelX = 20;
+    const panelW = W - 40;  // full width minus margins
+    const startY = 105;
     const lineH = 22;
-    const sectionGap = 25;
+    const sectionGap = 20;
 
-    // Balanced: Left = Move + Combat + Conspire, Right = Logistics Equip + Logistics Recruit + Rest
-    const layout = [
-        { col: 0, action: actions[0] }, // Move
-        { col: 0, action: actions[1] }, // Combat
-        { col: 0, action: actions[4] }, // Conspire (index 4 after split)
-        { col: 1, action: actions[2] }, // Logistics: Equip & Buy
-        { col: 1, action: actions[3] }, // Logistics: Recruit & Trade
-        { col: 1, action: actions[5] }, // Rest (index 5 after split)
-    ];
+    let y = startY;
 
-    let yCol0 = startY;
-    let yCol1 = startY;
+    // Draw each action section as a panel
+    for (const act of actions) {
+        const panelH = 45 + act.lines.length * lineH + 12;
+        fillRect(img, panelX, y, panelX + panelW, y + panelH, 0x141422FF);
+        strokeRect(img, panelX, y, panelX + panelW, y + panelH, 2, 0xFFB00044);
 
-    for (const item of layout) {
-        const x = item.col === 0 ? col1X : col2X;
-        let y = item.col === 0 ? yCol0 : yCol1;
-        const act = item.action;
+        await printText(img, nameFont, act.icon + "  " + act.name, panelX + 15, y + 10, { r: AMBER_R, g: AMBER_G, b: AMBER_B });
+        y += 42;
 
-        // Section background panel
-        const panelH = 50 + act.lines.length * lineH + 15;
-        fillRect(img, x, y, x + colW - 10, y + panelH, 0x141422FF);
-        strokeRect(img, x, y, x + colW - 10, y + panelH, 2, 0xFFB00044);
-
-        // Action name
-        await printText(img, nameFont, act.icon + "  " + act.name, x + 15, y + 12, { r: AMBER_R, g: AMBER_G, b: AMBER_B });
-        y += 45;
-
-        // Body lines
         for (const line of act.lines) {
-            await printText(img, bodyFont, line, x + 20, y, { r: 0xDD, g: 0xDD, b: 0xEE });
+            await printText(img, bodyFont, line, panelX + 20, y, { r: 0xDD, g: 0xDD, b: 0xEE });
             y += lineH;
         }
 
-        if (item.col === 0) yCol0 = y + sectionGap;
-        else yCol1 = y + sectionGap;
+        y += sectionGap;
     }
 
-    // Footer — positioned right below the taller column's last panel (no trailing gap)
-    const colBottom = Math.max(yCol0, yCol1) - sectionGap;
-    await printCentered(img, subFont, "Territory DP: +1 when you claim a hex (not Landing Zones). -1 if you lose it, new owner +1.", colBottom + 8, { r: 0x88, g: 0x88, b: 0x99 });
-    await printCentered(img, subFont, "Battle DP: Net wounds inflicted (up to +3). DP are a tie-breaker. 50 DP triggers Final Round.", colBottom + 28, { r: 0x88, g: 0x88, b: 0x99 });
+    // Footer panel — DP rules in their own window
+    const footerLines = [
+        "Territory DP: +1 when you claim a hex (not Landing Zones).",
+        "  -1 if you lose it, new owner +1.",
+        "Battle DP: Net wounds inflicted (up to +3).",
+        "DP are a tie-breaker. 50 DP triggers Final Round.",
+    ];
+    const footerH = 45 + footerLines.length * lineH + 12;
+    fillRect(img, panelX, y, panelX + panelW, y + footerH, 0x141422FF);
+    strokeRect(img, panelX, y, panelX + panelW, y + footerH, 2, 0xFFB00044);
+
+    await printText(img, nameFont, "DP RULES", panelX + 15, y + 10, { r: AMBER_R, g: AMBER_G, b: AMBER_B });
+    y += 42;
+
+    for (const line of footerLines) {
+        await printText(img, bodyFont, line, panelX + 20, y, { r: 0xDD, g: 0xDD, b: 0xEE });
+        y += lineH;
+    }
 
     const out = path.join(outDir, "extra-actions-board.png");
     await img.write(out);
