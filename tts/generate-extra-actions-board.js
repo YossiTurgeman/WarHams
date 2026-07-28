@@ -21,7 +21,7 @@ const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-pri
 
 // Canvas — tight fit, no empty space
 const W = 1300;
-const H = 800;
+const H = 780;
 const BLACK = 0x0A0A12FF;
 const AMBER = 0xFFB000FF;
 const AMBER_R = 0xFF, AMBER_G = 0xB0, AMBER_B = 0x00;
@@ -207,9 +207,10 @@ const actions = [
         else yCol1 = y + sectionGap;
     }
 
-    // Footer
-    await printCentered(img, subFont, "Territory DP: +1 when you claim a hex (not Landing Zones). -1 if you lose it, new owner +1.", H - 60, { r: 0x88, g: 0x88, b: 0x99 });
-    await printCentered(img, subFont, "Battle DP: Net wounds inflicted (up to +3). DP are a tie-breaker. 50 DP triggers Final Round.", H - 40, { r: 0x88, g: 0x88, b: 0x99 });
+    // Footer — positioned right below the taller column's last panel (no trailing gap)
+    const colBottom = Math.max(yCol0, yCol1) - sectionGap;
+    await printCentered(img, subFont, "Territory DP: +1 when you claim a hex (not Landing Zones). -1 if you lose it, new owner +1.", colBottom + 8, { r: 0x88, g: 0x88, b: 0x99 });
+    await printCentered(img, subFont, "Battle DP: Net wounds inflicted (up to +3). DP are a tie-breaker. 50 DP triggers Final Round.", colBottom + 28, { r: 0x88, g: 0x88, b: 0x99 });
 
     const out = path.join(outDir, "extra-actions-board.png");
     await img.write(out);

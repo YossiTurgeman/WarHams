@@ -1639,7 +1639,7 @@ const EXTRA_ACTIONS_BOARD_URL = `${SOLDIER_BASE}/extra-actions-board.png`;
 const extraActionsBoard = baseObj("Custom_Tile", "Squad Actions Quick Reference",
     "Visible reference board: all Squad Actions (Move, Combat, Logistics, Conspire, Rest) with costs, timing, and key restrictions. Plus DP rules.",
     -60, 1.02, 8,
-    { rotY: 0, scaleX: 6.5, scaleY: 0.2, scaleZ: 4,
+    { rotY: 180, scaleX: 6.5, scaleY: 0.2, scaleZ: 4,
       color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
 extraActionsBoard.CustomImage = {
     ImageURL: EXTRA_ACTIONS_BOARD_URL,
