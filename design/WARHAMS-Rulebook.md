@@ -856,6 +856,23 @@ Bunker tokens are placed by the **D.U.D.S** (Deployable Unital Defense System) e
 | Separatist lives | **1** (dies on any hit) |
 | Separatist dice penalty | **−1 to defense dice only** (all Separatists, including base defenders; min result 1) |
 
+### Combat FAQ — Multi-Hex Attacks
+
+**Can one Squad attack while its soldiers occupy multiple hexes?**
+Yes. A Squad may be spread across several hexes (within coherency). When it declares a Combat action, every soldier who has at least one enemy in their combat range is **engaged** and participates, regardless of which hex they occupy. Soldiers on hexes with no enemy in range sit out.
+
+**Can a Squad concentrated on one hex attack an enemy Squad split across multiple hexes?**
+Yes. Combat targets the **enemy Squad**, not a single hex. The attacker engages every defending soldier who is within combat range of at least one attacking soldier. A defender on a distant hex with no attacker in range does not participate.
+
+**Do all engaged soldiers resolve one combat together?**
+Yes. All engaged soldiers on both sides roll dice and are assigned matchups in a single combat resolution. There is no per-hex splitting of dice or matchups — it is one fight.
+
+**Can multiple friendly Squads combine into one attack?**
+No. Each Squad declares and resolves its own Combat action separately. A Squad may only attack **once per turn** (using one of its 2 actions). Two Squads on the same hex or adjacent hexes cannot merge their dice into a single combat.
+
+**Does squad coherency still apply during multi-hex combat?**
+Yes. Coherency is checked at all times. If a death during combat leaves surviving soldiers beyond 2 hexes from all squadmates, they become disconnected (see Death, Step 5).
+
 ---
 ---
 
