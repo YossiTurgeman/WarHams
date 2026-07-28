@@ -410,7 +410,7 @@ Each player who controls a conquered Separatist Base may pay **3 Local Favor** t
 
 **Step 2 — Consume**
 
-Every Separatist occupying a hex with one or more resource tokens removes **1 token** from that hex. Return removed tokens to the supply and resolve all consumption simultaneously.
+Remove **1 token** from every hex containing one or more Separatists and one or more resource tokens. Consumption is **once per occupied hex**, not once per Separatist — a hex with 3 Separatists still loses only 1 token. Return removed tokens to the supply and resolve all consumption simultaneously.
 
 **Step 3 — Move**
 
