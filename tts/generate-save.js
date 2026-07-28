@@ -633,41 +633,62 @@ objects.push(sepBag);
 // add-ons on the body. The freed corner area can be used for player
 // staging / equipment-module trays in a later pass.
 
-// ─── 11. CONTROL FLAG BAGS (25 per player, in corner) ───────────────
+// ─── 11. CONTROL FLAGS (23 in bag + 2 staged near starting Squads) ──
 // Per rulebook: a single set of Control Flags is used BOTH to mark
 // territorial control on hexes AND to mark unlocked BAC types on the
 // Equipment Display. One unified component, two uses.
+//
+// Two flags per player are pre-staged on the table beside each of the
+// player's two starting Squads (A and B) so they are ready to place on
+// the Landing Zone hexes immediately after deployment. The remaining 23
+// go into the bag in the player's corner.
+function makeFlag(pc, px, py, pz) {
+    const flag = baseObj("Custom_Model", `${pc.label} Control Flag`,
+        `${pc.label} Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.`,
+        px, py, pz,
+        { scaleX: 1, scaleY: 1, scaleZ: 1, color: pc.color });
+    flag.CustomMesh = {
+        MeshURL: FLAG_MESH_URL,
+        DiffuseURL: FLAG_DIFFUSE_URL,
+        NormalURL: "",
+        ColliderURL: "",
+        Convex: true,
+        MaterialIndex: 3,
+        TypeIndex: 6,
+        CustomShader: {
+            SpecularColor: { r: 1, g: 1, b: 1 },
+            SpecularIntensity: 0.1,
+            SpecularSharpness: 3,
+            FresnelStrength: 0,
+        },
+        CastShadows: true,
+    };
+    return flag;
+}
+
 playerColors.forEach((pc, idx) => {
+    // 23 flags go into the bag (was 25; 2 are now staged on the table)
     const flags = [];
-    for (let i = 0; i < 25; i++) {
-        const flag = baseObj("Custom_Model", `${pc.label} Control Flag`,
-            `${pc.label} Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.`,
-            0, 0.3 * i, 0,
-            { scaleX: 1, scaleY: 1, scaleZ: 1, color: pc.color });
-        flag.CustomMesh = {
-            MeshURL: FLAG_MESH_URL,
-            DiffuseURL: FLAG_DIFFUSE_URL,
-            NormalURL: "",
-            ColliderURL: "",
-            Convex: true,
-            MaterialIndex: 3,
-            TypeIndex: 6,
-            CustomShader: {
-                SpecularColor: { r: 1, g: 1, b: 1 },
-                SpecularIntensity: 0.1,
-                SpecularSharpness: 3,
-                FresnelStrength: 0,
-            },
-            CastShadows: true,
-        };
-        flags.push(flag);
+    for (let i = 0; i < 23; i++) {
+        flags.push(makeFlag(pc, 0, 0.3 * i, 0));
     }
     const fp = cornerSpot(idx, -5, 0);
-    const bag = baseObj("Bag", `${pc.label} Control Flags (25)`,
-        "Mark hex control AND Equipment Display unlocks. One bag, two uses.",
+    const bag = baseObj("Bag", `${pc.label} Control Flags (23)`,
+        "Mark hex control AND Equipment Display unlocks. One bag, two uses. Two flags are pre-staged near your starting Squads.",
         fp.x, 1.5, fp.z, { color: pc.color });
     bag.ContainedObjects = flags;
     objects.push(bag);
+
+    // Stage one flag beside each starting Squad (A and B).
+    // Squad A center is at cornerSpot(idx, 7, -4) and Squad B at
+    // cornerSpot(idx, 7, 4). The plus formation extends ±1.5 in each
+    // direction, so we place the flags 3 units further out on the side
+    // axis — close enough to clearly belong to the Squad, far enough
+    // to not overlap any soldier.
+    const flagPosA = cornerSpot(idx, 7, -7);
+    const flagPosB = cornerSpot(idx, 7,  7);
+    objects.push(makeFlag(pc, flagPosA.x, 1.0, flagPosA.z));
+    objects.push(makeFlag(pc, flagPosB.x, 1.0, flagPosB.z));
 });
 
 // ─── 13. DAMAGE PEGS (infinite bag) ─────────────────────────────────
@@ -2049,7 +2070,7 @@ const saveFile = {
         "", "SETUP:",
         "1. Place hex tiles manually to build the planet board",
         "2. Each player takes a soldier bag and Control Flag bag (10 minis = 2 squads of 5; squad/soldier numbers printed on bases)",
-        "3. Place 10 soldiers (2 squads of 5) on starting hexes",
+        "3. Place 10 soldiers (2 squads of 5) on starting hexes — two Control Flags are pre-staged beside your Squads for your Landing Zones",
         "4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)",
         "5. Shuffle the Conspire Deck",
         "", "VICTORY CONDITIONS:",

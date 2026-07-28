@@ -1,7 +1,7 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785063674,
-  "Date": "2026-07-26",
+  "EpochTime": 1785224463,
+  "Date": "2026-07-28",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
   "GameType": "",
@@ -15,7 +15,7 @@
   "PlayArea": 1,
   "Table": "Table_None",
   "Sky": "Sky_Museum",
-  "Note": "W.A.R H.A.M.S: The Battle for Planet X\n========================================\n\n2-4 Players | Sci-Fi Corporate Military Conquest\n\nSETUP:\n1. Place hex tiles manually to build the planet board\n2. Each player takes a soldier bag and Control Flag bag (10 minis = 2 squads of 5; squad/soldier numbers printed on bases)\n3. Place 10 soldiers (2 squads of 5) on starting hexes\n4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)\n5. Shuffle the Conspire Deck\n\nVICTORY CONDITIONS:\n- Spaceport Domination: 5/6 spaceports (2p) or 4/6 (3-4p)\n- Military Supremacy: Hold 28 soldiers for 1 full round\n- Dominance: 50 DP from equipped BAC cards",
+  "Note": "W.A.R H.A.M.S: The Battle for Planet X\n========================================\n\n2-4 Players | Sci-Fi Corporate Military Conquest\n\nSETUP:\n1. Place hex tiles manually to build the planet board\n2. Each player takes a soldier bag and Control Flag bag (10 minis = 2 squads of 5; squad/soldier numbers printed on bases)\n3. Place 10 soldiers (2 squads of 5) on starting hexes — two Control Flags are pre-staged beside your Squads for your Landing Zones\n4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)\n5. Shuffle the Conspire Deck\n\nVICTORY CONDITIONS:\n- Spaceport Domination: 5/6 spaceports (2p) or 4/6 (3-4p)\n- Military Supremacy: Hold 28 soldiers for 1 full round\n- Dominance: 50 DP from equipped BAC cards",
   "Rules": "",
   "PlayerTurn": "",
   "DrawImage": "",
@@ -2621,7 +2621,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nRange: 1 hex. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -2679,7 +2679,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nRange: 1 hex. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -2737,7 +2737,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nRange: 1 hex. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -2795,7 +2795,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nRange: 1 hex. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -2853,7 +2853,7 @@
             "scaleZ": 1
           },
           "Nickname": "H.C.A.R",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nRange: 2 hexes. Add +1 to this soldier's attack die.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Industry, 1 Oil\nDP: 2\n\nRange: 1 hex. Add +1 to this soldier's attack die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5231,7 +5231,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5289,7 +5289,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5347,7 +5347,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5405,7 +5405,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5463,7 +5463,7 @@
             "scaleZ": 1
           },
           "Nickname": "R.S.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 2 hexes. If target squad is up to 1 hex away, add +2 to attack die. Otherwise add -1.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5521,7 +5521,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5579,7 +5579,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5637,7 +5637,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5695,7 +5695,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5753,7 +5753,7 @@
             "scaleZ": 1
           },
           "Nickname": "P.C.S.M.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 2 hexes. If target squad is up to 1 hex away, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -41685,7 +41685,7 @@
       ]
     },
     {
-      "GUID": "100277",
+      "GUID": "100275",
       "Name": "Bag",
       "Transform": {
         "posX": -60,
@@ -41698,8 +41698,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Red Control Flags (25)",
-      "Description": "Mark hex control AND Equipment Display unlocks. One bag, two uses.",
+      "Nickname": "Red Control Flags (23)",
+      "Description": "Mark hex control AND Equipment Display unlocks. One bag, two uses. Two flags are pre-staged near your starting Squads.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -43223,141 +43223,141 @@
             },
             "CastShadows": true
           }
-        },
-        {
-          "GUID": "100275",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 6.8999999999999995,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Red Control Flag",
-          "Description": "Red Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 3,
-            "TypeIndex": 6,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.1,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          }
-        },
-        {
-          "GUID": "100276",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 7.199999999999999,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Red Control Flag",
-          "Description": "Red Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.86,
-            "g": 0.21,
-            "b": 0.21
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 3,
-            "TypeIndex": 6,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.1,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          }
         }
       ]
     },
     {
-      "GUID": "100291",
+      "GUID": "100276",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -53,
+        "posY": 1,
+        "posZ": -21,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Red Control Flag",
+      "Description": "Red Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.86,
+        "g": 0.21,
+        "b": 0.21
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 6,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.1,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "100277",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -67,
+        "posY": 1,
+        "posZ": -21,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Red Control Flag",
+      "Description": "Red Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.86,
+        "g": 0.21,
+        "b": 0.21
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 6,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.1,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "10028f",
       "Name": "Bag",
       "Transform": {
         "posX": 45.62,
@@ -43370,8 +43370,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Blue Control Flags (25)",
-      "Description": "Mark hex control AND Equipment Display unlocks. One bag, two uses.",
+      "Nickname": "Blue Control Flags (23)",
+      "Description": "Mark hex control AND Equipment Display unlocks. One bag, two uses. Two flags are pre-staged near your starting Squads.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -44895,141 +44895,141 @@
             },
             "CastShadows": true
           }
-        },
-        {
-          "GUID": "10028f",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 6.8999999999999995,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Blue Control Flag",
-          "Description": "Blue Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 3,
-            "TypeIndex": 6,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.1,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          }
-        },
-        {
-          "GUID": "100290",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 7.199999999999999,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Blue Control Flag",
-          "Description": "Blue Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.22,
-            "g": 0.38,
-            "b": 0.86
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 3,
-            "TypeIndex": 6,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.1,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          }
         }
       ]
     },
     {
-      "GUID": "1002ab",
+      "GUID": "100290",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 38.62,
+        "posY": 1,
+        "posZ": -21,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Blue Control Flag",
+      "Description": "Blue Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.22,
+        "g": 0.38,
+        "b": 0.86
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 6,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.1,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "100291",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 52.62,
+        "posY": 1,
+        "posZ": -21,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Blue Control Flag",
+      "Description": "Blue Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.22,
+        "g": 0.38,
+        "b": 0.86
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 6,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.1,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "1002a9",
       "Name": "Bag",
       "Transform": {
         "posX": -60,
@@ -45042,8 +45042,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Green Control Flags (25)",
-      "Description": "Mark hex control AND Equipment Display unlocks. One bag, two uses.",
+      "Nickname": "Green Control Flags (23)",
+      "Description": "Mark hex control AND Equipment Display unlocks. One bag, two uses. Two flags are pre-staged near your starting Squads.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -46567,141 +46567,141 @@
             },
             "CastShadows": true
           }
-        },
-        {
-          "GUID": "1002a9",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 6.8999999999999995,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Green Control Flag",
-          "Description": "Green Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 3,
-            "TypeIndex": 6,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.1,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          }
-        },
-        {
-          "GUID": "1002aa",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 7.199999999999999,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Green Control Flag",
-          "Description": "Green Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.18,
-            "g": 0.72,
-            "b": 0.28
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 3,
-            "TypeIndex": 6,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.1,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          }
         }
       ]
     },
     {
-      "GUID": "1002c5",
+      "GUID": "1002aa",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -53,
+        "posY": 1,
+        "posZ": 21,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Green Control Flag",
+      "Description": "Green Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.18,
+        "g": 0.72,
+        "b": 0.28
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 6,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.1,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "1002ab",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -67,
+        "posY": 1,
+        "posZ": 21,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Green Control Flag",
+      "Description": "Green Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.18,
+        "g": 0.72,
+        "b": 0.28
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 6,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.1,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "1002c3",
       "Name": "Bag",
       "Transform": {
         "posX": 45.62,
@@ -46714,8 +46714,8 @@
         "scaleY": 1,
         "scaleZ": 1
       },
-      "Nickname": "Yellow Control Flags (25)",
-      "Description": "Mark hex control AND Equipment Display unlocks. One bag, two uses.",
+      "Nickname": "Yellow Control Flags (23)",
+      "Description": "Mark hex control AND Equipment Display unlocks. One bag, two uses. Two flags are pre-staged near your starting Squads.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -48239,138 +48239,138 @@
             },
             "CastShadows": true
           }
-        },
-        {
-          "GUID": "1002c3",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 6.8999999999999995,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Yellow Control Flag",
-          "Description": "Yellow Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.9,
-            "g": 0.82,
-            "b": 0.15
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 3,
-            "TypeIndex": 6,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.1,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          }
-        },
-        {
-          "GUID": "1002c4",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 0,
-            "posY": 7.199999999999999,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "Yellow Control Flag",
-          "Description": "Yellow Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 0.9,
-            "g": 0.82,
-            "b": 0.15
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CustomMesh": {
-            "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
-            "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
-            "NormalURL": "",
-            "ColliderURL": "",
-            "Convex": true,
-            "MaterialIndex": 3,
-            "TypeIndex": 6,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1,
-                "g": 1,
-                "b": 1
-              },
-              "SpecularIntensity": 0.1,
-              "SpecularSharpness": 3,
-              "FresnelStrength": 0
-            },
-            "CastShadows": true
-          }
         }
       ]
+    },
+    {
+      "GUID": "1002c4",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 38.62,
+        "posY": 1,
+        "posZ": 21,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Yellow Control Flag",
+      "Description": "Yellow Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.9,
+        "g": 0.82,
+        "b": 0.15
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 6,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.1,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
+    },
+    {
+      "GUID": "1002c5",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 52.62,
+        "posY": 1,
+        "posZ": 21,
+        "rotX": 0,
+        "rotY": 0,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Yellow Control Flag",
+      "Description": "Yellow Control Flag. Place on hexes you control OR on BAC cards in the Equipment Display. Permanent on the Display.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 0.9,
+        "g": 0.82,
+        "b": 0.15
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag.obj?v72",
+        "DiffuseURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/flag-texture.png?v72",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 6,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "SpecularIntensity": 0.1,
+          "SpecularSharpness": 3,
+          "FresnelStrength": 0
+        },
+        "CastShadows": true
+      }
     },
     {
       "GUID": "1002c7",
