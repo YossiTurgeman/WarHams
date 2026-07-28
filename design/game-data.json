@@ -130,21 +130,21 @@
     "description": "Deal 3 BAC cards to each player from the Spaceport Deck. Each player picks 1, passes 2 left. Picks 1 from received cards, passes 1 left. Keeps the final card. Result: 3-card starting hand.",
     "decks": {
       "spaceport_deck": {
-        "cards": 85,
-        "types": 17,
+        "cards": 75,
+        "types": 15,
         "copies_each": 5,
         "description": "All standard BAC types. Used for starting hands and regular purchases."
       },
       "advanced_bac_deck": {
-        "cards": 12,
-        "types": 3,
+        "cards": 20,
+        "types": 5,
         "copies_each": 5,
-        "description": "C.A.P Level 2 upgrades. Shuffled after seeding the Advanced BAC Area."
+        "description": "Level 2 BACs (C.A.P upgrades, L.P.M, P.A.E.H). Shuffled after seeding the Advanced BAC Area."
       }
     },
     "advanced_bac_area": {
-      "face_up_cards": 3,
-      "seeding": "one copy of each C.A.P type (Chest, Head, Legs) placed face-up at setup",
+      "face_up_cards": 5,
+      "seeding": "one copy of each Advanced BAC type (C.A.P Chest, C.A.P Head, C.A.P Legs, L.P.M, P.A.E.H) placed face-up at setup",
       "refill": "draw from top of Advanced BAC Deck when a card is taken",
       "prerequisite": "must have unlocked the corresponding S.A.P type"
     }
@@ -328,7 +328,10 @@
       },
       "dp": 4,
       "copies": 5,
-      "text": "This soldier gets +1 to its attack die while also equipped with H.C.A.R."
+      "text": "This soldier gets +1 to its attack die while also equipped with H.C.A.R.",
+      "level": 2,
+      "deck": "advanced",
+      "prerequisite": "H.C.A.R"
     },
     {
       "abbr": "B.A.S.R",
@@ -426,7 +429,10 @@
       },
       "dp": 4,
       "copies": 5,
-      "text": "Other soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes."
+      "text": "Other soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
+      "level": 2,
+      "deck": "advanced",
+      "prerequisite": "B.A.S.R or S.L.I.M.E"
     },
     {
       "abbr": "R.S.G",
@@ -721,16 +727,16 @@
     "total_BAC_cards": 100,
     "BAC_unique_types": 20,
     "BAC_copies_each": 5,
-    "spaceport_deck_cards": 85,
-    "spaceport_deck_types": 17,
-    "advanced_bac_deck_cards": 15,
-    "advanced_bac_deck_types": 3,
-    "advanced_bac_area_face_up": 3,
+    "spaceport_deck_cards": 75,
+    "spaceport_deck_types": 15,
+    "advanced_bac_deck_cards": 25,
+    "advanced_bac_deck_types": 5,
+    "advanced_bac_area_face_up": 5,
     "total_conspire_cards": 72,
     "conspire_unique_types": 24,
     "conspire_copies_each": 3,
-    "advanced_bac_total_cards": 15,
-    "advanced_bac_deck_after_seeding": 12
+    "advanced_bac_total_cards": 25,
+    "advanced_bac_deck_after_seeding": 20
   },
   "components_summary": {
     "hex_tiles": 61,

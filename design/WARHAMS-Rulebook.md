@@ -149,8 +149,8 @@ Place them randomly. Each resource-producing Hex receives exactly **one** Number
 **Step 5 — Prepare the BAC Cards**
 Sort the **100 BAC Cards** into two decks:
 
-- **Spaceport Deck (85 cards):** All 17 standard BAC types (5 copies each). This is the main deck used for starting hands and regular purchases.
-- **Advanced BAC Deck (15 cards):** The 3 C.A.P types (5 copies each). These are Level 2 upgrades that require a prerequisite S.A.P type to be unlocked first.
+- **Spaceport Deck (75 cards):** All 15 standard BAC types (5 copies each). This is the main deck used for starting hands and regular purchases.
+- **Advanced BAC Deck (25 cards):** The 5 Level 2 BAC types (5 copies each) — 3 C.A.P armor upgrades plus L.P.M and P.A.E.H (cards that enhance other BACs). These require a prerequisite BAC type to be unlocked first.
 
 Shuffle the **Spaceport Deck** face-down. Then:
 
@@ -161,9 +161,9 @@ Shuffle the **Spaceport Deck** face-down. Then:
 5. Place the remaining Spaceport Deck near the board.
 6. Turn **6 cards** face-up in a row beside the Spaceport Deck — this is the **Planet Bound Area**.
 
-> ⚙️ *Always maintain 6 face-up cards in the Planet Bound Area and 3 face-up cards in the Advanced BAC Area. Whenever a card is taken, immediately replace it from the corresponding deck.*
+> ⚙️ *Always maintain 6 face-up cards in the Planet Bound Area and 5 face-up cards in the Advanced BAC Area. Whenever a card is taken, immediately replace it from the corresponding deck.*
 
-Shuffle the **Advanced BAC Deck** (the remaining 12 C.A.P cards) and place it beside the Planet Bound Area. Place **one copy of each C.A.P type** (Chest, Head, Legs) face-up next to it — this is the **Advanced BAC Area** (3 cards). These cards are only available to players who have unlocked the corresponding S.A.P type (see Equipping Rules).
+Shuffle the **Advanced BAC Deck** (the remaining 20 cards) and place it beside the Planet Bound Area. Place **one copy of each Advanced BAC type** (C.A.P Chest, C.A.P Head, C.A.P Legs, L.P.M, P.A.E.H) face-up next to it — this is the **Advanced BAC Area** (5 cards). These cards are only available to players who have unlocked the corresponding prerequisite BAC type (see Equipping Rules).
 
 **Step 6 — Prepare the Conspire Deck**
 Shuffle all **72 Conspire Cards** and place them face-down near the board as the **Conspire Deck**. Do not deal any Conspire Cards during setup — they are only acquired during play.
@@ -319,7 +319,7 @@ If your Control Flag is already on a BAC card in the Equipment Display, you may 
 **Acquiring New BACs:**
 
 - **Spaceport Deck Purchase:** Spend **3 resource tokens of any single type** while your Squad is at or adjacent to a **Spaceport** or **City** → draw 1 face-down card from the Spaceport Deck into your hand.
-- **Advanced BAC Deck Purchase:** If you have unlocked the corresponding S.A.P type, you may spend **3 resource tokens of any single type** while your Squad is at or adjacent to a **Spaceport** or **City** → take 1 face-up card from the **Advanced BAC Area** into your hand. You may only take a C.A.P card whose corresponding S.A.P type you have unlocked. When a card is taken, immediately refill that slot from the top of the Advanced BAC Deck.
+- **Advanced BAC Deck Purchase:** If you have unlocked the corresponding prerequisite BAC type, you may spend **3 resource tokens of any single type** while your Squad is at or adjacent to a **Spaceport** or **City** → take 1 face-up card from the **Advanced BAC Area** into your hand. You may only take an Advanced BAC card whose prerequisite you have unlocked. When a card is taken, immediately refill that slot from the top of the Advanced BAC Deck. Prerequisites: C.A.P Chest → S.A.P Chest, C.A.P Head → S.A.P Helmet, C.A.P Legs → S.A.P Legs, L.P.M → B.A.S.R or S.L.I.M.E, P.A.E.H → H.C.A.R.
 - **Spaceport Drop Zone Collection:** If a Squad occupies a spaceport hex with a container marker, collect **all** BAC cards from the matching Unloading Zone slot into your hand. Remove the container from the board hex and reset the slot.
 
 **Recruiting New Soldiers:**
@@ -960,7 +960,7 @@ The **modules on the minis are the source of truth** — not cards, not boards. 
 - **Modules = Truth:** The physical modules on minis are the definitive record of who has what. The Equipment Display is for reference only.
 - **Flags are permanent:** Once your Control Flag is placed on a BAC card in the Equipment Display, it stays for the rest of the game — even if all your soldiers carrying that module die. Your flag marks that you've unlocked that BAC type and can pay to equip it again.
 - **Exception — T.I.L.T.S (Tactical Ion Team Link Shield):** Pay the listed cost **per soldier** as normal. During combat, two **adjacent** T.I.L.T.S soldiers may swap one attacker's assigned die between them. This ability is always active — no tapping required. No other backpack module may be equipped alongside T.I.L.T.S.
-- **S.A.P → C.A.P Upgrade (Advanced BAC Deck):** Custom Armor Plating (C.A.P) cards are only available from the **Advanced BAC Area** — they are never in the Spaceport Deck or starting hands. You may only acquire a C.A.P card if you have already unlocked the corresponding S.A.P type (your Control Flag is on the S.A.P card in the Equipment Display). Spend **3 resource tokens of any single type** at a Spaceport or City to take a face-up C.A.P card from the Advanced BAC Area. When a card is taken, refill that slot from the top of the Advanced BAC Deck. To equip, trade in the corresponding S.A.P piece (detach it from the mini and return it to the supply) as part of the upgrade cost, then attach the C.A.P module.
+- **Advanced BACs (Level 2):** Five BAC types are Level 2 — only available from the **Advanced BAC Area**, never in the Spaceport Deck or starting hands. You may only acquire one if you have already unlocked its prerequisite (your Control Flag is on the prerequisite BAC card in the Equipment Display). Spend **3 resource tokens of any single type** at a Spaceport or City to take a face-up Advanced BAC card from the Advanced BAC Area. When a card is taken, refill that slot from the top of the Advanced BAC Deck. Prerequisites: C.A.P Chest → S.A.P Chest, C.A.P Head → S.A.P Helmet, C.A.P Legs → S.A.P Legs, L.P.M → B.A.S.R or S.L.I.M.E, P.A.E.H → H.C.A.R. To equip a C.A.P, trade in the corresponding S.A.P piece (detach it from the mini and return it to the supply) as part of the upgrade cost, then attach the C.A.P module.
 - **Armor Stacking:** S.A.P and C.A.P pieces each grant their defense bonus independently (+1 per S.A.P piece, +2 per C.A.P piece). There are no set bonuses — equip as many or as few armor pieces as your strategy demands.
 - **Tapping:** Some modules are **Tapped** (rotated 90° on the mini or marked with a tap token) when activated. A Tapped module cannot be used again until **Untapped** (recharged) — typically at a City or Spaceport for a resource cost.
 - **One-Shot:** Modules marked as one-use (e.g., D.U.D.S) are **removed from the soldier** after activation, freeing the slot. The module is returned to the supply and no longer counts toward DP.
@@ -983,7 +983,7 @@ Modules with active abilities fall into two timing categories:
 
 ### 📋 Full BAC Card List (20 Types × 5 Copies = 100 Cards)
 
-> **Note:** The 3 C.A.P types (marked ⬆️ Level 2) are only available from the **Advanced BAC Deck**, not the Spaceport Deck. You must unlock the corresponding S.A.P type before acquiring them.
+> **Note:** The 5 Level 2 types (marked ⬆️) are only available from the **Advanced BAC Deck**, not the Spaceport Deck. You must unlock the corresponding prerequisite BAC type before acquiring them: C.A.P Chest → S.A.P Chest, C.A.P Head → S.A.P Helmet, C.A.P Legs → S.A.P Legs, L.P.M → B.A.S.R or S.L.I.M.E, P.A.E.H → H.C.A.R.
 
 | Category | Abbr | Full Name | Slot | Cost | DP | Effect |
 |----------|------|-----------|------|------|----|--------|
@@ -1000,11 +1000,11 @@ Modules with active abilities fall into two timing categories:
 | | S.L.I.M.E | Squad Light Interoperable Mortar Encampment | Backpack | 1 Ind, 2 Oil, 2 LF | 5 | 2-soldier crew. 4d6 normal matchups, target squad up to 3 hexes. Crew skips combat. −1 defense. Civilian Damage Rule |
 | **🔧 Support** | P.L.A.S.T.E.R | Personal Lasting Aid Surgical Treatment Enhancement Robot | Chest | 1 Elec, 1 LF | 2 | Heal up to 2 damage on any soldier same hex. **Tap**. Recharge: 1 Elec |
 | | B.E.A.R | Battlefield Extraction Airlift Rover | Chest | 1 Oil, 1 Ind, 1 Elec | 3 | Its occupied resource hex provides +1 token during Phase 3; does not stack |
-| | L.P.M | Laser Pointer Marker | Backpack | 1 Elec, 1 LF, 1 Int | 4 | B.A.S.R/S.L.I.M.E target enemies near L.P.M carrier. Max 4 hex |
+| **🔧 Support ⬆️** | L.P.M | Laser Pointer Marker | Backpack | 1 Elec, 1 LF, 1 Int | 4 | B.A.S.R/S.L.I.M.E target enemies near L.P.M carrier. Max 4 hex |
 | | D.U.D.S | Deployable Unital Defense System | Backpack | 1 LF, 1 Oil, 1 Ind | 2 | Place bunker: +1 all defense dice. One-use, frees slot. 2 DP deploy + 2 DP to hex controller |
 | **⚡ Tech** | J.J | Jump Jets | Legs | 1 Ind, 1 Int | 2 | Move 2 hexes. May override coherency (fights alone) |
 | | S.H.A.D | Sensory Helmet, Advisory Drone | Head | 2 Int, 1 Elec | 5 | Attacker must reveal Conspire cards before combat |
-| | P.A.E.H | Personal Accuracy Enhancement Helmet | Head | 1 LF, 1 Elec, 1 Int | 4 | +1 attack die while also equipped with H.C.A.R |
+| **⚡ Tech ⬆️** | P.A.E.H | Personal Accuracy Enhancement Helmet | Head | 1 LF, 1 Elec, 1 Int | 4 | +1 attack die while also equipped with H.C.A.R |
 | | N.I.N.J.A | Nir Ion Nullifier Jammer Aid | Legs | 1 Int, 1 Elec | 2 | +3 to one defense die. **Tap**. Recharge: 2 Elec |
 | | T.I.L.T.S | Tactical Ion Team Link Shield | Backpack | 1 Elec, 1 Ind, 2 Int | 5 | Adjacent T.I.L.T.S pair swap one attacker die. Always active. No other backpack |
 

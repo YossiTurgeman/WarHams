@@ -150,8 +150,8 @@ SVG wireframes exist in `design/assets/` for layout reference. These are **code-
 **Card Back:** Uniform design — dark navy with tech grid pattern, "B.A.C" text centered, game logo. Both the Spaceport Deck and the Advanced BAC Deck share this same back.
 
 > **Deck Split:** The 100 BAC cards are divided into two decks:
-> - **Spaceport Deck (85 cards):** 17 standard BAC types × 5 copies. Used for starting hands and regular purchases.
-> - **Advanced BAC Deck (15 cards):** 3 C.A.P types × 5 copies. Level 2 upgrades that require the corresponding S.A.P type to be unlocked first. At setup, one copy of each C.A.P type is placed face-up in the **Advanced BAC Area** (3 cards); the remaining 12 are shuffled as the Advanced BAC Deck.
+> - **Spaceport Deck (75 cards):** 15 standard BAC types × 5 copies. Used for starting hands and regular purchases.
+> - **Advanced BAC Deck (25 cards):** 5 Level 2 BAC types × 5 copies (3 C.A.P armor upgrades + L.P.M + P.A.E.H). Require a prerequisite BAC type to be unlocked first. At setup, one copy of each Advanced type is placed face-up in the **Advanced BAC Area** (5 cards); the remaining 20 are shuffled as the Advanced BAC Deck.
 
 ---
 

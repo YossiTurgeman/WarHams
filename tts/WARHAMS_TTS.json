@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785239571,
+  "EpochTime": 1785240352,
   "Date": "2026-07-28",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -15,7 +15,7 @@
   "PlayArea": 1,
   "Table": "Table_None",
   "Sky": "Sky_Museum",
-  "Note": "W.A.R H.A.M.S: The Battle for Planet X\n========================================\n\n2-4 Players | Sci-Fi Corporate Military Conquest\n\nSETUP:\n1. Place hex tiles manually to build the planet board\n2. Each player takes a soldier bag and Control Flag bag (10 minis = 2 squads of 5; squad/soldier numbers printed on bases)\n3. Place 10 soldiers (2 squads of 5) on starting hexes — two Control Flags are pre-staged beside your Squads for your Landing Zones\n4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)\n5. Shuffle the Conspire Deck\n6. Advanced BAC Deck (C.A.P upgrades) is separate — unlock S.A.P first to access\n\nVICTORY CONDITIONS:\n- Spaceport Domination: 5/6 spaceports (2p) or 4/6 (3-4p)\n- Military Supremacy: More than 2x the soldiers of the next largest army\n- Dominance: 50 DP from equipped BACs + Battle Victory DP + Territory DP + Bunker DP",
+  "Note": "W.A.R H.A.M.S: The Battle for Planet X\n========================================\n\n2-4 Players | Sci-Fi Corporate Military Conquest\n\nSETUP:\n1. Place hex tiles manually to build the planet board\n2. Each player takes a soldier bag and Control Flag bag (10 minis = 2 squads of 5; squad/soldier numbers printed on bases)\n3. Place 10 soldiers (2 squads of 5) on starting hexes — two Control Flags are pre-staged beside your Squads for your Landing Zones\n4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)\n5. Shuffle the Conspire Deck\n6. Advanced BAC Deck (C.A.P, L.P.M, P.A.E.H) is separate — unlock prerequisite BAC first to access\n\nVICTORY CONDITIONS:\n- Spaceport Domination: 5/6 spaceports (2p) or 4/6 (3-4p)\n- Military Supremacy: More than 2x the soldiers of the next largest army\n- Dominance: 50 DP from equipped BACs + Battle Victory DP + Territory DP + Bunker DP",
   "Rules": "",
   "PlayerTurn": "",
   "DrawImage": "",
@@ -104,7 +104,7 @@
       }
     },
     {
-      "GUID": "100056",
+      "GUID": "10004c",
       "Name": "Deck",
       "Transform": {
         "posX": 53,
@@ -118,7 +118,7 @@
         "scaleZ": 1
       },
       "Nickname": "Spaceport Deck",
-      "Description": "Basic Armament Cards — 85 cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).",
+      "Description": "Basic Armament Cards — 75 cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -222,17 +222,7 @@
         17100,
         17200,
         17300,
-        17400,
-        17500,
-        17600,
-        17700,
-        17800,
-        17900,
-        18000,
-        18100,
-        18200,
-        18300,
-        18400
+        17400
       ],
       "CustomDeck": {
         "100": {
@@ -506,7 +496,7 @@
           "Type": 0
         },
         "130": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -515,7 +505,7 @@
           "Type": 0
         },
         "131": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -524,7 +514,7 @@
           "Type": 0
         },
         "132": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -533,7 +523,7 @@
           "Type": 0
         },
         "133": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -542,7 +532,7 @@
           "Type": 0
         },
         "134": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -551,7 +541,7 @@
           "Type": 0
         },
         "135": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -560,7 +550,7 @@
           "Type": 0
         },
         "136": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -569,7 +559,7 @@
           "Type": 0
         },
         "137": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -578,7 +568,7 @@
           "Type": 0
         },
         "138": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -587,7 +577,7 @@
           "Type": 0
         },
         "139": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -596,7 +586,7 @@
           "Type": 0
         },
         "140": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -605,7 +595,7 @@
           "Type": 0
         },
         "141": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -614,7 +604,7 @@
           "Type": 0
         },
         "142": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -623,7 +613,7 @@
           "Type": 0
         },
         "143": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -632,7 +622,7 @@
           "Type": 0
         },
         "144": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -641,7 +631,7 @@
           "Type": 0
         },
         "145": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -650,7 +640,7 @@
           "Type": 0
         },
         "146": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -659,7 +649,7 @@
           "Type": 0
         },
         "147": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -668,7 +658,7 @@
           "Type": 0
         },
         "148": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -677,7 +667,7 @@
           "Type": 0
         },
         "149": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -686,7 +676,7 @@
           "Type": 0
         },
         "150": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -695,7 +685,7 @@
           "Type": 0
         },
         "151": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -704,7 +694,7 @@
           "Type": 0
         },
         "152": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -713,7 +703,7 @@
           "Type": 0
         },
         "153": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -722,7 +712,7 @@
           "Type": 0
         },
         "154": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -731,7 +721,7 @@
           "Type": 0
         },
         "155": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -740,7 +730,7 @@
           "Type": 0
         },
         "156": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -749,7 +739,7 @@
           "Type": 0
         },
         "157": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -758,7 +748,7 @@
           "Type": 0
         },
         "158": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -767,7 +757,7 @@
           "Type": 0
         },
         "159": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -776,7 +766,7 @@
           "Type": 0
         },
         "160": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -785,7 +775,7 @@
           "Type": 0
         },
         "161": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -794,7 +784,7 @@
           "Type": 0
         },
         "162": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -803,7 +793,7 @@
           "Type": 0
         },
         "163": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -812,7 +802,7 @@
           "Type": 0
         },
         "164": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -821,7 +811,7 @@
           "Type": 0
         },
         "165": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -830,7 +820,7 @@
           "Type": 0
         },
         "166": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -839,7 +829,7 @@
           "Type": 0
         },
         "167": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -848,7 +838,7 @@
           "Type": 0
         },
         "168": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -857,7 +847,7 @@
           "Type": 0
         },
         "169": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -866,7 +856,7 @@
           "Type": 0
         },
         "170": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -875,7 +865,7 @@
           "Type": 0
         },
         "171": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -884,7 +874,7 @@
           "Type": 0
         },
         "172": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -893,7 +883,7 @@
           "Type": 0
         },
         "173": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
           "NumHeight": 1,
@@ -902,96 +892,6 @@
           "Type": 0
         },
         "174": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "175": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "176": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "177": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "178": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "179": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "180": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "181": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "182": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "183": {
-          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
-          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-          "NumWidth": 1,
-          "NumHeight": 1,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "184": {
           "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
           "NumWidth": 1,
@@ -2760,8 +2660,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "P.A.E.H",
-          "Description": "[Tech] Slot: Head\nCost: 1 Local Favor, 1 Electricity, 1 Intelligence\nDP: 4\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
+          "Nickname": "B.A.S.R",
+          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -2793,7 +2693,7 @@
           "CardID": 13000,
           "CustomDeck": {
             "130": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -2818,8 +2718,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "P.A.E.H",
-          "Description": "[Tech] Slot: Head\nCost: 1 Local Favor, 1 Electricity, 1 Intelligence\nDP: 4\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
+          "Nickname": "B.A.S.R",
+          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -2851,7 +2751,7 @@
           "CardID": 13100,
           "CustomDeck": {
             "131": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -2876,8 +2776,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "P.A.E.H",
-          "Description": "[Tech] Slot: Head\nCost: 1 Local Favor, 1 Electricity, 1 Intelligence\nDP: 4\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
+          "Nickname": "B.A.S.R",
+          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -2909,7 +2809,7 @@
           "CardID": 13200,
           "CustomDeck": {
             "132": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -2934,8 +2834,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "P.A.E.H",
-          "Description": "[Tech] Slot: Head\nCost: 1 Local Favor, 1 Electricity, 1 Intelligence\nDP: 4\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
+          "Nickname": "B.A.S.R",
+          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -2967,7 +2867,7 @@
           "CardID": 13300,
           "CustomDeck": {
             "133": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -2992,8 +2892,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "P.A.E.H",
-          "Description": "[Tech] Slot: Head\nCost: 1 Local Favor, 1 Electricity, 1 Intelligence\nDP: 4\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
+          "Nickname": "B.A.S.R",
+          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3025,7 +2925,7 @@
           "CardID": 13400,
           "CustomDeck": {
             "134": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3050,8 +2950,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "B.A.S.R",
-          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Nickname": "S.L.I.M.E",
+          "Description": "[Heavy Weapons] Slot: Backpack\nCost: 1 Industry, 2 Oil, 2 Local Favor\nDP: 5\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).\nSpecial: Requires 2 soldiers.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3083,7 +2983,7 @@
           "CardID": 13500,
           "CustomDeck": {
             "135": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3108,8 +3008,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "B.A.S.R",
-          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Nickname": "S.L.I.M.E",
+          "Description": "[Heavy Weapons] Slot: Backpack\nCost: 1 Industry, 2 Oil, 2 Local Favor\nDP: 5\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).\nSpecial: Requires 2 soldiers.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3141,7 +3041,7 @@
           "CardID": 13600,
           "CustomDeck": {
             "136": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3166,8 +3066,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "B.A.S.R",
-          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Nickname": "S.L.I.M.E",
+          "Description": "[Heavy Weapons] Slot: Backpack\nCost: 1 Industry, 2 Oil, 2 Local Favor\nDP: 5\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).\nSpecial: Requires 2 soldiers.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3199,7 +3099,7 @@
           "CardID": 13700,
           "CustomDeck": {
             "137": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3224,8 +3124,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "B.A.S.R",
-          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Nickname": "S.L.I.M.E",
+          "Description": "[Heavy Weapons] Slot: Backpack\nCost: 1 Industry, 2 Oil, 2 Local Favor\nDP: 5\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).\nSpecial: Requires 2 soldiers.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3257,7 +3157,7 @@
           "CardID": 13800,
           "CustomDeck": {
             "138": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3282,8 +3182,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "B.A.S.R",
-          "Description": "[Heavy Weapons] Slot: Hands\nCost: 1 Oil, 1 Intelligence, 1 Industry\nDP: 4\n\nRange: 2 hexes. Pre-combat: roll 2d6 (pick higher), target 1 soldier in range. Target defends normally (1d6). Sniper skips normal combat. While defending: both sniper and target get -1 to defense die.",
+          "Nickname": "S.L.I.M.E",
+          "Description": "[Heavy Weapons] Slot: Backpack\nCost: 1 Industry, 2 Oil, 2 Local Favor\nDP: 5\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).\nSpecial: Requires 2 soldiers.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3315,7 +3215,7 @@
           "CardID": 13900,
           "CustomDeck": {
             "139": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_a_s_r_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3340,8 +3240,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "S.L.I.M.E",
-          "Description": "[Heavy Weapons] Slot: Backpack\nCost: 1 Industry, 2 Oil, 2 Local Favor\nDP: 5\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).\nSpecial: Requires 2 soldiers.",
+          "Nickname": "B.E.A.R",
+          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3373,7 +3273,7 @@
           "CardID": 14000,
           "CustomDeck": {
             "140": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3398,8 +3298,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "S.L.I.M.E",
-          "Description": "[Heavy Weapons] Slot: Backpack\nCost: 1 Industry, 2 Oil, 2 Local Favor\nDP: 5\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).\nSpecial: Requires 2 soldiers.",
+          "Nickname": "B.E.A.R",
+          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3431,7 +3331,7 @@
           "CardID": 14100,
           "CustomDeck": {
             "141": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3456,8 +3356,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "S.L.I.M.E",
-          "Description": "[Heavy Weapons] Slot: Backpack\nCost: 1 Industry, 2 Oil, 2 Local Favor\nDP: 5\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).\nSpecial: Requires 2 soldiers.",
+          "Nickname": "B.E.A.R",
+          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3489,7 +3389,7 @@
           "CardID": 14200,
           "CustomDeck": {
             "142": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3514,8 +3414,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "S.L.I.M.E",
-          "Description": "[Heavy Weapons] Slot: Backpack\nCost: 1 Industry, 2 Oil, 2 Local Favor\nDP: 5\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).\nSpecial: Requires 2 soldiers.",
+          "Nickname": "B.E.A.R",
+          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3547,7 +3447,7 @@
           "CardID": 14300,
           "CustomDeck": {
             "143": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3572,8 +3472,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "S.L.I.M.E",
-          "Description": "[Heavy Weapons] Slot: Backpack\nCost: 1 Industry, 2 Oil, 2 Local Favor\nDP: 5\n\nChoose 2 soldiers to carry S.L.I.M.E. Roll 4d6, assign as matchups following normal combat rules, target squad up to 3 hexes away. Target defends normally. Mortar crew skips normal combat. While defending: -1 to defense die. Civilian Damage Rule applies on City/Village hexes (all opposing players gain 2 Local Favor; attacker loses all Local Favor).\nSpecial: Requires 2 soldiers.",
+          "Nickname": "B.E.A.R",
+          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3605,7 +3505,7 @@
           "CardID": 14400,
           "CustomDeck": {
             "144": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_s_l_i_m_e_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3630,8 +3530,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "B.E.A.R",
-          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
+          "Nickname": "P.L.A.S.T.E.R",
+          "Description": "[Support] Slot: Chest\nCost: 1 Electricity, 1 Local Favor\nDP: 2\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3663,7 +3563,7 @@
           "CardID": 14500,
           "CustomDeck": {
             "145": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3688,8 +3588,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "B.E.A.R",
-          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
+          "Nickname": "P.L.A.S.T.E.R",
+          "Description": "[Support] Slot: Chest\nCost: 1 Electricity, 1 Local Favor\nDP: 2\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3721,7 +3621,7 @@
           "CardID": 14600,
           "CustomDeck": {
             "146": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3746,8 +3646,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "B.E.A.R",
-          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
+          "Nickname": "P.L.A.S.T.E.R",
+          "Description": "[Support] Slot: Chest\nCost: 1 Electricity, 1 Local Favor\nDP: 2\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3779,7 +3679,7 @@
           "CardID": 14700,
           "CustomDeck": {
             "147": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3804,8 +3704,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "B.E.A.R",
-          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
+          "Nickname": "P.L.A.S.T.E.R",
+          "Description": "[Support] Slot: Chest\nCost: 1 Electricity, 1 Local Favor\nDP: 2\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3837,7 +3737,7 @@
           "CardID": 14800,
           "CustomDeck": {
             "148": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3862,8 +3762,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "B.E.A.R",
-          "Description": "[Support] Slot: Chest\nCost: 1 Oil, 1 Industry, 1 Electricity\nDP: 3\n\nDuring your Resource Gathering, this soldier's resource hex may provide 1 additional token. Multiple B.E.A.R modules on one hex do not stack.",
+          "Nickname": "P.L.A.S.T.E.R",
+          "Description": "[Support] Slot: Chest\nCost: 1 Electricity, 1 Local Favor\nDP: 2\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3895,7 +3795,7 @@
           "CardID": 14900,
           "CustomDeck": {
             "149": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_b_e_a_r_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3920,8 +3820,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "P.L.A.S.T.E.R",
-          "Description": "[Support] Slot: Chest\nCost: 1 Electricity, 1 Local Favor\nDP: 2\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
+          "Nickname": "N.I.N.J.A",
+          "Description": "[Tech] Slot: Legs\nCost: 1 Intelligence, 1 Electricity\nDP: 2\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -3953,7 +3853,7 @@
           "CardID": 15000,
           "CustomDeck": {
             "150": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -3978,8 +3878,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "P.L.A.S.T.E.R",
-          "Description": "[Support] Slot: Chest\nCost: 1 Electricity, 1 Local Favor\nDP: 2\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
+          "Nickname": "N.I.N.J.A",
+          "Description": "[Tech] Slot: Legs\nCost: 1 Intelligence, 1 Electricity\nDP: 2\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4011,7 +3911,7 @@
           "CardID": 15100,
           "CustomDeck": {
             "151": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4036,8 +3936,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "P.L.A.S.T.E.R",
-          "Description": "[Support] Slot: Chest\nCost: 1 Electricity, 1 Local Favor\nDP: 2\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
+          "Nickname": "N.I.N.J.A",
+          "Description": "[Tech] Slot: Legs\nCost: 1 Intelligence, 1 Electricity\nDP: 2\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4069,7 +3969,7 @@
           "CardID": 15200,
           "CustomDeck": {
             "152": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4094,8 +3994,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "P.L.A.S.T.E.R",
-          "Description": "[Support] Slot: Chest\nCost: 1 Electricity, 1 Local Favor\nDP: 2\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
+          "Nickname": "N.I.N.J.A",
+          "Description": "[Tech] Slot: Legs\nCost: 1 Intelligence, 1 Electricity\nDP: 2\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4127,7 +4027,7 @@
           "CardID": 15300,
           "CustomDeck": {
             "153": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4152,8 +4052,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "P.L.A.S.T.E.R",
-          "Description": "[Support] Slot: Chest\nCost: 1 Electricity, 1 Local Favor\nDP: 2\n\nRemove up to 2 damage pegs from any soldier on the same hex. Tap this card. When in city or spaceport, pay 1 Electricity to recharge and untap.",
+          "Nickname": "N.I.N.J.A",
+          "Description": "[Tech] Slot: Legs\nCost: 1 Intelligence, 1 Electricity\nDP: 2\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4185,7 +4085,7 @@
           "CardID": 15400,
           "CustomDeck": {
             "154": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_l_a_s_t_e_r_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4210,8 +4110,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "N.I.N.J.A",
-          "Description": "[Tech] Slot: Legs\nCost: 1 Intelligence, 1 Electricity\nDP: 2\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
+          "Nickname": "D.U.D.S",
+          "Description": "[Support] Slot: Backpack\nCost: 1 Local Favor, 1 Oil, 1 Industry\nDP: 2\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4243,7 +4143,7 @@
           "CardID": 15500,
           "CustomDeck": {
             "155": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4268,8 +4168,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "N.I.N.J.A",
-          "Description": "[Tech] Slot: Legs\nCost: 1 Intelligence, 1 Electricity\nDP: 2\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
+          "Nickname": "D.U.D.S",
+          "Description": "[Support] Slot: Backpack\nCost: 1 Local Favor, 1 Oil, 1 Industry\nDP: 2\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4301,7 +4201,7 @@
           "CardID": 15600,
           "CustomDeck": {
             "156": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4326,8 +4226,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "N.I.N.J.A",
-          "Description": "[Tech] Slot: Legs\nCost: 1 Intelligence, 1 Electricity\nDP: 2\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
+          "Nickname": "D.U.D.S",
+          "Description": "[Support] Slot: Backpack\nCost: 1 Local Favor, 1 Oil, 1 Industry\nDP: 2\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4359,7 +4259,7 @@
           "CardID": 15700,
           "CustomDeck": {
             "157": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4384,8 +4284,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "N.I.N.J.A",
-          "Description": "[Tech] Slot: Legs\nCost: 1 Intelligence, 1 Electricity\nDP: 2\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
+          "Nickname": "D.U.D.S",
+          "Description": "[Support] Slot: Backpack\nCost: 1 Local Favor, 1 Oil, 1 Industry\nDP: 2\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4417,7 +4317,7 @@
           "CardID": 15800,
           "CustomDeck": {
             "158": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4442,8 +4342,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "N.I.N.J.A",
-          "Description": "[Tech] Slot: Legs\nCost: 1 Intelligence, 1 Electricity\nDP: 2\n\nAdd +3 to one defense die and tap this card. Spend 2 Electricity to recharge and untap.",
+          "Nickname": "D.U.D.S",
+          "Description": "[Support] Slot: Backpack\nCost: 1 Local Favor, 1 Oil, 1 Industry\nDP: 2\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4475,7 +4375,7 @@
           "CardID": 15900,
           "CustomDeck": {
             "159": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_n_i_n_j_a_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4500,8 +4400,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "D.U.D.S",
-          "Description": "[Support] Slot: Backpack\nCost: 1 Local Favor, 1 Oil, 1 Industry\nDP: 2\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
+          "Nickname": "R.S.G",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4533,7 +4433,7 @@
           "CardID": 16000,
           "CustomDeck": {
             "160": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4558,8 +4458,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "D.U.D.S",
-          "Description": "[Support] Slot: Backpack\nCost: 1 Local Favor, 1 Oil, 1 Industry\nDP: 2\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
+          "Nickname": "R.S.G",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4591,7 +4491,7 @@
           "CardID": 16100,
           "CustomDeck": {
             "161": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4616,8 +4516,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "D.U.D.S",
-          "Description": "[Support] Slot: Backpack\nCost: 1 Local Favor, 1 Oil, 1 Industry\nDP: 2\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
+          "Nickname": "R.S.G",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4649,7 +4549,7 @@
           "CardID": 16200,
           "CustomDeck": {
             "162": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4674,8 +4574,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "D.U.D.S",
-          "Description": "[Support] Slot: Backpack\nCost: 1 Local Favor, 1 Oil, 1 Industry\nDP: 2\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
+          "Nickname": "R.S.G",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4707,7 +4607,7 @@
           "CardID": 16300,
           "CustomDeck": {
             "163": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4732,8 +4632,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "D.U.D.S",
-          "Description": "[Support] Slot: Backpack\nCost: 1 Local Favor, 1 Oil, 1 Industry\nDP: 2\n\nPlace a bunker token on this hex (1 per hex max). +1 to all defense dice for any unit on this hex (neutral fortification). Bunker persists until destroyed by attacker winning combat on it. One-use: remove the module after deployment, freeing the backpack slot.",
+          "Nickname": "R.S.G",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4765,7 +4665,7 @@
           "CardID": 16400,
           "CustomDeck": {
             "164": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_d_u_d_s_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4790,8 +4690,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "L.P.M",
-          "Description": "[Support] Slot: Backpack\nCost: 1 Electricity, 1 Local Favor, 1 Intelligence\nDP: 4\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
+          "Nickname": "P.C.S.M.G",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4823,7 +4723,7 @@
           "CardID": 16500,
           "CustomDeck": {
             "165": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4848,8 +4748,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "L.P.M",
-          "Description": "[Support] Slot: Backpack\nCost: 1 Electricity, 1 Local Favor, 1 Intelligence\nDP: 4\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
+          "Nickname": "P.C.S.M.G",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4881,7 +4781,7 @@
           "CardID": 16600,
           "CustomDeck": {
             "166": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4906,8 +4806,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "L.P.M",
-          "Description": "[Support] Slot: Backpack\nCost: 1 Electricity, 1 Local Favor, 1 Intelligence\nDP: 4\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
+          "Nickname": "P.C.S.M.G",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4939,7 +4839,7 @@
           "CardID": 16700,
           "CustomDeck": {
             "167": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -4964,8 +4864,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "L.P.M",
-          "Description": "[Support] Slot: Backpack\nCost: 1 Electricity, 1 Local Favor, 1 Intelligence\nDP: 4\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
+          "Nickname": "P.C.S.M.G",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -4997,7 +4897,7 @@
           "CardID": 16800,
           "CustomDeck": {
             "168": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -5022,8 +4922,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "L.P.M",
-          "Description": "[Support] Slot: Backpack\nCost: 1 Electricity, 1 Local Favor, 1 Intelligence\nDP: 4\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
+          "Nickname": "P.C.S.M.G",
+          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5055,7 +4955,7 @@
           "CardID": 16900,
           "CustomDeck": {
             "169": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -5080,8 +4980,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "R.S.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1.",
+          "Nickname": "T.I.L.T.S",
+          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5113,7 +5013,7 @@
           "CardID": 17000,
           "CustomDeck": {
             "170": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -5138,8 +5038,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "R.S.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1.",
+          "Nickname": "T.I.L.T.S",
+          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5171,7 +5071,7 @@
           "CardID": 17100,
           "CustomDeck": {
             "171": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -5196,8 +5096,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "R.S.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1.",
+          "Nickname": "T.I.L.T.S",
+          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5229,7 +5129,7 @@
           "CardID": 17200,
           "CustomDeck": {
             "172": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -5254,8 +5154,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "R.S.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1.",
+          "Nickname": "T.I.L.T.S",
+          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5287,7 +5187,7 @@
           "CardID": 17300,
           "CustomDeck": {
             "173": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
               "NumHeight": 1,
@@ -5312,8 +5212,8 @@
             "scaleY": 1,
             "scaleZ": 1
           },
-          "Nickname": "R.S.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Oil, 1 Local Favor\nDP: 2\n\nRange: 1 hex. If target is on the same hex, add +2 to attack die. Otherwise add -1.",
+          "Nickname": "T.I.L.T.S",
+          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5345,586 +5245,6 @@
           "CardID": 17400,
           "CustomDeck": {
             "174": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_r_s_g_rev3.png?v72",
-              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 0
-            }
-          },
-          "SidewaysCard": false
-        },
-        {
-          "GUID": "10004c",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": 0,
-            "posY": 7.5,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "P.C.S.M.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 1,
-            "g": 1,
-            "b": 1
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CardID": 17500,
-          "CustomDeck": {
-            "175": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
-              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 0
-            }
-          },
-          "SidewaysCard": false
-        },
-        {
-          "GUID": "10004d",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": 0,
-            "posY": 7.6000000000000005,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "P.C.S.M.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 1,
-            "g": 1,
-            "b": 1
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CardID": 17600,
-          "CustomDeck": {
-            "176": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
-              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 0
-            }
-          },
-          "SidewaysCard": false
-        },
-        {
-          "GUID": "10004e",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": 0,
-            "posY": 7.7,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "P.C.S.M.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 1,
-            "g": 1,
-            "b": 1
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CardID": 17700,
-          "CustomDeck": {
-            "177": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
-              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 0
-            }
-          },
-          "SidewaysCard": false
-        },
-        {
-          "GUID": "10004f",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": 0,
-            "posY": 7.800000000000001,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "P.C.S.M.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 1,
-            "g": 1,
-            "b": 1
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CardID": 17800,
-          "CustomDeck": {
-            "178": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
-              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 0
-            }
-          },
-          "SidewaysCard": false
-        },
-        {
-          "GUID": "100050",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": 0,
-            "posY": 7.9,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "P.C.S.M.G",
-          "Description": "[Weapons] Slot: Hands\nCost: 1 Electricity, 1 Industry, 1 Intelligence\nDP: 3\n\nRange: 1 hex. If target is on the same hex, roll 3d6 for this soldier's attack instead of 1d6 and pick the highest result.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 1,
-            "g": 1,
-            "b": 1
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CardID": 17900,
-          "CustomDeck": {
-            "179": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_c_s_m_g_rev3.png?v72",
-              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 0
-            }
-          },
-          "SidewaysCard": false
-        },
-        {
-          "GUID": "100051",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": 0,
-            "posY": 8,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "T.I.L.T.S",
-          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 1,
-            "g": 1,
-            "b": 1
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CardID": 18000,
-          "CustomDeck": {
-            "180": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
-              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 0
-            }
-          },
-          "SidewaysCard": false
-        },
-        {
-          "GUID": "100052",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": 0,
-            "posY": 8.1,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "T.I.L.T.S",
-          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 1,
-            "g": 1,
-            "b": 1
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CardID": 18100,
-          "CustomDeck": {
-            "181": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
-              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 0
-            }
-          },
-          "SidewaysCard": false
-        },
-        {
-          "GUID": "100053",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": 0,
-            "posY": 8.200000000000001,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "T.I.L.T.S",
-          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 1,
-            "g": 1,
-            "b": 1
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CardID": 18200,
-          "CustomDeck": {
-            "182": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
-              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 0
-            }
-          },
-          "SidewaysCard": false
-        },
-        {
-          "GUID": "100054",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": 0,
-            "posY": 8.3,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "T.I.L.T.S",
-          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 1,
-            "g": 1,
-            "b": 1
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CardID": 18300,
-          "CustomDeck": {
-            "183": {
-              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
-              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
-              "NumWidth": 1,
-              "NumHeight": 1,
-              "BackIsHidden": true,
-              "UniqueBack": false,
-              "Type": 0
-            }
-          },
-          "SidewaysCard": false
-        },
-        {
-          "GUID": "100055",
-          "Name": "CardCustom",
-          "Transform": {
-            "posX": 0,
-            "posY": 8.4,
-            "posZ": 0,
-            "rotX": 0,
-            "rotY": 0,
-            "rotZ": 0,
-            "scaleX": 1,
-            "scaleY": 1,
-            "scaleZ": 1
-          },
-          "Nickname": "T.I.L.T.S",
-          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
-          "GMNotes": "",
-          "AltLookAngle": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "ColorDiffuse": {
-            "r": 1,
-            "g": 1,
-            "b": 1
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": false,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": true,
-          "Hands": true,
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "CardID": 18400,
-          "CustomDeck": {
-            "184": {
               "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_t_i_l_t_s_rev3.png?v72",
               "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
               "NumWidth": 1,
@@ -5953,7 +5273,7 @@
         "scaleZ": 1
       },
       "Nickname": "Advanced BAC Deck",
-      "Description": "Level 2 BAC cards (C.A.P upgrades). Only accessible after unlocking the corresponding S.A.P type. 12 cards in the deck; 3 are face-up in the Advanced BAC Area.",
+      "Description": "Level 2 BAC cards (C.A.P upgrades, L.P.M, P.A.E.H). Only accessible after unlocking the prerequisite BAC type. 20 cards in the deck; 5 are face-up in the Advanced BAC Area.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -5983,6 +5303,14 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "DeckIDs": [
+        17600,
+        17700,
+        17800,
+        17900,
+        18100,
+        18200,
+        18300,
+        18400,
         18600,
         18700,
         18800,
@@ -5997,6 +5325,96 @@
         19900
       ],
       "CustomDeck": {
+        "175": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "176": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "177": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "178": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "179": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "180": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "181": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "182": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "183": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "184": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
         "185": {
           "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_c_a_p_chest_rev3.png?v72",
           "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
@@ -6139,11 +5557,475 @@
       ],
       "ContainedObjects": [
         {
-          "GUID": "100058",
+          "GUID": "10004e",
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
             "posY": 0,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "P.A.E.H",
+          "Description": "[Tech] Slot: Head\nCost: 1 Local Favor, 1 Electricity, 1 Intelligence\nDP: 4\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 17600,
+          "CustomDeck": {
+            "176": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "10004f",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.1,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "P.A.E.H",
+          "Description": "[Tech] Slot: Head\nCost: 1 Local Favor, 1 Electricity, 1 Intelligence\nDP: 4\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 17700,
+          "CustomDeck": {
+            "177": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "100050",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.2,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "P.A.E.H",
+          "Description": "[Tech] Slot: Head\nCost: 1 Local Favor, 1 Electricity, 1 Intelligence\nDP: 4\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 17800,
+          "CustomDeck": {
+            "178": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "100051",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.30000000000000004,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "P.A.E.H",
+          "Description": "[Tech] Slot: Head\nCost: 1 Local Favor, 1 Electricity, 1 Intelligence\nDP: 4\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 17900,
+          "CustomDeck": {
+            "179": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "100053",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.4,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "L.P.M",
+          "Description": "[Support] Slot: Backpack\nCost: 1 Electricity, 1 Local Favor, 1 Intelligence\nDP: 4\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 18100,
+          "CustomDeck": {
+            "181": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "100054",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.5,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "L.P.M",
+          "Description": "[Support] Slot: Backpack\nCost: 1 Electricity, 1 Local Favor, 1 Intelligence\nDP: 4\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 18200,
+          "CustomDeck": {
+            "182": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "100055",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.6000000000000001,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "L.P.M",
+          "Description": "[Support] Slot: Backpack\nCost: 1 Electricity, 1 Local Favor, 1 Intelligence\nDP: 4\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 18300,
+          "CustomDeck": {
+            "183": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "100056",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.7000000000000001,
+            "posZ": 0,
+            "rotX": 0,
+            "rotY": 0,
+            "rotZ": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "scaleZ": 1
+          },
+          "Nickname": "L.P.M",
+          "Description": "[Support] Slot: Backpack\nCost: 1 Electricity, 1 Local Favor, 1 Intelligence\nDP: 4\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
+          "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "ColorDiffuse": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": true,
+          "Hands": true,
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "CardID": 18400,
+          "CustomDeck": {
+            "184": {
+              "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+              "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+              "NumWidth": 1,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false,
+              "Type": 0
+            }
+          },
+          "SidewaysCard": false
+        },
+        {
+          "GUID": "100058",
+          "Name": "CardCustom",
+          "Transform": {
+            "posX": 0,
+            "posY": 0.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -6201,7 +6083,7 @@
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
-            "posY": 0.1,
+            "posY": 0.9,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -6259,7 +6141,7 @@
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
-            "posY": 0.2,
+            "posY": 1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -6317,7 +6199,7 @@
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
-            "posY": 0.30000000000000004,
+            "posY": 1.1,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -6375,7 +6257,7 @@
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
-            "posY": 0.4,
+            "posY": 1.2000000000000002,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -6433,7 +6315,7 @@
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
-            "posY": 0.5,
+            "posY": 1.3,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -6491,7 +6373,7 @@
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
-            "posY": 0.6000000000000001,
+            "posY": 1.4000000000000001,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -6549,7 +6431,7 @@
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
-            "posY": 0.7000000000000001,
+            "posY": 1.5,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -6607,7 +6489,7 @@
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
-            "posY": 0.8,
+            "posY": 1.6,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -6665,7 +6547,7 @@
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
-            "posY": 0.9,
+            "posY": 1.7000000000000002,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -6723,7 +6605,7 @@
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
-            "posY": 1,
+            "posY": 1.8,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -6781,7 +6663,7 @@
           "Name": "CardCustom",
           "Transform": {
             "posX": 0,
-            "posY": 1.1,
+            "posY": 1.9000000000000001,
             "posZ": 0,
             "rotX": 0,
             "rotY": 0,
@@ -6837,12 +6719,134 @@
       ]
     },
     {
-      "GUID": "100057",
+      "GUID": "10004d",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 53,
+        "posY": 1.2,
+        "posZ": -13,
+        "rotX": 0,
+        "rotY": 270,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "P.A.E.H",
+      "Description": "[Tech] Slot: Head\nCost: 1 Local Favor, 1 Electricity, 1 Intelligence\nDP: 4\n\nThis soldier gets +1 to its attack die while also equipped with H.C.A.R.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CardID": 17500,
+      "CustomDeck": {
+        "175": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_p_a_e_h_rev3.png?v72",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "SidewaysCard": false,
+      "Tags": [
+        "advanced-bac-area"
+      ]
+    },
+    {
+      "GUID": "100052",
       "Name": "CardCustom",
       "Transform": {
         "posX": 53,
         "posY": 1.2,
         "posZ": -14,
+        "rotX": 0,
+        "rotY": 270,
+        "rotZ": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "L.P.M",
+      "Description": "[Support] Slot: Backpack\nCost: 1 Electricity, 1 Local Favor, 1 Intelligence\nDP: 4\n\nOther soldiers carrying B.A.S.R or S.L.I.M.E can target enemies in vicinity of L.P.M carrier. Max range 4 hexes.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CardID": 18000,
+      "CustomDeck": {
+        "180": {
+          "FaceURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_l_p_m_rev3.png?v72",
+          "BackURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/cards/bac_back.png?v72",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        }
+      },
+      "SidewaysCard": false,
+      "Tags": [
+        "advanced-bac-area"
+      ]
+    },
+    {
+      "GUID": "100057",
+      "Name": "CardCustom",
+      "Transform": {
+        "posX": 53,
+        "posY": 1.2,
+        "posZ": -15,
         "rotX": 0,
         "rotY": 270,
         "rotZ": 0,
@@ -6903,7 +6907,7 @@
       "Transform": {
         "posX": 53,
         "posY": 1.2,
-        "posZ": -15,
+        "posZ": -16,
         "rotX": 0,
         "rotY": 270,
         "rotZ": 0,
@@ -6964,7 +6968,7 @@
       "Transform": {
         "posX": 53,
         "posY": 1.2,
-        "posZ": -16,
+        "posZ": -17,
         "rotX": 0,
         "rotY": 270,
         "rotZ": 0,
@@ -51260,10 +51264,10 @@
         "rotZ": 0,
         "scaleX": 3.17,
         "scaleY": 0.2,
-        "scaleZ": 1.5
+        "scaleZ": 2.5
       },
       "Nickname": "Advanced BAC Area",
-      "Description": "Locked board with 3 slots for Advanced (Level 2) BAC cards. Only accessible after unlocking the corresponding S.A.P type.",
+      "Description": "Locked board with 5 slots for Advanced (Level 2) BAC cards. Only accessible after unlocking the prerequisite BAC type.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,

@@ -192,7 +192,7 @@ let nextDeckDefId = 100;  // global counter so BAC and Conspire don't collide
 function buildBACDeck() {
     const cards = [];
     const allCustomDecks = {};
-    gameData.basic_armament_cards.filter(bac => !bac.abbr.startsWith("C.A.P")).forEach(bac => {
+    gameData.basic_armament_cards.filter(bac => bac.level !== 2).forEach(bac => {
         const faceURL = bacFaceURL(bac.abbr);
         for (let c = 0; c < bac.copies; c++) {
             // Each individual card gets its own unique deck definition ID
@@ -215,7 +215,7 @@ function buildBACDeck() {
     // DECK slot is at z=+9.5 (north end of PB's long axis); z=-9.5 lands
     // on slot 6. Deck shares PB's rotY:270.
     const deck = baseObj("Deck", "Spaceport Deck",
-        `Basic Armament Cards — 85 cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
+        `Basic Armament Cards — 75 cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
         53, 1.5, 9.5, { rotY: 270, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
@@ -232,7 +232,7 @@ function buildAdvancedBACDeck() {
     const cards = [];
     const faceUpCards = [];
     const allCustomDecks = {};
-    gameData.basic_armament_cards.filter(bac => bac.abbr.startsWith("C.A.P")).forEach((bac, typeIdx) => {
+    gameData.basic_armament_cards.filter(bac => bac.level === 2).forEach((bac, typeIdx) => {
         const faceURL = bacFaceURL(bac.abbr);
         for (let c = 0; c < bac.copies; c++) {
             const thisDeckId = nextDeckDefId++;
@@ -249,7 +249,7 @@ function buildAdvancedBACDeck() {
             if (c === 0) {
                 card.Transform.posX = 53;
                 card.Transform.posY = 1.2;
-                card.Transform.posZ = -14 + typeIdx * -1;
+                card.Transform.posZ = -13 + typeIdx * -1;
                 card.Transform.rotY = 270;
                 card.Tags = ["advanced-bac-area"];
                 faceUpCards.push(card);
@@ -259,7 +259,7 @@ function buildAdvancedBACDeck() {
         }
     });
     const deck = baseObj("Deck", "Advanced BAC Deck",
-        "Level 2 BAC cards (C.A.P upgrades). Only accessible after unlocking the corresponding S.A.P type. 12 cards in the deck; 3 are face-up in the Advanced BAC Area.",
+        "Level 2 BAC cards (C.A.P upgrades, L.P.M, P.A.E.H). Only accessible after unlocking the prerequisite BAC type. 20 cards in the deck; 5 are face-up in the Advanced BAC Area.",
         53, 1.5, -9.5, { rotY: 270, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
@@ -1015,9 +1015,9 @@ objects.push(pbBoard);
 
 // ─── 17b-ii. ADVANCED BAC AREA BOARD (locked Custom_Tile) ───────────
 const advancedBacBoard = baseObj("Custom_Tile", "Advanced BAC Area",
-    "Locked board with 3 slots for Advanced (Level 2) BAC cards. Only accessible after unlocking the corresponding S.A.P type.",
+    "Locked board with 5 slots for Advanced (Level 2) BAC cards. Only accessible after unlocking the prerequisite BAC type.",
     53, 1.02, -15,
-    { rotY: 270, scaleX: 3.17, scaleY: 0.2, scaleZ: 1.5,
+    { rotY: 270, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5,
       color: { r: 0.3, g: 0.2, b: 0.5 }, locked: true, grid: false });
 objects.push(advancedBacBoard);
 
@@ -2111,7 +2111,7 @@ const saveFile = {
         "3. Place 10 soldiers (2 squads of 5) on starting hexes — two Control Flags are pre-staged beside your Squads for your Landing Zones",
         "4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)",
         "5. Shuffle the Conspire Deck",
-        "6. Advanced BAC Deck (C.A.P upgrades) is separate — unlock S.A.P first to access",
+        "6. Advanced BAC Deck (C.A.P, L.P.M, P.A.E.H) is separate — unlock prerequisite BAC first to access",
         "", "VICTORY CONDITIONS:",
         "- Spaceport Domination: 5/6 spaceports (2p) or 4/6 (3-4p)",
         "- Military Supremacy: More than 2x the soldiers of the next largest army",
