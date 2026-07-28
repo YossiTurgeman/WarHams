@@ -1630,16 +1630,16 @@ objects.push(dealBacsButton);
 // rules replaces the old Quick Reference PDF book. The full rulebook
 // remains as a Custom_PDF that players right-click to Open.
 const RULEBOOK_PDF_URL = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/design/WARHAMS-Rulebook.pdf";
-const EXTRA_ACTIONS_BOARD_URL = `${SOLDIER_BASE}/extra-actions-board.png?r3`;
+const EXTRA_ACTIONS_BOARD_URL = `${SOLDIER_BASE}/extra-actions-board.png?r4`;
 
 // Extra Actions reference board — locked Custom_Tile south of the
 // combat zone, visible to all players without clicking.
-// Texture is 1400x870 (two-column). Custom_Tile Type=0
+// Texture is 1400x960 (two-column). Custom_Tile Type=0
 // renders ~2 world units per scale unit.
 const extraActionsBoard = baseObj("Custom_Tile", "Squad Actions Quick Reference",
     "Visible reference board: all Squad Actions (Move, Combat, Logistics, Conspire, Rest) with costs, timing, and key restrictions. Plus DP rules.",
     83, 1.02, -27,
-    { rotY: 180, scaleX: 7, scaleY: 0.2, scaleZ: 4.35,
+    { rotY: 180, scaleX: 7, scaleY: 0.2, scaleZ: 4.8,
       color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
 extraActionsBoard.CustomImage = {
     ImageURL: EXTRA_ACTIONS_BOARD_URL,
