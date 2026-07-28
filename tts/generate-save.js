@@ -1630,7 +1630,7 @@ objects.push(dealBacsButton);
 // rules replaces the old Quick Reference PDF book. The full rulebook
 // remains as a Custom_PDF that players right-click to Open.
 const RULEBOOK_PDF_URL = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/design/WARHAMS-Rulebook.pdf";
-const EXTRA_ACTIONS_BOARD_URL = `${SOLDIER_BASE}/extra-actions-board.png`;
+const EXTRA_ACTIONS_BOARD_URL = `${SOLDIER_BASE}/extra-actions-board.png?r2`;
 
 // Extra Actions reference board — locked Custom_Tile on the western
 // edge of the table, visible to all players without clicking.
