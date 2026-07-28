@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785236314,
+  "EpochTime": 1785236452,
   "Date": "2026-07-28",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -55327,9 +55327,9 @@
       "GUID": "100337",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -60,
+        "posX": 83,
         "posY": 1.02,
-        "posZ": 8,
+        "posZ": -27,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
