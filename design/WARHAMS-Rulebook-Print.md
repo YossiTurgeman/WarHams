@@ -70,7 +70,7 @@ The planet surface is built from randomized hexagonal tiles. Each tile represent
 | 🌍 Terrain Hex       | —            | 37    | Open ground, forests, craters, etc.  |
 | | | **61** | |
 
-### 🔢 Number Tokens (16 total)
+### 🔢 Number Tokens (15 total)
 
 Number Tokens are placed on resource-producing Hexes during setup to determine which Hexes produce resources on a given dice roll. **Note:** Separatist Bases and Spaceport Drop Zones have their numbers **printed directly on the tile** and do not use Number Tokens.
 
@@ -81,8 +81,8 @@ Number Tokens are placed on resource-producing Hexes during setup to determine w
 | 3      | 3           |
 | 4      | 3           |
 | 5      | 3           |
-| 6      | 3           |
-| **Total** | **16**   |
+| 6      | 2           |
+| **Total** | **15**   |
 
 ### 🃏 Cards
 
@@ -153,7 +153,7 @@ Shuffle all **61 Hex Tiles** face-down. Place them randomly within the Planet Fr
 Flip all Hex Tiles face-up. The planet is revealed. Take a moment to survey the terrain — note where the resources, Spaceport Drop Zones, and Separatist Bases have appeared.
 
 **Step 4 — Place Number Tokens**
-Distribute the **16 Number Tokens** across the **15 resource-producing Hexes** (Oil Rigs, Power Plants, Factories, Radar Dishes, and Cities/Villages). Separatist Bases and Spaceport Drop Zones already have their numbers **printed on the tile** and do not receive Number Tokens.
+Distribute the **15 Number Tokens** across the **15 resource-producing Hexes** (Oil Rigs, Power Plants, Factories, Radar Dishes, and Cities/Villages) — one token per hex. Separatist Bases and Spaceport Drop Zones already have their numbers **printed on the tile** and do not receive Number Tokens.
 
 | Number | Tokens Available | Placement                       |
 | :----: | :--------------: | ------------------------------- |
@@ -162,9 +162,9 @@ Distribute the **16 Number Tokens** across the **15 resource-producing Hexes** (
 | 3      | 3                | Place on 3 resource Hexes       |
 | 4      | 3                | Place on 3 resource Hexes       |
 | 5      | 3                | Place on 3 resource Hexes       |
-| 6      | 3                | Place on 3 resource Hexes       |
+| 6      | 2                | Place on 2 resource Hexes       |
 
-Place them randomly. One Hex will receive **two** Number Tokens (since there are 16 tokens for 15 Hexes) — that Hex triggers on **either** number but still produces only **1 resource per roll** (not double). This makes it a strategic hotspot that activates more often without snowballing resources.
+Place them randomly. Each resource-producing Hex receives exactly **one** Number Token. Edge numbers (1, 2, 6) are scarcer — only 2 hexes each — while middle numbers (3, 4, 5) appear on 3 hexes each, creating a natural production curve.
 
 **Step 5 — Prepare the BAC Cards**
 Shuffle all **100 BAC Cards** into a single face-down pile. Then:

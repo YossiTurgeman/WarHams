@@ -53,9 +53,9 @@
       "3": 3,
       "4": 3,
       "5": 3,
-      "6": 3,
-      "total": 16,
-      "note": "Numbers 1 & 2 are scarcer (2 tokens each), 3-6 have 3 tokens each. Placed on 15 resource-producing hexes only (one hex gets 2 tokens). Separatist Bases and Spaceports have printed numbers on the tile."
+      "6": 2,
+      "total": 15,
+      "note": "Numbers 1, 2 & 6 are scarcer (2 tokens each), 3-5 have 3 tokens each. Placed on 15 resource-producing hexes, one token per hex. Separatist Bases and Spaceports have printed numbers on the tile."
     },
     "shape": "Circular planet frame (5 interlocking cardboard puzzle pieces), 61 hexes fill the entire interior. Edge connection points (a, b, c, etc.) enable board wrapping — opposite edges are adjacent."
   },
@@ -698,7 +698,7 @@
   },
   "components_summary": {
     "hex_tiles": 61,
-    "number_tokens": 16,
+    "number_tokens": 15,
     "dice": "14 d6",
     "soldier_miniatures": "112 player (4 colors x 28) + 24 separatist greys. Each player mini has 5 magnetized attachment points (Head, Chest, Legs, Backpack, Hands) and sits on a 40mm magnetized round base printed with a squad letter and soldier number (A1-A7, B1-B7, C1-C7, D1-D7) and bearing 3 blood-drop divots for damage tracking.",
     "equipment_modules": "160 total (20 types x 8 copies). Physical magnetized parts with unique sculpts and abbreviation engraved on underside. Destroyed modules return to the box for re-purchase.",

@@ -270,7 +270,7 @@ SVG wireframes exist in `design/assets/` for layout reference. These are **code-
 
 ### 4E. Number Tokens
 
-**Count:** 16 total (see distribution below)
+**Count:** 15 total (see distribution below)
 **Shape:** Circular, ~20mm diameter (same as resource tokens)
 **Material:** Thick cardboard
 
@@ -281,7 +281,7 @@ SVG wireframes exist in `design/assets/` for layout reference. These are **code-
 | 3 | 3 |
 | 4 | 3 |
 | 5 | 3 |
-| 6 | 3 |
+| 6 | 2 |
 
 **Design:** Large centered number on neutral background. Clear, bold font. No color coding needed — these just sit on hex tiles to show which dice roll activates that hex.
 

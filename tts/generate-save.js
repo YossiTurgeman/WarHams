@@ -767,7 +767,7 @@ const bunkerBag = baseObj("Bag", "Bunker Tokens (12)", "Neutral WW2 concrete bun
 bunkerBag.ContainedObjects = bunkerTokens;
 objects.push(bunkerBag);
 
-// ─── 15. NUMBER TOKENS (face-down shuffleable Deck of 16) ───────────
+// ─── 15. NUMBER TOKENS (face-down shuffleable Deck of 15) ───────────
 // Catan-style chits with a big bold digit on the FRONT and a blank
 // cream BACK. Implemented as a TTS CardCustom Deck because that's the
 // only TTS object type with a native R-key Shuffle (Custom_Tile stacks
@@ -777,9 +777,9 @@ objects.push(bunkerBag);
 //   tts/v<VERSION>/number_<n>.png    — face per number (1..6)
 //   tts/v<VERSION>/number_back.png   — shared blank cream back
 //
-// 6 deck definitions (one per unique number); 16 cards spread across
+// 6 deck definitions (one per unique number); 15 cards spread across
 // them according to the production-distribution pool.
-const numberPool = [1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6];
+const numberPool = [1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6];
 function shuffleSeeded(arr, seed) {
     const a = arr.slice();
     let s = seed;
@@ -823,8 +823,8 @@ const numberCards = shuffledNumbers.map((num, i) => {
     card.Tags = ["number-token"];
     return card;
 });
-const numberDeck = baseObj("Deck", "Number Tokens (16)",
-    "Catan-style chits placed on resource hexes during setup. Press R to shuffle, deal 1 per resource hex (one hex gets 2).",
+const numberDeck = baseObj("Deck", "Number Tokens (15)",
+    "Catan-style chits placed on resource hexes during setup. Press R to shuffle, deal 1 per resource hex.",
     -54, 1.5, 6, { rotZ: 180 });
 numberDeck.DeckIDs = numberCards.map(c => c.CardID);
 numberDeck.CustomDeck = numberDeckDefs;
@@ -1196,8 +1196,8 @@ for (let i = 0; i < 61; i++) {
     // them and shuffle their positions.
     // v149: additionally tag the 15 production hexes (oil, power,
     // factory, radar, city) with 'resource-hex' so the Randomize
-    // NUMBER TOKENS button knows where to deal the 16 chits (one
-    // hex gets a stacked pair). Separatist + Spaceport hexes have
+    // NUMBER TOKENS button knows where to deal the 15 chits (one
+    // per hex). Separatist + Spaceport hexes have
     // their numbers baked into the tile artwork; Terrain hexes
     // don't produce. So only the 15 production tiles need numbers.
     const PRODUCING_KINDS = { oil: 1, power: 1, factory: 1, radar: 1, city: 1 };
@@ -1397,34 +1397,13 @@ function makeShuffleControl({ name, desc, x, z, tag, broadcastNoun, dealOntoTag 
         "            broadcastToAll('No ' .. BROADCAST_NOUN .. ' to deal.', {1, 0.5, 0.5})",
         "            return",
         "        end",
-        "        -- Pre-compute how many chits each hex will receive and",
-        "        -- this chit's slot inside that hex (0..count-1). Lets",
-        "        -- the overflow hex hold its 2 chits SIDE-BY-SIDE along",
-        "        -- the X axis instead of stacked on top of each other,",
-        "        -- so both numbers stay readable (per Rulebook §Step 4:",
-        "        -- the doubled hex triggers on either number).",
-        "        local perHex = {}",
-        "        local slotOf = {}",
-        "        for i = 1, total do",
-        "            local hi = ((i - 1) % #order) + 1",
-        "            slotOf[i]  = perHex[hi] or 0",
-        "            perHex[hi] = (perHex[hi] or 0) + 1",
-        "        end",
-        "        local SPREAD = 2.8  -- world units between centers of",
-        "                            -- two side-by-side chits on one hex",
-        "                            -- (≈ TTS card long-side + small gap)",
+        "        -- One token per hex (15 tokens for 15 resource hexes).",
         "        for i = 1, total do",
         "            local hi    = ((i - 1) % #order) + 1",
         "            local hex   = order[hi]",
-        "            local count = perHex[hi]",
-        "            local slot  = slotOf[i]",
         "            local p     = hex.getPosition()",
-        "            local dx    = 0",
-        "            if count > 1 then",
-        "                dx = (slot - (count - 1) / 2) * SPREAD",
-        "            end",
         "            deck.takeObject({",
-        "                position = {p.x + dx, p.y + 1.0, p.z},",
+        "                position = {p.x, p.y + 1.0, p.z},",
         "                -- rotY=0: the number_<n>_rev125.png texture is",
         "                -- pre-rotated 180° (see generate-number-tokens.js)",
         "                -- so a card laid at world-rotY 0 reads upright",
@@ -1527,14 +1506,14 @@ objects.push(makeShuffleControl({
 // their slot assignments swap.
 objects.push(makeShuffleControl({
     name: "Randomize Number Tokens",
-    desc: "Click to merge every number-token card (deck + any already-dealt) into one deck, shuffle, and deal one onto each of the 15 production hexes; the 16th chit stacks on a random hex.",
+    desc: "Click to merge every number-token card (deck + any already-dealt) into one deck, shuffle, and deal one onto each of the 15 production hexes.",
     x: -50, z: 6,
     tag: "number-token",
     broadcastNoun: "number tokens",
     // v149: setting dealOntoTag switches the button from in-place
     // shuffle to FULL DEAL mode — every click re-randomises and
-    // re-distributes all 16 chits onto the 15 hexes tagged
-    // 'resource-hex'. One hex ends up with a stacked pair.
+    // re-distributes all 15 chits onto the 15 hexes tagged
+    // 'resource-hex'. One token per hex.
     dealOntoTag: "resource-hex",
 }));
 
@@ -2080,8 +2059,8 @@ const saveFile = {
         "5. Shuffle the Conspire Deck",
         "", "VICTORY CONDITIONS:",
         "- Spaceport Domination: 5/6 spaceports (2p) or 4/6 (3-4p)",
-        "- Military Supremacy: Hold 28 soldiers for 1 full round",
-        "- Dominance: 50 DP from equipped BAC cards",
+        "- Military Supremacy: More than 2x the soldiers of the next largest army",
+        "- Dominance: 50 DP from equipped BACs + Battle Victory DP + Territory DP + Bunker DP",
     ].join('\n'),
     Rules: "",
     PlayerTurn: "",
