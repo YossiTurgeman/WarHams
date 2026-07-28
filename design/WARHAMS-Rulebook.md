@@ -422,7 +422,9 @@ Resolve Separatists one at a time. Each may move up to **3 hexes**, following th
 
 **BAC cards and cargo containers are not resources and are never movement targets.** A Spaceport Drop Zone does not attract Separatists merely because it contains a cargo container or BAC delivery.
 
-A Separatist already on its chosen target moves 0 hexes. Each adjacent step counts as 1 hex. Finish moving every Separatist before beginning Step 4.
+A Separatist already on its chosen target moves 0 hexes. Each adjacent step counts as 1 hex. **Separatists move directly to the chosen hex regardless of any friendly or enemy forces in the way** — they do not stop for, engage, or interact with units on intervening hexes. Interception and combat only happen on the destination hex (resolved in Step 4). Finish moving every Separatist before beginning Step 4.
+
+> 🏔️ *The locals know every cave, tunnel, and goat-path across this world. They slip past armies and through front lines without pause — only the hex they're heading to matters.*
 
 > **Tip:** A producing hex with many tokens attracts every Separatist that selects it under this priority. Clearing valuable piles near your forces can redirect the swarm.
 
