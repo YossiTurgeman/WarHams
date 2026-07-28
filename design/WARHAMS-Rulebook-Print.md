@@ -1174,15 +1174,27 @@ Your overwhelming military presence renders further conflict pointless. Rival HQ
 
 **Accumulate 50 Dominance Points (DP).**
 
-DP come from three sources:
+DP come from four sources:
 
 1. **Equipped BAC cards** — each BAC's DP value counts toward your total as long as the card remains equipped and the soldier carrying it is alive.
 2. **Battle Victory DP** — after each combat, the side that inflicted more wounds than they received earns DP equal to the difference, up to 3 DP per battle (see Combat Step 8). This DP is permanent.
 3. **Territory DP** — each hex you claim (excluding your Landing Zones) is worth +1 DP. If an opponent takes that hex from you, you lose 1 DP and they gain 1 DP (see Claiming a Hex).
+4. **Bunker DP** — deploying a D.U.D.S bunker grants the deployer 2 DP (permanent). Whoever controls the bunkered hex earns an additional 2 DP. Total: 4 DP for a deployer holding their own bunker (see Bunker Rules).
 
 The local population rallies behind your banner and crowns you their sovereign.
 
-> **Tracking DP:** Every time you learn a new BAC (unlock it) or create a new instance (equip another soldier with an already-unlocked BAC), add the card's DP value to your counter for each soldier equipped. If a soldier dies and their module is destroyed or salvaged by another player, subtract that module's DP from your total. Add 1 DP for each hex you claim (excluding Landing Zones); subtract 1 DP when an opponent takes a hex from you. Battle Victory DP is never lost once earned.
+#### Dominion Points Tracking
+
+Adjust your DP counter immediately whenever any of the following events occur. The table lists every DP source, exactly when to add or remove points, and whether the DP is permanent.
+
+| DP Source | Add DP When… | Remove DP When… | Permanent? |
+|---|---|---|---|
+| **BAC Card DP** | You **unlock** a new BAC type (first soldier equipped) or **equip** an additional soldier with an already-unlocked BAC — add the card's DP value **per soldier equipped**. | A soldier **dies** and their module is **destroyed** (returned to box) or **salvaged by another player** — subtract that module's DP. If the owner keeps the module (salvage pick 1) and re-attaches it, no DP change occurs. | No — flows with equipment |
+| **Battle Victory DP** | After combat **Step 8**, your side inflicted **more wounds** than you received — add the difference, up to **3 DP**. Both attacker and defender are eligible. | **Never.** Battle Victory DP is permanent and does not go away if soldiers are later lost. | Yes — permanent |
+| **Territory DP** | You **place your Control Flag** on a hex (excluding Landing Zones) — add **1 DP** immediately. | An **opponent takes a hex** from you (replaces your flag with theirs) — subtract **1 DP**; the opponent adds **1 DP**. Landing Zones give 0 DP and never change. | No — flows with territory |
+| **Bunker DP** | **D.U.D.S deployed** — deployer adds **2 DP** immediately. The player who **controls the bunkered hex** adds **2 DP** (total 4 DP for deployer holding their own bunker). | If **hex control changes**, the previous controller subtracts **2 DP** and the new controller adds **2 DP**. The deployer's 2 DP deployment bonus is never lost. | Deployment: permanent. Hex control: flows with territory |
+
+> **Summary:** Only Battle Victory DP and the Bunker deployment bonus are truly permanent. BAC Card DP and Territory DP (including Bunker hex-control DP) go up and down as soldiers die, hexes change hands, and equipment is lost or salvaged.
 
 ---
 
@@ -1263,7 +1275,7 @@ When a player meets any victory condition during their turn, the current round b
 |------|-----------|
 | 🚀 Spaceport Domination | Fully control 4 of 6 Spaceports (2-player: 5 of 6) |
 | 💪 Military Supremacy | More than 2× the soldiers of the next largest army (strictly more) |
-| 👑 Dominance | Accumulate 50 DP from equipped BACs + Battle Victory DP + Territory DP |
+| 👑 Dominance | Accumulate 50 DP from equipped BACs + Battle Victory DP + Territory DP + Bunker DP |
 | 🏁 Final Round | Any condition met → finish the round → highest DP breaks ties |
 
 ---
