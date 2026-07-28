@@ -180,6 +180,8 @@ Players deploy their starting Squads to the planet surface using a snake draft. 
 | **Round 1** | Starting with the first player and proceeding clockwise, each player places their **1st Squad** on any unoccupied **Terrain Hex** (not resource hexes, Spaceports, or Separatist Bases). |
 | **Round 2** | The **last player** in Round 1 immediately places their **2nd Squad** on any unoccupied **Terrain Hex**. Then placement continues **counter-clockwise**, ending with the first player placing their 2nd Squad last. |
 
+> **Place Control Flags:** After placing each Squad, also place one of your **Control Flags** on the same hex. These hexes are your **Landing Zones** — they start under your control. Landing Zones give **0 Territory DP** (see Claiming a Hex).
+
 **Step 10 — Set Up the Unloading Zone**
 Place one set of 6 numbered **Cargo Containers** (1–6) in a row near the board — this is the **Unloading Zone**. Keep the second matching set of containers nearby.
 
