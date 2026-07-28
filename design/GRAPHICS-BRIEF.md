@@ -147,7 +147,11 @@ SVG wireframes exist in `design/assets/` for layout reference. These are **code-
 | 19 | P.C.S.M.G | Projectile Correcting Sub Machine Gun | Hands | Smart SMG with auto-correcting barrel | 3 |
 | 20 | T.I.L.T.S | Tactical Ion Team Link Shield | Backpack | Backpack-mounted team shield generator, energy field | 5 |
 
-**Card Back:** Uniform design — dark navy with tech grid pattern, "B.A.C" text centered, game logo.
+**Card Back:** Uniform design — dark navy with tech grid pattern, "B.A.C" text centered, game logo. Both the Spaceport Deck and the Advanced BAC Deck share this same back.
+
+> **Deck Split:** The 100 BAC cards are divided into two decks:
+> - **Spaceport Deck (85 cards):** 17 standard BAC types × 5 copies. Used for starting hands and regular purchases.
+> - **Advanced BAC Deck (15 cards):** 3 C.A.P types × 5 copies. Level 2 upgrades that require the corresponding S.A.P type to be unlocked first. At setup, one copy of each C.A.P type is placed face-up in the **Advanced BAC Area** (3 cards); the remaining 12 are shuffled as the Advanced BAC Deck.
 
 ---
 

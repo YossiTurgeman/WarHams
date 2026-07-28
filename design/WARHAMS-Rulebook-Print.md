@@ -167,16 +167,23 @@ Distribute the **15 Number Tokens** across the **15 resource-producing Hexes** (
 Place them randomly. Each resource-producing Hex receives exactly **one** Number Token. Edge numbers (1, 2, 6) are scarcer — only 2 hexes each — while middle numbers (3, 4, 5) appear on 3 hexes each, creating a natural production curve.
 
 **Step 5 — Prepare the BAC Cards**
-Shuffle all **100 BAC Cards** into a single face-down pile. Then:
+Sort the **100 BAC Cards** into two decks:
 
-1. Deal **3 BAC Cards** face-down to each player. Players look at their cards but keep them secret.
+- **Spaceport Deck (85 cards):** All 17 standard BAC types (5 copies each). This is the main deck used for starting hands and regular purchases.
+- **Advanced BAC Deck (15 cards):** The 3 C.A.P types (5 copies each). These are Level 2 upgrades that require a prerequisite S.A.P type to be unlocked first.
+
+Shuffle the **Spaceport Deck** face-down. Then:
+
+1. Deal **3 BAC Cards** face-down to each player from the Spaceport Deck. Players look at their cards but keep them secret.
 2. Each player **chooses 1 card** to keep and passes the remaining **2 cards face-down to the player on their left**.
 3. From the 2 cards received, each player **chooses 1 card** to keep and passes the **last card to the left**.
 4. Each player keeps the final card received. All players now have a **starting hand of 3 BAC Cards**.
-5. Place the remaining deck near the board — this is the **Spaceport Deck**.
+5. Place the remaining Spaceport Deck near the board.
 6. Turn **6 cards** face-up in a row beside the Spaceport Deck — this is the **Planet Bound Area**.
 
-> ⚙️ *Always maintain 6 face-up cards in the Planet Bound Area. Whenever a card is taken from it, immediately replace it from the Spaceport Deck.*
+> ⚙️ *Always maintain 6 face-up cards in the Planet Bound Area and 3 face-up cards in the Advanced BAC Area. Whenever a card is taken, immediately replace it from the corresponding deck.*
+
+Shuffle the **Advanced BAC Deck** (the remaining 12 C.A.P cards) and place it beside the Planet Bound Area. Place **one copy of each C.A.P type** (Chest, Head, Legs) face-up next to it — this is the **Advanced BAC Area** (3 cards). These cards are only available to players who have unlocked the corresponding S.A.P type (see Equipping Rules).
 
 **Step 6 — Prepare the Conspire Deck**
 Shuffle all **72 Conspire Cards** and place them face-down near the board as the **Conspire Deck**. Do not deal any Conspire Cards during setup — they are only acquired during play.
@@ -334,6 +341,7 @@ If your Control Flag is already on a BAC card in the Equipment Display, you may 
 **Acquiring New BACs:**
 
 - **Spaceport Deck Purchase:** Spend **3 resource tokens of any single type** while your Squad is at or adjacent to a **Spaceport** or **City** → draw 1 face-down card from the Spaceport Deck into your hand.
+- **Advanced BAC Deck Purchase:** If you have unlocked the corresponding S.A.P type, you may spend **3 resource tokens of any single type** while your Squad is at or adjacent to a **Spaceport** or **City** → take 1 face-up card from the **Advanced BAC Area** into your hand. You may only take a C.A.P card whose corresponding S.A.P type you have unlocked. When a card is taken, immediately refill that slot from the top of the Advanced BAC Deck.
 - **Spaceport Drop Zone Collection:** If a Squad occupies a spaceport hex with a container marker, collect **all** BAC cards from the matching Unloading Zone slot into your hand. Remove the container from the board hex and reset the slot.
 
 **Recruiting New Soldiers:**
@@ -957,7 +965,7 @@ The **modules on the minis are the source of truth** — not cards, not boards. 
 - **Modules = Truth:** The physical modules on minis are the definitive record of who has what. The Equipment Display is for reference only.
 - **Flags are permanent:** Once your Control Flag is placed on a BAC card in the Equipment Display, it stays for the rest of the game — even if all your soldiers carrying that module die. Your flag marks that you've unlocked that BAC type and can pay to equip it again.
 - **Exception — T.I.L.T.S:** Pay the listed cost **once** to equip any number of soldiers in the same Squad. All equipped soldiers receive the T.I.L.T.S backpack module. See T.I.L.T.S card text for full details.
-- **S.A.P → C.A.P Upgrade:** Custom Armor Plating (C.A.P) requires trading in the corresponding S.A.P piece as part of the upgrade cost. Detach the S.A.P module from the mini and return it to the supply, then attach the C.A.P module.
+- **S.A.P → C.A.P Upgrade (Advanced BAC Deck):** Custom Armor Plating (C.A.P) cards are only available from the **Advanced BAC Area** — they are never in the Spaceport Deck or starting hands. You may only acquire a C.A.P card if you have already unlocked the corresponding S.A.P type (your Control Flag is on the S.A.P card in the Equipment Display). Spend **3 resource tokens of any single type** at a Spaceport or City to take a face-up C.A.P card from the Advanced BAC Area. When a card is taken, refill that slot from the top of the Advanced BAC Deck. To equip, trade in the corresponding S.A.P piece (detach it from the mini and return it to the supply) as part of the upgrade cost, then attach the C.A.P module.
 - **Armor Stacking:** S.A.P and C.A.P pieces each grant their defense bonus independently (+1 per S.A.P piece, +2 per C.A.P piece). There are no set bonuses — equip as many or as few armor pieces as your strategy demands.
 - **Tapping:** Some modules are **Tapped** (rotated 90° on the mini or marked with a tap token) when activated. A Tapped module cannot be used again until **Untapped** (recharged) — typically at a City or Spaceport for a resource cost.
 - **One-Shot:** Modules marked as one-use (e.g., D.U.D.S) are **flipped/marked** after activation. They cannot be used again but still count toward DP.
@@ -977,6 +985,8 @@ Modules with active abilities fall into two timing categories:
 ---
 
 ### 📋 Full BAC Card List (20 Types × 8 Copies = 160 Cards)
+
+> **Note:** The 3 C.A.P types (Level 2 ⬆️) are only available from the **Advanced BAC Deck**, not the Spaceport Deck. You must unlock the corresponding S.A.P type before acquiring them.
 
 | Abbr | Full Name | Slot | Cost | DP | Effect |
 |------|-----------|------|------|----|--------|

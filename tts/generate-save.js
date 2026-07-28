@@ -187,12 +187,12 @@ function cornerSpot(idx, tc, side) {
     };
 }
 
-// ─── 1. BAC DECK (100 cards) ─────────────────────────────────────────
+// ─── 1. BAC DECKS (85 regular cards + 15 advanced cards) ─────────────
 let nextDeckDefId = 100;  // global counter so BAC and Conspire don't collide
 function buildBACDeck() {
     const cards = [];
     const allCustomDecks = {};
-    gameData.basic_armament_cards.forEach(bac => {
+    gameData.basic_armament_cards.filter(bac => !bac.abbr.startsWith("C.A.P")).forEach(bac => {
         const faceURL = bacFaceURL(bac.abbr);
         for (let c = 0; c < bac.copies; c++) {
             // Each individual card gets its own unique deck definition ID
@@ -215,7 +215,7 @@ function buildBACDeck() {
     // DECK slot is at z=+9.5 (north end of PB's long axis); z=-9.5 lands
     // on slot 6. Deck shares PB's rotY:270.
     const deck = baseObj("Deck", "Spaceport Deck",
-        `Basic Armament Cards — ${gameData.deck_counts.total_BAC_cards} cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
+        `Basic Armament Cards — 85 cards.\nRefills the Planet Bound Area as cards are taken (always keep 6 face-up).`,
         53, 1.5, 9.5, { rotY: 270, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
@@ -227,6 +227,52 @@ function buildBACDeck() {
     return deck;
 }
 objects.push(buildBACDeck());
+
+function buildAdvancedBACDeck() {
+    const cards = [];
+    const faceUpCards = [];
+    const allCustomDecks = {};
+    gameData.basic_armament_cards.filter(bac => bac.abbr.startsWith("C.A.P")).forEach((bac, typeIdx) => {
+        const faceURL = bacFaceURL(bac.abbr);
+        for (let c = 0; c < bac.copies; c++) {
+            const thisDeckId = nextDeckDefId++;
+            const deckDef = { [String(thisDeckId)]: { FaceURL: faceURL, BackURL: BAC_BACK, NumWidth: 1, NumHeight: 1, BackIsHidden: true, UniqueBack: false, Type: 0 } };
+            Object.assign(allCustomDecks, deckDef);
+            const costStr = typeof bac.cost === 'string' ? bac.cost : Object.entries(bac.cost).map(([k,v]) => `${v} ${k}`).join(', ');
+            const desc = `[${bac.category}] Slot: ${bac.slot}\nCost: ${costStr}\nDP: ${bac.dp}\n\n${bac.text}${bac.special ? '\nSpecial: ' + bac.special : ''}`;
+            const card = baseObj("CardCustom", bac.abbr, desc, 0, 0.1 * cards.length, 0);
+            card.CardID = thisDeckId * 100;
+            card.CustomDeck = deckDef;
+            card.SidewaysCard = false;
+            card.HideWhenFaceDown = true;
+            card.Hands = true;
+            if (c === 0) {
+                card.Transform.posX = 53;
+                card.Transform.posY = 1.2;
+                card.Transform.posZ = -14 + typeIdx * -1;
+                card.Transform.rotY = 270;
+                card.Tags = ["advanced-bac-area"];
+                faceUpCards.push(card);
+            } else {
+                cards.push(card);
+            }
+        }
+    });
+    const deck = baseObj("Deck", "Advanced BAC Deck",
+        "Level 2 BAC cards (C.A.P upgrades). Only accessible after unlocking the corresponding S.A.P type. 12 cards in the deck; 3 are face-up in the Advanced BAC Area.",
+        53, 1.5, -9.5, { rotY: 270, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+    deck.DeckIDs = cards.map(c => c.CardID);
+    deck.CustomDeck = allCustomDecks;
+    deck.HideWhenFaceDown = true;
+    deck.Hands = true;
+    deck.SidewaysCard = false;
+    deck.Tags = ["advanced-bac-deck"];
+    deck.ContainedObjects = cards;
+    return { deck, faceUpCards };
+}
+const advancedBac = buildAdvancedBACDeck();
+objects.push(advancedBac.deck);
+advancedBac.faceUpCards.forEach(c => objects.push(c));
 
 // ─── 3. CONSPIRE DECK (72 cards) ────────────────────────────────────
 function buildConspireDeck() {
@@ -966,6 +1012,14 @@ pbBoard.CustomImage = {
     CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
 };
 objects.push(pbBoard);
+
+// ─── 17b-ii. ADVANCED BAC AREA BOARD (locked Custom_Tile) ───────────
+const advancedBacBoard = baseObj("Custom_Tile", "Advanced BAC Area",
+    "Locked board with 3 slots for Advanced (Level 2) BAC cards. Only accessible after unlocking the corresponding S.A.P type.",
+    53, 1.02, -15,
+    { rotY: 270, scaleX: 3.17, scaleY: 0.2, scaleZ: 1.5,
+      color: { r: 0.3, g: 0.2, b: 0.5 }, locked: true, grid: false });
+objects.push(advancedBacBoard);
 
 // ─── 17c. UNLOADING ZONE BOARD (locked Custom_Tile) ─────────────────
 // Rectangular companion to the Planet Bound Area board: black with a
@@ -2057,6 +2111,7 @@ const saveFile = {
         "3. Place 10 soldiers (2 squads of 5) on starting hexes — two Control Flags are pre-staged beside your Squads for your Landing Zones",
         "4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)",
         "5. Shuffle the Conspire Deck",
+        "6. Advanced BAC Deck (C.A.P upgrades) is separate — unlock S.A.P first to access",
         "", "VICTORY CONDITIONS:",
         "- Spaceport Domination: 5/6 spaceports (2p) or 4/6 (3-4p)",
         "- Military Supremacy: More than 2x the soldiers of the next largest army",
