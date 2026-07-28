@@ -533,7 +533,28 @@ During a **Combat action** in the Activation Phase, they may declare an attack w
 
 ### Combat Resolution — Step by Step
 
-Once combat is declared, resolve it by following Steps 1 through 7 in order.
+Once combat is declared, resolve it by following Step 0 and then Steps 1 through 8 in order.
+
+---
+
+#### Step 0: Pre-Combat
+
+Before any attack or defense dice are rolled, resolve all pre-combat effects in the following order:
+
+**0a — Reveal Phase (S.H.A.D):**
+If the **defender** has a soldier equipped with **S.H.A.D** (Sensory Helmet, Advisory Drone), the **attacker must immediately reveal all of their Conspire Cards** in hand to the defender. The defender may look at them but does not take them. This happens before any pre-combat attacks or cards are played.
+
+**0b — Pre-Combat Cards:**
+Both players may play **Tactical Conspire Cards** that affect the upcoming combat (e.g., **A Rough Night** to immobilize and penalize a Squad). The **defender** plays first, then the **attacker** responds. Each player may play any number of eligible cards. Resolve each card's effect immediately before the next card is played.
+
+**0c — Pre-Combat Attacks (B.A.S.R & S.L.I.M.E):**
+The attacker resolves any pre-combat weapon attacks:
+- **B.A.S.R (Sniper):** Roll **2d6**, pick the higher result. Target **1 specific defending soldier** up to **2 hexes** away (up to **4 hexes** with L.P.M). The target defends normally (1d6). If the attack hits, apply damage immediately — this may kill the target before normal combat. The sniper **does not participate** in normal combat (Steps 1–8).
+- **S.L.I.M.E (Mortar):** Roll **4d6** and assign as matchups against the **entire defending Squad** up to **3 hexes** away (up to **4 hexes** with L.P.M). All defenders suffer **−1 to all defense dice**. Resolve damage immediately. Mortar crew **skip normal combat**. If the target hex is a City/Village, the **Civilian Damage Rule** applies.
+
+> **Simultaneous effects:** If both players have pre-combat attacks (e.g., both have a B.A.S.R), resolve the **attacker's** pre-combat attacks first, then the **defender's**. Within a single side, resolve B.A.S.R before S.L.I.M.E.
+
+> **Important:** Soldiers killed during Step 0 are removed immediately and do not participate in Steps 1–8. Their dice are not rolled. If the defending Squad is completely eliminated in Step 0, combat ends — proceed directly to Step 7 (Defender Withdrawal — no one left to withdraw) and Step 8 (Battle Victory DP).
 
 ---
 
@@ -839,7 +860,7 @@ Bunker tokens are placed by the **D.U.D.S** (Deployable Unital Defense System) e
 
 | Step | Action | Who Acts |
 |---|---|---|
-| **Pre-Combat** | Resolve B.A.S.R (sniper) and S.L.I.M.E (mortar) attacks | Attacker |
+| **Step 0** | Pre-Combat: S.H.A.D reveal, pre-combat cards, B.A.S.R & S.L.I.M.E attacks | Both |
 | **Step 1** | Roll attack & defense dice (1d6 per soldier) | Both |
 | **Step 2** | Attacker assigns matchups; Defender assigns defense dice | Both |
 | **Step 3** | Apply equipment bonuses (+attack, +defense) | Both |
@@ -1226,7 +1247,7 @@ When a player meets any victory condition during their turn, the current round b
 
 | Step | Action |
 |:----:|--------|
-| Pre | Resolve B.A.S.R (sniper) and S.L.I.M.E (mortar) |
+| 0 | **Pre-Combat**: S.H.A.D reveal, pre-combat cards, B.A.S.R & S.L.I.M.E attacks |
 | 1 | Both sides roll **1d6 per engaged soldier**. Larger side picks best dice |
 | 2 | **Attacker** assigns dice to defenders; **Defender** aligns defense dice |
 | 3 | Apply **equipment bonuses** (+attack, +defense) |
