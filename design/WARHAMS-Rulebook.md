@@ -1111,7 +1111,11 @@ Your corporate HQ dispatches a full battalion. With the majority of orbital acce
 
 ### 💪 Victory 2: Military Supremacy
 
-**Field 4 full Squads of 7 H.A.M.S each (28 soldiers total).**
+**Have more than double the soldiers in play of the next largest player's army.**
+
+Count all living soldiers each player has on the board. If your soldier count is **strictly more than 2×** the count of the player with the second-largest army, you trigger the Final Round. Exactly 2× does **not** trigger — you need to exceed it.
+
+> **Example:** You have 14 soldiers. The other players have 4, 5, and 6. The second-largest army is 6. 6 × 2 = 12. You have 14, which is more than 12 — **triggered.** If the second-largest had 7 instead, 7 × 2 = 14 and you have 14 — **not triggered** (ties don't count).
 
 Your overwhelming military presence renders further conflict pointless. Rival HQs withdraw. You are promoted to conquer bigger, richer planets.
 
@@ -1207,7 +1211,7 @@ When a player meets any victory condition during their turn, the current round b
 | Path | Condition |
 |------|-----------|
 | 🚀 Spaceport Domination | Fully control 4 of 6 Spaceports (2-player: 5 of 6) |
-| 💪 Military Supremacy | Field 4 full Squads of 7 H.A.M.S (28 soldiers) |
+| 💪 Military Supremacy | More than 2× the soldiers of the next largest army (strictly more) |
 | 👑 Dominance | Accumulate 50 DP from equipped BACs + Battle Victory DP + Territory DP |
 | 🏁 Final Round | Any condition met → finish the round → highest DP breaks ties |
 

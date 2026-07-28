@@ -16,8 +16,8 @@
     {
       "id": "military",
       "name": "Military Supremacy",
-      "description": "Have 4 full squads of 7 soldiers — competition's HQs pull them back",
-      "requirement": "4 squads with 7 soldiers each (28 total)"
+      "description": "Have more than double the soldiers of the next largest army — competition's HQs pull them back",
+      "requirement": "Your living soldier count must be strictly more than 2x the count of the player with the second-largest army. Exactly 2x does not trigger (ties don't count). Example: you have 14, others have 4/5/6; second-largest is 6, 6x2=12, 14>12 = triggered."
     },
     {
       "id": "dominance",
