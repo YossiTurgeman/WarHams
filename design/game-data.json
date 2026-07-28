@@ -162,7 +162,7 @@
     },
     {
       "name": "Logistics",
-      "description": "Unlock and equip BACs, re-equip unlocked types, acquire BAC cards from Spaceport, recruit soldiers, create new Squads, activate field modules, recharge tapped modules, trade resources with other players (two-sided only) or bank (3:1). All may be done in any order, any number of times, resources permitting."
+      "description": "Unlock and equip BACs (first soldier free on unlock, pay cost for each additional), re-equip unlocked types, acquire BAC cards from Spaceport, recruit soldiers, create new Squads, activate field modules, recharge tapped modules, trade resources with other players (two-sided only) or bank (3:1). All may be done in any order, any number of times, resources permitting."
     },
     {
       "name": "Conspire",

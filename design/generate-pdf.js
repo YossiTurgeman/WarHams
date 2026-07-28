@@ -7,8 +7,8 @@
 const fs = require('fs');
 const PDFDocument = require('pdfkit');
 
-const INPUT = '/mnt/c/AMP/WarHams/design/WARHAMS-Rulebook.md';
-const OUTPUT = '/mnt/c/AMP/WarHams/design/WARHAMS-Rulebook.pdf';
+const INPUT = 'C:/AMP/WarHams/design/WARHAMS-Rulebook.md';
+const OUTPUT = 'C:/AMP/WarHams/design/WARHAMS-Rulebook.pdf';
 
 const md = fs.readFileSync(INPUT, 'utf-8');
 const lines = md.split('\n');

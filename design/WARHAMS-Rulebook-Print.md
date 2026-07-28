@@ -317,7 +317,7 @@ There are two ways to equip a BAC — **unlocking** a new type, or **re-equippin
 
 1. Choose a BAC card from your **hand** and place it face-up in the **Equipment Display** (shared reference area near the board). If the card is already in the Display, discard your copy instead.
 2. Place one of your **Control Flags** on that card in the Equipment Display — this marks that you have **permanently unlocked** this BAC type.
-3. Pay the card's resource cost for **each soldier** you wish to equip.
+3. **The first soldier is equipped for free** as part of unlocking. Pay the card's resource cost for **each additional soldier** you wish to equip.
 4. Attach the matching **equipment module** (magnetized part) to each equipped soldier's miniature in the correct slot (Head, Chest, Legs, Backpack, or Hands).
 5. **Add the card's DP value to your DP counter for each soldier equipped** (check the DP value printed on the BAC card).
 
@@ -329,7 +329,7 @@ If your Control Flag is already on a BAC card in the Equipment Display, you may 
 
 **Limit:** Only **8 copies** of each equipment module exist in the game. If all 8 are currently in use, no more soldiers can equip that type until a module is freed (destroyed modules return to the box and can be purchased again).
 
-> **Example:** You have an H.C.A.R (Heavy Caliber Assault Rifle) card in hand. You place it in the Equipment Display and put your red flag on it — H.C.A.R is now unlocked for you permanently. You pay 1 Industry + 1 Electricity per soldier and snap H.C.A.R rifle modules onto their Hands slot. Next turn, you recruit a new soldier and want to arm them too — just pay 1 Industry + 1 Electricity again, no card needed.
+> **Example:** You have an H.C.A.R (Heavy Caliber Assault Rifle) card in hand. You place it in the Equipment Display and put your red flag on it — H.C.A.R is now unlocked for you permanently. The first soldier is equipped for free. You pay 1 Industry + 1 Electricity for each additional soldier and snap H.C.A.R rifle modules onto their Hands slot. Next turn, you recruit a new soldier and want to arm them too — just pay 1 Industry + 1 Electricity again, no card needed.
 
 **Acquiring New BACs:**
 
@@ -912,8 +912,8 @@ The **modules on the minis are the source of truth** — not cards, not boards. 
 
 ### Equipping Rules
 
-- Choose a BAC card from your **hand** and pay the listed resource cost **per soldier** you wish to equip.
-- If this BAC type is not yet in the **Equipment Display**, place the card face-up there with a **reference module** on top. If it's already in the Equipment Display, discard the card (the reference is already visible).
+- Choose a BAC card from your **hand**. If this BAC type is not yet in the **Equipment Display**, place the card face-up there with a **reference module** on top and place one of your **Control Flags** on it to mark it as permanently unlocked — **the first soldier is equipped for free** as part of unlocking. If it's already in the Equipment Display, discard the card (the reference is already visible).
+- Pay the listed resource cost for **each additional soldier** you wish to equip.
 - Attach the matching **equipment module** (physical magnetized part) to each equipped soldier's miniature in the correct slot.
 - **Modules = Truth:** The physical modules on minis are the definitive record of who has what. The Equipment Display is for reference only.
 - **Flags are permanent:** Once your Control Flag is placed on a BAC card in the Equipment Display, it stays for the rest of the game — even if all your soldiers carrying that module die. Your flag marks that you've unlocked that BAC type and can pay to equip it again.

@@ -180,8 +180,8 @@ const actions = [
         name: "LOGISTICS: EQUIP & BUY",
         icon: "[]",
         lines: [
-            "Unlock BAC: card in Equipment Display + flag on it.",
-            "  Pay cost per soldier, attach module, add DP.",
+            "Unlock BAC: card in Display + flag on it.",
+            "  1st soldier FREE, pay cost for each extra.",
             "Re-equip unlocked BAC: pay cost per soldier, no card.",
             "  Add card DP to counter for each soldier equipped.",
             "Buy BAC: 3 of same resource at/near Spaceport/City.",
