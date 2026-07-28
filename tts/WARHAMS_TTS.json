@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785226939,
+  "EpochTime": 1785230297,
   "Date": "2026-07-28",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -55331,11 +55331,11 @@
         "posY": 1.02,
         "posZ": 8,
         "rotX": 0,
-        "rotY": 90,
+        "rotY": 0,
         "rotZ": 0,
-        "scaleX": 8,
+        "scaleX": 6.5,
         "scaleY": 0.2,
-        "scaleZ": 6
+        "scaleZ": 4
       },
       "Nickname": "Squad Actions Quick Reference",
       "Description": "Visible reference board: all Squad Actions (Move, Combat, Logistics, Conspire, Rest) with costs, timing, and key restrictions. Plus DP rules.",

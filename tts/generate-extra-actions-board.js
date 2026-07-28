@@ -19,9 +19,9 @@ if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
 const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-print", "dist", "fonts");
 
-// Canvas
-const W = 1600;
-const H = 1200;
+// Canvas — tight fit, no empty space
+const W = 1300;
+const H = 800;
 const BLACK = 0x0A0A12FF;
 const AMBER = 0xFFB000FF;
 const AMBER_R = 0xFF, AMBER_G = 0xB0, AMBER_B = 0x00;
@@ -100,15 +100,21 @@ const actions = [
         ],
     },
     {
-        name: "LOGISTICS",
+        name: "LOGISTICS: EQUIP & BUY",
         icon: "[]",
         lines: [
-            "Unlock BAC: place card in Equipment Display + flag on it.",
-            "  Pay resource cost per soldier, attach module, add DP.",
-            "Re-equip unlocked BAC: pay cost per soldier, no card needed.",
+            "Unlock BAC: card in Equipment Display + flag on it.",
+            "  Pay cost per soldier, attach module, add DP.",
+            "Re-equip unlocked BAC: pay cost per soldier, no card.",
             "  Add card DP to counter for each soldier equipped.",
-            "Buy BAC: 3 of same resource at/near Spaceport or City.",
+            "Buy BAC: 3 of same resource at/near Spaceport/City.",
             "Collect BACs: Squad on spaceport w/ container takes all.",
+        ],
+    },
+    {
+        name: "LOGISTICS: RECRUIT & TRADE",
+        icon: "[]",
+        lines: [
             "Recruit Soldier: 1 Local Favor + 1 Oil + 1 Industry +",
             "  1 Electricity at/near City. Max 7 per Squad.",
             "Create Squad: recruitment cost x 5+ soldiers at City.",
@@ -142,34 +148,36 @@ const actions = [
     const img = new Jimp({ width: W, height: H, color: BLACK });
 
     // Outer amber border
-    const margin = 20;
+    const margin = 16;
     strokeRect(img, margin, margin, W - 1 - margin, H - 1 - margin, BORDER, AMBER);
 
     // Title
     const titleFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-32-white/open-sans-32-white.fnt"));
-    await printCentered(img, titleFont, "SQUAD ACTIONS -- QUICK REFERENCE", 45, { r: AMBER_R, g: AMBER_G, b: AMBER_B });
+    await printCentered(img, titleFont, "SQUAD ACTIONS -- QUICK REFERENCE", 35, { r: AMBER_R, g: AMBER_G, b: AMBER_B });
 
     // Subtitle
     const subFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-16-white/open-sans-16-white.fnt"));
-    await printCentered(img, subFont, "Each Squad takes 2 actions per turn. Any action may be chosen twice.", 90, { r: 0xAA, g: 0xAA, b: 0xBB });
+    await printCentered(img, subFont, "Each Squad takes 2 actions per turn. Any action may be chosen twice.", 78, { r: 0xAA, g: 0xAA, b: 0xBB });
 
-    // Action sections -- 2 columns
+    // Action sections -- 2 balanced columns
     const bodyFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-12-black/open-sans-12-black.fnt"));
     const nameFont = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-16-white/open-sans-16-white.fnt"));
 
-    const colW = 760;
-    const col1X = 50;
-    const col2X = 820;
-    const startY = 130;
+    const colW = 620;
+    const col1X = 30;
+    const col2X = 670;
+    const startY = 115;
     const lineH = 22;
-    const sectionGap = 30;
+    const sectionGap = 25;
 
+    // Balanced: Left = Move + Combat + Conspire, Right = Logistics Equip + Logistics Recruit + Rest
     const layout = [
         { col: 0, action: actions[0] }, // Move
         { col: 0, action: actions[1] }, // Combat
-        { col: 1, action: actions[2] }, // Logistics
-        { col: 1, action: actions[3] }, // Conspire
-        { col: 1, action: actions[4] }, // Rest
+        { col: 0, action: actions[4] }, // Conspire (index 4 after split)
+        { col: 1, action: actions[2] }, // Logistics: Equip & Buy
+        { col: 1, action: actions[3] }, // Logistics: Recruit & Trade
+        { col: 1, action: actions[5] }, // Rest (index 5 after split)
     ];
 
     let yCol0 = startY;
@@ -182,8 +190,8 @@ const actions = [
 
         // Section background panel
         const panelH = 50 + act.lines.length * lineH + 15;
-        fillRect(img, x, y, x + colW - 20, y + panelH, 0x141422FF);
-        strokeRect(img, x, y, x + colW - 20, y + panelH, 2, 0xFFB00044);
+        fillRect(img, x, y, x + colW - 10, y + panelH, 0x141422FF);
+        strokeRect(img, x, y, x + colW - 10, y + panelH, 2, 0xFFB00044);
 
         // Action name
         await printText(img, nameFont, act.icon + "  " + act.name, x + 15, y + 12, { r: AMBER_R, g: AMBER_G, b: AMBER_B });
@@ -200,8 +208,8 @@ const actions = [
     }
 
     // Footer
-    await printCentered(img, subFont, "Territory DP: +1 when you claim a hex (not Landing Zones). -1 if you lose it, new owner +1.", H - 70, { r: 0x88, g: 0x88, b: 0x99 });
-    await printCentered(img, subFont, "Battle DP: Net wounds inflicted (up to +3). DP are a tie-breaker. 50 DP triggers Final Round.", H - 50, { r: 0x88, g: 0x88, b: 0x99 });
+    await printCentered(img, subFont, "Territory DP: +1 when you claim a hex (not Landing Zones). -1 if you lose it, new owner +1.", H - 60, { r: 0x88, g: 0x88, b: 0x99 });
+    await printCentered(img, subFont, "Battle DP: Net wounds inflicted (up to +3). DP are a tie-breaker. 50 DP triggers Final Round.", H - 40, { r: 0x88, g: 0x88, b: 0x99 });
 
     const out = path.join(outDir, "extra-actions-board.png");
     await img.write(out);
