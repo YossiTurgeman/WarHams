@@ -250,7 +250,7 @@ function buildAdvancedBACDeck() {
     });
     const deck = baseObj("Deck", "Advanced BAC Deck",
         "Level 2 BAC cards (C.A.P upgrades, L.P.M, P.A.E.H). Only accessible after unlocking the prerequisite BAC type. 25 cards.",
-        62, 1.5, 4, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
+        62, 1.5, 16, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
