@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785310385,
+  "EpochTime": 1785310504,
   "Date": "2026-07-29",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -55418,7 +55418,7 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomPDF": {
-        "PDFUrl": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/design/WARHAMS-Rulebook.pdf",
+        "PDFUrl": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/design/WARHAMS-Rulebook.pdf?v14",
         "PDFPassword": "",
         "PDFPage": 0,
         "PDFPageOffset": 0

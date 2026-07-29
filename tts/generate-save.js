@@ -1642,7 +1642,7 @@ objects.push(dealBacsButton);
 // A visible Custom_Tile board listing every Squad Action with its key
 // rules replaces the old Quick Reference PDF book. The full rulebook
 // remains as a Custom_PDF that players right-click to Open.
-const RULEBOOK_PDF_URL = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/design/WARHAMS-Rulebook.pdf";
+const RULEBOOK_PDF_URL = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/design/WARHAMS-Rulebook.pdf?v14";
 const EXTRA_ACTIONS_BOARD_URL = `${SOLDIER_BASE}/extra-actions-board.png?r5`;
 
 // Extra Actions reference board — locked Custom_Tile south of the
