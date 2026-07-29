@@ -185,6 +185,8 @@ const actions = [
             "Re-equip unlocked BAC: pay cost per soldier, no card.",
             "  Add card DP to counter for each soldier equipped.",
             "Buy BAC: 3 of same resource at/near Spaceport/City.",
+            "Advanced BAC: separate deck next to Conspire Deck.",
+            "  Draw 1 for 3 same-type resources. C.A.P, L.P.M, P.A.E.H.",
             "Collect BACs: Squad on spaceport w/ container takes all.",
         ],
     },
@@ -194,7 +196,7 @@ const actions = [
         lines: [
             "Recruit Soldier: 1 Local Favor + 1 Oil + 1 Industry +",
             "  1 Electricity at/near City. Max 7 per Squad.",
-            "Create Squad: recruitment cost x 5+ soldiers at City.",
+            "Create Squad: recruitment cost x 3+ soldiers at City.",
             "  Max 4 Squads. New Squad placed at that City.",
             "Trade: player-to-player (both give 1+) or Bank 3:1.",
             "  Resources only -- no cards or equipment.",
@@ -225,6 +227,7 @@ const actions = [
 const footerLines = [
     "Territory DP: +1 when you claim a hex (not Landing Zones). -1 if you lose it, new owner +1.",
     "Battle DP: Net wounds inflicted (up to +3). DP are a tie-breaker. 50 DP triggers Final Round.",
+    "Morale: At end of round, gain 1 resource token per 3 wounds suffered that round.",
 ];
 
 (async () => {

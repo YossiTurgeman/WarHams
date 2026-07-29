@@ -1643,7 +1643,7 @@ objects.push(dealBacsButton);
 // rules replaces the old Quick Reference PDF book. The full rulebook
 // remains as a Custom_PDF that players right-click to Open.
 const RULEBOOK_PDF_URL = "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/design/WARHAMS-Rulebook.pdf";
-const EXTRA_ACTIONS_BOARD_URL = `${SOLDIER_BASE}/extra-actions-board.png?r4`;
+const EXTRA_ACTIONS_BOARD_URL = `${SOLDIER_BASE}/extra-actions-board.png?r5`;
 
 // Extra Actions reference board — locked Custom_Tile south of the
 // combat zone, visible to all players without clicking.
@@ -2089,13 +2089,20 @@ const saveFile = {
         "1. Place hex tiles manually to build the planet board",
         "2. Each player takes a soldier bag and Control Flag bag (10 minis = 2 squads of 5; squad/soldier numbers printed on bases)",
         "3. Place 10 soldiers (2 squads of 5) on starting hexes — two Control Flags are pre-staged beside your Squads for your Landing Zones",
-        "4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)",
+        "4. Deal 3 BAC cards each from the Spaceport Deck, then draft (pick 1, pass 2 left, etc.)",
         "5. Shuffle the Conspire Deck",
-        "6. Advanced BAC Deck (C.A.P, L.P.M, P.A.E.H) is separate — unlock prerequisite BAC first to access",
+        "6. Advanced BAC Deck (C.A.P, L.P.M, P.A.E.H) is separate — face-down next to Conspire Deck. Draw from it by spending 3 same-type resources at a Spaceport/City. Prerequisite BAC must be unlocked to equip.",
+        "", "SQUAD ACTIONS (2 per Squad per turn):",
+        "- Move: Move Squad 1 hex (2 with Jump Jets)",
+        "- Combat: Engage enemy Squad within 1 hex",
+        "- Logistics: Purchase/Equip/Trade BACs, Recruit soldiers, Create new Squads (min 3)",
+        "- Conspire: Draw a Conspire Card",
+        "- Rest: Roll 1d3, heal that many wounds in the Squad",
         "", "VICTORY CONDITIONS:",
         "- Spaceport Domination: 5/6 spaceports (2p) or 4/6 (3-4p)",
         "- Military Supremacy: More than 2x the soldiers of the next largest army",
         "- Dominance: 50 DP from equipped BACs + Battle Victory DP + Territory DP + Bunker DP",
+        "", "MORALE COMPENSATION: At end of round, gain 1 resource token per 3 wounds suffered that round",
     ].join('\n'),
     Rules: "",
     PlayerTurn: "",

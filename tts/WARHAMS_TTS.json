@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1785302614,
+  "EpochTime": 1785310385,
   "Date": "2026-07-29",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -15,7 +15,7 @@
   "PlayArea": 1,
   "Table": "Table_None",
   "Sky": "Sky_Museum",
-  "Note": "W.A.R H.A.M.S: The Battle for Planet X\n========================================\n\n2-4 Players | Sci-Fi Corporate Military Conquest\n\nSETUP:\n1. Place hex tiles manually to build the planet board\n2. Each player takes a soldier bag and Control Flag bag (10 minis = 2 squads of 5; squad/soldier numbers printed on bases)\n3. Place 10 soldiers (2 squads of 5) on starting hexes — two Control Flags are pre-staged beside your Squads for your Landing Zones\n4. Deal 3 BAC cards each, then draft (pick 1, pass 2 left, etc.)\n5. Shuffle the Conspire Deck\n6. Advanced BAC Deck (C.A.P, L.P.M, P.A.E.H) is separate — unlock prerequisite BAC first to access\n\nVICTORY CONDITIONS:\n- Spaceport Domination: 5/6 spaceports (2p) or 4/6 (3-4p)\n- Military Supremacy: More than 2x the soldiers of the next largest army\n- Dominance: 50 DP from equipped BACs + Battle Victory DP + Territory DP + Bunker DP",
+  "Note": "W.A.R H.A.M.S: The Battle for Planet X\n========================================\n\n2-4 Players | Sci-Fi Corporate Military Conquest\n\nSETUP:\n1. Place hex tiles manually to build the planet board\n2. Each player takes a soldier bag and Control Flag bag (10 minis = 2 squads of 5; squad/soldier numbers printed on bases)\n3. Place 10 soldiers (2 squads of 5) on starting hexes — two Control Flags are pre-staged beside your Squads for your Landing Zones\n4. Deal 3 BAC cards each from the Spaceport Deck, then draft (pick 1, pass 2 left, etc.)\n5. Shuffle the Conspire Deck\n6. Advanced BAC Deck (C.A.P, L.P.M, P.A.E.H) is separate — face-down next to Conspire Deck. Draw from it by spending 3 same-type resources at a Spaceport/City. Prerequisite BAC must be unlocked to equip.\n\nSQUAD ACTIONS (2 per Squad per turn):\n- Move: Move Squad 1 hex (2 with Jump Jets)\n- Combat: Engage enemy Squad within 1 hex\n- Logistics: Purchase/Equip/Trade BACs, Recruit soldiers, Create new Squads (min 3)\n- Conspire: Draw a Conspire Card\n- Rest: Roll 1d3, heal that many wounds in the Squad\n\nVICTORY CONDITIONS:\n- Spaceport Domination: 5/6 spaceports (2p) or 4/6 (3-4p)\n- Military Supremacy: More than 2x the soldiers of the next largest army\n- Dominance: 50 DP from equipped BACs + Battle Victory DP + Territory DP + Bunker DP\n\nMORALE COMPENSATION: At end of round, gain 1 resource token per 3 wounds suffered that round",
   "Rules": "",
   "PlayerTurn": "",
   "DrawImage": "",
@@ -55361,7 +55361,7 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/extra-actions-board.png?r4",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/extra-actions-board.png?r5",
         "ImageSecondaryURL": "",
         "ImageScalar": 1,
         "WidthScale": 0,
