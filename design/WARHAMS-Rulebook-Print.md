@@ -787,6 +787,12 @@ Modules left on the hex may be picked up by the active player's soldier occupyin
 
 After a death, check if any surviving squadmates are now **beyond 2 hexes** from all other squadmates. If so, those soldiers are **disconnected** — they fight alone (own dice only, no Squad-level BAC effects), identical to the J.J disconnection rules. Disconnected soldiers **must** use their next Move action to move back within 2 hexes of a squadmate. Until they rejoin, they cannot benefit from effects like S.L.I.M.E crew, L.P.M spotting, or other Squad-level abilities.
 
+#### 6. Morale Compensation
+
+At the **end of each round**, any player who suffered **3 or more wounds** (damage pegs placed on their soldiers, including kills) during that round gains **1 free resource token** of their choice for every full **3 wounds** suffered.
+
+> *Example: 7 wounds = 2 resource tokens. 2 wounds = 0.*
+
 ---
 
 ### 💥 Civilian Damage Rule
@@ -1278,6 +1284,7 @@ When a player meets any victory condition during their turn, the current round b
 | 6 | Defense beats attack by **2+** = **Counterattack** (chains naturally until a roll fails to trigger) |
 | 7 | **Defender Withdrawal**: defender may move surviving soldiers 1 hex away (free) |
 | 8 | **Battle Victory DP**: side that inflicted more wounds earns DP = difference, up to 3 |
+| — | **End of Round**: Morale Compensation — 1 resource token per 3 wounds suffered this round |
 
 ### Victory Conditions
 
