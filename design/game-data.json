@@ -136,17 +136,11 @@
         "description": "All standard BAC types. Used for starting hands and regular purchases."
       },
       "advanced_bac_deck": {
-        "cards": 20,
+        "cards": 25,
         "types": 5,
         "copies_each": 5,
-        "description": "Level 2 BACs (C.A.P upgrades, L.P.M, P.A.E.H). Shuffled after seeding the Advanced BAC Area."
+        "description": "Level 2 BACs (C.A.P upgrades, L.P.M, P.A.E.H). Face-down deck next to the Conspire Deck."
       }
-    },
-    "advanced_bac_area": {
-      "face_up_cards": 5,
-      "seeding": "one copy of each Advanced BAC type (C.A.P Chest, C.A.P Head, C.A.P Legs, L.P.M, P.A.E.H) placed face-up at setup",
-      "refill": "draw from top of Advanced BAC Deck when a card is taken",
-      "prerequisite": "must have unlocked the corresponding S.A.P type"
     }
   },
   "turn_phases": [
@@ -731,12 +725,9 @@
     "spaceport_deck_types": 15,
     "advanced_bac_deck_cards": 25,
     "advanced_bac_deck_types": 5,
-    "advanced_bac_area_face_up": 5,
     "total_conspire_cards": 72,
     "conspire_unique_types": 24,
-    "conspire_copies_each": 3,
-    "advanced_bac_total_cards": 25,
-    "advanced_bac_deck_after_seeding": 20
+    "conspire_copies_each": 3
   },
   "components_summary": {
     "hex_tiles": 61,

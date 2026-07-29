@@ -230,9 +230,8 @@ objects.push(buildBACDeck());
 
 function buildAdvancedBACDeck() {
     const cards = [];
-    const faceUpCards = [];
     const allCustomDecks = {};
-    gameData.basic_armament_cards.filter(bac => bac.level === 2).forEach((bac, typeIdx) => {
+    gameData.basic_armament_cards.filter(bac => bac.level === 2).forEach(bac => {
         const faceURL = bacFaceURL(bac.abbr);
         for (let c = 0; c < bac.copies; c++) {
             const thisDeckId = nextDeckDefId++;
@@ -246,21 +245,12 @@ function buildAdvancedBACDeck() {
             card.SidewaysCard = false;
             card.HideWhenFaceDown = true;
             card.Hands = true;
-            if (c === 0) {
-                card.Transform.posX = 53;
-                card.Transform.posY = 1.2;
-                card.Transform.posZ = -13 + typeIdx * -1;
-                card.Transform.rotY = 270;
-                card.Tags = ["advanced-bac-area"];
-                faceUpCards.push(card);
-            } else {
-                cards.push(card);
-            }
+            cards.push(card);
         }
     });
     const deck = baseObj("Deck", "Advanced BAC Deck",
-        "Level 2 BAC cards (C.A.P upgrades, L.P.M, P.A.E.H). Only accessible after unlocking the prerequisite BAC type. 20 cards in the deck; 5 are face-up in the Advanced BAC Area.",
-        53, 1.5, -9.5, { rotY: 270, rotZ: 180, color: { r: 0.8, g: 0.6, b: 0.3 } });
+        "Level 2 BAC cards (C.A.P upgrades, L.P.M, P.A.E.H). Only accessible after unlocking the prerequisite BAC type. 25 cards.",
+        62, 1.5, 4, { rotY: 180, rotZ: 180, color: { r: 0.3, g: 0.2, b: 0.5 } });
     deck.DeckIDs = cards.map(c => c.CardID);
     deck.CustomDeck = allCustomDecks;
     deck.HideWhenFaceDown = true;
@@ -268,11 +258,9 @@ function buildAdvancedBACDeck() {
     deck.SidewaysCard = false;
     deck.Tags = ["advanced-bac-deck"];
     deck.ContainedObjects = cards;
-    return { deck, faceUpCards };
+    return deck;
 }
-const advancedBac = buildAdvancedBACDeck();
-objects.push(advancedBac.deck);
-advancedBac.faceUpCards.forEach(c => objects.push(c));
+objects.push(buildAdvancedBACDeck());
 
 // ─── 3. CONSPIRE DECK (72 cards) ────────────────────────────────────
 function buildConspireDeck() {
@@ -1012,14 +1000,6 @@ pbBoard.CustomImage = {
     CustomTile: { Type: 0, Thickness: 0.1, Stackable: false, Stretch: true },
 };
 objects.push(pbBoard);
-
-// ─── 17b-ii. ADVANCED BAC AREA BOARD (locked Custom_Tile) ───────────
-const advancedBacBoard = baseObj("Custom_Tile", "Advanced BAC Area",
-    "Locked board with 5 slots for Advanced (Level 2) BAC cards. Only accessible after unlocking the prerequisite BAC type.",
-    53, 1.02, -15,
-    { rotY: 270, scaleX: 3.17, scaleY: 0.2, scaleZ: 2.5,
-      color: { r: 0.3, g: 0.2, b: 0.5 }, locked: true, grid: false });
-objects.push(advancedBacBoard);
 
 // ─── 17c. UNLOADING ZONE BOARD (locked Custom_Tile) ─────────────────
 // Rectangular companion to the Planet Bound Area board: black with a

@@ -151,7 +151,7 @@ SVG wireframes exist in `design/assets/` for layout reference. These are **code-
 
 > **Deck Split:** The 100 BAC cards are divided into two decks:
 > - **Spaceport Deck (75 cards):** 15 standard BAC types × 5 copies. Used for starting hands and regular purchases.
-> - **Advanced BAC Deck (25 cards):** 5 Level 2 BAC types × 5 copies (3 C.A.P armor upgrades + L.P.M + P.A.E.H). Require a prerequisite BAC type to be unlocked first. At setup, one copy of each Advanced type is placed face-up in the **Advanced BAC Area** (5 cards); the remaining 20 are shuffled as the Advanced BAC Deck.
+> - **Advanced BAC Deck (25 cards):** 5 Level 2 BAC types × 5 copies (3 C.A.P armor upgrades + L.P.M + P.A.E.H). Require a prerequisite BAC type to be unlocked first. Shuffled face-down and placed next to the Conspire Deck.
 
 ---
 
