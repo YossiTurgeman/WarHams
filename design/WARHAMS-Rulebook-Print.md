@@ -352,12 +352,12 @@ Pay **1 Local Favor + 1 Oil + 1 Industry + 1 Electricity** while your Squad is i
 
 **Creating New Squads:**
 
-Pay the soldier recruitment cost **× the number of soldiers** in the new Squad (minimum **5 soldiers** to form a Squad).
+Pay the soldier recruitment cost **× the number of soldiers** in the new Squad (minimum **3 soldiers** to form a Squad).
 
 - Maximum **4 Squads** per player.
 - The new Squad is placed at the City where it was recruited.
 
-> **Example:** Creating a new 5-soldier Squad costs 5 × (1 Local Favor + 1 Oil + 1 Industry + 1 Electricity) = 5 Local Favor + 5 Oil + 5 Industry + 5 Electricity.
+> **Example:** Creating a new 3-soldier Squad costs 3 × (1 Local Favor + 1 Oil + 1 Industry + 1 Electricity) = 3 Local Favor + 3 Oil + 3 Industry + 3 Electricity.
 
 ---
 
@@ -1259,7 +1259,7 @@ When a player meets any victory condition during their turn, the current round b
 | Action | Cost | Location |
 |--------|------|----------|
 | Recruit 1 Soldier | 1 Local Favor + 1 Oil + 1 Industry + 1 Electricity | City |
-| Create New Squad (min 5) | 5× soldier cost | City |
+| Create New Squad (min 3) | 3× soldier cost | City |
 | Draw from Spaceport Deck | 3 same-type resource tokens | Spaceport or City |
 | Conspire | Costs 1 of the Squad's 2 actions | Anywhere |
 | Untap P.L.A.S.T.E.R | 1 Electricity | City or Spaceport |

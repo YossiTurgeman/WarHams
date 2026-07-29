@@ -224,7 +224,7 @@
     "max_squads": 4,
     "damage_capacity": 3,
     "new_soldier_cost": "1 Local Favor + 1 Oil + 1 Industry + 1 Electricity (must be in/near city)",
-    "new_squad_cost": "5x soldier cost (minimum 5 soldiers)"
+    "new_squad_cost": "3x soldier cost (minimum 3 soldiers)"
   },
   "squad_coherency": {
     "max_spread": 2,
