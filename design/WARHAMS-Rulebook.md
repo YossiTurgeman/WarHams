@@ -467,16 +467,26 @@ Resolve mandatory combat on every hex shared by Separatists and player soldiers.
 
 #### Conquering Bases
 
-- **Entering an unconquered base** (by moving onto its hex) triggers **7 base defenders** immediately. This combat is part of the Move action and does not cost an additional action (see **Action: Move — Entering an Unconquered Separatist Base**).
+- **Entering an unconquered base** (by moving onto its hex) triggers its **garrison** of base defenders. A fresh base has **7 defenders**; a previously assaulted but unconquered base has only its **surviving defenders**. This combat is part of the Move action and does not cost an additional action (see **Action: Move — Entering an Unconquered Separatist Base**).
 - The defenders are dug in but apply the Separatist defense penalty like all Separatists.
 - Base defenders **do not withdraw** between rounds. The attacker may **Press the Attack** for up to 3 rounds to attempt to wear them down (see **Step 7: Withdrawal & Press the Attack**).
-- Defeat all 7 defenders to conquer the base, then place your Control Flag on its hex.
-- Surviving defenders become roaming Separatists and follow the Phase 4 procedure.
+- **After the assault ends** (all 3 rounds fought, attacker ends combat, or either side is eliminated), resolve one of three outcomes based on how many defenders were killed:
+
+**All 7 killed — Conquest:**
+Place your Control Flag on the base hex. The base is conquered. Skip to the conquered-base benefits below.
+
+**More than half killed (4–6) — Route:**
+The surviving defenders break and flee — they become roaming Separatists and follow the Phase 4 procedure. The base is **abandoned** with no garrison. If the attacker has surviving soldiers on the hex, they claim it via **Claim Hexes** (conquering the base — place Control Flag). If no attacker soldiers survive, the base remains unconquered and empty — the next Squad to enter the base conquers it **without combat** (place Control Flag, no defenders spawn).
+
+**Half or fewer killed (0–3) — Hold:**
+The surviving defenders hold firm. They remain at the base as a **reduced garrison** (track the remaining count — use a spare token or die). They do **not** participate in Phase 4 (they are dug in). The attacker is **repelled**: surviving attacking soldiers must withdraw 1 hex away from the base (free, same movement rules as defender withdrawal). The base remains unconquered. A future assault fights only the surviving garrison — not a fresh 7.
+
+- **Reinforcements:** If the Separatist Die spawns Separatists at an unconquered base with a reduced garrison, the spawned forces **reinforce** the garrison (add to the defender count, up to a maximum of 7). At a fresh or abandoned base, spawns work normally (3 roaming Separatists on the hex).
 - Conquered bases **stop spawning naturally** (their printed number no longer triggers spawns).
 - The controller gains the **Instigate Uprising** ability described in Step 1.
 - Whenever the Separatist Die matches a conquered base's printed number, that base's controller immediately gains **1 Local Favor**, regardless of who rolled the die.
 
-> ⚠️ **Warning:** Don't attack a base unless you can handle all 7 defenders! Survivors scatter toward resource hexes.
+> ⚠️ **Warning:** Don't attack a base unless you can commit to the fight. Kill all 7 to conquer, or at least 4 to route the survivors. If you kill 3 or fewer, the defenders hold and your soldiers are repelled — but you've softened the garrison for a future assault.
 
 ---
 
@@ -774,7 +784,7 @@ Combat also ends automatically if:
 - All defending soldiers have **withdrawn or been killed**, or
 - All attacking soldiers have been **killed**.
 
-> **Separatist Base Defenders** do not withdraw — they are dug in. The attacker may Press the Attack for up to 3 full rounds to whittle them down. Only the attacker decides when to end a base assault.
+> **Separatist Base Defenders** do not withdraw — they are dug in. The attacker may Press the Attack for up to 3 full rounds to whittle them down. Only the attacker decides when to end a base assault. If the assault ends without conquest, resolve the outcome in **Conquering Bases** (Route or Hold).
 
 > **Phase 4 Separatist Combat** (roaming Separatists entering a player's hex) is **1 round only**. Separatists do not Press the Attack.
 
