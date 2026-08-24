@@ -220,13 +220,23 @@ The shared **Round Tracker** begins at Round 1. Each player's tracker begins at 
 
 ### Phase 1: Resource Production
 
-The active player rolls **2d6 + 1 Separatist Die** (a grey d6). All three dice produce resources normally — for each **unique number** rolled, place 1 corresponding resource token on **every** hex tile bearing that number token. Duplicate dice do not produce extra resources — rolling the same number twice still produces only once for that number. This includes hexes currently occupied by Separatist forces.
+The active player rolls **2d6 + 1 Separatist Die** (a grey d6). The Separatist Die serves **two roles**:
 
-> **Example:** You roll 2, 4, and the Separatist Die shows 6. Every hex with a "2", "4", or "6" number token receives 1 resource token of its type.
+1. **Resource production** — Like the other two dice, the Separatist Die produces resources. For each **unique number** rolled on any of the three dice, place 1 corresponding resource token on **every** hex tile bearing that number token. Duplicate dice do not produce extra resources — rolling the same number twice still produces only once for that number. This includes hexes currently occupied by Separatist forces.
+2. **Separatist Base result** — After resource production, compare the Separatist Die's result to the **printed numbers on the three Separatist Bases** (2, 4, 6). If it matches a base's number, resolve the base result immediately (see below). The other two dice **never** trigger base results.
+
+> **Example:** You roll 2, 4, and the Separatist Die shows 6. Every hex with a "2", "4", or "6" number token receives 1 resource token of its type. Then, because the Separatist Die shows 6 — matching a Separatist Base's printed number — resolve the base result: if that base is **unconquered**, spawn 3 Separatists on it; if it has been **conquered**, its controller immediately gains 1 Local Favor.
 >
-> **Example (Doubles):** You roll 3, 3, and the Separatist Die shows 5. Every hex with a "3" token receives 1 resource token (not 2 — duplicates don't double production), and every hex with a "5" token receives 1 resource token. The doubled 3s also trigger a BAC delivery (see Doubles below).
+> **Example (Doubles):** You roll 3, 3, and the Separatist Die shows 5. Every hex with a "3" token receives 1 resource token (not 2 — duplicates don't double production), and every hex with a "5" token receives 1 resource token. The doubled 3s also trigger a BAC delivery (see Doubles below). The Separatist Die shows 5, which does not match any base (2, 4, 6), so no base result occurs.
+>
+> **Example (Conquered Base):** You roll 2, 5, and the Separatist Die shows 4. Resources are placed on hexes with "2", "4", and "5" tokens. The Separatist Die matches the base printed with 4. If that base is unconquered, spawn 3 Separatists there. If it has been conquered, its controller immediately gains 1 Local Favor — regardless of which player rolled the die.
 
-**Separatist Base Result** — After producing resources, resolve the grey Separatist Die using **Phase 4: Separatists — Base Results**. A matching unconquered base spawns Separatists; a matching conquered base instead gives 1 Local Favor directly to its controller. The player who rolled the die does not matter. Newly spawned forces remain at their base until Phase 4.
+**Separatist Base Result** — After producing resources, check the **grey Separatist Die** against the printed numbers on the three Separatist Bases (2, 4, 6). If the die matches a base's number, resolve immediately:
+
+- **Unconquered base:** Spawn **3 Separatists** on that base. If fewer than 3 miniatures remain in the supply, spawn as many as possible.
+- **Conquered base:** Its controller immediately gains **1 Local Favor** from the supply, regardless of which player rolled the die.
+
+The other two resource dice never trigger base results. Newly spawned forces remain at their base until Phase 4. A conquered base no longer spawns naturally. (Full details in **Phase 4: Separatists — Base Results**.)
 
 **Doubles** — If two of the three dice show the same number (e.g., 3, 3, 5):
 
@@ -486,7 +496,7 @@ Advance the Round Tracker by 1 and reset every player tracker to **TURN READY**.
 
 | Phase | Name | Summary |
 |-------|------|---------|
-| 1 | Resource Production | Roll 3d6, spawn resources on matching hexes. Doubles/triples = BAC drops at spaceports |
+| 1 | Resource Production | Roll 2d6 + 1 grey Separatist Die. All 3 produce resources on matching hexes. Separatist Die also triggers base results (2, 4, 6). Doubles/triples = BAC drops at spaceports |
 | 2 | Activation Phase | Each Squad takes 2 actions: Move, Combat, Logistics, Conspire, or Rest. Any may be repeated |
 | 3 | Salvage & Resource Gathering | Collect salvage, then 1 token from each distinct resource hex occupied by your Squads; B.E.A.R grants +1 on its hex |
 | 4 | Separatists | Uprising → consume → move → combat |
