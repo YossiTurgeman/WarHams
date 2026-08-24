@@ -469,6 +469,7 @@ Resolve mandatory combat on every hex shared by Separatists and player soldiers.
 
 - **Entering an unconquered base** (by moving onto its hex) triggers **7 base defenders** immediately. This combat is part of the Move action and does not cost an additional action (see **Action: Move — Entering an Unconquered Separatist Base**).
 - The defenders are dug in but apply the Separatist defense penalty like all Separatists.
+- Base defenders **do not withdraw** between rounds. The attacker may **Press the Attack** for up to 3 rounds to attempt to wear them down (see **Step 7: Withdrawal & Press the Attack**).
 - Defeat all 7 defenders to conquer the base, then place your Control Flag on its hex.
 - Surviving defenders become roaming Separatists and follow the Phase 4 procedure.
 - Conquered bases **stop spawning naturally** (their printed number no longer triggers spawns).
@@ -532,7 +533,7 @@ During a **Combat action** in the Activation Phase, they may declare an attack w
 
 ### Combat Resolution — Step by Step
 
-Once combat is declared, resolve it by following Step 0 and then Steps 1 through 8 in order.
+Once combat is declared, resolve it by following Step 0 (once), then up to **3 Combat Rounds** (Steps 1–6), and finally Steps 7 and 8. The first round is mandatory; after each round, the defender may withdraw and the attacker may choose to **Press the Attack** for another round (see Step 7).
 
 ---
 
@@ -555,7 +556,13 @@ The attacker resolves any pre-combat weapon attacks:
 
 > **Important:** Soldiers killed during Step 0 are removed immediately and do not participate in Steps 1–8. Their dice are not rolled. If the defending Squad is completely eliminated in Step 0, combat ends — proceed directly to Step 7 (Defender Withdrawal — no one left to withdraw) and Step 8 (Battle Victory DP).
 
+> **Step 0 happens once.** Pre-combat attacks (B.A.S.R, S.L.I.M.E) and pre-combat cards are not repeated in subsequent rounds. Soldiers that skipped normal combat due to pre-combat weapon restrictions (B.A.S.R sniper, S.L.I.M.E crew) do not participate in any round.
+
 ---
+
+#### Combat Rounds (Steps 1–6)
+
+Each combat round follows Steps 1 through 6 in order. The first round is mandatory. After each round, resolve Step 7 (Withdrawal & Press the Attack) to determine whether another round occurs. A maximum of **3 rounds** may be fought.
 
 #### Step 1: Roll Attack & Defense Dice
 
@@ -658,7 +665,7 @@ After equipment bonuses are applied, both players may play **Combat Conspire Car
 1. **Defender** plays Combat Conspire Cards first.
 2. **Attacker** responds with their own Combat Conspire Cards second.
 
-Each player may play **any number** of eligible Combat Conspire Cards. Tactical Conspire Cards cannot be played during this step.
+Each player may play **any number** of eligible Combat Conspire Cards. Tactical Conspire Cards cannot be played during this step. Cards played in one round are spent and cannot be replayed in later rounds, but players may play additional eligible cards from their hand in each round's Step 4.
 
 | Example Conspire Card | Effect |
 |---|---|
@@ -683,7 +690,7 @@ For each **HIT** (attack die > defense die):
 
 **Combat Winner**
 
-The player who inflicted **more total damage** across all matchups in this combat is the **combat winner**.
+The player who inflicted **more total damage** across all matchups **in this round** is the **round winner**. (Overall combat winner is determined by total wounds across all rounds — see Step 8.)
 
 **Death Threshold**
 
@@ -741,18 +748,39 @@ When a Counterattack is triggered:
 
 ---
 
-#### Step 7: Defender Withdrawal
+#### Step 7: Withdrawal & Press the Attack
 
-After all counterattacks are resolved and damage is applied, the **defender** may choose to **withdraw** any or all of their surviving engaged soldiers. Each withdrawing soldier moves **1 hex** away from the attacker's position, following normal movement rules (squad coherency, board wrapping, cannot move through Separatist-occupied hexes).
+After each combat round (Steps 1–6) resolves — including all counterattack chains — proceed here before starting another round or ending combat.
+
+**7a — Defender Withdrawal:**
+
+The defender may withdraw any or all of their surviving engaged soldiers. Each withdrawing soldier moves **1 hex** away from the attacker's position, following normal movement rules (squad coherency, board wrapping, cannot move through Separatist-occupied hexes).
 
 - Withdrawal is **free** and does not cost an action.
 - The defender chooses which soldiers withdraw and which stay.
 - A soldier with no valid hex to withdraw to (surrounded, edge-locked, or blocked by Separatists) **stays put**.
 - Only the defender may withdraw. The attacker does not advance.
+- Soldiers that withdraw are **out of this combat** — they do not participate in later rounds.
+
+**7b — Press the Attack:**
+
+If fewer than 3 rounds have been fought and at least one defending soldier remains engaged, the **attacker** chooses:
+
+- **Press the Attack** — Another combat round begins at Step 1. Only soldiers still engaged on both sides participate. Soldiers that withdrew, died, or were eliminated in Step 0 are out.
+- **End Combat** — No more rounds. Proceed to Step 8.
+
+Combat also ends automatically if:
+- **3 rounds** have been fought, or
+- All defending soldiers have **withdrawn or been killed**, or
+- All attacking soldiers have been **killed**.
+
+> **Separatist Base Defenders** do not withdraw — they are dug in. The attacker may Press the Attack for up to 3 full rounds to whittle them down. Only the attacker decides when to end a base assault.
+
+> **Phase 4 Separatist Combat** (roaming Separatists entering a player's hex) is **1 round only**. Separatists do not Press the Attack.
 
 #### Step 8: Battle Victory DP
 
-After withdrawal, compare **total wounds inflicted** by each side (damage pegs placed on enemy soldiers, including kills). The side that inflicted **more wounds than they received** earns **Battle Victory DP** equal to the difference, up to a maximum of **3 DP**.
+After combat ends (whether after 1 round or 3), compare **total wounds inflicted** by each side across **all rounds** of this combat (damage pegs placed on enemy soldiers, including kills). The side that inflicted **more wounds than they received** earns **Battle Victory DP** equal to the difference, up to a maximum of **3 DP**.
 
 - If both sides inflicted the same number of wounds, neither side earns DP.
 - Both **attacker and defender** are eligible — winning a defense earns DP too.
@@ -819,7 +847,7 @@ When using area-of-effect weaponry — specifically **S.L.I.M.E** (mortar) or ot
 
 ### 🏴 Separatist Combat
 
-Separatist battles use the normal combat sequence with the exceptions listed in **Phase 4: Separatists — Combat Rules**, which is authoritative for who rolls their dice, penalties, hit points, mandatory combats, and base defenders.
+Separatist battles use the normal combat sequence with the exceptions listed in **Phase 4: Separatists — Combat Rules**, which is authoritative for who rolls their dice, penalties, hit points, mandatory combats, and base defenders. **Phase 4 roaming Separatist combats** (Separatists entering a player's hex) are **1 round only** — the Separatists do not Press the Attack. **Base assaults** triggered by entering an unconquered base follow the full Press the Attack rules (up to 3 rounds), but base defenders never withdraw.
 
 ---
 
@@ -885,20 +913,16 @@ Bunker tokens are placed by the **D.U.D.S** (Deployable Unital Defense System) e
 
 | Step | Action | Who Acts |
 |---|---|---|
-| **Step 0** | Pre-Combat: S.H.A.D reveal, pre-combat cards, B.A.S.R & S.L.I.M.E attacks | Both |
-| **Step 1** | Roll attack & defense dice (1d6 per soldier) | Both |
-| **Step 2** | Attacker assigns matchups; Defender assigns defense dice | Both |
-| **Step 3** | Apply equipment bonuses (+attack, +defense) | Both |
-| **Step 4** | Play Conspire Cards (Defender first, then Attacker) | Both |
-| **Step 5** | Resolve damage (attack − defense = damage pegs) | — |
-| **Step 6** | Check for Counterattacks (defense beat attack by 2+) | Defender |
-| **Step 7** | Defender may withdraw surviving soldiers 1 hex (free) | Defender |
-| **Step 8** | Award Battle Victory DP (wounds difference, max 3) | — |
+| **Step 0** | Pre-Combat (**once**): S.H.A.D reveal, pre-combat cards, B.A.S.R & S.L.I.M.E attacks | Both |
+| **Steps 1–6** | **Combat Round** (max 3): roll dice → assign matchups → equipment bonuses → Conspire cards → resolve damage → counterattacks | Both |
+| **Step 7** | **Withdrawal & Press**: defender may withdraw survivors 1 hex (free); attacker may Press the Attack for another round or end combat | Both |
+| **Step 8** | Award Battle Victory DP (total wounds difference across all rounds, max 3) | — |
 
 **Key Thresholds:**
 
 | Threshold | Value |
 |---|---|
+| Max combat rounds | **3** (attacker may end early; defender may withdraw after each round) |
 | Damage pegs to kill a H.A.M.S | **4** (dies on the 4th peg) |
 | Counterattack trigger | Defense beats attack by **2 or more** (chains naturally until a roll fails to trigger) |
 | Separatist lives | **1** (dies on any hit) |
