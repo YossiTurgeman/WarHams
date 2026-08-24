@@ -290,6 +290,8 @@ Soldiers within a Squad move **independently** — they are not required to stay
 
 **Moving Through Separatists** — A soldier may not move through a hex occupied by Separatist forces without engaging them in combat first (see **Action: Combat**).
 
+**Entering an Unconquered Separatist Base** — If a Squad moves onto an unconquered Separatist Base hex, the **7 base defenders** spring into action immediately. Combat begins right away — resolve it using the normal combat sequence with the Separatist combat rules (see **Phase 4: Separatists — Combat Rules** and **Conquering Bases**). This combat is part of the **Move action** and does **not** cost the Squad an additional action. After the combat resolves, the Squad may take its second action normally. Only soldiers that moved onto the base hex are engaged in this combat.
+
 **Board Wrapping** — The planet is round. Hexes at the edges of the board connect to corresponding hexes on the opposite edge via marked connection points (labeled a, b, c, etc.). Movement and range calculations wrap accordingly.
 
 #### Claim Hexes (after each Move action)
@@ -482,12 +484,13 @@ Resolve mandatory combat on every hex shared by Separatists and player soldiers.
 | **Separatist Penalty** | All Separatists (roaming and base defenders) apply **−1 to defense dice only**, to a minimum result of 1. Attack dice are unmodified |
 | **Hit Points** | Each Separatist has 1 life; any hit kills it immediately |
 | **Player Attacks** | A player may voluntarily attack a Separatist group during a Combat action under the normal engagement rules |
-| **Mandatory Combat** | Combat is mandatory after Separatists enter a player's hex during Phase 4 |
+| **Mandatory Combat** | Combat is mandatory after Separatists enter a player's hex during Phase 4, and when a Squad enters an unconquered Separatist Base during a Move action |
 | **Blocking** | A player must defeat Separatists before moving through their hex or collecting resources there |
 
 #### Conquering Bases
 
-- The first attack against an unconquered base triggers **7 base defenders**. They are dug in but apply the Separatist defense penalty like all Separatists.
+- **Entering an unconquered base** (by moving onto its hex) triggers **7 base defenders** immediately. This combat is part of the Move action and does not cost an additional action (see **Action: Move — Entering an Unconquered Separatist Base**).
+- The defenders are dug in but apply the Separatist defense penalty like all Separatists.
 - Defeat all 7 defenders to conquer the base, then place your Control Flag on its hex.
 - Surviving defenders become roaming Separatists and follow the Phase 4 procedure.
 - Conquered bases **stop spawning naturally** (their printed number no longer triggers spawns).
