@@ -23,7 +23,7 @@
       "id": "dominance",
       "name": "Dominance Victory",
       "description": "Local population sides with you — you become sovereign",
-      "requirement": "Accumulate 50 Dominance Points from four sources: (1) Equipped BACs (add card DP each time you learn a new BAC or equip a new instance; subtract when a soldier dies and their module is destroyed or salvaged by another player), (2) Battle Victory DP (up to 3 per combat; permanent), (3) Territory DP (+1 per hex claimed excluding Landing Zones; -1 when an opponent takes it), and (4) Bunker DP (deployer gains 2 DP on D.U.D.S deployment; hex controller gains 2 DP; deployment DP is permanent, hex-control DP flows with territory)"
+      "requirement": "Accumulate 50 Dominance Points from four sources: (1) Equipped BACs (add card DP each time you learn a new BAC or equip a new instance; subtract when a soldier dies and their module is destroyed or salvaged by another player), (2) Battle Victory DP (up to 3 per combat; permanent), (3) Territory DP (+1 per hex claimed including Landing Zones; you start with 2 DP; -1 when an opponent takes it), and (4) Bunker DP (deployer gains 2 DP on D.U.D.S deployment; hex controller gains 2 DP; deployment DP is permanent, hex-control DP flows with territory)"
     },
     {
       "id": "final_round",
@@ -152,7 +152,7 @@
     {
       "phase": 2,
       "name": "Activation Phase",
-      "description": "Each Squad takes 2 actions (any type may be repeated): Move (move soldiers 1 hex, 2 with J.J, maintain coherency, claim hexes after — add +1 Territory DP per new hex claimed, excluding Landing Zones; if replacing an opponent flag, they lose 1 DP), Combat (declare & resolve combat, claim hexes after — same Territory DP applies), Logistics (unlock/equip BACs, acquire BACs, recruit soldiers, create Squads, trade with players or bank 3:1), Conspire (draw 3 keep 1), or Rest (roll 1d3, heal that many damage pegs within the Squad)."
+      "description": "Each Squad takes 2 actions (any type may be repeated): Move (move soldiers 1 hex, 2 with J.J, maintain coherency, claim hexes after — add +1 Territory DP per new hex claimed; if replacing an opponent flag, they lose 1 DP), Combat (declare & resolve combat, claim hexes after — same Territory DP applies), Logistics (unlock/equip BACs, acquire BACs, recruit soldiers, create Squads, trade with players or bank 3:1), Conspire (draw 3 keep 1), or Rest (roll 1d3, heal that many damage pegs within the Squad)."
     },
     {
       "phase": 3,

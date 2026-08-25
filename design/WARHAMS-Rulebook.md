@@ -187,7 +187,7 @@ Players deploy their starting Squads to the planet surface using a snake draft. 
 | **Round 1** | Starting with the first player and proceeding clockwise, each player places their **1st Squad** on any unoccupied **Terrain Hex** (not resource hexes, Spaceports, or Separatist Bases). |
 | **Round 2** | The **last player** in Round 1 immediately places their **2nd Squad** on any unoccupied **Terrain Hex**. Then placement continues **counter-clockwise**, ending with the first player placing their 2nd Squad last. |
 
-> **Place Control Flags:** After placing each Squad, also place one of your **Control Flags** on the same hex. These hexes are your **Landing Zones** — they start under your control. Landing Zones give **0 Territory DP** (see Claiming a Hex). Keep your remaining Control Flags **near your two starting Squads** so they're ready to place as you claim hexes during the game.
+> **Place Control Flags:** After placing each Squad, also place one of your **Control Flags** on the same hex. These hexes are your **Landing Zones** — they start under your control. Each Landing Zone is worth **+1 Territory DP** like any other hex, so you begin the game with **2 DP** (one per Landing Zone). Keep your remaining Control Flags **near your two starting Squads** so they're ready to place as you claim hexes during the game.
 
 **Step 10 — Set Up the Unloading Zone**
 Place one set of 6 numbered **Cargo Containers** (1–6) in a row near the board — this is the **Unloading Zone**. Keep the second matching set of containers nearby.
@@ -214,7 +214,7 @@ Set up a **resource supply area** beside the board. Sort all Resource Tokens by 
 
 Starting from the first player and proceeding clockwise, each player completes **all four phases** of their turn before play passes to the next player. No other player may act during your turn unless a Conspire Card or combat specifically requires it.
 
-The shared **Round Tracker** begins at Round 1. Each player's tracker begins at **TURN READY** and **0 DP**. Adjust your DP counter whenever a rule or card awards or removes DP. After completing Phase 4, mark your tracker **TURN DONE**.
+The shared **Round Tracker** begins at Round 1. Each player's tracker begins at **TURN READY** and **2 DP** (1 DP per Landing Zone). Adjust your DP counter whenever a rule or card awards or removes DP. After completing Phase 4, mark your tracker **TURN DONE**.
 
 ---
 
@@ -278,7 +278,7 @@ Immediately after the Move action, for **every hex containing one or more of the
 
 Hexes containing both your soldiers AND an enemy's are **contested** — no flag is placed or changed. Wait until a Combat action resolves who occupies the hex; Claim Hexes after that Combat action will then settle the flag.
 
-**Territory DP:** For each hex where you place a **new** Control Flag (not one already yours), add **+1 DP** to your counter immediately — unless the hex is one of your **Landing Zones** (0 DP). If you **replaced an opponent's flag**, that opponent **subtracts 1 DP**. See **Controlling Territory** for full details.
+**Territory DP:** For each hex where you place a **new** Control Flag (not one already yours), add **+1 DP** to your counter immediately. This includes your **Landing Zones** — they are worth 1 DP each like any other hex. If you **replaced an opponent's flag**, that opponent **subtracts 1 DP**. See **Controlling Territory** for full details.
 
 #### Action: Combat
 
@@ -304,7 +304,7 @@ Immediately after the Combat action is resolved, for every hex containing one or
 
 If a base was conquered during this action (all 7 base defenders killed), the conquering player places their flag on the base hex as part of this step.
 
-**Territory DP:** Add **+1 DP** for each hex where you placed a new Control Flag (excluding your Landing Zones). If you replaced an opponent's flag, they **subtract 1 DP**. See **Claim Hexes (after Move)** above and **Controlling Territory** for full details.
+**Territory DP:** Add **+1 DP** for each hex where you placed a new Control Flag. If you replaced an opponent's flag, they **subtract 1 DP**. See **Claim Hexes (after Move)** above and **Controlling Territory** for full details.
 
 #### Action: Logistics
 
@@ -1185,7 +1185,7 @@ This applies to **resource-producing hexes**, **Spaceport Drop Zones**, **Separa
 
 Once placed, a flag stays even after your Squad leaves — the hex remains under your control until an opponent's Squad enters it and re-claims it via the same Move or Combat action. **Contested hexes** (both your and an enemy's soldiers on the same hex) skip flag placement until a Combat action resolves the occupant.
 
-**Territory DP:** Each hex you claim (excluding your Landing Zones) is worth **+1 DP** — add it to your DP counter immediately when you place your flag. If an opponent later takes that hex from you, **subtract 1 DP** from your total and the opponent **adds 1 DP** to theirs. Your Landing Zones (where your starting Squads deployed) are free territory and give 0 DP.
+**Territory DP:** Each hex you claim is worth **+1 DP** — add it to your DP counter immediately when you place your flag, including your **Landing Zones** (1 DP each, so you start the game with 2 DP). If an opponent later takes that hex from you, **subtract 1 DP** from your total and the opponent **adds 1 DP** to theirs.
 
 ### End-of-Round Bonus
 
@@ -1238,7 +1238,7 @@ DP come from four sources:
 
 1. **Equipped BAC cards** — each BAC's DP value counts toward your total as long as the card remains equipped and the soldier carrying it is alive.
 2. **Battle Victory DP** — after each combat, the side that inflicted more wounds than they received earns DP equal to the difference, up to 3 DP per battle (see Combat Step 8). This DP is permanent.
-3. **Territory DP** — each hex you claim (excluding your Landing Zones) is worth +1 DP. If an opponent takes that hex from you, you lose 1 DP and they gain 1 DP (see Claiming a Hex).
+3. **Territory DP** — each hex you claim is worth +1 DP, including your Landing Zones (you start with 2 DP). If an opponent takes that hex from you, you lose 1 DP and they gain 1 DP (see Claiming a Hex).
 4. **Bunker DP** — deploying a D.U.D.S bunker grants the deployer 2 DP (permanent). Whoever controls the bunkered hex earns an additional 2 DP. Total: 4 DP for a deployer holding their own bunker (see Bunker Rules).
 
 The local population rallies behind your banner and crowns you their sovereign.
@@ -1251,7 +1251,7 @@ Adjust your DP counter immediately whenever any of the following events occur. T
 |---|---|---|---|
 | **BAC Card DP** | You **unlock** a new BAC type (first soldier equipped) or **equip** an additional soldier with an already-unlocked BAC — add the card's DP value **per soldier equipped**. | A soldier **dies** and their module is **destroyed** (returned to box) or **salvaged by another player** — subtract that module's DP. If the owner keeps the module (salvage pick 1) and re-attaches it, no DP change occurs. | No — flows with equipment |
 | **Battle Victory DP** | After combat **Step 8**, your side inflicted **more wounds** than you received — add the difference, up to **3 DP**. Both attacker and defender are eligible. | **Never.** Battle Victory DP is permanent and does not go away if soldiers are later lost. | Yes — permanent |
-| **Territory DP** | You **place your Control Flag** on a hex (excluding Landing Zones) — add **1 DP** immediately. | An **opponent takes a hex** from you (replaces your flag with theirs) — subtract **1 DP**; the opponent adds **1 DP**. Landing Zones give 0 DP and never change. | No — flows with territory |
+| **Territory DP** | You **place your Control Flag** on a hex — add **1 DP** immediately (including your Landing Zones, so you start with 2 DP). | An **opponent takes a hex** from you (replaces your flag with theirs) — subtract **1 DP**; the opponent adds **1 DP**. | No — flows with territory |
 | **Bunker DP** | **D.U.D.S deployed** — deployer adds **2 DP** immediately. The player who **controls the bunkered hex** adds **2 DP** (total 4 DP for deployer holding their own bunker). | If **hex control changes**, the previous controller subtracts **2 DP** and the new controller adds **2 DP**. The deployer's 2 DP deployment bonus is never lost. | Deployment: permanent. Hex control: flows with territory |
 
 > **Summary:** Only Battle Victory DP and the Bunker deployment bonus are truly permanent. BAC Card DP and Territory DP (including Bunker hex-control DP) go up and down as soldiers die, hexes change hands, and equipment is lost or salvaged.
