@@ -23,7 +23,7 @@
       "id": "dominance",
       "name": "Dominance Victory",
       "description": "Local population sides with you — you become sovereign",
-      "requirement": "Accumulate 50 Dominance Points from five sources: (1) Equipped BACs (add card DP each time you learn a new BAC or equip a new instance; subtract when a soldier dies and their module is destroyed or salvaged by another player), (2) Battle Victory DP (up to 3 per combat; permanent), (3) Territory DP (+1 per hex claimed including Landing Zones; you start with 2 DP; -1 when an opponent takes it), (4) Conquest Bonus DP (+3 for killing all 7 defenders of a Separatist Base; permanent), and (5) Bunker DP (deployer gains 2 DP on D.U.D.S deployment; hex controller gains 2 DP; deployment DP is permanent, hex-control DP flows with territory)"
+      "requirement": "Accumulate 50 Dominance Points from five sources: (1) Equipped BACs (add card DP each time you learn a new BAC or equip a new instance; subtract when a soldier dies and their module is destroyed or salvaged by another player), (2) Battle Victory DP (up to 3 per player vs player combat; permanent; does not apply to Separatist combats), (3) Territory DP (+1 per hex claimed including Landing Zones; you start with 2 DP; -1 when an opponent takes it), (4) Conquest Bonus DP (+3 for killing all 7 defenders of a Separatist Base; permanent), and (5) Bunker DP (deployer gains 2 DP on D.U.D.S deployment; hex controller gains 2 DP; deployment DP is permanent, hex-control DP flows with territory)"
     },
     {
       "id": "final_round",
@@ -753,5 +753,6 @@
       "benefit": "1 free resource token of any type per full 3 wounds suffered",
       "note": "Local population rallies behind a beleaguered commander"
     }
-  }
+  },
+  "battle_victory_dp": "After combat ends (1-3 rounds), compare total wounds inflicted by each side across all rounds (damage pegs placed on enemy soldiers, including kills). The side that inflicted more wounds than they received earns Battle Victory DP equal to the difference, up to a maximum of 3 DP. Player vs player combat only — does not apply to Separatist combats (roaming or base assaults). If both sides inflicted equal wounds, neither earns DP. Both attacker and defender are eligible. Battle Victory DP is permanent and counts toward the Dominance victory."
 }

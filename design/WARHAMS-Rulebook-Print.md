@@ -798,6 +798,7 @@ Combat also ends automatically if:
 
 After combat ends (whether after 1 round or 3), compare **total wounds inflicted** by each side across **all rounds** of this combat (damage pegs placed on enemy soldiers, including kills). The side that inflicted **more wounds than they received** earns **Battle Victory DP** equal to the difference, up to a maximum of **3 DP**.
 
+- **Player vs player combat only.** Battle Victory DP does **not** apply to Separatist combats (roaming Separatists or base assaults) — those are NPC fights, not real battles.
 - If both sides inflicted the same number of wounds, neither side earns DP.
 - Both **attacker and defender** are eligible — winning a defense earns DP too.
 - Add the DP to your **DP counter** immediately. Battle Victory DP counts toward **Victory 3: Dominance** and does not go away if soldiers are later lost.
@@ -863,7 +864,7 @@ When using area-of-effect weaponry — specifically **S.L.I.M.E** (mortar) or ot
 
 ### 🏴 Separatist Combat
 
-Separatist battles use the normal combat sequence with the exceptions listed in **Phase 4: Separatists — Combat Rules**, which is authoritative for who rolls their dice, penalties, hit points, mandatory combats, and base defenders. **Phase 4 roaming Separatist combats** (Separatists entering a player's hex) are **1 round only** — the Separatists do not Press the Attack. **Base assaults** triggered by entering an unconquered base follow the full Press the Attack rules (up to 3 rounds), but base defenders never withdraw.
+Separatist battles use the normal combat sequence with the exceptions listed in **Phase 4: Separatists — Combat Rules**, which is authoritative for who rolls their dice, penalties, hit points, mandatory combats, and base defenders. **No Battle Victory DP** is awarded for any Separatist combat (roaming or base assault) — that DP is for player vs player battles only. **Phase 4 roaming Separatist combats** (Separatists entering a player's hex) are **1 round only** — the Separatists do not Press the Attack. **Base assaults** triggered by entering an unconquered base follow the full Press the Attack rules (up to 3 rounds), but base defenders never withdraw.
 
 ---
 
@@ -932,7 +933,7 @@ Bunker tokens are placed by the **D.U.D.S** (Deployable Unital Defense System) e
 | **Step 0** | Pre-Combat (**once**): S.H.A.D reveal, pre-combat cards, B.A.S.R & S.L.I.M.E attacks | Both |
 | **Steps 1–6** | **Combat Round** (max 3): roll dice → assign matchups → equipment bonuses → Conspire cards → resolve damage → counterattacks | Both |
 | **Step 7** | **Withdrawal & Press**: defender may withdraw survivors 1 hex (free); attacker may Press the Attack for another round or end combat | Both |
-| **Step 8** | Award Battle Victory DP (total wounds difference across all rounds, max 3) | — |
+| **Step 8** | Award Battle Victory DP — **player vs player only** (total wounds difference across all rounds, max 3; not for Separatist combats) | — |
 
 **Key Thresholds:**
 
@@ -1244,7 +1245,7 @@ Your overwhelming military presence renders further conflict pointless. Rival HQ
 DP come from five sources:
 
 1. **Equipped BAC cards** — each BAC's DP value counts toward your total as long as the card remains equipped and the soldier carrying it is alive.
-2. **Battle Victory DP** — after each combat, the side that inflicted more wounds than they received earns DP equal to the difference, up to 3 DP per battle (see Combat Step 8). This DP is permanent.
+2. **Battle Victory DP** — after each **player vs player** combat, the side that inflicted more wounds than they received earns DP equal to the difference, up to 3 DP per battle (see Combat Step 8). This DP is permanent. Does not apply to Separatist combats.
 3. **Territory DP** — each hex you claim is worth +1 DP, including your Landing Zones (you start with 2 DP). If an opponent takes that hex from you, you lose 1 DP and they gain 1 DP (see Claiming a Hex).
 4. **Conquest Bonus DP** — killing all 7 defenders of a Separatist Base earns +3 DP. This DP is permanent and does not go away if the base is later lost.
 5. **Bunker DP** — deploying a D.U.D.S bunker grants the deployer 2 DP (permanent). Whoever controls the bunkered hex earns an additional 2 DP. Total: 4 DP for a deployer holding their own bunker (see Bunker Rules).
@@ -1258,7 +1259,7 @@ Adjust your DP counter immediately whenever any of the following events occur. T
 | DP Source | Add DP When… | Remove DP When… | Permanent? |
 |---|---|---|---|
 | **BAC Card DP** | You **unlock** a new BAC type (first soldier equipped) or **equip** an additional soldier with an already-unlocked BAC — add the card's DP value **per soldier equipped**. | A soldier **dies** and their module is **destroyed** (returned to box) or **salvaged by another player** — subtract that module's DP. If the owner keeps the module (salvage pick 1) and re-attaches it, no DP change occurs. | No — flows with equipment |
-| **Battle Victory DP** | After combat **Step 8**, your side inflicted **more wounds** than you received — add the difference, up to **3 DP**. Both attacker and defender are eligible. | **Never.** Battle Victory DP is permanent and does not go away if soldiers are later lost. | Yes — permanent |
+| **Battle Victory DP** | After combat **Step 8** of a **player vs player** combat, your side inflicted **more wounds** than you received — add the difference, up to **3 DP**. Both attacker and defender are eligible. Does not apply to Separatist combats. | **Never.** Battle Victory DP is permanent and does not go away if soldiers are later lost. | Yes — permanent |
 | **Conquest Bonus DP** | You **kill all 7 defenders** of a Separatist Base — add **3 DP** immediately. | **Never.** Conquest Bonus DP is permanent even if the base is later lost. | Yes — permanent |
 | **Territory DP** | You **place your Control Flag** on a hex — add **1 DP** immediately (including your Landing Zones, so you start with 2 DP). | An **opponent takes a hex** from you (replaces your flag with theirs) — subtract **1 DP**; the opponent adds **1 DP**. | No — flows with territory |
 | **Bunker DP** | **D.U.D.S deployed** — deployer adds **2 DP** immediately. The player who **controls the bunkered hex** adds **2 DP** (total 4 DP for deployer holding their own bunker). | If **hex control changes**, the previous controller subtracts **2 DP** and the new controller adds **2 DP**. The deployer's 2 DP deployment bonus is never lost. | Deployment: permanent. Hex control: flows with territory |
@@ -1331,7 +1332,7 @@ When a player meets any victory condition during their turn, the current round b
 | 0 | **Pre-Combat** (once): S.H.A.D reveal, pre-combat cards, B.A.S.R & S.L.I.M.E attacks |
 | 1–6 | **Combat Round** (max 3): roll dice → assign matchups → equipment bonuses → Conspire cards → resolve damage → counterattacks |
 | 7 | **Withdrawal & Press**: defender may withdraw survivors 1 hex (free); attacker may **Press the Attack** for another round or end combat |
-| 8 | **Battle Victory DP**: side that inflicted more wounds across all rounds earns DP = difference, up to 3 |
+| 8 | **Battle Victory DP** (player vs player only): side that inflicted more wounds across all rounds earns DP = difference, up to 3 |
 | — | **End of Round**: Morale Compensation — 1 resource token per 3 wounds suffered this round |
 
 ### Victory Conditions
