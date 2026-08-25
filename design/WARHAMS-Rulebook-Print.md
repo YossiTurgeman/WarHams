@@ -300,6 +300,8 @@ Immediately after the Move action, for **every hex containing one or more of the
 
 Hexes containing both your soldiers AND an enemy's are **contested** — no flag is placed or changed. Wait until a Combat action resolves who occupies the hex; Claim Hexes after that Combat action will then settle the flag.
 
+**Territory DP:** For each hex where you place a **new** Control Flag (not one already yours), add **+1 DP** to your counter immediately — unless the hex is one of your **Landing Zones** (0 DP). If you **replaced an opponent's flag**, that opponent **subtracts 1 DP**. See **Controlling Territory** for full details.
+
 #### Action: Combat
 
 Combat is optional. A Squad with an enemy unit — whether belonging to another player or Separatist forces — within the **combat range** of at least one active soldier may declare one combat. Only soldiers with an enemy in their combat range are **engaged** and participate. Separatist combats triggered during Phase 4 are mandatory (see **Phase 4: Separatists — Combat Rules**).
@@ -323,6 +325,8 @@ To declare combat:
 Immediately after the Combat action is resolved, for every hex containing one or more of the activating Squad's soldiers and no enemy soldiers, place your Control Flag (return any opposing flag to its owner's supply). This catches hexes that combat just cleared — for example, a hex you successfully attacked and pushed the defender off, or a contested hex where your soldiers survived and the opponent's didn't.
 
 If a base was conquered during this action (all 7 base defenders killed), the conquering player places their flag on the base hex as part of this step.
+
+**Territory DP:** Add **+1 DP** for each hex where you placed a new Control Flag (excluding your Landing Zones). If you replaced an opponent's flag, they **subtract 1 DP**. See **Claim Hexes (after Move)** above and **Controlling Territory** for full details.
 
 #### Action: Logistics
 

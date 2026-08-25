@@ -152,7 +152,7 @@
     {
       "phase": 2,
       "name": "Activation Phase",
-      "description": "Each Squad takes 2 actions (any type may be repeated): Move (move soldiers 1 hex, 2 with J.J, maintain coherency, claim hexes after), Combat (declare & resolve combat, claim hexes after), Logistics (unlock/equip BACs, acquire BACs, recruit soldiers, create Squads, trade with players or bank 3:1), Conspire (draw 3 keep 1), or Rest (roll 1d3, heal that many damage pegs within the Squad)."
+      "description": "Each Squad takes 2 actions (any type may be repeated): Move (move soldiers 1 hex, 2 with J.J, maintain coherency, claim hexes after — add +1 Territory DP per new hex claimed, excluding Landing Zones; if replacing an opponent flag, they lose 1 DP), Combat (declare & resolve combat, claim hexes after — same Territory DP applies), Logistics (unlock/equip BACs, acquire BACs, recruit soldiers, create Squads, trade with players or bank 3:1), Conspire (draw 3 keep 1), or Rest (roll 1d3, heal that many damage pegs within the Squad)."
     },
     {
       "phase": 3,
