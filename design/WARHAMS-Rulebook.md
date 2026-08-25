@@ -477,7 +477,7 @@ Resolve mandatory combat on every hex shared by Separatists and player soldiers.
 - **After the assault ends** (all 3 rounds fought, attacker ends combat, or either side is eliminated), resolve one of three outcomes based on how many defenders were killed:
 
 **All 7 killed — Conquest:**
-Place your Control Flag on the base hex. The base is conquered. Skip to the conquered-base benefits below.
+Place your Control Flag on the base hex. The base is conquered. You gain **+3 Conquest Bonus DP** (permanent — see Victory 3). Skip to the conquered-base benefits below.
 
 **More than half killed (4–6) — Route:**
 The surviving defenders break and flee — they become roaming Separatists and follow the Phase 4 procedure. The base is **abandoned** with no garrison. If the attacker has surviving soldiers on the hex, they claim it via **Claim Hexes** (conquering the base — place Control Flag). If no attacker soldiers survive, the base remains unconquered and empty — the next Squad to enter the base conquers it **without combat** (place Control Flag, no defenders spawn).
@@ -490,7 +490,7 @@ The surviving defenders hold firm. They remain at the base as a **reduced garris
 - The controller gains the **Instigate Uprising** ability described in Step 1.
 - Whenever the Separatist Die matches a conquered base's printed number, that base's controller immediately gains **1 Local Favor**, regardless of who rolled the die.
 
-> ⚠️ **Warning:** Don't attack a base unless you can commit to the fight. Kill all 7 to conquer, or at least 4 to route the survivors. If you kill 3 or fewer, the defenders hold and your soldiers are repelled — but you've softened the garrison for a future assault.
+> ⚠️ **Warning:** Don't attack a base unless you can commit to the fight. Kill all 7 for a **Conquest** (+3 permanent Conquest Bonus DP), or at least 4 to **Route** the survivors (you still claim the base but forfeit the bonus DP). If you kill 3 or fewer, the defenders hold and your soldiers are repelled — but you've softened the garrison for a future assault.
 
 ---
 
@@ -1234,12 +1234,13 @@ Your overwhelming military presence renders further conflict pointless. Rival HQ
 
 **Accumulate 50 Dominance Points (DP).**
 
-DP come from four sources:
+DP come from five sources:
 
 1. **Equipped BAC cards** — each BAC's DP value counts toward your total as long as the card remains equipped and the soldier carrying it is alive.
 2. **Battle Victory DP** — after each combat, the side that inflicted more wounds than they received earns DP equal to the difference, up to 3 DP per battle (see Combat Step 8). This DP is permanent.
 3. **Territory DP** — each hex you claim is worth +1 DP, including your Landing Zones (you start with 2 DP). If an opponent takes that hex from you, you lose 1 DP and they gain 1 DP (see Claiming a Hex).
-4. **Bunker DP** — deploying a D.U.D.S bunker grants the deployer 2 DP (permanent). Whoever controls the bunkered hex earns an additional 2 DP. Total: 4 DP for a deployer holding their own bunker (see Bunker Rules).
+4. **Conquest Bonus DP** — killing all 7 defenders of a Separatist Base earns +3 DP. This DP is permanent and does not go away if the base is later lost.
+5. **Bunker DP** — deploying a D.U.D.S bunker grants the deployer 2 DP (permanent). Whoever controls the bunkered hex earns an additional 2 DP. Total: 4 DP for a deployer holding their own bunker (see Bunker Rules).
 
 The local population rallies behind your banner and crowns you their sovereign.
 
@@ -1251,10 +1252,11 @@ Adjust your DP counter immediately whenever any of the following events occur. T
 |---|---|---|---|
 | **BAC Card DP** | You **unlock** a new BAC type (first soldier equipped) or **equip** an additional soldier with an already-unlocked BAC — add the card's DP value **per soldier equipped**. | A soldier **dies** and their module is **destroyed** (returned to box) or **salvaged by another player** — subtract that module's DP. If the owner keeps the module (salvage pick 1) and re-attaches it, no DP change occurs. | No — flows with equipment |
 | **Battle Victory DP** | After combat **Step 8**, your side inflicted **more wounds** than you received — add the difference, up to **3 DP**. Both attacker and defender are eligible. | **Never.** Battle Victory DP is permanent and does not go away if soldiers are later lost. | Yes — permanent |
+| **Conquest Bonus DP** | You **kill all 7 defenders** of a Separatist Base — add **3 DP** immediately. | **Never.** Conquest Bonus DP is permanent even if the base is later lost. | Yes — permanent |
 | **Territory DP** | You **place your Control Flag** on a hex — add **1 DP** immediately (including your Landing Zones, so you start with 2 DP). | An **opponent takes a hex** from you (replaces your flag with theirs) — subtract **1 DP**; the opponent adds **1 DP**. | No — flows with territory |
 | **Bunker DP** | **D.U.D.S deployed** — deployer adds **2 DP** immediately. The player who **controls the bunkered hex** adds **2 DP** (total 4 DP for deployer holding their own bunker). | If **hex control changes**, the previous controller subtracts **2 DP** and the new controller adds **2 DP**. The deployer's 2 DP deployment bonus is never lost. | Deployment: permanent. Hex control: flows with territory |
 
-> **Summary:** Only Battle Victory DP and the Bunker deployment bonus are truly permanent. BAC Card DP and Territory DP (including Bunker hex-control DP) go up and down as soldiers die, hexes change hands, and equipment is lost or salvaged.
+> **Summary:** Only Battle Victory DP, Conquest Bonus DP, and the Bunker deployment bonus are truly permanent. BAC Card DP and Territory DP (including Bunker hex-control DP) go up and down as soldiers die, hexes change hands, and equipment is lost or salvaged.
 
 ---
 
@@ -1334,7 +1336,7 @@ When a player meets any victory condition during their turn, the current round b
 |------|-----------|
 | 🚀 Spaceport Domination | Fully control 4 of 6 Spaceports (2-player: 5 of 6) |
 | 💪 Military Supremacy | More than 2× the soldiers of the next largest army (strictly more) |
-| 👑 Dominance | Accumulate 50 DP from equipped BACs + Battle Victory DP + Territory DP + Bunker DP |
+| 👑 Dominance | Accumulate 50 DP from equipped BACs + Battle Victory DP + Territory DP + Conquest Bonus DP + Bunker DP |
 | 🏁 Final Round | Any condition met → finish the round → highest DP breaks ties |
 
 ---
