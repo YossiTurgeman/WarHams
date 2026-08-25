@@ -485,7 +485,7 @@ Resolve mandatory combat on every hex shared by Separatists and player soldiers.
 | Rule | Detail |
 |------|--------|
 | **Rolled By** | The player to the **left** of the player fighting the Separatists rolls every Separatist die |
-| **Separatist Penalty** | All Separatists (roaming and base defenders) apply **−1 to defense dice only**, to a minimum result of 1. Attack dice are unmodified |
+| **Separatist Penalty** | All Separatists (roaming and base defenders) apply **−1 to hit (attack) dice only**, to a minimum result of 1. Defense dice are unmodified |
 | **Hit Points** | Each Separatist has 1 life; any hit kills it immediately |
 | **Player Attacks** | A player may voluntarily attack a Separatist group during a Combat action under the normal engagement rules |
 | **Mandatory Combat** | Combat is mandatory after Separatists enter a player's hex during Phase 4, and when a Squad enters an unconquered Separatist Base during a Move action |
@@ -494,7 +494,7 @@ Resolve mandatory combat on every hex shared by Separatists and player soldiers.
 #### Conquering Bases
 
 - **Entering an unconquered base** (by moving onto its hex) triggers its **garrison** of base defenders. A fresh base has **7 defenders**; a previously assaulted but unconquered base has only its **surviving defenders**. This combat is part of the Move action and does not cost an additional action (see **Action: Move — Entering an Unconquered Separatist Base**).
-- The defenders are dug in but apply the Separatist defense penalty like all Separatists.
+- The defenders are dug in but apply the Separatist hit penalty like all Separatists.
 - Base defenders **do not withdraw** between rounds. The attacker may **Press the Attack** for up to 3 rounds to attempt to wear them down (see **Step 7: Withdrawal & Press the Attack**).
 - **After the assault ends** (all 3 rounds fought, attacker ends combat, or either side is eliminated), resolve one of three outcomes based on how many defenders were killed:
 
@@ -942,7 +942,7 @@ Bunker tokens are placed by the **D.U.D.S** (Deployable Unital Defense System) e
 | Damage pegs to kill a H.A.M.S | **4** (dies on the 4th peg) |
 | Counterattack trigger | Defense beats attack by **2 or more** (chains naturally until a roll fails to trigger) |
 | Separatist lives | **1** (dies on any hit) |
-| Separatist dice penalty | **−1 to defense dice only** (all Separatists, including base defenders; min result 1) |
+| Separatist dice penalty | **−1 to hit (attack) dice only** (all Separatists, including base defenders; min result 1) |
 
 ### Combat FAQ — Multi-Hex Attacks
 
@@ -1171,7 +1171,7 @@ Militia are temporary local fighters summoned by the **Deal with Local Militia**
 | **Spawning** | Place 3 militia on a hex within 2 hexes of one of your soldiers |
 | **Components** | Use spare Separatist miniatures or generic tokens |
 | **Combat** | Militia immediately attack one adjacent enemy Squad using normal combat rules |
-| **Dice Penalty** | −1 to all dice (same as Separatists) |
+| **Dice Penalty** | −1 to hit (attack) dice (same as Separatists) |
 | **Hit Points** | 1 life each — any hit kills instantly |
 | **No Equipment** | Militia carry no BACs and have no equipment slots |
 | **Dispersal** | All militia are removed from the board after their attack resolves, regardless of outcome |
