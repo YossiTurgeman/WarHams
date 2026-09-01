@@ -342,3 +342,27 @@
 - [ ] **Label attacker and defender on combat boards and combat markers** — The North and South Combat Boards and the red combat markers should clearly state **"Attacker"** (South) and **"Defender"** (North) so players always know which side is which during combat resolution. Update the combat board graphics, combat marker labels, TTS save, and any rulebook references to the combat boards.
 - [ ] **Remove Separatist handicap (−1 to hit dice)** — Separatists are already easy to kill — they have **1 HP each** (die on any hit) and base attack dice. The current **−1 to hit (attack) dice** penalty (minimum result 1) makes them even less threatening, especially in base assaults where the attacker can Press the Attack for up to 3 rounds. Consider removing the penalty entirely so Separatists fight at full strength, making roaming encounters and base assaults more dangerous and rewarding players who prepare before engaging. If removed, also update the Militia dice penalty (currently matches Separatists). Update: Phase 4 Combat Rules table, Conquering Bases, Separatist Combat section, combat key thresholds table, Militia section, game-data.json mechanics field.
 - [ ] **DP counter should track sources separately** — The current DP counter is a single total. Consider breaking it down by source so players can see at a glance where their DP comes from: **BAC Card DP**, **Battle Victory DP**, **Territory DP**, **Conquest Bonus DP**, and **Bunker DP**. This makes it easier to audit DP changes (e.g., subtracting BAC DP when a soldier dies, subtracting Territory DP when a hex is lost) and helps players understand which victory strategies are working. Could be done as a multi-row counter on the player tracker, separate colored tokens, or a breakdown panel on the TTS DP counter. Update: player tracker component spec, TTS DP counter, rulebook DP tracking section.
+- [ ] **Spaceport Deck delivery frequency — doubles/triples may be too rare** - BACs are delivered from the Planet Bound Area to spaceports only on doubles (exactly two of 3d6 match) or triples (all three match) during Phase 1. Statistical analysis of 3d6 (216 equally likely outcomes):
+
+  | Event | Outcomes | Probability |
+  |-------|----------|-------------|
+  | Doubles (exactly 2 match) | 90/216 | 41.67% |
+  | Triples (all 3 match) | 6/216 | 2.78% |
+  | **Combined (doubles or triples)** | **96/216** | **44.44%** |
+
+  - **Per roll:** 0.44 deliveries (44.44% chance)
+  - **Per round (2 players, 2 rolls):** 0.89 deliveries
+  - **Over 10 rounds:** ~8.9 cards delivered (out of 75-card Spaceport Deck)
+  - **Over 15 rounds:** ~13.3 cards delivered
+  - **Deck depletion after 15 rounds:** only ~18% of the deck has been used
+
+  This means in a typical game, fewer than 1 BAC per round reaches a spaceport, and the vast majority of the 75-card Spaceport Deck never enters play. Even when a delivery occurs, the card goes to a spaceport — a player still needs a Squad on that specific spaceport to collect it, further reducing the effective rate of cards reaching player hands. Possible solutions to consider:
+
+  1. **Also trigger on "adjacent" numbers** — two dice within 1 of each other (e.g., 3 and 4) count as a match. This would dramatically increase frequency.
+  2. **Trigger on any Separatist Die result of 1 or 2** — the grey die alone acts as a "delivery signal" regardless of the other dice, adding a flat ~33% trigger rate.
+  3. **Fixed delivery per round** — at the end of each Phase 1, the active player delivers 1 BAC from the PBA to a spaceport of their choice (no dice condition needed). Doubles/triples become a bonus (choose 2 or pick any spaceport).
+  4. **Lower the match threshold** — instead of exact matches, any two dice summing to 7 (probability ~41.67% for 2d6) triggers a delivery, independent of the doubles rule.
+  5. **Increase PBA size and refill rate** — start with more face-up BACs and refill more aggressively, so even with the current trigger rate, more cards are in circulation.
+  6. **Combine approaches** — e.g., fixed 1 delivery per round + doubles gives a bonus delivery + triples gives 2 bonus deliveries.
+
+  Update: Phase 1 rules in both rulebooks, game-data.json Phase 1 description, and any TTS automation references.
