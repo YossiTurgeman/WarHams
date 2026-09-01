@@ -420,3 +420,25 @@
   6. **Have surviving Separatists counterattack after 3 rounds** — if the player fails to clear them in 3 rounds, the Separatists get a free parting attack (ties into the retreat/parting shot TODO item) before the player disengages.
 
   Update: Separatist Combat Rules table, Phase 4 combat section, Step 7 (both rulebooks), combat flow quick-reference tables, game-data.json combat/Separatist fields.
+- [ ] **Moving onto an enemy-occupied hex — should it trigger combat or have consequences?** - Under the current rules, a Squad can use a Move action to move onto a hex occupied by an enemy player's unit. This does **not** trigger combat — the hex simply becomes **contested** (no Control Flag changes), and since the Squad used its second action, it cannot attack until its next turn. The enemy is then forced to either attack on their turn or move away. This creates several odd situations worth examining:
+
+  **Problems with the current rules:**
+  1. **Free contesting without risk** — a player can move onto an enemy hex purely to contest it (preventing flag/control changes) without committing to a fight. The enemy must spend their action to resolve it.
+  2. **Action economy exploit** — if you Move (action 1) onto an enemy hex, then on your next turn you can Combat (action 1) before the enemy reacts — but the enemy also gets a turn in between. However, if the enemy moves away on their turn, you've gained hex control for free without fighting.
+  3. **Unrealistic coexistence** — two opposing Squads sharing the same hex without fighting is counterintuitive. In most wargames, entering an enemy-occupied hex triggers combat.
+  4. **Stalling tactic** — a player could repeatedly move onto contested hexes to deny the opponent flag placement without ever fighting, slowing the game and frustrating Territory DP progression.
+  5. **Asymmetry with Separatist bases** — entering an unconquered Separatist Base triggers immediate combat as part of the Move, but entering a player-occupied hex does not. Why the difference?
+
+  **Possible solutions to consider:**
+  1. **Auto-trigger combat on entry (like Separatist Bases)** — moving onto an enemy-occupied hex immediately triggers combat as part of the Move action, just like entering a Separatist Base. This combat doesn't cost an additional action. After combat resolves, the Squad may take its second action normally. This is the most intuitive and consistent approach.
+  2. **Auto-trigger combat, but it costs the second action** — entering an enemy hex triggers combat, but this consumes the Squad's second action (so Move+Combat = both actions). If it was already the second action, combat triggers but the Squad has no further actions.
+  3. **Disallow movement onto enemy-occupied hexes** — a Squad cannot Move onto a hex with enemy soldiers. Must declare a Combat action to engage them instead. This is the simplest rule but reduces tactical flexibility (can't position adjacent for a next-turn attack without spending an action on Combat).
+  4. **Allow entry but mark as "engaged"** — the Squad can move onto the hex but is marked as "engaged." Neither side can move away without declaring a Combat action or using withdrawal rules. This prevents free escapes but doesn't force immediate combat.
+  5. **Contested hex penalty** — a Squad on a contested hex cannot collect resources, claim flags, or use Logistics/Conspire/Rest actions until the contest is resolved by combat. This discourages using Move purely to contest.
+  6. **Enemy gets a free reaction attack** — when you move onto an enemy hex, the enemy gets a free immediate attack (like an overwatch/reaction fire mechanic) before your action ends. You can still stay on the hex if you survive, but there's a cost to entering.
+  7. **Combine approaches** — e.g., entering triggers combat (option 1) + if the attacker wins, they claim the hex immediately as part of the Move (no need for a separate Claim Hexes step after combat).
+
+  **Key design questions:**
+  (a) Should the rule be different for moving onto a hex with 1 enemy soldier vs a full Squad? (b) Should J.J-equipped soldiers bypassing coherency be allowed to contest enemy hexes solo? (c) How does this interact with the existing "Entering an Unconquered Separatist Base" rule — should both use the same mechanic for consistency? (d) If auto-combat is added, does the defender get withdrawal options, or is it a surprise attack? (e) What happens if multiple Squads are on the same hex — can you move onto a hex with 2 enemy Squads from different players? (f) Should the rule only apply to enemy *player* units, or also to roaming Separatists (currently handled by the "Moving Through Separatists" rule)?
+
+  Update: Action: Move section, Action: Combat section, Claim Hexes section, Entering an Unconquered Separatist Base section (both rulebooks), combat flow quick-reference tables, game-data.json movement/combat fields.
