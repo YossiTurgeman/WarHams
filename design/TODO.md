@@ -400,3 +400,23 @@
   2. **Card cycling** — at the start of your turn, discard any number of cards and draw that many minus one (net loss of 1), giving hand refresh without waiting for the Conspire draw step.
 
   Key design questions: (a) Would dual uses make cards too strong by ensuring they're never wasted? (b) Should dual uses be available to all cards or only specific ones? (c) Should dual uses cost an action (Logistics/Conspire) or be free? (d) How do dual uses interact with the current DP economy — would a "discard BAC for +1 DP" option accelerate Dominance victory too fast? (e) Should this replace or supplement the existing card draw/discard mechanics? Update: both rulebooks (card use sections, Combat Steps if combat buffs, Logistics action if resource conversion), Conspire section, game-data.json, TTS card descriptions.
+- [ ] **Clarify and reconsider outcomes when roaming Separatists survive combat** - The rules define clear outcomes for Separatist **base assault** survivors (Conquest/Route/Hold based on kill count), but **roaming Separatist** combat has a gap:
+
+  **Mandatory Phase 4 combat** (Separatists enter a player's hex): Explicitly **1 round only** — no issue here, survivors simply remain on the hex.
+
+  **Voluntary attack** (player uses a Combat action on roaming Separatists): Follows normal combat rules, meaning the attacker can **Press the Attack for up to 3 rounds**. But after 3 rounds, there is **no defined outcome** for surviving Separatists. Combat just ends, survivors stay on the hex, no DP is awarded (Battle Victory DP excludes Separatist combats). This is implied by the absence of a rule but never explicitly stated, leaving players unsure: Do the Separatists retreat? Does the attacker get repelled? Does nothing happen? Can the player attack again next turn?
+
+  **What to clarify:**
+  1. State explicitly that after a voluntary attack on roaming Separatists ends (whether 1 round or 3), surviving Separatists **remain on the hex** and the attacker's soldiers stay where they are. Combat simply ends with no special outcome — the Separatists were not routed, just not fully cleared.
+  2. Clarify whether the attacker can attack the **same** roaming Separatist group again on a future turn (presumably yes, using another Combat action).
+  3. Clarify whether surviving roaming Separatists **block movement and resource collection** on that hex (line 470 says players must defeat Separatists before moving through or collecting — does "defeat" mean kill all, or just fight one combat?).
+
+  **What to consider changing:**
+  1. **Add a Route mechanic for roaming Separatists** — if the player kills more than half of a roaming Separatist group, the survivors flee to the nearest unconquered base or disperse (removed from the board). This mirrors the base assault Route threshold and rewards aggressive clearing.
+  2. **Allow the attacker to break off after any round** — since roaming Separatists don't withdraw, only the attacker decides when to stop. Make this explicit so players know they can end combat after round 1 without committing to all 3 rounds.
+  3. **Award partial DP for damaging roaming Separatists** — even though full Battle Victory DP doesn't apply to Separatist fights, consider a small DP reward (e.g., +1 DP per Separatist killed) to incentivize engaging them rather than ignoring them.
+  4. **Force the attacker to retreat if Separatists survive 3 rounds** — mirror the base assault Hold outcome: if roaming Separatists survive all 3 rounds, the attacker is repelled 1 hex. This makes voluntary attacks on roaming Separatists a commitment with risk.
+  5. **Limit voluntary roaming Separatist combat to 1 round** — like mandatory Phase 4 combat, make all roaming Separatist fights 1 round only. This simplifies the rules and avoids the undefined 3-round outcome entirely. Press the Attack becomes a base-assault-only mechanic.
+  6. **Have surviving Separatists counterattack after 3 rounds** — if the player fails to clear them in 3 rounds, the Separatists get a free parting attack (ties into the retreat/parting shot TODO item) before the player disengages.
+
+  Update: Separatist Combat Rules table, Phase 4 combat section, Step 7 (both rulebooks), combat flow quick-reference tables, game-data.json combat/Separatist fields.
