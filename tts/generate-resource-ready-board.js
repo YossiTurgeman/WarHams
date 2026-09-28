@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * W.A.R H.A.M.S — Resource Ready Board Texture Generator (rev2)
+ * W.A.R H.A.M.S — Resource Ready Board Texture Generator (rev3)
  *
  * Generates a single PNG that becomes a locked Custom_Tile on the
  * table — the TTS companion to the rulebook's "Resource Ready Board"
@@ -14,11 +14,11 @@
  * into that number's box — an at-a-glance lookup of what any
  * production roll yields. Pure reference: no game state.
  *
- * Texture aspect 1:3.25 (480×1560) — matches the in-world tile scale
- * (3.2 × 10.4 world units). See generate-save.js §17d-bis.
+ * Texture aspect 7:18 (420×1080) — matches the in-world tile scale
+ * (7 × 18 world units). See generate-save.js §17d-bis.
  *
  * Usage:   node generate-resource-ready-board.js
- * Output:  tts/v72/resource-ready-board-rev2.png  (new filename = cache-safe)
+ * Output:  tts/v72/resource-ready-board-rev3.png  (new filename = cache-safe)
  */
 
 const path = require("path");
@@ -31,8 +31,8 @@ if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-print", "dist", "fonts");
 
 // ─── Canvas ─────────────────────────────────────────────────────────
-const W = 480;
-const H = 1560;
+const W = 420;
+const H = 1080;
 const BLACK = 0x000000FF;
 // Same neon green as the Unloading Zone board.
 const NEON = 0x39FF14FF;
@@ -76,7 +76,7 @@ function tintNeon(layer, w, h) {
 
     // ─── Title ─────────────────────────────────────────────────────
     const font = await loadFont(path.join(FONT_DIR, "open-sans/open-sans-32-white/open-sans-32-white.fnt"));
-    const titleLayer = new Jimp({ width: W, height: 50, color: 0x00000000 });
+    const titleLayer = new Jimp({ width: W, height: 45, color: 0x00000000 });
     titleLayer.print({
         font,
         x: 0,
@@ -84,21 +84,21 @@ function tintNeon(layer, w, h) {
         text: { text: "RESOURCE READY", alignmentX: 2 /* CENTER */ },
         maxWidth: W,
     });
-    tintNeon(titleLayer, W, 50);
-    img.composite(titleLayer, 0, 32);
+    tintNeon(titleLayer, W, 45);
+    img.composite(titleLayer, 0, 30);
 
     // ─── 6 numbered boxes in a vertical column ─────────────────────
     // Number 1 at the TOP (texture top = board north with rotY:180).
     // After setup, each box holds one resource token of the type that
     // number currently produces. Number label sits LEFT of its box.
-    const BOX_W = 320;
-    const BOX_H = 200;
+    const BOX_W = 300;
+    const BOX_H = 135;
     const COUNT = 6;
-    const GAP = 26;
-    const top = 110;                       // below title
-    const boxX1 = 120, boxX2 = boxX1 + BOX_W - 1;
-    const colH = COUNT * BOX_H + (COUNT - 1) * GAP;   // 1330
-    if (top + colH + 60 > H - margin) throw new Error("boxes overflow canvas");
+    const GAP = 18;
+    const top = 95;                        // below title
+    const boxX1 = 100, boxX2 = boxX1 + BOX_W - 1;
+    const colH = COUNT * BOX_H + (COUNT - 1) * GAP;   // 930
+    if (top + colH + 50 > H - margin) throw new Error("boxes overflow canvas");
     const labelLayer = new Jimp({ width: W, height: H, color: 0x00000000 });
     for (let i = 0; i < COUNT; i++) {
         const y1 = top + i * (BOX_H + GAP);
@@ -106,10 +106,10 @@ function tintNeon(layer, w, h) {
         strokeRect(img, boxX1, y1, boxX2, y2, BOX_BORDER, NEON);
         labelLayer.print({
             font,
-            x: 10,
+            x: 8,
             y: Math.floor((y1 + y2) / 2) - 16,
             text: { text: String(i + 1), alignmentX: 2 /* CENTER */ },
-            maxWidth: 100,                 // number column left of the box
+            maxWidth: 88,                  // number column left of the box
         });
     }
     tintNeon(labelLayer, W, H);
@@ -125,9 +125,9 @@ function tintNeon(layer, w, h) {
         maxWidth: W,
     });
     tintNeon(hintLayer, W, 40);
-    img.composite(hintLayer, 0, H - 58);
+    img.composite(hintLayer, 0, H - 52);
 
-    const out = path.join(outDir, "resource-ready-board-rev2.png");
+    const out = path.join(outDir, "resource-ready-board-rev3.png");
     await img.write(out);
-    console.log(`resource-ready-board-rev2.png (${W}x${H})`);
+    console.log(`resource-ready-board-rev3.png (${W}x${H})`);
 })().catch(e => { console.error(e); process.exit(1); });
