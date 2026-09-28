@@ -2016,14 +2016,14 @@ for (const [index, x] of [[1, UZ_BOARD_X - 4], [2, UZ_BOARD_X]]) {
 
 // ─── 26. ROUND, TURN & DOMINANCE-POINT TRACKERS ───────────────────────
 // Each player has one locked, color-coded tracker beside their combat dice.
-// Its DP total and READY/DONE turn state persist with the save. The shared
-// Round Tracker advances the round and resets every player's turn state.
+// Its DP total and 3-state turn status (READY -> RUNNING -> DONE, cycled by
+// clicking the status button) persist with the save. The shared Round
+// Tracker advances the round and resets every player's turn state.
 function makePlayerTracker(pc, idx) {
     const cl = cornerLayout[idx];
     const x = cl.sx < 0 ? -73 : 58.5;
     const tracker = baseObj("BlockSquare", `${pc.label} DP & Turn Tracker`,
-        `${pc.label} player's Dominance Point total and completed-turn indicator. ` +
-        `Press DONE after completing Phase 7; advancing the Round Tracker resets it to READY.`,
+        `${pc.label} player's Dominance Point total and turn status. Click the status button to cycle READY -> RUNNING -> DONE (mark DONE after completing Phase 7); advancing the Round Tracker resets it to READY.`,
         x, 1.2, cl.anchor.z,
         { rotY: cl.boardRotY, scaleX: 6, scaleY: 0.3, scaleZ: 4,
           color: pc.color, locked: true, grid: false });
@@ -2033,34 +2033,40 @@ function makePlayerTracker(pc, idx) {
         `PLAYER_LABEL = '${pc.label.toUpperCase()}'`,
         `FONT_COLOR = ${fontColor}`,
         "BUTTON_SCALE = {0.1667, 1, 0.25}",
+        "TURN_LABELS = {'TURN READY', 'TURN RUNNING', 'TURN DONE'}",
+        "TURN_COLORS = {{0.18, 0.62, 0.25}, {0.85, 0.65, 0.10}, {0.75, 0.15, 0.15}}",
         "dp = 0",
-        "turnDone = false",
+        "turnState = 0",
         "",
         "function onLoad(saved)",
         "    if saved and saved ~= '' then",
         "        local ok, state = pcall(JSON.decode, saved)",
         "        if ok and type(state) == 'table' then",
         "            dp = math.max(0, tonumber(state.dp) or 0)",
-        "            turnDone = state.turnDone == true",
+        "            if state.turnState ~= nil then",
+        "                turnState = math.floor(math.max(0, math.min(2, tonumber(state.turnState) or 0)))",
+        "            elseif state.turnDone == true then",
+        "                turnState = 2",
+        "            end",
         "        end",
         "    end",
         "    self.createButton({label = PLAYER_LABEL .. '  DP', click_function = 'noop', function_owner = self, position = {0, 0.7, 0.35}, rotation = {0, 0, 0}, scale = BUTTON_SCALE, width = 0, height = 0, font_size = 420, font_color = FONT_COLOR})",
         "    self.createButton({label = tostring(dp), click_function = 'noop', function_owner = self, position = {0, 0.7, 0.05}, rotation = {0, 0, 0}, scale = BUTTON_SCALE, width = 0, height = 0, font_size = 650, font_color = FONT_COLOR})",
         "    self.createButton({label = '-', click_function = 'decreaseDP', function_owner = self, position = {-0.23, 0.7, 0.05}, rotation = {0, 0, 0}, scale = BUTTON_SCALE, width = 700, height = 650, font_size = 450, color = {0.18, 0.18, 0.18}, font_color = {1, 1, 1}, tooltip = 'Remove 1 Dominance Point (minimum 0).'})",
         "    self.createButton({label = '+', click_function = 'increaseDP', function_owner = self, position = {0.23, 0.7, 0.05}, rotation = {0, 0, 0}, scale = BUTTON_SCALE, width = 700, height = 650, font_size = 450, color = {0.18, 0.18, 0.18}, font_color = {1, 1, 1}, tooltip = 'Add 1 Dominance Point.'})",
-        "    self.createButton({label = turnDone and 'TURN DONE' or 'TURN READY', click_function = 'toggleTurn', function_owner = self, position = {0, 0.7, -0.30}, rotation = {0, 0, 0}, scale = BUTTON_SCALE, width = 3500, height = 650, font_size = 350, color = turnDone and {0.22, 0.22, 0.22} or {0.18, 0.62, 0.25}, font_color = {1, 1, 1}, tooltip = 'Mark whether this player has completed their turn in the current round.'})",
+        "    self.createButton({label = TURN_LABELS[turnState + 1], click_function = 'toggleTurn', function_owner = self, position = {0, 0.7, -0.30}, rotation = {0, 0, 0}, scale = BUTTON_SCALE, width = 3500, height = 650, font_size = 330, color = TURN_COLORS[turnState + 1], font_color = {1, 1, 1}, tooltip = 'Cycle turn status: READY -> RUNNING -> DONE.'})",
         "end",
         "",
-        "function onSave() return JSON.encode({dp = dp, turnDone = turnDone}) end",
+        "function onSave() return JSON.encode({dp = dp, turnState = turnState}) end",
         "function noop() end",
         "function refreshDP() self.editButton({index = 1, label = tostring(dp)}) end",
         "function increaseDP() dp = dp + 1; refreshDP() end",
         "function decreaseDP() dp = math.max(0, dp - 1); refreshDP() end",
         "function refreshTurn()",
-        "    self.editButton({index = 4, label = turnDone and 'TURN DONE' or 'TURN READY', color = turnDone and {0.22, 0.22, 0.22} or {0.18, 0.62, 0.25}})",
+        "    self.editButton({index = 4, label = TURN_LABELS[turnState + 1], color = TURN_COLORS[turnState + 1]})",
         "end",
-        "function toggleTurn() turnDone = not turnDone; refreshTurn() end",
-        "function resetTurn() turnDone = false; refreshTurn() end",
+        "function toggleTurn() turnState = (turnState + 1) % 3; refreshTurn() end",
+        "function resetTurn() turnState = 0; refreshTurn() end",
     ].join("\n");
     return tracker;
 }
