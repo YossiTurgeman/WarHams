@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1790585513,
+  "EpochTime": 1790585932,
   "Date": "2026-09-28",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -51417,15 +51417,15 @@
       "GUID": "1002f6",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 43,
+        "posX": -39,
         "posY": 1.02,
-        "posZ": 14,
+        "posZ": -2,
         "rotX": 0,
         "rotY": 180,
         "rotZ": 0,
-        "scaleX": 7.5,
+        "scaleX": 1.6,
         "scaleY": 0.2,
-        "scaleZ": 2.5
+        "scaleZ": 5.2
       },
       "Nickname": "Resource Ready Board",
       "Description": "Reference strip: place one resource token of each number's produced type in the matching box (per the Number Tokens on the planet). Pure lookup aid — update it whenever the number tokens change.",
@@ -51458,7 +51458,7 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/resource-ready-board.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/v72/resource-ready-board-rev2.png",
         "ImageSecondaryURL": "",
         "ImageScalar": 1,
         "WidthScale": 0,
