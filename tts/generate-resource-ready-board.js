@@ -91,12 +91,12 @@ function tintNeon(layer, w, h) {
     // Number 1 at the TOP (texture top = board north with rotY:180).
     // After setup, each box holds one resource token of the type that
     // number currently produces. Number label sits LEFT of its box.
-    const BOX_W = 300;
+    const BOX_W = 295;
     const BOX_H = 125;
     const COUNT = 6;
     const GAP = 18;
     const top = 95;                        // below title
-    const boxX1 = 90, boxX2 = boxX1 + BOX_W - 1;
+    const boxX1 = 85, boxX2 = boxX1 + BOX_W - 1;
     const colH = COUNT * BOX_H + (COUNT - 1) * GAP;   // 840
     if (top + colH + 45 > H - margin) throw new Error("boxes overflow canvas");
     const labelLayer = new Jimp({ width: W, height: H, color: 0x00000000 });
