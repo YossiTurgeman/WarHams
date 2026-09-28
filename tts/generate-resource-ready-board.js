@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * W.A.R H.A.M.S — Resource Ready Board Texture Generator (rev4)
+ * W.A.R H.A.M.S — Resource Ready Board Texture Generator (rev5)
  *
  * Generates a single PNG that becomes a locked Custom_Tile on the
  * table — the TTS companion to the rulebook's "Resource Ready Board"
@@ -14,11 +14,11 @@
  * into that number's box — an at-a-glance lookup of what any
  * production roll yields. Pure reference: no game state.
  *
- * Texture aspect 8:20 (400×1000) — matches the in-world tile scale
- * (8 × 20 world units). See generate-save.js §17d-bis.
+ * Texture aspect 9:22 (410×1000) — matches the in-world tile scale
+ * (9 × 22 world units). See generate-save.js §17d-bis.
  *
  * Usage:   node generate-resource-ready-board.js
- * Output:  tts/v72/resource-ready-board-rev4.png  (new filename = cache-safe)
+ * Output:  tts/v72/resource-ready-board-rev5.png  (new filename = cache-safe)
  */
 
 const path = require("path");
@@ -31,7 +31,7 @@ if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 const FONT_DIR = path.join(__dirname, "..", "node_modules", "@jimp", "plugin-print", "dist", "fonts");
 
 // ─── Canvas ─────────────────────────────────────────────────────────
-const W = 400;
+const W = 410;
 const H = 1000;
 const BLACK = 0x000000FF;
 // Same neon green as the Unloading Zone board.
@@ -96,7 +96,7 @@ function tintNeon(layer, w, h) {
     const COUNT = 6;
     const GAP = 18;
     const top = 95;                        // below title
-    const boxX1 = 85, boxX2 = boxX1 + BOX_W - 1;
+    const boxX1 = 92, boxX2 = boxX1 + BOX_W - 1;
     const colH = COUNT * BOX_H + (COUNT - 1) * GAP;   // 840
     if (top + colH + 45 > H - margin) throw new Error("boxes overflow canvas");
     const labelLayer = new Jimp({ width: W, height: H, color: 0x00000000 });
@@ -106,7 +106,7 @@ function tintNeon(layer, w, h) {
         strokeRect(img, boxX1, y1, boxX2, y2, BOX_BORDER, NEON);
         labelLayer.print({
             font,
-            x: 6,
+            x: 8,
             y: Math.floor((y1 + y2) / 2) - 16,
             text: { text: String(i + 1), alignmentX: 2 /* CENTER */ },
             maxWidth: 80,                  // number column left of the box
@@ -127,7 +127,7 @@ function tintNeon(layer, w, h) {
     tintNeon(hintLayer, W, 40);
     img.composite(hintLayer, 0, H - 50);
 
-    const out = path.join(outDir, "resource-ready-board-rev4.png");
+    const out = path.join(outDir, "resource-ready-board-rev5.png");
     await img.write(out);
-    console.log(`resource-ready-board-rev4.png (${W}x${H})`);
+    console.log(`resource-ready-board-rev5.png (${W}x${H})`);
 })().catch(e => { console.error(e); process.exit(1); });
