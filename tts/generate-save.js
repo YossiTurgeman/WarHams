@@ -1139,7 +1139,7 @@ objects.push(eqBoard);
 const RESOURCE_READY_BOARD_URL = `${SOLDIER_BASE}/resource-ready-board-rev2.png`;
 const rrBoard = baseObj("Custom_Tile", "Resource Ready Board",
     "Reference strip: place one resource token of each number's produced type in the matching box (per the Number Tokens on the planet). Pure lookup aid — update it whenever the number tokens change.",
-    -39, 1.02, -2,
+    -39, 1.1, -2,
     { rotY: 180, scaleX: 1.6, scaleY: 0.2, scaleZ: 5.2,
       color: { r: 1, g: 1, b: 1 }, locked: true, grid: false });
 rrBoard.CustomImage = {
