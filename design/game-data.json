@@ -744,7 +744,8 @@
     "combat_markers": "2 red circular markers, each the same size as the First Player marker. Used to identify board locations where declared combats are being resolved.",
     "combat_boards": "2 numbered staging boards (North and South), each with H.A.M.S positions 1-7 and corresponding die positions 1-7. Used to face opposing engaged soldiers and their assigned dice toward each other during combat.",
     "trackers": "1 shared round counter plus 1 color-coded tracker per player for Dominance Points and completed-turn status. Advancing the round resets every player tracker to ready.",
-    "bunker_tokens": "several — neutral fortifications: +1 all defense dice on hex, 1 per hex max, any unit benefits, destroyed by attacker winning combat"
+    "bunker_tokens": "several — neutral fortifications: +1 all defense dice on hex, 1 per hex max, any unit benefits, destroyed by attacker winning combat",
+    "resource_ready_board": "Small printed reference strip placed south of the Equipment Display. Lists the numbers 1-6 with the resource type each number currently produces (per the Number Tokens distributed during setup). Pure lookup reference - no tokens, no game state. Update to match if Number Tokens are rearranged"
   },
   "mechanics": {
     "morale_compensation": {
