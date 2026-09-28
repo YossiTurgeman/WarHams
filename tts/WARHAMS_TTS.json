@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1790620830,
+  "EpochTime": 1790621082,
   "Date": "2026-09-28",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -4981,7 +4981,7 @@
             "scaleZ": 1
           },
           "Nickname": "T.I.L.T.S",
-          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
+          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, a T.I.L.T.S soldier may swap one of the attacker's assigned attack dice between themselves and one adjacent ally — once per combat with a single T.I.L.T.S soldier, or once per combat round with two adjacent T.I.L.T.S soldiers. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5039,7 +5039,7 @@
             "scaleZ": 1
           },
           "Nickname": "T.I.L.T.S",
-          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
+          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, a T.I.L.T.S soldier may swap one of the attacker's assigned attack dice between themselves and one adjacent ally — once per combat with a single T.I.L.T.S soldier, or once per combat round with two adjacent T.I.L.T.S soldiers. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5097,7 +5097,7 @@
             "scaleZ": 1
           },
           "Nickname": "T.I.L.T.S",
-          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
+          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, a T.I.L.T.S soldier may swap one of the attacker's assigned attack dice between themselves and one adjacent ally — once per combat with a single T.I.L.T.S soldier, or once per combat round with two adjacent T.I.L.T.S soldiers. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5155,7 +5155,7 @@
             "scaleZ": 1
           },
           "Nickname": "T.I.L.T.S",
-          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
+          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, a T.I.L.T.S soldier may swap one of the attacker's assigned attack dice between themselves and one adjacent ally — once per combat with a single T.I.L.T.S soldier, or once per combat round with two adjacent T.I.L.T.S soldiers. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -5213,7 +5213,7 @@
             "scaleZ": 1
           },
           "Nickname": "T.I.L.T.S",
-          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, two adjacent T.I.L.T.S soldiers may swap one attacker's assigned die between them. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
+          "Description": "[Tech] Slot: Backpack\nCost: 1 Electricity, 1 Industry, 2 Intelligence\nDP: 5\n\nPay cost per soldier as normal. During combat, a T.I.L.T.S soldier may swap one of the attacker's assigned attack dice between themselves and one adjacent ally — once per combat with a single T.I.L.T.S soldier, or once per combat round with two adjacent T.I.L.T.S soldiers. Always active — no tapping required. No other backpack module allowed with T.I.L.T.S.",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
