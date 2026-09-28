@@ -279,6 +279,8 @@ The other two resource dice never trigger base results. Newly spawned forces rem
 
 During the Activation Phase, the active player activates all of their Squads **one by one**. Each Squad takes **2 actions**, resolving each action completely before taking its second action or activating the next Squad. After all of the active player's Squads have activated, play proceeds to Phase 3. Any action type may be chosen twice (for example, **Move → Move** to move twice, or **Conspire → Conspire** to draw twice).
 
+> **Pre-Activation Collection (free):** Before activating your Squads, you may collect resources for the hexes they **currently occupy**, exactly as in **Phase 3, Step 2** — 1 token per distinct resource hex occupied, **+1** per B.E.A.R on the hex, and hexes occupied by Separatists produce nothing. A Squad may gather here and then move away. Each hex can only be collected **once per turn** — a hex gathered in this step is not gathered again in Phase 3 (and vice versa).
+
 #### Action: Move
 
 The activating player may move each H.A.M.S in the activating Squad up to **1 hex** in any direction. A soldier equipped with **Jump Jets (J.J)** may move up to **2 hexes** instead.
@@ -1311,7 +1313,7 @@ When a player meets any victory condition during their turn, the current round b
 | # | Phase | Key Action |
 |---|-------|------------|
 | 1 | Resource Production | Roll 3d6, place resource tokens on matching hexes |
-| 2 | Activation Phase | Each Squad takes 2 actions: Move, Combat, Logistics, Conspire, or Rest |
+| 2 | Activation Phase | Free pre-activation collection of Squads' current hexes; then each Squad takes 2 actions: Move, Combat, Logistics, Conspire, or Rest |
 | 3 | Salvage & Resource Gathering | Collect salvage, then 1 token per distinct resource hex occupied by your Squads |
 | 4 | Separatists | Uprising → consume → move toward producing hexes → resolve combats |
 
