@@ -1,6 +1,6 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1790685427,
+  "EpochTime": 1790685855,
   "Date": "2026-09-29",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
@@ -64821,7 +64821,7 @@
         "scaleZ": 6
       },
       "Nickname": "North Combat Board",
-      "Description": "North combat staging area. Place engaged H.A.M.S in slots 1-7 and each assigned die in the matching numbered slot.",
+      "Description": "North combat staging area (DEFENDER). Place engaged H.A.M.S in slots 1-7 and each assigned die in the matching numbered slot.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -64851,7 +64851,7 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/combat-zone-board.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/combat-zone-board-defender.png",
         "ImageSecondaryURL": "",
         "ImageScalar": 1,
         "WidthScale": 0,
@@ -64978,7 +64978,7 @@
         "scaleZ": 6
       },
       "Nickname": "South Combat Board",
-      "Description": "South combat staging area. Place engaged H.A.M.S in slots 1-7 and each assigned die in the matching numbered slot.",
+      "Description": "South combat staging area (ATTACKER). Place engaged H.A.M.S in slots 1-7 and each assigned die in the matching numbered slot.",
       "GMNotes": "",
       "AltLookAngle": {
         "x": 0,
@@ -65008,7 +65008,7 @@
       "LuaScriptState": "",
       "XmlUI": "",
       "CustomImage": {
-        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/combat-zone-board.png",
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/combat-zone-board-attacker.png",
         "ImageSecondaryURL": "",
         "ImageScalar": 1,
         "WidthScale": 0,

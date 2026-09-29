@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 /**
- * Generates the shared texture used by the north and south combat boards.
+ * Generates the textures used by the north and south combat boards.
  * The image's lower row is H.A.M.S 1-7 and its upper row is Dice 1-7;
  * rotating the south board 180 degrees keeps both sides facing the tray.
+ * Two role-labeled variants are produced: the South board is the
+ * ATTACKER's staging board and the North board is the DEFENDER's.
  */
 
 const path = require("path");
@@ -38,53 +40,58 @@ function strokeCircle(img, cx, cy, radius, thickness, color) {
 }
 
 (async () => {
-    const img = new Jimp({ width: W, height: H, color: BG });
-    const font32 = await loadFont(path.join(FONT_DIR, "open-sans-32-white", "open-sans-32-white.fnt"));
-    const font16 = await loadFont(path.join(FONT_DIR, "open-sans-16-white", "open-sans-16-white.fnt"));
+    for (const [role, outputName] of [
+        ["ATTACKER", "combat-zone-board-attacker.png"],
+        ["DEFENDER", "combat-zone-board-defender.png"],
+    ]) {
+        const img = new Jimp({ width: W, height: H, color: BG });
+        const font32 = await loadFont(path.join(FONT_DIR, "open-sans-32-white", "open-sans-32-white.fnt"));
+        const font16 = await loadFont(path.join(FONT_DIR, "open-sans-16-white", "open-sans-16-white.fnt"));
 
-    strokeRect(img, 12, 12, W - 24, H - 24, 8, RED);
-    fillRect(img, 45, 82, W - 90, 3, RED);
-    fillRect(img, 45, 300, W - 90, 3, RED);
-
-    img.print({
-        font: font32,
-        x: 0,
-        y: 28,
-        text: { text: "COMBAT ZONE", alignmentX: 2 },
-        maxWidth: W,
-    });
-
-    img.print({ font: font16, x: 34, y: 176, text: "DICE", maxWidth: 100 });
-    img.print({ font: font16, x: 34, y: 405, text: "H.A.M.S", maxWidth: 120 });
-
-    const firstX = 255;
-    const pitch = 215;
-    for (let i = 0; i < 7; i++) {
-        const number = i + 1;
-        const x = firstX + i * pitch;
-
-        strokeRect(img, x - 66, 125, 132, 132, 6, RED);
-        strokeCircle(img, x, 410, 67, 6, MUTED);
+        strokeRect(img, 12, 12, W - 24, H - 24, 8, RED);
+        fillRect(img, 45, 82, W - 90, 3, RED);
+        fillRect(img, 45, 300, W - 90, 3, RED);
 
         img.print({
             font: font32,
-            x: x - 66,
-            y: 166,
-            text: { text: String(number), alignmentX: 2 },
-            maxWidth: 132,
+            x: 0,
+            y: 28,
+            text: { text: `COMBAT ZONE - ${role}`, alignmentX: 2 },
+            maxWidth: W,
         });
-        img.print({
-            font: font32,
-            x: x - 66,
-            y: 387,
-            text: { text: String(number), alignmentX: 2 },
-            maxWidth: 132,
-        });
+
+        img.print({ font: font16, x: 34, y: 176, text: "DICE", maxWidth: 100 });
+        img.print({ font: font16, x: 34, y: 405, text: "H.A.M.S", maxWidth: 120 });
+
+        const firstX = 255;
+        const pitch = 215;
+        for (let i = 0; i < 7; i++) {
+            const number = i + 1;
+            const x = firstX + i * pitch;
+
+            strokeRect(img, x - 66, 125, 132, 132, 6, RED);
+            strokeCircle(img, x, 410, 67, 6, MUTED);
+
+            img.print({
+                font: font32,
+                x: x - 66,
+                y: 166,
+                text: { text: String(number), alignmentX: 2 },
+                maxWidth: 132,
+            });
+            img.print({
+                font: font32,
+                x: x - 66,
+                y: 387,
+                text: { text: String(number), alignmentX: 2 },
+                maxWidth: 132,
+            });
+        }
+
+        const output = path.join(__dirname, outputName);
+        await img.write(output);
+        console.log(`Generated ${output} (${W}x${H})`);
     }
-
-    const output = path.join(__dirname, "combat-zone-board.png");
-    await img.write(output);
-    console.log(`Generated ${output} (${W}x${H})`);
 })().catch(error => {
     console.error(error);
     process.exit(1);
