@@ -250,7 +250,7 @@ The active player rolls **2d6 + 1 Separatist Die** (a grey d6). The Separatist D
 
 > **Example:** You roll 2, 4, and the Separatist Die shows 6. Every hex with a "2", "4", or "6" number token receives 1 resource token of its type. Then, because the Separatist Die shows 6 — matching a Separatist Base's printed number — resolve the base result: if that base is **unconquered**, spawn 3 Separatists on it; if it has been **conquered**, its controller immediately gains 1 Local Favor.
 >
-> **Example (Doubles):** You roll 3, 3, and the Separatist Die shows 5. Every hex with a "3" token receives 1 resource token (not 2 — duplicates don't double production), and every hex with a "5" token receives 1 resource token. The doubled 3s also trigger a BAC delivery (see Doubles below). The Separatist Die shows 5, which does not match any base (2, 4, 6), so no base result occurs.
+> **Example (Doubles):** You roll 3, 3, and the Separatist Die shows 5. Every hex with a "3" token receives 1 resource token (not 2 — duplicates don't double production), and every hex with a "5" token receives 1 resource token. The doubled 3s also trigger two BAC deliveries — card #3 to spaceport 3 and card #5 to spaceport 5 (see Doubles below). The Separatist Die shows 5, which does not match any base (2, 4, 6), so no base result occurs.
 >
 > **Example (Conquered Base):** You roll 2, 5, and the Separatist Die shows 4. Resources are placed on hexes with "2", "4", and "5" tokens. The Separatist Die matches the base printed with 4. If that base is unconquered, spawn 3 Separatists there. If it has been conquered, its controller immediately gains 1 Local Favor — regardless of which player rolled the die.
 
@@ -261,17 +261,18 @@ The active player rolls **2d6 + 1 Separatist Die** (a grey d6). The Separatist D
 
 The other two resource dice never trigger base results. Newly spawned forces remain at their base until Phase 4. A conquered base no longer spawns naturally. (Full details in **Phase 4: Separatists — Base Results**.)
 
-**Doubles** — If two of the three dice show the same number (e.g., 3, 3, 5):
+**Doubles** — If two of the three dice show the same number (e.g., 3, 3, 5), deliver **2 BAC cards**:
 
-- Take the BAC card from the Planet Bound Area whose **position matches the doubled number** (e.g., double 3s = the 3rd card in the row). Place it face-up in the **Unloading Zone** container slot matching that number, and place the matching numbered container on the **spaceport hex with that printed number** on the board. Multiple BAC cards may accumulate at a single Unloading Zone slot over successive turns.
+- **Doubled number:** Take the BAC card from the Planet Bound Area whose **position matches the doubled number** (e.g., double 3s = the 3rd card in the row). Place it face-up in the **Unloading Zone** container slot matching that number, and place the matching numbered container on the **spaceport hex with that printed number** on the board.
+- **Odd die:** The remaining (non-doubled) die also delivers — take the BAC card whose **position matches the odd die's number** and deliver it the same way to the **spaceport with that printed number**. Doubles therefore always deliver to two different spaceports.
+- Multiple BAC cards may accumulate at a single Unloading Zone slot over successive turns.
 - All unique numbers rolled still produce resources normally (the BAC delivery is an additional bonus, not a replacement).
 
-**Triples** — If all three dice show the same number (e.g., 4, 4, 4):
+**Triples** — If all three dice show the same number (e.g., 4, 4, 4), deliver **3 BAC cards**:
 
-- The active player **chooses** which spaceport drop zone on the board receives a BAC card. Take the BAC card from the Planet Bound Area whose position matches the tripled number (e.g., triple 4s = the 4th card). Place it face-up in the Unloading Zone container slot matching the **chosen** spaceport's printed number, and place the matching container on that spaceport hex.
-- Additionally, the active player may move any single open (face-up) BAC from the Planet Bound Area to any Unloading Zone container slot of their choice.
+- Choose **any 3 cards** from the Planet Bound Area and deliver each to **any spaceport** — they may all go to the same spaceport or be split however you like. Each delivery works the same way: the card goes face-up into the Unloading Zone container slot matching the chosen spaceport's printed number, and the matching container is placed on that spaceport hex.
 
-> **Tip:** Triples are rare but powerful — choosing which spaceport receives a BAC card lets you funnel valuable equipment toward your controlled zones or deny it to opponents.
+> **Tip:** Triples are rare but powerful — you pick any 3 visible BACs and where they land. Deliver to spaceports your Squads can actually collect from, stack at a heavily defended port, or deny valuable cards to opponents. Remember that anyone can collect cards sitting at a spaceport they reach, so stacking at a contested spaceport is a risk.
 
 ---
 
@@ -539,7 +540,7 @@ Advance the Round Tracker by 1 and reset every player tracker to **TURN READY**.
 
 | Phase | Name | Summary |
 |-------|------|---------|
-| 1 | Resource Production | Roll 2d6 + 1 grey Separatist Die. All 3 produce resources on matching hexes. Separatist Die also triggers base results (2, 4, 6). Doubles/triples = BAC drops at spaceports |
+| 1 | Resource Production | Roll 2d6 + 1 grey Separatist Die. All 3 produce resources on matching hexes. Separatist Die also triggers base results (2, 4, 6). Doubles = 2 BAC drops (doubled number + odd die); triples = 3 BAC drops of your choice |
 | 2 | Activation Phase | Each Squad takes 2 actions: Move, Combat, Logistics, Conspire, or Rest. Any may be repeated |
 | 3 | Salvage & Resource Gathering | Collect salvage, then 1 token from each distinct resource hex occupied by your Squads; B.E.A.R grants +1 on its hex |
 | 4 | Separatists | Uprising → consume → move → combat |

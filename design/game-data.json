@@ -120,7 +120,7 @@
         5,
         6
       ],
-      "mechanics": "Each spaceport has a printed number (1–6). BACs land here on doubles matching the printed number. Can be captured for passive BAC collection."
+      "mechanics": "Each spaceport has a printed number (1–6). BACs land here on doubles (the doubled number's card plus the odd die's card, each to its matching spaceport) and on triples (any 3 Planet Bound Area cards delivered to any spaceports). Can be captured for passive BAC collection."
     }
   ],
   "bac_setup": {
@@ -147,7 +147,7 @@
     {
       "phase": 1,
       "name": "Resource Production",
-      "description": "Roll 2d6 + 1 Separatist Die (grey). The Separatist Die has two roles: (1) like the other two dice, it produces resources on matching hexes, and (2) after production, compare its result to the printed numbers on the three Separatist Bases (2, 4, 6). A match on an unconquered base spawns 3 Separatists there; a match on a conquered base gives its controller 1 Local Favor immediately, regardless of who rolled. The other two dice never trigger base results. Doubles = BAC from Planet Bound Area to matching spaceport. Triples = active player chooses spaceport placement + may move 1 Planet Bound BAC."
+      "description": "Roll 2d6 + 1 Separatist Die (grey). The Separatist Die has two roles: (1) like the other two dice, it produces resources on matching hexes, and (2) after production, compare its result to the printed numbers on the three Separatist Bases (2, 4, 6). A match on an unconquered base spawns 3 Separatists there; a match on a conquered base gives its controller 1 Local Favor immediately, regardless of who rolled. The other two dice never trigger base results. Doubles deliver 2 BACs: the doubled number's card to its matching spaceport, plus the odd die's card to its matching spaceport. Triples deliver 3 BACs: any 3 Planet Bound Area cards to any spaceports (same spaceport allowed)."
     },
     {
       "phase": 2,
