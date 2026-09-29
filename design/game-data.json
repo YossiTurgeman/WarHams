@@ -684,7 +684,8 @@
       "cost": "Free",
       "text": "If you control 2/3 of Intelligence-producing tiles, gain 2 BACs from spaceport deck. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).",
       "condition": "Control 2+ Intelligence tiles",
-      "dp": 1
+      "dp": 1,
+      "art_revision": 5
     },
     {
       "name": "Civilian Goods Transport",
@@ -693,7 +694,8 @@
       "cost": "Free",
       "text": "If you control 2/3 of Local Favor-producing tiles, gain any 4 resource tokens. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).",
       "condition": "Control 2+ Local Favor tiles",
-      "dp": 1
+      "dp": 1,
+      "art_revision": 5
     },
     {
       "name": "Black Gold Syndicate",
@@ -702,7 +704,8 @@
       "cost": "Free",
       "text": "If you control 2/3 of Oil-producing tiles, gain 2 Conspire cards. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).",
       "condition": "Control 2+ Oil tiles",
-      "dp": 1
+      "dp": 1,
+      "art_revision": 5
     },
     {
       "name": "At the Cover of Darkness",
@@ -711,7 +714,8 @@
       "cost": "Free",
       "text": "If you control 2/3 of Electricity-producing tiles, choose a player and steal: (1) 2 random resource tokens, (2) 1 random Conspire card, or (3) 1 random BAC from their hand. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).",
       "condition": "Control 2+ Electricity tiles",
-      "dp": 1
+      "dp": 1,
+      "art_revision": 5
     },
     {
       "name": "Factory Cost Savings",
@@ -720,7 +724,8 @@
       "cost": "Free",
       "text": "If you control 2/3 of Industry-producing tiles, play a BAC without paying cost for 2 soldiers. May pay cost for the rest. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).",
       "condition": "Control 2+ Industry tiles",
-      "dp": 1
+      "dp": 1,
+      "art_revision": 5
     }
   ],
   "deck_counts": {
