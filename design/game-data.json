@@ -682,40 +682,45 @@
       "copies": 3,
       "timing": "Tactical",
       "cost": "Free",
-      "text": "If you control 2/3 of Intelligence-producing tiles, gain 2 BACs from spaceport deck.",
-      "condition": "Control 2+ Intelligence tiles"
+      "text": "If you control 2/3 of Intelligence-producing tiles, gain 2 BACs from spaceport deck. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).",
+      "condition": "Control 2+ Intelligence tiles",
+      "dp": 1
     },
     {
       "name": "Civilian Goods Transport",
       "copies": 3,
       "timing": "Tactical",
       "cost": "Free",
-      "text": "If you control 2/3 of Local Favor-producing tiles, gain any 4 resource tokens.",
-      "condition": "Control 2+ Local Favor tiles"
+      "text": "If you control 2/3 of Local Favor-producing tiles, gain any 4 resource tokens. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).",
+      "condition": "Control 2+ Local Favor tiles",
+      "dp": 1
     },
     {
       "name": "Black Gold Syndicate",
       "copies": 3,
       "timing": "Tactical",
       "cost": "Free",
-      "text": "If you control 2/3 of Oil-producing tiles, gain 2 Conspire cards.",
-      "condition": "Control 2+ Oil tiles"
+      "text": "If you control 2/3 of Oil-producing tiles, gain 2 Conspire cards. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).",
+      "condition": "Control 2+ Oil tiles",
+      "dp": 1
     },
     {
       "name": "At the Cover of Darkness",
       "copies": 3,
       "timing": "Tactical",
       "cost": "Free",
-      "text": "If you control 2/3 of Electricity-producing tiles, choose a player and steal: (1) 2 random resource tokens, (2) 1 random Conspire card, or (3) 1 random BAC from their hand.",
-      "condition": "Control 2+ Electricity tiles"
+      "text": "If you control 2/3 of Electricity-producing tiles, choose a player and steal: (1) 2 random resource tokens, (2) 1 random Conspire card, or (3) 1 random BAC from their hand. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).",
+      "condition": "Control 2+ Electricity tiles",
+      "dp": 1
     },
     {
       "name": "Factory Cost Savings",
       "copies": 3,
       "timing": "Tactical",
       "cost": "Free",
-      "text": "If you control 2/3 of Industry-producing tiles, play a BAC without paying cost for 2 soldiers. May pay cost for the rest.",
-      "condition": "Control 2+ Industry tiles"
+      "text": "If you control 2/3 of Industry-producing tiles, play a BAC without paying cost for 2 soldiers. May pay cost for the rest. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).",
+      "condition": "Control 2+ Industry tiles",
+      "dp": 1
     }
   ],
   "deck_counts": {

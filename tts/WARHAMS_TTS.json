@@ -1,7 +1,7 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1790621502,
-  "Date": "2026-09-28",
+  "EpochTime": 1790685427,
+  "Date": "2026-09-29",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
   "GameType": "",
@@ -11104,7 +11104,7 @@
             "scaleZ": 1
           },
           "Nickname": "Knowledge is Power",
-          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Intelligence-producing tiles, gain 2 BACs from spaceport deck.\nCondition: Control 2+ Intelligence tiles",
+          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Intelligence-producing tiles, gain 2 BACs from spaceport deck. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).\nCondition: Control 2+ Intelligence tiles",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -11162,7 +11162,7 @@
             "scaleZ": 1
           },
           "Nickname": "Knowledge is Power",
-          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Intelligence-producing tiles, gain 2 BACs from spaceport deck.\nCondition: Control 2+ Intelligence tiles",
+          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Intelligence-producing tiles, gain 2 BACs from spaceport deck. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).\nCondition: Control 2+ Intelligence tiles",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -11220,7 +11220,7 @@
             "scaleZ": 1
           },
           "Nickname": "Knowledge is Power",
-          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Intelligence-producing tiles, gain 2 BACs from spaceport deck.\nCondition: Control 2+ Intelligence tiles",
+          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Intelligence-producing tiles, gain 2 BACs from spaceport deck. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).\nCondition: Control 2+ Intelligence tiles",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -11278,7 +11278,7 @@
             "scaleZ": 1
           },
           "Nickname": "Civilian Goods Transport",
-          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Local Favor-producing tiles, gain any 4 resource tokens.\nCondition: Control 2+ Local Favor tiles",
+          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Local Favor-producing tiles, gain any 4 resource tokens. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).\nCondition: Control 2+ Local Favor tiles",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -11336,7 +11336,7 @@
             "scaleZ": 1
           },
           "Nickname": "Civilian Goods Transport",
-          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Local Favor-producing tiles, gain any 4 resource tokens.\nCondition: Control 2+ Local Favor tiles",
+          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Local Favor-producing tiles, gain any 4 resource tokens. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).\nCondition: Control 2+ Local Favor tiles",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -11394,7 +11394,7 @@
             "scaleZ": 1
           },
           "Nickname": "Civilian Goods Transport",
-          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Local Favor-producing tiles, gain any 4 resource tokens.\nCondition: Control 2+ Local Favor tiles",
+          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Local Favor-producing tiles, gain any 4 resource tokens. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).\nCondition: Control 2+ Local Favor tiles",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -11452,7 +11452,7 @@
             "scaleZ": 1
           },
           "Nickname": "Black Gold Syndicate",
-          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Oil-producing tiles, gain 2 Conspire cards.\nCondition: Control 2+ Oil tiles",
+          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Oil-producing tiles, gain 2 Conspire cards. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).\nCondition: Control 2+ Oil tiles",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -11510,7 +11510,7 @@
             "scaleZ": 1
           },
           "Nickname": "Black Gold Syndicate",
-          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Oil-producing tiles, gain 2 Conspire cards.\nCondition: Control 2+ Oil tiles",
+          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Oil-producing tiles, gain 2 Conspire cards. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).\nCondition: Control 2+ Oil tiles",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -11568,7 +11568,7 @@
             "scaleZ": 1
           },
           "Nickname": "Black Gold Syndicate",
-          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Oil-producing tiles, gain 2 Conspire cards.\nCondition: Control 2+ Oil tiles",
+          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Oil-producing tiles, gain 2 Conspire cards. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).\nCondition: Control 2+ Oil tiles",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -11626,7 +11626,7 @@
             "scaleZ": 1
           },
           "Nickname": "At the Cover of Darkness",
-          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Electricity-producing tiles, choose a player and steal: (1) 2 random resource tokens, (2) 1 random Conspire card, or (3) 1 random BAC from their hand.\nCondition: Control 2+ Electricity tiles",
+          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Electricity-producing tiles, choose a player and steal: (1) 2 random resource tokens, (2) 1 random Conspire card, or (3) 1 random BAC from their hand. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).\nCondition: Control 2+ Electricity tiles",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -11684,7 +11684,7 @@
             "scaleZ": 1
           },
           "Nickname": "At the Cover of Darkness",
-          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Electricity-producing tiles, choose a player and steal: (1) 2 random resource tokens, (2) 1 random Conspire card, or (3) 1 random BAC from their hand.\nCondition: Control 2+ Electricity tiles",
+          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Electricity-producing tiles, choose a player and steal: (1) 2 random resource tokens, (2) 1 random Conspire card, or (3) 1 random BAC from their hand. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).\nCondition: Control 2+ Electricity tiles",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -11742,7 +11742,7 @@
             "scaleZ": 1
           },
           "Nickname": "At the Cover of Darkness",
-          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Electricity-producing tiles, choose a player and steal: (1) 2 random resource tokens, (2) 1 random Conspire card, or (3) 1 random BAC from their hand.\nCondition: Control 2+ Electricity tiles",
+          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Electricity-producing tiles, choose a player and steal: (1) 2 random resource tokens, (2) 1 random Conspire card, or (3) 1 random BAC from their hand. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).\nCondition: Control 2+ Electricity tiles",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -11800,7 +11800,7 @@
             "scaleZ": 1
           },
           "Nickname": "Factory Cost Savings",
-          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Industry-producing tiles, play a BAC without paying cost for 2 soldiers. May pay cost for the rest.\nCondition: Control 2+ Industry tiles",
+          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Industry-producing tiles, play a BAC without paying cost for 2 soldiers. May pay cost for the rest. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).\nCondition: Control 2+ Industry tiles",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -11858,7 +11858,7 @@
             "scaleZ": 1
           },
           "Nickname": "Factory Cost Savings",
-          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Industry-producing tiles, play a BAC without paying cost for 2 soldiers. May pay cost for the rest.\nCondition: Control 2+ Industry tiles",
+          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Industry-producing tiles, play a BAC without paying cost for 2 soldiers. May pay cost for the rest. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).\nCondition: Control 2+ Industry tiles",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,
@@ -11916,7 +11916,7 @@
             "scaleZ": 1
           },
           "Nickname": "Factory Cost Savings",
-          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Industry-producing tiles, play a BAC without paying cost for 2 soldiers. May pay cost for the rest.\nCondition: Control 2+ Industry tiles",
+          "Description": "[Tactical]\nCost: Free\n\nIf you control 2/3 of Industry-producing tiles, play a BAC without paying cost for 2 soldiers. May pay cost for the rest. One-time use: discard after playing. Awards +1 DP on successful completion (permanent).\nCondition: Control 2+ Industry tiles",
           "GMNotes": "",
           "AltLookAngle": {
             "x": 0,

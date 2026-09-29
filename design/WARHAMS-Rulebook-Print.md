@@ -1103,7 +1103,7 @@ Conspire Cards fall into two timing categories:
 - May be played **at any time** — during your turn, another player's turn, or between phases.
 - Effects resolve **instantly**.
 
-Pay any listed cost when you play the card.
+Pay any listed cost when you play the card. **All Conspire Cards are one-time use** — after the effect resolves, discard the card face-down. This applies to every Conspire Card, including Territory Control cards.
 
 ### Deck Exhaustion
 
@@ -1156,11 +1156,13 @@ When the Conspire Deck is empty, shuffle the discard pile to form a new deck.
 
 | Name | Condition | Effect | Copies |
 |------|-----------|--------|:------:|
-| Knowledge is Power | Control 2+ Intelligence tiles | Gain 2 BACs from Spaceport Deck | 3 |
-| Civilian Goods Transport | Control 2+ Local Favor tiles | Gain any 4 resource tokens | 3 |
-| Black Gold Syndicate | Control 2+ Oil tiles | Draw 2 Conspire cards (keep both) | 3 |
-| At the Cover of Darkness | Control 2+ Electricity tiles | Steal from opponent: 2 resources, OR 1 Conspire, OR 1 BAC | 3 |
-| Factory Cost Savings | Control 2+ Industry tiles | Equip a BAC free for 2 soldiers. Pay normal cost for rest | 3 |
+| Knowledge is Power | Control 2+ Intelligence tiles | Gain 2 BACs from Spaceport Deck. **+1 DP** on completion | 3 |
+| Civilian Goods Transport | Control 2+ Local Favor tiles | Gain any 4 resource tokens. **+1 DP** on completion | 3 |
+| Black Gold Syndicate | Control 2+ Oil tiles | Draw 2 Conspire cards (keep both). **+1 DP** on completion | 3 |
+| At the Cover of Darkness | Control 2+ Electricity tiles | Steal from opponent: 2 resources, OR 1 Conspire, OR 1 BAC. **+1 DP** on completion | 3 |
+| Factory Cost Savings | Control 2+ Industry tiles | Equip a BAC free for 2 soldiers. Pay normal cost for rest. **+1 DP** on completion | 3 |
+
+> **One-time use & DP:** Territory Control cards are discarded after playing (like all Conspire cards) and award **+1 DP** immediately when successfully completed — a one-time, permanent Dominance bonus.
 
 ---
 
@@ -1245,13 +1247,14 @@ Your overwhelming military presence renders further conflict pointless. Rival HQ
 
 **Accumulate 50 Dominance Points (DP).**
 
-DP come from five sources:
+DP come from six sources:
 
 1. **Equipped BAC cards** — each BAC's DP value counts toward your total as long as the card remains equipped and the soldier carrying it is alive.
 2. **Battle Victory DP** — after each **player vs player** combat, the side that inflicted more wounds than they received earns DP equal to the difference, up to 3 DP per battle (see Combat Step 8). This DP is permanent. Does not apply to Separatist combats.
 3. **Territory DP** — each hex you claim is worth +1 DP, including your Landing Zones (you start with 2 DP). If an opponent takes that hex from you, you lose 1 DP and they gain 1 DP (see Claiming a Hex).
 4. **Conquest Bonus DP** — killing all 7 defenders of a Separatist Base earns +3 DP. This DP is permanent and does not go away if the base is later lost.
 5. **Bunker DP** — deploying a D.U.D.S bunker grants the deployer 2 DP (permanent). Whoever controls the bunkered hex earns an additional 2 DP. Total: 4 DP for a deployer holding their own bunker (see Bunker Rules).
+6. **Conspire DP** — successfully completing a **Territory Control Conspire card** (Knowledge is Power, Civilian Goods Transport, Black Gold Syndicate, At the Cover of Darkness, Factory Cost Savings) earns +1 DP per card. This DP is permanent.
 
 The local population rallies behind your banner and crowns you their sovereign.
 
@@ -1266,8 +1269,9 @@ Adjust your DP counter immediately whenever any of the following events occur. T
 | **Conquest Bonus DP** | You **kill all 7 defenders** of a Separatist Base — add **3 DP** immediately. | **Never.** Conquest Bonus DP is permanent even if the base is later lost. | Yes — permanent |
 | **Territory DP** | You **place your Control Flag** on a hex — add **1 DP** immediately (including your Landing Zones, so you start with 2 DP). | An **opponent takes a hex** from you (replaces your flag with theirs) — subtract **1 DP**; the opponent adds **1 DP**. | No — flows with territory |
 | **Bunker DP** | **D.U.D.S deployed** — deployer adds **2 DP** immediately. The player who **controls the bunkered hex** adds **2 DP** (total 4 DP for deployer holding their own bunker). | If **hex control changes**, the previous controller subtracts **2 DP** and the new controller adds **2 DP**. The deployer's 2 DP deployment bonus is never lost. | Deployment: permanent. Hex control: flows with territory |
+| **Conspire DP** | You **successfully complete a Territory Control Conspire card** (Knowledge is Power, Civilian Goods Transport, Black Gold Syndicate, At the Cover of Darkness, Factory Cost Savings) — add **1 DP** immediately, per card played. | **Never.** Conspire DP is permanent once awarded. | Yes — permanent |
 
-> **Summary:** Only Battle Victory DP, Conquest Bonus DP, and the Bunker deployment bonus are truly permanent. BAC Card DP and Territory DP (including Bunker hex-control DP) go up and down as soldiers die, hexes change hands, and equipment is lost or salvaged.
+> **Summary:** Only Battle Victory DP, Conquest Bonus DP, Bunker deployment bonus, and Conspire DP are truly permanent. BAC Card DP and Territory DP (including Bunker hex-control DP) go up and down as soldiers die, hexes change hands, and equipment is lost or salvaged.
 
 ---
 
@@ -1344,7 +1348,7 @@ When a player meets any victory condition during their turn, the current round b
 |------|-----------|
 | 🚀 Spaceport Domination | Fully control 4 of 6 Spaceports (2-player: 5 of 6) |
 | 💪 Military Supremacy | More than 2× the soldiers of the next largest army (strictly more) |
-| 👑 Dominance | Accumulate 50 DP from equipped BACs + Battle Victory DP + Territory DP + Conquest Bonus DP + Bunker DP |
+| 👑 Dominance | Accumulate 50 DP from equipped BACs + Battle Victory DP + Territory DP + Conquest Bonus DP + Bunker DP + Conspire DP |
 | 🏁 Final Round | Any condition met → finish the round → highest DP breaks ties |
 
 ---
