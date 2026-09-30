@@ -2030,7 +2030,7 @@ for (const [kind, url] of Object.entries(BONUS_MARKER_URLS)) {
     for (let i = 1; i <= 3; i++) {
         const marker = baseObj("Custom_Tile", `+1 ${kind} Marker ${i}`,
             `Marks a soldier or Squad currently receiving an existing +1 ${kind === "ATK" ? "attack" : "defense"} bonus (e.g. bunker, Guerrilla Warfare). Pure marker - it adds no bonus. Return to the stack when the bonus ends.`,
-            UZ_BOARD_X + 4 + (kind === "DEF" ? 3 : 0) + (i - 1) * 0.05, 1.02 + i * 0.15, UZ_BOARD_Z - 8,
+            UZ_BOARD_X + 4 + (i - 1) * 0.05, 1.02 + i * 0.15, UZ_BOARD_Z - 8 + (kind === "DEF" ? -3 : 0),
             { rotY: 180, scaleX: 1.6, scaleY: 0.2, scaleZ: 1.6,
               color: { r: 1, g: 1, b: 1 }, grid: false });
         marker.CustomImage = {
