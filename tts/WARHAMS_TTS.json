@@ -1,7 +1,7 @@
 {
   "SaveName": "W.A.R H.A.M.S",
-  "EpochTime": 1790707320,
-  "Date": "2026-09-29",
+  "EpochTime": 1790750613,
+  "Date": "2026-09-30",
   "VersionNumber": "v13.3.0",
   "GameMode": "",
   "GameType": "",
@@ -65236,6 +65236,348 @@
     },
     {
       "GUID": "1003cf",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 66,
+        "posY": 1.17,
+        "posZ": -8,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 0,
+        "scaleX": 1.6,
+        "scaleY": 0.2,
+        "scaleZ": 1.6
+      },
+      "Nickname": "+1 ATK Marker 1",
+      "Description": "Marks a soldier or Squad currently receiving an existing +1 attack bonus (e.g. bunker, Guerrilla Warfare). Pure marker - it adds no bonus. Return to the stack when the bonus ends.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/bonus-marker-atk.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/bonus-marker-atk.png",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      }
+    },
+    {
+      "GUID": "1003d0",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 66.05,
+        "posY": 1.32,
+        "posZ": -8,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 0,
+        "scaleX": 1.6,
+        "scaleY": 0.2,
+        "scaleZ": 1.6
+      },
+      "Nickname": "+1 ATK Marker 2",
+      "Description": "Marks a soldier or Squad currently receiving an existing +1 attack bonus (e.g. bunker, Guerrilla Warfare). Pure marker - it adds no bonus. Return to the stack when the bonus ends.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/bonus-marker-atk.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/bonus-marker-atk.png",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      }
+    },
+    {
+      "GUID": "1003d1",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 66.1,
+        "posY": 1.47,
+        "posZ": -8,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 0,
+        "scaleX": 1.6,
+        "scaleY": 0.2,
+        "scaleZ": 1.6
+      },
+      "Nickname": "+1 ATK Marker 3",
+      "Description": "Marks a soldier or Squad currently receiving an existing +1 attack bonus (e.g. bunker, Guerrilla Warfare). Pure marker - it adds no bonus. Return to the stack when the bonus ends.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/bonus-marker-atk.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/bonus-marker-atk.png",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      }
+    },
+    {
+      "GUID": "1003d2",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 69,
+        "posY": 1.17,
+        "posZ": -8,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 0,
+        "scaleX": 1.6,
+        "scaleY": 0.2,
+        "scaleZ": 1.6
+      },
+      "Nickname": "+1 DEF Marker 1",
+      "Description": "Marks a soldier or Squad currently receiving an existing +1 defense bonus (e.g. bunker, Guerrilla Warfare). Pure marker - it adds no bonus. Return to the stack when the bonus ends.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/bonus-marker-def.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/bonus-marker-def.png",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      }
+    },
+    {
+      "GUID": "1003d3",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 69.05,
+        "posY": 1.32,
+        "posZ": -8,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 0,
+        "scaleX": 1.6,
+        "scaleY": 0.2,
+        "scaleZ": 1.6
+      },
+      "Nickname": "+1 DEF Marker 2",
+      "Description": "Marks a soldier or Squad currently receiving an existing +1 defense bonus (e.g. bunker, Guerrilla Warfare). Pure marker - it adds no bonus. Return to the stack when the bonus ends.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/bonus-marker-def.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/bonus-marker-def.png",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      }
+    },
+    {
+      "GUID": "1003d4",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 69.1,
+        "posY": 1.47,
+        "posZ": -8,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 0,
+        "scaleX": 1.6,
+        "scaleY": 0.2,
+        "scaleZ": 1.6
+      },
+      "Nickname": "+1 DEF Marker 3",
+      "Description": "Marks a soldier or Squad currently receiving an existing +1 defense bonus (e.g. bunker, Guerrilla Warfare). Pure marker - it adds no bonus. Return to the stack when the bonus ends.",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ColorDiffuse": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/bonus-marker-def.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/bonus-marker-def.png",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 2,
+          "Thickness": 0.1,
+          "Stackable": true,
+          "Stretch": true
+        }
+      }
+    },
+    {
+      "GUID": "1003d5",
       "Name": "BlockSquare",
       "Transform": {
         "posX": -73,
@@ -65283,7 +65625,7 @@
       ]
     },
     {
-      "GUID": "1003d0",
+      "GUID": "1003d6",
       "Name": "BlockSquare",
       "Transform": {
         "posX": 58.5,
@@ -65331,7 +65673,7 @@
       ]
     },
     {
-      "GUID": "1003d1",
+      "GUID": "1003d7",
       "Name": "BlockSquare",
       "Transform": {
         "posX": -73,
@@ -65379,7 +65721,7 @@
       ]
     },
     {
-      "GUID": "1003d2",
+      "GUID": "1003d8",
       "Name": "BlockSquare",
       "Transform": {
         "posX": 58.5,
@@ -65427,7 +65769,7 @@
       ]
     },
     {
-      "GUID": "1003d3",
+      "GUID": "1003d9",
       "Name": "BlockSquare",
       "Transform": {
         "posX": 60,

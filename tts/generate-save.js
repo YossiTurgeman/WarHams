@@ -2016,6 +2016,34 @@ for (const [index, x] of [[1, UZ_BOARD_X - 4], [2, UZ_BOARD_X]]) {
     objects.push(marker);
 }
 
+// ─── 25b. +1 BONUS MARKERS ────────────────────────────────────────────
+// Pure bookkeeping markers (no new rules): drop a +1 ATK / +1 DEF marker
+// on a soldier or Squad while it currently benefits from an existing +1
+// bonus (bunker defense, Guerrilla Warfare, etc.). Text is baked into
+// the texture, so no Lua is needed. Staged in small stacks next to the
+// Combat Markers.
+const BONUS_MARKER_URLS = {
+    ATK: "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/bonus-marker-atk.png",
+    DEF: "https://raw.githubusercontent.com/YossiTurgeman/WarHams/main/tts/bonus-marker-def.png",
+};
+for (const [kind, url] of Object.entries(BONUS_MARKER_URLS)) {
+    for (let i = 1; i <= 3; i++) {
+        const marker = baseObj("Custom_Tile", `+1 ${kind} Marker ${i}`,
+            `Marks a soldier or Squad currently receiving an existing +1 ${kind === "ATK" ? "attack" : "defense"} bonus (e.g. bunker, Guerrilla Warfare). Pure marker - it adds no bonus. Return to the stack when the bonus ends.`,
+            UZ_BOARD_X + 4 + (kind === "DEF" ? 3 : 0) + (i - 1) * 0.05, 1.02 + i * 0.15, UZ_BOARD_Z - 8,
+            { rotY: 180, scaleX: 1.6, scaleY: 0.2, scaleZ: 1.6,
+              color: { r: 1, g: 1, b: 1 }, grid: false });
+        marker.CustomImage = {
+            ImageURL: url,
+            ImageSecondaryURL: url,
+            ImageScalar: 1,
+            WidthScale: 0,
+            CustomTile: { Type: 2 /* circle */, Thickness: 0.1, Stackable: true, Stretch: true },
+        };
+        objects.push(marker);
+    }
+}
+
 // ─── 26. ROUND, TURN & DOMINANCE-POINT TRACKERS ───────────────────────
 // Each player has one locked, color-coded tracker beside their combat dice.
 // Its DP is broken down into three source rows — BAC (flows with equipment),
